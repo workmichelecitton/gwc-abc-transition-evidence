@@ -66,9 +66,9 @@ window.SITE_DATA = {
  "generated": "2026-08-05",
  "taxonomy_version": "0.4.0",
  "stats": {
-  "records": 390,
-  "findings": 305,
-  "sources": 93,
+  "records": 422,
+  "findings": 332,
+  "sources": 94,
   "countries": 25,
   "withheld_internal": 1
  },
@@ -753,8 +753,8 @@ window.SITE_DATA = {
    "theme": "Both",
    "type": "barrier",
    "strength": "high",
-   "n_records": 3,
-   "n_sources": 2,
+   "n_records": 4,
+   "n_sources": 3,
    "n_streams": 2,
    "streams": [
     "sdr",
@@ -762,6 +762,7 @@ window.SITE_DATA = {
    ],
    "countries": [
     "BGD",
+    "SDN",
     "SOM"
    ],
    "tags": [
@@ -779,7 +780,8 @@ window.SITE_DATA = {
    "record_ids": [
     "E0025",
     "E0254",
-    "E0259"
+    "E0259",
+    "E0405"
    ],
    "unmerged": false,
    "highlight": {
@@ -1756,17 +1758,19 @@ window.SITE_DATA = {
   },
   {
    "finding_id": "F053",
-   "statement": "The teams producing vulnerability and exposure analysis do not work on response planning, so their products are not designed for the planning process they are being asked to feed.",
+   "statement": "Vulnerability analysis presented previously was not taken up by partners because it did not speak to them: the framework was not well understood and what it prioritised did not match what partners observed in the field.",
    "theme": "Both",
    "type": "barrier",
-   "strength": "low",
-   "n_records": 1,
-   "n_sources": 1,
+   "strength": "medium",
+   "n_records": 2,
+   "n_sources": 2,
    "n_streams": 1,
    "streams": [
     "transcript"
    ],
-   "countries": [],
+   "countries": [
+    "SDN"
+   ],
    "tags": [
     "hpc",
     "information-management"
@@ -1776,7 +1780,8 @@ window.SITE_DATA = {
     "un-agency"
    ],
    "record_ids": [
-    "E0061"
+    "E0061",
+    "E0407"
    ],
    "unmerged": false
   },
@@ -2817,30 +2822,41 @@ window.SITE_DATA = {
   },
   {
    "finding_id": "F214",
-   "statement": "Unclear reporting lines and parallel information requirements between area-based structures and clusters duplicate reporting and increase the operational burden on partners.",
+   "statement": "A new central planning and reporting platform is being introduced alongside the cluster existing reporting system, which would leave partners reporting the same activity twice.",
    "theme": "ABC",
    "type": "barrier",
-   "strength": "medium",
-   "n_records": 2,
-   "n_sources": 2,
-   "n_streams": 1,
+   "strength": "high",
+   "n_records": 3,
+   "n_sources": 3,
+   "n_streams": 2,
    "streams": [
-    "sdr"
+    "sdr",
+    "transcript"
    ],
-   "countries": [],
+   "countries": [
+    "SDN"
+   ],
    "tags": [
     "coordination-architecture",
+    "hpc",
     "information-management"
    ],
    "actors": [
     "cluster",
-    "ingo"
+    "ingo",
+    "ocha"
    ],
    "record_ids": [
     "E0122",
-    "E0123"
+    "E0123",
+    "E0408"
    ],
-   "unmerged": false
+   "unmerged": false,
+   "highlight": {
+    "headline": "Two reporting systems means partners report everything twice",
+    "plain": "Where a central platform is introduced alongside a cluster reporting system, partners end up entering the same activity in both. Reporting is the first thing partners drop when overloaded, so the data quality falls in both systems rather than one.",
+    "so_what": "Before adopting a second system, agree an interface between them — and keep the sector calculation with the people who understand how it is built."
+   }
   },
   {
    "finding_id": "F215",
@@ -3134,19 +3150,20 @@ window.SITE_DATA = {
   },
   {
    "finding_id": "F225",
-   "statement": "Subnational coordination is structurally under-resourced and depends on double-hatting, with coordination duties added to staff already carrying operational roles.",
-   "theme": "ABC",
+   "statement": "All eighteen state cluster coordinator posts are filled by double-hatting staff, in several cases alongside an NGO co-coordinator, so subnational coordination runs entirely on borrowed capacity.",
+   "theme": "Both",
    "type": "barrier",
    "strength": "high",
-   "n_records": 3,
-   "n_sources": 2,
+   "n_records": 4,
+   "n_sources": 3,
    "n_streams": 2,
    "streams": [
     "sdr",
     "transcript"
    ],
    "countries": [
-    "MMR"
+    "MMR",
+    "SDN"
    ],
    "tags": [
     "capacity",
@@ -3154,12 +3171,14 @@ window.SITE_DATA = {
    ],
    "actors": [
     "cluster",
+    "ingo",
     "un-agency"
    ],
    "record_ids": [
     "E0058",
     "E0145",
-    "E0146"
+    "E0146",
+    "E0404"
    ],
    "unmerged": false,
    "highlight": {
@@ -7132,22 +7151,25 @@ window.SITE_DATA = {
   },
   {
    "finding_id": "F386",
-   "statement": "A bilingual national co-coordinator, institutionally anchored in the NGO co-lead, carried the process for a year after the international coordinator left.",
+   "statement": "A national co-coordinator drawn from a Sudanese NGO supports the team, and a second is planned, both to ease workload and to give local NGOs a national counterpart they can approach directly.",
    "theme": "Transition",
    "type": "enabler",
-   "strength": "low",
-   "n_records": 1,
-   "n_sources": 1,
-   "n_streams": 1,
+   "strength": "high",
+   "n_records": 2,
+   "n_sources": 2,
+   "n_streams": 2,
    "streams": [
-    "sdr"
+    "sdr",
+    "transcript"
    ],
    "countries": [
-    "IRQ"
+    "IRQ",
+    "SDN"
    ],
    "tags": [
     "capacity",
     "localisation",
+    "partnerships",
     "transition-handover"
    ],
    "actors": [
@@ -7155,9 +7177,15 @@ window.SITE_DATA = {
     "local-ngo"
    ],
    "record_ids": [
-    "E0321"
+    "E0321",
+    "E0406"
    ],
-   "unmerged": false
+   "unmerged": false,
+   "highlight": {
+    "headline": "A national co-coordinator is what carries the process through",
+    "plain": "Where a national co-coordinator is in place, anchored in a local organisation, coordination survives the departure of international staff and local partners have someone they can approach directly. It is the single most reliable continuity mechanism in the evidence.",
+    "so_what": "Establish a national co-coordination post early and fund it beyond the international coordinator’s contract."
+   }
   },
   {
    "finding_id": "F387",
@@ -9016,6 +9044,770 @@ window.SITE_DATA = {
    ],
    "record_ids": [
     "E0403"
+   ],
+   "unmerged": false
+  },
+  {
+   "finding_id": "F600",
+   "statement": "State-level expert judgement is built into the severity and needs analysis alongside the survey results, because data quality and the pace of change make survey data alone unreliable and the eighteen state coordination platforms hold genuine field knowledge.",
+   "theme": "Both",
+   "type": "enabler",
+   "strength": "low",
+   "n_records": 1,
+   "n_sources": 1,
+   "n_streams": 1,
+   "streams": [
+    "transcript"
+   ],
+   "countries": [
+    "SDN"
+   ],
+   "tags": [
+    "hpc",
+    "information-management",
+    "localisation"
+   ],
+   "actors": [
+    "cluster",
+    "local-ngo"
+   ],
+   "record_ids": [
+    "E0409"
+   ],
+   "unmerged": false
+  },
+  {
+   "finding_id": "F601",
+   "statement": "Running the expert judgement exercise as a single process covering needs figures, vulnerability analysis and planning together engages state coordinators in the analysis rather than presenting them with a finished product.",
+   "theme": "Both",
+   "type": "enabler",
+   "strength": "low",
+   "n_records": 1,
+   "n_sources": 1,
+   "n_streams": 1,
+   "streams": [
+    "transcript"
+   ],
+   "countries": [
+    "SDN"
+   ],
+   "tags": [
+    "hpc",
+    "information-management"
+   ],
+   "actors": [
+    "cluster",
+    "local-ngo"
+   ],
+   "record_ids": [
+    "E0410"
+   ],
+   "unmerged": false
+  },
+  {
+   "finding_id": "F602",
+   "statement": "An assessment of more than sixteen hundred water points, heading toward twenty-two hundred, was presented to a government-development water task force with an accompanying dashboard.",
+   "theme": "Transition",
+   "type": "practice",
+   "strength": "low",
+   "n_records": 1,
+   "n_sources": 1,
+   "n_streams": 1,
+   "streams": [
+    "transcript"
+   ],
+   "countries": [
+    "SDN"
+   ],
+   "tags": [
+    "government-engagement",
+    "information-management",
+    "nexus"
+   ],
+   "actors": [
+    "cluster",
+    "development",
+    "gov-national"
+   ],
+   "record_ids": [
+    "E0411"
+   ],
+   "unmerged": false
+  },
+  {
+   "finding_id": "F603",
+   "statement": "Facility and asset mapping is among the most effective bridges to development actors, because it produces something they need and creates a shared table where sector coordination otherwise has none.",
+   "theme": "Transition",
+   "type": "enabler",
+   "strength": "low",
+   "n_records": 1,
+   "n_sources": 1,
+   "n_streams": 1,
+   "streams": [
+    "transcript"
+   ],
+   "countries": [
+    "SDN"
+   ],
+   "tags": [
+    "government-engagement",
+    "information-management",
+    "nexus"
+   ],
+   "actors": [
+    "cluster",
+    "development",
+    "gov-national"
+   ],
+   "record_ids": [
+    "E0412"
+   ],
+   "unmerged": false
+  },
+  {
+   "finding_id": "F604",
+   "statement": "Recruiting state-level information management support has stalled: the office is reluctant after previous standby deployments, and the cluster is conscious of how its staffing compares with other clusters.",
+   "theme": "Both",
+   "type": "barrier",
+   "strength": "low",
+   "n_records": 1,
+   "n_sources": 1,
+   "n_streams": 1,
+   "streams": [
+    "transcript"
+   ],
+   "countries": [
+    "SDN"
+   ],
+   "tags": [
+    "capacity",
+    "information-management"
+   ],
+   "actors": [
+    "cluster",
+    "un-agency"
+   ],
+   "record_ids": [
+    "E0413"
+   ],
+   "unmerged": false
+  },
+  {
+   "finding_id": "F605",
+   "statement": "The profile needed for state-level information management is hard to fill because the work is not a short emergency deployment: it connects to systems transitioning and to how the cluster will function in future, so it needs someone embedded, in-country and speaking the national language.",
+   "theme": "Both",
+   "type": "barrier",
+   "strength": "low",
+   "n_records": 1,
+   "n_sources": 1,
+   "n_streams": 1,
+   "streams": [
+    "transcript"
+   ],
+   "countries": [
+    "SDN"
+   ],
+   "tags": [
+    "capacity",
+    "localisation",
+    "transition-handover"
+   ],
+   "actors": [
+    "cluster",
+    "local-ngo"
+   ],
+   "record_ids": [
+    "E0414"
+   ],
+   "unmerged": false
+  },
+  {
+   "finding_id": "F606",
+   "statement": "A central reporting platform launched mid-year requires partners to upload projects retroactively from the start of the year, which is not realistic alongside the reporting systems already in use.",
+   "theme": "ABC",
+   "type": "barrier",
+   "strength": "low",
+   "n_records": 1,
+   "n_sources": 1,
+   "n_streams": 1,
+   "streams": [
+    "transcript"
+   ],
+   "countries": [
+    "SDN"
+   ],
+   "tags": [
+    "hpc",
+    "information-management"
+   ],
+   "actors": [
+    "cluster",
+    "ingo",
+    "ocha"
+   ],
+   "record_ids": [
+    "E0415"
+   ],
+   "unmerged": false
+  },
+  {
+   "finding_id": "F607",
+   "statement": "Replacing cluster reporting with a central system changes beneficiary counting, indicators and data flow at once, and is seen by the cluster as reducing its technical leadership over how sector results are measured.",
+   "theme": "ABC",
+   "type": "barrier",
+   "strength": "low",
+   "n_records": 1,
+   "n_sources": 1,
+   "n_streams": 1,
+   "streams": [
+    "transcript"
+   ],
+   "countries": [
+    "SDN"
+   ],
+   "tags": [
+    "coordination-architecture",
+    "information-management",
+    "performance"
+   ],
+   "actors": [
+    "cluster",
+    "ocha"
+   ],
+   "record_ids": [
+    "E0416"
+   ],
+   "unmerged": false
+  },
+  {
+   "finding_id": "F608",
+   "statement": "WASH beneficiary calculation is context-specific — a water yard serves a set number of people in one country and a different number elsewhere, and source types differ between contexts — so a single standardised reporting model risks misrepresenting what the sector delivered.",
+   "theme": "Both",
+   "type": "barrier",
+   "strength": "low",
+   "n_records": 1,
+   "n_sources": 1,
+   "n_streams": 1,
+   "streams": [
+    "transcript"
+   ],
+   "countries": [],
+   "tags": [
+    "information-management",
+    "performance"
+   ],
+   "actors": [
+    "cluster",
+    "ocha"
+   ],
+   "record_ids": [
+    "E0417"
+   ],
+   "unmerged": false
+  },
+  {
+   "finding_id": "F609",
+   "statement": "Where a cluster has a functioning reporting system, an interface bridging it to the central platform would avoid partners reporting twice while keeping the sector calculation with the people who understand it.",
+   "theme": "Both",
+   "type": "recommendation",
+   "strength": "low",
+   "n_records": 1,
+   "n_sources": 1,
+   "n_streams": 1,
+   "streams": [
+    "transcript"
+   ],
+   "countries": [],
+   "tags": [
+    "coordination-architecture",
+    "information-management"
+   ],
+   "actors": [
+    "cluster",
+    "ocha"
+   ],
+   "record_ids": [
+    "E0418"
+   ],
+   "unmerged": false
+  },
+  {
+   "finding_id": "F610",
+   "statement": "Having a cluster coordinator in every one of the eighteen states, which no other cluster has, gives the sector enough technical standing to push back when fragmented parallel structures are proposed.",
+   "theme": "Both",
+   "type": "enabler",
+   "strength": "low",
+   "n_records": 1,
+   "n_sources": 1,
+   "n_streams": 1,
+   "streams": [
+    "transcript"
+   ],
+   "countries": [
+    "SDN"
+   ],
+   "tags": [
+    "capacity",
+    "coordination-architecture"
+   ],
+   "actors": [
+    "cluster"
+   ],
+   "record_ids": [
+    "E0419"
+   ],
+   "unmerged": false
+  },
+  {
+   "finding_id": "F611",
+   "statement": "Some states moved to create a separate outbreak coordination platform with its own information management, which the cluster resisted as a further fragmentation of an already crowded architecture.",
+   "theme": "ABC",
+   "type": "barrier",
+   "strength": "low",
+   "n_records": 1,
+   "n_sources": 1,
+   "n_streams": 1,
+   "streams": [
+    "transcript"
+   ],
+   "countries": [
+    "SDN"
+   ],
+   "tags": [
+    "coordination-architecture",
+    "information-management"
+   ],
+   "actors": [
+    "cluster",
+    "gov-local"
+   ],
+   "record_ids": [
+    "E0420"
+   ],
+   "unmerged": false
+  },
+  {
+   "finding_id": "F612",
+   "statement": "Between sixty-five and seventy partners are registered nationally but more operate in practice, and state platforms carry their own partners who are not always connected to the national platform.",
+   "theme": "ABC",
+   "type": "barrier",
+   "strength": "low",
+   "n_records": 1,
+   "n_sources": 1,
+   "n_streams": 1,
+   "streams": [
+    "transcript"
+   ],
+   "countries": [
+    "SDN"
+   ],
+   "tags": [
+    "coordination-architecture",
+    "information-management",
+    "partnerships"
+   ],
+   "actors": [
+    "cluster",
+    "ingo",
+    "local-ngo"
+   ],
+   "record_ids": [
+    "E0421"
+   ],
+   "unmerged": false
+  },
+  {
+   "finding_id": "F613",
+   "statement": "The most recent census predates the current crisis by close to a decade, so there is no reliable baseline against which needs can be measured.",
+   "theme": "Both",
+   "type": "barrier",
+   "strength": "low",
+   "n_records": 1,
+   "n_sources": 1,
+   "n_streams": 1,
+   "streams": [
+    "transcript"
+   ],
+   "countries": [
+    "SDN"
+   ],
+   "tags": [
+    "hpc",
+    "information-management"
+   ],
+   "actors": [
+    "cluster",
+    "gov-national"
+   ],
+   "record_ids": [
+    "E0422"
+   ],
+   "unmerged": false
+  },
+  {
+   "finding_id": "F614",
+   "statement": "Outbreak coordination cannot be run nationally because epidemiological information is too fragmented to arrive in time, so it has to be organised state by state — in practice coordinating eighteen separate outbreaks with their own data, partners and supply chains.",
+   "theme": "Both",
+   "type": "barrier",
+   "strength": "low",
+   "n_records": 1,
+   "n_sources": 1,
+   "n_streams": 1,
+   "streams": [
+    "transcript"
+   ],
+   "countries": [
+    "SDN"
+   ],
+   "tags": [
+    "capacity",
+    "coordination-architecture",
+    "information-management"
+   ],
+   "actors": [
+    "cluster",
+    "gov-local"
+   ],
+   "record_ids": [
+    "E0423"
+   ],
+   "unmerged": false
+  },
+  {
+   "finding_id": "F615",
+   "statement": "A weekly outbreak coordination training for state coordinators is being delivered alongside development of the guidance and tools it teaches, tailored to the context but potentially reusable elsewhere.",
+   "theme": "Both",
+   "type": "practice",
+   "strength": "low",
+   "n_records": 1,
+   "n_sources": 1,
+   "n_streams": 1,
+   "streams": [
+    "transcript"
+   ],
+   "countries": [
+    "SDN"
+   ],
+   "tags": [
+    "capacity",
+    "peer-learning"
+   ],
+   "actors": [
+    "cluster",
+    "local-ngo"
+   ],
+   "record_ids": [
+    "E0424"
+   ],
+   "unmerged": false
+  },
+  {
+   "finding_id": "F616",
+   "statement": "Rules on collecting location data differ between states, with coordinates permitted in some and prohibited in others, which constrains outbreak response planning.",
+   "theme": "Both",
+   "type": "barrier",
+   "strength": "low",
+   "n_records": 1,
+   "n_sources": 1,
+   "n_streams": 1,
+   "streams": [
+    "transcript"
+   ],
+   "countries": [
+    "SDN"
+   ],
+   "tags": [
+    "data-protection",
+    "information-management"
+   ],
+   "actors": [
+    "cluster",
+    "gov-local"
+   ],
+   "record_ids": [
+    "E0425"
+   ],
+   "unmerged": false
+  },
+  {
+   "finding_id": "F617",
+   "statement": "Water systems are repeatedly targeted in areas of active conflict, so service continuity is interrupted by attack as well as by funding or capacity.",
+   "theme": "Both",
+   "type": "context",
+   "strength": "low",
+   "n_records": 1,
+   "n_sources": 1,
+   "n_streams": 1,
+   "streams": [
+    "transcript"
+   ],
+   "countries": [
+    "SDN"
+   ],
+   "tags": [
+    "sustainability"
+   ],
+   "actors": [
+    "cluster",
+    "community"
+   ],
+   "record_ids": [
+    "E0426"
+   ],
+   "unmerged": false
+  },
+  {
+   "finding_id": "F618",
+   "statement": "The pooled fund prioritisation exercise required localities to be selected within forty-eight hours using a model the cluster considered inadequate, on the understanding it could be refined later; refinement then proved impossible and the initial selection has held for the year.",
+   "theme": "ABC",
+   "type": "barrier",
+   "strength": "low",
+   "n_records": 1,
+   "n_sources": 1,
+   "n_streams": 1,
+   "streams": [
+    "transcript"
+   ],
+   "countries": [
+    "SDN"
+   ],
+   "tags": [
+    "geographic-targeting",
+    "hpc",
+    "pooled-funds"
+   ],
+   "actors": [
+    "cluster",
+    "ocha"
+   ],
+   "record_ids": [
+    "E0427"
+   ],
+   "unmerged": false
+  },
+  {
+   "finding_id": "F619",
+   "statement": "Applying geographic prioritisation to emergency supplies is counterproductive where needs are dispersed: prepositioned stock needs to reach any pocket of need, and outbreaks are now occurring in localities that were not prioritised and cannot be supplied.",
+   "theme": "ABC",
+   "type": "barrier",
+   "strength": "low",
+   "n_records": 1,
+   "n_sources": 1,
+   "n_streams": 1,
+   "streams": [
+    "transcript"
+   ],
+   "countries": [
+    "SDN"
+   ],
+   "tags": [
+    "geographic-targeting",
+    "pooled-funds"
+   ],
+   "actors": [
+    "cluster",
+    "ocha"
+   ],
+   "record_ids": [
+    "E0428"
+   ],
+   "unmerged": false
+  },
+  {
+   "finding_id": "F620",
+   "statement": "A written explanation of why the prioritisation methodology was inadequate produced no change at the time, though an after-action review of the allocation is now underway.",
+   "theme": "ABC",
+   "type": "context",
+   "strength": "low",
+   "n_records": 1,
+   "n_sources": 1,
+   "n_streams": 1,
+   "streams": [
+    "transcript"
+   ],
+   "countries": [
+    "SDN"
+   ],
+   "tags": [
+    "advocacy",
+    "performance",
+    "pooled-funds"
+   ],
+   "actors": [
+    "cluster",
+    "ocha"
+   ],
+   "record_ids": [
+    "E0429"
+   ],
+   "unmerged": false
+  },
+  {
+   "finding_id": "F621",
+   "statement": "A single strategic outcome set at humanitarian coordinator level gives the allocation coherence but leaves substantial sector gaps outside the scope of the main humanitarian fund.",
+   "theme": "ABC",
+   "type": "barrier",
+   "strength": "low",
+   "n_records": 1,
+   "n_sources": 1,
+   "n_streams": 1,
+   "streams": [
+    "transcript"
+   ],
+   "countries": [
+    "SDN"
+   ],
+   "tags": [
+    "funding",
+    "pooled-funds"
+   ],
+   "actors": [
+    "cluster",
+    "ocha"
+   ],
+   "record_ids": [
+    "E0430"
+   ],
+   "unmerged": false
+  },
+  {
+   "finding_id": "F622",
+   "statement": "The pooled fund grant management system offers outputs and indicators structured only around water, sanitation and hygiene, with no public health framing, so partners cannot build an outbreak response strategy within it and end up doing appropriate work in the wrong locations.",
+   "theme": "Both",
+   "type": "barrier",
+   "strength": "low",
+   "n_records": 1,
+   "n_sources": 1,
+   "n_streams": 1,
+   "streams": [
+    "transcript"
+   ],
+   "countries": [],
+   "tags": [
+    "information-management",
+    "performance",
+    "pooled-funds"
+   ],
+   "actors": [
+    "cluster",
+    "ocha"
+   ],
+   "record_ids": [
+    "E0431"
+   ],
+   "unmerged": false
+  },
+  {
+   "finding_id": "F623",
+   "statement": "Adding public health outcomes and indicators to pooled fund reporting structures would let outbreak response be planned and measured as transmission reduction rather than as separate water, sanitation and hygiene outputs.",
+   "theme": "Both",
+   "type": "recommendation",
+   "strength": "low",
+   "n_records": 1,
+   "n_sources": 1,
+   "n_streams": 1,
+   "streams": [
+    "transcript"
+   ],
+   "countries": [],
+   "tags": [
+    "performance",
+    "pooled-funds"
+   ],
+   "actors": [
+    "cluster",
+    "ocha"
+   ],
+   "record_ids": [
+    "E0432"
+   ],
+   "unmerged": false
+  },
+  {
+   "finding_id": "F624",
+   "statement": "Development and reconstruction finance from development banks is channelled through UN agencies because it cannot be given directly to government, creating a parallel and much larger funding stream alongside the humanitarian one.",
+   "theme": "Transition",
+   "type": "context",
+   "strength": "low",
+   "n_records": 1,
+   "n_sources": 1,
+   "n_streams": 1,
+   "streams": [
+    "transcript"
+   ],
+   "countries": [
+    "SDN"
+   ],
+   "tags": [
+    "funding",
+    "nexus"
+   ],
+   "actors": [
+    "development",
+    "gov-national",
+    "un-agency"
+   ],
+   "record_ids": [
+    "E0433"
+   ],
+   "unmerged": false
+  },
+  {
+   "finding_id": "F625",
+   "statement": "After a survey exposed water supply gaps, a bilateral donor funded six semi-decentralised systems designed to exit water trucking, with a joint cluster concept note, a steering committee overseeing installation, and explicit decisions on operating costs and whether management would be community-based or utility-run.",
+   "theme": "Transition",
+   "type": "enabler",
+   "strength": "low",
+   "n_records": 1,
+   "n_sources": 1,
+   "n_streams": 1,
+   "streams": [
+    "transcript"
+   ],
+   "countries": [
+    "SDN"
+   ],
+   "tags": [
+    "funding",
+    "nexus",
+    "partnerships",
+    "sustainability"
+   ],
+   "actors": [
+    "cluster",
+    "community",
+    "donor",
+    "un-agency"
+   ],
+   "record_ids": [
+    "E0434"
+   ],
+   "unmerged": false
+  },
+  {
+   "finding_id": "F626",
+   "statement": "A six-month cluster report brings together response progress, coordination progress, financial status, the core supply pipeline, a facility assessment and partner case studies in a single product.",
+   "theme": "Both",
+   "type": "practice",
+   "strength": "low",
+   "n_records": 1,
+   "n_sources": 1,
+   "n_streams": 1,
+   "streams": [
+    "transcript"
+   ],
+   "countries": [
+    "SDN"
+   ],
+   "tags": [
+    "information-management",
+    "performance"
+   ],
+   "actors": [
+    "cluster"
+   ],
+   "record_ids": [
+    "E0435"
    ],
    "unmerged": false
   }
@@ -18116,6 +18908,786 @@ window.SITE_DATA = {
    "date_collected": "2026-08-03",
    "confidence": "high",
    "status": "draft"
+  },
+  {
+   "id": "E0404",
+   "finding_id": "F225",
+   "theme": "Both",
+   "type": "barrier",
+   "statement": "All eighteen state cluster coordinator posts are filled by double-hatting staff, in several cases alongside an NGO co-coordinator, so subnational coordination runs entirely on borrowed capacity.",
+   "level": "subnational",
+   "countries": [
+    "SDN"
+   ],
+   "actors": [
+    "cluster",
+    "ingo"
+   ],
+   "tags": [
+    "capacity",
+    "coordination-architecture"
+   ],
+   "stream": "transcript",
+   "source_id": "S104",
+   "date_collected": "2026-07-27",
+   "confidence": "high",
+   "status": "draft"
+  },
+  {
+   "id": "E0405",
+   "finding_id": "F019",
+   "theme": "Both",
+   "type": "barrier",
+   "statement": "The second coordination post is a temporary appointment unlikely to survive the current budget review, leaving no certainty that two coordination positions exist next year.",
+   "level": "national",
+   "countries": [
+    "SDN"
+   ],
+   "actors": [
+    "un-agency",
+    "cluster"
+   ],
+   "tags": [
+    "funding",
+    "capacity",
+    "staff-turnover"
+   ],
+   "stream": "transcript",
+   "source_id": "S104",
+   "date_collected": "2026-07-27",
+   "confidence": "high",
+   "status": "draft"
+  },
+  {
+   "id": "E0406",
+   "finding_id": "F386",
+   "theme": "Transition",
+   "type": "enabler",
+   "statement": "A national co-coordinator drawn from a Sudanese NGO supports the team, and a second is planned, both to ease workload and to give local NGOs a national counterpart they can approach directly.",
+   "level": "national",
+   "countries": [
+    "SDN"
+   ],
+   "actors": [
+    "local-ngo",
+    "cluster"
+   ],
+   "tags": [
+    "localisation",
+    "capacity",
+    "partnerships"
+   ],
+   "stream": "transcript",
+   "source_id": "S104",
+   "date_collected": "2026-07-27",
+   "confidence": "high",
+   "status": "draft"
+  },
+  {
+   "id": "E0407",
+   "finding_id": "F053",
+   "theme": "Both",
+   "type": "barrier",
+   "statement": "Vulnerability analysis presented previously was not taken up by partners because it did not speak to them: the framework was not well understood and what it prioritised did not match what partners observed in the field.",
+   "level": "national",
+   "countries": [
+    "SDN"
+   ],
+   "actors": [
+    "cluster",
+    "un-agency"
+   ],
+   "tags": [
+    "information-management",
+    "hpc"
+   ],
+   "stream": "transcript",
+   "source_id": "S104",
+   "date_collected": "2026-07-27",
+   "confidence": "high",
+   "status": "draft"
+  },
+  {
+   "id": "E0408",
+   "finding_id": "F214",
+   "theme": "ABC",
+   "type": "barrier",
+   "statement": "A new central planning and reporting platform is being introduced alongside the cluster existing reporting system, which would leave partners reporting the same activity twice.",
+   "level": "national",
+   "countries": [
+    "SDN"
+   ],
+   "actors": [
+    "ocha",
+    "cluster",
+    "ingo"
+   ],
+   "tags": [
+    "information-management",
+    "coordination-architecture",
+    "hpc"
+   ],
+   "stream": "transcript",
+   "source_id": "S104",
+   "date_collected": "2026-07-27",
+   "confidence": "high",
+   "status": "draft"
+  },
+  {
+   "id": "E0409",
+   "finding_id": "F600",
+   "theme": "Both",
+   "type": "enabler",
+   "statement": "State-level expert judgement is built into the severity and needs analysis alongside the survey results, because data quality and the pace of change make survey data alone unreliable and the eighteen state coordination platforms hold genuine field knowledge.",
+   "level": "subnational",
+   "countries": [
+    "SDN"
+   ],
+   "actors": [
+    "cluster",
+    "local-ngo"
+   ],
+   "tags": [
+    "hpc",
+    "information-management",
+    "localisation"
+   ],
+   "stream": "transcript",
+   "source_id": "S104",
+   "date_collected": "2026-07-27",
+   "confidence": "high",
+   "status": "draft"
+  },
+  {
+   "id": "E0410",
+   "finding_id": "F601",
+   "theme": "Both",
+   "type": "enabler",
+   "statement": "Running the expert judgement exercise as a single process covering needs figures, vulnerability analysis and planning together engages state coordinators in the analysis rather than presenting them with a finished product.",
+   "level": "national",
+   "countries": [
+    "SDN"
+   ],
+   "actors": [
+    "cluster",
+    "local-ngo"
+   ],
+   "tags": [
+    "hpc",
+    "information-management"
+   ],
+   "stream": "transcript",
+   "source_id": "S104",
+   "date_collected": "2026-07-27",
+   "confidence": "high",
+   "status": "draft"
+  },
+  {
+   "id": "E0411",
+   "finding_id": "F602",
+   "theme": "Transition",
+   "type": "practice",
+   "statement": "An assessment of more than sixteen hundred water points, heading toward twenty-two hundred, was presented to a government-development water task force with an accompanying dashboard.",
+   "level": "national",
+   "countries": [
+    "SDN"
+   ],
+   "actors": [
+    "gov-national",
+    "development",
+    "cluster"
+   ],
+   "tags": [
+    "information-management",
+    "nexus",
+    "government-engagement"
+   ],
+   "stream": "transcript",
+   "source_id": "S104",
+   "date_collected": "2026-07-27",
+   "confidence": "high",
+   "status": "draft"
+  },
+  {
+   "id": "E0412",
+   "finding_id": "F603",
+   "theme": "Transition",
+   "type": "enabler",
+   "statement": "Facility and asset mapping is among the most effective bridges to development actors, because it produces something they need and creates a shared table where sector coordination otherwise has none.",
+   "level": "national",
+   "countries": [
+    "SDN"
+   ],
+   "actors": [
+    "development",
+    "gov-national",
+    "cluster"
+   ],
+   "tags": [
+    "nexus",
+    "information-management",
+    "government-engagement"
+   ],
+   "stream": "transcript",
+   "source_id": "S104",
+   "date_collected": "2026-07-27",
+   "confidence": "high",
+   "status": "draft"
+  },
+  {
+   "id": "E0413",
+   "finding_id": "F604",
+   "theme": "Both",
+   "type": "barrier",
+   "statement": "Recruiting state-level information management support has stalled: the office is reluctant after previous standby deployments, and the cluster is conscious of how its staffing compares with other clusters.",
+   "level": "subnational",
+   "countries": [
+    "SDN"
+   ],
+   "actors": [
+    "un-agency",
+    "cluster"
+   ],
+   "tags": [
+    "capacity",
+    "information-management"
+   ],
+   "stream": "transcript",
+   "source_id": "S104",
+   "date_collected": "2026-07-27",
+   "confidence": "high",
+   "status": "draft"
+  },
+  {
+   "id": "E0414",
+   "finding_id": "F605",
+   "theme": "Both",
+   "type": "barrier",
+   "statement": "The profile needed for state-level information management is hard to fill because the work is not a short emergency deployment: it connects to systems transitioning and to how the cluster will function in future, so it needs someone embedded, in-country and speaking the national language.",
+   "level": "national",
+   "countries": [
+    "SDN"
+   ],
+   "actors": [
+    "cluster",
+    "local-ngo"
+   ],
+   "tags": [
+    "capacity",
+    "localisation",
+    "transition-handover"
+   ],
+   "stream": "transcript",
+   "source_id": "S104",
+   "date_collected": "2026-07-27",
+   "confidence": "high",
+   "status": "draft"
+  },
+  {
+   "id": "E0415",
+   "finding_id": "F606",
+   "theme": "ABC",
+   "type": "barrier",
+   "statement": "A central reporting platform launched mid-year requires partners to upload projects retroactively from the start of the year, which is not realistic alongside the reporting systems already in use.",
+   "level": "national",
+   "countries": [
+    "SDN"
+   ],
+   "actors": [
+    "ocha",
+    "ingo",
+    "cluster"
+   ],
+   "tags": [
+    "hpc",
+    "information-management"
+   ],
+   "stream": "transcript",
+   "source_id": "S104",
+   "date_collected": "2026-07-27",
+   "confidence": "high",
+   "status": "draft"
+  },
+  {
+   "id": "E0416",
+   "finding_id": "F607",
+   "theme": "ABC",
+   "type": "barrier",
+   "statement": "Replacing cluster reporting with a central system changes beneficiary counting, indicators and data flow at once, and is seen by the cluster as reducing its technical leadership over how sector results are measured.",
+   "level": "national",
+   "countries": [
+    "SDN"
+   ],
+   "actors": [
+    "ocha",
+    "cluster"
+   ],
+   "tags": [
+    "information-management",
+    "performance",
+    "coordination-architecture"
+   ],
+   "stream": "transcript",
+   "source_id": "S104",
+   "date_collected": "2026-07-27",
+   "confidence": "high",
+   "status": "draft"
+  },
+  {
+   "id": "E0417",
+   "finding_id": "F608",
+   "theme": "Both",
+   "type": "barrier",
+   "statement": "WASH beneficiary calculation is context-specific — a water yard serves a set number of people in one country and a different number elsewhere, and source types differ between contexts — so a single standardised reporting model risks misrepresenting what the sector delivered.",
+   "level": "global",
+   "countries": [],
+   "actors": [
+    "cluster",
+    "ocha"
+   ],
+   "tags": [
+    "information-management",
+    "performance"
+   ],
+   "stream": "transcript",
+   "source_id": "S104",
+   "date_collected": "2026-07-27",
+   "confidence": "high",
+   "status": "draft"
+  },
+  {
+   "id": "E0418",
+   "finding_id": "F609",
+   "theme": "Both",
+   "type": "recommendation",
+   "statement": "Where a cluster has a functioning reporting system, an interface bridging it to the central platform would avoid partners reporting twice while keeping the sector calculation with the people who understand it.",
+   "level": "global",
+   "countries": [],
+   "actors": [
+    "cluster",
+    "ocha"
+   ],
+   "tags": [
+    "information-management",
+    "coordination-architecture"
+   ],
+   "stream": "transcript",
+   "source_id": "S104",
+   "date_collected": "2026-07-27",
+   "confidence": "high",
+   "status": "draft"
+  },
+  {
+   "id": "E0419",
+   "finding_id": "F610",
+   "theme": "Both",
+   "type": "enabler",
+   "statement": "Having a cluster coordinator in every one of the eighteen states, which no other cluster has, gives the sector enough technical standing to push back when fragmented parallel structures are proposed.",
+   "level": "subnational",
+   "countries": [
+    "SDN"
+   ],
+   "actors": [
+    "cluster"
+   ],
+   "tags": [
+    "coordination-architecture",
+    "capacity"
+   ],
+   "stream": "transcript",
+   "source_id": "S104",
+   "date_collected": "2026-07-27",
+   "confidence": "high",
+   "status": "draft"
+  },
+  {
+   "id": "E0420",
+   "finding_id": "F611",
+   "theme": "ABC",
+   "type": "barrier",
+   "statement": "Some states moved to create a separate outbreak coordination platform with its own information management, which the cluster resisted as a further fragmentation of an already crowded architecture.",
+   "level": "subnational",
+   "countries": [
+    "SDN"
+   ],
+   "actors": [
+    "cluster",
+    "gov-local"
+   ],
+   "tags": [
+    "coordination-architecture",
+    "information-management"
+   ],
+   "stream": "transcript",
+   "source_id": "S104",
+   "date_collected": "2026-07-27",
+   "confidence": "high",
+   "status": "draft"
+  },
+  {
+   "id": "E0421",
+   "finding_id": "F612",
+   "theme": "ABC",
+   "type": "barrier",
+   "statement": "Between sixty-five and seventy partners are registered nationally but more operate in practice, and state platforms carry their own partners who are not always connected to the national platform.",
+   "level": "national",
+   "countries": [
+    "SDN"
+   ],
+   "actors": [
+    "cluster",
+    "ingo",
+    "local-ngo"
+   ],
+   "tags": [
+    "coordination-architecture",
+    "information-management",
+    "partnerships"
+   ],
+   "stream": "transcript",
+   "source_id": "S104",
+   "date_collected": "2026-07-27",
+   "confidence": "high",
+   "status": "draft"
+  },
+  {
+   "id": "E0422",
+   "finding_id": "F613",
+   "theme": "Both",
+   "type": "barrier",
+   "statement": "The most recent census predates the current crisis by close to a decade, so there is no reliable baseline against which needs can be measured.",
+   "level": "national",
+   "countries": [
+    "SDN"
+   ],
+   "actors": [
+    "cluster",
+    "gov-national"
+   ],
+   "tags": [
+    "information-management",
+    "hpc"
+   ],
+   "stream": "transcript",
+   "source_id": "S104",
+   "date_collected": "2026-07-27",
+   "confidence": "high",
+   "status": "draft"
+  },
+  {
+   "id": "E0423",
+   "finding_id": "F614",
+   "theme": "Both",
+   "type": "barrier",
+   "statement": "Outbreak coordination cannot be run nationally because epidemiological information is too fragmented to arrive in time, so it has to be organised state by state — in practice coordinating eighteen separate outbreaks with their own data, partners and supply chains.",
+   "level": "subnational",
+   "countries": [
+    "SDN"
+   ],
+   "actors": [
+    "cluster",
+    "gov-local"
+   ],
+   "tags": [
+    "coordination-architecture",
+    "information-management",
+    "capacity"
+   ],
+   "stream": "transcript",
+   "source_id": "S104",
+   "date_collected": "2026-07-27",
+   "confidence": "high",
+   "status": "draft"
+  },
+  {
+   "id": "E0424",
+   "finding_id": "F615",
+   "theme": "Both",
+   "type": "practice",
+   "statement": "A weekly outbreak coordination training for state coordinators is being delivered alongside development of the guidance and tools it teaches, tailored to the context but potentially reusable elsewhere.",
+   "level": "national",
+   "countries": [
+    "SDN"
+   ],
+   "actors": [
+    "cluster",
+    "local-ngo"
+   ],
+   "tags": [
+    "capacity",
+    "peer-learning"
+   ],
+   "stream": "transcript",
+   "source_id": "S104",
+   "date_collected": "2026-07-27",
+   "confidence": "high",
+   "status": "draft"
+  },
+  {
+   "id": "E0425",
+   "finding_id": "F616",
+   "theme": "Both",
+   "type": "barrier",
+   "statement": "Rules on collecting location data differ between states, with coordinates permitted in some and prohibited in others, which constrains outbreak response planning.",
+   "level": "subnational",
+   "countries": [
+    "SDN"
+   ],
+   "actors": [
+    "gov-local",
+    "cluster"
+   ],
+   "tags": [
+    "data-protection",
+    "information-management"
+   ],
+   "stream": "transcript",
+   "source_id": "S104",
+   "date_collected": "2026-07-27",
+   "confidence": "high",
+   "status": "draft"
+  },
+  {
+   "id": "E0426",
+   "finding_id": "F617",
+   "theme": "Both",
+   "type": "context",
+   "statement": "Water systems are repeatedly targeted in areas of active conflict, so service continuity is interrupted by attack as well as by funding or capacity.",
+   "level": "subnational",
+   "countries": [
+    "SDN"
+   ],
+   "actors": [
+    "community",
+    "cluster"
+   ],
+   "tags": [
+    "sustainability"
+   ],
+   "stream": "transcript",
+   "source_id": "S104",
+   "date_collected": "2026-07-27",
+   "confidence": "high",
+   "status": "draft"
+  },
+  {
+   "id": "E0427",
+   "finding_id": "F618",
+   "theme": "ABC",
+   "type": "barrier",
+   "statement": "The pooled fund prioritisation exercise required localities to be selected within forty-eight hours using a model the cluster considered inadequate, on the understanding it could be refined later; refinement then proved impossible and the initial selection has held for the year.",
+   "level": "national",
+   "countries": [
+    "SDN"
+   ],
+   "actors": [
+    "ocha",
+    "cluster"
+   ],
+   "tags": [
+    "pooled-funds",
+    "geographic-targeting",
+    "hpc"
+   ],
+   "stream": "transcript",
+   "source_id": "S104",
+   "date_collected": "2026-07-27",
+   "confidence": "high",
+   "status": "draft"
+  },
+  {
+   "id": "E0428",
+   "finding_id": "F619",
+   "theme": "ABC",
+   "type": "barrier",
+   "statement": "Applying geographic prioritisation to emergency supplies is counterproductive where needs are dispersed: prepositioned stock needs to reach any pocket of need, and outbreaks are now occurring in localities that were not prioritised and cannot be supplied.",
+   "level": "national",
+   "countries": [
+    "SDN"
+   ],
+   "actors": [
+    "ocha",
+    "cluster"
+   ],
+   "tags": [
+    "pooled-funds",
+    "geographic-targeting"
+   ],
+   "stream": "transcript",
+   "source_id": "S104",
+   "date_collected": "2026-07-27",
+   "confidence": "high",
+   "status": "draft"
+  },
+  {
+   "id": "E0429",
+   "finding_id": "F620",
+   "theme": "ABC",
+   "type": "context",
+   "statement": "A written explanation of why the prioritisation methodology was inadequate produced no change at the time, though an after-action review of the allocation is now underway.",
+   "level": "national",
+   "countries": [
+    "SDN"
+   ],
+   "actors": [
+    "ocha",
+    "cluster"
+   ],
+   "tags": [
+    "pooled-funds",
+    "advocacy",
+    "performance"
+   ],
+   "stream": "transcript",
+   "source_id": "S104",
+   "date_collected": "2026-07-27",
+   "confidence": "high",
+   "status": "draft"
+  },
+  {
+   "id": "E0430",
+   "finding_id": "F621",
+   "theme": "ABC",
+   "type": "barrier",
+   "statement": "A single strategic outcome set at humanitarian coordinator level gives the allocation coherence but leaves substantial sector gaps outside the scope of the main humanitarian fund.",
+   "level": "national",
+   "countries": [
+    "SDN"
+   ],
+   "actors": [
+    "ocha",
+    "cluster"
+   ],
+   "tags": [
+    "pooled-funds",
+    "funding"
+   ],
+   "stream": "transcript",
+   "source_id": "S104",
+   "date_collected": "2026-07-27",
+   "confidence": "high",
+   "status": "draft"
+  },
+  {
+   "id": "E0431",
+   "finding_id": "F622",
+   "theme": "Both",
+   "type": "barrier",
+   "statement": "The pooled fund grant management system offers outputs and indicators structured only around water, sanitation and hygiene, with no public health framing, so partners cannot build an outbreak response strategy within it and end up doing appropriate work in the wrong locations.",
+   "level": "global",
+   "countries": [],
+   "actors": [
+    "ocha",
+    "cluster"
+   ],
+   "tags": [
+    "pooled-funds",
+    "performance",
+    "information-management"
+   ],
+   "stream": "transcript",
+   "source_id": "S104",
+   "date_collected": "2026-07-27",
+   "confidence": "high",
+   "status": "draft"
+  },
+  {
+   "id": "E0432",
+   "finding_id": "F623",
+   "theme": "Both",
+   "type": "recommendation",
+   "statement": "Adding public health outcomes and indicators to pooled fund reporting structures would let outbreak response be planned and measured as transmission reduction rather than as separate water, sanitation and hygiene outputs.",
+   "level": "global",
+   "countries": [],
+   "actors": [
+    "ocha",
+    "cluster"
+   ],
+   "tags": [
+    "pooled-funds",
+    "performance"
+   ],
+   "stream": "transcript",
+   "source_id": "S104",
+   "date_collected": "2026-07-27",
+   "confidence": "high",
+   "status": "draft"
+  },
+  {
+   "id": "E0433",
+   "finding_id": "F624",
+   "theme": "Transition",
+   "type": "context",
+   "statement": "Development and reconstruction finance from development banks is channelled through UN agencies because it cannot be given directly to government, creating a parallel and much larger funding stream alongside the humanitarian one.",
+   "level": "national",
+   "countries": [
+    "SDN"
+   ],
+   "actors": [
+    "development",
+    "un-agency",
+    "gov-national"
+   ],
+   "tags": [
+    "nexus",
+    "funding"
+   ],
+   "stream": "transcript",
+   "source_id": "S104",
+   "date_collected": "2026-07-27",
+   "confidence": "high",
+   "status": "draft"
+  },
+  {
+   "id": "E0434",
+   "finding_id": "F625",
+   "theme": "Transition",
+   "type": "enabler",
+   "statement": "After a survey exposed water supply gaps, a bilateral donor funded six semi-decentralised systems designed to exit water trucking, with a joint cluster concept note, a steering committee overseeing installation, and explicit decisions on operating costs and whether management would be community-based or utility-run.",
+   "level": "subnational",
+   "countries": [
+    "SDN"
+   ],
+   "actors": [
+    "donor",
+    "un-agency",
+    "cluster",
+    "community"
+   ],
+   "tags": [
+    "nexus",
+    "sustainability",
+    "funding",
+    "partnerships"
+   ],
+   "stream": "transcript",
+   "source_id": "S104",
+   "date_collected": "2026-07-27",
+   "confidence": "high",
+   "status": "draft"
+  },
+  {
+   "id": "E0435",
+   "finding_id": "F626",
+   "theme": "Both",
+   "type": "practice",
+   "statement": "A six-month cluster report brings together response progress, coordination progress, financial status, the core supply pipeline, a facility assessment and partner case studies in a single product.",
+   "level": "national",
+   "countries": [
+    "SDN"
+   ],
+   "actors": [
+    "cluster"
+   ],
+   "tags": [
+    "performance",
+    "information-management"
+   ],
+   "stream": "transcript",
+   "source_id": "S104",
+   "date_collected": "2026-07-27",
+   "confidence": "high",
+   "status": "draft"
   }
  ],
  "sources": [
@@ -19324,6 +20896,19 @@ window.SITE_DATA = {
    "url": "",
    "stream": "transcript",
    "date_added": "2026-08-03",
+   "access": "restricted",
+   "legacy_id": "",
+   "source_group": ""
+  },
+  {
+   "source_id": "S104",
+   "title": "Country consultation — Sudan",
+   "organisation": "Global WASH Cluster",
+   "year": "2026",
+   "type": "interview",
+   "url": "",
+   "stream": "transcript",
+   "date_added": "2026-07-27",
    "access": "restricted",
    "legacy_id": "",
    "source_group": ""
