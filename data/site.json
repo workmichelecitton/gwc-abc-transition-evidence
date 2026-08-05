@@ -66,9 +66,9 @@
  "generated": "2026-08-05",
  "taxonomy_version": "0.4.0",
  "stats": {
-  "records": 499,
-  "findings": 388,
-  "sources": 98,
+  "records": 539,
+  "findings": 419,
+  "sources": 100,
   "countries": 25,
   "withheld_internal": 1
  },
@@ -474,6 +474,35 @@
     "plain": "Area-based structures and clusters frequently run in parallel rather than together. The same information gets collected twice, reported twice, or takes a long route before reaching anyone who can act on it. Partners carry the extra load.",
     "so_what": "Agree in writing who sends what to whom, and who decides what, before the structure starts work."
    }
+  },
+  {
+   "finding_id": "F002",
+   "statement": "The coordination structure mirrors the government structure: each province has a provincial administration able to take decisions without referring to the capital, so provincial coordination has a counterpart with real authority.",
+   "theme": "ABC",
+   "type": "enabler",
+   "strength": "low",
+   "n_records": 1,
+   "n_sources": 1,
+   "n_streams": 1,
+   "streams": [
+    "transcript"
+   ],
+   "countries": [
+    "MOZ"
+   ],
+   "tags": [
+    "coordination-architecture",
+    "government-engagement",
+    "localisation"
+   ],
+   "actors": [
+    "cluster",
+    "gov-local"
+   ],
+   "record_ids": [
+    "E0531"
+   ],
+   "unmerged": false
   },
   {
    "finding_id": "F010",
@@ -1078,8 +1107,8 @@
    "theme": "Both",
    "type": "barrier",
    "strength": "high",
-   "n_records": 4,
-   "n_sources": 4,
+   "n_records": 5,
+   "n_sources": 5,
    "n_streams": 2,
    "streams": [
     "sdr",
@@ -1088,12 +1117,14 @@
    "countries": [
     "BGD",
     "COL",
+    "HTI",
     "SOM"
    ],
    "tags": [
     "capacity",
     "funding",
     "information-management",
+    "performance",
     "transition-handover"
    ],
    "actors": [
@@ -1105,7 +1136,8 @@
     "E0034",
     "E0240",
     "E0376",
-    "E0494"
+    "E0494",
+    "E0513"
    ],
    "unmerged": false,
    "highlight": {
@@ -2772,6 +2804,291 @@
    "unmerged": false
   },
   {
+   "finding_id": "F1100",
+   "statement": "The emergency classification is being stepped down while the crisis itself continues, which the sector expects to reduce institutional attention rather than reflect improved conditions.",
+   "theme": "Transition",
+   "type": "context",
+   "strength": "low",
+   "n_records": 1,
+   "n_sources": 1,
+   "n_streams": 1,
+   "streams": [
+    "transcript"
+   ],
+   "countries": [
+    "HTI"
+   ],
+   "tags": [
+    "advocacy",
+    "funding"
+   ],
+   "actors": [
+    "cluster",
+    "un-agency"
+   ],
+   "record_ids": [
+    "E0515"
+   ],
+   "unmerged": false
+  },
+  {
+   "finding_id": "F1101",
+   "statement": "After several years of limited engagement, the national water authority became noticeably more active over recent months following a new appointment, and has begun facilitating meetings itself.",
+   "theme": "Transition",
+   "type": "enabler",
+   "strength": "low",
+   "n_records": 1,
+   "n_sources": 1,
+   "n_streams": 1,
+   "streams": [
+    "transcript"
+   ],
+   "countries": [
+    "HTI"
+   ],
+   "tags": [
+    "coordination-architecture",
+    "government-engagement"
+   ],
+   "actors": [
+    "cluster",
+    "gov-national"
+   ],
+   "record_ids": [
+    "E0516"
+   ],
+   "unmerged": false
+  },
+  {
+   "finding_id": "F1102",
+   "statement": "The authority position is that national-level co-leadership is not needed, and that support should instead go to strengthening coordination at subnational level with NGO involvement.",
+   "theme": "Transition",
+   "type": "context",
+   "strength": "low",
+   "n_records": 1,
+   "n_sources": 1,
+   "n_streams": 1,
+   "streams": [
+    "transcript"
+   ],
+   "countries": [
+    "HTI"
+   ],
+   "tags": [
+    "coordination-architecture",
+    "government-engagement",
+    "localisation"
+   ],
+   "actors": [
+    "gov-national",
+    "local-ngo"
+   ],
+   "record_ids": [
+    "E0517"
+   ],
+   "unmerged": false
+  },
+  {
+   "finding_id": "F1103",
+   "statement": "Coordination operates as a government-led sector rather than an activated cluster, because the government does not want cluster activation.",
+   "theme": "Transition",
+   "type": "context",
+   "strength": "low",
+   "n_records": 1,
+   "n_sources": 1,
+   "n_streams": 1,
+   "streams": [
+    "transcript"
+   ],
+   "countries": [
+    "HTI"
+   ],
+   "tags": [
+    "coordination-architecture",
+    "government-engagement"
+   ],
+   "actors": [
+    "gov-national",
+    "ocha"
+   ],
+   "record_ids": [
+    "E0518"
+   ],
+   "unmerged": false
+  },
+  {
+   "finding_id": "F1104",
+   "statement": "From the start of next year the coordinator and information manager posts will be nationalised, with government continuing its leadership and an NGO expected to co-facilitate at national or subnational level.",
+   "theme": "Transition",
+   "type": "practice",
+   "strength": "low",
+   "n_records": 1,
+   "n_sources": 1,
+   "n_streams": 1,
+   "streams": [
+    "transcript"
+   ],
+   "countries": [
+    "HTI"
+   ],
+   "tags": [
+    "coordination-architecture",
+    "localisation",
+    "transition-handover"
+   ],
+   "actors": [
+    "gov-national",
+    "local-ngo",
+    "un-agency"
+   ],
+   "record_ids": [
+    "E0519"
+   ],
+   "unmerged": false
+  },
+  {
+   "finding_id": "F1105",
+   "statement": "A national NGO has expressed interest in co-leadership and sustained that interest for over a year, giving the sector a candidate already familiar with the response.",
+   "theme": "Transition",
+   "type": "enabler",
+   "strength": "low",
+   "n_records": 1,
+   "n_sources": 1,
+   "n_streams": 1,
+   "streams": [
+    "transcript"
+   ],
+   "countries": [
+    "HTI"
+   ],
+   "tags": [
+    "localisation",
+    "partnerships"
+   ],
+   "actors": [
+    "cluster",
+    "local-ngo"
+   ],
+   "record_ids": [
+    "E0520"
+   ],
+   "unmerged": false
+  },
+  {
+   "finding_id": "F1106",
+   "statement": "The plan is to recruit the incoming national coordinator during the final quarter so there is an overlap of several weeks with the departing coordinator, allowing handover on the job.",
+   "theme": "Transition",
+   "type": "practice",
+   "strength": "low",
+   "n_records": 1,
+   "n_sources": 1,
+   "n_streams": 1,
+   "streams": [
+    "transcript"
+   ],
+   "countries": [
+    "HTI"
+   ],
+   "tags": [
+    "capacity",
+    "staff-turnover",
+    "transition-handover"
+   ],
+   "actors": [
+    "cluster",
+    "un-agency"
+   ],
+   "record_ids": [
+    "E0521"
+   ],
+   "unmerged": false
+  },
+  {
+   "finding_id": "F1107",
+   "statement": "An information management recruitment funded from secured resources was frozen when the office established it could not cover the salary into the following year, leaving the function unstaffed.",
+   "theme": "Both",
+   "type": "barrier",
+   "strength": "low",
+   "n_records": 1,
+   "n_sources": 1,
+   "n_streams": 1,
+   "streams": [
+    "transcript"
+   ],
+   "countries": [
+    "HTI"
+   ],
+   "tags": [
+    "capacity",
+    "funding",
+    "information-management"
+   ],
+   "actors": [
+    "cluster",
+    "un-agency"
+   ],
+   "record_ids": [
+    "E0522"
+   ],
+   "unmerged": false
+  },
+  {
+   "finding_id": "F1108",
+   "statement": "A standby request for an information manager produced candidates that were not validated, and the deployment that followed was assigned to another sector.",
+   "theme": "Both",
+   "type": "barrier",
+   "strength": "low",
+   "n_records": 1,
+   "n_sources": 1,
+   "n_streams": 1,
+   "streams": [
+    "transcript"
+   ],
+   "countries": [
+    "HTI"
+   ],
+   "tags": [
+    "capacity",
+    "information-management"
+   ],
+   "actors": [
+    "cluster",
+    "un-agency"
+   ],
+   "record_ids": [
+    "E0523"
+   ],
+   "unmerged": false
+  },
+  {
+   "finding_id": "F1109",
+   "statement": "The information management post was filled at a level below what the role requires, and a coordinator without information management background is not placed to close that gap.",
+   "theme": "Both",
+   "type": "barrier",
+   "strength": "low",
+   "n_records": 1,
+   "n_sources": 1,
+   "n_streams": 1,
+   "streams": [
+    "transcript"
+   ],
+   "countries": [
+    "HTI"
+   ],
+   "tags": [
+    "capacity",
+    "information-management"
+   ],
+   "actors": [
+    "cluster",
+    "un-agency"
+   ],
+   "record_ids": [
+    "E0524"
+   ],
+   "unmerged": false
+  },
+  {
    "finding_id": "F111",
    "statement": "Issue guidance on deactivation thresholds and successor scoping — Coordinators asked for practical guidance on when government-led coordination is realistic — including partner-count and complexity thresholds (a government can coordinate six partners;",
    "theme": "Transition",
@@ -2796,6 +3113,177 @@
     "E0084",
     "E0085",
     "E0086"
+   ],
+   "unmerged": false
+  },
+  {
+   "finding_id": "F1110",
+   "statement": "A three-month deployment is arriving to build the capacity of volunteer information officers covering two sectors, though the deployee background is in another sector rather than WASH.",
+   "theme": "Both",
+   "type": "practice",
+   "strength": "low",
+   "n_records": 1,
+   "n_sources": 1,
+   "n_streams": 1,
+   "streams": [
+    "transcript"
+   ],
+   "countries": [
+    "HTI"
+   ],
+   "tags": [
+    "capacity",
+    "information-management"
+   ],
+   "actors": [
+    "cluster",
+    "un-agency"
+   ],
+   "record_ids": [
+    "E0525"
+   ],
+   "unmerged": false
+  },
+  {
+   "finding_id": "F1111",
+   "statement": "If coordination moves to NGO co-facilitation, the incoming organisation will need structured training and induction rather than an assumption that it can absorb the role directly.",
+   "theme": "Transition",
+   "type": "recommendation",
+   "strength": "low",
+   "n_records": 1,
+   "n_sources": 1,
+   "n_streams": 1,
+   "streams": [
+    "transcript"
+   ],
+   "countries": [
+    "HTI"
+   ],
+   "tags": [
+    "capacity",
+    "localisation",
+    "transition-handover"
+   ],
+   "actors": [
+    "cluster",
+    "local-ngo"
+   ],
+   "record_ids": [
+    "E0526"
+   ],
+   "unmerged": false
+  },
+  {
+   "finding_id": "F1112",
+   "statement": "Government uses its own monitoring platform, shared across humanitarian and development work, and has consistently done so — a position not tested against the requirement to move partner reporting to a central humanitarian system.",
+   "theme": "Both",
+   "type": "barrier",
+   "strength": "low",
+   "n_records": 1,
+   "n_sources": 1,
+   "n_streams": 1,
+   "streams": [
+    "transcript"
+   ],
+   "countries": [
+    "HTI"
+   ],
+   "tags": [
+    "government-engagement",
+    "information-management",
+    "nexus"
+   ],
+   "actors": [
+    "cluster",
+    "gov-national"
+   ],
+   "record_ids": [
+    "E0527"
+   ],
+   "unmerged": false
+  },
+  {
+   "finding_id": "F1113",
+   "statement": "Where a transition is under way, how long platform licences can be relied on is a question worth asking before effort is invested in migrating to a new system — and one better put by government focal points than by the cluster.",
+   "theme": "Both",
+   "type": "recommendation",
+   "strength": "low",
+   "n_records": 1,
+   "n_sources": 1,
+   "n_streams": 1,
+   "streams": [
+    "transcript"
+   ],
+   "countries": [],
+   "tags": [
+    "government-engagement",
+    "information-management",
+    "transition-handover"
+   ],
+   "actors": [
+    "cluster",
+    "gov-national"
+   ],
+   "record_ids": [
+    "E0528"
+   ],
+   "unmerged": false
+  },
+  {
+   "finding_id": "F1114",
+   "statement": "The sector maintains one of the larger assessment toolkits among clusters, organised as thematic response packs each containing its own assessment section, and has scheduled a revision of the tools in its annual workplan.",
+   "theme": "Both",
+   "type": "practice",
+   "strength": "low",
+   "n_records": 1,
+   "n_sources": 1,
+   "n_streams": 1,
+   "streams": [
+    "transcript"
+   ],
+   "countries": [
+    "HTI"
+   ],
+   "tags": [
+    "guidance",
+    "hpc",
+    "information-management"
+   ],
+   "actors": [
+    "cluster"
+   ],
+   "record_ids": [
+    "E0529"
+   ],
+   "unmerged": false
+  },
+  {
+   "finding_id": "F1115",
+   "statement": "Partners are due to move from the sector reporting system to the central platform within a month, and a training session for all partners will be needed before that happens.",
+   "theme": "ABC",
+   "type": "barrier",
+   "strength": "low",
+   "n_records": 1,
+   "n_sources": 1,
+   "n_streams": 1,
+   "streams": [
+    "transcript"
+   ],
+   "countries": [
+    "HTI"
+   ],
+   "tags": [
+    "capacity",
+    "hpc",
+    "information-management"
+   ],
+   "actors": [
+    "cluster",
+    "ingo",
+    "ocha"
+   ],
+   "record_ids": [
+    "E0530"
    ],
    "unmerged": false
   },
@@ -3025,6 +3513,403 @@
    "record_ids": [
     "E0105",
     "E0106"
+   ],
+   "unmerged": false
+  },
+  {
+   "finding_id": "F1200",
+   "statement": "Provincial coordination handles operational questions and partner-level discussion more effectively than a national platform can, while national level is better placed for strategy, tools, harmonisation and information flow.",
+   "theme": "ABC",
+   "type": "enabler",
+   "strength": "low",
+   "n_records": 1,
+   "n_sources": 1,
+   "n_streams": 1,
+   "streams": [
+    "transcript"
+   ],
+   "countries": [
+    "MOZ"
+   ],
+   "tags": [
+    "coordination-architecture",
+    "localisation"
+   ],
+   "actors": [
+    "cluster",
+    "gov-local"
+   ],
+   "record_ids": [
+    "E0539"
+   ],
+   "unmerged": false
+  },
+  {
+   "finding_id": "F1201",
+   "statement": "Where the cluster had no prior presence in a province, a large disaster found the response unprepared: no humanitarian partners were established there beforehand, and decisions had to come from the capital because the provincial administration had not handled an event of that scale.",
+   "theme": "ABC",
+   "type": "barrier",
+   "strength": "low",
+   "n_records": 1,
+   "n_sources": 1,
+   "n_streams": 1,
+   "streams": [
+    "transcript"
+   ],
+   "countries": [
+    "MOZ"
+   ],
+   "tags": [
+    "capacity",
+    "coordination-architecture"
+   ],
+   "actors": [
+    "cluster",
+    "gov-local"
+   ],
+   "record_ids": [
+    "E0540"
+   ],
+   "unmerged": false
+  },
+  {
+   "finding_id": "F1202",
+   "statement": "In a province with long cluster presence and earlier joint training with the lead agency, the provincial government now leads the coordination platform almost unaided, several years after the emergencies that established it.",
+   "theme": "Transition",
+   "type": "enabler",
+   "strength": "low",
+   "n_records": 1,
+   "n_sources": 1,
+   "n_streams": 1,
+   "streams": [
+    "transcript"
+   ],
+   "countries": [
+    "MOZ"
+   ],
+   "tags": [
+    "capacity",
+    "government-engagement",
+    "transition-handover"
+   ],
+   "actors": [
+    "cluster",
+    "gov-local"
+   ],
+   "record_ids": [
+    "E0541"
+   ],
+   "unmerged": false
+  },
+  {
+   "finding_id": "F1203",
+   "statement": "Transition is furthest advanced in the province where the emergency level is lowest, which sits in a grey area between cluster and government-led sector arrangements.",
+   "theme": "Transition",
+   "type": "context",
+   "strength": "low",
+   "n_records": 1,
+   "n_sources": 1,
+   "n_streams": 1,
+   "streams": [
+    "transcript"
+   ],
+   "countries": [
+    "MOZ"
+   ],
+   "tags": [
+    "coordination-architecture",
+    "transition-handover"
+   ],
+   "actors": [
+    "cluster",
+    "gov-local"
+   ],
+   "record_ids": [
+    "E0542"
+   ],
+   "unmerged": false
+  },
+  {
+   "finding_id": "F1204",
+   "statement": "All provincial focal points are lead agency staff except one province where a national NGO co-coordinates, an arrangement started recently with ongoing capacity support.",
+   "theme": "Both",
+   "type": "practice",
+   "strength": "low",
+   "n_records": 1,
+   "n_sources": 1,
+   "n_streams": 1,
+   "streams": [
+    "transcript"
+   ],
+   "countries": [
+    "MOZ"
+   ],
+   "tags": [
+    "coordination-architecture",
+    "localisation"
+   ],
+   "actors": [
+    "local-ngo",
+    "un-agency"
+   ],
+   "record_ids": [
+    "E0543"
+   ],
+   "unmerged": false
+  },
+  {
+   "finding_id": "F1205",
+   "statement": "District-level reports generated from partner reporting data give district authorities a view of what WASH activity is ongoing, planned or complete in their area.",
+   "theme": "Both",
+   "type": "practice",
+   "strength": "low",
+   "n_records": 1,
+   "n_sources": 1,
+   "n_streams": 1,
+   "streams": [
+    "transcript"
+   ],
+   "countries": [
+    "MOZ"
+   ],
+   "tags": [
+    "government-engagement",
+    "information-management"
+   ],
+   "actors": [
+    "cluster",
+    "gov-local"
+   ],
+   "record_ids": [
+    "E0544"
+   ],
+   "unmerged": false
+  },
+  {
+   "finding_id": "F1206",
+   "statement": "A free web application built on common office tools routes partner requests for prepositioned supplies through the cluster to a government approver and issues an automatic authorisation, replacing a paper process that made reporting to donors difficult.",
+   "theme": "Both",
+   "type": "practice",
+   "strength": "low",
+   "n_records": 1,
+   "n_sources": 1,
+   "n_streams": 1,
+   "streams": [
+    "transcript"
+   ],
+   "countries": [
+    "MOZ"
+   ],
+   "tags": [
+    "capacity",
+    "government-engagement",
+    "information-management"
+   ],
+   "actors": [
+    "cluster",
+    "gov-national",
+    "ingo"
+   ],
+   "record_ids": [
+    "E0545"
+   ],
+   "unmerged": false
+  },
+  {
+   "finding_id": "F1207",
+   "statement": "Intersectoral projects still have to be reported separately under each sector in the central platform, so a single integrated project cannot be recorded as one.",
+   "theme": "Both",
+   "type": "barrier",
+   "strength": "low",
+   "n_records": 1,
+   "n_sources": 1,
+   "n_streams": 1,
+   "streams": [
+    "transcript"
+   ],
+   "countries": [],
+   "tags": [
+    "information-management",
+    "multisector"
+   ],
+   "actors": [
+    "cluster",
+    "ocha"
+   ],
+   "record_ids": [
+    "E0546"
+   ],
+   "unmerged": false
+  },
+  {
+   "finding_id": "F1208",
+   "statement": "The multi-sector assessment expands from around twenty districts to over a hundred, covering conflict, floods and an anticipated climate event, using the same question set as the previous round so the analysis method is already established.",
+   "theme": "Both",
+   "type": "practice",
+   "strength": "low",
+   "n_records": 1,
+   "n_sources": 1,
+   "n_streams": 1,
+   "streams": [
+    "transcript"
+   ],
+   "countries": [
+    "MOZ"
+   ],
+   "tags": [
+    "hpc",
+    "information-management"
+   ],
+   "actors": [
+    "cluster",
+    "ocha"
+   ],
+   "record_ids": [
+    "E0547"
+   ],
+   "unmerged": false
+  },
+  {
+   "finding_id": "F1209",
+   "statement": "A sharp expansion in assessment coverage raises whether the coordination structure can cover the provinces and districts involved, which has been flagged to the country office as a staffing question.",
+   "theme": "Both",
+   "type": "barrier",
+   "strength": "low",
+   "n_records": 1,
+   "n_sources": 1,
+   "n_streams": 1,
+   "streams": [
+    "transcript"
+   ],
+   "countries": [
+    "MOZ"
+   ],
+   "tags": [
+    "capacity",
+    "coordination-architecture",
+    "hpc"
+   ],
+   "actors": [
+    "cluster",
+    "un-agency"
+   ],
+   "record_ids": [
+    "E0548"
+   ],
+   "unmerged": false
+  },
+  {
+   "finding_id": "F1210",
+   "statement": "Historical cholera and disaster data were layered onto household survey results at area level to produce the severity analysis, rather than relying on the survey alone.",
+   "theme": "Both",
+   "type": "practice",
+   "strength": "low",
+   "n_records": 1,
+   "n_sources": 1,
+   "n_streams": 1,
+   "streams": [
+    "transcript"
+   ],
+   "countries": [
+    "MOZ"
+   ],
+   "tags": [
+    "hpc",
+    "information-management"
+   ],
+   "actors": [
+    "cluster"
+   ],
+   "record_ids": [
+    "E0549"
+   ],
+   "unmerged": false
+  },
+  {
+   "finding_id": "F1211",
+   "statement": "A detailed handover document produced with external support was reworked with the national authority into a government-side transition strategy, with very few changes to the structure originally proposed.",
+   "theme": "Transition",
+   "type": "enabler",
+   "strength": "low",
+   "n_records": 1,
+   "n_sources": 1,
+   "n_streams": 1,
+   "streams": [
+    "transcript"
+   ],
+   "countries": [
+    "MOZ"
+   ],
+   "tags": [
+    "government-engagement",
+    "guidance",
+    "transition-handover"
+   ],
+   "actors": [
+    "cluster",
+    "gov-national"
+   ],
+   "record_ids": [
+    "E0550"
+   ],
+   "unmerged": false
+  },
+  {
+   "finding_id": "F1212",
+   "statement": "Implementing the transition strategy needs someone working alongside provincial and national government continuously; a short consultancy would not cover it, and the initial timeline is at least two years depending on resources.",
+   "theme": "Transition",
+   "type": "barrier",
+   "strength": "low",
+   "n_records": 1,
+   "n_sources": 1,
+   "n_streams": 1,
+   "streams": [
+    "transcript"
+   ],
+   "countries": [
+    "MOZ"
+   ],
+   "tags": [
+    "capacity",
+    "funding",
+    "transition-handover"
+   ],
+   "actors": [
+    "cluster",
+    "gov-national"
+   ],
+   "record_ids": [
+    "E0551"
+   ],
+   "unmerged": false
+  },
+  {
+   "finding_id": "F1213",
+   "statement": "A growing pooled fund envelope brings more partners and more monitoring expectations onto the cluster, and coordination is being activated at district level in one province because so many partners there now hold allocations.",
+   "theme": "ABC",
+   "type": "context",
+   "strength": "low",
+   "n_records": 1,
+   "n_sources": 1,
+   "n_streams": 1,
+   "streams": [
+    "transcript"
+   ],
+   "countries": [
+    "MOZ"
+   ],
+   "tags": [
+    "capacity",
+    "coordination-architecture",
+    "pooled-funds"
+   ],
+   "actors": [
+    "cluster",
+    "ingo",
+    "ocha"
+   ],
+   "record_ids": [
+    "E0552"
    ],
    "unmerged": false
   },
@@ -3354,14 +4239,15 @@
    "theme": "ABC",
    "type": "barrier",
    "strength": "high",
-   "n_records": 4,
-   "n_sources": 4,
+   "n_records": 5,
+   "n_sources": 5,
    "n_streams": 2,
    "streams": [
     "sdr",
     "transcript"
    ],
    "countries": [
+    "MOZ",
     "NER",
     "SDN"
    ],
@@ -3379,7 +4265,8 @@
     "E0122",
     "E0123",
     "E0408",
-    "E0456"
+    "E0456",
+    "E0535"
    ],
    "unmerged": false,
    "highlight": {
@@ -3684,8 +4571,8 @@
    "theme": "Both",
    "type": "barrier",
    "strength": "high",
-   "n_records": 8,
-   "n_sources": 6,
+   "n_records": 9,
+   "n_sources": 7,
    "n_streams": 2,
    "streams": [
     "sdr",
@@ -3695,6 +4582,7 @@
     "BGD",
     "LBN",
     "MMR",
+    "MOZ",
     "NGA",
     "SDN"
    ],
@@ -3718,7 +4606,8 @@
     "E0441",
     "E0470",
     "E0471",
-    "E0493"
+    "E0493",
+    "E0532"
    ],
    "unmerged": false,
    "highlight": {
@@ -5928,14 +6817,15 @@
    "theme": "Transition",
    "type": "enabler",
    "strength": "high",
-   "n_records": 2,
-   "n_sources": 2,
+   "n_records": 3,
+   "n_sources": 3,
    "n_streams": 2,
    "streams": [
     "sdr",
     "transcript"
    ],
    "countries": [
+    "MOZ",
     "NER"
    ],
    "tags": [
@@ -5949,7 +6839,8 @@
    ],
    "record_ids": [
     "E0246",
-    "E0455"
+    "E0455",
+    "E0533"
    ],
    "unmerged": false,
    "highlight": {
@@ -7125,8 +8016,8 @@
    "theme": "Both",
    "type": "barrier",
    "strength": "high",
-   "n_records": 3,
-   "n_sources": 3,
+   "n_records": 4,
+   "n_sources": 4,
    "n_streams": 2,
    "streams": [
     "sdr",
@@ -7135,6 +8026,7 @@
    "countries": [
     "COL",
     "KEN",
+    "MOZ",
     "NER"
    ],
    "tags": [
@@ -7152,7 +8044,8 @@
    "record_ids": [
     "E0298",
     "E0375",
-    "E0454"
+    "E0454",
+    "E0537"
    ],
    "unmerged": false,
    "highlight": {
@@ -7768,29 +8661,39 @@
    "statement": "Embedding coordination capacity directly in the ministry worked because the request came from government: the responsible cabinet secretary asked for an embedded coordination support position, recruited through third-party contracting.",
    "theme": "Transition",
    "type": "enabler",
-   "strength": "low",
-   "n_records": 1,
-   "n_sources": 1,
-   "n_streams": 1,
+   "strength": "high",
+   "n_records": 2,
+   "n_sources": 2,
+   "n_streams": 2,
    "streams": [
-    "sdr"
+    "sdr",
+    "transcript"
    ],
    "countries": [
-    "KEN"
+    "KEN",
+    "MOZ"
    ],
    "tags": [
     "capacity",
     "government-engagement",
-    "localisation"
+    "localisation",
+    "transition-handover"
    ],
    "actors": [
     "cluster",
-    "gov-national"
+    "gov-national",
+    "un-agency"
    ],
    "record_ids": [
-    "E0322"
+    "E0322",
+    "E0538"
    ],
-   "unmerged": false
+   "unmerged": false,
+   "highlight": {
+    "headline": "Put people inside the ministry, not just alongside it",
+    "plain": "Embedded coordination posts work where the receiving institution wants them. One government requested an embedded post directly; another had two staff placed into it to cover a missing emergency coordination function. Where the offer came from outside without being asked for, candidates were presented and none were taken.",
+    "so_what": "Ask the ministry what it needs before offering a post. An embedded position the government asked for gets used; one it did not ask for gets declined."
+   }
   },
   {
    "finding_id": "F388",
@@ -8350,30 +9253,35 @@
    "theme": "Both",
    "type": "enabler",
    "strength": "high",
-   "n_records": 2,
-   "n_sources": 2,
+   "n_records": 3,
+   "n_sources": 3,
    "n_streams": 2,
    "streams": [
     "sdr",
     "transcript"
    ],
    "countries": [
-    "LBN"
+    "LBN",
+    "MOZ"
    ],
    "tags": [
     "capacity",
+    "government-engagement",
     "information-management",
-    "localisation"
+    "localisation",
+    "sustainability"
    ],
    "actors": [
     "cluster",
     "gov-local",
+    "gov-national",
     "ingo",
     "local-ngo"
    ],
    "record_ids": [
     "E0347",
-    "E0476"
+    "E0476",
+    "E0534"
    ],
    "unmerged": false,
    "highlight": {
@@ -9910,29 +10818,43 @@
   },
   {
    "finding_id": "F609",
-   "statement": "Where a cluster has a functioning reporting system, an interface bridging it to the central platform would avoid partners reporting twice while keeping the sector calculation with the people who understand it.",
+   "statement": "On learning that an existing reporting system can be retained and bridged to the central platform, the sector chose to seek a derogation and migrate the data rather than abandon a platform invested in over years and shared with development actors.",
    "theme": "Both",
-   "type": "recommendation",
-   "strength": "low",
-   "n_records": 1,
-   "n_sources": 1,
+   "type": "enabler",
+   "strength": "high",
+   "n_records": 3,
+   "n_sources": 3,
    "n_streams": 1,
    "streams": [
     "transcript"
    ],
-   "countries": [],
+   "countries": [
+    "HTI",
+    "MOZ"
+   ],
    "tags": [
     "coordination-architecture",
-    "information-management"
+    "government-engagement",
+    "information-management",
+    "nexus"
    ],
    "actors": [
     "cluster",
+    "development",
+    "gov-national",
     "ocha"
    ],
    "record_ids": [
-    "E0418"
+    "E0418",
+    "E0514",
+    "E0536"
    ],
-   "unmerged": false
+   "unmerged": false,
+   "highlight": {
+    "headline": "Do not throw away a system that already works",
+    "plain": "Where a country has a reporting system that partners use and government shares, replacing it with a central platform costs more than it gains. Bridging the two keeps the sector calculation with the people who understand it and avoids partners entering everything twice.",
+    "so_what": "Ask for an interface rather than a migration. The flexibility exists — the answer that there is no choice is not accurate."
+   }
   },
   {
    "finding_id": "F610",
@@ -23311,6 +24233,989 @@
    "date_collected": "2026-07-17",
    "confidence": "high",
    "status": "draft"
+  },
+  {
+   "id": "E0513",
+   "finding_id": "F028",
+   "theme": "Both",
+   "type": "barrier",
+   "statement": "A coordination performance audit scored several areas down specifically because information management is not staffed, so the absence of the post shows up as a coordination failing rather than a resourcing one.",
+   "level": "national",
+   "countries": [
+    "HTI"
+   ],
+   "actors": [
+    "cluster",
+    "un-agency"
+   ],
+   "tags": [
+    "capacity",
+    "information-management",
+    "performance"
+   ],
+   "stream": "transcript",
+   "source_id": "S109",
+   "date_collected": "2026-07-13",
+   "confidence": "high",
+   "status": "draft"
+  },
+  {
+   "id": "E0514",
+   "finding_id": "F609",
+   "theme": "Both",
+   "type": "enabler",
+   "statement": "On learning that an existing reporting system can be retained and bridged to the central platform, the sector chose to seek a derogation and migrate the data rather than abandon a platform invested in over years and shared with development actors.",
+   "level": "national",
+   "countries": [
+    "HTI"
+   ],
+   "actors": [
+    "cluster",
+    "gov-national",
+    "development"
+   ],
+   "tags": [
+    "information-management",
+    "coordination-architecture",
+    "nexus"
+   ],
+   "stream": "transcript",
+   "source_id": "S109",
+   "date_collected": "2026-07-13",
+   "confidence": "high",
+   "status": "draft"
+  },
+  {
+   "id": "E0515",
+   "finding_id": "F1100",
+   "theme": "Transition",
+   "type": "context",
+   "statement": "The emergency classification is being stepped down while the crisis itself continues, which the sector expects to reduce institutional attention rather than reflect improved conditions.",
+   "level": "national",
+   "countries": [
+    "HTI"
+   ],
+   "actors": [
+    "un-agency",
+    "cluster"
+   ],
+   "tags": [
+    "funding",
+    "advocacy"
+   ],
+   "stream": "transcript",
+   "source_id": "S109",
+   "date_collected": "2026-07-13",
+   "confidence": "high",
+   "status": "draft"
+  },
+  {
+   "id": "E0516",
+   "finding_id": "F1101",
+   "theme": "Transition",
+   "type": "enabler",
+   "statement": "After several years of limited engagement, the national water authority became noticeably more active over recent months following a new appointment, and has begun facilitating meetings itself.",
+   "level": "national",
+   "countries": [
+    "HTI"
+   ],
+   "actors": [
+    "gov-national",
+    "cluster"
+   ],
+   "tags": [
+    "government-engagement",
+    "coordination-architecture"
+   ],
+   "stream": "transcript",
+   "source_id": "S109",
+   "date_collected": "2026-07-13",
+   "confidence": "high",
+   "status": "draft"
+  },
+  {
+   "id": "E0517",
+   "finding_id": "F1102",
+   "theme": "Transition",
+   "type": "context",
+   "statement": "The authority position is that national-level co-leadership is not needed, and that support should instead go to strengthening coordination at subnational level with NGO involvement.",
+   "level": "subnational",
+   "countries": [
+    "HTI"
+   ],
+   "actors": [
+    "gov-national",
+    "local-ngo"
+   ],
+   "tags": [
+    "government-engagement",
+    "localisation",
+    "coordination-architecture"
+   ],
+   "stream": "transcript",
+   "source_id": "S109",
+   "date_collected": "2026-07-13",
+   "confidence": "high",
+   "status": "draft"
+  },
+  {
+   "id": "E0518",
+   "finding_id": "F1103",
+   "theme": "Transition",
+   "type": "context",
+   "statement": "Coordination operates as a government-led sector rather than an activated cluster, because the government does not want cluster activation.",
+   "level": "national",
+   "countries": [
+    "HTI"
+   ],
+   "actors": [
+    "gov-national",
+    "ocha"
+   ],
+   "tags": [
+    "government-engagement",
+    "coordination-architecture"
+   ],
+   "stream": "transcript",
+   "source_id": "S109",
+   "date_collected": "2026-07-13",
+   "confidence": "high",
+   "status": "draft"
+  },
+  {
+   "id": "E0519",
+   "finding_id": "F1104",
+   "theme": "Transition",
+   "type": "practice",
+   "statement": "From the start of next year the coordinator and information manager posts will be nationalised, with government continuing its leadership and an NGO expected to co-facilitate at national or subnational level.",
+   "level": "national",
+   "countries": [
+    "HTI"
+   ],
+   "actors": [
+    "un-agency",
+    "gov-national",
+    "local-ngo"
+   ],
+   "tags": [
+    "transition-handover",
+    "localisation",
+    "coordination-architecture"
+   ],
+   "stream": "transcript",
+   "source_id": "S109",
+   "date_collected": "2026-07-13",
+   "confidence": "high",
+   "status": "draft"
+  },
+  {
+   "id": "E0520",
+   "finding_id": "F1105",
+   "theme": "Transition",
+   "type": "enabler",
+   "statement": "A national NGO has expressed interest in co-leadership and sustained that interest for over a year, giving the sector a candidate already familiar with the response.",
+   "level": "national",
+   "countries": [
+    "HTI"
+   ],
+   "actors": [
+    "local-ngo",
+    "cluster"
+   ],
+   "tags": [
+    "localisation",
+    "partnerships"
+   ],
+   "stream": "transcript",
+   "source_id": "S109",
+   "date_collected": "2026-07-13",
+   "confidence": "high",
+   "status": "draft"
+  },
+  {
+   "id": "E0521",
+   "finding_id": "F1106",
+   "theme": "Transition",
+   "type": "practice",
+   "statement": "The plan is to recruit the incoming national coordinator during the final quarter so there is an overlap of several weeks with the departing coordinator, allowing handover on the job.",
+   "level": "national",
+   "countries": [
+    "HTI"
+   ],
+   "actors": [
+    "un-agency",
+    "cluster"
+   ],
+   "tags": [
+    "transition-handover",
+    "capacity",
+    "staff-turnover"
+   ],
+   "stream": "transcript",
+   "source_id": "S109",
+   "date_collected": "2026-07-13",
+   "confidence": "high",
+   "status": "draft"
+  },
+  {
+   "id": "E0522",
+   "finding_id": "F1107",
+   "theme": "Both",
+   "type": "barrier",
+   "statement": "An information management recruitment funded from secured resources was frozen when the office established it could not cover the salary into the following year, leaving the function unstaffed.",
+   "level": "national",
+   "countries": [
+    "HTI"
+   ],
+   "actors": [
+    "un-agency",
+    "cluster"
+   ],
+   "tags": [
+    "funding",
+    "capacity",
+    "information-management"
+   ],
+   "stream": "transcript",
+   "source_id": "S109",
+   "date_collected": "2026-07-13",
+   "confidence": "high",
+   "status": "draft"
+  },
+  {
+   "id": "E0523",
+   "finding_id": "F1108",
+   "theme": "Both",
+   "type": "barrier",
+   "statement": "A standby request for an information manager produced candidates that were not validated, and the deployment that followed was assigned to another sector.",
+   "level": "national",
+   "countries": [
+    "HTI"
+   ],
+   "actors": [
+    "un-agency",
+    "cluster"
+   ],
+   "tags": [
+    "capacity",
+    "information-management"
+   ],
+   "stream": "transcript",
+   "source_id": "S109",
+   "date_collected": "2026-07-13",
+   "confidence": "high",
+   "status": "draft"
+  },
+  {
+   "id": "E0524",
+   "finding_id": "F1109",
+   "theme": "Both",
+   "type": "barrier",
+   "statement": "The information management post was filled at a level below what the role requires, and a coordinator without information management background is not placed to close that gap.",
+   "level": "national",
+   "countries": [
+    "HTI"
+   ],
+   "actors": [
+    "cluster",
+    "un-agency"
+   ],
+   "tags": [
+    "capacity",
+    "information-management"
+   ],
+   "stream": "transcript",
+   "source_id": "S109",
+   "date_collected": "2026-07-13",
+   "confidence": "high",
+   "status": "draft"
+  },
+  {
+   "id": "E0525",
+   "finding_id": "F1110",
+   "theme": "Both",
+   "type": "practice",
+   "statement": "A three-month deployment is arriving to build the capacity of volunteer information officers covering two sectors, though the deployee background is in another sector rather than WASH.",
+   "level": "national",
+   "countries": [
+    "HTI"
+   ],
+   "actors": [
+    "un-agency",
+    "cluster"
+   ],
+   "tags": [
+    "capacity",
+    "information-management"
+   ],
+   "stream": "transcript",
+   "source_id": "S109",
+   "date_collected": "2026-07-13",
+   "confidence": "high",
+   "status": "draft"
+  },
+  {
+   "id": "E0526",
+   "finding_id": "F1111",
+   "theme": "Transition",
+   "type": "recommendation",
+   "statement": "If coordination moves to NGO co-facilitation, the incoming organisation will need structured training and induction rather than an assumption that it can absorb the role directly.",
+   "level": "national",
+   "countries": [
+    "HTI"
+   ],
+   "actors": [
+    "local-ngo",
+    "cluster"
+   ],
+   "tags": [
+    "capacity",
+    "localisation",
+    "transition-handover"
+   ],
+   "stream": "transcript",
+   "source_id": "S109",
+   "date_collected": "2026-07-13",
+   "confidence": "high",
+   "status": "draft"
+  },
+  {
+   "id": "E0527",
+   "finding_id": "F1112",
+   "theme": "Both",
+   "type": "barrier",
+   "statement": "Government uses its own monitoring platform, shared across humanitarian and development work, and has consistently done so — a position not tested against the requirement to move partner reporting to a central humanitarian system.",
+   "level": "national",
+   "countries": [
+    "HTI"
+   ],
+   "actors": [
+    "gov-national",
+    "cluster"
+   ],
+   "tags": [
+    "information-management",
+    "government-engagement",
+    "nexus"
+   ],
+   "stream": "transcript",
+   "source_id": "S109",
+   "date_collected": "2026-07-13",
+   "confidence": "high",
+   "status": "draft"
+  },
+  {
+   "id": "E0528",
+   "finding_id": "F1113",
+   "theme": "Both",
+   "type": "recommendation",
+   "statement": "Where a transition is under way, how long platform licences can be relied on is a question worth asking before effort is invested in migrating to a new system — and one better put by government focal points than by the cluster.",
+   "level": "global",
+   "countries": [],
+   "actors": [
+    "gov-national",
+    "cluster"
+   ],
+   "tags": [
+    "information-management",
+    "transition-handover",
+    "government-engagement"
+   ],
+   "stream": "transcript",
+   "source_id": "S109",
+   "date_collected": "2026-07-13",
+   "confidence": "high",
+   "status": "draft"
+  },
+  {
+   "id": "E0529",
+   "finding_id": "F1114",
+   "theme": "Both",
+   "type": "practice",
+   "statement": "The sector maintains one of the larger assessment toolkits among clusters, organised as thematic response packs each containing its own assessment section, and has scheduled a revision of the tools in its annual workplan.",
+   "level": "national",
+   "countries": [
+    "HTI"
+   ],
+   "actors": [
+    "cluster"
+   ],
+   "tags": [
+    "information-management",
+    "hpc",
+    "guidance"
+   ],
+   "stream": "transcript",
+   "source_id": "S109",
+   "date_collected": "2026-07-13",
+   "confidence": "high",
+   "status": "draft"
+  },
+  {
+   "id": "E0530",
+   "finding_id": "F1115",
+   "theme": "ABC",
+   "type": "barrier",
+   "statement": "Partners are due to move from the sector reporting system to the central platform within a month, and a training session for all partners will be needed before that happens.",
+   "level": "national",
+   "countries": [
+    "HTI"
+   ],
+   "actors": [
+    "ocha",
+    "cluster",
+    "ingo"
+   ],
+   "tags": [
+    "information-management",
+    "hpc",
+    "capacity"
+   ],
+   "stream": "transcript",
+   "source_id": "S109",
+   "date_collected": "2026-07-13",
+   "confidence": "high",
+   "status": "draft"
+  },
+  {
+   "id": "E0531",
+   "finding_id": "F002",
+   "theme": "ABC",
+   "type": "enabler",
+   "statement": "The coordination structure mirrors the government structure: each province has a provincial administration able to take decisions without referring to the capital, so provincial coordination has a counterpart with real authority.",
+   "level": "subnational",
+   "countries": [
+    "MOZ"
+   ],
+   "actors": [
+    "gov-local",
+    "cluster"
+   ],
+   "tags": [
+    "government-engagement",
+    "coordination-architecture",
+    "localisation"
+   ],
+   "stream": "transcript",
+   "source_id": "S110",
+   "date_collected": "2026-07-03",
+   "confidence": "high",
+   "status": "draft"
+  },
+  {
+   "id": "E0532",
+   "finding_id": "F225",
+   "theme": "Both",
+   "type": "barrier",
+   "statement": "Both coordinators are double-hatting, and with assessment scope expanding sharply next year the country office has been told that a double-hatting arrangement is unlikely to be sufficient.",
+   "level": "national",
+   "countries": [
+    "MOZ"
+   ],
+   "actors": [
+    "un-agency",
+    "cluster"
+   ],
+   "tags": [
+    "capacity",
+    "coordination-architecture"
+   ],
+   "stream": "transcript",
+   "source_id": "S110",
+   "date_collected": "2026-07-03",
+   "confidence": "high",
+   "status": "draft"
+  },
+  {
+   "id": "E0533",
+   "finding_id": "F319",
+   "theme": "Transition",
+   "type": "enabler",
+   "statement": "The government asked for a separate report on each partner so it can see what every organisation is doing and where, and the cluster now produces these from partner reporting data.",
+   "level": "national",
+   "countries": [
+    "MOZ"
+   ],
+   "actors": [
+    "gov-national",
+    "cluster"
+   ],
+   "tags": [
+    "information-management",
+    "government-engagement"
+   ],
+   "stream": "transcript",
+   "source_id": "S110",
+   "date_collected": "2026-07-03",
+   "confidence": "high",
+   "status": "draft"
+  },
+  {
+   "id": "E0534",
+   "finding_id": "F408",
+   "theme": "Both",
+   "type": "enabler",
+   "statement": "The government established provincial warehouses holding prepositioned WASH supplies, and stock has since been pushed down to key districts so it sits closer to where emergencies occur.",
+   "level": "subnational",
+   "countries": [
+    "MOZ"
+   ],
+   "actors": [
+    "gov-national",
+    "gov-local"
+   ],
+   "tags": [
+    "capacity",
+    "government-engagement",
+    "sustainability"
+   ],
+   "stream": "transcript",
+   "source_id": "S110",
+   "date_collected": "2026-07-03",
+   "confidence": "high",
+   "status": "draft"
+  },
+  {
+   "id": "E0535",
+   "finding_id": "F214",
+   "theme": "ABC",
+   "type": "barrier",
+   "statement": "Partners were asked by email to register on a new central reporting platform with a training date attached, without the change having been discussed at intersectoral or country team level; other sectors were equally unaware.",
+   "level": "national",
+   "countries": [
+    "MOZ"
+   ],
+   "actors": [
+    "ocha",
+    "cluster"
+   ],
+   "tags": [
+    "information-management",
+    "hpc",
+    "coordination-architecture"
+   ],
+   "stream": "transcript",
+   "source_id": "S110",
+   "date_collected": "2026-07-03",
+   "confidence": "high",
+   "status": "draft"
+  },
+  {
+   "id": "E0536",
+   "finding_id": "F609",
+   "theme": "Both",
+   "type": "barrier",
+   "statement": "The move to a central platform cuts across work to merge humanitarian and development reporting into a single shared file — an integration that was feasible precisely because both sides used the same simple format.",
+   "level": "national",
+   "countries": [
+    "MOZ"
+   ],
+   "actors": [
+    "gov-national",
+    "development",
+    "cluster"
+   ],
+   "tags": [
+    "information-management",
+    "nexus",
+    "government-engagement"
+   ],
+   "stream": "transcript",
+   "source_id": "S110",
+   "date_collected": "2026-07-03",
+   "confidence": "high",
+   "status": "draft"
+  },
+  {
+   "id": "E0537",
+   "finding_id": "F364",
+   "theme": "Transition",
+   "type": "barrier",
+   "statement": "Frequent changes in senior public administration posts during the period affected the design of the transition strategy, as the counterparts involved kept changing.",
+   "level": "national",
+   "countries": [
+    "MOZ"
+   ],
+   "actors": [
+    "gov-national",
+    "cluster"
+   ],
+   "tags": [
+    "staff-turnover",
+    "government-engagement",
+    "transition-handover"
+   ],
+   "stream": "transcript",
+   "source_id": "S110",
+   "date_collected": "2026-07-03",
+   "confidence": "high",
+   "status": "draft"
+  },
+  {
+   "id": "E0538",
+   "finding_id": "F387",
+   "theme": "Transition",
+   "type": "enabler",
+   "statement": "The lead agency committed two additional staff into the national government to cover emergency response coordination, filling the absence of a dedicated central unit for it.",
+   "level": "national",
+   "countries": [
+    "MOZ"
+   ],
+   "actors": [
+    "gov-national",
+    "un-agency"
+   ],
+   "tags": [
+    "government-engagement",
+    "capacity",
+    "transition-handover"
+   ],
+   "stream": "transcript",
+   "source_id": "S110",
+   "date_collected": "2026-07-03",
+   "confidence": "high",
+   "status": "draft"
+  },
+  {
+   "id": "E0539",
+   "finding_id": "F1200",
+   "theme": "ABC",
+   "type": "enabler",
+   "statement": "Provincial coordination handles operational questions and partner-level discussion more effectively than a national platform can, while national level is better placed for strategy, tools, harmonisation and information flow.",
+   "level": "subnational",
+   "countries": [
+    "MOZ"
+   ],
+   "actors": [
+    "cluster",
+    "gov-local"
+   ],
+   "tags": [
+    "coordination-architecture",
+    "localisation"
+   ],
+   "stream": "transcript",
+   "source_id": "S110",
+   "date_collected": "2026-07-03",
+   "confidence": "high",
+   "status": "draft"
+  },
+  {
+   "id": "E0540",
+   "finding_id": "F1201",
+   "theme": "ABC",
+   "type": "barrier",
+   "statement": "Where the cluster had no prior presence in a province, a large disaster found the response unprepared: no humanitarian partners were established there beforehand, and decisions had to come from the capital because the provincial administration had not handled an event of that scale.",
+   "level": "subnational",
+   "countries": [
+    "MOZ"
+   ],
+   "actors": [
+    "gov-local",
+    "cluster"
+   ],
+   "tags": [
+    "coordination-architecture",
+    "capacity"
+   ],
+   "stream": "transcript",
+   "source_id": "S110",
+   "date_collected": "2026-07-03",
+   "confidence": "high",
+   "status": "draft"
+  },
+  {
+   "id": "E0541",
+   "finding_id": "F1202",
+   "theme": "Transition",
+   "type": "enabler",
+   "statement": "In a province with long cluster presence and earlier joint training with the lead agency, the provincial government now leads the coordination platform almost unaided, several years after the emergencies that established it.",
+   "level": "subnational",
+   "countries": [
+    "MOZ"
+   ],
+   "actors": [
+    "gov-local",
+    "cluster"
+   ],
+   "tags": [
+    "government-engagement",
+    "capacity",
+    "transition-handover"
+   ],
+   "stream": "transcript",
+   "source_id": "S110",
+   "date_collected": "2026-07-03",
+   "confidence": "high",
+   "status": "draft"
+  },
+  {
+   "id": "E0542",
+   "finding_id": "F1203",
+   "theme": "Transition",
+   "type": "context",
+   "statement": "Transition is furthest advanced in the province where the emergency level is lowest, which sits in a grey area between cluster and government-led sector arrangements.",
+   "level": "subnational",
+   "countries": [
+    "MOZ"
+   ],
+   "actors": [
+    "gov-local",
+    "cluster"
+   ],
+   "tags": [
+    "transition-handover",
+    "coordination-architecture"
+   ],
+   "stream": "transcript",
+   "source_id": "S110",
+   "date_collected": "2026-07-03",
+   "confidence": "high",
+   "status": "draft"
+  },
+  {
+   "id": "E0543",
+   "finding_id": "F1204",
+   "theme": "Both",
+   "type": "practice",
+   "statement": "All provincial focal points are lead agency staff except one province where a national NGO co-coordinates, an arrangement started recently with ongoing capacity support.",
+   "level": "subnational",
+   "countries": [
+    "MOZ"
+   ],
+   "actors": [
+    "local-ngo",
+    "un-agency"
+   ],
+   "tags": [
+    "localisation",
+    "coordination-architecture"
+   ],
+   "stream": "transcript",
+   "source_id": "S110",
+   "date_collected": "2026-07-03",
+   "confidence": "high",
+   "status": "draft"
+  },
+  {
+   "id": "E0544",
+   "finding_id": "F1205",
+   "theme": "Both",
+   "type": "practice",
+   "statement": "District-level reports generated from partner reporting data give district authorities a view of what WASH activity is ongoing, planned or complete in their area.",
+   "level": "subnational",
+   "countries": [
+    "MOZ"
+   ],
+   "actors": [
+    "gov-local",
+    "cluster"
+   ],
+   "tags": [
+    "information-management",
+    "government-engagement"
+   ],
+   "stream": "transcript",
+   "source_id": "S110",
+   "date_collected": "2026-07-03",
+   "confidence": "high",
+   "status": "draft"
+  },
+  {
+   "id": "E0545",
+   "finding_id": "F1206",
+   "theme": "Both",
+   "type": "practice",
+   "statement": "A free web application built on common office tools routes partner requests for prepositioned supplies through the cluster to a government approver and issues an automatic authorisation, replacing a paper process that made reporting to donors difficult.",
+   "level": "national",
+   "countries": [
+    "MOZ"
+   ],
+   "actors": [
+    "gov-national",
+    "cluster",
+    "ingo"
+   ],
+   "tags": [
+    "information-management",
+    "government-engagement",
+    "capacity"
+   ],
+   "stream": "transcript",
+   "source_id": "S110",
+   "date_collected": "2026-07-03",
+   "confidence": "high",
+   "status": "draft"
+  },
+  {
+   "id": "E0546",
+   "finding_id": "F1207",
+   "theme": "Both",
+   "type": "barrier",
+   "statement": "Intersectoral projects still have to be reported separately under each sector in the central platform, so a single integrated project cannot be recorded as one.",
+   "level": "global",
+   "countries": [],
+   "actors": [
+    "ocha",
+    "cluster"
+   ],
+   "tags": [
+    "information-management",
+    "multisector"
+   ],
+   "stream": "transcript",
+   "source_id": "S110",
+   "date_collected": "2026-07-03",
+   "confidence": "high",
+   "status": "draft"
+  },
+  {
+   "id": "E0547",
+   "finding_id": "F1208",
+   "theme": "Both",
+   "type": "practice",
+   "statement": "The multi-sector assessment expands from around twenty districts to over a hundred, covering conflict, floods and an anticipated climate event, using the same question set as the previous round so the analysis method is already established.",
+   "level": "national",
+   "countries": [
+    "MOZ"
+   ],
+   "actors": [
+    "ocha",
+    "cluster"
+   ],
+   "tags": [
+    "hpc",
+    "information-management"
+   ],
+   "stream": "transcript",
+   "source_id": "S110",
+   "date_collected": "2026-07-03",
+   "confidence": "high",
+   "status": "draft"
+  },
+  {
+   "id": "E0548",
+   "finding_id": "F1209",
+   "theme": "Both",
+   "type": "barrier",
+   "statement": "A sharp expansion in assessment coverage raises whether the coordination structure can cover the provinces and districts involved, which has been flagged to the country office as a staffing question.",
+   "level": "national",
+   "countries": [
+    "MOZ"
+   ],
+   "actors": [
+    "cluster",
+    "un-agency"
+   ],
+   "tags": [
+    "capacity",
+    "hpc",
+    "coordination-architecture"
+   ],
+   "stream": "transcript",
+   "source_id": "S110",
+   "date_collected": "2026-07-03",
+   "confidence": "high",
+   "status": "draft"
+  },
+  {
+   "id": "E0549",
+   "finding_id": "F1210",
+   "theme": "Both",
+   "type": "practice",
+   "statement": "Historical cholera and disaster data were layered onto household survey results at area level to produce the severity analysis, rather than relying on the survey alone.",
+   "level": "national",
+   "countries": [
+    "MOZ"
+   ],
+   "actors": [
+    "cluster"
+   ],
+   "tags": [
+    "hpc",
+    "information-management"
+   ],
+   "stream": "transcript",
+   "source_id": "S110",
+   "date_collected": "2026-07-03",
+   "confidence": "high",
+   "status": "draft"
+  },
+  {
+   "id": "E0550",
+   "finding_id": "F1211",
+   "theme": "Transition",
+   "type": "enabler",
+   "statement": "A detailed handover document produced with external support was reworked with the national authority into a government-side transition strategy, with very few changes to the structure originally proposed.",
+   "level": "national",
+   "countries": [
+    "MOZ"
+   ],
+   "actors": [
+    "gov-national",
+    "cluster"
+   ],
+   "tags": [
+    "transition-handover",
+    "government-engagement",
+    "guidance"
+   ],
+   "stream": "transcript",
+   "source_id": "S110",
+   "date_collected": "2026-07-03",
+   "confidence": "high",
+   "status": "draft"
+  },
+  {
+   "id": "E0551",
+   "finding_id": "F1212",
+   "theme": "Transition",
+   "type": "barrier",
+   "statement": "Implementing the transition strategy needs someone working alongside provincial and national government continuously; a short consultancy would not cover it, and the initial timeline is at least two years depending on resources.",
+   "level": "national",
+   "countries": [
+    "MOZ"
+   ],
+   "actors": [
+    "cluster",
+    "gov-national"
+   ],
+   "tags": [
+    "transition-handover",
+    "capacity",
+    "funding"
+   ],
+   "stream": "transcript",
+   "source_id": "S110",
+   "date_collected": "2026-07-03",
+   "confidence": "high",
+   "status": "draft"
+  },
+  {
+   "id": "E0552",
+   "finding_id": "F1213",
+   "theme": "ABC",
+   "type": "context",
+   "statement": "A growing pooled fund envelope brings more partners and more monitoring expectations onto the cluster, and coordination is being activated at district level in one province because so many partners there now hold allocations.",
+   "level": "subnational",
+   "countries": [
+    "MOZ"
+   ],
+   "actors": [
+    "ocha",
+    "cluster",
+    "ingo"
+   ],
+   "tags": [
+    "pooled-funds",
+    "capacity",
+    "coordination-architecture"
+   ],
+   "stream": "transcript",
+   "source_id": "S110",
+   "date_collected": "2026-07-03",
+   "confidence": "high",
+   "status": "draft"
   }
  ],
  "sources": [
@@ -24584,6 +26489,32 @@
    "url": "",
    "stream": "transcript",
    "date_added": "2026-07-17",
+   "access": "restricted",
+   "legacy_id": "",
+   "source_group": ""
+  },
+  {
+   "source_id": "S109",
+   "title": "Country consultation — Haiti",
+   "organisation": "Global WASH Cluster",
+   "year": "2026",
+   "type": "interview",
+   "url": "",
+   "stream": "transcript",
+   "date_added": "2026-07-13",
+   "access": "restricted",
+   "legacy_id": "",
+   "source_group": ""
+  },
+  {
+   "source_id": "S110",
+   "title": "Country consultation — Mozambique",
+   "organisation": "Global WASH Cluster",
+   "year": "2026",
+   "type": "interview",
+   "url": "",
+   "stream": "transcript",
+   "date_added": "2026-07-03",
    "access": "restricted",
    "legacy_id": "",
    "source_group": ""
