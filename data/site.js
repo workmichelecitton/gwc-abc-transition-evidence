@@ -66,9 +66,9 @@ window.SITE_DATA = {
  "generated": "2026-08-05",
  "taxonomy_version": "0.4.0",
  "stats": {
-  "records": 479,
-  "findings": 371,
-  "sources": 97,
+  "records": 499,
+  "findings": 388,
+  "sources": 98,
   "countries": 25,
   "withheld_internal": 1
  },
@@ -1078,14 +1078,15 @@ window.SITE_DATA = {
    "theme": "Both",
    "type": "barrier",
    "strength": "high",
-   "n_records": 3,
-   "n_sources": 3,
+   "n_records": 4,
+   "n_sources": 4,
    "n_streams": 2,
    "streams": [
     "sdr",
     "transcript"
    ],
    "countries": [
+    "BGD",
     "COL",
     "SOM"
    ],
@@ -1097,12 +1098,14 @@ window.SITE_DATA = {
    ],
    "actors": [
     "cluster",
+    "ingo",
     "un-agency"
    ],
    "record_ids": [
     "E0034",
     "E0240",
-    "E0376"
+    "E0376",
+    "E0494"
    ],
    "unmerged": false,
    "highlight": {
@@ -2010,6 +2013,299 @@ window.SITE_DATA = {
    "unmerged": false
   },
   {
+   "finding_id": "F1000",
+   "statement": "At national level the coordination platform is government-led, so the sector operates inside a national cluster system rather than an internationally led one, alongside a separate sector arrangement for the refugee response.",
+   "theme": "Transition",
+   "type": "context",
+   "strength": "low",
+   "n_records": 1,
+   "n_sources": 1,
+   "n_streams": 1,
+   "streams": [
+    "transcript"
+   ],
+   "countries": [
+    "BGD"
+   ],
+   "tags": [
+    "coordination-architecture",
+    "government-engagement"
+   ],
+   "actors": [
+    "cluster",
+    "gov-national"
+   ],
+   "record_ids": [
+    "E0496"
+   ],
+   "unmerged": false
+  },
+  {
+   "finding_id": "F1001",
+   "statement": "After the dedicated sector information management post was discontinued, a shared information management pool was created in the field office — an international lead, a national officer and four analysts serving all agency-led sectors — adopting a model already used in another operation.",
+   "theme": "Both",
+   "type": "practice",
+   "strength": "low",
+   "n_records": 1,
+   "n_sources": 1,
+   "n_streams": 1,
+   "streams": [
+    "transcript"
+   ],
+   "countries": [
+    "BGD"
+   ],
+   "tags": [
+    "capacity",
+    "coordination-architecture",
+    "information-management"
+   ],
+   "actors": [
+    "cluster",
+    "un-agency"
+   ],
+   "record_ids": [
+    "E0497"
+   ],
+   "unmerged": false
+  },
+  {
+   "finding_id": "F1002",
+   "statement": "A rationalisation model gives NGOs responsibility for day-to-day operation and maintenance while UN agencies cover supplies, gap-filling and strategic issues, and the sector is regarded within the operation as a working example of the approach.",
+   "theme": "Transition",
+   "type": "enabler",
+   "strength": "low",
+   "n_records": 1,
+   "n_sources": 1,
+   "n_streams": 1,
+   "streams": [
+    "transcript"
+   ],
+   "countries": [
+    "BGD"
+   ],
+   "tags": [
+    "coordination-architecture",
+    "localisation",
+    "partnerships"
+   ],
+   "actors": [
+    "ingo",
+    "local-ngo",
+    "un-agency"
+   ],
+   "record_ids": [
+    "E0498"
+   ],
+   "unmerged": false
+  },
+  {
+   "finding_id": "F1003",
+   "statement": "A consortium of national implementing partners was established that receives funding directly from a bilateral donor rather than through an intermediary.",
+   "theme": "Transition",
+   "type": "practice",
+   "strength": "low",
+   "n_records": 1,
+   "n_sources": 1,
+   "n_streams": 1,
+   "streams": [
+    "transcript"
+   ],
+   "countries": [
+    "BGD"
+   ],
+   "tags": [
+    "funding",
+    "localisation",
+    "partnerships"
+   ],
+   "actors": [
+    "donor",
+    "local-ngo"
+   ],
+   "record_ids": [
+    "E0499"
+   ],
+   "unmerged": false
+  },
+  {
+   "finding_id": "F1004",
+   "statement": "Of the pooled fund allocation reaching the sector, around one eighth went to international NGOs and the remainder to UN agencies.",
+   "theme": "ABC",
+   "type": "barrier",
+   "strength": "low",
+   "n_records": 1,
+   "n_sources": 1,
+   "n_streams": 1,
+   "streams": [
+    "transcript"
+   ],
+   "countries": [
+    "BGD"
+   ],
+   "tags": [
+    "funding",
+    "localisation",
+    "pooled-funds"
+   ],
+   "actors": [
+    "donor",
+    "ingo",
+    "un-agency"
+   ],
+   "record_ids": [
+    "E0500"
+   ],
+   "unmerged": false
+  },
+  {
+   "finding_id": "F1005",
+   "statement": "The joint intersectoral assessment initially capped each sector at five indicators; the sector negotiated up to around ten, but the ceiling still constrains what the sector can analyse from the shared exercise.",
+   "theme": "Both",
+   "type": "barrier",
+   "strength": "low",
+   "n_records": 1,
+   "n_sources": 1,
+   "n_streams": 1,
+   "streams": [
+    "transcript"
+   ],
+   "countries": [
+    "BGD"
+   ],
+   "tags": [
+    "hpc",
+    "information-management",
+    "multisector"
+   ],
+   "actors": [
+    "cluster",
+    "ocha"
+   ],
+   "record_ids": [
+    "E0501"
+   ],
+   "unmerged": false
+  },
+  {
+   "finding_id": "F1006",
+   "statement": "Because the joint assessment is capped, the sector runs complementary exercises — an annual water network performance review with a partner, a coverage survey, and a sustainability assessment built from secondary data — deliberately designed not to duplicate the joint round.",
+   "theme": "Both",
+   "type": "practice",
+   "strength": "low",
+   "n_records": 1,
+   "n_sources": 1,
+   "n_streams": 1,
+   "streams": [
+    "transcript"
+   ],
+   "countries": [
+    "BGD"
+   ],
+   "tags": [
+    "hpc",
+    "information-management",
+    "sustainability"
+   ],
+   "actors": [
+    "cluster",
+    "ingo"
+   ],
+   "record_ids": [
+    "E0502"
+   ],
+   "unmerged": false
+  },
+  {
+   "finding_id": "F1007",
+   "statement": "Before formal planning begins, the sector holds bilateral discussions with each partner to establish whether they can continue what they are currently implementing.",
+   "theme": "Transition",
+   "type": "practice",
+   "strength": "low",
+   "n_records": 1,
+   "n_sources": 1,
+   "n_streams": 1,
+   "streams": [
+    "transcript"
+   ],
+   "countries": [
+    "BGD"
+   ],
+   "tags": [
+    "hpc",
+    "partnerships",
+    "transition-handover"
+   ],
+   "actors": [
+    "cluster",
+    "ingo",
+    "local-ngo"
+   ],
+   "record_ids": [
+    "E0503"
+   ],
+   "unmerged": false
+  },
+  {
+   "finding_id": "F1008",
+   "statement": "Whether the host community is included in the joint assessment is unresolved, and the share of the response formally allocated to host communities is under review and may reduce.",
+   "theme": "Both",
+   "type": "barrier",
+   "strength": "low",
+   "n_records": 1,
+   "n_sources": 1,
+   "n_streams": 1,
+   "streams": [
+    "transcript"
+   ],
+   "countries": [
+    "BGD"
+   ],
+   "tags": [
+    "funding",
+    "hpc",
+    "inclusion"
+   ],
+   "actors": [
+    "community",
+    "ocha"
+   ],
+   "record_ids": [
+    "E0504"
+   ],
+   "unmerged": false
+  },
+  {
+   "finding_id": "F1009",
+   "statement": "Where responsibility for a service was contested between sectors, the sector agreed an institutional policy endorsed by the authorities setting out that its role is technical support rather than operational maintenance, and is now briefing camp-level authorities on it directly.",
+   "theme": "Both",
+   "type": "enabler",
+   "strength": "low",
+   "n_records": 1,
+   "n_sources": 1,
+   "n_streams": 1,
+   "streams": [
+    "transcript"
+   ],
+   "countries": [
+    "BGD"
+   ],
+   "tags": [
+    "coordination-architecture",
+    "guidance",
+    "multisector"
+   ],
+   "actors": [
+    "cluster",
+    "gov-local",
+    "operational-cell"
+   ],
+   "record_ids": [
+    "E0505"
+   ],
+   "unmerged": false
+  },
+  {
    "finding_id": "F101",
    "statement": "Reinforce the WASH analytical framework as a strategic resource — WIA, severity analysis, and AQA are not only technical tools — they are the evidence base that grounds cluster leadership, supports collective decision-making, and makes the case for WASH prioritization in HCT and inter-cluster…",
    "theme": "ABC",
@@ -2031,6 +2327,208 @@ window.SITE_DATA = {
    ],
    "record_ids": [
     "E0072"
+   ],
+   "unmerged": false
+  },
+  {
+   "finding_id": "F1010",
+   "statement": "Sectors under funding pressure move activities onto WASH — water and sanitation in schools being an education standard, for example — without carrying them in their own funding requests, which leaves the sector mobilising resources for work that is not its accountability.",
+   "theme": "Both",
+   "type": "barrier",
+   "strength": "low",
+   "n_records": 1,
+   "n_sources": 1,
+   "n_streams": 1,
+   "streams": [
+    "transcript"
+   ],
+   "countries": [],
+   "tags": [
+    "coordination-architecture",
+    "funding",
+    "multisector"
+   ],
+   "actors": [
+    "cluster",
+    "ocha"
+   ],
+   "record_ids": [
+    "E0506"
+   ],
+   "unmerged": false
+  },
+  {
+   "finding_id": "F1011",
+   "statement": "A pre-crisis baseline of WASH facilities in disaster-prone districts would allow needs to be estimated in the first weeks of a flood, when facilities are submerged and assessment is not possible; government infrastructure data exists but has not been analysed for this purpose.",
+   "theme": "Transition",
+   "type": "recommendation",
+   "strength": "low",
+   "n_records": 1,
+   "n_sources": 1,
+   "n_streams": 1,
+   "streams": [
+    "transcript"
+   ],
+   "countries": [
+    "BGD"
+   ],
+   "tags": [
+    "government-engagement",
+    "hpc",
+    "information-management"
+   ],
+   "actors": [
+    "cluster",
+    "gov-national"
+   ],
+   "record_ids": [
+    "E0507"
+   ],
+   "unmerged": false
+  },
+  {
+   "finding_id": "F1012",
+   "statement": "Assessment data at national level is collected by cluster members on a voluntary basis, so tools have to stay simple enough for volunteers and local NGO staff, and rapid rounds are limited to four to six indicators.",
+   "theme": "Transition",
+   "type": "barrier",
+   "strength": "low",
+   "n_records": 1,
+   "n_sources": 1,
+   "n_streams": 1,
+   "streams": [
+    "transcript"
+   ],
+   "countries": [
+    "BGD"
+   ],
+   "tags": [
+    "capacity",
+    "hpc",
+    "localisation"
+   ],
+   "actors": [
+    "cluster",
+    "local-ngo"
+   ],
+   "record_ids": [
+    "E0508"
+   ],
+   "unmerged": false
+  },
+  {
+   "finding_id": "F1013",
+   "statement": "No in-depth severity analysis has been produced at national level for around a decade, which makes estimating people in need across a very large population difficult to defend.",
+   "theme": "Transition",
+   "type": "barrier",
+   "strength": "low",
+   "n_records": 1,
+   "n_sources": 1,
+   "n_streams": 1,
+   "streams": [
+    "transcript"
+   ],
+   "countries": [
+    "BGD"
+   ],
+   "tags": [
+    "hpc",
+    "information-management",
+    "performance"
+   ],
+   "actors": [
+    "cluster",
+    "gov-national"
+   ],
+   "record_ids": [
+    "E0509"
+   ],
+   "unmerged": false
+  },
+  {
+   "finding_id": "F1014",
+   "statement": "Area-based coordination is being piloted at local level, accompanied by capacity mapping of local partners with a focus on local NGOs, women-led organisations and local government offices.",
+   "theme": "ABC",
+   "type": "practice",
+   "strength": "low",
+   "n_records": 1,
+   "n_sources": 1,
+   "n_streams": 1,
+   "streams": [
+    "transcript"
+   ],
+   "countries": [
+    "BGD"
+   ],
+   "tags": [
+    "capacity",
+    "coordination-architecture",
+    "localisation"
+   ],
+   "actors": [
+    "cluster",
+    "gov-local",
+    "local-ngo"
+   ],
+   "record_ids": [
+    "E0510"
+   ],
+   "unmerged": false
+  },
+  {
+   "finding_id": "F1015",
+   "statement": "A localisation capacity assessment was carried out with global support, scoring where the sector stands against the localisation agenda.",
+   "theme": "Both",
+   "type": "practice",
+   "strength": "low",
+   "n_records": 1,
+   "n_sources": 1,
+   "n_streams": 1,
+   "streams": [
+    "transcript"
+   ],
+   "countries": [
+    "BGD"
+   ],
+   "tags": [
+    "localisation",
+    "performance"
+   ],
+   "actors": [
+    "cluster",
+    "local-ngo"
+   ],
+   "record_ids": [
+    "E0511"
+   ],
+   "unmerged": false
+  },
+  {
+   "finding_id": "F1016",
+   "statement": "A pool of staff is being built at sub-district level to support coordination and information management, drawn from UN agencies, NGOs and government offices rather than from a single agency.",
+   "theme": "Transition",
+   "type": "practice",
+   "strength": "low",
+   "n_records": 1,
+   "n_sources": 1,
+   "n_streams": 1,
+   "streams": [
+    "transcript"
+   ],
+   "countries": [
+    "BGD"
+   ],
+   "tags": [
+    "capacity",
+    "coordination-architecture",
+    "localisation"
+   ],
+   "actors": [
+    "gov-local",
+    "local-ngo",
+    "un-agency"
+   ],
+   "record_ids": [
+    "E0512"
    ],
    "unmerged": false
   },
@@ -3186,14 +3684,15 @@ window.SITE_DATA = {
    "theme": "Both",
    "type": "barrier",
    "strength": "high",
-   "n_records": 7,
-   "n_sources": 5,
+   "n_records": 8,
+   "n_sources": 6,
    "n_streams": 2,
    "streams": [
     "sdr",
     "transcript"
    ],
    "countries": [
+    "BGD",
     "LBN",
     "MMR",
     "NGA",
@@ -3218,7 +3717,8 @@ window.SITE_DATA = {
     "E0404",
     "E0441",
     "E0470",
-    "E0471"
+    "E0471",
+    "E0493"
    ],
    "unmerged": false,
    "highlight": {
@@ -8637,17 +9137,18 @@ window.SITE_DATA = {
   },
   {
    "finding_id": "F506",
-   "statement": "A short implementation window of four to six months led almost all partners to prioritise distribution of critical supplies over rehabilitation or system improvement, because longer works were not feasible in the time available.",
+   "statement": "A strict priority tier requires life-saving activities — operation and maintenance, waste collection and supplies — to be funded before infrastructure improvement or reconstruction, and the resulting inaction on the lower tiers has affected the durability and quality of facilities.",
    "theme": "Transition",
    "type": "barrier",
-   "strength": "low",
-   "n_records": 1,
-   "n_sources": 1,
+   "strength": "medium",
+   "n_records": 2,
+   "n_sources": 2,
    "n_streams": 1,
    "streams": [
     "transcript"
    ],
    "countries": [
+    "BGD",
     "COL"
    ],
    "tags": [
@@ -8656,12 +9157,15 @@ window.SITE_DATA = {
     "sustainability"
    ],
    "actors": [
+    "cluster",
     "donor",
     "ingo",
+    "ocha",
     "un-agency"
    ],
    "record_ids": [
-    "E0386"
+    "E0386",
+    "E0495"
    ],
    "unmerged": false
   },
@@ -22306,6 +22810,507 @@ window.SITE_DATA = {
    "date_collected": "2026-07-23",
    "confidence": "high",
    "status": "draft"
+  },
+  {
+   "id": "E0493",
+   "finding_id": "F225",
+   "theme": "Both",
+   "type": "barrier",
+   "statement": "Following an agency restructuring, programme leads double-hat as sector coordinators, so the sector is run alongside a full programme portfolio.",
+   "level": "national",
+   "countries": [
+    "BGD"
+   ],
+   "actors": [
+    "un-agency",
+    "cluster"
+   ],
+   "tags": [
+    "capacity",
+    "coordination-architecture"
+   ],
+   "stream": "transcript",
+   "source_id": "S108",
+   "date_collected": "2026-07-17",
+   "confidence": "high",
+   "status": "draft"
+  },
+  {
+   "id": "E0494",
+   "finding_id": "F028",
+   "theme": "Both",
+   "type": "barrier",
+   "statement": "The national coordination platform has no dedicated information management post; coordination and information management are carried by the coordinator with intermittent help from cluster members and partner staff.",
+   "level": "national",
+   "countries": [
+    "BGD"
+   ],
+   "actors": [
+    "cluster",
+    "ingo"
+   ],
+   "tags": [
+    "capacity",
+    "information-management"
+   ],
+   "stream": "transcript",
+   "source_id": "S108",
+   "date_collected": "2026-07-17",
+   "confidence": "high",
+   "status": "draft"
+  },
+  {
+   "id": "E0495",
+   "finding_id": "F506",
+   "theme": "Transition",
+   "type": "barrier",
+   "statement": "A strict priority tier requires life-saving activities — operation and maintenance, waste collection and supplies — to be funded before infrastructure improvement or reconstruction, and the resulting inaction on the lower tiers has affected the durability and quality of facilities.",
+   "level": "subnational",
+   "countries": [
+    "BGD"
+   ],
+   "actors": [
+    "donor",
+    "ocha",
+    "cluster"
+   ],
+   "tags": [
+    "funding",
+    "sustainability",
+    "pooled-funds"
+   ],
+   "stream": "transcript",
+   "source_id": "S108",
+   "date_collected": "2026-07-17",
+   "confidence": "high",
+   "status": "draft"
+  },
+  {
+   "id": "E0496",
+   "finding_id": "F1000",
+   "theme": "Transition",
+   "type": "context",
+   "statement": "At national level the coordination platform is government-led, so the sector operates inside a national cluster system rather than an internationally led one, alongside a separate sector arrangement for the refugee response.",
+   "level": "national",
+   "countries": [
+    "BGD"
+   ],
+   "actors": [
+    "gov-national",
+    "cluster"
+   ],
+   "tags": [
+    "government-engagement",
+    "coordination-architecture"
+   ],
+   "stream": "transcript",
+   "source_id": "S108",
+   "date_collected": "2026-07-17",
+   "confidence": "high",
+   "status": "draft"
+  },
+  {
+   "id": "E0497",
+   "finding_id": "F1001",
+   "theme": "Both",
+   "type": "practice",
+   "statement": "After the dedicated sector information management post was discontinued, a shared information management pool was created in the field office — an international lead, a national officer and four analysts serving all agency-led sectors — adopting a model already used in another operation.",
+   "level": "subnational",
+   "countries": [
+    "BGD"
+   ],
+   "actors": [
+    "un-agency",
+    "cluster"
+   ],
+   "tags": [
+    "information-management",
+    "capacity",
+    "coordination-architecture"
+   ],
+   "stream": "transcript",
+   "source_id": "S108",
+   "date_collected": "2026-07-17",
+   "confidence": "high",
+   "status": "draft"
+  },
+  {
+   "id": "E0498",
+   "finding_id": "F1002",
+   "theme": "Transition",
+   "type": "enabler",
+   "statement": "A rationalisation model gives NGOs responsibility for day-to-day operation and maintenance while UN agencies cover supplies, gap-filling and strategic issues, and the sector is regarded within the operation as a working example of the approach.",
+   "level": "subnational",
+   "countries": [
+    "BGD"
+   ],
+   "actors": [
+    "ingo",
+    "local-ngo",
+    "un-agency"
+   ],
+   "tags": [
+    "localisation",
+    "partnerships",
+    "coordination-architecture"
+   ],
+   "stream": "transcript",
+   "source_id": "S108",
+   "date_collected": "2026-07-17",
+   "confidence": "high",
+   "status": "draft"
+  },
+  {
+   "id": "E0499",
+   "finding_id": "F1003",
+   "theme": "Transition",
+   "type": "practice",
+   "statement": "A consortium of national implementing partners was established that receives funding directly from a bilateral donor rather than through an intermediary.",
+   "level": "subnational",
+   "countries": [
+    "BGD"
+   ],
+   "actors": [
+    "local-ngo",
+    "donor"
+   ],
+   "tags": [
+    "localisation",
+    "funding",
+    "partnerships"
+   ],
+   "stream": "transcript",
+   "source_id": "S108",
+   "date_collected": "2026-07-17",
+   "confidence": "high",
+   "status": "draft"
+  },
+  {
+   "id": "E0500",
+   "finding_id": "F1004",
+   "theme": "ABC",
+   "type": "barrier",
+   "statement": "Of the pooled fund allocation reaching the sector, around one eighth went to international NGOs and the remainder to UN agencies.",
+   "level": "subnational",
+   "countries": [
+    "BGD"
+   ],
+   "actors": [
+    "un-agency",
+    "ingo",
+    "donor"
+   ],
+   "tags": [
+    "pooled-funds",
+    "localisation",
+    "funding"
+   ],
+   "stream": "transcript",
+   "source_id": "S108",
+   "date_collected": "2026-07-17",
+   "confidence": "high",
+   "status": "draft"
+  },
+  {
+   "id": "E0501",
+   "finding_id": "F1005",
+   "theme": "Both",
+   "type": "barrier",
+   "statement": "The joint intersectoral assessment initially capped each sector at five indicators; the sector negotiated up to around ten, but the ceiling still constrains what the sector can analyse from the shared exercise.",
+   "level": "subnational",
+   "countries": [
+    "BGD"
+   ],
+   "actors": [
+    "ocha",
+    "cluster"
+   ],
+   "tags": [
+    "hpc",
+    "information-management",
+    "multisector"
+   ],
+   "stream": "transcript",
+   "source_id": "S108",
+   "date_collected": "2026-07-17",
+   "confidence": "high",
+   "status": "draft"
+  },
+  {
+   "id": "E0502",
+   "finding_id": "F1006",
+   "theme": "Both",
+   "type": "practice",
+   "statement": "Because the joint assessment is capped, the sector runs complementary exercises — an annual water network performance review with a partner, a coverage survey, and a sustainability assessment built from secondary data — deliberately designed not to duplicate the joint round.",
+   "level": "subnational",
+   "countries": [
+    "BGD"
+   ],
+   "actors": [
+    "cluster",
+    "ingo"
+   ],
+   "tags": [
+    "hpc",
+    "information-management",
+    "sustainability"
+   ],
+   "stream": "transcript",
+   "source_id": "S108",
+   "date_collected": "2026-07-17",
+   "confidence": "high",
+   "status": "draft"
+  },
+  {
+   "id": "E0503",
+   "finding_id": "F1007",
+   "theme": "Transition",
+   "type": "practice",
+   "statement": "Before formal planning begins, the sector holds bilateral discussions with each partner to establish whether they can continue what they are currently implementing.",
+   "level": "subnational",
+   "countries": [
+    "BGD"
+   ],
+   "actors": [
+    "cluster",
+    "ingo",
+    "local-ngo"
+   ],
+   "tags": [
+    "partnerships",
+    "hpc",
+    "transition-handover"
+   ],
+   "stream": "transcript",
+   "source_id": "S108",
+   "date_collected": "2026-07-17",
+   "confidence": "high",
+   "status": "draft"
+  },
+  {
+   "id": "E0504",
+   "finding_id": "F1008",
+   "theme": "Both",
+   "type": "barrier",
+   "statement": "Whether the host community is included in the joint assessment is unresolved, and the share of the response formally allocated to host communities is under review and may reduce.",
+   "level": "subnational",
+   "countries": [
+    "BGD"
+   ],
+   "actors": [
+    "ocha",
+    "community"
+   ],
+   "tags": [
+    "hpc",
+    "inclusion",
+    "funding"
+   ],
+   "stream": "transcript",
+   "source_id": "S108",
+   "date_collected": "2026-07-17",
+   "confidence": "high",
+   "status": "draft"
+  },
+  {
+   "id": "E0505",
+   "finding_id": "F1009",
+   "theme": "Both",
+   "type": "enabler",
+   "statement": "Where responsibility for a service was contested between sectors, the sector agreed an institutional policy endorsed by the authorities setting out that its role is technical support rather than operational maintenance, and is now briefing camp-level authorities on it directly.",
+   "level": "subnational",
+   "countries": [
+    "BGD"
+   ],
+   "actors": [
+    "cluster",
+    "gov-local",
+    "operational-cell"
+   ],
+   "tags": [
+    "multisector",
+    "coordination-architecture",
+    "guidance"
+   ],
+   "stream": "transcript",
+   "source_id": "S108",
+   "date_collected": "2026-07-17",
+   "confidence": "high",
+   "status": "draft"
+  },
+  {
+   "id": "E0506",
+   "finding_id": "F1010",
+   "theme": "Both",
+   "type": "barrier",
+   "statement": "Sectors under funding pressure move activities onto WASH — water and sanitation in schools being an education standard, for example — without carrying them in their own funding requests, which leaves the sector mobilising resources for work that is not its accountability.",
+   "level": "global",
+   "countries": [],
+   "actors": [
+    "cluster",
+    "ocha"
+   ],
+   "tags": [
+    "multisector",
+    "funding",
+    "coordination-architecture"
+   ],
+   "stream": "transcript",
+   "source_id": "S108",
+   "date_collected": "2026-07-17",
+   "confidence": "high",
+   "status": "draft"
+  },
+  {
+   "id": "E0507",
+   "finding_id": "F1011",
+   "theme": "Transition",
+   "type": "recommendation",
+   "statement": "A pre-crisis baseline of WASH facilities in disaster-prone districts would allow needs to be estimated in the first weeks of a flood, when facilities are submerged and assessment is not possible; government infrastructure data exists but has not been analysed for this purpose.",
+   "level": "national",
+   "countries": [
+    "BGD"
+   ],
+   "actors": [
+    "gov-national",
+    "cluster"
+   ],
+   "tags": [
+    "hpc",
+    "information-management",
+    "government-engagement"
+   ],
+   "stream": "transcript",
+   "source_id": "S108",
+   "date_collected": "2026-07-17",
+   "confidence": "high",
+   "status": "draft"
+  },
+  {
+   "id": "E0508",
+   "finding_id": "F1012",
+   "theme": "Transition",
+   "type": "barrier",
+   "statement": "Assessment data at national level is collected by cluster members on a voluntary basis, so tools have to stay simple enough for volunteers and local NGO staff, and rapid rounds are limited to four to six indicators.",
+   "level": "national",
+   "countries": [
+    "BGD"
+   ],
+   "actors": [
+    "local-ngo",
+    "cluster"
+   ],
+   "tags": [
+    "hpc",
+    "capacity",
+    "localisation"
+   ],
+   "stream": "transcript",
+   "source_id": "S108",
+   "date_collected": "2026-07-17",
+   "confidence": "high",
+   "status": "draft"
+  },
+  {
+   "id": "E0509",
+   "finding_id": "F1013",
+   "theme": "Transition",
+   "type": "barrier",
+   "statement": "No in-depth severity analysis has been produced at national level for around a decade, which makes estimating people in need across a very large population difficult to defend.",
+   "level": "national",
+   "countries": [
+    "BGD"
+   ],
+   "actors": [
+    "cluster",
+    "gov-national"
+   ],
+   "tags": [
+    "hpc",
+    "information-management",
+    "performance"
+   ],
+   "stream": "transcript",
+   "source_id": "S108",
+   "date_collected": "2026-07-17",
+   "confidence": "high",
+   "status": "draft"
+  },
+  {
+   "id": "E0510",
+   "finding_id": "F1014",
+   "theme": "ABC",
+   "type": "practice",
+   "statement": "Area-based coordination is being piloted at local level, accompanied by capacity mapping of local partners with a focus on local NGOs, women-led organisations and local government offices.",
+   "level": "subnational",
+   "countries": [
+    "BGD"
+   ],
+   "actors": [
+    "local-ngo",
+    "gov-local",
+    "cluster"
+   ],
+   "tags": [
+    "localisation",
+    "coordination-architecture",
+    "capacity"
+   ],
+   "stream": "transcript",
+   "source_id": "S108",
+   "date_collected": "2026-07-17",
+   "confidence": "high",
+   "status": "draft"
+  },
+  {
+   "id": "E0511",
+   "finding_id": "F1015",
+   "theme": "Both",
+   "type": "practice",
+   "statement": "A localisation capacity assessment was carried out with global support, scoring where the sector stands against the localisation agenda.",
+   "level": "national",
+   "countries": [
+    "BGD"
+   ],
+   "actors": [
+    "cluster",
+    "local-ngo"
+   ],
+   "tags": [
+    "localisation",
+    "performance"
+   ],
+   "stream": "transcript",
+   "source_id": "S108",
+   "date_collected": "2026-07-17",
+   "confidence": "high",
+   "status": "draft"
+  },
+  {
+   "id": "E0512",
+   "finding_id": "F1016",
+   "theme": "Transition",
+   "type": "practice",
+   "statement": "A pool of staff is being built at sub-district level to support coordination and information management, drawn from UN agencies, NGOs and government offices rather than from a single agency.",
+   "level": "subnational",
+   "countries": [
+    "BGD"
+   ],
+   "actors": [
+    "un-agency",
+    "local-ngo",
+    "gov-local"
+   ],
+   "tags": [
+    "capacity",
+    "localisation",
+    "coordination-architecture"
+   ],
+   "stream": "transcript",
+   "source_id": "S108",
+   "date_collected": "2026-07-17",
+   "confidence": "high",
+   "status": "draft"
   }
  ],
  "sources": [
@@ -23566,6 +24571,19 @@ window.SITE_DATA = {
    "url": "",
    "stream": "transcript",
    "date_added": "2026-07-23",
+   "access": "restricted",
+   "legacy_id": "",
+   "source_group": ""
+  },
+  {
+   "source_id": "S108",
+   "title": "Country consultation — Bangladesh (national and refugee response)",
+   "organisation": "Global WASH Cluster",
+   "year": "2026",
+   "type": "interview",
+   "url": "",
+   "stream": "transcript",
+   "date_added": "2026-07-17",
    "access": "restricted",
    "legacy_id": "",
    "source_group": ""

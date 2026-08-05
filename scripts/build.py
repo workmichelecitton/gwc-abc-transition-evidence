@@ -33,7 +33,7 @@ MULTI = ("countries", "actors", "tags")     # semicolon-separated columns
 # identify a single coordinator. Remove "quote" from this tuple to publish them.
 DROP = ("notes", "quote")
 ID_RE = re.compile(r"^E\d{4}$")
-FID_RE = re.compile(r"^F\d{3}$")
+FID_RE = re.compile(r"^F\d{3,4}$")
 SID_RE = re.compile(r"^S\d{3}$")
 DATE_RE = re.compile(r"^\d{4}-\d{2}-\d{2}$")
 
@@ -123,7 +123,7 @@ def main():
 
         fid = rec.get("finding_id", "")
         if fid and not FID_RE.match(fid):
-            err(i, f"bad finding_id '{fid}' (expected F001)")
+            err(i, f"bad finding_id '{fid}' (expected F001 or F1001)")
         if not fid:
             warn(f"evidence.csv row {i} ({rid}): no finding_id — record will not be grouped. Run prompts/04.")
 

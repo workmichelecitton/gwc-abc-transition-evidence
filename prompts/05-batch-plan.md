@@ -30,8 +30,8 @@ Folder: **Country Checkin June-July** (Drive ID `1VpBRYqtCujTXIzuoDoOQ2iioc-5AaM
 | 1 | Sudan | SDN | `1aDO43D9LwNHXthe5yf464P13iPemm_W7` | Already appears in the ABC SDR via workshop evidence — see independence warning below |
 | 2 | Nigeria | NGA | `1AKuA6X6-WgnXUPJAQ6J5CzJZWdRt6Hlw` | Named in the Transition SDR as a live transition context |
 | 2 | Cameroon-adjacent: Niger | NER | `1qX6mcFe04sXIrziYb1hduz6dAksPUzt-` | Heavily cited in the Transition SDR (S33; S34) — check independence |
-| 3 | Lebanon | LBN | `1VE8Q__LsIcJzAUojsJp41R5z2W-aQCyb` | Cited in Transition SDR on willingness constraints |
-| 3 | Bangladesh | BGD | `1bENcGRpkTMaltGifF_ggzUPO5PUck5tK` | Cox's Bazar evidence already in the SDR via KIIs |
+| ~~3~~ done | Lebanon | LBN | `1VE8Q__LsIcJzAUojsJp41R5z2W-aQCyb` | Cited in Transition SDR on willingness constraints |
+| ~~3~~ done | Bangladesh | BGD | `1bENcGRpkTMaltGifF_ggzUPO5PUck5tK` | Cox's Bazar evidence already in the SDR via KIIs |
 | 4 | Haiti | HTI | `1W95-_uIR8D2ZkU3sgeHRbuuMmp-a-s6Y` | |
 | 4 | Mozambique | MOZ | `11yJVtARQOv67hXRu7YXn9GqfMs3qBqGs` | Cited in the SDR via KIIs |
 | 5 | Ethiopia | ETH | `1MWia7SNLNcqg9Czz3U0-je57Y4AKULsn` | |
@@ -39,7 +39,11 @@ Folder: **Country Checkin June-July** (Drive ID `1VpBRYqtCujTXIzuoDoOQ2iioc-5AaM
 | 6 | Mali | MLI | `1l6YjJeZC1bch00MLO8ls2BL7hEp7pTUs` | |
 | 6 | South Sudan | SSD | `1LFb1UZynhadK2Zsv3aZiDMmEMmOqD5TE` | |
 
-Already extracted: Somalia (S011), Myanmar parts 1 and 2 (S012).
+Already extracted: Somalia (S011), Myanmar (S012), Colombia (S103), Sudan (S104), Nigeria (S105), Niger (S106), Lebanon (S107), Bangladesh (S108).
+
+Remaining: Haiti, Mozambique, Ethiopia, Burkina Faso, Mali, South Sudan.
+
+**Note on finding IDs.** These now run past F999; the format accepts three or four digits (`F001` to `F9999`). Continue from the highest existing value.
 
 ## Independence warning — read before merging
 
