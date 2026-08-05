@@ -11,9 +11,14 @@ each pair — long unbroken runs are where extraction errors creep in.
 3. Extract evidence records → append to `data/evidence.csv`; add the source row to `data/sources.csv`.
 4. Extract commitments → append to `data/follow-ups.csv`.
 5. Run `prompts/04-merge-and-dedupe.md` across the whole base, not just the new rows.
-6. `python scripts/build.py` — must exit 0.
-7. Write plain-language rows in `data/highlights.csv` for any finding that has newly reached high strength (the build warns you which).
-8. Commit and push.
+6. **Run a tone pass before building.** Re-read every new statement against the register table in
+   `prompts/00-shared-rules.md`. Extraction tends to carry across the speaker's frustration —
+   words like *counterproductive*, *inadequate*, *passive actors*, *resisted*, *failed*. Anonymisation
+   does not cover this: a country plus a sharp characterisation is still attributable, and the base is
+   public. Describe the mechanism and its consequence, and point at the remedy where there is one.
+7. `python scripts/build.py` — must exit 0.
+8. Write plain-language rows in `data/highlights.csv` for any finding that has newly reached high strength (the build warns you which).
+9. Commit and push.
 
 ## Transcripts still to do
 

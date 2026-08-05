@@ -626,7 +626,7 @@
   },
   {
    "finding_id": "F015",
-   "statement": "Clusters were treated as passive actors in the first pooled fund allocation, and the indicator list issued to partners diverged from the indicators agreed in the sector operational framework.",
+   "statement": "Clusters had limited involvement in the first pooled fund allocation, and the indicator list issued to partners diverged from the indicators agreed in the sector operational framework.",
    "theme": "ABC",
    "type": "barrier",
    "strength": "medium",
@@ -888,7 +888,7 @@
   },
   {
    "finding_id": "F023",
-   "statement": "Ministry counterparts initially resisted taking on coordination responsibility because they expected an imminent transfer; framing transition as a phased process rather than a handover date reduced that resistance.",
+   "statement": "Ministry counterparts were initially hesitant about taking on coordination responsibility because they expected an imminent transfer; framing transition as a phased process rather than a handover date reduced that hesitancy.",
    "theme": "Transition",
    "type": "enabler",
    "strength": "low",
@@ -1758,7 +1758,7 @@
   },
   {
    "finding_id": "F053",
-   "statement": "Vulnerability analysis presented previously was not taken up by partners because it did not speak to them: the framework was not well understood and what it prioritised did not match what partners observed in the field.",
+   "statement": "Vulnerability analysis presented previously was not taken up by partners: the framework was not widely understood, and what it prioritised did not always match what partners observed in the field.",
    "theme": "Both",
    "type": "barrier",
    "strength": "medium",
@@ -2822,7 +2822,7 @@
   },
   {
    "finding_id": "F214",
-   "statement": "A new central planning and reporting platform is being introduced alongside the cluster existing reporting system, which would leave partners reporting the same activity twice.",
+   "statement": "A new central planning and reporting platform is being introduced alongside the cluster's existing reporting system, which would leave partners entering the same activity in both.",
    "theme": "ABC",
    "type": "barrier",
    "strength": "high",
@@ -6549,7 +6549,7 @@
   },
   {
    "finding_id": "F364",
-   "statement": "The entire counterpart team at the lead ministry left within one year, including the minister, leaving nobody the cluster had previously worked with; meetings to rebuild the relationship were repeatedly cancelled and the transition dialogue stalled.",
+   "statement": "The entire counterpart team at the lead ministry changed within one year, including at senior level, leaving nobody the cluster had previously worked with; meetings to rebuild the relationship did not take place and the transition dialogue stalled.",
    "theme": "Transition",
    "type": "barrier",
    "strength": "high",
@@ -8682,7 +8682,7 @@
   },
   {
    "finding_id": "F511",
-   "statement": "Many partners making rapid entries into and exits from communities in order to reach the highest-severity municipalities creates a risk of doing harm, which the cluster raised with the donor.",
+   "statement": "Rapid entries into and exits from communities, driven by the need to reach the highest-severity municipalities within a short window, carry a risk of unintended harm — a point the cluster raised with the donor.",
    "theme": "Transition",
    "type": "barrier",
    "strength": "low",
@@ -8711,7 +8711,7 @@
   },
   {
    "finding_id": "F512",
-   "statement": "Partners reported nutrition actors distributing powdered milk without complementary water and sanitation activities, which turns a nutrition intervention into a health risk.",
+   "statement": "Partners reported instances of infant formula being distributed without complementary water and sanitation activities, which reduces the benefit of the nutrition intervention and can introduce health risk.",
    "theme": "Transition",
    "type": "barrier",
    "strength": "low",
@@ -8963,7 +8963,7 @@
   },
   {
    "finding_id": "F521",
-   "statement": "Temporary accommodation managed by the national disaster authority prioritises speed of implementation, with little attention to gender or to the needs of children, and shelter and WASH standards are not consistently applied.",
+   "statement": "Temporary accommodation is set up quickly under national disaster arrangements, and gender and child-specific considerations, along with shelter and WASH standards, are not always applied consistently.",
    "theme": "Transition",
    "type": "barrier",
    "strength": "low",
@@ -9166,7 +9166,7 @@
   },
   {
    "finding_id": "F604",
-   "statement": "Recruiting state-level information management support has stalled: the office is reluctant after previous standby deployments, and the cluster is conscious of how its staffing compares with other clusters.",
+   "statement": "Recruiting state-level information management support has stalled, with previous surge deployments and overall coordination staffing levels both weighing on the decision.",
    "theme": "Both",
    "type": "barrier",
    "strength": "low",
@@ -9223,7 +9223,7 @@
   },
   {
    "finding_id": "F606",
-   "statement": "A central reporting platform launched mid-year requires partners to upload projects retroactively from the start of the year, which is not realistic alongside the reporting systems already in use.",
+   "statement": "A central reporting platform launched mid-year asks partners to upload projects retroactively from the start of the year, which is difficult alongside the reporting systems already in use.",
    "theme": "ABC",
    "type": "barrier",
    "strength": "low",
@@ -9252,7 +9252,7 @@
   },
   {
    "finding_id": "F607",
-   "statement": "Replacing cluster reporting with a central system changes beneficiary counting, indicators and data flow at once, and is seen by the cluster as reducing its technical leadership over how sector results are measured.",
+   "statement": "Replacing cluster reporting with a central system changes beneficiary counting, indicators and data flow at once, and raises a question about where responsibility for defining how sector results are measured should sit..",
    "theme": "ABC",
    "type": "barrier",
    "strength": "low",
@@ -9360,7 +9360,7 @@
   },
   {
    "finding_id": "F611",
-   "statement": "Some states moved to create a separate outbreak coordination platform with its own information management, which the cluster resisted as a further fragmentation of an already crowded architecture.",
+   "statement": "Some states moved to create a separate outbreak coordination platform with its own information management, which the cluster raised concerns about, given how many coordination structures are already in place.",
    "theme": "ABC",
    "type": "barrier",
    "strength": "low",
@@ -9558,7 +9558,7 @@
   },
   {
    "finding_id": "F618",
-   "statement": "The pooled fund prioritisation exercise required localities to be selected within forty-eight hours using a model the cluster considered inadequate, on the understanding it could be refined later; refinement then proved impossible and the initial selection has held for the year.",
+   "statement": "The pooled fund prioritisation exercise required localities to be selected within forty-eight hours using a model the cluster had reservations about, on the understanding it could be refined later; in practice the initial selection has held for the year.",
    "theme": "ABC",
    "type": "barrier",
    "strength": "low",
@@ -9587,7 +9587,7 @@
   },
   {
    "finding_id": "F619",
-   "statement": "Applying geographic prioritisation to emergency supplies is counterproductive where needs are dispersed: prepositioned stock needs to reach any pocket of need, and outbreaks are now occurring in localities that were not prioritised and cannot be supplied.",
+   "statement": "Applying geographic prioritisation to emergency supplies works against the objective where needs are dispersed: prepositioned stock needs to reach any pocket of need, and outbreaks are now occurring in localities that were not prioritised and cannot be supplied.",
    "theme": "ABC",
    "type": "barrier",
    "strength": "low",
@@ -9615,7 +9615,7 @@
   },
   {
    "finding_id": "F620",
-   "statement": "A written explanation of why the prioritisation methodology was inadequate produced no change at the time, though an after-action review of the allocation is now underway.",
+   "statement": "A written explanation of the cluster's concerns with the prioritisation methodology did not change the approach for that allocation; an after-action review is now underway, which offers a route to revisit it.",
    "theme": "ABC",
    "type": "context",
    "strength": "low",
@@ -9644,7 +9644,7 @@
   },
   {
    "finding_id": "F621",
-   "statement": "A single strategic outcome set at humanitarian coordinator level gives the allocation coherence but leaves substantial sector gaps outside the scope of the main humanitarian fund.",
+   "statement": "A single strategic outcome set at humanitarian coordinator level gives the allocation coherence, while leaving sector gaps that sit outside its scope still needing a funding route.",
    "theme": "ABC",
    "type": "barrier",
    "strength": "low",
@@ -9672,7 +9672,7 @@
   },
   {
    "finding_id": "F622",
-   "statement": "The pooled fund grant management system offers outputs and indicators structured only around water, sanitation and hygiene, with no public health framing, so partners cannot build an outbreak response strategy within it and end up doing appropriate work in the wrong locations.",
+   "statement": "The pooled fund grant management system offers outputs and indicators structured only around water, sanitation and hygiene, with no public health framing, which makes it difficult to frame an outbreak response within the reporting structure, and can direct otherwise appropriate activities to the wrong locations.",
    "theme": "Both",
    "type": "barrier",
    "strength": "low",
@@ -10225,7 +10225,7 @@
    "finding_id": "F023",
    "theme": "Transition",
    "type": "enabler",
-   "statement": "Ministry counterparts initially resisted taking on coordination responsibility because they expected an imminent transfer; framing transition as a phased process rather than a handover date reduced that resistance.",
+   "statement": "Ministry counterparts were initially hesitant about taking on coordination responsibility because they expected an imminent transfer; framing transition as a phased process rather than a handover date reduced that hesitancy.",
    "level": "national",
    "countries": [
     "SOM"
@@ -18203,7 +18203,7 @@
    "finding_id": "F364",
    "theme": "Transition",
    "type": "barrier",
-   "statement": "The entire counterpart team at the lead ministry left within one year, including the minister, leaving nobody the cluster had previously worked with; meetings to rebuild the relationship were repeatedly cancelled and the transition dialogue stalled.",
+   "statement": "The entire counterpart team at the lead ministry changed within one year, including at senior level, leaving nobody the cluster had previously worked with; meetings to rebuild the relationship did not take place and the transition dialogue stalled.",
    "level": "national",
    "countries": [
     "COL"
@@ -18253,7 +18253,7 @@
    "finding_id": "F015",
    "theme": "ABC",
    "type": "barrier",
-   "statement": "Clusters were treated as passive actors in the first pooled fund allocation, and the indicator list issued to partners diverged from the indicators agreed in the sector operational framework.",
+   "statement": "Clusters had limited involvement in the first pooled fund allocation, and the indicator list issued to partners diverged from the indicators agreed in the sector operational framework.",
    "level": "national",
    "countries": [
     "COL"
@@ -18599,7 +18599,7 @@
    "finding_id": "F511",
    "theme": "Transition",
    "type": "barrier",
-   "statement": "Many partners making rapid entries into and exits from communities in order to reach the highest-severity municipalities creates a risk of doing harm, which the cluster raised with the donor.",
+   "statement": "Rapid entries into and exits from communities, driven by the need to reach the highest-severity municipalities within a short window, carry a risk of unintended harm — a point the cluster raised with the donor.",
    "level": "national",
    "countries": [
     "COL"
@@ -18624,7 +18624,7 @@
    "finding_id": "F512",
    "theme": "Transition",
    "type": "barrier",
-   "statement": "Partners reported nutrition actors distributing powdered milk without complementary water and sanitation activities, which turns a nutrition intervention into a health risk.",
+   "statement": "Partners reported instances of infant formula being distributed without complementary water and sanitation activities, which reduces the benefit of the nutrition intervention and can introduce health risk.",
    "level": "national",
    "countries": [
     "COL"
@@ -18840,7 +18840,7 @@
    "finding_id": "F521",
    "theme": "Transition",
    "type": "barrier",
-   "statement": "Temporary accommodation managed by the national disaster authority prioritises speed of implementation, with little attention to gender or to the needs of children, and shelter and WASH standards are not consistently applied.",
+   "statement": "Temporary accommodation is set up quickly under national disaster arrangements, and gender and child-specific considerations, along with shelter and WASH standards, are not always applied consistently.",
    "level": "subnational",
    "countries": [
     "COL"
@@ -18988,7 +18988,7 @@
    "finding_id": "F053",
    "theme": "Both",
    "type": "barrier",
-   "statement": "Vulnerability analysis presented previously was not taken up by partners because it did not speak to them: the framework was not well understood and what it prioritised did not match what partners observed in the field.",
+   "statement": "Vulnerability analysis presented previously was not taken up by partners: the framework was not widely understood, and what it prioritised did not always match what partners observed in the field.",
    "level": "national",
    "countries": [
     "SDN"
@@ -19012,7 +19012,7 @@
    "finding_id": "F214",
    "theme": "ABC",
    "type": "barrier",
-   "statement": "A new central planning and reporting platform is being introduced alongside the cluster existing reporting system, which would leave partners reporting the same activity twice.",
+   "statement": "A new central planning and reporting platform is being introduced alongside the cluster's existing reporting system, which would leave partners entering the same activity in both.",
    "level": "national",
    "countries": [
     "SDN"
@@ -19139,7 +19139,7 @@
    "finding_id": "F604",
    "theme": "Both",
    "type": "barrier",
-   "statement": "Recruiting state-level information management support has stalled: the office is reluctant after previous standby deployments, and the cluster is conscious of how its staffing compares with other clusters.",
+   "statement": "Recruiting state-level information management support has stalled, with previous surge deployments and overall coordination staffing levels both weighing on the decision.",
    "level": "subnational",
    "countries": [
     "SDN"
@@ -19188,7 +19188,7 @@
    "finding_id": "F606",
    "theme": "ABC",
    "type": "barrier",
-   "statement": "A central reporting platform launched mid-year requires partners to upload projects retroactively from the start of the year, which is not realistic alongside the reporting systems already in use.",
+   "statement": "A central reporting platform launched mid-year asks partners to upload projects retroactively from the start of the year, which is difficult alongside the reporting systems already in use.",
    "level": "national",
    "countries": [
     "SDN"
@@ -19213,7 +19213,7 @@
    "finding_id": "F607",
    "theme": "ABC",
    "type": "barrier",
-   "statement": "Replacing cluster reporting with a central system changes beneficiary counting, indicators and data flow at once, and is seen by the cluster as reducing its technical leadership over how sector results are measured.",
+   "statement": "Replacing cluster reporting with a central system changes beneficiary counting, indicators and data flow at once, and raises a question about where responsibility for defining how sector results are measured should sit..",
    "level": "national",
    "countries": [
     "SDN"
@@ -19305,7 +19305,7 @@
    "finding_id": "F611",
    "theme": "ABC",
    "type": "barrier",
-   "statement": "Some states moved to create a separate outbreak coordination platform with its own information management, which the cluster resisted as a further fragmentation of an already crowded architecture.",
+   "statement": "Some states moved to create a separate outbreak coordination platform with its own information management, which the cluster raised concerns about, given how many coordination structures are already in place.",
    "level": "subnational",
    "countries": [
     "SDN"
@@ -19475,7 +19475,7 @@
    "finding_id": "F618",
    "theme": "ABC",
    "type": "barrier",
-   "statement": "The pooled fund prioritisation exercise required localities to be selected within forty-eight hours using a model the cluster considered inadequate, on the understanding it could be refined later; refinement then proved impossible and the initial selection has held for the year.",
+   "statement": "The pooled fund prioritisation exercise required localities to be selected within forty-eight hours using a model the cluster had reservations about, on the understanding it could be refined later; in practice the initial selection has held for the year.",
    "level": "national",
    "countries": [
     "SDN"
@@ -19500,7 +19500,7 @@
    "finding_id": "F619",
    "theme": "ABC",
    "type": "barrier",
-   "statement": "Applying geographic prioritisation to emergency supplies is counterproductive where needs are dispersed: prepositioned stock needs to reach any pocket of need, and outbreaks are now occurring in localities that were not prioritised and cannot be supplied.",
+   "statement": "Applying geographic prioritisation to emergency supplies works against the objective where needs are dispersed: prepositioned stock needs to reach any pocket of need, and outbreaks are now occurring in localities that were not prioritised and cannot be supplied.",
    "level": "national",
    "countries": [
     "SDN"
@@ -19524,7 +19524,7 @@
    "finding_id": "F620",
    "theme": "ABC",
    "type": "context",
-   "statement": "A written explanation of why the prioritisation methodology was inadequate produced no change at the time, though an after-action review of the allocation is now underway.",
+   "statement": "A written explanation of the cluster's concerns with the prioritisation methodology did not change the approach for that allocation; an after-action review is now underway, which offers a route to revisit it.",
    "level": "national",
    "countries": [
     "SDN"
@@ -19549,7 +19549,7 @@
    "finding_id": "F621",
    "theme": "ABC",
    "type": "barrier",
-   "statement": "A single strategic outcome set at humanitarian coordinator level gives the allocation coherence but leaves substantial sector gaps outside the scope of the main humanitarian fund.",
+   "statement": "A single strategic outcome set at humanitarian coordinator level gives the allocation coherence, while leaving sector gaps that sit outside its scope still needing a funding route.",
    "level": "national",
    "countries": [
     "SDN"
@@ -19573,7 +19573,7 @@
    "finding_id": "F622",
    "theme": "Both",
    "type": "barrier",
-   "statement": "The pooled fund grant management system offers outputs and indicators structured only around water, sanitation and hygiene, with no public health framing, so partners cannot build an outbreak response strategy within it and end up doing appropriate work in the wrong locations.",
+   "statement": "The pooled fund grant management system offers outputs and indicators structured only around water, sanitation and hygiene, with no public health framing, which makes it difficult to frame an outbreak response within the reporting structure, and can direct otherwise appropriate activities to the wrong locations.",
    "level": "global",
    "countries": [],
    "actors": [
