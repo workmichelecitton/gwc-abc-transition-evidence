@@ -66,9 +66,9 @@ window.SITE_DATA = {
  "generated": "2026-08-05",
  "taxonomy_version": "0.4.0",
  "stats": {
-  "records": 422,
-  "findings": 332,
-  "sources": 94,
+  "records": 440,
+  "findings": 344,
+  "sources": 95,
   "countries": 25,
   "withheld_internal": 1
  },
@@ -916,12 +916,12 @@ window.SITE_DATA = {
   },
   {
    "finding_id": "F024",
-   "statement": "State-level ministry engagement varies widely within one country, with some convening and documenting coordination meetings and others not, so transition readiness is uneven below national level.",
+   "statement": "The coordination link at local government level is not yet in place: departments and the state water agency need mentoring and coaching before they can carry coordination, even though national arrangements are agreed.",
    "theme": "Transition",
-   "type": "context",
+   "type": "barrier",
    "strength": "high",
-   "n_records": 2,
-   "n_sources": 2,
+   "n_records": 3,
+   "n_sources": 3,
    "n_streams": 2,
    "streams": [
     "sdr",
@@ -929,9 +929,12 @@ window.SITE_DATA = {
    ],
    "countries": [
     "MOZ",
+    "NGA",
     "SOM"
    ],
    "tags": [
+    "capacity",
+    "coordination-architecture",
     "government-engagement",
     "guidance",
     "transition-handover"
@@ -942,7 +945,8 @@ window.SITE_DATA = {
    ],
    "record_ids": [
     "E0030",
-    "E0297"
+    "E0297",
+    "E0438"
    ],
    "unmerged": false,
    "highlight": {
@@ -985,9 +989,9 @@ window.SITE_DATA = {
    "statement": "Cluster coordinators asked for structured exchange with counterparts in other countries running area-based structures, to understand how the cluster-ABC relationship works elsewhere before redesigning their own.",
    "theme": "ABC",
    "type": "recommendation",
-   "strength": "medium",
-   "n_records": 3,
-   "n_sources": 2,
+   "strength": "high",
+   "n_records": 4,
+   "n_sources": 3,
    "n_streams": 1,
    "streams": [
     "transcript"
@@ -1010,9 +1014,15 @@ window.SITE_DATA = {
    "record_ids": [
     "E0032",
     "E0039",
-    "E0070"
+    "E0070",
+    "E0440"
    ],
-   "unmerged": false
+   "unmerged": false,
+   "highlight": {
+    "headline": "Coordinators want to hear from each other, not just from guidance",
+    "plain": "The same request comes up across very different contexts: put us in touch with countries facing what we are facing. Governments ask to visit places where transition has already happened; coordinators ask how the cluster–area relationship works elsewhere; neighbouring countries in one outbreak ask for a shared space.",
+    "so_what": "Convene the exchange. It is cheap, it is repeatedly requested, and no guidance product substitutes for it."
+   }
   },
   {
    "finding_id": "F027",
@@ -1151,18 +1161,19 @@ window.SITE_DATA = {
   },
   {
    "finding_id": "F031",
-   "statement": "After eight years with the same co-coordinating agency the cluster opened a competitive expression of interest to rotate the role, while considering retaining the outgoing agency in a roving support function.",
+   "statement": "A co-coordinating partner was selected through a published terms of reference, but a compliance concern paused the process, and the cluster is deciding whether to re-advertise or return to the original applicant list.",
    "theme": "Both",
    "type": "practice",
-   "strength": "medium",
-   "n_records": 2,
-   "n_sources": 2,
+   "strength": "high",
+   "n_records": 3,
+   "n_sources": 3,
    "n_streams": 1,
    "streams": [
     "transcript"
    ],
    "countries": [
     "MMR",
+    "NGA",
     "SOM"
    ],
    "tags": [
@@ -1179,9 +1190,15 @@ window.SITE_DATA = {
    ],
    "record_ids": [
     "E0037",
-    "E0069"
+    "E0069",
+    "E0436"
    ],
-   "unmerged": false
+   "unmerged": false,
+   "highlight": {
+    "headline": "Reopening co-coordination takes longer than anyone plans for",
+    "plain": "Several clusters are competitively selecting or rotating a co-coordinating partner, often timed to a change in the coordination architecture. The process routinely stalls — on incumbency, on compliance checks, on a thin applicant pool.",
+    "so_what": "Start the selection well before you need the post filled, and agree in advance what happens if the process pauses."
+   }
   },
   {
    "finding_id": "F032",
@@ -3154,8 +3171,8 @@ window.SITE_DATA = {
    "theme": "Both",
    "type": "barrier",
    "strength": "high",
-   "n_records": 4,
-   "n_sources": 3,
+   "n_records": 5,
+   "n_sources": 4,
    "n_streams": 2,
    "streams": [
     "sdr",
@@ -3163,11 +3180,13 @@ window.SITE_DATA = {
    ],
    "countries": [
     "MMR",
+    "NGA",
     "SDN"
    ],
    "tags": [
     "capacity",
-    "coordination-architecture"
+    "coordination-architecture",
+    "information-management"
    ],
    "actors": [
     "cluster",
@@ -3178,7 +3197,8 @@ window.SITE_DATA = {
     "E0058",
     "E0145",
     "E0146",
-    "E0404"
+    "E0404",
+    "E0441"
    ],
    "unmerged": false,
    "highlight": {
@@ -5304,19 +5324,23 @@ window.SITE_DATA = {
   },
   {
    "finding_id": "F316",
-   "statement": "Information management continuity needs dual capacity: someone running cluster IM through the transition, and someone building the counterpart function that will receive it.",
+   "statement": "An information management post was requested inside the line ministry so that government holds its own capacity, co-leads the function and helps define what the role covers ahead of the handover.",
    "theme": "Transition",
    "type": "enabler",
-   "strength": "low",
-   "n_records": 1,
-   "n_sources": 1,
-   "n_streams": 1,
+   "strength": "high",
+   "n_records": 2,
+   "n_sources": 2,
+   "n_streams": 2,
    "streams": [
-    "sdr"
+    "sdr",
+    "transcript"
    ],
-   "countries": [],
+   "countries": [
+    "NGA"
+   ],
    "tags": [
     "capacity",
+    "government-engagement",
     "information-management",
     "transition-handover"
    ],
@@ -5325,9 +5349,15 @@ window.SITE_DATA = {
     "gov-national"
    ],
    "record_ids": [
-    "E0242"
+    "E0242",
+    "E0437"
    ],
-   "unmerged": false
+   "unmerged": false,
+   "highlight": {
+    "headline": "Build the receiving side while you still have your own",
+    "plain": "A handover needs someone on the other side who can actually run the function. Where an information management post is requested inside the ministry early, government ends up holding its own capacity rather than inheriting products it cannot maintain.",
+    "so_what": "Ask for a counterpart post while cluster capacity still exists to mentor it. Two people through the handover, not one after it."
+   }
   },
   {
    "finding_id": "F318",
@@ -8264,29 +8294,40 @@ window.SITE_DATA = {
   },
   {
    "finding_id": "F426",
-   "statement": "Assess and build capacity at national and subnational level before handover, anchored institutionally rather than in individuals.",
+   "statement": "Rather than assuming what ministry capacity gaps are, the cluster commissioned a capacity gap analysis first, on the basis that describing capacity as weak says nothing about what support would actually help.",
    "theme": "Transition",
-   "type": "recommendation",
-   "strength": "low",
-   "n_records": 1,
-   "n_sources": 1,
-   "n_streams": 1,
+   "type": "enabler",
+   "strength": "high",
+   "n_records": 2,
+   "n_sources": 2,
+   "n_streams": 2,
    "streams": [
-    "sdr"
+    "sdr",
+    "transcript"
    ],
-   "countries": [],
+   "countries": [
+    "NGA"
+   ],
    "tags": [
     "capacity",
-    "government-engagement"
+    "government-engagement",
+    "transition-handover"
    ],
    "actors": [
+    "cluster",
     "gov-local",
     "gov-national"
    ],
    "record_ids": [
-    "E0371"
+    "E0371",
+    "E0439"
    ],
-   "unmerged": false
+   "unmerged": false,
+   "highlight": {
+    "headline": "Find out what \"weak capacity\" actually means before designing support",
+    "plain": "Ministry capacity is routinely described as weak without anyone specifying weak at what. A capacity gap analysis done before the support package is designed avoids training people in things they can already do while missing what they cannot.",
+    "so_what": "Run the gap analysis first. Let it define the support, rather than fitting the assessment around a package you have already chosen."
+   }
   },
   {
    "finding_id": "F427",
@@ -9808,6 +9849,348 @@ window.SITE_DATA = {
    ],
    "record_ids": [
     "E0435"
+   ],
+   "unmerged": false
+  },
+  {
+   "finding_id": "F700",
+   "statement": "Transition to government-led coordination began at the start of the year, with the line ministry taking the lead supported by an NGO co-coordinator, on a timetable running to the end of the following year.",
+   "theme": "Transition",
+   "type": "practice",
+   "strength": "low",
+   "n_records": 1,
+   "n_sources": 1,
+   "n_streams": 1,
+   "streams": [
+    "transcript"
+   ],
+   "countries": [
+    "NGA"
+   ],
+   "tags": [
+    "coordination-architecture",
+    "government-engagement",
+    "transition-handover"
+   ],
+   "actors": [
+    "cluster",
+    "gov-national",
+    "ingo"
+   ],
+   "record_ids": [
+    "E0442"
+   ],
+   "unmerged": false
+  },
+  {
+   "finding_id": "F701",
+   "statement": "Training of trainers for state facilitators and co-coordinators had to be delivered remotely rather than in person because of funding constraints, before a five-day session with state representatives.",
+   "theme": "Transition",
+   "type": "barrier",
+   "strength": "low",
+   "n_records": 1,
+   "n_sources": 1,
+   "n_streams": 1,
+   "streams": [
+    "transcript"
+   ],
+   "countries": [
+    "NGA"
+   ],
+   "tags": [
+    "capacity",
+    "funding"
+   ],
+   "actors": [
+    "cluster",
+    "gov-local"
+   ],
+   "record_ids": [
+    "E0443"
+   ],
+   "unmerged": false
+  },
+  {
+   "finding_id": "F702",
+   "statement": "Ministry staff nominated to lead coordination do not yet hold the skill sets the role needs, and a five-month deployment was arranged to build them.",
+   "theme": "Transition",
+   "type": "barrier",
+   "strength": "low",
+   "n_records": 1,
+   "n_sources": 1,
+   "n_streams": 1,
+   "streams": [
+    "transcript"
+   ],
+   "countries": [
+    "NGA"
+   ],
+   "tags": [
+    "capacity",
+    "government-engagement",
+    "transition-handover"
+   ],
+   "actors": [
+    "gov-national",
+    "un-agency"
+   ],
+   "record_ids": [
+    "E0444"
+   ],
+   "unmerged": false
+  },
+  {
+   "finding_id": "F703",
+   "statement": "A state advisory group is to endorse the transition plan and provide continuing oversight, so that the arrangement is formalised within the ministry rather than resting on individual relationships.",
+   "theme": "Transition",
+   "type": "practice",
+   "strength": "low",
+   "n_records": 1,
+   "n_sources": 1,
+   "n_streams": 1,
+   "streams": [
+    "transcript"
+   ],
+   "countries": [
+    "NGA"
+   ],
+   "tags": [
+    "government-engagement",
+    "performance",
+    "transition-handover"
+   ],
+   "actors": [
+    "cluster",
+    "gov-national"
+   ],
+   "record_ids": [
+    "E0445"
+   ],
+   "unmerged": false
+  },
+  {
+   "finding_id": "F704",
+   "statement": "Ministry staff taking on coordination need training on emergency preparedness and response planning, contingency planning and aligned monitoring tools, not only on coordination mechanics.",
+   "theme": "Transition",
+   "type": "recommendation",
+   "strength": "low",
+   "n_records": 1,
+   "n_sources": 1,
+   "n_streams": 1,
+   "streams": [
+    "transcript"
+   ],
+   "countries": [
+    "NGA"
+   ],
+   "tags": [
+    "capacity",
+    "government-engagement",
+    "transition-handover"
+   ],
+   "actors": [
+    "cluster",
+    "gov-national"
+   ],
+   "record_ids": [
+    "E0446"
+   ],
+   "unmerged": false
+  },
+  {
+   "finding_id": "F705",
+   "statement": "The multi-sector needs assessment is led by a national NGO, which has run the country assessment programme for several years in place of an international assessment partner.",
+   "theme": "Both",
+   "type": "enabler",
+   "strength": "low",
+   "n_records": 1,
+   "n_sources": 1,
+   "n_streams": 1,
+   "streams": [
+    "transcript"
+   ],
+   "countries": [
+    "NGA"
+   ],
+   "tags": [
+    "hpc",
+    "information-management",
+    "localisation"
+   ],
+   "actors": [
+    "local-ngo",
+    "ocha"
+   ],
+   "record_ids": [
+    "E0447"
+   ],
+   "unmerged": false
+  },
+  {
+   "finding_id": "F706",
+   "statement": "No wider multi-sector needs assessment was conducted last year, so the response plan rested on secondary data analysis alone.",
+   "theme": "Both",
+   "type": "barrier",
+   "strength": "low",
+   "n_records": 1,
+   "n_sources": 1,
+   "n_streams": 1,
+   "streams": [
+    "transcript"
+   ],
+   "countries": [
+    "NGA"
+   ],
+   "tags": [
+    "hpc",
+    "information-management"
+   ],
+   "actors": [
+    "cluster",
+    "ocha"
+   ],
+   "record_ids": [
+    "E0448"
+   ],
+   "unmerged": false
+  },
+  {
+   "finding_id": "F707",
+   "statement": "A large cholera outbreak is running concurrently with the transition, with cases declining in one urban area while rising in others, and the household-level response approach is not sufficient in the worst-affected locations.",
+   "theme": "Both",
+   "type": "context",
+   "strength": "low",
+   "n_records": 1,
+   "n_sources": 1,
+   "n_streams": 1,
+   "streams": [
+    "transcript"
+   ],
+   "countries": [
+    "NGA"
+   ],
+   "tags": [
+    "capacity"
+   ],
+   "actors": [
+    "cluster",
+    "ingo"
+   ],
+   "record_ids": [
+    "E0449"
+   ],
+   "unmerged": false
+  },
+  {
+   "finding_id": "F708",
+   "statement": "The outbreak has a cross-border dimension with three neighbouring countries, and containment depends on coordination that no single country platform currently provides.",
+   "theme": "Both",
+   "type": "barrier",
+   "strength": "low",
+   "n_records": 1,
+   "n_sources": 1,
+   "n_streams": 1,
+   "streams": [
+    "transcript"
+   ],
+   "countries": [],
+   "tags": [
+    "coordination-architecture",
+    "peer-learning"
+   ],
+   "actors": [
+    "cluster",
+    "gov-national"
+   ],
+   "record_ids": [
+    "E0450"
+   ],
+   "unmerged": false
+  },
+  {
+   "finding_id": "F709",
+   "statement": "The technical working group leading the outbreak response is chaired by an international NGO rather than the lead agency, with the sector spanning all partner agencies and the ministry.",
+   "theme": "Both",
+   "type": "enabler",
+   "strength": "low",
+   "n_records": 1,
+   "n_sources": 1,
+   "n_streams": 1,
+   "streams": [
+    "transcript"
+   ],
+   "countries": [
+    "NGA"
+   ],
+   "tags": [
+    "coordination-architecture",
+    "localisation",
+    "partnerships"
+   ],
+   "actors": [
+    "cluster",
+    "gov-national",
+    "ingo"
+   ],
+   "record_ids": [
+    "E0451"
+   ],
+   "unmerged": false
+  },
+  {
+   "finding_id": "F710",
+   "statement": "Technical support to an outbreak should be pitched at the whole sector rather than routed through the lead agency alone, so that all partners work from the same guidance, tools and training.",
+   "theme": "Both",
+   "type": "recommendation",
+   "strength": "low",
+   "n_records": 1,
+   "n_sources": 1,
+   "n_streams": 1,
+   "streams": [
+    "transcript"
+   ],
+   "countries": [],
+   "tags": [
+    "capacity",
+    "coordination-architecture",
+    "partnerships"
+   ],
+   "actors": [
+    "cluster",
+    "ingo",
+    "un-agency"
+   ],
+   "record_ids": [
+    "E0452"
+   ],
+   "unmerged": false
+  },
+  {
+   "finding_id": "F711",
+   "statement": "Coordination capacity during the transition is being provided through a standby partner deployment at no cost to the country office, which fills the gap but does not establish a funded post.",
+   "theme": "Transition",
+   "type": "context",
+   "strength": "low",
+   "n_records": 1,
+   "n_sources": 1,
+   "n_streams": 1,
+   "streams": [
+    "transcript"
+   ],
+   "countries": [
+    "NGA"
+   ],
+   "tags": [
+    "capacity",
+    "funding",
+    "transition-handover"
+   ],
+   "actors": [
+    "cluster",
+    "un-agency"
+   ],
+   "record_ids": [
+    "E0453"
    ],
    "unmerged": false
   }
@@ -19688,6 +20071,446 @@ window.SITE_DATA = {
    "date_collected": "2026-07-27",
    "confidence": "high",
    "status": "draft"
+  },
+  {
+   "id": "E0436",
+   "finding_id": "F031",
+   "theme": "Both",
+   "type": "practice",
+   "statement": "A co-coordinating partner was selected through a published terms of reference, but a compliance concern paused the process, and the cluster is deciding whether to re-advertise or return to the original applicant list.",
+   "level": "national",
+   "countries": [
+    "NGA"
+   ],
+   "actors": [
+    "ingo",
+    "local-ngo",
+    "cluster"
+   ],
+   "tags": [
+    "partnerships",
+    "coordination-architecture",
+    "localisation"
+   ],
+   "stream": "transcript",
+   "source_id": "S105",
+   "date_collected": "2026-07-17",
+   "confidence": "high",
+   "status": "draft"
+  },
+  {
+   "id": "E0437",
+   "finding_id": "F316",
+   "theme": "Transition",
+   "type": "enabler",
+   "statement": "An information management post was requested inside the line ministry so that government holds its own capacity, co-leads the function and helps define what the role covers ahead of the handover.",
+   "level": "national",
+   "countries": [
+    "NGA"
+   ],
+   "actors": [
+    "gov-national",
+    "cluster"
+   ],
+   "tags": [
+    "information-management",
+    "capacity",
+    "government-engagement"
+   ],
+   "stream": "transcript",
+   "source_id": "S105",
+   "date_collected": "2026-07-17",
+   "confidence": "high",
+   "status": "draft"
+  },
+  {
+   "id": "E0438",
+   "finding_id": "F024",
+   "theme": "Transition",
+   "type": "barrier",
+   "statement": "The coordination link at local government level is not yet in place: departments and the state water agency need mentoring and coaching before they can carry coordination, even though national arrangements are agreed.",
+   "level": "subnational",
+   "countries": [
+    "NGA"
+   ],
+   "actors": [
+    "gov-local",
+    "cluster"
+   ],
+   "tags": [
+    "government-engagement",
+    "capacity",
+    "coordination-architecture"
+   ],
+   "stream": "transcript",
+   "source_id": "S105",
+   "date_collected": "2026-07-17",
+   "confidence": "high",
+   "status": "draft"
+  },
+  {
+   "id": "E0439",
+   "finding_id": "F426",
+   "theme": "Transition",
+   "type": "enabler",
+   "statement": "Rather than assuming what ministry capacity gaps are, the cluster commissioned a capacity gap analysis first, on the basis that describing capacity as weak says nothing about what support would actually help.",
+   "level": "national",
+   "countries": [
+    "NGA"
+   ],
+   "actors": [
+    "gov-national",
+    "cluster"
+   ],
+   "tags": [
+    "capacity",
+    "government-engagement",
+    "transition-handover"
+   ],
+   "stream": "transcript",
+   "source_id": "S105",
+   "date_collected": "2026-07-17",
+   "confidence": "high",
+   "status": "draft"
+  },
+  {
+   "id": "E0440",
+   "finding_id": "F026",
+   "theme": "Both",
+   "type": "recommendation",
+   "statement": "Connecting neighbouring countries facing the same cross-border outbreak through a shared space for materials and experience was proposed as a practical form of peer support.",
+   "level": "regional",
+   "countries": [],
+   "actors": [
+    "cluster"
+   ],
+   "tags": [
+    "peer-learning",
+    "capacity"
+   ],
+   "stream": "transcript",
+   "source_id": "S105",
+   "date_collected": "2026-07-17",
+   "confidence": "high",
+   "status": "draft"
+  },
+  {
+   "id": "E0441",
+   "finding_id": "F225",
+   "theme": "Both",
+   "type": "barrier",
+   "statement": "One information management officer covers both the WASH and education sectors, so information management for each is delivered at partial capacity.",
+   "level": "national",
+   "countries": [
+    "NGA"
+   ],
+   "actors": [
+    "cluster",
+    "un-agency"
+   ],
+   "tags": [
+    "capacity",
+    "information-management"
+   ],
+   "stream": "transcript",
+   "source_id": "S105",
+   "date_collected": "2026-07-17",
+   "confidence": "high",
+   "status": "draft"
+  },
+  {
+   "id": "E0442",
+   "finding_id": "F700",
+   "theme": "Transition",
+   "type": "practice",
+   "statement": "Transition to government-led coordination began at the start of the year, with the line ministry taking the lead supported by an NGO co-coordinator, on a timetable running to the end of the following year.",
+   "level": "national",
+   "countries": [
+    "NGA"
+   ],
+   "actors": [
+    "gov-national",
+    "ingo",
+    "cluster"
+   ],
+   "tags": [
+    "transition-handover",
+    "government-engagement",
+    "coordination-architecture"
+   ],
+   "stream": "transcript",
+   "source_id": "S105",
+   "date_collected": "2026-07-17",
+   "confidence": "high",
+   "status": "draft"
+  },
+  {
+   "id": "E0443",
+   "finding_id": "F701",
+   "theme": "Transition",
+   "type": "barrier",
+   "statement": "Training of trainers for state facilitators and co-coordinators had to be delivered remotely rather than in person because of funding constraints, before a five-day session with state representatives.",
+   "level": "subnational",
+   "countries": [
+    "NGA"
+   ],
+   "actors": [
+    "cluster",
+    "gov-local"
+   ],
+   "tags": [
+    "capacity",
+    "funding"
+   ],
+   "stream": "transcript",
+   "source_id": "S105",
+   "date_collected": "2026-07-17",
+   "confidence": "high",
+   "status": "draft"
+  },
+  {
+   "id": "E0444",
+   "finding_id": "F702",
+   "theme": "Transition",
+   "type": "barrier",
+   "statement": "Ministry staff nominated to lead coordination do not yet hold the skill sets the role needs, and a five-month deployment was arranged to build them.",
+   "level": "national",
+   "countries": [
+    "NGA"
+   ],
+   "actors": [
+    "gov-national",
+    "un-agency"
+   ],
+   "tags": [
+    "capacity",
+    "government-engagement",
+    "transition-handover"
+   ],
+   "stream": "transcript",
+   "source_id": "S105",
+   "date_collected": "2026-07-17",
+   "confidence": "high",
+   "status": "draft"
+  },
+  {
+   "id": "E0445",
+   "finding_id": "F703",
+   "theme": "Transition",
+   "type": "practice",
+   "statement": "A state advisory group is to endorse the transition plan and provide continuing oversight, so that the arrangement is formalised within the ministry rather than resting on individual relationships.",
+   "level": "national",
+   "countries": [
+    "NGA"
+   ],
+   "actors": [
+    "gov-national",
+    "cluster"
+   ],
+   "tags": [
+    "transition-handover",
+    "government-engagement",
+    "performance"
+   ],
+   "stream": "transcript",
+   "source_id": "S105",
+   "date_collected": "2026-07-17",
+   "confidence": "high",
+   "status": "draft"
+  },
+  {
+   "id": "E0446",
+   "finding_id": "F704",
+   "theme": "Transition",
+   "type": "recommendation",
+   "statement": "Ministry staff taking on coordination need training on emergency preparedness and response planning, contingency planning and aligned monitoring tools, not only on coordination mechanics.",
+   "level": "national",
+   "countries": [
+    "NGA"
+   ],
+   "actors": [
+    "gov-national",
+    "cluster"
+   ],
+   "tags": [
+    "capacity",
+    "government-engagement",
+    "transition-handover"
+   ],
+   "stream": "transcript",
+   "source_id": "S105",
+   "date_collected": "2026-07-17",
+   "confidence": "high",
+   "status": "draft"
+  },
+  {
+   "id": "E0447",
+   "finding_id": "F705",
+   "theme": "Both",
+   "type": "enabler",
+   "statement": "The multi-sector needs assessment is led by a national NGO, which has run the country assessment programme for several years in place of an international assessment partner.",
+   "level": "national",
+   "countries": [
+    "NGA"
+   ],
+   "actors": [
+    "local-ngo",
+    "ocha"
+   ],
+   "tags": [
+    "localisation",
+    "hpc",
+    "information-management"
+   ],
+   "stream": "transcript",
+   "source_id": "S105",
+   "date_collected": "2026-07-17",
+   "confidence": "high",
+   "status": "draft"
+  },
+  {
+   "id": "E0448",
+   "finding_id": "F706",
+   "theme": "Both",
+   "type": "barrier",
+   "statement": "No wider multi-sector needs assessment was conducted last year, so the response plan rested on secondary data analysis alone.",
+   "level": "national",
+   "countries": [
+    "NGA"
+   ],
+   "actors": [
+    "cluster",
+    "ocha"
+   ],
+   "tags": [
+    "hpc",
+    "information-management"
+   ],
+   "stream": "transcript",
+   "source_id": "S105",
+   "date_collected": "2026-07-17",
+   "confidence": "high",
+   "status": "draft"
+  },
+  {
+   "id": "E0449",
+   "finding_id": "F707",
+   "theme": "Both",
+   "type": "context",
+   "statement": "A large cholera outbreak is running concurrently with the transition, with cases declining in one urban area while rising in others, and the household-level response approach is not sufficient in the worst-affected locations.",
+   "level": "subnational",
+   "countries": [
+    "NGA"
+   ],
+   "actors": [
+    "cluster",
+    "ingo"
+   ],
+   "tags": [
+    "capacity"
+   ],
+   "stream": "transcript",
+   "source_id": "S105",
+   "date_collected": "2026-07-17",
+   "confidence": "high",
+   "status": "draft"
+  },
+  {
+   "id": "E0450",
+   "finding_id": "F708",
+   "theme": "Both",
+   "type": "barrier",
+   "statement": "The outbreak has a cross-border dimension with three neighbouring countries, and containment depends on coordination that no single country platform currently provides.",
+   "level": "regional",
+   "countries": [],
+   "actors": [
+    "cluster",
+    "gov-national"
+   ],
+   "tags": [
+    "coordination-architecture",
+    "peer-learning"
+   ],
+   "stream": "transcript",
+   "source_id": "S105",
+   "date_collected": "2026-07-17",
+   "confidence": "high",
+   "status": "draft"
+  },
+  {
+   "id": "E0451",
+   "finding_id": "F709",
+   "theme": "Both",
+   "type": "enabler",
+   "statement": "The technical working group leading the outbreak response is chaired by an international NGO rather than the lead agency, with the sector spanning all partner agencies and the ministry.",
+   "level": "national",
+   "countries": [
+    "NGA"
+   ],
+   "actors": [
+    "ingo",
+    "cluster",
+    "gov-national"
+   ],
+   "tags": [
+    "partnerships",
+    "localisation",
+    "coordination-architecture"
+   ],
+   "stream": "transcript",
+   "source_id": "S105",
+   "date_collected": "2026-07-17",
+   "confidence": "high",
+   "status": "draft"
+  },
+  {
+   "id": "E0452",
+   "finding_id": "F710",
+   "theme": "Both",
+   "type": "recommendation",
+   "statement": "Technical support to an outbreak should be pitched at the whole sector rather than routed through the lead agency alone, so that all partners work from the same guidance, tools and training.",
+   "level": "global",
+   "countries": [],
+   "actors": [
+    "cluster",
+    "ingo",
+    "un-agency"
+   ],
+   "tags": [
+    "partnerships",
+    "capacity",
+    "coordination-architecture"
+   ],
+   "stream": "transcript",
+   "source_id": "S105",
+   "date_collected": "2026-07-17",
+   "confidence": "high",
+   "status": "draft"
+  },
+  {
+   "id": "E0453",
+   "finding_id": "F711",
+   "theme": "Transition",
+   "type": "context",
+   "statement": "Coordination capacity during the transition is being provided through a standby partner deployment at no cost to the country office, which fills the gap but does not establish a funded post.",
+   "level": "national",
+   "countries": [
+    "NGA"
+   ],
+   "actors": [
+    "un-agency",
+    "cluster"
+   ],
+   "tags": [
+    "capacity",
+    "funding",
+    "transition-handover"
+   ],
+   "stream": "transcript",
+   "source_id": "S105",
+   "date_collected": "2026-07-17",
+   "confidence": "high",
+   "status": "draft"
   }
  ],
  "sources": [
@@ -20909,6 +21732,19 @@ window.SITE_DATA = {
    "url": "",
    "stream": "transcript",
    "date_added": "2026-07-27",
+   "access": "restricted",
+   "legacy_id": "",
+   "source_group": ""
+  },
+  {
+   "source_id": "S105",
+   "title": "Country consultation — Nigeria",
+   "organisation": "Global WASH Cluster",
+   "year": "2026",
+   "type": "interview",
+   "url": "",
+   "stream": "transcript",
+   "date_added": "2026-07-17",
    "access": "restricted",
    "legacy_id": "",
    "source_group": ""
