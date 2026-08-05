@@ -66,9 +66,9 @@
  "generated": "2026-08-05",
  "taxonomy_version": "0.4.0",
  "stats": {
-  "records": 440,
-  "findings": 344,
-  "sources": 95,
+  "records": 456,
+  "findings": 355,
+  "sources": 96,
   "countries": 25,
   "withheld_internal": 1
  },
@@ -1574,28 +1574,31 @@
   },
   {
    "finding_id": "F045",
-   "statement": "The area-based architecture is presented as a permanent replacement rather than a transitional arrangement, which changes what is at stake in getting the design right.",
+   "statement": "The cluster terms of reference were revised to cover current issues and a new thematic working group, but not area-based coordination, because the cluster was not approached about it.",
    "theme": "ABC",
    "type": "context",
-   "strength": "low",
-   "n_records": 1,
-   "n_sources": 1,
+   "strength": "medium",
+   "n_records": 2,
+   "n_sources": 2,
    "n_streams": 1,
    "streams": [
     "transcript"
    ],
    "countries": [
-    "MMR"
+    "MMR",
+    "NER"
    ],
    "tags": [
-    "coordination-architecture"
+    "coordination-architecture",
+    "guidance"
    ],
    "actors": [
     "cluster",
     "ocha"
    ],
    "record_ids": [
-    "E0053"
+    "E0053",
+    "E0457"
    ],
    "unmerged": false
   },
@@ -2839,18 +2842,19 @@
   },
   {
    "finding_id": "F214",
-   "statement": "A new central planning and reporting platform is being introduced alongside the cluster's existing reporting system, which would leave partners entering the same activity in both.",
+   "statement": "The cluster 5W sits on a platform built in-country and shared with other sectors; with a new central module also asking partners to report, it is unresolved whether partners should continue filling the cluster system, both, or neither.",
    "theme": "ABC",
    "type": "barrier",
    "strength": "high",
-   "n_records": 3,
-   "n_sources": 3,
+   "n_records": 4,
+   "n_sources": 4,
    "n_streams": 2,
    "streams": [
     "sdr",
     "transcript"
    ],
    "countries": [
+    "NER",
     "SDN"
    ],
    "tags": [
@@ -2866,7 +2870,8 @@
    "record_ids": [
     "E0122",
     "E0123",
-    "E0408"
+    "E0408",
+    "E0456"
    ],
    "unmerged": false,
    "highlight": {
@@ -5394,14 +5399,17 @@
    "statement": "Where the response plan is not the language of government, data often is: information management support that adds value to the government own reporting gains traction where coordination advocacy does not.",
    "theme": "Transition",
    "type": "enabler",
-   "strength": "low",
-   "n_records": 1,
-   "n_sources": 1,
-   "n_streams": 1,
+   "strength": "high",
+   "n_records": 2,
+   "n_sources": 2,
+   "n_streams": 2,
    "streams": [
-    "sdr"
+    "sdr",
+    "transcript"
    ],
-   "countries": [],
+   "countries": [
+    "NER"
+   ],
    "tags": [
     "advocacy",
     "government-engagement",
@@ -5412,9 +5420,15 @@
     "gov-national"
    ],
    "record_ids": [
-    "E0246"
+    "E0246",
+    "E0455"
    ],
-   "unmerged": false
+   "unmerged": false,
+   "highlight": {
+    "headline": "Data is the language government actually speaks",
+    "plain": "Response plans and coordination arguments often do not travel well into government. Data does. Where the cluster produces information that is useful to a ministry, government comes looking for it — and that conversation opens doors that coordination advocacy on its own does not.",
+    "so_what": "Lead with something the ministry needs: a facility map, an asset inventory, a dataset it can use. Build the relationship on that rather than on the coordination architecture."
+   }
   },
   {
    "finding_id": "F320",
@@ -6579,12 +6593,12 @@
   },
   {
    "finding_id": "F364",
-   "statement": "The entire counterpart team at the lead ministry changed within one year, including at senior level, leaving nobody the cluster had previously worked with; meetings to rebuild the relationship did not take place and the transition dialogue stalled.",
-   "theme": "Transition",
+   "statement": "Key informants for the needs analysis were departmental water and sanitation directors, but almost all had just been rotated into new posts when the questionnaire went out, so responses were difficult to use and the gap had to be filled by a cluster workshop.",
+   "theme": "Both",
    "type": "barrier",
    "strength": "high",
-   "n_records": 2,
-   "n_sources": 2,
+   "n_records": 3,
+   "n_sources": 3,
    "n_streams": 2,
    "streams": [
     "sdr",
@@ -6592,21 +6606,25 @@
    ],
    "countries": [
     "COL",
-    "KEN"
+    "KEN",
+    "NER"
    ],
    "tags": [
     "capacity",
     "government-engagement",
+    "hpc",
     "staff-turnover",
     "transition-handover"
    ],
    "actors": [
     "cluster",
+    "gov-local",
     "gov-national"
    ],
    "record_ids": [
     "E0298",
-    "E0375"
+    "E0375",
+    "E0454"
    ],
    "unmerged": false,
    "highlight": {
@@ -10083,27 +10101,32 @@
   },
   {
    "finding_id": "F708",
-   "statement": "The outbreak has a cross-border dimension with three neighbouring countries, and containment depends on coordination that no single country platform currently provides.",
+   "statement": "Gastroenteritis cases have been notified near the border with a neighbouring country where a large cholera outbreak is under way, and emergency preparations are being made with the zone offices.",
    "theme": "Both",
-   "type": "barrier",
-   "strength": "low",
-   "n_records": 1,
-   "n_sources": 1,
+   "type": "context",
+   "strength": "medium",
+   "n_records": 2,
+   "n_sources": 2,
    "n_streams": 1,
    "streams": [
     "transcript"
    ],
-   "countries": [],
+   "countries": [
+    "NER"
+   ],
    "tags": [
+    "capacity",
     "coordination-architecture",
     "peer-learning"
    ],
    "actors": [
     "cluster",
+    "gov-local",
     "gov-national"
    ],
    "record_ids": [
-    "E0450"
+    "E0450",
+    "E0458"
    ],
    "unmerged": false
   },
@@ -10191,6 +10214,319 @@
    ],
    "record_ids": [
     "E0453"
+   ],
+   "unmerged": false
+  },
+  {
+   "finding_id": "F800",
+   "statement": "Measured against a definition of area-based coordination operating at the smallest administrative unit, the country does not have it: a pilot covering four of two hundred and sixty-six communes was tried and did not continue beyond the pilot.",
+   "theme": "ABC",
+   "type": "context",
+   "strength": "low",
+   "n_records": 1,
+   "n_sources": 1,
+   "n_streams": 1,
+   "streams": [
+    "transcript"
+   ],
+   "countries": [
+    "NER"
+   ],
+   "tags": [
+    "coordination-architecture",
+    "geographic-targeting"
+   ],
+   "actors": [
+    "cluster",
+    "ocha"
+   ],
+   "record_ids": [
+    "E0459"
+   ],
+   "unmerged": false
+  },
+  {
+   "finding_id": "F801",
+   "statement": "Treated instead as regional structures, five functional coordination groups meet monthly and work for practically all sectors — so whether the country has area-based coordination depends entirely on which administrative level the definition refers to.",
+   "theme": "ABC",
+   "type": "context",
+   "strength": "low",
+   "n_records": 1,
+   "n_sources": 1,
+   "n_streams": 1,
+   "streams": [
+    "transcript"
+   ],
+   "countries": [
+    "NER"
+   ],
+   "tags": [
+    "coordination-architecture",
+    "guidance"
+   ],
+   "actors": [
+    "cluster",
+    "gov-local"
+   ],
+   "record_ids": [
+    "E0460"
+   ],
+   "unmerged": false
+  },
+  {
+   "finding_id": "F802",
+   "statement": "An advocacy committee bringing together the cluster thematic sub-groups and members with advocacy expertise was recommended two years ago and has still not been established, because each year emergencies require the workplan to be reprioritised.",
+   "theme": "Both",
+   "type": "barrier",
+   "strength": "low",
+   "n_records": 1,
+   "n_sources": 1,
+   "n_streams": 1,
+   "streams": [
+    "transcript"
+   ],
+   "countries": [
+    "NER"
+   ],
+   "tags": [
+    "advocacy",
+    "capacity",
+    "performance"
+   ],
+   "actors": [
+    "cluster"
+   ],
+   "record_ids": [
+    "E0461"
+   ],
+   "unmerged": false
+  },
+  {
+   "finding_id": "F803",
+   "statement": "A change to the pooled fund project review process arrived with a day’s notice and required the committee to meet across the week and nominate members for an in-person session, displacing the cluster meeting and other planned work.",
+   "theme": "ABC",
+   "type": "barrier",
+   "strength": "low",
+   "n_records": 1,
+   "n_sources": 1,
+   "n_streams": 1,
+   "streams": [
+    "transcript"
+   ],
+   "countries": [
+    "NER"
+   ],
+   "tags": [
+    "capacity",
+    "pooled-funds"
+   ],
+   "actors": [
+    "cluster",
+    "ocha"
+   ],
+   "record_ids": [
+    "E0462"
+   ],
+   "unmerged": false
+  },
+  {
+   "finding_id": "F804",
+   "statement": "A donor delegation met the cluster to discuss strategic priorities and advised that proposals emphasise environmental impact assessment and the donor four environmental priority areas, which the cluster is now building into partner capacity building and its advocacy strategy.",
+   "theme": "Transition",
+   "type": "practice",
+   "strength": "low",
+   "n_records": 1,
+   "n_sources": 1,
+   "n_streams": 1,
+   "streams": [
+    "transcript"
+   ],
+   "countries": [
+    "NER"
+   ],
+   "tags": [
+    "advocacy",
+    "funding",
+    "partnerships"
+   ],
+   "actors": [
+    "cluster",
+    "donor",
+    "ingo"
+   ],
+   "record_ids": [
+    "E0463"
+   ],
+   "unmerged": false
+  },
+  {
+   "finding_id": "F805",
+   "statement": "A database that takes data pasted from the cluster reporting platform and returns results by indicator has made routine information products quick to produce, and the cluster considers information management its strongest area.",
+   "theme": "Both",
+   "type": "enabler",
+   "strength": "low",
+   "n_records": 1,
+   "n_sources": 1,
+   "n_streams": 1,
+   "streams": [
+    "transcript"
+   ],
+   "countries": [
+    "NER"
+   ],
+   "tags": [
+    "capacity",
+    "information-management"
+   ],
+   "actors": [
+    "cluster"
+   ],
+   "record_ids": [
+    "E0464"
+   ],
+   "unmerged": false
+  },
+  {
+   "finding_id": "F806",
+   "statement": "A discrepancy between the reporting platform and the dashboard affects the total people-reached figure, and reconciling the two requires support the cluster does not hold in-house.",
+   "theme": "Both",
+   "type": "barrier",
+   "strength": "low",
+   "n_records": 1,
+   "n_sources": 1,
+   "n_streams": 1,
+   "streams": [
+    "transcript"
+   ],
+   "countries": [
+    "NER"
+   ],
+   "tags": [
+    "capacity",
+    "information-management"
+   ],
+   "actors": [
+    "cluster"
+   ],
+   "record_ids": [
+    "E0465"
+   ],
+   "unmerged": false
+  },
+  {
+   "finding_id": "F807",
+   "statement": "The response to questions about which reporting system applies has been that the central module is a pilot and no answer is available yet, so partners have not begun reporting into it and the cluster continues extracting from its own platform alongside an interim spreadsheet.",
+   "theme": "ABC",
+   "type": "barrier",
+   "strength": "low",
+   "n_records": 1,
+   "n_sources": 1,
+   "n_streams": 1,
+   "streams": [
+    "transcript"
+   ],
+   "countries": [
+    "NER"
+   ],
+   "tags": [
+    "guidance",
+    "hpc",
+    "information-management"
+   ],
+   "actors": [
+    "cluster",
+    "ocha"
+   ],
+   "record_ids": [
+    "E0466"
+   ],
+   "unmerged": false
+  },
+  {
+   "finding_id": "F808",
+   "statement": "A transition plan was raised once at an intersectoral meeting as something every cluster should have; the cluster asked how it should be done, received no answer, and has not been contacted since, so ordinary coordination continues with neither government nor partners raising it.",
+   "theme": "Transition",
+   "type": "barrier",
+   "strength": "low",
+   "n_records": 1,
+   "n_sources": 1,
+   "n_streams": 1,
+   "streams": [
+    "transcript"
+   ],
+   "countries": [
+    "NER"
+   ],
+   "tags": [
+    "government-engagement",
+    "guidance",
+    "transition-handover"
+   ],
+   "actors": [
+    "cluster",
+    "gov-national",
+    "ocha"
+   ],
+   "record_ids": [
+    "E0467"
+   ],
+   "unmerged": false
+  },
+  {
+   "finding_id": "F809",
+   "statement": "The cluster contributed indicators and questionnaire content to the planned multi-sector assessment and asked to take part in enumerator training, was told it would be included, and then heard nothing; collection was due to start in July and had not begun by mid-month.",
+   "theme": "Both",
+   "type": "barrier",
+   "strength": "low",
+   "n_records": 1,
+   "n_sources": 1,
+   "n_streams": 1,
+   "streams": [
+    "transcript"
+   ],
+   "countries": [
+    "NER"
+   ],
+   "tags": [
+    "hpc",
+    "information-management",
+    "partnerships"
+   ],
+   "actors": [
+    "cluster",
+    "ingo",
+    "ocha"
+   ],
+   "record_ids": [
+    "E0468"
+   ],
+   "unmerged": false
+  },
+  {
+   "finding_id": "F810",
+   "statement": "With no multi-sector assessment last year, the cluster updated the previous one through key informants and agreed severity levels collectively at a cluster workshop.",
+   "theme": "Both",
+   "type": "practice",
+   "strength": "low",
+   "n_records": 1,
+   "n_sources": 1,
+   "n_streams": 1,
+   "streams": [
+    "transcript"
+   ],
+   "countries": [
+    "NER"
+   ],
+   "tags": [
+    "hpc",
+    "information-management"
+   ],
+   "actors": [
+    "cluster",
+    "local-ngo"
+   ],
+   "record_ids": [
+    "E0469"
    ],
    "unmerged": false
   }
@@ -20511,6 +20847,397 @@
    "date_collected": "2026-07-17",
    "confidence": "high",
    "status": "draft"
+  },
+  {
+   "id": "E0454",
+   "finding_id": "F364",
+   "theme": "Both",
+   "type": "barrier",
+   "statement": "Key informants for the needs analysis were departmental water and sanitation directors, but almost all had just been rotated into new posts when the questionnaire went out, so responses were difficult to use and the gap had to be filled by a cluster workshop.",
+   "level": "subnational",
+   "countries": [
+    "NER"
+   ],
+   "actors": [
+    "gov-local",
+    "cluster"
+   ],
+   "tags": [
+    "staff-turnover",
+    "government-engagement",
+    "hpc"
+   ],
+   "stream": "transcript",
+   "source_id": "S106",
+   "date_collected": "2026-07-13",
+   "confidence": "high",
+   "status": "draft"
+  },
+  {
+   "id": "E0455",
+   "finding_id": "F319",
+   "theme": "Transition",
+   "type": "enabler",
+   "statement": "The statistics directorate of the line ministry asked to join the cluster mailing list this year in order to receive cluster information, the first time government has sought the data directly.",
+   "level": "national",
+   "countries": [
+    "NER"
+   ],
+   "actors": [
+    "gov-national",
+    "cluster"
+   ],
+   "tags": [
+    "information-management",
+    "government-engagement"
+   ],
+   "stream": "transcript",
+   "source_id": "S106",
+   "date_collected": "2026-07-13",
+   "confidence": "high",
+   "status": "draft"
+  },
+  {
+   "id": "E0456",
+   "finding_id": "F214",
+   "theme": "ABC",
+   "type": "barrier",
+   "statement": "The cluster 5W sits on a platform built in-country and shared with other sectors; with a new central module also asking partners to report, it is unresolved whether partners should continue filling the cluster system, both, or neither.",
+   "level": "national",
+   "countries": [
+    "NER"
+   ],
+   "actors": [
+    "cluster",
+    "ocha",
+    "ingo"
+   ],
+   "tags": [
+    "information-management",
+    "coordination-architecture",
+    "hpc"
+   ],
+   "stream": "transcript",
+   "source_id": "S106",
+   "date_collected": "2026-07-13",
+   "confidence": "high",
+   "status": "draft"
+  },
+  {
+   "id": "E0457",
+   "finding_id": "F045",
+   "theme": "ABC",
+   "type": "context",
+   "statement": "The cluster terms of reference were revised to cover current issues and a new thematic working group, but not area-based coordination, because the cluster was not approached about it.",
+   "level": "national",
+   "countries": [
+    "NER"
+   ],
+   "actors": [
+    "cluster",
+    "ocha"
+   ],
+   "tags": [
+    "guidance",
+    "coordination-architecture"
+   ],
+   "stream": "transcript",
+   "source_id": "S106",
+   "date_collected": "2026-07-13",
+   "confidence": "high",
+   "status": "draft"
+  },
+  {
+   "id": "E0458",
+   "finding_id": "F708",
+   "theme": "Both",
+   "type": "context",
+   "statement": "Gastroenteritis cases have been notified near the border with a neighbouring country where a large cholera outbreak is under way, and emergency preparations are being made with the zone offices.",
+   "level": "subnational",
+   "countries": [
+    "NER"
+   ],
+   "actors": [
+    "cluster",
+    "gov-local"
+   ],
+   "tags": [
+    "capacity"
+   ],
+   "stream": "transcript",
+   "source_id": "S106",
+   "date_collected": "2026-07-13",
+   "confidence": "high",
+   "status": "draft"
+  },
+  {
+   "id": "E0459",
+   "finding_id": "F800",
+   "theme": "ABC",
+   "type": "context",
+   "statement": "Measured against a definition of area-based coordination operating at the smallest administrative unit, the country does not have it: a pilot covering four of two hundred and sixty-six communes was tried and did not continue beyond the pilot.",
+   "level": "national",
+   "countries": [
+    "NER"
+   ],
+   "actors": [
+    "ocha",
+    "cluster"
+   ],
+   "tags": [
+    "coordination-architecture",
+    "geographic-targeting"
+   ],
+   "stream": "transcript",
+   "source_id": "S106",
+   "date_collected": "2026-07-13",
+   "confidence": "high",
+   "status": "draft"
+  },
+  {
+   "id": "E0460",
+   "finding_id": "F801",
+   "theme": "ABC",
+   "type": "context",
+   "statement": "Treated instead as regional structures, five functional coordination groups meet monthly and work for practically all sectors — so whether the country has area-based coordination depends entirely on which administrative level the definition refers to.",
+   "level": "subnational",
+   "countries": [
+    "NER"
+   ],
+   "actors": [
+    "cluster",
+    "gov-local"
+   ],
+   "tags": [
+    "coordination-architecture",
+    "guidance"
+   ],
+   "stream": "transcript",
+   "source_id": "S106",
+   "date_collected": "2026-07-13",
+   "confidence": "high",
+   "status": "draft"
+  },
+  {
+   "id": "E0461",
+   "finding_id": "F802",
+   "theme": "Both",
+   "type": "barrier",
+   "statement": "An advocacy committee bringing together the cluster thematic sub-groups and members with advocacy expertise was recommended two years ago and has still not been established, because each year emergencies require the workplan to be reprioritised.",
+   "level": "national",
+   "countries": [
+    "NER"
+   ],
+   "actors": [
+    "cluster"
+   ],
+   "tags": [
+    "advocacy",
+    "capacity",
+    "performance"
+   ],
+   "stream": "transcript",
+   "source_id": "S106",
+   "date_collected": "2026-07-13",
+   "confidence": "high",
+   "status": "draft"
+  },
+  {
+   "id": "E0462",
+   "finding_id": "F803",
+   "theme": "ABC",
+   "type": "barrier",
+   "statement": "A change to the pooled fund project review process arrived with a day’s notice and required the committee to meet across the week and nominate members for an in-person session, displacing the cluster meeting and other planned work.",
+   "level": "national",
+   "countries": [
+    "NER"
+   ],
+   "actors": [
+    "ocha",
+    "cluster"
+   ],
+   "tags": [
+    "pooled-funds",
+    "capacity"
+   ],
+   "stream": "transcript",
+   "source_id": "S106",
+   "date_collected": "2026-07-13",
+   "confidence": "high",
+   "status": "draft"
+  },
+  {
+   "id": "E0463",
+   "finding_id": "F804",
+   "theme": "Transition",
+   "type": "practice",
+   "statement": "A donor delegation met the cluster to discuss strategic priorities and advised that proposals emphasise environmental impact assessment and the donor four environmental priority areas, which the cluster is now building into partner capacity building and its advocacy strategy.",
+   "level": "national",
+   "countries": [
+    "NER"
+   ],
+   "actors": [
+    "donor",
+    "cluster",
+    "ingo"
+   ],
+   "tags": [
+    "advocacy",
+    "funding",
+    "partnerships"
+   ],
+   "stream": "transcript",
+   "source_id": "S106",
+   "date_collected": "2026-07-13",
+   "confidence": "high",
+   "status": "draft"
+  },
+  {
+   "id": "E0464",
+   "finding_id": "F805",
+   "theme": "Both",
+   "type": "enabler",
+   "statement": "A database that takes data pasted from the cluster reporting platform and returns results by indicator has made routine information products quick to produce, and the cluster considers information management its strongest area.",
+   "level": "national",
+   "countries": [
+    "NER"
+   ],
+   "actors": [
+    "cluster"
+   ],
+   "tags": [
+    "information-management",
+    "capacity"
+   ],
+   "stream": "transcript",
+   "source_id": "S106",
+   "date_collected": "2026-07-13",
+   "confidence": "high",
+   "status": "draft"
+  },
+  {
+   "id": "E0465",
+   "finding_id": "F806",
+   "theme": "Both",
+   "type": "barrier",
+   "statement": "A discrepancy between the reporting platform and the dashboard affects the total people-reached figure, and reconciling the two requires support the cluster does not hold in-house.",
+   "level": "national",
+   "countries": [
+    "NER"
+   ],
+   "actors": [
+    "cluster"
+   ],
+   "tags": [
+    "information-management",
+    "capacity"
+   ],
+   "stream": "transcript",
+   "source_id": "S106",
+   "date_collected": "2026-07-13",
+   "confidence": "high",
+   "status": "draft"
+  },
+  {
+   "id": "E0466",
+   "finding_id": "F807",
+   "theme": "ABC",
+   "type": "barrier",
+   "statement": "The response to questions about which reporting system applies has been that the central module is a pilot and no answer is available yet, so partners have not begun reporting into it and the cluster continues extracting from its own platform alongside an interim spreadsheet.",
+   "level": "national",
+   "countries": [
+    "NER"
+   ],
+   "actors": [
+    "ocha",
+    "cluster"
+   ],
+   "tags": [
+    "information-management",
+    "hpc",
+    "guidance"
+   ],
+   "stream": "transcript",
+   "source_id": "S106",
+   "date_collected": "2026-07-13",
+   "confidence": "high",
+   "status": "draft"
+  },
+  {
+   "id": "E0467",
+   "finding_id": "F808",
+   "theme": "Transition",
+   "type": "barrier",
+   "statement": "A transition plan was raised once at an intersectoral meeting as something every cluster should have; the cluster asked how it should be done, received no answer, and has not been contacted since, so ordinary coordination continues with neither government nor partners raising it.",
+   "level": "national",
+   "countries": [
+    "NER"
+   ],
+   "actors": [
+    "ocha",
+    "cluster",
+    "gov-national"
+   ],
+   "tags": [
+    "transition-handover",
+    "guidance",
+    "government-engagement"
+   ],
+   "stream": "transcript",
+   "source_id": "S106",
+   "date_collected": "2026-07-13",
+   "confidence": "high",
+   "status": "draft"
+  },
+  {
+   "id": "E0468",
+   "finding_id": "F809",
+   "theme": "Both",
+   "type": "barrier",
+   "statement": "The cluster contributed indicators and questionnaire content to the planned multi-sector assessment and asked to take part in enumerator training, was told it would be included, and then heard nothing; collection was due to start in July and had not begun by mid-month.",
+   "level": "national",
+   "countries": [
+    "NER"
+   ],
+   "actors": [
+    "ocha",
+    "ingo",
+    "cluster"
+   ],
+   "tags": [
+    "hpc",
+    "information-management",
+    "partnerships"
+   ],
+   "stream": "transcript",
+   "source_id": "S106",
+   "date_collected": "2026-07-13",
+   "confidence": "high",
+   "status": "draft"
+  },
+  {
+   "id": "E0469",
+   "finding_id": "F810",
+   "theme": "Both",
+   "type": "practice",
+   "statement": "With no multi-sector assessment last year, the cluster updated the previous one through key informants and agreed severity levels collectively at a cluster workshop.",
+   "level": "national",
+   "countries": [
+    "NER"
+   ],
+   "actors": [
+    "cluster",
+    "local-ngo"
+   ],
+   "tags": [
+    "hpc",
+    "information-management"
+   ],
+   "stream": "transcript",
+   "source_id": "S106",
+   "date_collected": "2026-07-13",
+   "confidence": "high",
+   "status": "draft"
   }
  ],
  "sources": [
@@ -21745,6 +22472,19 @@
    "url": "",
    "stream": "transcript",
    "date_added": "2026-07-17",
+   "access": "restricted",
+   "legacy_id": "",
+   "source_group": ""
+  },
+  {
+   "source_id": "S106",
+   "title": "Country consultation — Niger",
+   "organisation": "Global WASH Cluster",
+   "year": "2026",
+   "type": "interview",
+   "url": "",
+   "stream": "transcript",
+   "date_added": "2026-07-13",
    "access": "restricted",
    "legacy_id": "",
    "source_group": ""
