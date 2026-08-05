@@ -41,7 +41,13 @@ Folder: **Country Checkin June-July** (Drive ID `1VpBRYqtCujTXIzuoDoOQ2iioc-5AaM
 
 Already extracted: Somalia (S011), Myanmar (S012), Colombia (S103), Sudan (S104), Nigeria (S105), Niger (S106), Lebanon (S107), Bangladesh (S108), Haiti (S109), Mozambique (S110), Ethiopia (S111), Burkina Faso (S112).
 
-Remaining: **Mali, South Sudan** (batch 6). All others extracted.
+**All twelve transcripts are extracted.** Sources S011–S012 and S103–S114.
+
+Still outstanding:
+
+- **Workshop briefing note** — registered as S045 / S083 but never extracted as a document. Use `prompts/02`.
+- **Deferred decisions** in README — remove the Matrix tab; prune unused tags.
+- **Quarterly search** — `prompts/03`, first run due three months after the last source date.
 
 **Note on finding IDs.** These now run past F999; the format accepts three or four digits (`F001` to `F9999`). Continue from the highest existing value.
 

@@ -66,9 +66,9 @@
  "generated": "2026-08-05",
  "taxonomy_version": "0.4.0",
  "stats": {
-  "records": 594,
-  "findings": 455,
-  "sources": 103,
+  "records": 616,
+  "findings": 469,
+  "sources": 104,
   "countries": 26,
   "withheld_internal": 1
  },
@@ -688,22 +688,28 @@
     "E0377",
     "E0596"
    ],
-   "unmerged": false
+   "unmerged": false,
+   "highlight": {
+    "headline": "The sector is absent from the room where allocations are decided",
+    "plain": "Prioritisation for pooled funds increasingly happens where the cluster is not present — in arbitration meetings, in pre-agreed lists, or in rebalancing at the closing session. Where the coordinator post is vacant, the sector has nobody in the room at all, and the final allocation shows it.",
+    "so_what": "Protect attendance at allocation meetings even when the post is unfilled, and bring current data rather than last year’s plan figures."
+   }
   },
   {
    "finding_id": "F016",
-   "statement": "Clusters were asked to select priority districts from a pre-approved list, which left little room to propose alternatives based on access or observed need.",
+   "statement": "The final allocation was rebalanced between sectors by negotiation at the closing meeting rather than against evidence, reducing the sector envelope by around a third to level it against others.",
    "theme": "ABC",
    "type": "barrier",
-   "strength": "low",
-   "n_records": 1,
-   "n_sources": 1,
+   "strength": "medium",
+   "n_records": 2,
+   "n_sources": 2,
    "n_streams": 1,
    "streams": [
     "transcript"
    ],
    "countries": [
-    "SOM"
+    "SOM",
+    "SSD"
    ],
    "tags": [
     "funding",
@@ -716,7 +722,8 @@
     "ocha"
    ],
    "record_ids": [
-    "E0021"
+    "E0021",
+    "E0615"
    ],
    "unmerged": false
   },
@@ -781,12 +788,12 @@
   },
   {
    "finding_id": "F019",
-   "statement": "Regional coordinator and information management posts were lost last year, and the one remaining double-hatting regional post ends as coordination shifts to area-based structures, leaving no sector presence in that region.",
+   "statement": "Five dedicated subnational coordinator posts were lost and state-level coordination now rests on voluntary arrangements; the co-coordinator seconded by an NGO and the one dedicated state post are both funded only to the end of the year.",
    "theme": "Both",
    "type": "barrier",
    "strength": "high",
-   "n_records": 6,
-   "n_sources": 5,
+   "n_records": 7,
+   "n_sources": 6,
    "n_streams": 2,
    "streams": [
     "sdr",
@@ -797,7 +804,8 @@
     "ETH",
     "MLI",
     "SDN",
-    "SOM"
+    "SOM",
+    "SSD"
    ],
    "tags": [
     "capacity",
@@ -809,6 +817,7 @@
    "actors": [
     "cluster",
     "donor",
+    "ingo",
     "un-agency"
    ],
    "record_ids": [
@@ -817,7 +826,8 @@
     "E0259",
     "E0405",
     "E0559",
-    "E0591"
+    "E0591",
+    "E0611"
    ],
    "unmerged": false,
    "highlight": {
@@ -1189,15 +1199,16 @@
    "statement": "Partners continued to report response data through the cluster 4W only, with area-based structures collecting assessment and prioritisation information but not response reporting, so the parallel structures did not create double reporting.",
    "theme": "ABC",
    "type": "practice",
-   "strength": "low",
-   "n_records": 1,
-   "n_sources": 1,
+   "strength": "medium",
+   "n_records": 2,
+   "n_sources": 2,
    "n_streams": 1,
    "streams": [
     "transcript"
    ],
    "countries": [
-    "SOM"
+    "SOM",
+    "SSD"
    ],
    "tags": [
     "coordination-architecture",
@@ -1205,10 +1216,12 @@
    ],
    "actors": [
     "cluster",
-    "ingo"
+    "ingo",
+    "operational-cell"
    ],
    "record_ids": [
-    "E0036"
+    "E0036",
+    "E0610"
    ],
    "unmerged": false
   },
@@ -1485,16 +1498,17 @@
    "statement": "Area coordination groups work in detail locally but there is no equivalent operational discussion at central level, so issues stay compartmentalised within each area rather than aggregating into a national picture.",
    "theme": "ABC",
    "type": "barrier",
-   "strength": "medium",
-   "n_records": 3,
-   "n_sources": 2,
+   "strength": "high",
+   "n_records": 4,
+   "n_sources": 3,
    "n_streams": 1,
    "streams": [
     "transcript"
    ],
    "countries": [
     "LBN",
-    "MMR"
+    "MMR",
+    "SSD"
    ],
    "tags": [
     "coordination-architecture",
@@ -1509,9 +1523,15 @@
    "record_ids": [
     "E0047",
     "E0048",
-    "E0473"
+    "E0473",
+    "E0609"
    ],
-   "unmerged": false
+   "unmerged": false,
+   "highlight": {
+    "headline": "Nobody has written down how the two structures talk to each other",
+    "plain": "Where clusters and area structures coexist, the link between them is repeatedly undefined — no agreed escalation route, no shared statement of who tells whom what. Information gets requested in both directions, or not at all, and issues stay stuck at the level they arose.",
+    "so_what": "Write the escalation route and the information flow into both terms of reference. It is a short document and it prevents most of the friction."
+   }
   },
   {
    "finding_id": "F041",
@@ -2205,15 +2225,16 @@
    "statement": "The joint intersectoral assessment initially capped each sector at five indicators; the sector negotiated up to around ten, but the ceiling still constrains what the sector can analyse from the shared exercise.",
    "theme": "Both",
    "type": "barrier",
-   "strength": "low",
-   "n_records": 1,
-   "n_sources": 1,
+   "strength": "medium",
+   "n_records": 2,
+   "n_sources": 2,
    "n_streams": 1,
    "streams": [
     "transcript"
    ],
    "countries": [
-    "BGD"
+    "BGD",
+    "SSD"
    ],
    "tags": [
     "hpc",
@@ -2225,7 +2246,8 @@
     "ocha"
    ],
    "record_ids": [
-    "E0501"
+    "E0501",
+    "E0613"
    ],
    "unmerged": false
   },
@@ -4967,6 +4989,405 @@
    "unmerged": false
   },
   {
+   "finding_id": "F1600",
+   "statement": "Eight clusters were confirmed following the humanitarian reset, with WASH remaining standalone while shelter-related coordination was reorganised into three, and the intersectoral group continues to meet fortnightly.",
+   "theme": "Transition",
+   "type": "context",
+   "strength": "low",
+   "n_records": 1,
+   "n_sources": 1,
+   "n_streams": 1,
+   "streams": [
+    "transcript"
+   ],
+   "countries": [
+    "SSD"
+   ],
+   "tags": [
+    "coordination-architecture",
+    "transition-handover"
+   ],
+   "actors": [
+    "cluster",
+    "ocha"
+   ],
+   "record_ids": [
+    "E0616"
+   ],
+   "unmerged": false
+  },
+  {
+   "finding_id": "F1601",
+   "statement": "The area-based structures here are organised around transition, durable solutions and peace rather than around operational service coordination, and have been in place since well before the approach was adopted globally.",
+   "theme": "Both",
+   "type": "context",
+   "strength": "low",
+   "n_records": 1,
+   "n_sources": 1,
+   "n_streams": 1,
+   "streams": [
+    "transcript"
+   ],
+   "countries": [
+    "SSD"
+   ],
+   "tags": [
+    "coordination-architecture",
+    "transition-handover"
+   ],
+   "actors": [
+    "operational-cell",
+    "un-agency"
+   ],
+   "record_ids": [
+    "E0617"
+   ],
+   "unmerged": false
+  },
+  {
+   "finding_id": "F1602",
+   "statement": "The roving coordinator function that covered field monitoring across states is no longer operating, which leaves several of the core coordination functions without the field presence they depend on.",
+   "theme": "Both",
+   "type": "barrier",
+   "strength": "low",
+   "n_records": 1,
+   "n_sources": 1,
+   "n_streams": 1,
+   "streams": [
+    "transcript"
+   ],
+   "countries": [
+    "SSD"
+   ],
+   "tags": [
+    "capacity",
+    "coordination-architecture",
+    "performance"
+   ],
+   "actors": [
+    "cluster"
+   ],
+   "record_ids": [
+    "E0618"
+   ],
+   "unmerged": false
+  },
+  {
+   "finding_id": "F1603",
+   "statement": "Assessment data is generally used only to produce needs figures and severity and then goes no further; an analysis output and dashboard would let the sector get more from assessments it already runs.",
+   "theme": "Both",
+   "type": "recommendation",
+   "strength": "low",
+   "n_records": 1,
+   "n_sources": 1,
+   "n_streams": 1,
+   "streams": [
+    "transcript"
+   ],
+   "countries": [
+    "SSD"
+   ],
+   "tags": [
+    "hpc",
+    "information-management"
+   ],
+   "actors": [
+    "cluster",
+    "ocha"
+   ],
+   "record_ids": [
+    "E0619"
+   ],
+   "unmerged": false
+  },
+  {
+   "finding_id": "F1604",
+   "statement": "Only four of the twelve water insecurity questions could be accommodated in the joint tool, and the severity scale is being interpolated across that reduced set rather than dropped.",
+   "theme": "Both",
+   "type": "practice",
+   "strength": "low",
+   "n_records": 1,
+   "n_sources": 1,
+   "n_streams": 1,
+   "streams": [
+    "transcript"
+   ],
+   "countries": [
+    "SSD"
+   ],
+   "tags": [
+    "hpc",
+    "information-management"
+   ],
+   "actors": [
+    "cluster",
+    "ocha"
+   ],
+   "record_ids": [
+    "E0620"
+   ],
+   "unmerged": false
+  },
+  {
+   "finding_id": "F1605",
+   "statement": "The pooled fund allocation strategy changed repeatedly during a single round — the split between national and international partners, the number of envelopes and partner eligibility were all revised as the process ran.",
+   "theme": "ABC",
+   "type": "barrier",
+   "strength": "low",
+   "n_records": 1,
+   "n_sources": 1,
+   "n_streams": 1,
+   "streams": [
+    "transcript"
+   ],
+   "countries": [
+    "SSD"
+   ],
+   "tags": [
+    "funding",
+    "guidance",
+    "pooled-funds"
+   ],
+   "actors": [
+    "cluster",
+    "ingo",
+    "ocha"
+   ],
+   "record_ids": [
+    "E0621"
+   ],
+   "unmerged": false
+  },
+  {
+   "finding_id": "F1606",
+   "statement": "Global guidance on the allocation existed and had been circulated to countries, but was not shared onward in country, so clusters prepared without knowing the criteria that applied.",
+   "theme": "ABC",
+   "type": "barrier",
+   "strength": "low",
+   "n_records": 1,
+   "n_sources": 1,
+   "n_streams": 1,
+   "streams": [
+    "transcript"
+   ],
+   "countries": [
+    "SSD"
+   ],
+   "tags": [
+    "advocacy",
+    "guidance",
+    "pooled-funds"
+   ],
+   "actors": [
+    "cluster",
+    "ocha"
+   ],
+   "record_ids": [
+    "E0622"
+   ],
+   "unmerged": false
+  },
+  {
+   "finding_id": "F1607",
+   "statement": "One funding envelope for continuity of services covered nutrition, health, protection and food security in areas affected by cholera and hepatitis E, without including WASH.",
+   "theme": "ABC",
+   "type": "barrier",
+   "strength": "low",
+   "n_records": 1,
+   "n_sources": 1,
+   "n_streams": 1,
+   "streams": [
+    "transcript"
+   ],
+   "countries": [
+    "SSD"
+   ],
+   "tags": [
+    "advocacy",
+    "multisector",
+    "pooled-funds"
+   ],
+   "actors": [
+    "cluster",
+    "donor",
+    "ocha"
+   ],
+   "record_ids": [
+    "E0623"
+   ],
+   "unmerged": false
+  },
+  {
+   "finding_id": "F1608",
+   "statement": "Gap analysis for allocations had to rest on response plan figures that are already several months old, with no mechanism producing fresher data to argue from.",
+   "theme": "ABC",
+   "type": "barrier",
+   "strength": "low",
+   "n_records": 1,
+   "n_sources": 1,
+   "n_streams": 1,
+   "streams": [
+    "transcript"
+   ],
+   "countries": [
+    "SSD"
+   ],
+   "tags": [
+    "hpc",
+    "information-management",
+    "pooled-funds"
+   ],
+   "actors": [
+    "cluster",
+    "ocha"
+   ],
+   "record_ids": [
+    "E0624"
+   ],
+   "unmerged": false
+  },
+  {
+   "finding_id": "F1609",
+   "statement": "Proposal review timelines are short — at times several proposals to assess within a day — which limits how thoroughly each can be checked against sector standards.",
+   "theme": "ABC",
+   "type": "barrier",
+   "strength": "low",
+   "n_records": 1,
+   "n_sources": 1,
+   "n_streams": 1,
+   "streams": [
+    "transcript"
+   ],
+   "countries": [
+    "SSD"
+   ],
+   "tags": [
+    "performance",
+    "pooled-funds"
+   ],
+   "actors": [
+    "cluster",
+    "ocha"
+   ],
+   "record_ids": [
+    "E0625"
+   ],
+   "unmerged": false
+  },
+  {
+   "finding_id": "F1610",
+   "statement": "A shared scoring sheet with proposals as columns and criteria as rows, divided among reviewers with deliberate overlap so every proposal is read by at least two people, makes a large review round manageable and leaves a written record.",
+   "theme": "ABC",
+   "type": "practice",
+   "strength": "low",
+   "n_records": 1,
+   "n_sources": 1,
+   "n_streams": 1,
+   "streams": [
+    "transcript"
+   ],
+   "countries": [],
+   "tags": [
+    "partnerships",
+    "performance",
+    "pooled-funds"
+   ],
+   "actors": [
+    "cluster",
+    "ingo"
+   ],
+   "record_ids": [
+    "E0626"
+   ],
+   "unmerged": false
+  },
+  {
+   "finding_id": "F1611",
+   "statement": "A revision of the sector operational framework was agreed at the advisory group, to be taken forward with a small group of NGO partners meeting fortnightly.",
+   "theme": "Both",
+   "type": "practice",
+   "strength": "low",
+   "n_records": 1,
+   "n_sources": 1,
+   "n_streams": 1,
+   "streams": [
+    "transcript"
+   ],
+   "countries": [
+    "SSD"
+   ],
+   "tags": [
+    "coordination-architecture",
+    "guidance",
+    "partnerships"
+   ],
+   "actors": [
+    "cluster",
+    "ingo"
+   ],
+   "record_ids": [
+    "E0627"
+   ],
+   "unmerged": false
+  },
+  {
+   "finding_id": "F1612",
+   "statement": "Partners need a sector document setting out what is expected of WASH in preparing for and responding to a specific outbreak, adapted from existing global material rather than built from scratch or duplicating an existing working group.",
+   "theme": "Both",
+   "type": "recommendation",
+   "strength": "low",
+   "n_records": 1,
+   "n_sources": 1,
+   "n_streams": 1,
+   "streams": [
+    "transcript"
+   ],
+   "countries": [
+    "SSD"
+   ],
+   "tags": [
+    "capacity",
+    "guidance",
+    "peer-learning"
+   ],
+   "actors": [
+    "cluster",
+    "ingo"
+   ],
+   "record_ids": [
+    "E0628"
+   ],
+   "unmerged": false
+  },
+  {
+   "finding_id": "F1613",
+   "statement": "Work on activity-based unit costing was started but stalled for want of people to carry it, leaving the sector without current cost figures for planning.",
+   "theme": "Both",
+   "type": "barrier",
+   "strength": "low",
+   "n_records": 1,
+   "n_sources": 1,
+   "n_streams": 1,
+   "streams": [
+    "transcript"
+   ],
+   "countries": [
+    "SSD"
+   ],
+   "tags": [
+    "capacity",
+    "funding",
+    "hpc"
+   ],
+   "actors": [
+    "cluster"
+   ],
+   "record_ids": [
+    "E0629"
+   ],
+   "unmerged": false
+  },
+  {
    "finding_id": "F200",
    "statement": "Even where integrated area-based approaches are formally adopted, coordination stays constrained at implementation level because actors, sectors and delivery mechanisms are not aligned.",
    "theme": "ABC",
@@ -5185,29 +5606,40 @@
   },
   {
    "finding_id": "F210",
-   "statement": "Because each humanitarian coordinator may configure coordination independently, a different version of area-based coordination is negotiated in every context; the resulting governance gaps are a design consequence, not an implementation failure.",
+   "statement": "The area-based arrangement here divides the country into zones each led by a UN organisation on a permanent basis, covering two or three states — closer in shape to the existing subnational cluster tier than to local multi-sector operational coordination.",
    "theme": "ABC",
    "type": "context",
-   "strength": "low",
-   "n_records": 1,
-   "n_sources": 1,
-   "n_streams": 1,
+   "strength": "high",
+   "n_records": 2,
+   "n_sources": 2,
+   "n_streams": 2,
    "streams": [
-    "sdr"
+    "sdr",
+    "transcript"
    ],
-   "countries": [],
+   "countries": [
+    "SSD"
+   ],
    "tags": [
     "coordination-architecture",
     "guidance"
    ],
    "actors": [
     "cluster",
-    "ocha"
+    "ocha",
+    "operational-cell",
+    "un-agency"
    ],
    "record_ids": [
-    "E0118"
+    "E0118",
+    "E0608"
    ],
-   "unmerged": false
+   "unmerged": false,
+   "highlight": {
+    "headline": "Every country has built a different thing and called it the same name",
+    "plain": "One country runs area structures at district level; another treats regions as the area; a third divides the country into zones each led by a UN agency covering several states. All are described as area-based coordination. Whether a country \"has\" it depends entirely on which definition you apply.",
+    "so_what": "Before comparing contexts or writing guidance, establish what the structure actually is in each place — administrative level, who leads, what it decides."
+   }
   },
   {
    "finding_id": "F211",
@@ -5624,8 +6056,8 @@
    "theme": "Both",
    "type": "barrier",
    "strength": "high",
-   "n_records": 10,
-   "n_sources": 8,
+   "n_records": 11,
+   "n_sources": 9,
    "n_streams": 2,
    "streams": [
     "sdr",
@@ -5638,7 +6070,8 @@
     "MMR",
     "MOZ",
     "NGA",
-    "SDN"
+    "SDN",
+    "SSD"
    ],
    "tags": [
     "capacity",
@@ -5662,7 +6095,8 @@
     "E0471",
     "E0493",
     "E0532",
-    "E0592"
+    "E0592",
+    "E0612"
    ],
    "unmerged": false,
    "highlight": {
@@ -11188,7 +11622,12 @@
     "E0495",
     "E0595"
    ],
-   "unmerged": false
+   "unmerged": false,
+   "highlight": {
+    "headline": "Short funding windows buy supplies, not systems",
+    "plain": "Implementation windows of four to six months, or strict life-saving priority tiers, push partners toward distributing items rather than repairing or building anything durable. The infrastructure gap then widens each cycle.",
+    "so_what": "Argue for longer windows on sustainability grounds, with cost evidence. Where the window is fixed, be explicit about what it cannot deliver."
+   }
   },
   {
    "finding_id": "F507",
@@ -11908,15 +12347,16 @@
    "statement": "WASH beneficiary calculation is context-specific — a water yard serves a set number of people in one country and a different number elsewhere, and source types differ between contexts — so a single standardised reporting model risks misrepresenting what the sector delivered.",
    "theme": "Both",
    "type": "barrier",
-   "strength": "medium",
-   "n_records": 2,
-   "n_sources": 2,
+   "strength": "high",
+   "n_records": 3,
+   "n_sources": 3,
    "n_streams": 1,
    "streams": [
     "transcript"
    ],
    "countries": [
-    "BFA"
+    "BFA",
+    "SSD"
    ],
    "tags": [
     "hpc",
@@ -11929,9 +12369,15 @@
    ],
    "record_ids": [
     "E0417",
-    "E0575"
+    "E0575",
+    "E0614"
    ],
-   "unmerged": false
+   "unmerged": false,
+   "highlight": {
+    "headline": "Standard indicators do not fit how WASH is actually delivered",
+    "plain": "Central reporting frameworks count new construction where the response is mostly repairs; a handpump repaired three times would be counted three times. Beneficiary calculations are context-specific — a water yard serves different numbers in different countries — so one global model misrepresents what was delivered.",
+    "so_what": "Keep the sector calculation with the people who build it, and ask for country-level customisation rather than accepting the default."
+   }
   },
   {
    "finding_id": "F609",
@@ -27709,6 +28155,547 @@
    "date_collected": "2026-07-28",
    "confidence": "high",
    "status": "draft"
+  },
+  {
+   "id": "E0608",
+   "finding_id": "F210",
+   "theme": "ABC",
+   "type": "context",
+   "statement": "The area-based arrangement here divides the country into zones each led by a UN organisation on a permanent basis, covering two or three states — closer in shape to the existing subnational cluster tier than to local multi-sector operational coordination.",
+   "level": "national",
+   "countries": [
+    "SSD"
+   ],
+   "actors": [
+    "un-agency",
+    "operational-cell"
+   ],
+   "tags": [
+    "coordination-architecture",
+    "guidance"
+   ],
+   "stream": "transcript",
+   "source_id": "S114",
+   "date_collected": "2026-07-29",
+   "confidence": "high",
+   "status": "draft"
+  },
+  {
+   "id": "E0609",
+   "finding_id": "F040",
+   "theme": "ABC",
+   "type": "barrier",
+   "statement": "There is no established link between the cluster and the area structures, and no shared definition of what each should do or how they should communicate.",
+   "level": "national",
+   "countries": [
+    "SSD"
+   ],
+   "actors": [
+    "cluster",
+    "operational-cell"
+   ],
+   "tags": [
+    "coordination-architecture",
+    "information-management",
+    "guidance"
+   ],
+   "stream": "transcript",
+   "source_id": "S114",
+   "date_collected": "2026-07-29",
+   "confidence": "high",
+   "status": "draft"
+  },
+  {
+   "id": "E0610",
+   "finding_id": "F030",
+   "theme": "ABC",
+   "type": "practice",
+   "statement": "Partners report to the cluster rather than to the area structures, which approach the cluster only when they have a gap to fill and do not otherwise attend cluster meetings.",
+   "level": "national",
+   "countries": [
+    "SSD"
+   ],
+   "actors": [
+    "ingo",
+    "cluster",
+    "operational-cell"
+   ],
+   "tags": [
+    "information-management",
+    "coordination-architecture"
+   ],
+   "stream": "transcript",
+   "source_id": "S114",
+   "date_collected": "2026-07-29",
+   "confidence": "high",
+   "status": "draft"
+  },
+  {
+   "id": "E0611",
+   "finding_id": "F019",
+   "theme": "Both",
+   "type": "barrier",
+   "statement": "Five dedicated subnational coordinator posts were lost and state-level coordination now rests on voluntary arrangements; the co-coordinator seconded by an NGO and the one dedicated state post are both funded only to the end of the year.",
+   "level": "subnational",
+   "countries": [
+    "SSD"
+   ],
+   "actors": [
+    "ingo",
+    "cluster"
+   ],
+   "tags": [
+    "funding",
+    "capacity",
+    "coordination-architecture"
+   ],
+   "stream": "transcript",
+   "source_id": "S114",
+   "date_collected": "2026-07-29",
+   "confidence": "high",
+   "status": "draft"
+  },
+  {
+   "id": "E0612",
+   "finding_id": "F225",
+   "theme": "Both",
+   "type": "barrier",
+   "statement": "The information management post is half-time and split between the agency section and the cluster, with the planning season and its documentation demands arriving on top.",
+   "level": "national",
+   "countries": [
+    "SSD"
+   ],
+   "actors": [
+    "cluster",
+    "un-agency"
+   ],
+   "tags": [
+    "capacity",
+    "information-management"
+   ],
+   "stream": "transcript",
+   "source_id": "S114",
+   "date_collected": "2026-07-29",
+   "confidence": "high",
+   "status": "draft"
+  },
+  {
+   "id": "E0613",
+   "finding_id": "F1005",
+   "theme": "Both",
+   "type": "barrier",
+   "statement": "The joint assessment limits how many questions each sector may include, so adding water insecurity measures means removing other sector questions rather than extending the tool.",
+   "level": "national",
+   "countries": [
+    "SSD"
+   ],
+   "actors": [
+    "ocha",
+    "cluster"
+   ],
+   "tags": [
+    "hpc",
+    "information-management",
+    "multisector"
+   ],
+   "stream": "transcript",
+   "source_id": "S114",
+   "date_collected": "2026-07-29",
+   "confidence": "high",
+   "status": "draft"
+  },
+  {
+   "id": "E0614",
+   "finding_id": "F608",
+   "theme": "ABC",
+   "type": "barrier",
+   "statement": "Country-level indicators differ from those proposed globally in the central planning platform, and customising them proved difficult during the last planning round.",
+   "level": "national",
+   "countries": [
+    "SSD"
+   ],
+   "actors": [
+    "ocha",
+    "cluster"
+   ],
+   "tags": [
+    "information-management",
+    "hpc",
+    "performance"
+   ],
+   "stream": "transcript",
+   "source_id": "S114",
+   "date_collected": "2026-07-29",
+   "confidence": "high",
+   "status": "draft"
+  },
+  {
+   "id": "E0615",
+   "finding_id": "F016",
+   "theme": "ABC",
+   "type": "barrier",
+   "statement": "The final allocation was rebalanced between sectors by negotiation at the closing meeting rather than against evidence, reducing the sector envelope by around a third to level it against others.",
+   "level": "national",
+   "countries": [
+    "SSD"
+   ],
+   "actors": [
+    "ocha",
+    "cluster"
+   ],
+   "tags": [
+    "pooled-funds",
+    "funding",
+    "performance"
+   ],
+   "stream": "transcript",
+   "source_id": "S114",
+   "date_collected": "2026-07-29",
+   "confidence": "high",
+   "status": "draft"
+  },
+  {
+   "id": "E0616",
+   "finding_id": "F1600",
+   "theme": "Transition",
+   "type": "context",
+   "statement": "Eight clusters were confirmed following the humanitarian reset, with WASH remaining standalone while shelter-related coordination was reorganised into three, and the intersectoral group continues to meet fortnightly.",
+   "level": "national",
+   "countries": [
+    "SSD"
+   ],
+   "actors": [
+    "ocha",
+    "cluster"
+   ],
+   "tags": [
+    "coordination-architecture",
+    "transition-handover"
+   ],
+   "stream": "transcript",
+   "source_id": "S114",
+   "date_collected": "2026-07-29",
+   "confidence": "high",
+   "status": "draft"
+  },
+  {
+   "id": "E0617",
+   "finding_id": "F1601",
+   "theme": "Both",
+   "type": "context",
+   "statement": "The area-based structures here are organised around transition, durable solutions and peace rather than around operational service coordination, and have been in place since well before the approach was adopted globally.",
+   "level": "national",
+   "countries": [
+    "SSD"
+   ],
+   "actors": [
+    "operational-cell",
+    "un-agency"
+   ],
+   "tags": [
+    "coordination-architecture",
+    "transition-handover"
+   ],
+   "stream": "transcript",
+   "source_id": "S114",
+   "date_collected": "2026-07-29",
+   "confidence": "high",
+   "status": "draft"
+  },
+  {
+   "id": "E0618",
+   "finding_id": "F1602",
+   "theme": "Both",
+   "type": "barrier",
+   "statement": "The roving coordinator function that covered field monitoring across states is no longer operating, which leaves several of the core coordination functions without the field presence they depend on.",
+   "level": "subnational",
+   "countries": [
+    "SSD"
+   ],
+   "actors": [
+    "cluster"
+   ],
+   "tags": [
+    "capacity",
+    "performance",
+    "coordination-architecture"
+   ],
+   "stream": "transcript",
+   "source_id": "S114",
+   "date_collected": "2026-07-29",
+   "confidence": "high",
+   "status": "draft"
+  },
+  {
+   "id": "E0619",
+   "finding_id": "F1603",
+   "theme": "Both",
+   "type": "recommendation",
+   "statement": "Assessment data is generally used only to produce needs figures and severity and then goes no further; an analysis output and dashboard would let the sector get more from assessments it already runs.",
+   "level": "national",
+   "countries": [
+    "SSD"
+   ],
+   "actors": [
+    "cluster",
+    "ocha"
+   ],
+   "tags": [
+    "hpc",
+    "information-management"
+   ],
+   "stream": "transcript",
+   "source_id": "S114",
+   "date_collected": "2026-07-29",
+   "confidence": "high",
+   "status": "draft"
+  },
+  {
+   "id": "E0620",
+   "finding_id": "F1604",
+   "theme": "Both",
+   "type": "practice",
+   "statement": "Only four of the twelve water insecurity questions could be accommodated in the joint tool, and the severity scale is being interpolated across that reduced set rather than dropped.",
+   "level": "national",
+   "countries": [
+    "SSD"
+   ],
+   "actors": [
+    "cluster",
+    "ocha"
+   ],
+   "tags": [
+    "hpc",
+    "information-management"
+   ],
+   "stream": "transcript",
+   "source_id": "S114",
+   "date_collected": "2026-07-29",
+   "confidence": "high",
+   "status": "draft"
+  },
+  {
+   "id": "E0621",
+   "finding_id": "F1605",
+   "theme": "ABC",
+   "type": "barrier",
+   "statement": "The pooled fund allocation strategy changed repeatedly during a single round — the split between national and international partners, the number of envelopes and partner eligibility were all revised as the process ran.",
+   "level": "national",
+   "countries": [
+    "SSD"
+   ],
+   "actors": [
+    "ocha",
+    "cluster",
+    "ingo"
+   ],
+   "tags": [
+    "pooled-funds",
+    "funding",
+    "guidance"
+   ],
+   "stream": "transcript",
+   "source_id": "S114",
+   "date_collected": "2026-07-29",
+   "confidence": "high",
+   "status": "draft"
+  },
+  {
+   "id": "E0622",
+   "finding_id": "F1606",
+   "theme": "ABC",
+   "type": "barrier",
+   "statement": "Global guidance on the allocation existed and had been circulated to countries, but was not shared onward in country, so clusters prepared without knowing the criteria that applied.",
+   "level": "national",
+   "countries": [
+    "SSD"
+   ],
+   "actors": [
+    "ocha",
+    "cluster"
+   ],
+   "tags": [
+    "pooled-funds",
+    "guidance",
+    "advocacy"
+   ],
+   "stream": "transcript",
+   "source_id": "S114",
+   "date_collected": "2026-07-29",
+   "confidence": "high",
+   "status": "draft"
+  },
+  {
+   "id": "E0623",
+   "finding_id": "F1607",
+   "theme": "ABC",
+   "type": "barrier",
+   "statement": "One funding envelope for continuity of services covered nutrition, health, protection and food security in areas affected by cholera and hepatitis E, without including WASH.",
+   "level": "national",
+   "countries": [
+    "SSD"
+   ],
+   "actors": [
+    "ocha",
+    "donor",
+    "cluster"
+   ],
+   "tags": [
+    "pooled-funds",
+    "multisector",
+    "advocacy"
+   ],
+   "stream": "transcript",
+   "source_id": "S114",
+   "date_collected": "2026-07-29",
+   "confidence": "high",
+   "status": "draft"
+  },
+  {
+   "id": "E0624",
+   "finding_id": "F1608",
+   "theme": "ABC",
+   "type": "barrier",
+   "statement": "Gap analysis for allocations had to rest on response plan figures that are already several months old, with no mechanism producing fresher data to argue from.",
+   "level": "national",
+   "countries": [
+    "SSD"
+   ],
+   "actors": [
+    "cluster",
+    "ocha"
+   ],
+   "tags": [
+    "pooled-funds",
+    "hpc",
+    "information-management"
+   ],
+   "stream": "transcript",
+   "source_id": "S114",
+   "date_collected": "2026-07-29",
+   "confidence": "high",
+   "status": "draft"
+  },
+  {
+   "id": "E0625",
+   "finding_id": "F1609",
+   "theme": "ABC",
+   "type": "barrier",
+   "statement": "Proposal review timelines are short — at times several proposals to assess within a day — which limits how thoroughly each can be checked against sector standards.",
+   "level": "national",
+   "countries": [
+    "SSD"
+   ],
+   "actors": [
+    "ocha",
+    "cluster"
+   ],
+   "tags": [
+    "pooled-funds",
+    "performance"
+   ],
+   "stream": "transcript",
+   "source_id": "S114",
+   "date_collected": "2026-07-29",
+   "confidence": "high",
+   "status": "draft"
+  },
+  {
+   "id": "E0626",
+   "finding_id": "F1610",
+   "theme": "ABC",
+   "type": "practice",
+   "statement": "A shared scoring sheet with proposals as columns and criteria as rows, divided among reviewers with deliberate overlap so every proposal is read by at least two people, makes a large review round manageable and leaves a written record.",
+   "level": "global",
+   "countries": [],
+   "actors": [
+    "cluster",
+    "ingo"
+   ],
+   "tags": [
+    "pooled-funds",
+    "performance",
+    "partnerships"
+   ],
+   "stream": "transcript",
+   "source_id": "S114",
+   "date_collected": "2026-07-29",
+   "confidence": "high",
+   "status": "draft"
+  },
+  {
+   "id": "E0627",
+   "finding_id": "F1611",
+   "theme": "Both",
+   "type": "practice",
+   "statement": "A revision of the sector operational framework was agreed at the advisory group, to be taken forward with a small group of NGO partners meeting fortnightly.",
+   "level": "national",
+   "countries": [
+    "SSD"
+   ],
+   "actors": [
+    "cluster",
+    "ingo"
+   ],
+   "tags": [
+    "guidance",
+    "partnerships",
+    "coordination-architecture"
+   ],
+   "stream": "transcript",
+   "source_id": "S114",
+   "date_collected": "2026-07-29",
+   "confidence": "high",
+   "status": "draft"
+  },
+  {
+   "id": "E0628",
+   "finding_id": "F1612",
+   "theme": "Both",
+   "type": "recommendation",
+   "statement": "Partners need a sector document setting out what is expected of WASH in preparing for and responding to a specific outbreak, adapted from existing global material rather than built from scratch or duplicating an existing working group.",
+   "level": "national",
+   "countries": [
+    "SSD"
+   ],
+   "actors": [
+    "cluster",
+    "ingo"
+   ],
+   "tags": [
+    "guidance",
+    "capacity",
+    "peer-learning"
+   ],
+   "stream": "transcript",
+   "source_id": "S114",
+   "date_collected": "2026-07-29",
+   "confidence": "high",
+   "status": "draft"
+  },
+  {
+   "id": "E0629",
+   "finding_id": "F1613",
+   "theme": "Both",
+   "type": "barrier",
+   "statement": "Work on activity-based unit costing was started but stalled for want of people to carry it, leaving the sector without current cost figures for planning.",
+   "level": "national",
+   "countries": [
+    "SSD"
+   ],
+   "actors": [
+    "cluster"
+   ],
+   "tags": [
+    "hpc",
+    "capacity",
+    "funding"
+   ],
+   "stream": "transcript",
+   "source_id": "S114",
+   "date_collected": "2026-07-29",
+   "confidence": "high",
+   "status": "draft"
   }
  ],
  "sources": [
@@ -29047,6 +30034,19 @@
    "url": "",
    "stream": "transcript",
    "date_added": "2026-07-28",
+   "access": "restricted",
+   "legacy_id": "",
+   "source_group": ""
+  },
+  {
+   "source_id": "S114",
+   "title": "Country consultation — South Sudan",
+   "organisation": "Global WASH Cluster",
+   "year": "2026",
+   "type": "interview",
+   "url": "",
+   "stream": "transcript",
+   "date_added": "2026-07-29",
    "access": "restricted",
    "legacy_id": "",
    "source_group": ""
