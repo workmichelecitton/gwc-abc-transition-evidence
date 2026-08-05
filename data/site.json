@@ -66,9 +66,9 @@
  "generated": "2026-08-05",
  "taxonomy_version": "0.4.0",
  "stats": {
-  "records": 539,
-  "findings": 419,
-  "sources": 100,
+  "records": 559,
+  "findings": 430,
+  "sources": 101,
   "countries": 25,
   "withheld_internal": 1
  },
@@ -778,12 +778,12 @@
   },
   {
    "finding_id": "F019",
-   "statement": "Subnational coordination posts funded through lead agency partnership agreements are not being renewed, putting dedicated subnational capacity at risk just as the architecture is being redesigned.",
+   "statement": "Regional coordinator and information management posts were lost last year, and the one remaining double-hatting regional post ends as coordination shifts to area-based structures, leaving no sector presence in that region.",
    "theme": "Both",
    "type": "barrier",
    "strength": "high",
-   "n_records": 4,
-   "n_sources": 3,
+   "n_records": 5,
+   "n_sources": 4,
    "n_streams": 2,
    "streams": [
     "sdr",
@@ -791,6 +791,7 @@
    ],
    "countries": [
     "BGD",
+    "ETH",
     "SDN",
     "SOM"
    ],
@@ -810,7 +811,8 @@
     "E0025",
     "E0254",
     "E0259",
-    "E0405"
+    "E0405",
+    "E0559"
    ],
    "unmerged": false,
    "highlight": {
@@ -1067,14 +1069,15 @@
    "theme": "Transition",
    "type": "barrier",
    "strength": "high",
-   "n_records": 3,
-   "n_sources": 3,
+   "n_records": 4,
+   "n_sources": 4,
    "n_streams": 2,
    "streams": [
     "sdr",
     "transcript"
    ],
    "countries": [
+    "ETH",
     "LBY",
     "SOM"
    ],
@@ -1087,12 +1090,14 @@
    ],
    "actors": [
     "cluster",
+    "gov-national",
     "un-agency"
    ],
    "record_ids": [
     "E0033",
     "E0241",
-    "E0243"
+    "E0243",
+    "E0558"
    ],
    "unmerged": false,
    "highlight": {
@@ -3910,6 +3915,324 @@
    ],
    "record_ids": [
     "E0552"
+   ],
+   "unmerged": false
+  },
+  {
+   "finding_id": "F1300",
+   "statement": "A transition plan was drafted by adapting examples from other countries and shared with the ministry, and no feedback had been received four months later despite repeated follow-up.",
+   "theme": "Transition",
+   "type": "barrier",
+   "strength": "low",
+   "n_records": 1,
+   "n_sources": 1,
+   "n_streams": 1,
+   "streams": [
+    "transcript"
+   ],
+   "countries": [
+    "ETH"
+   ],
+   "tags": [
+    "government-engagement",
+    "guidance",
+    "transition-handover"
+   ],
+   "actors": [
+    "cluster",
+    "gov-national"
+   ],
+   "record_ids": [
+    "E0562"
+   ],
+   "unmerged": false
+  },
+  {
+   "finding_id": "F1301",
+   "statement": "The government asked to take over coordination and wants to do so gradually with continued support, while preferring not to have the arrangement set down in documents recorded in its own name.",
+   "theme": "Transition",
+   "type": "context",
+   "strength": "low",
+   "n_records": 1,
+   "n_sources": 1,
+   "n_streams": 1,
+   "streams": [
+    "transcript"
+   ],
+   "countries": [
+    "ETH"
+   ],
+   "tags": [
+    "government-engagement",
+    "guidance",
+    "transition-handover"
+   ],
+   "actors": [
+    "cluster",
+    "gov-national"
+   ],
+   "record_ids": [
+    "E0563"
+   ],
+   "unmerged": false
+  },
+  {
+   "finding_id": "F1302",
+   "statement": "The ministry has not yet taken on convening the coordination meeting, which is still called and chaired by the outgoing coordinator.",
+   "theme": "Transition",
+   "type": "barrier",
+   "strength": "low",
+   "n_records": 1,
+   "n_sources": 1,
+   "n_streams": 1,
+   "streams": [
+    "transcript"
+   ],
+   "countries": [
+    "ETH"
+   ],
+   "tags": [
+    "coordination-architecture",
+    "government-engagement",
+    "transition-handover"
+   ],
+   "actors": [
+    "cluster",
+    "gov-national"
+   ],
+   "record_ids": [
+    "E0564"
+   ],
+   "unmerged": false
+  },
+  {
+   "finding_id": "F1303",
+   "statement": "The humanitarian coordination office agreed that six months is not sufficient for the handover, while the lead agency timeline remained unchanged.",
+   "theme": "Transition",
+   "type": "context",
+   "strength": "low",
+   "n_records": 1,
+   "n_sources": 1,
+   "n_streams": 1,
+   "streams": [
+    "transcript"
+   ],
+   "countries": [
+    "ETH"
+   ],
+   "tags": [
+    "guidance",
+    "transition-handover"
+   ],
+   "actors": [
+    "cluster",
+    "ocha",
+    "un-agency"
+   ],
+   "record_ids": [
+    "E0565"
+   ],
+   "unmerged": false
+  },
+  {
+   "finding_id": "F1304",
+   "statement": "Other sectors in the same country nationalised their coordinator and information management posts and continue to function, while this sector is moving toward deactivation on a shorter timetable.",
+   "theme": "Transition",
+   "type": "context",
+   "strength": "low",
+   "n_records": 1,
+   "n_sources": 1,
+   "n_streams": 1,
+   "streams": [
+    "transcript"
+   ],
+   "countries": [
+    "ETH"
+   ],
+   "tags": [
+    "capacity",
+    "localisation",
+    "transition-handover"
+   ],
+   "actors": [
+    "cluster",
+    "un-agency"
+   ],
+   "record_ids": [
+    "E0566"
+   ],
+   "unmerged": false
+  },
+  {
+   "finding_id": "F1305",
+   "statement": "Sectors with a single line ministry counterpart move through deactivation faster than those split across two ministries, where the handover requires an inter-ministerial discussion first.",
+   "theme": "Transition",
+   "type": "context",
+   "strength": "low",
+   "n_records": 1,
+   "n_sources": 1,
+   "n_streams": 1,
+   "streams": [
+    "transcript"
+   ],
+   "countries": [
+    "ETH"
+   ],
+   "tags": [
+    "coordination-architecture",
+    "government-engagement",
+    "transition-handover"
+   ],
+   "actors": [
+    "cluster",
+    "gov-national"
+   ],
+   "record_ids": [
+    "E0567"
+   ],
+   "unmerged": false
+  },
+  {
+   "finding_id": "F1306",
+   "statement": "The cluster sits under the emergency unit rather than the sector programme section, so there is no natural route for programme resources or attention to support the transition.",
+   "theme": "Transition",
+   "type": "barrier",
+   "strength": "low",
+   "n_records": 1,
+   "n_sources": 1,
+   "n_streams": 1,
+   "streams": [
+    "transcript"
+   ],
+   "countries": [
+    "ETH"
+   ],
+   "tags": [
+    "coordination-architecture",
+    "funding",
+    "transition-handover"
+   ],
+   "actors": [
+    "cluster",
+    "un-agency"
+   ],
+   "record_ids": [
+    "E0568"
+   ],
+   "unmerged": false
+  },
+  {
+   "finding_id": "F1307",
+   "statement": "Government will lead the food, agriculture and nutrition assessments; other sectors may run their own tools, but results have to be endorsed by the ministry before use.",
+   "theme": "Both",
+   "type": "context",
+   "strength": "low",
+   "n_records": 1,
+   "n_sources": 1,
+   "n_streams": 1,
+   "streams": [
+    "transcript"
+   ],
+   "countries": [
+    "ETH"
+   ],
+   "tags": [
+    "government-engagement",
+    "hpc",
+    "information-management"
+   ],
+   "actors": [
+    "cluster",
+    "gov-national"
+   ],
+   "record_ids": [
+    "E0569"
+   ],
+   "unmerged": false
+  },
+  {
+   "finding_id": "F1308",
+   "statement": "A government-developed system for water point assessment, capturing access at a small administrative level, is being built and will remain government-led.",
+   "theme": "Both",
+   "type": "enabler",
+   "strength": "low",
+   "n_records": 1,
+   "n_sources": 1,
+   "n_streams": 1,
+   "streams": [
+    "transcript"
+   ],
+   "countries": [
+    "ETH"
+   ],
+   "tags": [
+    "government-engagement",
+    "hpc",
+    "information-management"
+   ],
+   "actors": [
+    "gov-national"
+   ],
+   "record_ids": [
+    "E0570"
+   ],
+   "unmerged": false
+  },
+  {
+   "finding_id": "F1309",
+   "statement": "Pooled fund allocations are running and depend on the cluster for partner selection, monitoring and collecting results; no successor has been identified for those tasks when the function ends.",
+   "theme": "ABC",
+   "type": "barrier",
+   "strength": "low",
+   "n_records": 1,
+   "n_sources": 1,
+   "n_streams": 1,
+   "streams": [
+    "transcript"
+   ],
+   "countries": [
+    "ETH"
+   ],
+   "tags": [
+    "capacity",
+    "pooled-funds",
+    "transition-handover"
+   ],
+   "actors": [
+    "cluster",
+    "donor",
+    "ocha"
+   ],
+   "record_ids": [
+    "E0571"
+   ],
+   "unmerged": false
+  },
+  {
+   "finding_id": "F1310",
+   "statement": "Contact with area-based structures runs through agency colleagues in the region rather than directly, and that arrangement ends with the departure of the staff member concerned.",
+   "theme": "ABC",
+   "type": "barrier",
+   "strength": "low",
+   "n_records": 1,
+   "n_sources": 1,
+   "n_streams": 1,
+   "streams": [
+    "transcript"
+   ],
+   "countries": [
+    "ETH"
+   ],
+   "tags": [
+    "capacity",
+    "coordination-architecture"
+   ],
+   "actors": [
+    "cluster",
+    "operational-cell"
+   ],
+   "record_ids": [
+    "E0572"
    ],
    "unmerged": false
   },
@@ -6786,30 +7109,40 @@
    "statement": "The government co-lead has no information management function at all, and coordinators identified an embedded IM post plus capacity building as the minimum precondition for any transition.",
    "theme": "Transition",
    "type": "barrier",
-   "strength": "low",
-   "n_records": 2,
-   "n_sources": 1,
-   "n_streams": 1,
+   "strength": "high",
+   "n_records": 3,
+   "n_sources": 2,
+   "n_streams": 2,
    "streams": [
-    "sdr"
+    "sdr",
+    "transcript"
    ],
    "countries": [
+    "ETH",
     "NER"
    ],
    "tags": [
     "capacity",
     "government-engagement",
-    "information-management"
+    "information-management",
+    "transition-handover"
    ],
    "actors": [
     "cluster",
-    "gov-national"
+    "gov-national",
+    "ingo"
    ],
    "record_ids": [
     "E0244",
-    "E0245"
+    "E0245",
+    "E0557"
    ],
-   "unmerged": false
+   "unmerged": false,
+   "highlight": {
+    "headline": "Government usually cannot see who is doing what",
+    "plain": "Ministries repeatedly have no mechanism to know which partners are operating where, and rely on the cluster for it. Partners come to the cluster for the same list. When the cluster stops, that picture disappears for everyone.",
+    "so_what": "Treat partner mapping as a function that must be transferred, not a by-product of coordination. Build the receiving side before the handover date."
+   }
   },
   {
    "finding_id": "F319",
@@ -7166,31 +7499,41 @@
   },
   {
    "finding_id": "F333",
-   "statement": "Deactivation was triggered by funding shortage rather than by the operational readiness of national systems.",
+   "statement": "A six-month deadline for handover was set internally by the lead agency and is tied to the coordinator contract ending rather than to any assessment of whether the receiving institution is ready.",
    "theme": "Transition",
    "type": "barrier",
-   "strength": "low",
-   "n_records": 1,
-   "n_sources": 1,
-   "n_streams": 1,
+   "strength": "high",
+   "n_records": 2,
+   "n_sources": 2,
+   "n_streams": 2,
    "streams": [
-    "sdr"
+    "sdr",
+    "transcript"
    ],
    "countries": [
+    "ETH",
     "IRQ"
    ],
    "tags": [
     "funding",
+    "guidance",
     "transition-handover"
    ],
    "actors": [
     "cluster",
-    "donor"
+    "donor",
+    "un-agency"
    ],
    "record_ids": [
-    "E0262"
+    "E0262",
+    "E0553"
    ],
-   "unmerged": false
+   "unmerged": false,
+   "highlight": {
+    "headline": "The deadline usually comes from the budget, not the plan",
+    "plain": "Handover dates are repeatedly set by when a contract or a funding line ends rather than by whether the receiving institution can take the work on. The two are unrelated, but only one of them appears in the decision.",
+    "so_what": "State plainly in HCT and agency discussions when a date is contract-driven. A readiness assessment against agreed criteria is the counter-argument."
+   }
   },
   {
    "finding_id": "F334",
@@ -7957,14 +8300,16 @@
    "statement": "The co-leading ministry has effectively one trained focal point who understands what a cluster is, no information management function, and no ministry of humanitarian action, so deactivation this year would leave no coordination in place.",
    "theme": "Transition",
    "type": "barrier",
-   "strength": "low",
-   "n_records": 2,
-   "n_sources": 1,
-   "n_streams": 1,
+   "strength": "high",
+   "n_records": 3,
+   "n_sources": 2,
+   "n_streams": 2,
    "streams": [
-    "sdr"
+    "sdr",
+    "transcript"
    ],
    "countries": [
+    "ETH",
     "NER"
    ],
    "tags": [
@@ -7978,9 +8323,15 @@
    ],
    "record_ids": [
     "E0294",
-    "E0295"
+    "E0295",
+    "E0554"
    ],
-   "unmerged": false
+   "unmerged": false,
+   "highlight": {
+    "headline": "A named counterpart is not the same as a capable one",
+    "plain": "Governments frequently nominate someone to receive coordination who is already doing another full-time job, with no information management function behind them. On paper the counterpart exists; in practice there is nobody with time to run the handover.",
+    "so_what": "Ask what the nominated person is being released from. A name on an organigram is not a transfer of capacity."
+   }
   },
   {
    "finding_id": "F362",
@@ -8895,14 +9246,16 @@
    "statement": "Cluster products should be backup-archived at global level, beyond the reach of a country-level deactivation, so technical decisions do not have to be reconstructed if coordination restarts.",
    "theme": "Transition",
    "type": "recommendation",
-   "strength": "low",
-   "n_records": 2,
-   "n_sources": 1,
-   "n_streams": 1,
+   "strength": "high",
+   "n_records": 3,
+   "n_sources": 2,
+   "n_streams": 2,
    "streams": [
-    "sdr"
+    "sdr",
+    "transcript"
    ],
    "countries": [
+    "ETH",
     "LBY"
    ],
    "tags": [
@@ -8915,9 +9268,15 @@
    ],
    "record_ids": [
     "E0331",
-    "E0332"
+    "E0332",
+    "E0561"
    ],
-   "unmerged": false
+   "unmerged": false,
+   "highlight": {
+    "headline": "Archive it somewhere a closure cannot reach",
+    "plain": "Tools, datasets and records of technical decisions built over years sit on country drives and personal accounts. Where coordination stopped and restarted, none of it was there and the same discussions were held again from scratch.",
+    "so_what": "Back up cluster products at global level while the country function still exists. It costs almost nothing and is unrecoverable afterwards."
+   }
   },
   {
    "finding_id": "F396",
@@ -9432,14 +9791,17 @@
    "statement": "Area-based coordination is a coordination configuration rather than a transition endpoint; transferring cluster functions to area structures without preserved technical custody reproduces the risks documented in both reviews.",
    "theme": "Both",
    "type": "context",
-   "strength": "low",
-   "n_records": 1,
-   "n_sources": 1,
-   "n_streams": 1,
+   "strength": "high",
+   "n_records": 2,
+   "n_sources": 2,
+   "n_streams": 2,
    "streams": [
-    "sdr"
+    "sdr",
+    "transcript"
    ],
-   "countries": [],
+   "countries": [
+    "ETH"
+   ],
    "tags": [
     "coordination-architecture",
     "performance",
@@ -9447,12 +9809,19 @@
    ],
    "actors": [
     "cluster",
+    "ocha",
     "operational-cell"
    ],
    "record_ids": [
-    "E0353"
+    "E0353",
+    "E0560"
    ],
-   "unmerged": false
+   "unmerged": false,
+   "highlight": {
+    "headline": "Area structures are becoming the thing left standing",
+    "plain": "In some contexts area-based structures will continue after the cluster is deactivated, making them the residual coordination arrangement by default rather than by design. Whether sector technical custody travels with them is usually unresolved.",
+    "so_what": "If area structures will outlast the cluster, name now who holds technical standards, analysis and provider-of-last-resort — before the cluster is no longer there to negotiate it."
+   }
   },
   {
    "finding_id": "F415",
@@ -9962,15 +10331,16 @@
    "statement": "A change of national government froze transition dialogues, with the incoming administration signalling a reduction in the number of government entities and its position on humanitarian cooperation not yet known.",
    "theme": "Transition",
    "type": "barrier",
-   "strength": "low",
-   "n_records": 1,
-   "n_sources": 1,
+   "strength": "medium",
+   "n_records": 2,
+   "n_sources": 2,
    "n_streams": 1,
    "streams": [
     "transcript"
    ],
    "countries": [
-    "COL"
+    "COL",
+    "ETH"
    ],
    "tags": [
     "government-engagement",
@@ -9981,7 +10351,8 @@
     "gov-national"
    ],
    "record_ids": [
-    "E0383"
+    "E0383",
+    "E0556"
    ],
    "unmerged": false
   },
@@ -12172,17 +12543,18 @@
   },
   {
    "finding_id": "F906",
-   "statement": "An arrangement placing a post half in the sector and half in the ministry reached three final candidates, but the ministry did not take up any of them.",
+   "statement": "The plan for the coordinator to sit inside the ministry did not proceed because no office space was made available, so the intended co-location never happened.",
    "theme": "Transition",
    "type": "barrier",
-   "strength": "low",
-   "n_records": 1,
-   "n_sources": 1,
+   "strength": "medium",
+   "n_records": 2,
+   "n_sources": 2,
    "n_streams": 1,
    "streams": [
     "transcript"
    ],
    "countries": [
+    "ETH",
     "LBN"
    ],
    "tags": [
@@ -12195,7 +12567,8 @@
     "gov-national"
    ],
    "record_ids": [
-    "E0483"
+    "E0483",
+    "E0555"
    ],
    "unmerged": false
   },
@@ -25216,6 +25589,503 @@
    "date_collected": "2026-07-03",
    "confidence": "high",
    "status": "draft"
+  },
+  {
+   "id": "E0553",
+   "finding_id": "F333",
+   "theme": "Transition",
+   "type": "barrier",
+   "statement": "A six-month deadline for handover was set internally by the lead agency and is tied to the coordinator contract ending rather than to any assessment of whether the receiving institution is ready.",
+   "level": "national",
+   "countries": [
+    "ETH"
+   ],
+   "actors": [
+    "un-agency",
+    "cluster"
+   ],
+   "tags": [
+    "funding",
+    "transition-handover",
+    "guidance"
+   ],
+   "stream": "transcript",
+   "source_id": "S111",
+   "date_collected": "2026-06-23",
+   "confidence": "high",
+   "status": "draft"
+  },
+  {
+   "id": "E0554",
+   "finding_id": "F361",
+   "theme": "Transition",
+   "type": "barrier",
+   "statement": "No dedicated counterpart has been assigned for coordination or information management; the person nominated in the ministry carries the role alongside existing duties.",
+   "level": "national",
+   "countries": [
+    "ETH"
+   ],
+   "actors": [
+    "gov-national",
+    "cluster"
+   ],
+   "tags": [
+    "government-engagement",
+    "capacity",
+    "transition-handover"
+   ],
+   "stream": "transcript",
+   "source_id": "S111",
+   "date_collected": "2026-06-23",
+   "confidence": "high",
+   "status": "draft"
+  },
+  {
+   "id": "E0555",
+   "finding_id": "F906",
+   "theme": "Transition",
+   "type": "barrier",
+   "statement": "The plan for the coordinator to sit inside the ministry did not proceed because no office space was made available, so the intended co-location never happened.",
+   "level": "national",
+   "countries": [
+    "ETH"
+   ],
+   "actors": [
+    "gov-national",
+    "cluster"
+   ],
+   "tags": [
+    "government-engagement",
+    "capacity",
+    "transition-handover"
+   ],
+   "stream": "transcript",
+   "source_id": "S111",
+   "date_collected": "2026-06-23",
+   "confidence": "high",
+   "status": "draft"
+  },
+  {
+   "id": "E0556",
+   "finding_id": "F503",
+   "theme": "Transition",
+   "type": "barrier",
+   "statement": "A national election absorbed government attention through the period set aside for transition, and engagement did not resume until after the result.",
+   "level": "national",
+   "countries": [
+    "ETH"
+   ],
+   "actors": [
+    "gov-national",
+    "cluster"
+   ],
+   "tags": [
+    "government-engagement",
+    "transition-handover"
+   ],
+   "stream": "transcript",
+   "source_id": "S111",
+   "date_collected": "2026-06-23",
+   "confidence": "high",
+   "status": "draft"
+  },
+  {
+   "id": "E0557",
+   "finding_id": "F318",
+   "theme": "Transition",
+   "type": "barrier",
+   "statement": "Government has no mechanism of its own to establish which partners are working where or on what, and relies on cluster information for it — partners also come to the cluster for that list.",
+   "level": "national",
+   "countries": [
+    "ETH"
+   ],
+   "actors": [
+    "gov-national",
+    "cluster",
+    "ingo"
+   ],
+   "tags": [
+    "information-management",
+    "government-engagement",
+    "transition-handover"
+   ],
+   "stream": "transcript",
+   "source_id": "S111",
+   "date_collected": "2026-06-23",
+   "confidence": "high",
+   "status": "draft"
+  },
+  {
+   "id": "E0558",
+   "finding_id": "F027",
+   "theme": "Both",
+   "type": "barrier",
+   "statement": "If the coordination function stops without a receiver, several years of accumulated information will not be picked up by either the government or the lead agency.",
+   "level": "national",
+   "countries": [
+    "ETH"
+   ],
+   "actors": [
+    "cluster",
+    "gov-national"
+   ],
+   "tags": [
+    "information-management",
+    "transition-handover",
+    "staff-turnover"
+   ],
+   "stream": "transcript",
+   "source_id": "S111",
+   "date_collected": "2026-06-23",
+   "confidence": "high",
+   "status": "draft"
+  },
+  {
+   "id": "E0559",
+   "finding_id": "F019",
+   "theme": "Both",
+   "type": "barrier",
+   "statement": "Regional coordinator and information management posts were lost last year, and the one remaining double-hatting regional post ends as coordination shifts to area-based structures, leaving no sector presence in that region.",
+   "level": "subnational",
+   "countries": [
+    "ETH"
+   ],
+   "actors": [
+    "cluster",
+    "un-agency"
+   ],
+   "tags": [
+    "funding",
+    "capacity",
+    "coordination-architecture"
+   ],
+   "stream": "transcript",
+   "source_id": "S111",
+   "date_collected": "2026-06-23",
+   "confidence": "high",
+   "status": "draft"
+  },
+  {
+   "id": "E0560",
+   "finding_id": "F414",
+   "theme": "Both",
+   "type": "context",
+   "statement": "Area-based structures are expected to continue after the cluster is deactivated, making them the residual coordination arrangement rather than a parallel one.",
+   "level": "national",
+   "countries": [
+    "ETH"
+   ],
+   "actors": [
+    "operational-cell",
+    "ocha"
+   ],
+   "tags": [
+    "coordination-architecture",
+    "transition-handover"
+   ],
+   "stream": "transcript",
+   "source_id": "S111",
+   "date_collected": "2026-06-23",
+   "confidence": "high",
+   "status": "draft"
+  },
+  {
+   "id": "E0561",
+   "finding_id": "F395",
+   "theme": "Both",
+   "type": "recommendation",
+   "statement": "Assessment tools and products developed over several years risk being lost when the coordinator departs, and should be archived centrally before that happens rather than after.",
+   "level": "national",
+   "countries": [
+    "ETH"
+   ],
+   "actors": [
+    "cluster",
+    "un-agency"
+   ],
+   "tags": [
+    "information-management",
+    "transition-handover"
+   ],
+   "stream": "transcript",
+   "source_id": "S111",
+   "date_collected": "2026-06-23",
+   "confidence": "high",
+   "status": "draft"
+  },
+  {
+   "id": "E0562",
+   "finding_id": "F1300",
+   "theme": "Transition",
+   "type": "barrier",
+   "statement": "A transition plan was drafted by adapting examples from other countries and shared with the ministry, and no feedback had been received four months later despite repeated follow-up.",
+   "level": "national",
+   "countries": [
+    "ETH"
+   ],
+   "actors": [
+    "gov-national",
+    "cluster"
+   ],
+   "tags": [
+    "transition-handover",
+    "government-engagement",
+    "guidance"
+   ],
+   "stream": "transcript",
+   "source_id": "S111",
+   "date_collected": "2026-06-23",
+   "confidence": "high",
+   "status": "draft"
+  },
+  {
+   "id": "E0563",
+   "finding_id": "F1301",
+   "theme": "Transition",
+   "type": "context",
+   "statement": "The government asked to take over coordination and wants to do so gradually with continued support, while preferring not to have the arrangement set down in documents recorded in its own name.",
+   "level": "national",
+   "countries": [
+    "ETH"
+   ],
+   "actors": [
+    "gov-national",
+    "cluster"
+   ],
+   "tags": [
+    "government-engagement",
+    "transition-handover",
+    "guidance"
+   ],
+   "stream": "transcript",
+   "source_id": "S111",
+   "date_collected": "2026-06-23",
+   "confidence": "high",
+   "status": "draft"
+  },
+  {
+   "id": "E0564",
+   "finding_id": "F1302",
+   "theme": "Transition",
+   "type": "barrier",
+   "statement": "The ministry has not yet taken on convening the coordination meeting, which is still called and chaired by the outgoing coordinator.",
+   "level": "national",
+   "countries": [
+    "ETH"
+   ],
+   "actors": [
+    "gov-national",
+    "cluster"
+   ],
+   "tags": [
+    "government-engagement",
+    "transition-handover",
+    "coordination-architecture"
+   ],
+   "stream": "transcript",
+   "source_id": "S111",
+   "date_collected": "2026-06-23",
+   "confidence": "high",
+   "status": "draft"
+  },
+  {
+   "id": "E0565",
+   "finding_id": "F1303",
+   "theme": "Transition",
+   "type": "context",
+   "statement": "The humanitarian coordination office agreed that six months is not sufficient for the handover, while the lead agency timeline remained unchanged.",
+   "level": "national",
+   "countries": [
+    "ETH"
+   ],
+   "actors": [
+    "ocha",
+    "un-agency",
+    "cluster"
+   ],
+   "tags": [
+    "transition-handover",
+    "guidance"
+   ],
+   "stream": "transcript",
+   "source_id": "S111",
+   "date_collected": "2026-06-23",
+   "confidence": "high",
+   "status": "draft"
+  },
+  {
+   "id": "E0566",
+   "finding_id": "F1304",
+   "theme": "Transition",
+   "type": "context",
+   "statement": "Other sectors in the same country nationalised their coordinator and information management posts and continue to function, while this sector is moving toward deactivation on a shorter timetable.",
+   "level": "national",
+   "countries": [
+    "ETH"
+   ],
+   "actors": [
+    "un-agency",
+    "cluster"
+   ],
+   "tags": [
+    "transition-handover",
+    "localisation",
+    "capacity"
+   ],
+   "stream": "transcript",
+   "source_id": "S111",
+   "date_collected": "2026-06-23",
+   "confidence": "high",
+   "status": "draft"
+  },
+  {
+   "id": "E0567",
+   "finding_id": "F1305",
+   "theme": "Transition",
+   "type": "context",
+   "statement": "Sectors with a single line ministry counterpart move through deactivation faster than those split across two ministries, where the handover requires an inter-ministerial discussion first.",
+   "level": "national",
+   "countries": [
+    "ETH"
+   ],
+   "actors": [
+    "gov-national",
+    "cluster"
+   ],
+   "tags": [
+    "government-engagement",
+    "transition-handover",
+    "coordination-architecture"
+   ],
+   "stream": "transcript",
+   "source_id": "S111",
+   "date_collected": "2026-06-23",
+   "confidence": "high",
+   "status": "draft"
+  },
+  {
+   "id": "E0568",
+   "finding_id": "F1306",
+   "theme": "Transition",
+   "type": "barrier",
+   "statement": "The cluster sits under the emergency unit rather than the sector programme section, so there is no natural route for programme resources or attention to support the transition.",
+   "level": "national",
+   "countries": [
+    "ETH"
+   ],
+   "actors": [
+    "un-agency",
+    "cluster"
+   ],
+   "tags": [
+    "coordination-architecture",
+    "transition-handover",
+    "funding"
+   ],
+   "stream": "transcript",
+   "source_id": "S111",
+   "date_collected": "2026-06-23",
+   "confidence": "high",
+   "status": "draft"
+  },
+  {
+   "id": "E0569",
+   "finding_id": "F1307",
+   "theme": "Both",
+   "type": "context",
+   "statement": "Government will lead the food, agriculture and nutrition assessments; other sectors may run their own tools, but results have to be endorsed by the ministry before use.",
+   "level": "national",
+   "countries": [
+    "ETH"
+   ],
+   "actors": [
+    "gov-national",
+    "cluster"
+   ],
+   "tags": [
+    "government-engagement",
+    "hpc",
+    "information-management"
+   ],
+   "stream": "transcript",
+   "source_id": "S111",
+   "date_collected": "2026-06-23",
+   "confidence": "high",
+   "status": "draft"
+  },
+  {
+   "id": "E0570",
+   "finding_id": "F1308",
+   "theme": "Both",
+   "type": "enabler",
+   "statement": "A government-developed system for water point assessment, capturing access at a small administrative level, is being built and will remain government-led.",
+   "level": "national",
+   "countries": [
+    "ETH"
+   ],
+   "actors": [
+    "gov-national"
+   ],
+   "tags": [
+    "government-engagement",
+    "information-management",
+    "hpc"
+   ],
+   "stream": "transcript",
+   "source_id": "S111",
+   "date_collected": "2026-06-23",
+   "confidence": "high",
+   "status": "draft"
+  },
+  {
+   "id": "E0571",
+   "finding_id": "F1309",
+   "theme": "ABC",
+   "type": "barrier",
+   "statement": "Pooled fund allocations are running and depend on the cluster for partner selection, monitoring and collecting results; no successor has been identified for those tasks when the function ends.",
+   "level": "national",
+   "countries": [
+    "ETH"
+   ],
+   "actors": [
+    "ocha",
+    "cluster",
+    "donor"
+   ],
+   "tags": [
+    "pooled-funds",
+    "transition-handover",
+    "capacity"
+   ],
+   "stream": "transcript",
+   "source_id": "S111",
+   "date_collected": "2026-06-23",
+   "confidence": "high",
+   "status": "draft"
+  },
+  {
+   "id": "E0572",
+   "finding_id": "F1310",
+   "theme": "ABC",
+   "type": "barrier",
+   "statement": "Contact with area-based structures runs through agency colleagues in the region rather than directly, and that arrangement ends with the departure of the staff member concerned.",
+   "level": "subnational",
+   "countries": [
+    "ETH"
+   ],
+   "actors": [
+    "cluster",
+    "operational-cell"
+   ],
+   "tags": [
+    "coordination-architecture",
+    "capacity"
+   ],
+   "stream": "transcript",
+   "source_id": "S111",
+   "date_collected": "2026-06-23",
+   "confidence": "high",
+   "status": "draft"
   }
  ],
  "sources": [
@@ -26515,6 +27385,19 @@
    "url": "",
    "stream": "transcript",
    "date_added": "2026-07-03",
+   "access": "restricted",
+   "legacy_id": "",
+   "source_group": ""
+  },
+  {
+   "source_id": "S111",
+   "title": "Country consultation — Ethiopia",
+   "organisation": "Global WASH Cluster",
+   "year": "2026",
+   "type": "interview",
+   "url": "",
+   "stream": "transcript",
+   "date_added": "2026-06-23",
    "access": "restricted",
    "legacy_id": "",
    "source_group": ""
