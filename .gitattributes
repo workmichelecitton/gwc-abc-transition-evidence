@@ -1,0 +1,12 @@
+# Keep line endings consistent. Without this, Excel and Windows rewrite every
+# line of a CSV on save, so every commit looks like the whole file changed and
+# the diff becomes useless — which matters here, because reviewing the diff is
+# how you check what an extraction actually added.
+* text=auto eol=lf
+*.csv text eol=lf
+*.json text eol=lf
+*.md text eol=lf
+*.py text eol=lf
+*.html text eol=lf
+*.js text eol=lf
+*.yml text eol=lf
