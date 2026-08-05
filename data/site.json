@@ -66,9 +66,9 @@
  "generated": "2026-08-05",
  "taxonomy_version": "0.4.0",
  "stats": {
-  "records": 559,
-  "findings": 430,
-  "sources": 101,
+  "records": 577,
+  "findings": 445,
+  "sources": 102,
   "countries": 25,
   "withheld_internal": 1
  },
@@ -4237,6 +4237,441 @@
    "unmerged": false
   },
   {
+   "finding_id": "F1400",
+   "statement": "An advocacy note is being produced by a small committee drawn from cluster members, the strategic advisory group and partners with advocacy experience, working to an action plan setting out what is done by whom and when, with drafting split across sub-groups.",
+   "theme": "Both",
+   "type": "practice",
+   "strength": "low",
+   "n_records": 1,
+   "n_sources": 1,
+   "n_streams": 1,
+   "streams": [
+    "transcript"
+   ],
+   "countries": [
+    "BFA"
+   ],
+   "tags": [
+    "advocacy",
+    "partnerships"
+   ],
+   "actors": [
+    "cluster",
+    "ingo"
+   ],
+   "record_ids": [
+    "E0576"
+   ],
+   "unmerged": false
+  },
+  {
+   "finding_id": "F1401",
+   "statement": "The advocacy note will be disseminated partly through an existing sector dialogue framework where the situation is presented to government and donors every two months, using a channel that already exists rather than creating one.",
+   "theme": "Both",
+   "type": "enabler",
+   "strength": "low",
+   "n_records": 1,
+   "n_sources": 1,
+   "n_streams": 1,
+   "streams": [
+    "transcript"
+   ],
+   "countries": [
+    "BFA"
+   ],
+   "tags": [
+    "advocacy",
+    "government-engagement",
+    "partnerships"
+   ],
+   "actors": [
+    "cluster",
+    "donor",
+    "gov-national"
+   ],
+   "record_ids": [
+    "E0577"
+   ],
+   "unmerged": false
+  },
+  {
+   "finding_id": "F1402",
+   "statement": "The global financial tracking service does not reflect actual sector funding in the country, so the cluster runs its own funding matrix to establish the real trend and to map which donors have financed the sector.",
+   "theme": "Both",
+   "type": "barrier",
+   "strength": "low",
+   "n_records": 1,
+   "n_sources": 1,
+   "n_streams": 1,
+   "streams": [
+    "transcript"
+   ],
+   "countries": [
+    "BFA"
+   ],
+   "tags": [
+    "advocacy",
+    "funding",
+    "information-management"
+   ],
+   "actors": [
+    "cluster",
+    "donor"
+   ],
+   "record_ids": [
+    "E0578"
+   ],
+   "unmerged": false
+  },
+  {
+   "finding_id": "F1403",
+   "statement": "Government planning and review documents identify donors financing projects on the state side, and are being used to capture funding that a humanitarian-only mapping would miss.",
+   "theme": "Transition",
+   "type": "enabler",
+   "strength": "low",
+   "n_records": 1,
+   "n_sources": 1,
+   "n_streams": 1,
+   "streams": [
+    "transcript"
+   ],
+   "countries": [
+    "BFA"
+   ],
+   "tags": [
+    "funding",
+    "government-engagement",
+    "nexus"
+   ],
+   "actors": [
+    "cluster",
+    "development",
+    "gov-national"
+   ],
+   "record_ids": [
+    "E0579"
+   ],
+   "unmerged": false
+  },
+  {
+   "finding_id": "F1404",
+   "statement": "WASH is not treated as a priority in national decision-making or in humanitarian resource allocation, even where it registers as a priority at community level and in needs data.",
+   "theme": "Both",
+   "type": "barrier",
+   "strength": "low",
+   "n_records": 1,
+   "n_sources": 1,
+   "n_streams": 1,
+   "streams": [
+    "transcript"
+   ],
+   "countries": [
+    "BFA"
+   ],
+   "tags": [
+    "advocacy",
+    "funding"
+   ],
+   "actors": [
+    "cluster",
+    "donor",
+    "gov-national"
+   ],
+   "record_ids": [
+    "E0580"
+   ],
+   "unmerged": false
+  },
+  {
+   "finding_id": "F1405",
+   "statement": "The country is under a transitional administration whose stated position emphasises national self-reliance, including determining how partners engage.",
+   "theme": "Transition",
+   "type": "context",
+   "strength": "low",
+   "n_records": 1,
+   "n_sources": 1,
+   "n_streams": 1,
+   "streams": [
+    "transcript"
+   ],
+   "countries": [
+    "BFA"
+   ],
+   "tags": [
+    "government-engagement",
+    "transition-handover"
+   ],
+   "actors": [
+    "gov-national"
+   ],
+   "record_ids": [
+    "E0581"
+   ],
+   "unmerged": false
+  },
+  {
+   "finding_id": "F1406",
+   "statement": "A ministry reform merged water into a larger ministry and dissolved the emergency technical secretariat that had been the cluster counterpart; its functions moved to the equivalent structure on the food security side, where a new WASH department was created staffed largely by the same people.",
+   "theme": "Transition",
+   "type": "context",
+   "strength": "low",
+   "n_records": 1,
+   "n_sources": 1,
+   "n_streams": 1,
+   "streams": [
+    "transcript"
+   ],
+   "countries": [
+    "BFA"
+   ],
+   "tags": [
+    "coordination-architecture",
+    "government-engagement",
+    "staff-turnover"
+   ],
+   "actors": [
+    "cluster",
+    "gov-national"
+   ],
+   "record_ids": [
+    "E0582"
+   ],
+   "unmerged": false
+  },
+  {
+   "finding_id": "F1407",
+   "statement": "Capacity support to the government emergency structure included equipping it with water trucking capability so it could deliver directly in areas without partner presence, alongside humanitarian response training and field deployment.",
+   "theme": "Transition",
+   "type": "enabler",
+   "strength": "low",
+   "n_records": 1,
+   "n_sources": 1,
+   "n_streams": 1,
+   "streams": [
+    "transcript"
+   ],
+   "countries": [
+    "BFA"
+   ],
+   "tags": [
+    "capacity",
+    "government-engagement",
+    "transition-handover"
+   ],
+   "actors": [
+    "gov-national",
+    "un-agency"
+   ],
+   "record_ids": [
+    "E0583"
+   ],
+   "unmerged": false
+  },
+  {
+   "finding_id": "F1408",
+   "statement": "Government has moved to collect partner activity data itself, on the basis that the data should be nationally held, through a separate government-partner framework that sits outside the cluster.",
+   "theme": "Transition",
+   "type": "barrier",
+   "strength": "low",
+   "n_records": 1,
+   "n_sources": 1,
+   "n_streams": 1,
+   "streams": [
+    "transcript"
+   ],
+   "countries": [
+    "BFA"
+   ],
+   "tags": [
+    "coordination-architecture",
+    "government-engagement",
+    "information-management"
+   ],
+   "actors": [
+    "cluster",
+    "gov-national",
+    "ingo"
+   ],
+   "record_ids": [
+    "E0584"
+   ],
+   "unmerged": false
+  },
+  {
+   "finding_id": "F1409",
+   "statement": "Running a parallel government data collection alongside the cluster system while the cluster is still active creates duplicate reporting for partners and divides the coordination picture, where a sequenced handover of the same function would not.",
+   "theme": "Transition",
+   "type": "barrier",
+   "strength": "low",
+   "n_records": 1,
+   "n_sources": 1,
+   "n_streams": 1,
+   "streams": [
+    "transcript"
+   ],
+   "countries": [
+    "BFA"
+   ],
+   "tags": [
+    "government-engagement",
+    "information-management",
+    "transition-handover"
+   ],
+   "actors": [
+    "cluster",
+    "gov-national",
+    "ingo"
+   ],
+   "record_ids": [
+    "E0585"
+   ],
+   "unmerged": false
+  },
+  {
+   "finding_id": "F1410",
+   "statement": "Bi-monthly discussion meetings with all regional focal points to work through challenges and share solutions were well received, and participants asked for them to continue on that cycle.",
+   "theme": "Both",
+   "type": "enabler",
+   "strength": "low",
+   "n_records": 1,
+   "n_sources": 1,
+   "n_streams": 1,
+   "streams": [
+    "transcript"
+   ],
+   "countries": [
+    "BFA"
+   ],
+   "tags": [
+    "capacity",
+    "coordination-architecture",
+    "peer-learning"
+   ],
+   "actors": [
+    "cluster",
+    "gov-local"
+   ],
+   "record_ids": [
+    "E0586"
+   ],
+   "unmerged": false
+  },
+  {
+   "finding_id": "F1411",
+   "statement": "A field mission is planned to meet the newly appointed regional officials directly, after asking in-country colleagues to brief them first on what regional coordination involves.",
+   "theme": "Transition",
+   "type": "practice",
+   "strength": "low",
+   "n_records": 1,
+   "n_sources": 1,
+   "n_streams": 1,
+   "streams": [
+    "transcript"
+   ],
+   "countries": [
+    "BFA"
+   ],
+   "tags": [
+    "capacity",
+    "government-engagement"
+   ],
+   "actors": [
+    "cluster",
+    "gov-local"
+   ],
+   "record_ids": [
+    "E0587"
+   ],
+   "unmerged": false
+  },
+  {
+   "finding_id": "F1412",
+   "statement": "Needs assessment is limited to small exercises run by regional directorates or individual partners, with no systematic assessment to monitor the response, because each round carries a cost nobody has budgeted.",
+   "theme": "Both",
+   "type": "barrier",
+   "strength": "low",
+   "n_records": 1,
+   "n_sources": 1,
+   "n_streams": 1,
+   "streams": [
+    "transcript"
+   ],
+   "countries": [
+    "BFA"
+   ],
+   "tags": [
+    "funding",
+    "hpc"
+   ],
+   "actors": [
+    "cluster",
+    "gov-local"
+   ],
+   "record_ids": [
+    "E0588"
+   ],
+   "unmerged": false
+  },
+  {
+   "finding_id": "F1413",
+   "statement": "A needs assessment strategy led by the national authority, with a budget line attached, would give the sector a predictable basis for data rather than depending on partner-by-partner exercises.",
+   "theme": "Both",
+   "type": "recommendation",
+   "strength": "low",
+   "n_records": 1,
+   "n_sources": 1,
+   "n_streams": 1,
+   "streams": [
+    "transcript"
+   ],
+   "countries": [
+    "BFA"
+   ],
+   "tags": [
+    "funding",
+    "government-engagement",
+    "hpc"
+   ],
+   "actors": [
+    "cluster",
+    "gov-national"
+   ],
+   "record_ids": [
+    "E0589"
+   ],
+   "unmerged": false
+  },
+  {
+   "finding_id": "F1414",
+   "statement": "The multi-sector assessment depends on two separate approvals — donor funding and a government statistical authorisation — and neither is confirmed, with the window for producing data in time for planning closing.",
+   "theme": "Both",
+   "type": "barrier",
+   "strength": "low",
+   "n_records": 1,
+   "n_sources": 1,
+   "n_streams": 1,
+   "streams": [
+    "transcript"
+   ],
+   "countries": [
+    "BFA"
+   ],
+   "tags": [
+    "funding",
+    "government-engagement",
+    "hpc"
+   ],
+   "actors": [
+    "donor",
+    "gov-national",
+    "ocha"
+   ],
+   "record_ids": [
+    "E0590"
+   ],
+   "unmerged": false
+  },
+  {
    "finding_id": "F200",
    "statement": "Even where integrated area-based approaches are formally adopted, coordination stays constrained at implementation level because actors, sectors and delivery mechanisms are not aligned.",
    "theme": "ABC",
@@ -8367,14 +8802,15 @@
    "theme": "Both",
    "type": "barrier",
    "strength": "high",
-   "n_records": 4,
-   "n_sources": 4,
+   "n_records": 5,
+   "n_sources": 5,
    "n_streams": 2,
    "streams": [
     "sdr",
     "transcript"
    ],
    "countries": [
+    "BFA",
     "COL",
     "KEN",
     "MOZ",
@@ -8382,6 +8818,7 @@
    ],
    "tags": [
     "capacity",
+    "coordination-architecture",
     "government-engagement",
     "hpc",
     "staff-turnover",
@@ -8396,7 +8833,8 @@
     "E0298",
     "E0375",
     "E0454",
-    "E0537"
+    "E0537",
+    "E0574"
    ],
    "unmerged": false,
    "highlight": {
@@ -11166,15 +11604,18 @@
    "statement": "WASH beneficiary calculation is context-specific — a water yard serves a set number of people in one country and a different number elsewhere, and source types differ between contexts — so a single standardised reporting model risks misrepresenting what the sector delivered.",
    "theme": "Both",
    "type": "barrier",
-   "strength": "low",
-   "n_records": 1,
-   "n_sources": 1,
+   "strength": "medium",
+   "n_records": 2,
+   "n_sources": 2,
    "n_streams": 1,
    "streams": [
     "transcript"
    ],
-   "countries": [],
+   "countries": [
+    "BFA"
+   ],
    "tags": [
+    "hpc",
     "information-management",
     "performance"
    ],
@@ -11183,7 +11624,8 @@
     "ocha"
    ],
    "record_ids": [
-    "E0417"
+    "E0417",
+    "E0575"
    ],
    "unmerged": false
   },
@@ -12115,14 +12557,15 @@
    "statement": "An advocacy committee bringing together the cluster thematic sub-groups and members with advocacy expertise was recommended two years ago and has still not been established, because each year emergencies require the workplan to be reprioritised.",
    "theme": "Both",
    "type": "barrier",
-   "strength": "low",
-   "n_records": 1,
-   "n_sources": 1,
+   "strength": "medium",
+   "n_records": 2,
+   "n_sources": 2,
    "n_streams": 1,
    "streams": [
     "transcript"
    ],
    "countries": [
+    "BFA",
     "NER"
    ],
    "tags": [
@@ -12134,7 +12577,8 @@
     "cluster"
    ],
    "record_ids": [
-    "E0461"
+    "E0461",
+    "E0573"
    ],
    "unmerged": false
   },
@@ -26086,6 +26530,455 @@
    "date_collected": "2026-06-23",
    "confidence": "high",
    "status": "draft"
+  },
+  {
+   "id": "E0573",
+   "finding_id": "F802",
+   "theme": "Both",
+   "type": "barrier",
+   "statement": "Planned advocacy work slipped again because the dates set could not be held against other activities the cluster is required to take part in.",
+   "level": "national",
+   "countries": [
+    "BFA"
+   ],
+   "actors": [
+    "cluster"
+   ],
+   "tags": [
+    "advocacy",
+    "capacity",
+    "performance"
+   ],
+   "stream": "transcript",
+   "source_id": "S112",
+   "date_collected": "2026-06-23",
+   "confidence": "high",
+   "status": "draft"
+  },
+  {
+   "id": "E0574",
+   "finding_id": "F364",
+   "theme": "Transition",
+   "type": "barrier",
+   "statement": "Subnational coordination weakened from the start of the year when a ministry reform replaced the previous regional focal points with newly created directorates, and the structures are still bedding in.",
+   "level": "subnational",
+   "countries": [
+    "BFA"
+   ],
+   "actors": [
+    "gov-local",
+    "cluster"
+   ],
+   "tags": [
+    "staff-turnover",
+    "government-engagement",
+    "coordination-architecture"
+   ],
+   "stream": "transcript",
+   "source_id": "S112",
+   "date_collected": "2026-06-23",
+   "confidence": "high",
+   "status": "draft"
+  },
+  {
+   "id": "E0575",
+   "finding_id": "F608",
+   "theme": "Both",
+   "type": "barrier",
+   "statement": "Central reporting indicators do not match how the response is delivered: the framework counts newly constructed water points, while most activity is repair — and since a handpump can be repaired several times, recording repairs there would double-count the people reached.",
+   "level": "national",
+   "countries": [
+    "BFA"
+   ],
+   "actors": [
+    "ocha",
+    "cluster"
+   ],
+   "tags": [
+    "information-management",
+    "performance",
+    "hpc"
+   ],
+   "stream": "transcript",
+   "source_id": "S112",
+   "date_collected": "2026-06-23",
+   "confidence": "high",
+   "status": "draft"
+  },
+  {
+   "id": "E0576",
+   "finding_id": "F1400",
+   "theme": "Both",
+   "type": "practice",
+   "statement": "An advocacy note is being produced by a small committee drawn from cluster members, the strategic advisory group and partners with advocacy experience, working to an action plan setting out what is done by whom and when, with drafting split across sub-groups.",
+   "level": "national",
+   "countries": [
+    "BFA"
+   ],
+   "actors": [
+    "cluster",
+    "ingo"
+   ],
+   "tags": [
+    "advocacy",
+    "partnerships"
+   ],
+   "stream": "transcript",
+   "source_id": "S112",
+   "date_collected": "2026-06-23",
+   "confidence": "high",
+   "status": "draft"
+  },
+  {
+   "id": "E0577",
+   "finding_id": "F1401",
+   "theme": "Both",
+   "type": "enabler",
+   "statement": "The advocacy note will be disseminated partly through an existing sector dialogue framework where the situation is presented to government and donors every two months, using a channel that already exists rather than creating one.",
+   "level": "national",
+   "countries": [
+    "BFA"
+   ],
+   "actors": [
+    "gov-national",
+    "donor",
+    "cluster"
+   ],
+   "tags": [
+    "advocacy",
+    "government-engagement",
+    "partnerships"
+   ],
+   "stream": "transcript",
+   "source_id": "S112",
+   "date_collected": "2026-06-23",
+   "confidence": "high",
+   "status": "draft"
+  },
+  {
+   "id": "E0578",
+   "finding_id": "F1402",
+   "theme": "Both",
+   "type": "barrier",
+   "statement": "The global financial tracking service does not reflect actual sector funding in the country, so the cluster runs its own funding matrix to establish the real trend and to map which donors have financed the sector.",
+   "level": "national",
+   "countries": [
+    "BFA"
+   ],
+   "actors": [
+    "cluster",
+    "donor"
+   ],
+   "tags": [
+    "funding",
+    "information-management",
+    "advocacy"
+   ],
+   "stream": "transcript",
+   "source_id": "S112",
+   "date_collected": "2026-06-23",
+   "confidence": "high",
+   "status": "draft"
+  },
+  {
+   "id": "E0579",
+   "finding_id": "F1403",
+   "theme": "Transition",
+   "type": "enabler",
+   "statement": "Government planning and review documents identify donors financing projects on the state side, and are being used to capture funding that a humanitarian-only mapping would miss.",
+   "level": "national",
+   "countries": [
+    "BFA"
+   ],
+   "actors": [
+    "gov-national",
+    "development",
+    "cluster"
+   ],
+   "tags": [
+    "funding",
+    "government-engagement",
+    "nexus"
+   ],
+   "stream": "transcript",
+   "source_id": "S112",
+   "date_collected": "2026-06-23",
+   "confidence": "high",
+   "status": "draft"
+  },
+  {
+   "id": "E0580",
+   "finding_id": "F1404",
+   "theme": "Both",
+   "type": "barrier",
+   "statement": "WASH is not treated as a priority in national decision-making or in humanitarian resource allocation, even where it registers as a priority at community level and in needs data.",
+   "level": "national",
+   "countries": [
+    "BFA"
+   ],
+   "actors": [
+    "gov-national",
+    "donor",
+    "cluster"
+   ],
+   "tags": [
+    "funding",
+    "advocacy"
+   ],
+   "stream": "transcript",
+   "source_id": "S112",
+   "date_collected": "2026-06-23",
+   "confidence": "high",
+   "status": "draft"
+  },
+  {
+   "id": "E0581",
+   "finding_id": "F1405",
+   "theme": "Transition",
+   "type": "context",
+   "statement": "The country is under a transitional administration whose stated position emphasises national self-reliance, including determining how partners engage.",
+   "level": "national",
+   "countries": [
+    "BFA"
+   ],
+   "actors": [
+    "gov-national"
+   ],
+   "tags": [
+    "government-engagement",
+    "transition-handover"
+   ],
+   "stream": "transcript",
+   "source_id": "S112",
+   "date_collected": "2026-06-23",
+   "confidence": "high",
+   "status": "draft"
+  },
+  {
+   "id": "E0582",
+   "finding_id": "F1406",
+   "theme": "Transition",
+   "type": "context",
+   "statement": "A ministry reform merged water into a larger ministry and dissolved the emergency technical secretariat that had been the cluster counterpart; its functions moved to the equivalent structure on the food security side, where a new WASH department was created staffed largely by the same people.",
+   "level": "national",
+   "countries": [
+    "BFA"
+   ],
+   "actors": [
+    "gov-national",
+    "cluster"
+   ],
+   "tags": [
+    "government-engagement",
+    "coordination-architecture",
+    "staff-turnover"
+   ],
+   "stream": "transcript",
+   "source_id": "S112",
+   "date_collected": "2026-06-23",
+   "confidence": "high",
+   "status": "draft"
+  },
+  {
+   "id": "E0583",
+   "finding_id": "F1407",
+   "theme": "Transition",
+   "type": "enabler",
+   "statement": "Capacity support to the government emergency structure included equipping it with water trucking capability so it could deliver directly in areas without partner presence, alongside humanitarian response training and field deployment.",
+   "level": "national",
+   "countries": [
+    "BFA"
+   ],
+   "actors": [
+    "gov-national",
+    "un-agency"
+   ],
+   "tags": [
+    "government-engagement",
+    "capacity",
+    "transition-handover"
+   ],
+   "stream": "transcript",
+   "source_id": "S112",
+   "date_collected": "2026-06-23",
+   "confidence": "high",
+   "status": "draft"
+  },
+  {
+   "id": "E0584",
+   "finding_id": "F1408",
+   "theme": "Transition",
+   "type": "barrier",
+   "statement": "Government has moved to collect partner activity data itself, on the basis that the data should be nationally held, through a separate government-partner framework that sits outside the cluster.",
+   "level": "national",
+   "countries": [
+    "BFA"
+   ],
+   "actors": [
+    "gov-national",
+    "cluster",
+    "ingo"
+   ],
+   "tags": [
+    "information-management",
+    "government-engagement",
+    "coordination-architecture"
+   ],
+   "stream": "transcript",
+   "source_id": "S112",
+   "date_collected": "2026-06-23",
+   "confidence": "high",
+   "status": "draft"
+  },
+  {
+   "id": "E0585",
+   "finding_id": "F1409",
+   "theme": "Transition",
+   "type": "barrier",
+   "statement": "Running a parallel government data collection alongside the cluster system while the cluster is still active creates duplicate reporting for partners and divides the coordination picture, where a sequenced handover of the same function would not.",
+   "level": "national",
+   "countries": [
+    "BFA"
+   ],
+   "actors": [
+    "gov-national",
+    "cluster",
+    "ingo"
+   ],
+   "tags": [
+    "information-management",
+    "government-engagement",
+    "transition-handover"
+   ],
+   "stream": "transcript",
+   "source_id": "S112",
+   "date_collected": "2026-06-23",
+   "confidence": "high",
+   "status": "draft"
+  },
+  {
+   "id": "E0586",
+   "finding_id": "F1410",
+   "theme": "Both",
+   "type": "enabler",
+   "statement": "Bi-monthly discussion meetings with all regional focal points to work through challenges and share solutions were well received, and participants asked for them to continue on that cycle.",
+   "level": "subnational",
+   "countries": [
+    "BFA"
+   ],
+   "actors": [
+    "gov-local",
+    "cluster"
+   ],
+   "tags": [
+    "capacity",
+    "peer-learning",
+    "coordination-architecture"
+   ],
+   "stream": "transcript",
+   "source_id": "S112",
+   "date_collected": "2026-06-23",
+   "confidence": "high",
+   "status": "draft"
+  },
+  {
+   "id": "E0587",
+   "finding_id": "F1411",
+   "theme": "Transition",
+   "type": "practice",
+   "statement": "A field mission is planned to meet the newly appointed regional officials directly, after asking in-country colleagues to brief them first on what regional coordination involves.",
+   "level": "subnational",
+   "countries": [
+    "BFA"
+   ],
+   "actors": [
+    "gov-local",
+    "cluster"
+   ],
+   "tags": [
+    "government-engagement",
+    "capacity"
+   ],
+   "stream": "transcript",
+   "source_id": "S112",
+   "date_collected": "2026-06-23",
+   "confidence": "high",
+   "status": "draft"
+  },
+  {
+   "id": "E0588",
+   "finding_id": "F1412",
+   "theme": "Both",
+   "type": "barrier",
+   "statement": "Needs assessment is limited to small exercises run by regional directorates or individual partners, with no systematic assessment to monitor the response, because each round carries a cost nobody has budgeted.",
+   "level": "national",
+   "countries": [
+    "BFA"
+   ],
+   "actors": [
+    "cluster",
+    "gov-local"
+   ],
+   "tags": [
+    "hpc",
+    "funding"
+   ],
+   "stream": "transcript",
+   "source_id": "S112",
+   "date_collected": "2026-06-23",
+   "confidence": "high",
+   "status": "draft"
+  },
+  {
+   "id": "E0589",
+   "finding_id": "F1413",
+   "theme": "Both",
+   "type": "recommendation",
+   "statement": "A needs assessment strategy led by the national authority, with a budget line attached, would give the sector a predictable basis for data rather than depending on partner-by-partner exercises.",
+   "level": "national",
+   "countries": [
+    "BFA"
+   ],
+   "actors": [
+    "gov-national",
+    "cluster"
+   ],
+   "tags": [
+    "hpc",
+    "government-engagement",
+    "funding"
+   ],
+   "stream": "transcript",
+   "source_id": "S112",
+   "date_collected": "2026-06-23",
+   "confidence": "high",
+   "status": "draft"
+  },
+  {
+   "id": "E0590",
+   "finding_id": "F1414",
+   "theme": "Both",
+   "type": "barrier",
+   "statement": "The multi-sector assessment depends on two separate approvals — donor funding and a government statistical authorisation — and neither is confirmed, with the window for producing data in time for planning closing.",
+   "level": "national",
+   "countries": [
+    "BFA"
+   ],
+   "actors": [
+    "ocha",
+    "gov-national",
+    "donor"
+   ],
+   "tags": [
+    "hpc",
+    "government-engagement",
+    "funding"
+   ],
+   "stream": "transcript",
+   "source_id": "S112",
+   "date_collected": "2026-06-23",
+   "confidence": "high",
+   "status": "draft"
   }
  ],
  "sources": [
@@ -27392,6 +28285,19 @@
   {
    "source_id": "S111",
    "title": "Country consultation — Ethiopia",
+   "organisation": "Global WASH Cluster",
+   "year": "2026",
+   "type": "interview",
+   "url": "",
+   "stream": "transcript",
+   "date_added": "2026-06-23",
+   "access": "restricted",
+   "legacy_id": "",
+   "source_group": ""
+  },
+  {
+   "source_id": "S112",
+   "title": "Country consultation — Burkina Faso",
    "organisation": "Global WASH Cluster",
    "year": "2026",
    "type": "interview",

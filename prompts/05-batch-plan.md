@@ -39,9 +39,9 @@ Folder: **Country Checkin June-July** (Drive ID `1VpBRYqtCujTXIzuoDoOQ2iioc-5AaM
 | 6 | Mali | MLI | `1l6YjJeZC1bch00MLO8ls2BL7hEp7pTUs` | |
 | 6 | South Sudan | SSD | `1LFb1UZynhadK2Zsv3aZiDMmEMmOqD5TE` | |
 
-Already extracted: Somalia (S011), Myanmar (S012), Colombia (S103), Sudan (S104), Nigeria (S105), Niger (S106), Lebanon (S107), Bangladesh (S108).
+Already extracted: Somalia (S011), Myanmar (S012), Colombia (S103), Sudan (S104), Nigeria (S105), Niger (S106), Lebanon (S107), Bangladesh (S108), Haiti (S109), Mozambique (S110), Ethiopia (S111), Burkina Faso (S112).
 
-Remaining: Haiti, Mozambique, Ethiopia, Burkina Faso, Mali, South Sudan.
+Remaining: **Mali, South Sudan** (batch 6). All others extracted.
 
 **Note on finding IDs.** These now run past F999; the format accepts three or four digits (`F001` to `F9999`). Continue from the highest existing value.
 
