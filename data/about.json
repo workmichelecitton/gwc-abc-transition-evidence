@@ -1,0 +1,59 @@
+{
+  "_comment": "Edit this file to change the About tab. Never edit index.html for content.",
+  "title": "What this is",
+  "intro": "A live map of the evidence on Area-Based Coordination and Transition in humanitarian WASH coordination. It brings together what national clusters are telling us, what the published literature says, and what comes out of workshops — and shows where those sources agree, where they disagree, and where we simply do not know yet.",
+
+  "sections": [
+    {
+      "heading": "What it is for",
+      "body": [
+        "Two things. First, to inform WASH cluster coordinators — country teams keep asking the same questions, and the answers exist, scattered across conversations and reports. Second, to give coordinators an evidence base they can use when negotiating coordination arrangements with OCHA, humanitarian country teams and their own agencies.",
+        "It is not a guidance document. It is the evidence a guidance document would have to be built on."
+      ]
+    },
+    {
+      "heading": "How it is written",
+      "body": [
+        "Entries describe what happened and what followed from it, not who is at fault. Where a barrier has an obvious remedy, the entry points toward it.",
+        "This is deliberate. Area-based coordination is still being designed, in most countries by people who are also trying to make it work. Evidence framed as a shared problem is more useful in a coordination meeting than the same evidence framed as an accusation — and the underlying finding is unchanged either way."
+      ]
+    },
+    {
+      "heading": "Where the evidence comes from",
+      "list": [
+        "Country conversations — check-ins with national clusters and coordination teams",
+        "Secondary data reviews — published evaluations, studies and guidance",
+        "Workshops — validation sessions and regional meetings",
+        "Search updates — a periodic scan for new published material"
+      ]
+    },
+    {
+      "heading": "How it is organised",
+      "body": [
+        "The unit of data is an evidence record: one claim, from one source. Records that make the same point are grouped into a finding.",
+        "So a finding is not one person's opinion. It is a claim, plus everything that supports it, plus a count of how many independent sources it rests on."
+      ]
+    }
+  ],
+
+  "strength_intro": "Strength is calculated, not asserted. Nobody types it in. It reflects only how many independent sources support a finding — not how confident anyone feels about it, and not how serious the problem is.",
+  "strength": [
+    { "level": "high",   "rule": "Three or more independent sources, or two or more different types of source",
+      "meaning": "Seen in several places. Safe to act on." },
+    { "level": "medium", "rule": "Two independent sources",
+      "meaning": "More than one country or document says this. Worth testing further." },
+    { "level": "low",    "rule": "One source",
+      "meaning": "Reported once. Not wrong — just not yet corroborated. Most new evidence starts here." }
+  ],
+  "strength_note": "Two sources of different kinds — a country conversation and an evaluation, say — count for more than the same point made twice in two interviews. Independence is what matters, not volume.",
+
+  "caveats": [
+    "Most findings are currently low strength. That is expected while the evidence base is being built, and it is shown honestly rather than hidden.",
+    "Coverage is uneven. Countries that have had a recent check-in are heavily represented; others are absent. Absence of evidence here is not evidence of absence.",
+    "Barriers outnumber enablers. People raise problems more readily than things that are working, so read the balance with care.",
+    "Verbatim quotes are held internally and are not published. Statements are neutral summaries, not the words anyone used.",
+    "There is no single model of area-based coordination. Arrangements differ sharply between countries, so a finding from one context may not transfer."
+  ],
+
+  "footer_note": "Findings are traceable to a source ID in the Sources tab. If something looks wrong, it probably is — say so and it will be corrected."
+}

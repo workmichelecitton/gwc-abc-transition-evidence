@@ -1,0 +1,107 @@
+# Shared extraction rules
+
+**Read this first. Prompts 01–03 all depend on it.**
+
+You are extracting evidence on Area-Based Coordination (ABC) and Transition in humanitarian settings for the Global WASH Cluster. Your output is rows for `data/evidence.csv`. Assume familiarity with humanitarian coordination — do not explain basic concepts back to the user.
+
+---
+
+## What counts as one record
+
+One record = **one claim, from one source**. Not one paragraph, not one topic.
+
+Split when a passage makes two distinct claims. Merge nothing at this stage — grouping happens later, in prompt 04.
+
+**Extract:** claims about what helps or hinders ABC or transition, what was actually done somewhere, and what someone recommends.
+
+**Do not extract:** descriptions of the methodology, restatements of the research question, generic humanitarian truisms ("coordination is important"), or anything you would have written without reading the source.
+
+If a document yields three records, extract three. Padding the count destroys the value of the strength-of-evidence calculation, because a fabricated corroboration looks identical to a real one.
+
+---
+
+## Register — this matters as much as accuracy
+
+This evidence base has two purposes: informing WASH cluster coordinators, and supporting constructive advocacy. Neither is served by writing that reads as an attack on OCHA, on area-based structures, or on any other actor.
+
+Write so that the person described could read the entry and recognise it as fair.
+
+| Avoid | Prefer |
+|---|---|
+| "unaccountable by design" | "there is no agreed basis for assessing performance" |
+| "the cluster was reduced to rubber-stamping" | "the consultation left little room to propose alternatives" |
+| "bypassed cluster authority entirely" | "reached outside the cluster's technical channels" |
+| "demand transparent criteria" | "publishing the criteria would give countries a predictable basis" |
+| "OCHA failed to…" | "the review does not currently happen systematically" |
+
+Describe the **mechanism and its consequence**, not the culprit. Where a barrier has an obvious remedy, the statement can point toward it — a reader should finish the entry knowing what would need to change, not who is at fault.
+
+This is not softening the evidence. A finding that says "there is no agreed performance framework, so nobody can tell whether these structures are working" is *more* usable in an ICCG than the same point phrased as an accusation.
+
+## Writing the statement
+
+One sentence. Neutral. Specific enough to be disagreed with.
+
+| Bad | Why | Good |
+|---|---|---|
+| "Funding is a challenge." | Topic label, not a claim | "Donor funding cycles are shorter than the time required to hand over services to national systems." |
+| "Coordination should improve." | Not actionable, not falsifiable | "National clusters should agree area-level indicators at the start of a response rather than retrofitting them." |
+| "The cluster did great work in the region." | Evaluative, unattributable | "A phased handover of water system O&M to the municipal utility completed over eighteen months." |
+
+A useful test: could someone read this statement and say "no, that's not our experience"? If not, it is a topic, not a finding.
+
+---
+
+## Anonymisation — non-negotiable
+
+This repository is public and git history is permanent. A bad commit cannot be cleanly withdrawn.
+
+- No personal names, ever.
+- No role titles specific enough to identify one person ("the WASH Cluster Coordinator in X" identifies an individual).
+- **No organisation named in the `statement` or `quote`.** Use functional descriptors: "a major bilateral donor", "the cluster lead agency", "an intermediary operational cell".
+- **The `actors` column is the exception.** It is structural metadata, not narrative, and naming who a finding concerns is the whole point of the field. `ocha`, `un-agency`, `donor` are fine there even on a critical finding. The distinction: the actors column says *who this is about*; the statement must not say *who is at fault by name*.
+- Quotes: verbatim wording, identifying details removed. If a quote cannot survive anonymisation, drop the quote and keep the statement.
+- Where in doubt, set `visibility` to `internal`. Internal records are dropped at build time and never reach the published file.
+
+Raw transcripts and restricted documents **never** enter this repository.
+
+---
+
+## Columns
+
+Every value in a controlled column must already exist in `data/taxonomy.json`. Inventing a value fails the build. If a genuinely new concept appears, say so in your response and propose the addition — do not quietly pick the nearest existing value, and do not add it yourself.
+
+| Column | Rule |
+|---|---|
+| `id` | `E####`, continuing from the highest existing id. Never reuse. |
+| `finding_id` | **Leave blank.** Prompt 04 assigns these. |
+| `theme` | `ABC`, `Transition`, or `Both`. `Both` only when the claim genuinely applies to each — not when you are unsure. |
+| `type` | `barrier` · `enabler` · `recommendation` · `practice` · `context` |
+| `statement` | One sentence, per above. Wrap in double quotes. |
+| `quote` | Verbatim, anonymised. Blank is fine and often correct. |
+| `level` | `global` · `regional` · `national` · `subnational` |
+| `countries` | ISO3, semicolon-separated. **Blank when `level` is global.** Only where the claim is actually about that country — not where the country was merely mentioned. |
+| `actors` | Who the claim concerns. Semicolon-separated. Usually one or two. |
+| `tags` | Two to four. More than five means the statement is not specific enough — rewrite it. |
+| `stream` | Set by the prompt you are running. |
+| `source_id` | Existing `S###`, or the next free one if you are adding a source. Add the row to `sources.csv` in the same pass. |
+| `date_collected` | Date of the conversation or publication, `YYYY-MM-DD`. |
+| `confidence` | Your judgement of this single record. The site ignores it for display — strength is computed from how many independent sources support the finding — so do not inflate it. |
+| `visibility` | `public` unless anonymisation is uncertain. |
+| `status` | `draft`. Only a human sets `validated`. |
+| `notes` | Working notes. Never published. Use it to flag doubts. |
+
+CSV mechanics: quote any field containing a comma. Use `;` inside multi-value fields, never `,`.
+
+---
+
+## Before you hand back
+
+State plainly:
+
+1. How many records you extracted, and roughly how many you rejected as non-findings.
+2. Anything you could not classify within the existing taxonomy.
+3. Anything you flagged `internal`, and why.
+4. Where the source contradicts evidence already in `evidence.csv` — contradictions are findings in their own right and are more interesting than agreements.
+
+Do not report success if you had to guess at a controlled value. Say what you guessed.

@@ -1,0 +1,18 @@
+# Never commit raw source material. Transcripts and restricted documents
+# stay outside this repository — git history is permanent and public.
+/transcripts/
+/raw/
+*.docx
+*.vtt
+*.srt
+*.m4a
+*.mp3
+
+# Local noise
+.Rhistory
+.DS_Store
+Thumbs.db
+desktop.ini
+__pycache__/
+*.pyc
+.venv/

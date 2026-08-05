@@ -1,0 +1,48 @@
+name: Build evidence data
+
+# Runs whenever the CSV masters or the taxonomy change.
+# On main: rebuilds data/site.json and commits it back, which republishes the site.
+# On a pull request: validates only, so a bad edit is caught before it reaches main.
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'data/evidence.csv'
+      - 'data/sources.csv'
+      - 'data/taxonomy.json'
+      - 'scripts/build.py'
+  pull_request:
+    paths:
+      - 'data/**'
+      - 'scripts/**'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Validate and build
+        run: python scripts/build.py
+
+      - name: Commit site.json
+        if: github.event_name != 'pull_request'
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/site.json
+          if git diff --staged --quiet; then
+            echo "No change to site.json."
+          else
+            git commit -m "Rebuild site.json [skip ci]"
+            git push
+          fi

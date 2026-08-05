@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ABC &amp; Transition Evidence Explorer — Global WASH Cluster</title>
+<style>
+:root{
+  --ink:#16212B; --ink-2:#5A6B7A; --ink-3:#8797A5;
+  --line:#DFE6EC; --bg:#F5F8FA; --card:#FFFFFF;
+  --accent:#1F5C8B;
+  /* categorical — nominal classes */
+  --abc:#1F5C8B; --transition:#C0662B; --both:#6B4E9E;
+  --barrier:#B33A3A; --enabler:#2E7D5B; --recommendation:#6B4E9E;
+  --practice:#177B8A; --context:#7A8794;
+  /* sequential single hue — ordered values */
+  --s-low:#CFE0EC; --s-med:#6C9FC4; --s-high:#1F5C8B;
+}
+*{box-sizing:border-box}
+body{margin:0;font:15px/1.55 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  color:var(--ink);background:var(--bg);-webkit-font-smoothing:antialiased}
+header{background:var(--card);border-bottom:1px solid var(--line);padding:22px 26px 0}
+h1{margin:0;font-size:21px;letter-spacing:-.2px}
+.sub{color:var(--ink-2);font-size:13px;margin-top:5px}
+.stats{display:flex;gap:26px;margin:16px 0 0;flex-wrap:wrap}
+.stat b{display:block;font-size:22px;line-height:1.1;color:var(--accent)}
+.stat span{font-size:11px;text-transform:uppercase;letter-spacing:.7px;color:var(--ink-3)}
+nav{display:flex;gap:2px;margin-top:18px;flex-wrap:wrap}
+nav button{background:none;border:0;border-bottom:2px solid transparent;padding:9px 14px;
+  font:inherit;font-size:14px;color:var(--ink-2);cursor:pointer}
+nav button:hover{color:var(--ink)}
+nav button[aria-selected=true]{color:var(--accent);border-bottom-color:var(--accent);font-weight:600}
+main{padding:20px 26px 70px;max-width:1240px}
+.filters{background:var(--card);border:1px solid var(--line);border-radius:8px;padding:14px 16px;margin-bottom:18px}
+.frow{display:flex;gap:10px;flex-wrap:wrap;align-items:center}
+.frow + .frow{margin-top:11px;padding-top:11px;border-top:1px dashed var(--line)}
+.flabel{font-size:11px;text-transform:uppercase;letter-spacing:.6px;color:var(--ink-3);
+  min-width:74px;font-weight:600}
+input[type=search],select{font:inherit;font-size:13px;padding:6px 9px;border:1px solid var(--line);
+  border-radius:5px;background:#fff;color:var(--ink)}
+input[type=search]{flex:1;min-width:200px}
+.chip{font-size:12.5px;padding:4px 11px;border:1px solid var(--line);border-radius:20px;
+  background:#fff;cursor:pointer;color:var(--ink-2);user-select:none}
+.chip:hover{border-color:var(--ink-3)}
+.chip.on{background:var(--accent);border-color:var(--accent);color:#fff;font-weight:500}
+.chip.on[data-k=theme][data-v=Transition]{background:var(--transition);border-color:var(--transition)}
+.chip.on[data-k=theme][data-v=Both]{background:var(--both);border-color:var(--both)}
+.chip.on[data-k=type][data-v=barrier]{background:var(--barrier);border-color:var(--barrier)}
+.chip.on[data-k=type][data-v=enabler]{background:var(--enabler);border-color:var(--enabler)}
+.chip.on[data-k=type][data-v=recommendation]{background:var(--recommendation);border-color:var(--recommendation)}
+.chip.on[data-k=type][data-v=practice]{background:var(--practice);border-color:var(--practice)}
+.chip.on[data-k=type][data-v=context]{background:var(--context);border-color:var(--context)}
+.reset{margin-left:auto;background:none;border:0;color:var(--accent);font:inherit;font-size:13px;
+  cursor:pointer;text-decoration:underline}
+.count{color:var(--ink-2);font-size:13px;margin:0 0 12px}
+.card{background:var(--card);border:1px solid var(--line);border-left:3px solid var(--ink-3);
+  border-radius:7px;padding:14px 16px;margin-bottom:10px;cursor:pointer}
+.card:hover{border-color:var(--ink-3)}
+.card.barrier{border-left-color:var(--barrier)} .card.enabler{border-left-color:var(--enabler)}
+.card.recommendation{border-left-color:var(--recommendation)}
+.card.practice{border-left-color:var(--practice)} .card.context{border-left-color:var(--context)}
+.card h3{margin:0 0 9px;font-size:15px;font-weight:600;line-height:1.45}
+.meta{display:flex;gap:7px;flex-wrap:wrap;align-items:center;font-size:11.5px}
+.tag{background:var(--bg);border:1px solid var(--line);border-radius:4px;padding:2px 7px;color:var(--ink-2)}
+.pill{border-radius:4px;padding:2px 8px;color:#fff;font-weight:600;font-size:11px;
+  text-transform:uppercase;letter-spacing:.4px}
+.pill.ABC{background:var(--abc)} .pill.Transition{background:var(--transition)} .pill.Both{background:var(--both)}
+.pill.barrier{background:var(--barrier)} .pill.enabler{background:var(--enabler)}
+.pill.recommendation{background:var(--recommendation)} .pill.practice{background:var(--practice)}
+.pill.context{background:var(--context)}
+.str{border-radius:4px;padding:2px 8px;font-weight:600;font-size:11px;text-transform:uppercase;letter-spacing:.4px}
+.str.low{background:var(--s-low);color:#25506F} .str.medium{background:var(--s-med);color:#fff}
+.str.high{background:var(--s-high);color:#fff}
+.detail{margin-top:13px;padding-top:13px;border-top:1px solid var(--line)}
+.ev{padding:10px 0;border-bottom:1px dashed var(--line)}
+.ev:last-child{border-bottom:0}
+.ev p{margin:0 0 5px}
+blockquote{margin:6px 0;padding:7px 12px;border-left:2px solid var(--line);
+  color:var(--ink-2);font-style:italic;background:var(--bg);border-radius:0 4px 4px 0}
+.evmeta{font-size:11.5px;color:var(--ink-3)}
+table{width:100%;border-collapse:collapse;background:var(--card);border:1px solid var(--line);
+  border-radius:7px;overflow:hidden;font-size:13.5px}
+th{text-align:left;padding:9px 12px;background:var(--bg);font-size:11px;text-transform:uppercase;
+  letter-spacing:.6px;color:var(--ink-3);border-bottom:1px solid var(--line)}
+td{padding:9px 12px;border-bottom:1px solid var(--line);vertical-align:top}
+tr:last-child td{border-bottom:0}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(215px,1fr));gap:10px}
+.tile{background:var(--card);border:1px solid var(--line);border-radius:7px;padding:12px 14px;cursor:pointer}
+.tile:hover{border-color:var(--accent)}
+.tile b{display:block;font-size:15px;margin-bottom:3px}
+.tile span{font-size:12px;color:var(--ink-2)}
+.mtable td.n{text-align:center;font-weight:600;font-variant-numeric:tabular-nums;cursor:pointer}
+.mtable td.n:hover{outline:2px solid var(--accent);outline-offset:-2px}
+.empty{color:var(--ink-2);padding:34px;text-align:center;background:var(--card);
+  border:1px dashed var(--line);border-radius:7px}
+.warn{background:#FFF6E5;border:1px solid #E8CE9A;color:#6B4E12;padding:13px 16px;
+  border-radius:7px;margin-bottom:16px;font-size:13.5px}
+.warn code{background:#fff;padding:1px 5px;border-radius:3px;font-size:12.5px}
+footer{padding:22px 26px;color:var(--ink-3);font-size:12px;border-top:1px solid var(--line);background:var(--card)}
+.hidden{display:none}
+/* About */
+.prose{background:var(--card);border:1px solid var(--line);border-radius:8px;
+  padding:26px 32px;max-width:760px}
+.prose h2{margin:0 0 6px;font-size:20px;letter-spacing:-.2px}
+.prose h3{margin:26px 0 8px;font-size:15px;color:var(--accent)}
+.prose p{margin:0 0 11px}
+.prose .lead{font-size:16px;line-height:1.6;color:var(--ink)}
+.prose ul{margin:0 0 11px;padding-left:20px}
+.prose li{margin-bottom:5px}
+.prose .note{color:var(--ink-2);font-size:13.5px}
+.prose .caveats li{margin-bottom:8px;color:var(--ink-2)}
+.strengthtable{margin:10px 0 6px;font-size:13.5px}
+.strengthtable td:first-child{white-space:nowrap}
+/* Map */
+.mapwrap{background:var(--card);border:1px solid var(--line);border-radius:8px;
+  padding:12px 16px 10px;margin-bottom:14px}
+.maphead{display:flex;align-items:center;gap:12px;font-size:12.5px;color:var(--ink-2);
+  margin-bottom:6px}
+.linkbtn{margin-left:auto;background:none;border:0;color:var(--accent);font:inherit;
+  font-size:12.5px;cursor:pointer;text-decoration:underline}
+.map{width:100%;height:auto;max-height:380px;display:block}
+.land{fill:#E9EEF2;stroke:#DCE4EA;stroke-width:.4}
+.cty{stroke:#fff;stroke-width:.5;cursor:pointer;transition:fill .12s}
+.cty:hover{stroke:var(--ink);stroke-width:1}
+.cty.sel{stroke:var(--transition);stroke-width:1.6;fill:var(--transition) !important}
+.maplegend{display:flex;align-items:center;gap:6px;font-size:11.5px;color:var(--ink-3);
+  margin-top:4px;flex-wrap:wrap}
+.lg{width:26px;height:9px;border-radius:2px;display:inline-block}
+.lg.lo{background:rgba(31,92,139,.22)} .lg.hi{background:rgba(31,92,139,.92);margin-left:10px}
+.lgnote{margin-left:12px;font-style:italic}
+.note-inline{font-size:11.5px;color:var(--ink-3);font-style:italic}
+/* Highlights */
+.hl{background:var(--card);border:1px solid var(--line);border-left:4px solid var(--s-high);
+  border-radius:8px;padding:20px 24px;margin-bottom:12px;max-width:840px}
+.hl h3{margin:0 0 8px;font-size:18px;line-height:1.35;letter-spacing:-.2px}
+.hl-plain{margin:0 0 10px;font-size:15.5px;line-height:1.6}
+.hl-so{margin:0 0 12px;padding:9px 13px;background:var(--bg);border-radius:5px;
+  font-size:14px;color:var(--ink)}
+.hl-so b{color:var(--accent)}
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Area-Based Coordination &amp; Transition — Evidence Explorer</h1>
+  <div class="sub">Global WASH Cluster · beta · evidence from country conversations, secondary data reviews, workshops and horizon scans</div>
+  <div class="stats" id="stats"></div>
+  <nav id="nav"></nav>
+</header>
+
+<main>
+  <div id="boot" class="empty">Loading evidence…</div>
+
+  <div id="app" class="hidden">
+    <div class="filters">
+      <div class="frow">
+        <input type="search" id="q" placeholder="Search statements and sources…">
+        <select id="country"></select>
+        <select id="tag"></select>
+        <select id="actor"></select>
+        <button class="reset" id="reset">Reset all filters</button>
+      </div>
+      <div class="frow" id="selrow"><span class="flabel">Countries</span><span id="selcountries"></span></div>
+      <div class="frow"><span class="flabel">Theme</span><span id="f-theme"></span></div>
+      <div class="frow"><span class="flabel">Type</span><span id="f-type"></span></div>
+      <div class="frow"><span class="flabel">Source</span><span id="f-stream"></span></div>
+      <div class="frow"><span class="flabel">Strength</span><span id="f-strength"></span>
+        <span class="flabel" style="margin-left:18px">Level</span><span id="f-level"></span></div>
+    </div>
+    <p class="count" id="count"></p>
+    <div id="view"></div>
+  </div>
+</main>
+
+<footer id="foot"></footer>
+
+<!-- Fallback copy of the data, so this page also works when opened directly
+     from disk. Ignored when the page is served over http. -->
+<script src="data/site.js" onerror="void 0"></script>
+<!-- Map geometry. Generated once from Natural Earth 110m, simplified, committed
+     as data. Regenerate only if the country list changes. -->
+<script src="data/geo.js" onerror="void 0"></script>
+
+<script>
+"use strict";
+
+// ---------------------------------------------------------------------------
+// This file renders data. It never contains data. Everything below reads from
+// data/site.json, which the GitHub Action generates from the CSV masters.
+// To change what the site says, edit data/evidence.csv — never this file.
+// ---------------------------------------------------------------------------
+
+var D = null;                       // the loaded dataset
+var TAB = "about";
+var F = { q:"", theme:[], type:[], stream:[], strength:[], level:[],
+          countries:[], tag:"", actor:"" };
+var OPEN = {};                      // which finding cards are expanded
+
+var TABS = [["about","About"],["highlights","Highlights"],["findings","Findings"],
+            ["matrix","Matrix"],["sources","Sources"]];
+var NOFILTER = { about:1 };         // views the filter bar does not apply to
+var MAPON = true;                   // map shown above the findings list
+
+function el(id){ return document.getElementById(id); }
+function esc(s){ return String(s==null?"":s).replace(/[&<>"]/g, function(c){
+  return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]; }); }
+function label(key, value){
+  var list = (D.taxonomy[key]||[]);
+  for (var i=0;i<list.length;i++) if (list[i].value===value) return list[i].label||value;
+  return value;
+}
+function countryName(iso){ return (D.taxonomy.countries||{})[iso] || iso; }
+function uniq(a){ return a.filter(function(v,i){ return a.indexOf(v)===i; }); }
+
+// --- load ------------------------------------------------------------------
+// Served over http: fetch site.json, always current.
+// Opened from disk: fetch is blocked, so fall back to data/site.js, which the
+// build writes alongside site.json and which a <script> tag can load locally.
+fetch("data/site.json", {cache:"no-store"})
+  .then(function(r){ if(!r.ok) throw new Error("HTTP "+r.status); return r.json(); })
+  .then(function(json){ D = json; init(); })
+  .catch(function(e){
+    if (window.SITE_DATA) { D = window.SITE_DATA; init(); return; }
+    el("boot").innerHTML =
+      '<div class="warn" style="text-align:left"><b>Could not load the data.</b><br><br>' +
+      'Neither <code>data/site.json</code> nor the local fallback ' +
+      '<code>data/site.js</code> could be read.<br><br>' +
+      'If you are working locally, run <code>python scripts/build.py</code> first — ' +
+      'it writes both files.<br><br>' +
+      'If you are seeing this on the published site, the last build failed. ' +
+      'Check the Actions tab on GitHub.<br><br>' +
+      '<span style="color:#8797A5">' + esc(e.message) + '</span></div>';
+  });
+
+function init(){
+  el("boot").classList.add("hidden");
+  el("app").classList.remove("hidden");
+
+  var s = D.stats;
+  el("stats").innerHTML =
+    stat(s.findings,"Findings") + stat(s.records,"Evidence records") +
+    stat(s.sources,"Sources") + stat(s.countries,"Countries");
+
+  el("nav").innerHTML = TABS.map(function(t){
+    return '<button data-tab="'+t[0]+'" aria-selected="'+(t[0]===TAB)+'">'+t[1]+'</button>';
+  }).join("");
+  el("nav").onclick = function(e){
+    var b = e.target.closest("button"); if(!b) return;
+    TAB = b.dataset.tab;
+    [].forEach.call(el("nav").children, function(c){
+      c.setAttribute("aria-selected", c.dataset.tab===TAB); });
+    render();
+  };
+
+  chips("f-theme","theme","theme");
+  chips("f-type","type","type");
+  chips("f-stream","stream","stream");
+  chips("f-strength","strength",null,[["high","High"],["medium","Medium"],["low","Low"]]);
+  chips("f-level","level","level");
+
+  dropdown("country","Add a country…",
+    uniq(D.records.reduce(function(a,r){ return a.concat(r.countries); },[]))
+      .sort(function(a,b){ return countryName(a).localeCompare(countryName(b)); })
+      .map(function(c){ return [c, countryName(c)]; }));
+  dropdown("tag","All themes",
+    (D.taxonomy.tags||[]).map(function(t){ return [t.value, t.label]; }));
+  dropdown("actor","All actors",
+    (D.taxonomy.actors||[]).map(function(t){ return [t.value, t.label]; }));
+
+  el("q").oninput = function(){ F.q = this.value.toLowerCase().trim(); render(); };
+  ["tag","actor"].forEach(function(k){
+    el(k).onchange = function(){ F[k] = this.value; render(); };
+  });
+  // The country dropdown adds to the selection rather than replacing it.
+  el("country").onchange = function(){
+    if (this.value) toggleCountry(this.value, true);
+    this.value = "";
+  };
+  el("reset").onclick = function(){
+    F = { q:"", theme:[], type:[], stream:[], strength:[], level:[], countries:[], tag:"", actor:"" };
+    el("q").value = ""; ["country","tag","actor"].forEach(function(k){ el(k).value=""; });
+    document.querySelectorAll(".chip.on").forEach(function(c){ c.classList.remove("on"); });
+    render();
+  };
+
+  el("foot").innerHTML =
+    "Global WASH Cluster · beta · data generated " + esc(D.generated) +
+    " · taxonomy v" + esc(D.taxonomy_version) +
+    " · strength of evidence is computed from the number of independent sources and streams, not asserted." +
+    (D.stats.withheld_internal ? " · " + D.stats.withheld_internal +
+      " record(s) marked internal are excluded from this build." : "");
+
+  render();
+}
+
+function stat(n, l){ return '<div class="stat"><b>'+n+'</b><span>'+l+'</span></div>'; }
+
+function chips(target, key, taxKey, explicit){
+  var opts = explicit || (D.taxonomy[taxKey]||[]).map(function(t){ return [t.value, t.label||t.value]; });
+  el(target).innerHTML = opts.map(function(o){
+    return '<button class="chip" data-k="'+key+'" data-v="'+esc(o[0])+'">'+esc(o[1])+'</button>';
+  }).join(" ");
+  el(target).onclick = function(e){
+    var b = e.target.closest(".chip"); if(!b) return;
+    var v = b.dataset.v, i = F[key].indexOf(v);
+    if (i<0) { F[key].push(v); b.classList.add("on"); }
+    else { F[key].splice(i,1); b.classList.remove("on"); }
+    render();
+  };
+}
+
+function dropdown(id, blank, pairs){
+  el(id).innerHTML = '<option value="">'+blank+'</option>' + pairs.map(function(p){
+    return '<option value="'+esc(p[0])+'">'+esc(p[1])+'</option>'; }).join("");
+}
+
+// --- filtering -------------------------------------------------------------
+// Records are filtered first. Findings are then kept if any of their records
+// survive — so a country filter shows the finding AND which evidence backs it
+// in that country, rather than dropping a global finding that has local proof.
+function matchRecord(r, skipCountry){
+  if (F.theme.length  && F.theme.indexOf(r.theme)<0) return false;
+  if (F.type.length   && F.type.indexOf(r.type)<0) return false;
+  if (F.stream.length && F.stream.indexOf(r.stream)<0) return false;
+  if (F.level.length  && F.level.indexOf(r.level)<0) return false;
+  // Country selection is OR: pick three countries, see evidence from any of them.
+  if (!skipCountry && F.countries.length &&
+      !F.countries.some(function(c){ return r.countries.indexOf(c)>=0; })) return false;
+  if (F.tag     && r.tags.indexOf(F.tag)<0) return false;
+  if (F.actor   && r.actors.indexOf(F.actor)<0) return false;
+  if (F.q){
+    var src = sourceOf(r.source_id);
+    var hay = (r.statement+" "+(r.quote||"")+" "+r.id+" "+r.source_id+" "+
+               (src?src.title:"")+" "+r.tags.join(" ")+" "+
+               r.countries.map(countryName).join(" ")).toLowerCase();
+    if (hay.indexOf(F.q)<0) return false;
+  }
+  return true;
+}
+function sourceOf(sid){
+  for (var i=0;i<D.sources.length;i++) if (D.sources[i].source_id===sid) return D.sources[i];
+  return null;
+}
+function filtered(skipCountry){
+  var recs = D.records.filter(function(r){ return matchRecord(r, skipCountry); });
+  var keep = {};
+  recs.forEach(function(r){ keep[r.finding_id || ("_solo_"+r.id)] = true; });
+  var finds = D.findings.filter(function(f){
+    if (!keep[f.finding_id]) return false;
+    if (F.strength.length && F.strength.indexOf(f.strength)<0) return false;
+    return true;
+  });
+  var fset = {}; finds.forEach(function(f){ fset[f.finding_id]=true; });
+  recs = recs.filter(function(r){ return fset[r.finding_id || ("_solo_"+r.id)]; });
+  return { records: recs, findings: finds };
+}
+
+// --- render ----------------------------------------------------------------
+function render(){
+  var d = filtered();
+  var hideFilters = !!NOFILTER[TAB];
+  document.querySelector(".filters").classList.toggle("hidden", hideFilters);
+  el("count").classList.toggle("hidden", hideFilters);
+  el("count").textContent =
+    d.findings.length + " finding" + (d.findings.length===1?"":"s") + " · " +
+    d.records.length + " evidence record" + (d.records.length===1?"":"s") +
+    (activeFilters() ? " (filtered)" : "");
+  if (!hideFilters) selectedCountryChips();
+  var v = el("view");
+  if (TAB==="about")      v.innerHTML = viewAbout();
+  if (TAB==="highlights") v.innerHTML = viewHighlights(d);
+  if (TAB==="findings")   v.innerHTML = viewMap() + viewFindings(d);
+  if (TAB==="matrix")     v.innerHTML = viewMatrix(d);
+  if (TAB==="sources")    v.innerHTML = viewSources(d);
+  wire();
+}
+function activeFilters(){
+  return !!(F.q||F.countries.length||F.tag||F.actor||F.theme.length||F.type.length||
+            F.stream.length||F.strength.length||F.level.length);
+}
+
+function viewFindings(d){
+  if (!d.findings.length) return empty();
+  var byF = {};
+  d.records.forEach(function(r){
+    var k = r.finding_id || ("_solo_"+r.id);
+    (byF[k] = byF[k] || []).push(r);
+  });
+  return d.findings.map(function(f){
+    var recs = byF[f.finding_id] || [];
+    var open = !!OPEN[f.finding_id];
+    var head =
+      '<h3>'+esc(f.statement)+'</h3><div class="meta">' +
+      '<span class="pill '+esc(f.theme)+'">'+esc(f.theme)+'</span>' +
+      '<span class="pill '+esc(f.type)+'">'+esc(label("type",f.type))+'</span>' +
+      '<span class="str '+esc(f.strength)+'">'+esc(f.strength)+' strength</span>' +
+      '<span class="tag">'+f.n_sources+' source'+(f.n_sources===1?"":"s")+
+        ' · '+f.n_streams+' stream'+(f.n_streams===1?"":"s")+'</span>' +
+      (f.unmerged ? '<span class="tag" style="color:#B33A3A">not yet merged</span>' : '') +
+      f.countries.map(function(c){ return '<span class="tag">'+esc(countryName(c))+'</span>'; }).join("") +
+      f.tags.map(function(t){ return '<span class="tag">'+esc(label("tags",t))+'</span>'; }).join("") +
+      '</div>';
+    var body = open ? '<div class="detail">' + recs.map(evidenceBlock).join("") + '</div>' : "";
+    return '<div class="card '+esc(f.type)+'" data-f="'+esc(f.finding_id)+'">'+head+body+'</div>';
+  }).join("");
+}
+
+// Verbatim quotes are stripped at build time and are not available here.
+function evidenceBlock(r){
+  var s = sourceOf(r.source_id);
+  return '<div class="ev"><p>'+esc(r.statement)+'</p>' +
+    '<div class="evmeta">' + esc(r.id) + ' · ' + esc(label("stream", r.stream)) +
+    ' · ' + esc(r.source_id) + (s ? ' ' + esc(s.title) : '') +
+    (r.date_collected ? ' · ' + esc(r.date_collected) : '') +
+    ' · ' + esc(r.status) +
+    (r.countries.length ? ' · ' + r.countries.map(countryName).map(esc).join(", ") : '') +
+    '</div></div>';
+}
+
+function viewAbout(){
+  var a = D.about;
+  if (!a) return empty("data/about.json is missing.");
+  var h = '<div class="prose"><h2>' + esc(a.title) + '</h2><p class="lead">' + esc(a.intro) + '</p>';
+
+  (a.sections||[]).forEach(function(s){
+    h += '<h3>' + esc(s.heading) + '</h3>';
+    (s.body||[]).forEach(function(p){ h += '<p>' + esc(p) + '</p>'; });
+    if (s.list) h += '<ul>' + s.list.map(function(li){ return '<li>'+esc(li)+'</li>'; }).join("") + '</ul>';
+  });
+
+  h += '<h3>What “strength” means</h3><p>' + esc(a.strength_intro) + '</p>' +
+       '<table class="strengthtable"><thead><tr><th>Strength</th><th>When it applies</th>' +
+       '<th>How to read it</th></tr></thead><tbody>' +
+       (a.strength||[]).map(function(s){
+         return '<tr><td><span class="str '+esc(s.level)+'">'+esc(s.level)+'</span></td>' +
+                '<td>'+esc(s.rule)+'</td><td>'+esc(s.meaning)+'</td></tr>';
+       }).join("") + '</tbody></table>' +
+       '<p class="note">' + esc(a.strength_note) + '</p>';
+
+  h += '<h3>Read this with care</h3><ul class="caveats">' +
+       (a.caveats||[]).map(function(c){ return '<li>'+esc(c)+'</li>'; }).join("") + '</ul>';
+
+  var s = D.stats;
+  h += '<h3>What is in it right now</h3><p>' +
+       s.findings + ' findings, drawn from ' + s.records + ' evidence records across ' +
+       s.sources + ' sources and ' + s.countries + ' countries. Last updated ' +
+       esc(D.generated) + '.</p>';
+
+  if (a.footer_note) h += '<p class="note">' + esc(a.footer_note) + '</p>';
+  return h + '</div>';
+}
+
+function viewHighlights(d){
+  var hi = d.findings.filter(function(f){ return f.strength==="high"; });
+  if (!hi.length) return empty(
+    "No high-strength findings match these filters. A finding reaches high strength once three independent sources, or two different kinds of source, support it.");
+  return '<p class="count">' + hi.length + ' finding' + (hi.length===1?"":"s") +
+    ' supported by several independent sources. Everything else is in the Findings tab, with its strength shown.</p>' +
+    hi.map(function(f){
+      var H = f.highlight || {};
+      return '<div class="hl">' +
+        '<h3>' + esc(H.headline || f.statement) + '</h3>' +
+        (H.plain ? '<p class="hl-plain">' + esc(H.plain) + '</p>'
+                 : '<p class="hl-plain">' + esc(f.statement) + '</p>') +
+        (H.so_what ? '<p class="hl-so"><b>What to do</b> · ' + esc(H.so_what) + '</p>' : '') +
+        '<div class="meta">' +
+          '<span class="pill '+esc(f.theme)+'">'+esc(f.theme)+'</span>' +
+          '<span class="pill '+esc(f.type)+'">'+esc(label("type",f.type))+'</span>' +
+          '<span class="str high">high strength</span>' +
+          '<span class="tag">' + f.n_sources + ' independent sources · ' +
+             f.streams.map(function(s){ return label("stream", s); }).join(" + ") + '</span>' +
+          f.countries.map(function(c){ return '<span class="tag">'+esc(countryName(c))+'</span>'; }).join("") +
+        '</div></div>';
+    }).join("");
+}
+
+// --- map -------------------------------------------------------------------
+// Country counts are computed ignoring the country filter, so the map keeps
+// showing every country you could add while a selection is active.
+function countryCounts(){
+  var d = filtered(true), m = {};
+  d.records.forEach(function(r){
+    r.countries.forEach(function(c){
+      m[c] = m[c] || {recs:0, finds:{}};
+      m[c].recs++; m[c].finds[r.finding_id || r.id] = true;
+    });
+  });
+  Object.keys(m).forEach(function(c){ m[c].n = Object.keys(m[c].finds).length; });
+  return m;
+}
+
+function toggleCountry(iso, forceOn){
+  var i = F.countries.indexOf(iso);
+  if (i<0) F.countries.push(iso);
+  else if (!forceOn) F.countries.splice(i,1);
+  render();
+}
+
+function selectedCountryChips(){
+  var host = el("selcountries");
+  el("selrow").classList.toggle("hidden", !F.countries.length);
+  host.innerHTML = F.countries.map(function(c){
+    return '<button class="chip on selc" data-c="'+esc(c)+'">'+esc(countryName(c))+' ×</button>';
+  }).join(" ") + (F.countries.length>1
+      ? ' <span class="note-inline">showing evidence from any of these</span>' : '');
+}
+
+function viewMap(){
+  var G = window.GEO_DATA;
+  if (!G) return '';
+  var m = countryCounts();
+  var max = 0;
+  Object.keys(m).forEach(function(c){ if (m[c].n>max) max = m[c].n; });
+
+  var shapes = Object.keys(m).filter(function(c){ return G.countries[c]; }).map(function(c){
+    var sel = F.countries.indexOf(c)>=0;
+    var a = max ? m[c].n/max : 0;
+    var fill = 'rgba(31,92,139,'+(0.22+a*0.70).toFixed(2)+')';
+    return '<path class="cty'+(sel?' sel':'')+'" data-c="'+esc(c)+'" d="'+G.countries[c]+'" ' +
+           'fill="'+fill+'"><title>'+esc(countryName(c))+' — '+m[c].n+
+           ' finding'+(m[c].n===1?'':'s')+', '+m[c].recs+' record'+(m[c].recs===1?'':'s')+
+           '\n'+(F.countries.indexOf(c)>=0?'click to remove':'click to filter')+'</title></path>';
+  }).join("");
+
+  // countries with no geometry (regional codes) get chips instead
+  var noGeo = Object.keys(m).filter(function(c){ return !G.countries[c]; });
+
+  var withEvidence = Object.keys(m).length;
+  return '<div class="mapwrap"><div class="maphead">' +
+      '<span>' + withEvidence + ' countries with evidence · click to filter, click again to remove</span>' +
+      '<button class="linkbtn" id="mapToggle">' + (MAPON?'Hide map':'Show map') + '</button></div>' +
+    (MAPON ?
+      '<svg viewBox="'+G.viewBox+'" class="map" role="img" aria-label="Countries with evidence">' +
+        '<path d="'+G.world+'" class="land"/>' + shapes +
+      '</svg>' +
+      '<div class="maplegend"><span class="lg lo"></span>fewer findings' +
+        '<span class="lg hi"></span>more findings' +
+        '<span class="lgnote">Shading shows how much evidence exists, not how strong it is.</span></div>' +
+      (noGeo.length ? '<div class="meta" style="margin-top:8px">' +
+        noGeo.map(function(c){ return '<button class="chip'+(F.countries.indexOf(c)>=0?' on':'')+
+          ' selc-add" data-c="'+esc(c)+'">'+esc(countryName(c))+'</button>'; }).join(" ") + '</div>' : '')
+    : '') + '</div>';
+}
+
+function viewMatrix(d){
+  var types = (D.taxonomy.type||[]).map(function(t){ return t.value; });
+  var tags  = (D.taxonomy.tags||[]).map(function(t){ return t.value; });
+  var m = {}, max = 0;
+  d.records.forEach(function(r){
+    r.tags.forEach(function(tg){
+      m[tg] = m[tg] || {};
+      m[tg][r.type] = (m[tg][r.type]||0) + 1;
+      if (m[tg][r.type] > max) max = m[tg][r.type];
+    });
+  });
+  var used = tags.filter(function(t){ return m[t]; });
+  if (!used.length) return empty();
+  return '<table class="mtable"><thead><tr><th>Theme</th>' +
+    types.map(function(t){ return '<th style="text-align:center">'+esc(label("type",t))+'</th>'; }).join("") +
+    '<th style="text-align:center">Total</th></tr></thead><tbody>' +
+    used.map(function(tg){
+      var tot = 0;
+      var cells = types.map(function(ty){
+        var n = (m[tg]&&m[tg][ty])||0; tot += n;
+        var a = max ? n/max : 0;
+        var bg = n ? 'background:rgba(31,92,139,'+(0.10+a*0.72).toFixed(2)+');color:'+(a>0.55?'#fff':'#16212B') : '';
+        return '<td class="n" style="'+bg+'" data-tag="'+esc(tg)+'" data-type="'+esc(ty)+'">'+(n||"·")+'</td>';
+      }).join("");
+      return '<tr><td>'+esc(label("tags",tg))+'</td>'+cells+'<td class="n">'+tot+'</td></tr>';
+    }).join("") + '</tbody></table>' +
+    '<p class="count" style="margin-top:10px">Counts are evidence records. Click any cell to filter. ' +
+    'Darker means more evidence — not stronger evidence.</p>';
+}
+
+function viewSources(d){
+  var cited = {};
+  D.records.forEach(function(r){
+    (cited[r.source_id] = cited[r.source_id] || []).push(r.finding_id||r.id);
+  });
+  return '<table><thead><tr><th>ID</th><th>Title</th><th>Year</th><th>Type</th>' +
+    '<th>Stream</th><th>Access</th><th>Cited in</th></tr></thead><tbody>' +
+    D.sources.map(function(s){
+      var c = uniq(cited[s.source_id]||[]);
+      return '<tr><td>'+esc(s.source_id)+'</td>' +
+        '<td>'+(s.url ? '<a href="'+esc(s.url)+'" target="_blank" rel="noopener">'+esc(s.title)+'</a>' : esc(s.title))+'</td>' +
+        '<td>'+esc(s.year||"")+'</td><td>'+esc(label("source_type", s.type))+'</td>' +
+        '<td>'+esc(label("stream", s.stream))+'</td><td>'+esc(s.access||"")+'</td>' +
+        '<td>'+(c.length ? esc(c.join(", ")) : '<span style="color:#B33A3A">not cited</span>')+'</td></tr>';
+    }).join("") + '</tbody></table>';
+}
+
+function empty(msg){
+  return '<div class="empty">'+esc(msg||"Nothing matches these filters.")+'</div>';
+}
+
+function wire(){
+  document.querySelectorAll(".card").forEach(function(c){
+    c.onclick = function(){
+      var k = c.dataset.f; OPEN[k] = !OPEN[k]; render();
+    };
+  });
+  document.querySelectorAll("path.cty, .selc, .selc-add").forEach(function(n){
+    n.onclick = function(e){ e.stopPropagation(); toggleCountry(n.dataset.c || n.getAttribute("data-c")); };
+  });
+  var mt = el("mapToggle");
+  if (mt) mt.onclick = function(){ MAPON = !MAPON; render(); };
+  document.querySelectorAll("td.n[data-tag]").forEach(function(td){
+    td.onclick = function(){
+      F.tag = td.dataset.tag; el("tag").value = F.tag;
+      F.type = [td.dataset.type];
+      document.querySelectorAll('.chip[data-k=type]').forEach(function(ch){
+        ch.classList.toggle("on", ch.dataset.v===td.dataset.type); });
+      TAB = "findings";
+      [].forEach.call(el("nav").children, function(c){
+        c.setAttribute("aria-selected", c.dataset.tab==="findings"); });
+      render();
+    };
+  });
+}
+</script>
+</body>
+</html>

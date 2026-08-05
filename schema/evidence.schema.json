@@ -1,0 +1,64 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "ABC & Transition evidence record",
+  "description": "One atomic piece of evidence from one source. Records that say the same thing share a finding_id.",
+  "type": "object",
+  "required": ["id", "theme", "type", "statement", "level", "stream", "source_id", "confidence", "visibility", "status"],
+  "additionalProperties": false,
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^E[0-9]{4}$",
+      "description": "Sequential, never reused. E0001."
+    },
+    "finding_id": {
+      "type": "string",
+      "pattern": "^F[0-9]{3}$",
+      "description": "Groups records that make the same point. Blank until the merge step (prompts/04) assigns one. The count of records sharing a finding_id IS the strength of evidence — do not assign one loosely."
+    },
+    "theme": { "type": "string", "enum": ["ABC", "Transition", "Both"] },
+    "type": { "type": "string", "enum": ["barrier", "enabler", "recommendation", "practice", "context"] },
+    "statement": {
+      "type": "string",
+      "minLength": 15,
+      "maxLength": 300,
+      "description": "One sentence, the claim itself, in neutral language. Not a topic label."
+    },
+    "quote": {
+      "type": "string",
+      "maxLength": 800,
+      "description": "Verbatim excerpt supporting the statement. Anonymised: no names, no attributable roles."
+    },
+    "level": { "type": "string", "enum": ["global", "regional", "national", "subnational"] },
+    "countries": {
+      "type": "array",
+      "items": { "type": "string", "pattern": "^[A-Z]{3,5}$" },
+      "description": "ISO3. Empty for global findings."
+    },
+    "actors": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Who the finding concerns. From taxonomy.actors."
+    },
+    "tags": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "From taxonomy.tags. Two to four is usually right. More than five means the statement is not specific enough."
+    },
+    "stream": { "type": "string", "enum": ["transcript", "sdr", "search", "workshop"] },
+    "source_id": {
+      "type": "string",
+      "pattern": "^S[0-9]{3}$",
+      "description": "Must exist in sources.csv. The build fails otherwise."
+    },
+    "date_collected": { "type": "string", "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}$" },
+    "confidence": {
+      "type": "string",
+      "enum": ["high", "medium", "low"],
+      "description": "Set at record level as an initial judgement. The viewer recomputes strength of evidence per finding_id from the number of independent sources — that computed value is what users see."
+    },
+    "visibility": { "type": "string", "enum": ["public", "internal"] },
+    "status": { "type": "string", "enum": ["draft", "validated"] },
+    "notes": { "type": "string", "description": "Internal working notes. Never published." }
+  }
+}
