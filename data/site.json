@@ -66,10 +66,10 @@
  "generated": "2026-08-05",
  "taxonomy_version": "0.4.0",
  "stats": {
-  "records": 361,
-  "findings": 281,
-  "sources": 92,
-  "countries": 24,
+  "records": 390,
+  "findings": 305,
+  "sources": 93,
+  "countries": 25,
   "withheld_internal": 1
  },
  "taxonomy": {
@@ -626,31 +626,35 @@
   },
   {
    "finding_id": "F015",
-   "statement": "Pooled fund prioritisation moved to area-based structures, with the cluster's contribution concentrated at technical review of proposals.",
+   "statement": "Clusters were treated as passive actors in the first pooled fund allocation, and the indicator list issued to partners diverged from the indicators agreed in the sector operational framework.",
    "theme": "ABC",
    "type": "barrier",
-   "strength": "low",
-   "n_records": 1,
-   "n_sources": 1,
+   "strength": "medium",
+   "n_records": 2,
+   "n_sources": 2,
    "n_streams": 1,
    "streams": [
     "transcript"
    ],
    "countries": [
+    "COL",
     "SOM"
    ],
    "tags": [
     "coordination-architecture",
     "funding",
     "hpc",
+    "performance",
     "pooled-funds"
    ],
    "actors": [
     "cluster",
+    "donor",
     "ocha"
    ],
    "record_ids": [
-    "E0020"
+    "E0020",
+    "E0377"
    ],
    "unmerged": false
   },
@@ -1050,18 +1054,19 @@
   },
   {
    "finding_id": "F028",
-   "statement": "Information management is typically the first capacity reduced, so by the time transition planning formally begins, institutional memory, systems and analytical capacity have often already shrunk to a contact list and basic reporting.",
-   "theme": "Transition",
+   "statement": "The cluster has had no dedicated information management post this year, having previously been supported both by the refugee coordination platform and directly by the lead agency, and now relies on intermittent consortium and consultancy support.",
+   "theme": "Both",
    "type": "barrier",
    "strength": "high",
-   "n_records": 2,
-   "n_sources": 2,
+   "n_records": 3,
+   "n_sources": 3,
    "n_streams": 2,
    "streams": [
     "sdr",
     "transcript"
    ],
    "countries": [
+    "COL",
     "SOM"
    ],
    "tags": [
@@ -1076,7 +1081,8 @@
    ],
    "record_ids": [
     "E0034",
-    "E0240"
+    "E0240",
+    "E0376"
    ],
    "unmerged": false,
    "highlight": {
@@ -5366,14 +5372,17 @@
    "statement": "Information management assets can be sorted deliberately: those to align with government systems from the start, such as master facility lists and asset inventories; those that transfer quickly, such as partner activity data in a receiving-friendly format; and those too complex or not relevant to transfer.",
    "theme": "Transition",
    "type": "enabler",
-   "strength": "low",
-   "n_records": 1,
-   "n_sources": 1,
-   "n_streams": 1,
+   "strength": "high",
+   "n_records": 2,
+   "n_sources": 2,
+   "n_streams": 2,
    "streams": [
-    "sdr"
+    "sdr",
+    "transcript"
    ],
-   "countries": [],
+   "countries": [
+    "COL"
+   ],
    "tags": [
     "information-management",
     "transition-handover"
@@ -5383,9 +5392,15 @@
     "gov-national"
    ],
    "record_ids": [
-    "E0247"
+    "E0247",
+    "E0378"
    ],
-   "unmerged": false
+   "unmerged": false,
+   "highlight": {
+    "headline": "Sort your data before you have to hand it over",
+    "plain": "Not everything transfers. Some products should be built jointly with government from the start, some can move quickly if reformatted, and some are too complex or simply not relevant to the receiver. Sorting them early turns a scramble into a handover.",
+    "so_what": "Inventory what the cluster holds and mark each item: align now, transfer later, or retire. Do it while there is still IM capacity to do it."
+   }
   },
   {
    "finding_id": "F321",
@@ -6031,17 +6046,20 @@
   },
   {
    "finding_id": "F346",
-   "statement": "A cluster with a transition plan and agreed readiness indicators can show concretely that conditions are not yet met, which is the most effective way to resist a premature, funding-driven deactivation.",
+   "statement": "A costed transfer plan was prepared with a risk analysis and an inventory of information resources, to be validated by the humanitarian coordinator, and deliberately framed as a transition rather than a deactivation.",
    "theme": "Transition",
-   "type": "enabler",
-   "strength": "low",
-   "n_records": 1,
-   "n_sources": 1,
-   "n_streams": 1,
+   "type": "practice",
+   "strength": "high",
+   "n_records": 2,
+   "n_sources": 2,
+   "n_streams": 2,
    "streams": [
-    "sdr"
+    "sdr",
+    "transcript"
    ],
-   "countries": [],
+   "countries": [
+    "COL"
+   ],
    "tags": [
     "advocacy",
     "performance",
@@ -6052,9 +6070,15 @@
     "ocha"
    ],
    "record_ids": [
-    "E0277"
+    "E0277",
+    "E0379"
    ],
-   "unmerged": false
+   "unmerged": false,
+   "highlight": {
+    "headline": "A transition plan is also your best defence",
+    "plain": "A costed plan with agreed readiness indicators does two jobs. Where conditions are met it enables an orderly handover. Where they are not, it lets you show concretely why not — which is the strongest argument against a closure driven by budget rather than readiness.",
+    "so_what": "Write the plan early, even if deactivation is not on the table. Frame it as transition, not closure, and get the criteria agreed before the plan is drafted."
+   }
   },
   {
    "finding_id": "F347",
@@ -6506,32 +6530,41 @@
   },
   {
    "finding_id": "F364",
-   "statement": "Government leadership works until a ministry reshuffle moves the trained counterpart, after which the case for coordination has to be rebuilt from the beginning with officials who do not yet see its value.",
+   "statement": "The entire counterpart team at the lead ministry left within one year, including the minister, leaving nobody the cluster had previously worked with; meetings to rebuild the relationship were repeatedly cancelled and the transition dialogue stalled.",
    "theme": "Transition",
    "type": "barrier",
-   "strength": "low",
-   "n_records": 1,
-   "n_sources": 1,
-   "n_streams": 1,
+   "strength": "high",
+   "n_records": 2,
+   "n_sources": 2,
+   "n_streams": 2,
    "streams": [
-    "sdr"
+    "sdr",
+    "transcript"
    ],
    "countries": [
+    "COL",
     "KEN"
    ],
    "tags": [
     "capacity",
     "government-engagement",
-    "staff-turnover"
+    "staff-turnover",
+    "transition-handover"
    ],
    "actors": [
     "cluster",
     "gov-national"
    ],
    "record_ids": [
-    "E0298"
+    "E0298",
+    "E0375"
    ],
-   "unmerged": false
+   "unmerged": false,
+   "highlight": {
+    "headline": "One reshuffle can undo a year of transition work",
+    "plain": "Government engagement is usually built with particular people. When a ministry reorganises or an election moves the whole team, the relationship goes with them and the case for coordination has to be made again from the beginning, often to officials who do not yet see the point.",
+    "so_what": "Anchor the relationship in something institutional — a signed terms of reference, a named unit, a documented process — not in the individuals you happen to know."
+   }
   },
   {
    "finding_id": "F365",
@@ -8300,6 +8333,689 @@
    ],
    "record_ids": [
     "E0374"
+   ],
+   "unmerged": false
+  },
+  {
+   "finding_id": "F500",
+   "statement": "Transition preparation began with a documentation exercise reconstructing how the cluster was formed and how earlier transitions went, combined with a partner survey on expectations and recommendations.",
+   "theme": "Transition",
+   "type": "enabler",
+   "strength": "low",
+   "n_records": 1,
+   "n_sources": 1,
+   "n_streams": 1,
+   "streams": [
+    "transcript"
+   ],
+   "countries": [
+    "COL"
+   ],
+   "tags": [
+    "information-management",
+    "transition-handover"
+   ],
+   "actors": [
+    "cluster",
+    "ingo",
+    "local-ngo"
+   ],
+   "record_ids": [
+    "E0380"
+   ],
+   "unmerged": false
+  },
+  {
+   "finding_id": "F501",
+   "statement": "When the regulatory water ministry proved not to be operational during emergencies, the cluster shifted its transition counterpart to the health ministry, which works directly with municipalities on water quality, vector control, sanitation and hygiene.",
+   "theme": "Transition",
+   "type": "enabler",
+   "strength": "low",
+   "n_records": 1,
+   "n_sources": 1,
+   "n_streams": 1,
+   "streams": [
+    "transcript"
+   ],
+   "countries": [
+    "COL"
+   ],
+   "tags": [
+    "government-engagement",
+    "transition-handover"
+   ],
+   "actors": [
+    "cluster",
+    "gov-national"
+   ],
+   "record_ids": [
+    "E0381"
+   ],
+   "unmerged": false
+  },
+  {
+   "finding_id": "F502",
+   "statement": "The proposed successor is a specialised technical roundtable inside an existing inter-institutional environmental health commission, which already brings together the water ministry, the health ministry and national research institutes, serving as both an operational and an advisory body.",
+   "theme": "Transition",
+   "type": "practice",
+   "strength": "low",
+   "n_records": 1,
+   "n_sources": 1,
+   "n_streams": 1,
+   "streams": [
+    "transcript"
+   ],
+   "countries": [
+    "COL"
+   ],
+   "tags": [
+    "coordination-architecture",
+    "government-engagement",
+    "transition-handover"
+   ],
+   "actors": [
+    "cluster",
+    "gov-national"
+   ],
+   "record_ids": [
+    "E0382"
+   ],
+   "unmerged": false
+  },
+  {
+   "finding_id": "F503",
+   "statement": "A change of national government froze transition dialogues, with the incoming administration signalling a reduction in the number of government entities and its position on humanitarian cooperation not yet known.",
+   "theme": "Transition",
+   "type": "barrier",
+   "strength": "low",
+   "n_records": 1,
+   "n_sources": 1,
+   "n_streams": 1,
+   "streams": [
+    "transcript"
+   ],
+   "countries": [
+    "COL"
+   ],
+   "tags": [
+    "government-engagement",
+    "transition-handover"
+   ],
+   "actors": [
+    "cluster",
+    "gov-national"
+   ],
+   "record_ids": [
+    "E0383"
+   ],
+   "unmerged": false
+  },
+  {
+   "finding_id": "F504",
+   "statement": "The cluster set three explicit conditions for its position that it should transition rather than deactivate: humanitarian needs have worsened rather than improved, government capacity that is strong nationally is not matched at territorial level where recurrent emergencies overwhelm resources, and needs persist.",
+   "theme": "Transition",
+   "type": "context",
+   "strength": "low",
+   "n_records": 1,
+   "n_sources": 1,
+   "n_streams": 1,
+   "streams": [
+    "transcript"
+   ],
+   "countries": [
+    "COL"
+   ],
+   "tags": [
+    "government-engagement",
+    "performance",
+    "transition-handover"
+   ],
+   "actors": [
+    "cluster",
+    "gov-national"
+   ],
+   "record_ids": [
+    "E0384"
+   ],
+   "unmerged": false
+  },
+  {
+   "finding_id": "F505",
+   "statement": "The separate refugee and migrant response plan is being discontinued and merged into a single response plan, with refugees and migrants included only where they intend to remain, and no regional refugee plan will follow.",
+   "theme": "Transition",
+   "type": "context",
+   "strength": "low",
+   "n_records": 1,
+   "n_sources": 1,
+   "n_streams": 1,
+   "streams": [
+    "transcript"
+   ],
+   "countries": [
+    "COL"
+   ],
+   "tags": [
+    "coordination-architecture",
+    "hpc"
+   ],
+   "actors": [
+    "cluster",
+    "ocha",
+    "un-agency"
+   ],
+   "record_ids": [
+    "E0385"
+   ],
+   "unmerged": false
+  },
+  {
+   "finding_id": "F506",
+   "statement": "A short implementation window of four to six months led almost all partners to prioritise distribution of critical supplies over rehabilitation or system improvement, because longer works were not feasible in the time available.",
+   "theme": "Transition",
+   "type": "barrier",
+   "strength": "low",
+   "n_records": 1,
+   "n_sources": 1,
+   "n_streams": 1,
+   "streams": [
+    "transcript"
+   ],
+   "countries": [
+    "COL"
+   ],
+   "tags": [
+    "funding",
+    "pooled-funds",
+    "sustainability"
+   ],
+   "actors": [
+    "donor",
+    "ingo",
+    "un-agency"
+   ],
+   "record_ids": [
+    "E0386"
+   ],
+   "unmerged": false
+  },
+  {
+   "finding_id": "F507",
+   "statement": "A twelve-month implementation window in the next funding round is expected to allow more integrated work and sustained presence rather than rapid distribution.",
+   "theme": "Transition",
+   "type": "enabler",
+   "strength": "low",
+   "n_records": 1,
+   "n_sources": 1,
+   "n_streams": 1,
+   "streams": [
+    "transcript"
+   ],
+   "countries": [
+    "COL"
+   ],
+   "tags": [
+    "funding",
+    "sustainability"
+   ],
+   "actors": [
+    "cluster",
+    "donor"
+   ],
+   "record_ids": [
+    "E0387"
+   ],
+   "unmerged": false
+  },
+  {
+   "finding_id": "F508",
+   "statement": "Clusters were consulted in the second allocation round, asked to submit a matrix recommending municipalities together with substantive observations, after having raised the omission from the first round.",
+   "theme": "ABC",
+   "type": "enabler",
+   "strength": "low",
+   "n_records": 1,
+   "n_sources": 1,
+   "n_streams": 1,
+   "streams": [
+    "transcript"
+   ],
+   "countries": [
+    "COL"
+   ],
+   "tags": [
+    "advocacy",
+    "pooled-funds"
+   ],
+   "actors": [
+    "cluster",
+    "ocha"
+   ],
+   "record_ids": [
+    "E0388"
+   ],
+   "unmerged": false
+  },
+  {
+   "finding_id": "F509",
+   "statement": "Life-saving criteria should extend beyond supply distribution to include contributions to protective environments — water and sanitation in schools, shelters and temporary accommodation — so that funded actions are intersectoral rather than dispersed.",
+   "theme": "Transition",
+   "type": "recommendation",
+   "strength": "low",
+   "n_records": 1,
+   "n_sources": 1,
+   "n_streams": 1,
+   "streams": [
+    "transcript"
+   ],
+   "countries": [
+    "COL"
+   ],
+   "tags": [
+    "advocacy",
+    "multisector",
+    "pooled-funds"
+   ],
+   "actors": [
+    "cluster",
+    "donor",
+    "ocha"
+   ],
+   "record_ids": [
+    "E0389"
+   ],
+   "unmerged": false
+  },
+  {
+   "finding_id": "F510",
+   "statement": "The cluster recommended including municipalities at the second-highest severity level where armed conflict had recently intensified or where gaps in child health and preventable mortality persisted, rather than restricting allocations to the highest severity band alone.",
+   "theme": "Transition",
+   "type": "practice",
+   "strength": "low",
+   "n_records": 1,
+   "n_sources": 1,
+   "n_streams": 1,
+   "streams": [
+    "transcript"
+   ],
+   "countries": [
+    "COL"
+   ],
+   "tags": [
+    "geographic-targeting",
+    "pooled-funds"
+   ],
+   "actors": [
+    "cluster",
+    "ocha"
+   ],
+   "record_ids": [
+    "E0390"
+   ],
+   "unmerged": false
+  },
+  {
+   "finding_id": "F511",
+   "statement": "Many partners making rapid entries into and exits from communities in order to reach the highest-severity municipalities creates a risk of doing harm, which the cluster raised with the donor.",
+   "theme": "Transition",
+   "type": "barrier",
+   "strength": "low",
+   "n_records": 1,
+   "n_sources": 1,
+   "n_streams": 1,
+   "streams": [
+    "transcript"
+   ],
+   "countries": [
+    "COL"
+   ],
+   "tags": [
+    "aap",
+    "pooled-funds"
+   ],
+   "actors": [
+    "community",
+    "donor",
+    "ingo"
+   ],
+   "record_ids": [
+    "E0391"
+   ],
+   "unmerged": false
+  },
+  {
+   "finding_id": "F512",
+   "statement": "Partners reported nutrition actors distributing powdered milk without complementary water and sanitation activities, which turns a nutrition intervention into a health risk.",
+   "theme": "Transition",
+   "type": "barrier",
+   "strength": "low",
+   "n_records": 1,
+   "n_sources": 1,
+   "n_streams": 1,
+   "streams": [
+    "transcript"
+   ],
+   "countries": [
+    "COL"
+   ],
+   "tags": [
+    "aap",
+    "multisector"
+   ],
+   "actors": [
+    "ingo",
+    "un-agency"
+   ],
+   "record_ids": [
+    "E0392"
+   ],
+   "unmerged": false
+  },
+  {
+   "finding_id": "F513",
+   "statement": "Armed group control of territory confines communities and restricts movement, cutting access to rivers and water sources and forcing reliance on unsafe storage, with documented increases in infectious disease; indigenous and Afro-descendant communities in the Pacific region are the most affected.",
+   "theme": "Transition",
+   "type": "context",
+   "strength": "low",
+   "n_records": 1,
+   "n_sources": 1,
+   "n_streams": 1,
+   "streams": [
+    "transcript"
+   ],
+   "countries": [
+    "COL"
+   ],
+   "tags": [
+    "geographic-targeting",
+    "inclusion"
+   ],
+   "actors": [
+    "community",
+    "local-ngo"
+   ],
+   "record_ids": [
+    "E0393"
+   ],
+   "unmerged": false
+  },
+  {
+   "finding_id": "F514",
+   "statement": "The main humanitarian donor for the sector prioritises protection, health and education, funding very little WASH directly and concentrating instead on intersectoral coordination and information.",
+   "theme": "Transition",
+   "type": "context",
+   "strength": "low",
+   "n_records": 1,
+   "n_sources": 1,
+   "n_streams": 1,
+   "streams": [
+    "transcript"
+   ],
+   "countries": [
+    "COL"
+   ],
+   "tags": [
+    "funding"
+   ],
+   "actors": [
+    "cluster",
+    "donor"
+   ],
+   "record_ids": [
+    "E0394"
+   ],
+   "unmerged": false
+  },
+  {
+   "finding_id": "F515",
+   "statement": "Multi-sector needs assessment has not been run for around three years because the country has substantial official data, and the sector calculation does not rely on it.",
+   "theme": "Transition",
+   "type": "context",
+   "strength": "low",
+   "n_records": 1,
+   "n_sources": 1,
+   "n_streams": 1,
+   "streams": [
+    "transcript"
+   ],
+   "countries": [
+    "COL"
+   ],
+   "tags": [
+    "hpc",
+    "information-management"
+   ],
+   "actors": [
+    "cluster",
+    "ocha"
+   ],
+   "record_ids": [
+    "E0395"
+   ],
+   "unmerged": false
+  },
+  {
+   "finding_id": "F516",
+   "statement": "The cluster must now produce the refugee and migrant disaggregation itself, a function previously carried by the separate refugee coordination platform, without additional capacity.",
+   "theme": "Transition",
+   "type": "barrier",
+   "strength": "low",
+   "n_records": 1,
+   "n_sources": 1,
+   "n_streams": 1,
+   "streams": [
+    "transcript"
+   ],
+   "countries": [
+    "COL"
+   ],
+   "tags": [
+    "capacity",
+    "hpc",
+    "information-management"
+   ],
+   "actors": [
+    "cluster",
+    "un-agency"
+   ],
+   "record_ids": [
+    "E0396"
+   ],
+   "unmerged": false
+  },
+  {
+   "finding_id": "F517",
+   "statement": "Data needed to estimate refugee and migrant needs sits in a national government social registry that the cluster has found difficult to obtain access to.",
+   "theme": "Transition",
+   "type": "barrier",
+   "strength": "low",
+   "n_records": 1,
+   "n_sources": 1,
+   "n_streams": 1,
+   "streams": [
+    "transcript"
+   ],
+   "countries": [
+    "COL"
+   ],
+   "tags": [
+    "government-engagement",
+    "information-management"
+   ],
+   "actors": [
+    "cluster",
+    "gov-national"
+   ],
+   "record_ids": [
+    "E0397"
+   ],
+   "unmerged": false
+  },
+  {
+   "finding_id": "F518",
+   "statement": "The cluster documents its severity and needs methodology and publishes it openly alongside the results, so the basis of the calculation is available to anyone who questions it.",
+   "theme": "Transition",
+   "type": "enabler",
+   "strength": "low",
+   "n_records": 1,
+   "n_sources": 1,
+   "n_streams": 1,
+   "streams": [
+    "transcript"
+   ],
+   "countries": [
+    "COL"
+   ],
+   "tags": [
+    "hpc",
+    "information-management",
+    "performance"
+   ],
+   "actors": [
+    "cluster"
+   ],
+   "record_ids": [
+    "E0398"
+   ],
+   "unmerged": false
+  },
+  {
+   "finding_id": "F519",
+   "statement": "A partner agency challenged the sector needs methodology across several clusters as reflecting poverty rather than humanitarian need; the cluster defended it on the basis that it combines conflict exposure, disaster incidence and public health indicators alongside service coverage.",
+   "theme": "Transition",
+   "type": "context",
+   "strength": "low",
+   "n_records": 1,
+   "n_sources": 1,
+   "n_streams": 1,
+   "streams": [
+    "transcript"
+   ],
+   "countries": [
+    "COL"
+   ],
+   "tags": [
+    "hpc",
+    "performance"
+   ],
+   "actors": [
+    "cluster",
+    "un-agency"
+   ],
+   "record_ids": [
+    "E0399"
+   ],
+   "unmerged": false
+  },
+  {
+   "finding_id": "F520",
+   "statement": "Strong working relationships with the protection and shelter clusters allow WASH to be positioned as an enabling sector for others, which matters where the crisis is characterised primarily as a protection crisis.",
+   "theme": "Transition",
+   "type": "enabler",
+   "strength": "low",
+   "n_records": 1,
+   "n_sources": 1,
+   "n_streams": 1,
+   "streams": [
+    "transcript"
+   ],
+   "countries": [
+    "COL"
+   ],
+   "tags": [
+    "multisector",
+    "partnerships"
+   ],
+   "actors": [
+    "cluster",
+    "ingo"
+   ],
+   "record_ids": [
+    "E0400"
+   ],
+   "unmerged": false
+  },
+  {
+   "finding_id": "F521",
+   "statement": "Temporary accommodation managed by the national disaster authority prioritises speed of implementation, with little attention to gender or to the needs of children, and shelter and WASH standards are not consistently applied.",
+   "theme": "Transition",
+   "type": "barrier",
+   "strength": "low",
+   "n_records": 1,
+   "n_sources": 1,
+   "n_streams": 1,
+   "streams": [
+    "transcript"
+   ],
+   "countries": [
+    "COL"
+   ],
+   "tags": [
+    "government-engagement",
+    "inclusion"
+   ],
+   "actors": [
+    "cluster",
+    "gov-national"
+   ],
+   "record_ids": [
+    "E0401"
+   ],
+   "unmerged": false
+  },
+  {
+   "finding_id": "F522",
+   "statement": "Gender and sexual and reproductive health areas of responsibility have been heavily defunded, and education was excluded from both allocation rounds on the grounds that its activities are not life-saving.",
+   "theme": "Transition",
+   "type": "context",
+   "strength": "low",
+   "n_records": 1,
+   "n_sources": 1,
+   "n_streams": 1,
+   "streams": [
+    "transcript"
+   ],
+   "countries": [
+    "COL"
+   ],
+   "tags": [
+    "funding",
+    "inclusion",
+    "multisector"
+   ],
+   "actors": [
+    "donor",
+    "ocha"
+   ],
+   "record_ids": [
+    "E0402"
+   ],
+   "unmerged": false
+  },
+  {
+   "finding_id": "F523",
+   "statement": "Where a technical study would document vulnerability publicly, its timing should be agreed with the incoming government first, since publishing during a change of administration can undermine the transition relationship it is meant to support.",
+   "theme": "Transition",
+   "type": "recommendation",
+   "strength": "low",
+   "n_records": 1,
+   "n_sources": 1,
+   "n_streams": 1,
+   "streams": [
+    "transcript"
+   ],
+   "countries": [
+    "COL"
+   ],
+   "tags": [
+    "advocacy",
+    "government-engagement",
+    "transition-handover"
+   ],
+   "actors": [
+    "cluster",
+    "gov-national"
+   ],
+   "record_ids": [
+    "E0403"
    ],
    "unmerged": false
   }
@@ -16689,6 +17405,717 @@
    "date_collected": "2026-07-17",
    "confidence": "medium",
    "status": "draft"
+  },
+  {
+   "id": "E0375",
+   "finding_id": "F364",
+   "theme": "Transition",
+   "type": "barrier",
+   "statement": "The entire counterpart team at the lead ministry left within one year, including the minister, leaving nobody the cluster had previously worked with; meetings to rebuild the relationship were repeatedly cancelled and the transition dialogue stalled.",
+   "level": "national",
+   "countries": [
+    "COL"
+   ],
+   "actors": [
+    "gov-national",
+    "cluster"
+   ],
+   "tags": [
+    "staff-turnover",
+    "government-engagement",
+    "transition-handover"
+   ],
+   "stream": "transcript",
+   "source_id": "S103",
+   "date_collected": "2026-08-03",
+   "confidence": "high",
+   "status": "draft"
+  },
+  {
+   "id": "E0376",
+   "finding_id": "F028",
+   "theme": "Both",
+   "type": "barrier",
+   "statement": "The cluster has had no dedicated information management post this year, having previously been supported both by the refugee coordination platform and directly by the lead agency, and now relies on intermittent consortium and consultancy support.",
+   "level": "national",
+   "countries": [
+    "COL"
+   ],
+   "actors": [
+    "cluster",
+    "un-agency"
+   ],
+   "tags": [
+    "capacity",
+    "information-management",
+    "funding"
+   ],
+   "stream": "transcript",
+   "source_id": "S103",
+   "date_collected": "2026-08-03",
+   "confidence": "high",
+   "status": "draft"
+  },
+  {
+   "id": "E0377",
+   "finding_id": "F015",
+   "theme": "ABC",
+   "type": "barrier",
+   "statement": "Clusters were treated as passive actors in the first pooled fund allocation, and the indicator list issued to partners diverged from the indicators agreed in the sector operational framework.",
+   "level": "national",
+   "countries": [
+    "COL"
+   ],
+   "actors": [
+    "cluster",
+    "ocha",
+    "donor"
+   ],
+   "tags": [
+    "pooled-funds",
+    "funding",
+    "performance"
+   ],
+   "stream": "transcript",
+   "source_id": "S103",
+   "date_collected": "2026-08-03",
+   "confidence": "high",
+   "status": "draft"
+  },
+  {
+   "id": "E0378",
+   "finding_id": "F320",
+   "theme": "Transition",
+   "type": "practice",
+   "statement": "An inventory of the information assets the cluster holds was compiled as part of transition planning, so that products can be summarised and taken on by government entities.",
+   "level": "national",
+   "countries": [
+    "COL"
+   ],
+   "actors": [
+    "cluster",
+    "gov-national"
+   ],
+   "tags": [
+    "information-management",
+    "transition-handover"
+   ],
+   "stream": "transcript",
+   "source_id": "S103",
+   "date_collected": "2026-08-03",
+   "confidence": "high",
+   "status": "draft"
+  },
+  {
+   "id": "E0379",
+   "finding_id": "F346",
+   "theme": "Transition",
+   "type": "practice",
+   "statement": "A costed transfer plan was prepared with a risk analysis and an inventory of information resources, to be validated by the humanitarian coordinator, and deliberately framed as a transition rather than a deactivation.",
+   "level": "national",
+   "countries": [
+    "COL"
+   ],
+   "actors": [
+    "cluster",
+    "ocha"
+   ],
+   "tags": [
+    "transition-handover",
+    "performance"
+   ],
+   "stream": "transcript",
+   "source_id": "S103",
+   "date_collected": "2026-08-03",
+   "confidence": "high",
+   "status": "draft"
+  },
+  {
+   "id": "E0380",
+   "finding_id": "F500",
+   "theme": "Transition",
+   "type": "enabler",
+   "statement": "Transition preparation began with a documentation exercise reconstructing how the cluster was formed and how earlier transitions went, combined with a partner survey on expectations and recommendations.",
+   "level": "national",
+   "countries": [
+    "COL"
+   ],
+   "actors": [
+    "cluster",
+    "ingo",
+    "local-ngo"
+   ],
+   "tags": [
+    "transition-handover",
+    "information-management"
+   ],
+   "stream": "transcript",
+   "source_id": "S103",
+   "date_collected": "2026-08-03",
+   "confidence": "high",
+   "status": "draft"
+  },
+  {
+   "id": "E0381",
+   "finding_id": "F501",
+   "theme": "Transition",
+   "type": "enabler",
+   "statement": "When the regulatory water ministry proved not to be operational during emergencies, the cluster shifted its transition counterpart to the health ministry, which works directly with municipalities on water quality, vector control, sanitation and hygiene.",
+   "level": "national",
+   "countries": [
+    "COL"
+   ],
+   "actors": [
+    "gov-national",
+    "cluster"
+   ],
+   "tags": [
+    "government-engagement",
+    "transition-handover"
+   ],
+   "stream": "transcript",
+   "source_id": "S103",
+   "date_collected": "2026-08-03",
+   "confidence": "high",
+   "status": "draft"
+  },
+  {
+   "id": "E0382",
+   "finding_id": "F502",
+   "theme": "Transition",
+   "type": "practice",
+   "statement": "The proposed successor is a specialised technical roundtable inside an existing inter-institutional environmental health commission, which already brings together the water ministry, the health ministry and national research institutes, serving as both an operational and an advisory body.",
+   "level": "national",
+   "countries": [
+    "COL"
+   ],
+   "actors": [
+    "gov-national",
+    "cluster"
+   ],
+   "tags": [
+    "transition-handover",
+    "government-engagement",
+    "coordination-architecture"
+   ],
+   "stream": "transcript",
+   "source_id": "S103",
+   "date_collected": "2026-08-03",
+   "confidence": "high",
+   "status": "draft"
+  },
+  {
+   "id": "E0383",
+   "finding_id": "F503",
+   "theme": "Transition",
+   "type": "barrier",
+   "statement": "A change of national government froze transition dialogues, with the incoming administration signalling a reduction in the number of government entities and its position on humanitarian cooperation not yet known.",
+   "level": "national",
+   "countries": [
+    "COL"
+   ],
+   "actors": [
+    "gov-national",
+    "cluster"
+   ],
+   "tags": [
+    "government-engagement",
+    "transition-handover"
+   ],
+   "stream": "transcript",
+   "source_id": "S103",
+   "date_collected": "2026-08-03",
+   "confidence": "high",
+   "status": "draft"
+  },
+  {
+   "id": "E0384",
+   "finding_id": "F504",
+   "theme": "Transition",
+   "type": "context",
+   "statement": "The cluster set three explicit conditions for its position that it should transition rather than deactivate: humanitarian needs have worsened rather than improved, government capacity that is strong nationally is not matched at territorial level where recurrent emergencies overwhelm resources, and needs persist.",
+   "level": "national",
+   "countries": [
+    "COL"
+   ],
+   "actors": [
+    "cluster",
+    "gov-national"
+   ],
+   "tags": [
+    "transition-handover",
+    "performance",
+    "government-engagement"
+   ],
+   "stream": "transcript",
+   "source_id": "S103",
+   "date_collected": "2026-08-03",
+   "confidence": "high",
+   "status": "draft"
+  },
+  {
+   "id": "E0385",
+   "finding_id": "F505",
+   "theme": "Transition",
+   "type": "context",
+   "statement": "The separate refugee and migrant response plan is being discontinued and merged into a single response plan, with refugees and migrants included only where they intend to remain, and no regional refugee plan will follow.",
+   "level": "national",
+   "countries": [
+    "COL"
+   ],
+   "actors": [
+    "ocha",
+    "cluster",
+    "un-agency"
+   ],
+   "tags": [
+    "hpc",
+    "coordination-architecture"
+   ],
+   "stream": "transcript",
+   "source_id": "S103",
+   "date_collected": "2026-08-03",
+   "confidence": "high",
+   "status": "draft"
+  },
+  {
+   "id": "E0386",
+   "finding_id": "F506",
+   "theme": "Transition",
+   "type": "barrier",
+   "statement": "A short implementation window of four to six months led almost all partners to prioritise distribution of critical supplies over rehabilitation or system improvement, because longer works were not feasible in the time available.",
+   "level": "national",
+   "countries": [
+    "COL"
+   ],
+   "actors": [
+    "ingo",
+    "un-agency",
+    "donor"
+   ],
+   "tags": [
+    "funding",
+    "sustainability",
+    "pooled-funds"
+   ],
+   "stream": "transcript",
+   "source_id": "S103",
+   "date_collected": "2026-08-03",
+   "confidence": "high",
+   "status": "draft"
+  },
+  {
+   "id": "E0387",
+   "finding_id": "F507",
+   "theme": "Transition",
+   "type": "enabler",
+   "statement": "A twelve-month implementation window in the next funding round is expected to allow more integrated work and sustained presence rather than rapid distribution.",
+   "level": "national",
+   "countries": [
+    "COL"
+   ],
+   "actors": [
+    "donor",
+    "cluster"
+   ],
+   "tags": [
+    "funding",
+    "sustainability"
+   ],
+   "stream": "transcript",
+   "source_id": "S103",
+   "date_collected": "2026-08-03",
+   "confidence": "high",
+   "status": "draft"
+  },
+  {
+   "id": "E0388",
+   "finding_id": "F508",
+   "theme": "ABC",
+   "type": "enabler",
+   "statement": "Clusters were consulted in the second allocation round, asked to submit a matrix recommending municipalities together with substantive observations, after having raised the omission from the first round.",
+   "level": "national",
+   "countries": [
+    "COL"
+   ],
+   "actors": [
+    "ocha",
+    "cluster"
+   ],
+   "tags": [
+    "pooled-funds",
+    "advocacy"
+   ],
+   "stream": "transcript",
+   "source_id": "S103",
+   "date_collected": "2026-08-03",
+   "confidence": "high",
+   "status": "draft"
+  },
+  {
+   "id": "E0389",
+   "finding_id": "F509",
+   "theme": "Transition",
+   "type": "recommendation",
+   "statement": "Life-saving criteria should extend beyond supply distribution to include contributions to protective environments — water and sanitation in schools, shelters and temporary accommodation — so that funded actions are intersectoral rather than dispersed.",
+   "level": "national",
+   "countries": [
+    "COL"
+   ],
+   "actors": [
+    "cluster",
+    "donor",
+    "ocha"
+   ],
+   "tags": [
+    "multisector",
+    "pooled-funds",
+    "advocacy"
+   ],
+   "stream": "transcript",
+   "source_id": "S103",
+   "date_collected": "2026-08-03",
+   "confidence": "high",
+   "status": "draft"
+  },
+  {
+   "id": "E0390",
+   "finding_id": "F510",
+   "theme": "Transition",
+   "type": "practice",
+   "statement": "The cluster recommended including municipalities at the second-highest severity level where armed conflict had recently intensified or where gaps in child health and preventable mortality persisted, rather than restricting allocations to the highest severity band alone.",
+   "level": "national",
+   "countries": [
+    "COL"
+   ],
+   "actors": [
+    "cluster",
+    "ocha"
+   ],
+   "tags": [
+    "geographic-targeting",
+    "pooled-funds"
+   ],
+   "stream": "transcript",
+   "source_id": "S103",
+   "date_collected": "2026-08-03",
+   "confidence": "high",
+   "status": "draft"
+  },
+  {
+   "id": "E0391",
+   "finding_id": "F511",
+   "theme": "Transition",
+   "type": "barrier",
+   "statement": "Many partners making rapid entries into and exits from communities in order to reach the highest-severity municipalities creates a risk of doing harm, which the cluster raised with the donor.",
+   "level": "national",
+   "countries": [
+    "COL"
+   ],
+   "actors": [
+    "ingo",
+    "community",
+    "donor"
+   ],
+   "tags": [
+    "aap",
+    "pooled-funds"
+   ],
+   "stream": "transcript",
+   "source_id": "S103",
+   "date_collected": "2026-08-03",
+   "confidence": "high",
+   "status": "draft"
+  },
+  {
+   "id": "E0392",
+   "finding_id": "F512",
+   "theme": "Transition",
+   "type": "barrier",
+   "statement": "Partners reported nutrition actors distributing powdered milk without complementary water and sanitation activities, which turns a nutrition intervention into a health risk.",
+   "level": "national",
+   "countries": [
+    "COL"
+   ],
+   "actors": [
+    "un-agency",
+    "ingo"
+   ],
+   "tags": [
+    "multisector",
+    "aap"
+   ],
+   "stream": "transcript",
+   "source_id": "S103",
+   "date_collected": "2026-08-03",
+   "confidence": "high",
+   "status": "draft"
+  },
+  {
+   "id": "E0393",
+   "finding_id": "F513",
+   "theme": "Transition",
+   "type": "context",
+   "statement": "Armed group control of territory confines communities and restricts movement, cutting access to rivers and water sources and forcing reliance on unsafe storage, with documented increases in infectious disease; indigenous and Afro-descendant communities in the Pacific region are the most affected.",
+   "level": "subnational",
+   "countries": [
+    "COL"
+   ],
+   "actors": [
+    "community",
+    "local-ngo"
+   ],
+   "tags": [
+    "inclusion",
+    "geographic-targeting"
+   ],
+   "stream": "transcript",
+   "source_id": "S103",
+   "date_collected": "2026-08-03",
+   "confidence": "high",
+   "status": "draft"
+  },
+  {
+   "id": "E0394",
+   "finding_id": "F514",
+   "theme": "Transition",
+   "type": "context",
+   "statement": "The main humanitarian donor for the sector prioritises protection, health and education, funding very little WASH directly and concentrating instead on intersectoral coordination and information.",
+   "level": "national",
+   "countries": [
+    "COL"
+   ],
+   "actors": [
+    "donor",
+    "cluster"
+   ],
+   "tags": [
+    "funding"
+   ],
+   "stream": "transcript",
+   "source_id": "S103",
+   "date_collected": "2026-08-03",
+   "confidence": "high",
+   "status": "draft"
+  },
+  {
+   "id": "E0395",
+   "finding_id": "F515",
+   "theme": "Transition",
+   "type": "context",
+   "statement": "Multi-sector needs assessment has not been run for around three years because the country has substantial official data, and the sector calculation does not rely on it.",
+   "level": "national",
+   "countries": [
+    "COL"
+   ],
+   "actors": [
+    "cluster",
+    "ocha"
+   ],
+   "tags": [
+    "hpc",
+    "information-management"
+   ],
+   "stream": "transcript",
+   "source_id": "S103",
+   "date_collected": "2026-08-03",
+   "confidence": "high",
+   "status": "draft"
+  },
+  {
+   "id": "E0396",
+   "finding_id": "F516",
+   "theme": "Transition",
+   "type": "barrier",
+   "statement": "The cluster must now produce the refugee and migrant disaggregation itself, a function previously carried by the separate refugee coordination platform, without additional capacity.",
+   "level": "national",
+   "countries": [
+    "COL"
+   ],
+   "actors": [
+    "cluster",
+    "un-agency"
+   ],
+   "tags": [
+    "hpc",
+    "capacity",
+    "information-management"
+   ],
+   "stream": "transcript",
+   "source_id": "S103",
+   "date_collected": "2026-08-03",
+   "confidence": "high",
+   "status": "draft"
+  },
+  {
+   "id": "E0397",
+   "finding_id": "F517",
+   "theme": "Transition",
+   "type": "barrier",
+   "statement": "Data needed to estimate refugee and migrant needs sits in a national government social registry that the cluster has found difficult to obtain access to.",
+   "level": "national",
+   "countries": [
+    "COL"
+   ],
+   "actors": [
+    "gov-national",
+    "cluster"
+   ],
+   "tags": [
+    "information-management",
+    "government-engagement"
+   ],
+   "stream": "transcript",
+   "source_id": "S103",
+   "date_collected": "2026-08-03",
+   "confidence": "high",
+   "status": "draft"
+  },
+  {
+   "id": "E0398",
+   "finding_id": "F518",
+   "theme": "Transition",
+   "type": "enabler",
+   "statement": "The cluster documents its severity and needs methodology and publishes it openly alongside the results, so the basis of the calculation is available to anyone who questions it.",
+   "level": "national",
+   "countries": [
+    "COL"
+   ],
+   "actors": [
+    "cluster"
+   ],
+   "tags": [
+    "information-management",
+    "performance",
+    "hpc"
+   ],
+   "stream": "transcript",
+   "source_id": "S103",
+   "date_collected": "2026-08-03",
+   "confidence": "high",
+   "status": "draft"
+  },
+  {
+   "id": "E0399",
+   "finding_id": "F519",
+   "theme": "Transition",
+   "type": "context",
+   "statement": "A partner agency challenged the sector needs methodology across several clusters as reflecting poverty rather than humanitarian need; the cluster defended it on the basis that it combines conflict exposure, disaster incidence and public health indicators alongside service coverage.",
+   "level": "national",
+   "countries": [
+    "COL"
+   ],
+   "actors": [
+    "un-agency",
+    "cluster"
+   ],
+   "tags": [
+    "hpc",
+    "performance"
+   ],
+   "stream": "transcript",
+   "source_id": "S103",
+   "date_collected": "2026-08-03",
+   "confidence": "high",
+   "status": "draft"
+  },
+  {
+   "id": "E0400",
+   "finding_id": "F520",
+   "theme": "Transition",
+   "type": "enabler",
+   "statement": "Strong working relationships with the protection and shelter clusters allow WASH to be positioned as an enabling sector for others, which matters where the crisis is characterised primarily as a protection crisis.",
+   "level": "national",
+   "countries": [
+    "COL"
+   ],
+   "actors": [
+    "cluster",
+    "ingo"
+   ],
+   "tags": [
+    "partnerships",
+    "multisector"
+   ],
+   "stream": "transcript",
+   "source_id": "S103",
+   "date_collected": "2026-08-03",
+   "confidence": "high",
+   "status": "draft"
+  },
+  {
+   "id": "E0401",
+   "finding_id": "F521",
+   "theme": "Transition",
+   "type": "barrier",
+   "statement": "Temporary accommodation managed by the national disaster authority prioritises speed of implementation, with little attention to gender or to the needs of children, and shelter and WASH standards are not consistently applied.",
+   "level": "subnational",
+   "countries": [
+    "COL"
+   ],
+   "actors": [
+    "gov-national",
+    "cluster"
+   ],
+   "tags": [
+    "inclusion",
+    "government-engagement"
+   ],
+   "stream": "transcript",
+   "source_id": "S103",
+   "date_collected": "2026-08-03",
+   "confidence": "high",
+   "status": "draft"
+  },
+  {
+   "id": "E0402",
+   "finding_id": "F522",
+   "theme": "Transition",
+   "type": "context",
+   "statement": "Gender and sexual and reproductive health areas of responsibility have been heavily defunded, and education was excluded from both allocation rounds on the grounds that its activities are not life-saving.",
+   "level": "national",
+   "countries": [
+    "COL"
+   ],
+   "actors": [
+    "donor",
+    "ocha"
+   ],
+   "tags": [
+    "funding",
+    "inclusion",
+    "multisector"
+   ],
+   "stream": "transcript",
+   "source_id": "S103",
+   "date_collected": "2026-08-03",
+   "confidence": "high",
+   "status": "draft"
+  },
+  {
+   "id": "E0403",
+   "finding_id": "F523",
+   "theme": "Transition",
+   "type": "recommendation",
+   "statement": "Where a technical study would document vulnerability publicly, its timing should be agreed with the incoming government first, since publishing during a change of administration can undermine the transition relationship it is meant to support.",
+   "level": "national",
+   "countries": [
+    "COL"
+   ],
+   "actors": [
+    "gov-national",
+    "cluster"
+   ],
+   "tags": [
+    "government-engagement",
+    "advocacy",
+    "transition-handover"
+   ],
+   "stream": "transcript",
+   "source_id": "S103",
+   "date_collected": "2026-08-03",
+   "confidence": "high",
+   "status": "draft"
   }
  ],
  "sources": [
@@ -17887,6 +19314,19 @@
    "access": "public",
    "legacy_id": "",
    "source_group": "transition-sdr"
+  },
+  {
+   "source_id": "S103",
+   "title": "Country consultation — Colombia",
+   "organisation": "Global WASH Cluster",
+   "year": "2026",
+   "type": "interview",
+   "url": "",
+   "stream": "transcript",
+   "date_added": "2026-08-03",
+   "access": "restricted",
+   "legacy_id": "",
+   "source_group": ""
   }
  ]
 }
