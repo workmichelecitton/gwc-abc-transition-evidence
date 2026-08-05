@@ -66,10 +66,10 @@
  "generated": "2026-08-05",
  "taxonomy_version": "0.4.0",
  "stats": {
-  "records": 577,
-  "findings": 445,
-  "sources": 102,
-  "countries": 25,
+  "records": 594,
+  "findings": 455,
+  "sources": 103,
+  "countries": 26,
   "withheld_internal": 1
  },
  "taxonomy": {
@@ -655,21 +655,23 @@
   },
   {
    "finding_id": "F015",
-   "statement": "Clusters had limited involvement in the first pooled fund allocation, and the indicator list issued to partners diverged from the indicators agreed in the sector operational framework.",
+   "statement": "Allocation arbitration meetings are normally attended by the cluster coordinator and are where the significant decisions are taken; with the post vacant the sector is absent from them, and that shows in the final allocation strategy.",
    "theme": "ABC",
    "type": "barrier",
-   "strength": "medium",
-   "n_records": 2,
-   "n_sources": 2,
+   "strength": "high",
+   "n_records": 3,
+   "n_sources": 3,
    "n_streams": 1,
    "streams": [
     "transcript"
    ],
    "countries": [
     "COL",
+    "MLI",
     "SOM"
    ],
    "tags": [
+    "advocacy",
     "coordination-architecture",
     "funding",
     "hpc",
@@ -683,7 +685,8 @@
    ],
    "record_ids": [
     "E0020",
-    "E0377"
+    "E0377",
+    "E0596"
    ],
    "unmerged": false
   },
@@ -782,8 +785,8 @@
    "theme": "Both",
    "type": "barrier",
    "strength": "high",
-   "n_records": 5,
-   "n_sources": 4,
+   "n_records": 6,
+   "n_sources": 5,
    "n_streams": 2,
    "streams": [
     "sdr",
@@ -792,6 +795,7 @@
    "countries": [
     "BGD",
     "ETH",
+    "MLI",
     "SDN",
     "SOM"
    ],
@@ -812,7 +816,8 @@
     "E0254",
     "E0259",
     "E0405",
-    "E0559"
+    "E0559",
+    "E0591"
    ],
    "unmerged": false,
    "highlight": {
@@ -4672,6 +4677,296 @@
    "unmerged": false
   },
   {
+   "finding_id": "F1500",
+   "statement": "With the coordinator post vacant, decisions that would normally sit with a coordinator have no home: the co-facilitator is not placed to take them and there is nobody to refer them to.",
+   "theme": "Transition",
+   "type": "barrier",
+   "strength": "low",
+   "n_records": 1,
+   "n_sources": 1,
+   "n_streams": 1,
+   "streams": [
+    "transcript"
+   ],
+   "countries": [
+    "MLI"
+   ],
+   "tags": [
+    "capacity",
+    "coordination-architecture"
+   ],
+   "actors": [
+    "cluster",
+    "un-agency"
+   ],
+   "record_ids": [
+    "E0598"
+   ],
+   "unmerged": false
+  },
+  {
+   "finding_id": "F1501",
+   "statement": "Attending meetings and producing the planning documentation are different demands: the staff member with a fraction of time available can attend, but cannot draft indicators, objectives and strategy against the planning deadlines.",
+   "theme": "Transition",
+   "type": "barrier",
+   "strength": "low",
+   "n_records": 1,
+   "n_sources": 1,
+   "n_streams": 1,
+   "streams": [
+    "transcript"
+   ],
+   "countries": [
+    "MLI"
+   ],
+   "tags": [
+    "capacity",
+    "hpc"
+   ],
+   "actors": [
+    "cluster",
+    "un-agency"
+   ],
+   "record_ids": [
+    "E0599"
+   ],
+   "unmerged": false
+  },
+  {
+   "finding_id": "F1502",
+   "statement": "The proposal for next year removes the international coordinator post and retains a national one, and removes the information management post in favour of a national position; the sector argued that removing either while keeping the other does not work in practice.",
+   "theme": "Transition",
+   "type": "context",
+   "strength": "low",
+   "n_records": 1,
+   "n_sources": 1,
+   "n_streams": 1,
+   "streams": [
+    "transcript"
+   ],
+   "countries": [
+    "MLI"
+   ],
+   "tags": [
+    "capacity",
+    "localisation",
+    "transition-handover"
+   ],
+   "actors": [
+    "cluster",
+    "un-agency"
+   ],
+   "record_ids": [
+    "E0600"
+   ],
+   "unmerged": false
+  },
+  {
+   "finding_id": "F1503",
+   "statement": "Strategic advisory meetings could not be held on the intended cycle through the period of staffing and counterpart changes, with the second of the year taking place only recently.",
+   "theme": "Transition",
+   "type": "barrier",
+   "strength": "low",
+   "n_records": 1,
+   "n_sources": 1,
+   "n_streams": 1,
+   "streams": [
+    "transcript"
+   ],
+   "countries": [
+    "MLI"
+   ],
+   "tags": [
+    "coordination-architecture",
+    "performance"
+   ],
+   "actors": [
+    "cluster",
+    "gov-national"
+   ],
+   "record_ids": [
+    "E0601"
+   ],
+   "unmerged": false
+  },
+  {
+   "finding_id": "F1504",
+   "statement": "Three separate channels collect needs data: a government departmental framework running twice a year but not aligned to planning periods, a national social development channel run with an agency, and the international assessment partner.",
+   "theme": "Both",
+   "type": "context",
+   "strength": "low",
+   "n_records": 1,
+   "n_sources": 1,
+   "n_streams": 1,
+   "streams": [
+    "transcript"
+   ],
+   "countries": [
+    "MLI"
+   ],
+   "tags": [
+    "government-engagement",
+    "hpc",
+    "information-management"
+   ],
+   "actors": [
+    "cluster",
+    "gov-national",
+    "ocha"
+   ],
+   "record_ids": [
+    "E0602"
+   ],
+   "unmerged": false
+  },
+  {
+   "finding_id": "F1505",
+   "statement": "Facing a funding shortfall for the assessment, the country was divided into two zones — one covered by the international partner, the other through a national channel — and the datasets combined afterwards to produce national coverage.",
+   "theme": "Both",
+   "type": "enabler",
+   "strength": "low",
+   "n_records": 1,
+   "n_sources": 1,
+   "n_streams": 1,
+   "streams": [
+    "transcript"
+   ],
+   "countries": [
+    "MLI"
+   ],
+   "tags": [
+    "funding",
+    "hpc",
+    "localisation"
+   ],
+   "actors": [
+    "cluster",
+    "gov-national",
+    "ocha"
+   ],
+   "record_ids": [
+    "E0603"
+   ],
+   "unmerged": false
+  },
+  {
+   "finding_id": "F1506",
+   "statement": "A key informant questionnaire approach piloted with global support allowed data to be gathered in areas the assessment partner could not reach.",
+   "theme": "Both",
+   "type": "enabler",
+   "strength": "low",
+   "n_records": 1,
+   "n_sources": 1,
+   "n_streams": 1,
+   "streams": [
+    "transcript"
+   ],
+   "countries": [
+    "MLI"
+   ],
+   "tags": [
+    "hpc",
+    "information-management"
+   ],
+   "actors": [
+    "cluster",
+    "local-ngo"
+   ],
+   "record_ids": [
+    "E0604"
+   ],
+   "unmerged": false
+  },
+  {
+   "finding_id": "F1507",
+   "statement": "An inter-sector working group is being formed to pool and harmonise the separate surveys, though the sector has nobody to represent it there once the remaining post ends.",
+   "theme": "Both",
+   "type": "practice",
+   "strength": "low",
+   "n_records": 1,
+   "n_sources": 1,
+   "n_streams": 1,
+   "streams": [
+    "transcript"
+   ],
+   "countries": [
+    "MLI"
+   ],
+   "tags": [
+    "capacity",
+    "hpc",
+    "multisector"
+   ],
+   "actors": [
+    "cluster",
+    "ocha"
+   ],
+   "record_ids": [
+    "E0605"
+   ],
+   "unmerged": false
+  },
+  {
+   "finding_id": "F1508",
+   "statement": "A thematic group is being stood up to develop a faecal sludge management strategy for displacement sites, and few partners approached so far have experience in that area.",
+   "theme": "Both",
+   "type": "barrier",
+   "strength": "low",
+   "n_records": 1,
+   "n_sources": 1,
+   "n_streams": 1,
+   "streams": [
+    "transcript"
+   ],
+   "countries": [
+    "MLI"
+   ],
+   "tags": [
+    "capacity",
+    "partnerships",
+    "sustainability"
+   ],
+   "actors": [
+    "cluster",
+    "ingo",
+    "local-ngo"
+   ],
+   "record_ids": [
+    "E0606"
+   ],
+   "unmerged": false
+  },
+  {
+   "finding_id": "F1509",
+   "statement": "Advocacy with the fund is being framed around complementarity: nutrition and food security outcomes both depend on water, so allocations to those sectors should carry corresponding WASH provision rather than leaving it unfunded.",
+   "theme": "ABC",
+   "type": "practice",
+   "strength": "low",
+   "n_records": 1,
+   "n_sources": 1,
+   "n_streams": 1,
+   "streams": [
+    "transcript"
+   ],
+   "countries": [
+    "MLI"
+   ],
+   "tags": [
+    "advocacy",
+    "multisector",
+    "pooled-funds"
+   ],
+   "actors": [
+    "cluster",
+    "donor",
+    "ocha"
+   ],
+   "record_ids": [
+    "E0607"
+   ],
+   "unmerged": false
+  },
+  {
    "finding_id": "F200",
    "statement": "Even where integrated area-based approaches are formally adopted, coordination stays constrained at implementation level because actors, sectors and delivery mechanisms are not aligned.",
    "theme": "ABC",
@@ -5329,8 +5624,8 @@
    "theme": "Both",
    "type": "barrier",
    "strength": "high",
-   "n_records": 9,
-   "n_sources": 7,
+   "n_records": 10,
+   "n_sources": 8,
    "n_streams": 2,
    "streams": [
     "sdr",
@@ -5339,6 +5634,7 @@
    "countries": [
     "BGD",
     "LBN",
+    "MLI",
     "MMR",
     "MOZ",
     "NGA",
@@ -5365,7 +5661,8 @@
     "E0470",
     "E0471",
     "E0493",
-    "E0532"
+    "E0532",
+    "E0592"
    ],
    "unmerged": false,
    "highlight": {
@@ -8802,8 +9099,8 @@
    "theme": "Both",
    "type": "barrier",
    "strength": "high",
-   "n_records": 5,
-   "n_sources": 5,
+   "n_records": 6,
+   "n_sources": 6,
    "n_streams": 2,
    "streams": [
     "sdr",
@@ -8813,6 +9110,7 @@
     "BFA",
     "COL",
     "KEN",
+    "MLI",
     "MOZ",
     "NER"
    ],
@@ -8834,7 +9132,8 @@
     "E0375",
     "E0454",
     "E0537",
-    "E0574"
+    "E0574",
+    "E0594"
    ],
    "unmerged": false,
    "highlight": {
@@ -9409,12 +9708,12 @@
   },
   {
    "finding_id": "F386",
-   "statement": "A national co-coordinator drawn from a Sudanese NGO supports the team, and a second is planned, both to ease workload and to give local NGOs a national counterpart they can approach directly.",
-   "theme": "Transition",
+   "statement": "During a two-month absence of the only remaining coordination staff member, the national co-facilitator represented the sector in national fora, which kept the sector present when it would otherwise have been absent.",
+   "theme": "Both",
    "type": "enabler",
    "strength": "high",
-   "n_records": 2,
-   "n_sources": 2,
+   "n_records": 3,
+   "n_sources": 3,
    "n_streams": 2,
    "streams": [
     "sdr",
@@ -9422,10 +9721,12 @@
    ],
    "countries": [
     "IRQ",
+    "MLI",
     "SDN"
    ],
    "tags": [
     "capacity",
+    "coordination-architecture",
     "localisation",
     "partnerships",
     "transition-handover"
@@ -9436,7 +9737,8 @@
    ],
    "record_ids": [
     "E0321",
-    "E0406"
+    "E0406",
+    "E0593"
    ],
    "unmerged": false,
    "highlight": {
@@ -10857,16 +11159,17 @@
    "statement": "A strict priority tier requires life-saving activities — operation and maintenance, waste collection and supplies — to be funded before infrastructure improvement or reconstruction, and the resulting inaction on the lower tiers has affected the durability and quality of facilities.",
    "theme": "Transition",
    "type": "barrier",
-   "strength": "medium",
-   "n_records": 2,
-   "n_sources": 2,
+   "strength": "high",
+   "n_records": 3,
+   "n_sources": 3,
    "n_streams": 1,
    "streams": [
     "transcript"
    ],
    "countries": [
     "BGD",
-    "COL"
+    "COL",
+    "MLI"
    ],
    "tags": [
     "funding",
@@ -10882,7 +11185,8 @@
    ],
    "record_ids": [
     "E0386",
-    "E0495"
+    "E0495",
+    "E0595"
    ],
    "unmerged": false
   },
@@ -12699,14 +13003,15 @@
    "statement": "The response to questions about which reporting system applies has been that the central module is a pilot and no answer is available yet, so partners have not begun reporting into it and the cluster continues extracting from its own platform alongside an interim spreadsheet.",
    "theme": "ABC",
    "type": "barrier",
-   "strength": "low",
-   "n_records": 1,
-   "n_sources": 1,
+   "strength": "medium",
+   "n_records": 2,
+   "n_sources": 2,
    "n_streams": 1,
    "streams": [
     "transcript"
    ],
    "countries": [
+    "MLI",
     "NER"
    ],
    "tags": [
@@ -12719,7 +13024,8 @@
     "ocha"
    ],
    "record_ids": [
-    "E0466"
+    "E0466",
+    "E0597"
    ],
    "unmerged": false
   },
@@ -26979,6 +27285,430 @@
    "date_collected": "2026-06-23",
    "confidence": "high",
    "status": "draft"
+  },
+  {
+   "id": "E0591",
+   "finding_id": "F019",
+   "theme": "Both",
+   "type": "barrier",
+   "statement": "Every cluster coordinator post in the country was removed in a restructuring — across WASH, nutrition, education and protection — and most information management contracts were not renewed alongside them.",
+   "level": "national",
+   "countries": [
+    "MLI"
+   ],
+   "actors": [
+    "un-agency",
+    "cluster"
+   ],
+   "tags": [
+    "funding",
+    "capacity",
+    "coordination-architecture"
+   ],
+   "stream": "transcript",
+   "source_id": "S113",
+   "date_collected": "2026-07-28",
+   "confidence": "high",
+   "status": "draft"
+  },
+  {
+   "id": "E0592",
+   "finding_id": "F225",
+   "theme": "Both",
+   "type": "barrier",
+   "statement": "Coordination is carried by a co-facilitator whose post is fully funded by programme, with around thirty per cent of time notionally available for the sector, and by a specialist contributing around twenty per cent.",
+   "level": "national",
+   "countries": [
+    "MLI"
+   ],
+   "actors": [
+    "cluster",
+    "un-agency",
+    "local-ngo"
+   ],
+   "tags": [
+    "capacity",
+    "coordination-architecture"
+   ],
+   "stream": "transcript",
+   "source_id": "S113",
+   "date_collected": "2026-07-28",
+   "confidence": "high",
+   "status": "draft"
+  },
+  {
+   "id": "E0593",
+   "finding_id": "F386",
+   "theme": "Both",
+   "type": "enabler",
+   "statement": "During a two-month absence of the only remaining coordination staff member, the national co-facilitator represented the sector in national fora, which kept the sector present when it would otherwise have been absent.",
+   "level": "national",
+   "countries": [
+    "MLI"
+   ],
+   "actors": [
+    "local-ngo",
+    "cluster"
+   ],
+   "tags": [
+    "localisation",
+    "capacity",
+    "coordination-architecture"
+   ],
+   "stream": "transcript",
+   "source_id": "S113",
+   "date_collected": "2026-07-28",
+   "confidence": "high",
+   "status": "draft"
+  },
+  {
+   "id": "E0594",
+   "finding_id": "F364",
+   "theme": "Transition",
+   "type": "barrier",
+   "statement": "The government counterpart changed three times in a year: the official covering the role was promoted, the replacement took extended sick leave, and a new one was introduced less than a month ago.",
+   "level": "national",
+   "countries": [
+    "MLI"
+   ],
+   "actors": [
+    "gov-national",
+    "cluster"
+   ],
+   "tags": [
+    "staff-turnover",
+    "government-engagement"
+   ],
+   "stream": "transcript",
+   "source_id": "S113",
+   "date_collected": "2026-07-28",
+   "confidence": "high",
+   "status": "draft"
+  },
+  {
+   "id": "E0595",
+   "finding_id": "F506",
+   "theme": "ABC",
+   "type": "barrier",
+   "statement": "What the pooled fund finances tends to stop at emergency kits, while the need in the prioritised areas is boreholes and latrines, which the allocation does not cover.",
+   "level": "national",
+   "countries": [
+    "MLI"
+   ],
+   "actors": [
+    "donor",
+    "ocha",
+    "cluster"
+   ],
+   "tags": [
+    "pooled-funds",
+    "funding",
+    "sustainability"
+   ],
+   "stream": "transcript",
+   "source_id": "S113",
+   "date_collected": "2026-07-28",
+   "confidence": "high",
+   "status": "draft"
+  },
+  {
+   "id": "E0596",
+   "finding_id": "F015",
+   "theme": "ABC",
+   "type": "barrier",
+   "statement": "Allocation arbitration meetings are normally attended by the cluster coordinator and are where the significant decisions are taken; with the post vacant the sector is absent from them, and that shows in the final allocation strategy.",
+   "level": "national",
+   "countries": [
+    "MLI"
+   ],
+   "actors": [
+    "ocha",
+    "cluster"
+   ],
+   "tags": [
+    "pooled-funds",
+    "coordination-architecture",
+    "advocacy"
+   ],
+   "stream": "transcript",
+   "source_id": "S113",
+   "date_collected": "2026-07-28",
+   "confidence": "high",
+   "status": "draft"
+  },
+  {
+   "id": "E0597",
+   "finding_id": "F807",
+   "theme": "ABC",
+   "type": "context",
+   "statement": "The central reporting platform is not yet operational in country; training has taken place but sectors have been told to continue their existing collection, and only one sector currently uses it.",
+   "level": "national",
+   "countries": [
+    "MLI"
+   ],
+   "actors": [
+    "ocha",
+    "cluster"
+   ],
+   "tags": [
+    "information-management",
+    "hpc"
+   ],
+   "stream": "transcript",
+   "source_id": "S113",
+   "date_collected": "2026-07-28",
+   "confidence": "high",
+   "status": "draft"
+  },
+  {
+   "id": "E0598",
+   "finding_id": "F1500",
+   "theme": "Transition",
+   "type": "barrier",
+   "statement": "With the coordinator post vacant, decisions that would normally sit with a coordinator have no home: the co-facilitator is not placed to take them and there is nobody to refer them to.",
+   "level": "national",
+   "countries": [
+    "MLI"
+   ],
+   "actors": [
+    "cluster",
+    "un-agency"
+   ],
+   "tags": [
+    "coordination-architecture",
+    "capacity"
+   ],
+   "stream": "transcript",
+   "source_id": "S113",
+   "date_collected": "2026-07-28",
+   "confidence": "high",
+   "status": "draft"
+  },
+  {
+   "id": "E0599",
+   "finding_id": "F1501",
+   "theme": "Transition",
+   "type": "barrier",
+   "statement": "Attending meetings and producing the planning documentation are different demands: the staff member with a fraction of time available can attend, but cannot draft indicators, objectives and strategy against the planning deadlines.",
+   "level": "national",
+   "countries": [
+    "MLI"
+   ],
+   "actors": [
+    "cluster",
+    "un-agency"
+   ],
+   "tags": [
+    "capacity",
+    "hpc"
+   ],
+   "stream": "transcript",
+   "source_id": "S113",
+   "date_collected": "2026-07-28",
+   "confidence": "high",
+   "status": "draft"
+  },
+  {
+   "id": "E0600",
+   "finding_id": "F1502",
+   "theme": "Transition",
+   "type": "context",
+   "statement": "The proposal for next year removes the international coordinator post and retains a national one, and removes the information management post in favour of a national position; the sector argued that removing either while keeping the other does not work in practice.",
+   "level": "national",
+   "countries": [
+    "MLI"
+   ],
+   "actors": [
+    "un-agency",
+    "cluster"
+   ],
+   "tags": [
+    "transition-handover",
+    "localisation",
+    "capacity"
+   ],
+   "stream": "transcript",
+   "source_id": "S113",
+   "date_collected": "2026-07-28",
+   "confidence": "high",
+   "status": "draft"
+  },
+  {
+   "id": "E0601",
+   "finding_id": "F1503",
+   "theme": "Transition",
+   "type": "barrier",
+   "statement": "Strategic advisory meetings could not be held on the intended cycle through the period of staffing and counterpart changes, with the second of the year taking place only recently.",
+   "level": "national",
+   "countries": [
+    "MLI"
+   ],
+   "actors": [
+    "cluster",
+    "gov-national"
+   ],
+   "tags": [
+    "coordination-architecture",
+    "performance"
+   ],
+   "stream": "transcript",
+   "source_id": "S113",
+   "date_collected": "2026-07-28",
+   "confidence": "high",
+   "status": "draft"
+  },
+  {
+   "id": "E0602",
+   "finding_id": "F1504",
+   "theme": "Both",
+   "type": "context",
+   "statement": "Three separate channels collect needs data: a government departmental framework running twice a year but not aligned to planning periods, a national social development channel run with an agency, and the international assessment partner.",
+   "level": "national",
+   "countries": [
+    "MLI"
+   ],
+   "actors": [
+    "gov-national",
+    "ocha",
+    "cluster"
+   ],
+   "tags": [
+    "hpc",
+    "information-management",
+    "government-engagement"
+   ],
+   "stream": "transcript",
+   "source_id": "S113",
+   "date_collected": "2026-07-28",
+   "confidence": "high",
+   "status": "draft"
+  },
+  {
+   "id": "E0603",
+   "finding_id": "F1505",
+   "theme": "Both",
+   "type": "enabler",
+   "statement": "Facing a funding shortfall for the assessment, the country was divided into two zones — one covered by the international partner, the other through a national channel — and the datasets combined afterwards to produce national coverage.",
+   "level": "national",
+   "countries": [
+    "MLI"
+   ],
+   "actors": [
+    "ocha",
+    "gov-national",
+    "cluster"
+   ],
+   "tags": [
+    "hpc",
+    "funding",
+    "localisation"
+   ],
+   "stream": "transcript",
+   "source_id": "S113",
+   "date_collected": "2026-07-28",
+   "confidence": "high",
+   "status": "draft"
+  },
+  {
+   "id": "E0604",
+   "finding_id": "F1506",
+   "theme": "Both",
+   "type": "enabler",
+   "statement": "A key informant questionnaire approach piloted with global support allowed data to be gathered in areas the assessment partner could not reach.",
+   "level": "national",
+   "countries": [
+    "MLI"
+   ],
+   "actors": [
+    "cluster",
+    "local-ngo"
+   ],
+   "tags": [
+    "hpc",
+    "information-management"
+   ],
+   "stream": "transcript",
+   "source_id": "S113",
+   "date_collected": "2026-07-28",
+   "confidence": "high",
+   "status": "draft"
+  },
+  {
+   "id": "E0605",
+   "finding_id": "F1507",
+   "theme": "Both",
+   "type": "practice",
+   "statement": "An inter-sector working group is being formed to pool and harmonise the separate surveys, though the sector has nobody to represent it there once the remaining post ends.",
+   "level": "national",
+   "countries": [
+    "MLI"
+   ],
+   "actors": [
+    "ocha",
+    "cluster"
+   ],
+   "tags": [
+    "hpc",
+    "multisector",
+    "capacity"
+   ],
+   "stream": "transcript",
+   "source_id": "S113",
+   "date_collected": "2026-07-28",
+   "confidence": "high",
+   "status": "draft"
+  },
+  {
+   "id": "E0606",
+   "finding_id": "F1508",
+   "theme": "Both",
+   "type": "barrier",
+   "statement": "A thematic group is being stood up to develop a faecal sludge management strategy for displacement sites, and few partners approached so far have experience in that area.",
+   "level": "subnational",
+   "countries": [
+    "MLI"
+   ],
+   "actors": [
+    "ingo",
+    "local-ngo",
+    "cluster"
+   ],
+   "tags": [
+    "capacity",
+    "partnerships",
+    "sustainability"
+   ],
+   "stream": "transcript",
+   "source_id": "S113",
+   "date_collected": "2026-07-28",
+   "confidence": "high",
+   "status": "draft"
+  },
+  {
+   "id": "E0607",
+   "finding_id": "F1509",
+   "theme": "ABC",
+   "type": "practice",
+   "statement": "Advocacy with the fund is being framed around complementarity: nutrition and food security outcomes both depend on water, so allocations to those sectors should carry corresponding WASH provision rather than leaving it unfunded.",
+   "level": "national",
+   "countries": [
+    "MLI"
+   ],
+   "actors": [
+    "cluster",
+    "donor",
+    "ocha"
+   ],
+   "tags": [
+    "advocacy",
+    "pooled-funds",
+    "multisector"
+   ],
+   "stream": "transcript",
+   "source_id": "S113",
+   "date_collected": "2026-07-28",
+   "confidence": "high",
+   "status": "draft"
   }
  ],
  "sources": [
@@ -28304,6 +29034,19 @@
    "url": "",
    "stream": "transcript",
    "date_added": "2026-06-23",
+   "access": "restricted",
+   "legacy_id": "",
+   "source_group": ""
+  },
+  {
+   "source_id": "S113",
+   "title": "Country consultation — Mali",
+   "organisation": "Global WASH Cluster",
+   "year": "2026",
+   "type": "interview",
+   "url": "",
+   "stream": "transcript",
+   "date_added": "2026-07-28",
    "access": "restricted",
    "legacy_id": "",
    "source_group": ""
