@@ -67,7 +67,18 @@ def read_csv(path):
         errors.append(f"  missing file: {path.relative_to(ROOT)}")
         return []
     with path.open(encoding="utf-8-sig", newline="") as f:
-        return list(csv.DictReader(f))
+        rows = list(csv.DictReader(f))
+    # A ragged row means an unquoted comma somewhere — csv.DictReader parks the
+    # overflow under the key None. Left alone it is silent data loss, and any
+    # script that rewrites the file with DictWriter crashes *after* truncating
+    # it. One had been sitting in follow-ups.csv unnoticed.
+    for i, r in enumerate(rows, start=2):
+        if None in r:
+            errors.append(f"  {path.name} row {i}: too many fields — a value contains "
+                          f"an unquoted comma. Overflow: {r[None]}")
+        if any(v is None for v in r.values()):
+            errors.append(f"  {path.name} row {i}: too few fields — row is short")
+    return rows
 
 
 def split(value):
