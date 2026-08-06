@@ -41,7 +41,14 @@ Folder: **Country Checkin June-July** (Drive ID `1VpBRYqtCujTXIzuoDoOQ2iioc-5AaM
 
 Already extracted: Somalia (S011), Myanmar (S012), Colombia (S103), Sudan (S104), Nigeria (S105), Niger (S106), Lebanon (S107), Bangladesh (S108), Haiti (S109), Mozambique (S110), Ethiopia (S111), Burkina Faso (S112).
 
-**All twelve transcripts are extracted.** Sources S011–S012 and S103–S114.
+**All fourteen transcripts are extracted.** Sources S011–S012, S103–S114, plus
+**S115 Syria** and **S116 Chad** (added 2026-08).
+
+- **S115 Syria** — session 1 only. Session 2 is expected and must attach to S115.
+  Syria is on the S045 participant list: do not merge its records into findings
+  that already carry a Syria-attributed consultation record.
+- **S116 Chad** — a twelve-minute meeting on the transition roadmap, not a full
+  check-in. Narrow by design; the topics it does not cover were never raised.
 
 Still outstanding:
 

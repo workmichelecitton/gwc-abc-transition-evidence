@@ -40,14 +40,14 @@ brackets — `[the IM officer]`, `[the focal point]`. Organisation names are fin
 where they do not identify one individual. The build warns on obvious cases but
 cannot catch a bare first name.
 
-## Next: two transcripts never extracted at all
+## Outstanding
 
-These are new sources, not backfill. Run `prompts/01-transcript-extraction.md`.
+**Syria session 2**, when it happens, attaches to **S115** — do not register a new
+source. Session 1 was IM- and assessment-heavy because the coordination lead was
+not on the call, so coordination architecture is the gap to fill.
 
-| Source | Country | Drive file ID | Note |
-|---|---|---|---|
-| new | **Chad** | `1X7lay0HLDB1pRXmb4nLdJubnLCigfVnc` | Not in the base at all |
-| new | **Syria** | `12PW2EU8TXsKcCslOc3riEz52r3fi_dcj` (Syria 1) | **A second session is expected** — register one source and add session 2 to it later, as was done for Myanmar. Syria currently appears only through the 2026 consultation (S083), so a check-in gives it an independent source — but see the independence warning in `prompts/05`: Syria is on the S045 participant list. |
+Chad (S116) and Syria (S115) are extracted. Every transcript in the folder is now
+in the base.
 
 Done: Haiti (17), Sudan (31), Colombia (28), Lebanon (23), Mozambique (20),
 South Sudan (22), Bangladesh (20), Ethiopia (20), Nigeria (18), Burkina Faso (18),

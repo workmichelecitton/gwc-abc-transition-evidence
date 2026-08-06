@@ -75,10 +75,10 @@ window.SITE_DATA = {
  "generated": "2026-08-06",
  "taxonomy_version": "0.6.0",
  "stats": {
-  "records": 650,
-  "findings": 416,
-  "sources": 105,
-  "countries": 28,
+  "records": 656,
+  "findings": 421,
+  "sources": 106,
+  "countries": 29,
   "withheld_internal": 2
  },
  "taxonomy": {
@@ -5725,6 +5725,160 @@ window.SITE_DATA = {
    ],
    "record_ids": [
     "E0664"
+   ],
+   "unmerged": false
+  },
+  {
+   "finding_id": "F1728",
+   "statement": "A twelve-month transition was set with a twelve-week window to produce and validate the roadmap; that window has already passed its start date without the roadmap being validated, so the timetable is running behind before the substantive work begins.",
+   "theme": [
+    "Transition"
+   ],
+   "example": "",
+   "type": "barrier",
+   "strength": "low",
+   "n_records": 1,
+   "n_sources": 1,
+   "n_streams": 1,
+   "streams": [
+    "transcript"
+   ],
+   "countries": [
+    "TCD"
+   ],
+   "tags": [
+    "hpc",
+    "transition-handover"
+   ],
+   "actors": [
+    "cluster",
+    "gov-national"
+   ],
+   "record_ids": [
+    "E0665"
+   ],
+   "unmerged": false
+  },
+  {
+   "finding_id": "F1729",
+   "statement": "The roadmap is drafted but not yet validated; the sequence is validation with the water ministry, then endorsement by the ministry's secretary general, then a series of workshops to finalise the documents.",
+   "theme": [
+    "Transition"
+   ],
+   "example": "",
+   "type": "practice",
+   "strength": "low",
+   "n_records": 1,
+   "n_sources": 1,
+   "n_streams": 1,
+   "streams": [
+    "transcript"
+   ],
+   "countries": [
+    "TCD"
+   ],
+   "tags": [
+    "government-engagement",
+    "transition-handover"
+   ],
+   "actors": [
+    "cluster",
+    "gov-national"
+   ],
+   "record_ids": [
+    "E0666"
+   ],
+   "unmerged": false
+  },
+  {
+   "finding_id": "F1730",
+   "statement": "The three-month period allowed will not be enough to run the workshops and finalise the documents, and an extension is expected to have to be negotiated with the responsible ministry.",
+   "theme": [
+    "Transition"
+   ],
+   "example": "",
+   "type": "barrier",
+   "strength": "low",
+   "n_records": 1,
+   "n_sources": 1,
+   "n_streams": 1,
+   "streams": [
+    "transcript"
+   ],
+   "countries": [
+    "TCD"
+   ],
+   "tags": [
+    "government-engagement",
+    "transition-handover"
+   ],
+   "actors": [
+    "cluster",
+    "gov-national"
+   ],
+   "record_ids": [
+    "E0667"
+   ],
+   "unmerged": false
+  },
+  {
+   "finding_id": "F1731",
+   "statement": "The person carrying the transition work covers four sectors at once, which is described as the practical limit on how fast the process can move.",
+   "theme": [
+    "Fundamentals"
+   ],
+   "example": "",
+   "type": "barrier",
+   "strength": "low",
+   "n_records": 1,
+   "n_sources": 1,
+   "n_streams": 1,
+   "streams": [
+    "transcript"
+   ],
+   "countries": [
+    "TCD"
+   ],
+   "tags": [
+    "capacity",
+    "coordination-architecture"
+   ],
+   "actors": [
+    "cluster"
+   ],
+   "record_ids": [
+    "E0668"
+   ],
+   "unmerged": false
+  },
+  {
+   "finding_id": "F1732",
+   "statement": "The colleague holding the coordinator role is an emergency specialist absorbed by a cholera outbreak in one part of the country and emergencies in another, leaving little capacity for transition work — so the request is for support that does not depend on her availability.",
+   "theme": [
+    "Fundamentals"
+   ],
+   "example": "",
+   "type": "barrier",
+   "strength": "low",
+   "n_records": 1,
+   "n_sources": 1,
+   "n_streams": 1,
+   "streams": [
+    "transcript"
+   ],
+   "countries": [
+    "TCD"
+   ],
+   "tags": [
+    "capacity",
+    "staff-turnover",
+    "transition-handover"
+   ],
+   "actors": [
+    "cluster"
+   ],
+   "record_ids": [
+    "E0669"
    ],
    "unmerged": false
   },
@@ -13299,19 +13453,21 @@ window.SITE_DATA = {
    "statement": "Gastroenteritis cases have been notified near the border with a neighbouring country where a large cholera outbreak is under way, and emergency preparations are being made with the zone offices.",
    "theme": [
     "ABC",
+    "Fundamentals",
     "Transition"
    ],
    "example": "",
    "type": "context",
-   "strength": "medium",
-   "n_records": 2,
-   "n_sources": 2,
+   "strength": "high",
+   "n_records": 3,
+   "n_sources": 3,
    "n_streams": 1,
    "streams": [
     "transcript"
    ],
    "countries": [
-    "NER"
+    "NER",
+    "TCD"
    ],
    "tags": [
     "capacity",
@@ -13325,7 +13481,8 @@ window.SITE_DATA = {
    ],
    "record_ids": [
     "E0450",
-    "E0458"
+    "E0458",
+    "E0670"
    ],
    "unmerged": false
   },
@@ -30988,6 +31145,160 @@ window.SITE_DATA = {
    "date_collected": "2026-08-06",
    "confidence": "high",
    "status": "draft"
+  },
+  {
+   "id": "E0665",
+   "finding_id": "F1728",
+   "theme": [
+    "Transition"
+   ],
+   "type": "barrier",
+   "statement": "A twelve-month transition was set with a twelve-week window to produce and validate the roadmap; that window has already passed its start date without the roadmap being validated, so the timetable is running behind before the substantive work begins.",
+   "level": "national",
+   "countries": [
+    "TCD"
+   ],
+   "actors": [
+    "cluster",
+    "gov-national"
+   ],
+   "tags": [
+    "transition-handover",
+    "hpc"
+   ],
+   "stream": "transcript",
+   "source_id": "S116",
+   "date_collected": "2026-07-21",
+   "confidence": "high",
+   "status": "draft"
+  },
+  {
+   "id": "E0666",
+   "finding_id": "F1729",
+   "theme": [
+    "Transition"
+   ],
+   "type": "practice",
+   "statement": "The roadmap is drafted but not yet validated; the sequence is validation with the water ministry, then endorsement by the ministry's secretary general, then a series of workshops to finalise the documents.",
+   "level": "national",
+   "countries": [
+    "TCD"
+   ],
+   "actors": [
+    "cluster",
+    "gov-national"
+   ],
+   "tags": [
+    "transition-handover",
+    "government-engagement"
+   ],
+   "stream": "transcript",
+   "source_id": "S116",
+   "date_collected": "2026-07-21",
+   "confidence": "high",
+   "status": "draft"
+  },
+  {
+   "id": "E0667",
+   "finding_id": "F1730",
+   "theme": [
+    "Transition"
+   ],
+   "type": "barrier",
+   "statement": "The three-month period allowed will not be enough to run the workshops and finalise the documents, and an extension is expected to have to be negotiated with the responsible ministry.",
+   "level": "national",
+   "countries": [
+    "TCD"
+   ],
+   "actors": [
+    "cluster",
+    "gov-national"
+   ],
+   "tags": [
+    "transition-handover",
+    "government-engagement"
+   ],
+   "stream": "transcript",
+   "source_id": "S116",
+   "date_collected": "2026-07-21",
+   "confidence": "high",
+   "status": "draft"
+  },
+  {
+   "id": "E0668",
+   "finding_id": "F1731",
+   "theme": [
+    "Fundamentals"
+   ],
+   "type": "barrier",
+   "statement": "The person carrying the transition work covers four sectors at once, which is described as the practical limit on how fast the process can move.",
+   "level": "national",
+   "countries": [
+    "TCD"
+   ],
+   "actors": [
+    "cluster"
+   ],
+   "tags": [
+    "capacity",
+    "coordination-architecture"
+   ],
+   "stream": "transcript",
+   "source_id": "S116",
+   "date_collected": "2026-07-21",
+   "confidence": "high",
+   "status": "draft"
+  },
+  {
+   "id": "E0669",
+   "finding_id": "F1732",
+   "theme": [
+    "Fundamentals"
+   ],
+   "type": "barrier",
+   "statement": "The colleague holding the coordinator role is an emergency specialist absorbed by a cholera outbreak in one part of the country and emergencies in another, leaving little capacity for transition work — so the request is for support that does not depend on her availability.",
+   "level": "national",
+   "countries": [
+    "TCD"
+   ],
+   "actors": [
+    "cluster"
+   ],
+   "tags": [
+    "capacity",
+    "transition-handover",
+    "staff-turnover"
+   ],
+   "stream": "transcript",
+   "source_id": "S116",
+   "date_collected": "2026-07-21",
+   "confidence": "high",
+   "status": "draft"
+  },
+  {
+   "id": "E0670",
+   "finding_id": "F708",
+   "theme": [
+    "Fundamentals"
+   ],
+   "type": "context",
+   "statement": "A cholera outbreak in the west of the country is understood to be connected to the outbreak in the neighbouring country, alongside separate emergencies in the east.",
+   "level": "national",
+   "countries": [
+    "TCD"
+   ],
+   "actors": [
+    "cluster"
+   ],
+   "tags": [
+    "capacity",
+    "peer-learning"
+   ],
+   "stream": "transcript",
+   "source_id": "S116",
+   "date_collected": "2026-07-21",
+   "confidence": "high",
+   "status": "draft"
   }
  ],
  "sources": [
@@ -32352,6 +32663,19 @@ window.SITE_DATA = {
    "url": "",
    "stream": "transcript",
    "date_added": "2026-08-06",
+   "access": "restricted",
+   "legacy_id": "",
+   "source_group": ""
+  },
+  {
+   "source_id": "S116",
+   "title": "Country consultation — Chad (transition roadmap)",
+   "organisation": "Global WASH Cluster",
+   "year": "2026",
+   "type": "interview",
+   "url": "",
+   "stream": "transcript",
+   "date_added": "2026-07-21",
    "access": "restricted",
    "legacy_id": "",
    "source_group": ""
