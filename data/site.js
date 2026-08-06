@@ -24275,7 +24275,7 @@ window.SITE_DATA = {
    "stream": "transcript",
    "source_id": "S104",
    "date_collected": "2026-07-27",
-   "confidence": "high",
+   "confidence": "low",
    "status": "draft"
   },
   {
