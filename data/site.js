@@ -3974,7 +3974,7 @@ window.SITE_DATA = {
   },
   {
    "finding_id": "F1309",
-   "statement": "Pooled fund allocations are running and depend on the cluster for partner selection, monitoring and collecting results; no successor has been identified for those tasks when the function ends.",
+   "statement": "Donor allocations are running and depend on the cluster for partner selection, monitoring and collecting results; no successor has been identified for those tasks when the function ends.",
    "theme": [
     "ABC"
    ],
@@ -28058,7 +28058,7 @@ window.SITE_DATA = {
     "ABC"
    ],
    "type": "barrier",
-   "statement": "Pooled fund allocations are running and depend on the cluster for partner selection, monitoring and collecting results; no successor has been identified for those tasks when the function ends.",
+   "statement": "Donor allocations are running and depend on the cluster for partner selection, monitoring and collecting results; no successor has been identified for those tasks when the function ends.",
    "level": "national",
    "countries": [
     "ETH"
