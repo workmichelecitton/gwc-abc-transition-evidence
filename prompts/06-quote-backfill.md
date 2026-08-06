@@ -1,6 +1,11 @@
 # 06 — Quote backfill
 
-**Status: 13 of 14 transcripts done. 26 records still carry no quote.**
+**Status: DONE — all 14 transcripts. 4 records deliberately left without a quote.**
+
+Those four are the ones where no supporting passage exists (Sudan E0429, Colombia
+E0376, Mozambique E0537) or where the claim was narrowed instead (Mozambique E0548).
+They are marked `draft`/`low` with a note. Do not "fix" them by writing a quote —
+either confirm them against the recording or delete them.
 
 ## Why this exists
 
@@ -35,11 +40,14 @@ brackets — `[the IM officer]`, `[the focal point]`. Organisation names are fin
 where they do not identify one individual. The build warns on obvious cases but
 cannot catch a bare first name.
 
-## Remaining
+## Next: two transcripts never extracted at all
 
-| Source | Country | Records | Drive file ID |
+These are new sources, not backfill. Run `prompts/01-transcript-extraction.md`.
+
+| Source | Country | Drive file ID | Note |
 |---|---|---|---|
-| S012 | Myanmar | 22 | **two sessions:** `1upnA8PUFBjetVQNSK3im-VpjZm43QTVb` (Myanmar 1) and `1UtANQjEM89NMS_EB4qxXHOeMWTsI6yL4` (Myanmar 2) |
+| new | **Chad** | `1X7lay0HLDB1pRXmb4nLdJubnLCigfVnc` | Not in the base at all |
+| new | **Syria** | `12PW2EU8TXsKcCslOc3riEz52r3fi_dcj` (Syria 1) | **A second session is expected** — register one source and add session 2 to it later, as was done for Myanmar. Syria currently appears only through the 2026 consultation (S083), so a check-in gives it an independent source — but see the independence warning in `prompts/05`: Syria is on the S045 participant list. |
 
 Done: Haiti (17), Sudan (31), Colombia (28), Lebanon (23), Mozambique (20),
 South Sudan (22), Bangladesh (20), Ethiopia (20), Nigeria (18), Burkina Faso (18),
