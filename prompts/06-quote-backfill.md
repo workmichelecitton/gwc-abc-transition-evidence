@@ -1,6 +1,6 @@
 # 06 — Quote backfill
 
-**Status: 4 of 14 transcripts done. 195 records still carry no quote.**
+**Status: 12 of 14 transcripts done. 44 records still carry no quote.**
 
 ## Why this exists
 
@@ -40,19 +40,16 @@ cannot catch a bare first name.
 | Source | Country | Records | Drive file ID |
 |---|---|---|---|
 | S012 | Myanmar | 22 | (two sessions) |
-| S110 | Mozambique | 22 | `11yJVtARQOv67hXRu7YXn9GqfMs3qBqGs` |
-| S114 | South Sudan | 22 | `1LFb1UZynhadK2Zsv3aZiDMmEMmOqD5TE` |
-| S108 | Bangladesh | 20 | `1bENcGRpkTMaltGifF_ggzUPO5PUck5tK` |
-| S111 | Ethiopia | 20 | `1MWia7SNLNcqg9Czz3U0-je57Y4AKULsn` |
 | S011 | Somalia | 18 | — |
-| S105 | Nigeria | 18 | `1AKuA6X6-WgnXUPJAQ6J5CzJZWdRt6Hlw` |
-| S112 | Burkina Faso | 18 | `15t1C5Y5MsldYX7dBqkzxgolOk7QDl2fx` |
-| S113 | Mali | 17 | `1l6YjJeZC1bch00MLO8ls2BL7hEp7pTUs` |
-| S106 | Niger | 16 | `1qX6mcFe04sXIrziYb1hduz6dAksPUzt-` |
 
-Done: **S109 Haiti** (17), **S104 Sudan** (31), **S103 Colombia** (28), **S107 Lebanon** (23).
+Done: Haiti (17), Sudan (31), Colombia (28), Lebanon (23), Mozambique (20),
+South Sudan (22), Bangladesh (20), Ethiopia (20), Nigeria (18), Burkina Faso (18),
+Mali (17), Niger (16). **Also outstanding:** a handful of stragglers — S110 (2),
+S103 (1), S104 (1) — records whose supporting passage was not found on the first
+pass and which were left rather than guessed.
 
-Lebanon produced no corrections — the first clean transcript.
+Clean transcripts, no corrections needed: Lebanon, South Sudan, Nigeria,
+Burkina Faso, Mali, Niger.
 
 ## Method — one source per pass
 
