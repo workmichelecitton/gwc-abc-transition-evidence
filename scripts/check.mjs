@@ -112,14 +112,16 @@ async function exercise(label, url) {
   const themes = new Set(site.findings.flatMap((f) => f.theme)
                    .concat(site.records.flatMap((r) => r.theme)));
   ok(!themes.has("Both"), "'Both' is back as a theme value — it matches neither filter");
-  ok([...themes].every((t) => t === "ABC" || t === "Transition"),
+  ok([...themes].every((t) => ["ABC", "Transition", "Fundamentals"].includes(t)),
      `unexpected theme values: ${[...themes].join(", ")}`);
   ok(!site.findings.some((f) => !f.theme.length),
      "a finding has no theme and cannot be reached by either filter");
-  const abc = site.findings.filter((f) => f.theme.includes("ABC")).length;
-  const tr  = site.findings.filter((f) => f.theme.includes("Transition")).length;
-  console.log(`    theme filters reach ${abc} (ABC) and ${tr} (Transition) of ` +
-              `${site.findings.length} findings`);
+  const byTheme = (t) => site.findings.filter((f) => f.theme.includes(t)).length;
+  console.log(`    themes: ${byTheme("ABC")} ABC · ${byTheme("Transition")} Transition · ` +
+              `${byTheme("Fundamentals")} fundamentals, of ${site.findings.length} findings`);
+  // Quotes make a record checkable against its source. They are stripped at
+  // build time, so capturing them costs nothing publicly.
+  console.log(`    (quote coverage is reported by build.py, not here)`);
   const solo = site.findings.filter((f) => f.n_records === 1).length;
   console.log(`    ${site.findings.length} findings, ${solo} holding one record ` +
               `(${Math.round((solo / site.findings.length) * 100)}%)`);

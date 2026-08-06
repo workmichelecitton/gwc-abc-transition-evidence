@@ -12,6 +12,15 @@ window.SITE_DATA = {
     ]
    },
    {
+    "heading": "How the evidence is grouped",
+    "body": [
+     "Three themes, not two. Area-Based Coordination and Transition are configurations — particular ways of arranging coordination. A great deal of what coordinators actually raise is neither: staffing, funding, information management capacity, institutional memory, counterpart turnover. These determine whether any arrangement works, and they were previously forced into one label or the other.",
+     "The test is simple. Would the claim still be true in a country with no area-based structure and no transition under way? If yes, it sits under Coordination fundamentals. If it only holds where coordination is organised by area, it is ABC. If it only holds where coordination is being handed over, it is Transition.",
+     "This departs from how the secondary data reviews framed the material, deliberately. Filing a staffing constraint under Transition makes it look like a consequence of transition when it is a standing condition that transition then runs into.",
+     "A theme says what a finding is about. The tags say what it bears on — so a fundamentals finding that matters for handover still carries the transition-handover tag and can be found that way."
+    ]
+   },
+   {
     "heading": "How it is written",
     "body": [
      "Entries describe what happened and what followed from it, not who is at fault. Where a barrier has an obvious remedy, the entry points toward it.",
@@ -64,17 +73,17 @@ window.SITE_DATA = {
   "footer_note": "Findings are traceable to a source ID in the Sources tab. If something looks wrong, it probably is — say so and it will be corrected."
  },
  "generated": "2026-08-06",
- "taxonomy_version": "0.5.0",
+ "taxonomy_version": "0.6.0",
  "stats": {
-  "records": 635,
+  "records": 634,
   "findings": 402,
   "sources": 104,
   "countries": 28,
-  "withheld_internal": 1
+  "withheld_internal": 2
  },
  "taxonomy": {
   "_comment": "Controlled vocabularies. The build script rejects any value in evidence.csv that is not listed here. To add a value, add it here first, then use it. Keep this list short — every addition is a permanent filter option.",
-  "version": "0.5.0",
+  "version": "0.6.0",
   "updated": "2026-08-05",
   "theme": [
    {
@@ -84,6 +93,10 @@ window.SITE_DATA = {
    {
     "value": "Transition",
     "label": "Transition"
+   },
+   {
+    "value": "Fundamentals",
+    "label": "Coordination fundamentals"
    }
   ],
   "type": [
@@ -787,8 +800,7 @@ window.SITE_DATA = {
    "finding_id": "F019",
    "statement": "Coordinator and information management posts are reduced before programme staff when budgets fall. Because coordination is funded agency by agency rather than as a shared function, capacity varies between sectors in the same operation.",
    "theme": [
-    "ABC",
-    "Transition"
+    "Fundamentals"
    ],
    "example": "Syria — abolishing coordinator positions was the mechanism chosen to meet a budget reduction of fifteen to twenty per cent.",
    "type": "barrier",
@@ -1083,8 +1095,7 @@ window.SITE_DATA = {
    "finding_id": "F027",
    "statement": "Incoming coordinators frequently arrive without a handover and rebuild the picture from shared drives. Where a link to another structure runs through one person rather than an institutional arrangement, it ends when they leave.",
    "theme": [
-    "ABC",
-    "Transition"
+    "Fundamentals"
    ],
    "example": "Libya — when coordination restarted after a major flood, no record of earlier technical decisions existed, so the technical working group held the same discussions again from the beginning.",
    "type": "barrier",
@@ -1133,13 +1144,12 @@ window.SITE_DATA = {
    "finding_id": "F028",
    "statement": "Information management capacity is reduced earlier and further than other coordination capacity. What is lost is analytical: partner reporting keeps arriving while the products that make it usable fall behind.",
    "theme": [
-    "ABC",
-    "Transition"
+    "Fundamentals"
    ],
    "example": "Somalia — IM recruitment was cancelled and the post reissued as a volunteer role. Partner reporting continued to arrive while the public dashboard and contact lists went unupdated for months.",
    "type": "barrier",
    "strength": "high",
-   "n_records": 15,
+   "n_records": 14,
    "n_sources": 9,
    "n_streams": 2,
    "streams": [
@@ -1182,7 +1192,6 @@ window.SITE_DATA = {
     "E0465",
     "E0494",
     "E0508",
-    "E0513",
     "E0522",
     "E0523",
     "E0524"
@@ -2113,8 +2122,7 @@ window.SITE_DATA = {
    "finding_id": "F1001",
    "statement": "Where a dedicated sector information management post ended, capacity has been rebuilt as a shared resource across sectors and agencies rather than replaced one for one.",
    "theme": [
-    "ABC",
-    "Transition"
+    "Fundamentals"
    ],
    "example": "Bangladesh — after the sector IM post was discontinued, a pool serving all agency-led sectors was created in the field office: an international lead, a national officer and four analysts.",
    "type": "practice",
@@ -2812,8 +2820,7 @@ window.SITE_DATA = {
    "finding_id": "F109",
    "statement": "Protect information management and coordination capacity through the transition, and treat IM as infrastructure rather than reporting. What is handed over should be a working system, not a set of files.",
    "theme": [
-    "ABC",
-    "Transition"
+    "Fundamentals"
    ],
    "example": "",
    "type": "recommendation",
@@ -5965,8 +5972,7 @@ window.SITE_DATA = {
    "finding_id": "F225",
    "statement": "Coordination below national level is sustained almost everywhere by people who already hold another full-time role. Functions keep being added to structures whose staffing has not grown.",
    "theme": [
-    "ABC",
-    "Transition"
+    "Fundamentals"
    ],
    "example": "Mali — coordination is carried by a co-facilitator whose post is programme-funded, with about thirty per cent of time notionally available. He can attend meetings; he cannot draft the indicators, objectives and strategy against planning deadlines.",
    "type": "context",
@@ -6424,8 +6430,7 @@ window.SITE_DATA = {
    "finding_id": "F241",
    "statement": "Capacity development runs on funding envelopes shorter and less predictable than the engagement it requires, so it is the depth of the support that gets cut rather than the activity.",
    "theme": [
-    "ABC",
-    "Transition"
+    "Fundamentals"
    ],
    "example": "Nigeria — training of trainers for state facilitators and co-coordinators was delivered remotely rather than in person for cost reasons, ahead of a five-day session with state representatives.",
    "type": "barrier",
@@ -9307,7 +9312,7 @@ window.SITE_DATA = {
    "finding_id": "F360",
    "statement": "Partner technical capacity is thin in specific areas, so the question is not who coordinates the work but who is able to do it.",
    "theme": [
-    "Transition"
+    "Fundamentals"
    ],
    "example": "Mali — a thematic group is being formed to develop a faecal sludge management strategy for displacement sites, and few of the partners approached so far have experience in that area.",
    "type": "barrier",
@@ -9451,7 +9456,7 @@ window.SITE_DATA = {
    "finding_id": "F364",
    "statement": "Government leadership rests on individual counterparts. A reshuffle moves the trained official and the case for coordination has to be made again from the start. Capacity behaves as a flow that rotation drains, not a stock that training builds once.",
    "theme": [
-    "Transition"
+    "Fundamentals"
    ],
    "example": "Mali — the government counterpart changed three times in one year: the official was promoted, the replacement took extended sick leave, and a third arrived without the background.",
    "type": "barrier",
@@ -13020,8 +13025,7 @@ window.SITE_DATA = {
    "finding_id": "F802",
    "statement": "Planned coordination work is repeatedly displaced by emergency and process demands. Commitments carried in the workplan for years remain unstarted, because each year something arrives that cannot be deferred.",
    "theme": [
-    "ABC",
-    "Transition"
+    "Fundamentals"
    ],
    "example": "Niger — a change to the pooled fund review process arrived with a day's notice, required the committee to meet across the week, and displaced the cluster meeting and other planned work.",
    "type": "barrier",
@@ -13100,8 +13104,7 @@ window.SITE_DATA = {
    "finding_id": "F805",
    "statement": "Lightweight tools built on common office software have measurably reduced the information management workload, without procurement or a new platform.",
    "theme": [
-    "ABC",
-    "Transition"
+    "Fundamentals"
    ],
    "example": "Niger — a database that takes data pasted from the reporting platform and returns results by indicator has made routine products quick to produce; the cluster now considers IM its strongest area.",
    "type": "enabler",
@@ -13794,7 +13797,7 @@ window.SITE_DATA = {
    "id": "E0017",
    "finding_id": "F225",
    "theme": [
-    "ABC"
+    "Fundamentals"
    ],
    "type": "barrier",
    "statement": "Area-based coordination facilitators double-hat and are incentivised by their host organisations, so the structure runs on borrowed capacity rather than dedicated posts.",
@@ -14014,8 +14017,7 @@ window.SITE_DATA = {
    "id": "E0025",
    "finding_id": "F019",
    "theme": [
-    "ABC",
-    "Transition"
+    "Fundamentals"
    ],
    "type": "barrier",
    "statement": "Subnational coordination posts funded through lead agency partnership agreements are not being renewed, putting dedicated subnational capacity at risk just as the architecture is being redesigned.",
@@ -14205,6 +14207,7 @@ window.SITE_DATA = {
    "id": "E0032",
    "finding_id": "F026",
    "theme": [
+    "ABC",
     "Transition"
    ],
    "type": "recommendation",
@@ -14233,8 +14236,7 @@ window.SITE_DATA = {
    "id": "E0033",
    "finding_id": "F027",
    "theme": [
-    "ABC",
-    "Transition"
+    "Fundamentals"
    ],
    "type": "barrier",
    "statement": "An incoming cluster coordinator received no handover report and had to reconstruct institutional knowledge unaided from shared drives, losing time to work already done.",
@@ -14261,8 +14263,7 @@ window.SITE_DATA = {
    "id": "E0034",
    "finding_id": "F028",
    "theme": [
-    "ABC",
-    "Transition"
+    "Fundamentals"
    ],
    "type": "barrier",
    "statement": "Information management recruitment was cancelled and the post downgraded to a volunteer position on cost grounds, leaving the cluster without dedicated information management capacity.",
@@ -14289,8 +14290,7 @@ window.SITE_DATA = {
    "id": "E0035",
    "finding_id": "F028",
    "theme": [
-    "ABC",
-    "Transition"
+    "Fundamentals"
    ],
    "type": "barrier",
    "statement": "Public cluster dashboards and contact details went unupdated for months while partner reporting continued to arrive, indicating the constraint is analytical capacity rather than data availability.",
@@ -14399,7 +14399,8 @@ window.SITE_DATA = {
    "id": "E0039",
    "finding_id": "F026",
    "theme": [
-    "ABC"
+    "ABC",
+    "Transition"
    ],
    "type": "recommendation",
    "statement": "Cluster coordinators asked for structured exchange with counterparts in other countries running area-based structures, to understand how the cluster-ABC relationship works elsewhere before redesigning their own.",
@@ -14901,8 +14902,7 @@ window.SITE_DATA = {
    "id": "E0058",
    "finding_id": "F225",
    "theme": [
-    "ABC",
-    "Transition"
+    "Fundamentals"
    ],
    "type": "context",
    "statement": "Subnational coordination capacity was retained through double-hatting arrangements in all but two areas, so the structure survived without dedicated posts.",
@@ -15139,8 +15139,7 @@ window.SITE_DATA = {
    "id": "E0067",
    "finding_id": "F802",
    "theme": [
-    "ABC",
-    "Transition"
+    "Fundamentals"
    ],
    "type": "barrier",
    "statement": "A partner capacity building programme committed the cluster to fund, facilitate and deliver every requested training, scheduled across the planning peak, until the coordinator intervened to postpone it.",
@@ -15195,7 +15194,8 @@ window.SITE_DATA = {
    "id": "E0070",
    "finding_id": "F026",
    "theme": [
-    "ABC"
+    "ABC",
+    "Transition"
    ],
    "type": "recommendation",
    "statement": "Coordinators want structured comparison with other countries on subnational terms of reference and escalation pathways; an informal request on a coordinator messaging group went unanswered.",
@@ -15462,7 +15462,7 @@ window.SITE_DATA = {
    "id": "E0081",
    "finding_id": "F109",
    "theme": [
-    "Transition"
+    "Fundamentals"
    ],
    "type": "recommendation",
    "statement": "Defend coordination capacity within the Cluster Lead Agency — Coordinator and IM posts are consistently the first cut in budget reductions, and deactivation has been used as a budget instrument",
@@ -16445,7 +16445,7 @@ window.SITE_DATA = {
    "id": "E0121",
    "finding_id": "F028",
    "theme": [
-    "ABC"
+    "Fundamentals"
    ],
    "type": "barrier",
    "statement": "Insufficient information management capacity within coordination systems is a key constraint on overall coordination effectiveness.",
@@ -17035,7 +17035,7 @@ window.SITE_DATA = {
    "id": "E0145",
    "finding_id": "F225",
    "theme": [
-    "ABC"
+    "Fundamentals"
    ],
    "type": "barrier",
    "statement": "Subnational coordination is structurally under-resourced and depends on double-hatting, with coordination duties added to staff already carrying operational roles.",
@@ -17059,7 +17059,7 @@ window.SITE_DATA = {
    "id": "E0146",
    "finding_id": "F225",
    "theme": [
-    "ABC"
+    "Fundamentals"
    ],
    "type": "barrier",
    "statement": "Subnational coordination is structurally under-resourced and depends on double-hatting, with coordination duties added to staff already carrying operational roles.",
@@ -17083,7 +17083,7 @@ window.SITE_DATA = {
    "id": "E0147",
    "finding_id": "F225",
    "theme": [
-    "ABC"
+    "Fundamentals"
    ],
    "type": "barrier",
    "statement": "A cluster coordinator was expected to attend meetings across three concurrent area-based structures, with the platforms absorbing coordination time without commensurate operational gain.",
@@ -17332,7 +17332,7 @@ window.SITE_DATA = {
    "id": "E0157",
    "finding_id": "F019",
    "theme": [
-    "ABC"
+    "Fundamentals"
    ],
    "type": "barrier",
    "statement": "There is a lack of dedicated resources for coordination functions themselves, as distinct from programme delivery.",
@@ -17381,7 +17381,7 @@ window.SITE_DATA = {
    "id": "E0159",
    "finding_id": "F019",
    "theme": [
-    "ABC"
+    "Fundamentals"
    ],
    "type": "barrier",
    "statement": "Uneven funding across sectors creates disparities in coordination capacity, with some clusters maintaining dedicated field coordinators while others rely on partial or seconded staffing.",
@@ -17405,7 +17405,7 @@ window.SITE_DATA = {
    "id": "E0160",
    "finding_id": "F019",
    "theme": [
-    "ABC"
+    "Fundamentals"
    ],
    "type": "barrier",
    "statement": "Uneven funding across sectors creates disparities in coordination capacity, with some clusters maintaining dedicated field coordinators while others rely on partial or seconded staffing.",
@@ -17483,7 +17483,7 @@ window.SITE_DATA = {
    "id": "E0163",
    "finding_id": "F241",
    "theme": [
-    "ABC"
+    "Fundamentals"
    ],
    "type": "barrier",
    "statement": "International organisations tasked with building local area-based capacity operate on very short-term and volatile funding envelopes, which undercuts the sustained engagement capacity development requires.",
@@ -17995,7 +17995,7 @@ window.SITE_DATA = {
    "id": "E0184",
    "finding_id": "F386",
    "theme": [
-    "ABC"
+    "Transition"
    ],
    "type": "enabler",
    "statement": "Recruiting and training subnational cluster coordinators working in the national language proved highly constructive for local coordination quality.",
@@ -18512,7 +18512,7 @@ window.SITE_DATA = {
    "id": "E0205",
    "finding_id": "F387",
    "theme": [
-    "ABC"
+    "Transition"
    ],
    "type": "practice",
    "statement": "Area-based structures addressed contingency planning among their inter-agency functions, and in one context supported government-led flood preparedness with structured capacity building for local authorities.",
@@ -18852,7 +18852,7 @@ window.SITE_DATA = {
    "id": "E0219",
    "finding_id": "F426",
    "theme": [
-    "ABC"
+    "Transition"
    ],
    "type": "recommendation",
    "statement": "Invest in technical, institutional and operational capacity at local level through realistic staffing models, reducing reliance on double-hatting and temporary arrangements.",
@@ -18876,7 +18876,7 @@ window.SITE_DATA = {
    "id": "E0220",
    "finding_id": "F109",
    "theme": [
-    "ABC"
+    "Fundamentals"
    ],
    "type": "recommendation",
    "statement": "Treat information management as core coordination infrastructure: harmonise data systems, improve interoperability, establish common technical validation, and enable joint analysis.",
@@ -19125,7 +19125,7 @@ window.SITE_DATA = {
    "id": "E0230",
    "finding_id": "F028",
    "theme": [
-    "Transition"
+    "Fundamentals"
    ],
    "type": "barrier",
    "statement": "Declining information management staffing and weak inter-cluster coordination reduce the quality of coordination architecture during handovers.",
@@ -19379,7 +19379,7 @@ window.SITE_DATA = {
    "id": "E0240",
    "finding_id": "F028",
    "theme": [
-    "Transition"
+    "Fundamentals"
    ],
    "type": "barrier",
    "statement": "Information management is typically the first capacity reduced, so by the time transition planning formally begins, institutional memory, systems and analytical capacity have often already shrunk to a contact list and basic reporting.",
@@ -19404,7 +19404,7 @@ window.SITE_DATA = {
    "id": "E0241",
    "finding_id": "F027",
    "theme": [
-    "Transition"
+    "Fundamentals"
    ],
    "type": "barrier",
    "statement": "Reliance on short-term contracts and inadequate funding drives high turnover among information management staff, which erases the institutional memory clusters depend on.",
@@ -19454,7 +19454,7 @@ window.SITE_DATA = {
    "id": "E0243",
    "finding_id": "F027",
    "theme": [
-    "Transition"
+    "Fundamentals"
    ],
    "type": "barrier",
    "statement": "When coordination had to restart after a major flood, no record of prior technical decisions existed and technical working group discussions on sanitation options had to be repeated from the beginning.",
@@ -19735,7 +19735,7 @@ window.SITE_DATA = {
    "id": "E0254",
    "finding_id": "F019",
    "theme": [
-    "Transition"
+    "Fundamentals"
    ],
    "type": "context",
    "statement": "Roughly half of WASH coordinator and information management positions globally were affected by funding reductions.",
@@ -19759,7 +19759,7 @@ window.SITE_DATA = {
    "id": "E0255",
    "finding_id": "F019",
    "theme": [
-    "Transition"
+    "Fundamentals"
    ],
    "type": "barrier",
    "statement": "Coordinator positions were abolished as the mechanism for meeting a budget reduction of fifteen to twenty per cent.",
@@ -19863,7 +19863,7 @@ window.SITE_DATA = {
    "id": "E0259",
    "finding_id": "F019",
    "theme": [
-    "Transition"
+    "Fundamentals"
    ],
    "type": "barrier",
    "statement": "Sector funding is falling by around eighteen per cent a year while the coordination structure is being reduced in parallel.",
@@ -20720,7 +20720,7 @@ window.SITE_DATA = {
    "id": "E0293",
    "finding_id": "F360",
    "theme": [
-    "Transition"
+    "Fundamentals"
    ],
    "type": "barrier",
    "statement": "Weak local implementation capacity translated directly into uneven service delivery.",
@@ -20852,7 +20852,7 @@ window.SITE_DATA = {
    "id": "E0298",
    "finding_id": "F364",
    "theme": [
-    "Transition"
+    "Fundamentals"
    ],
    "type": "barrier",
    "statement": "Government leadership works until a ministry reshuffle moves the trained counterpart, after which the case for coordination has to be rebuilt from the beginning with officials who do not yet see its value.",
@@ -20879,7 +20879,7 @@ window.SITE_DATA = {
    "id": "E0299",
    "finding_id": "F364",
    "theme": [
-    "Transition"
+    "Fundamentals"
    ],
    "type": "context",
    "statement": "Capacity is not a stock that transition builds once but a flow that staff rotation continuously drains, which is why institutional anchoring matters more than training individuals.",
@@ -22816,7 +22816,7 @@ window.SITE_DATA = {
    "id": "E0375",
    "finding_id": "F364",
    "theme": [
-    "Transition"
+    "Fundamentals"
    ],
    "type": "barrier",
    "statement": "The entire counterpart team at the lead ministry changed within one year, including at senior level, leaving nobody the cluster had previously worked with; meetings to rebuild the relationship did not take place and the transition dialogue stalled.",
@@ -22843,8 +22843,7 @@ window.SITE_DATA = {
    "id": "E0376",
    "finding_id": "F028",
    "theme": [
-    "ABC",
-    "Transition"
+    "Fundamentals"
    ],
    "type": "barrier",
    "statement": "The cluster has had no dedicated information management post this year, having previously been supported both by the refugee coordination platform and directly by the lead agency, and now relies on intermittent consortium and consultancy support.",
@@ -23375,7 +23374,7 @@ window.SITE_DATA = {
    "id": "E0396",
    "finding_id": "F225",
    "theme": [
-    "Transition"
+    "Fundamentals"
    ],
    "type": "barrier",
    "statement": "The cluster must now produce the refugee and migrant disaggregation itself, a function previously carried by the separate refugee coordination platform, without additional capacity.",
@@ -23586,8 +23585,7 @@ window.SITE_DATA = {
    "id": "E0404",
    "finding_id": "F225",
    "theme": [
-    "ABC",
-    "Transition"
+    "Fundamentals"
    ],
    "type": "barrier",
    "statement": "All eighteen state cluster coordinator posts are filled by double-hatting staff, in several cases alongside an NGO co-coordinator, so subnational coordination runs entirely on borrowed capacity.",
@@ -23613,8 +23611,7 @@ window.SITE_DATA = {
    "id": "E0405",
    "finding_id": "F019",
    "theme": [
-    "ABC",
-    "Transition"
+    "Fundamentals"
    ],
    "type": "barrier",
    "statement": "The second coordination post is a temporary appointment unlikely to survive the current budget review, leaving no certainty that two coordination positions exist next year.",
@@ -23834,8 +23831,7 @@ window.SITE_DATA = {
    "id": "E0413",
    "finding_id": "F028",
    "theme": [
-    "ABC",
-    "Transition"
+    "Fundamentals"
    ],
    "type": "barrier",
    "statement": "Recruiting state-level information management support has stalled, with previous surge deployments and overall coordination staffing levels both weighing on the decision.",
@@ -23861,8 +23857,7 @@ window.SITE_DATA = {
    "id": "E0414",
    "finding_id": "F028",
    "theme": [
-    "ABC",
-    "Transition"
+    "Fundamentals"
    ],
    "type": "barrier",
    "statement": "The profile needed for state-level information management is hard to fill because the work is not a short emergency deployment: it connects to systems transitioning and to how the cluster will function in future, so it needs someone embedded, in-country and speaking the national language.",
@@ -23993,8 +23988,7 @@ window.SITE_DATA = {
    "id": "E0419",
    "finding_id": "F251",
    "theme": [
-    "ABC",
-    "Transition"
+    "ABC"
    ],
    "type": "enabler",
    "statement": "Having a cluster coordinator in every one of the eighteen states, which no other cluster has, gives the sector enough technical standing to push back when fragmented parallel structures are proposed.",
@@ -24582,8 +24576,7 @@ window.SITE_DATA = {
    "id": "E0441",
    "finding_id": "F225",
    "theme": [
-    "ABC",
-    "Transition"
+    "Fundamentals"
    ],
    "type": "barrier",
    "statement": "One information management officer covers both the WASH and education sectors, so information management for each is delivered at partial capacity.",
@@ -24637,7 +24630,7 @@ window.SITE_DATA = {
    "id": "E0443",
    "finding_id": "F241",
    "theme": [
-    "Transition"
+    "Fundamentals"
    ],
    "type": "barrier",
    "statement": "Training of trainers for state facilitators and co-coordinators had to be delivered remotely rather than in person because of funding constraints, before a five-day session with state representatives.",
@@ -24906,7 +24899,7 @@ window.SITE_DATA = {
    "id": "E0453",
    "finding_id": "F225",
    "theme": [
-    "Transition"
+    "Fundamentals"
    ],
    "type": "context",
    "statement": "Coordination capacity during the transition is being provided through a standby partner deployment at no cost to the country office, which fills the gap but does not establish a funded post.",
@@ -24933,8 +24926,7 @@ window.SITE_DATA = {
    "id": "E0454",
    "finding_id": "F364",
    "theme": [
-    "ABC",
-    "Transition"
+    "Fundamentals"
    ],
    "type": "barrier",
    "statement": "Key informants for the needs analysis were departmental water and sanitation directors, but almost all had just been rotated into new posts when the questionnaire went out, so responses were difficult to use and the gap had to be filled by a cluster workshop.",
@@ -25119,8 +25111,7 @@ window.SITE_DATA = {
    "id": "E0461",
    "finding_id": "F802",
    "theme": [
-    "ABC",
-    "Transition"
+    "Fundamentals"
    ],
    "type": "barrier",
    "statement": "An advocacy committee bringing together the cluster thematic sub-groups and members with advocacy expertise was recommended two years ago and has still not been established, because each year emergencies require the workplan to be reprioritised.",
@@ -25146,7 +25137,7 @@ window.SITE_DATA = {
    "id": "E0462",
    "finding_id": "F802",
    "theme": [
-    "ABC"
+    "Fundamentals"
    ],
    "type": "barrier",
    "statement": "A change to the pooled fund project review process arrived with a day’s notice and required the committee to meet across the week and nominate members for an in-person session, displacing the cluster meeting and other planned work.",
@@ -25200,8 +25191,7 @@ window.SITE_DATA = {
    "id": "E0464",
    "finding_id": "F805",
    "theme": [
-    "ABC",
-    "Transition"
+    "Fundamentals"
    ],
    "type": "enabler",
    "statement": "A database that takes data pasted from the cluster reporting platform and returns results by indicator has made routine information products quick to produce, and the cluster considers information management its strongest area.",
@@ -25226,8 +25216,7 @@ window.SITE_DATA = {
    "id": "E0465",
    "finding_id": "F028",
    "theme": [
-    "ABC",
-    "Transition"
+    "Fundamentals"
    ],
    "type": "barrier",
    "statement": "A discrepancy between the reporting platform and the dashboard affects the total people-reached figure, and reconciling the two requires support the cluster does not hold in-house.",
@@ -25363,8 +25352,7 @@ window.SITE_DATA = {
    "id": "E0470",
    "finding_id": "F225",
    "theme": [
-    "ABC",
-    "Transition"
+    "Fundamentals"
    ],
    "type": "barrier",
    "statement": "The coordinator and information manager posts are formally split half between coordination and programme, but both have worked at full time or beyond on coordination throughout the emergency, and the formal split is due to be reinstated.",
@@ -25390,8 +25378,7 @@ window.SITE_DATA = {
    "id": "E0471",
    "finding_id": "F225",
    "theme": [
-    "ABC",
-    "Transition"
+    "Fundamentals"
    ],
    "type": "barrier",
    "statement": "Subnational coordination leads are NGO staff acting voluntarily on top of their own roles, and their organisations absorb the time; several are already overstretched.",
@@ -25501,6 +25488,7 @@ window.SITE_DATA = {
    "id": "E0475",
    "finding_id": "F026",
    "theme": [
+    "ABC",
     "Transition"
    ],
    "type": "recommendation",
@@ -25986,8 +25974,7 @@ window.SITE_DATA = {
    "id": "E0493",
    "finding_id": "F225",
    "theme": [
-    "ABC",
-    "Transition"
+    "Fundamentals"
    ],
    "type": "barrier",
    "statement": "Following an agency restructuring, programme leads double-hat as sector coordinators, so the sector is run alongside a full programme portfolio.",
@@ -26013,8 +26000,7 @@ window.SITE_DATA = {
    "id": "E0494",
    "finding_id": "F028",
    "theme": [
-    "ABC",
-    "Transition"
+    "Fundamentals"
    ],
    "type": "barrier",
    "statement": "The national coordination platform has no dedicated information management post; coordination and information management are carried by the coordinator with intermittent help from cluster members and partner staff.",
@@ -26094,8 +26080,7 @@ window.SITE_DATA = {
    "id": "E0497",
    "finding_id": "F1001",
    "theme": [
-    "ABC",
-    "Transition"
+    "Fundamentals"
    ],
    "type": "practice",
    "statement": "After the dedicated sector information management post was discontinued, a shared information management pool was created in the field office — an international lead, a national officer and four analysts serving all agency-led sectors — adopting a model already used in another operation.",
@@ -26399,7 +26384,7 @@ window.SITE_DATA = {
    "id": "E0508",
    "finding_id": "F028",
    "theme": [
-    "Transition"
+    "Fundamentals"
    ],
    "type": "barrier",
    "statement": "Assessment data at national level is collected by cluster members on a voluntary basis, so tools have to stay simple enough for volunteers and local NGO staff, and rapid rounds are limited to four to six indicators.",
@@ -26508,7 +26493,7 @@ window.SITE_DATA = {
    "id": "E0512",
    "finding_id": "F1001",
    "theme": [
-    "Transition"
+    "Fundamentals"
    ],
    "type": "practice",
    "statement": "A pool of staff is being built at sub-district level to support coordination and information management, drawn from UN agencies, NGOs and government offices rather than from a single agency.",
@@ -26529,34 +26514,6 @@ window.SITE_DATA = {
    "stream": "transcript",
    "source_id": "S108",
    "date_collected": "2026-07-17",
-   "confidence": "high",
-   "status": "draft"
-  },
-  {
-   "id": "E0513",
-   "finding_id": "F028",
-   "theme": [
-    "ABC",
-    "Transition"
-   ],
-   "type": "barrier",
-   "statement": "A coordination performance audit scored several areas down specifically because information management is not staffed, so the absence of the post shows up as a coordination failing rather than a resourcing one.",
-   "level": "national",
-   "countries": [
-    "HTI"
-   ],
-   "actors": [
-    "cluster",
-    "un-agency"
-   ],
-   "tags": [
-    "capacity",
-    "information-management",
-    "performance"
-   ],
-   "stream": "transcript",
-   "source_id": "S109",
-   "date_collected": "2026-07-13",
    "confidence": "high",
    "status": "draft"
   },
@@ -26779,8 +26736,7 @@ window.SITE_DATA = {
    "id": "E0522",
    "finding_id": "F028",
    "theme": [
-    "ABC",
-    "Transition"
+    "Fundamentals"
    ],
    "type": "barrier",
    "statement": "An information management recruitment funded from secured resources was frozen when the office established it could not cover the salary into the following year, leaving the function unstaffed.",
@@ -26807,8 +26763,7 @@ window.SITE_DATA = {
    "id": "E0523",
    "finding_id": "F028",
    "theme": [
-    "ABC",
-    "Transition"
+    "Fundamentals"
    ],
    "type": "barrier",
    "statement": "A standby request for an information manager produced candidates that were not validated, and the deployment that followed was assigned to another sector.",
@@ -26834,8 +26789,7 @@ window.SITE_DATA = {
    "id": "E0524",
    "finding_id": "F028",
    "theme": [
-    "ABC",
-    "Transition"
+    "Fundamentals"
    ],
    "type": "barrier",
    "statement": "The information management post was filled at a level below what the role requires, and a coordinator without information management background is not placed to close that gap.",
@@ -26861,8 +26815,7 @@ window.SITE_DATA = {
    "id": "E0525",
    "finding_id": "F1001",
    "theme": [
-    "ABC",
-    "Transition"
+    "Fundamentals"
    ],
    "type": "practice",
    "statement": "A three-month deployment is arriving to build the capacity of volunteer information officers covering two sectors, though the deployee background is in another sector rather than WASH.",
@@ -27051,8 +27004,7 @@ window.SITE_DATA = {
    "id": "E0532",
    "finding_id": "F225",
    "theme": [
-    "ABC",
-    "Transition"
+    "Fundamentals"
    ],
    "type": "barrier",
    "statement": "Both coordinators are double-hatting, and with assessment scope expanding sharply next year the country office has been told that a double-hatting arrangement is unlikely to be sufficient.",
@@ -27188,7 +27140,7 @@ window.SITE_DATA = {
    "id": "E0537",
    "finding_id": "F364",
    "theme": [
-    "Transition"
+    "Fundamentals"
    ],
    "type": "barrier",
    "statement": "Frequent changes in senior public administration posts during the period affected the design of the transition strategy, as the counterparts involved kept changing.",
@@ -27401,8 +27353,7 @@ window.SITE_DATA = {
    "id": "E0545",
    "finding_id": "F805",
    "theme": [
-    "ABC",
-    "Transition"
+    "Fundamentals"
    ],
    "type": "practice",
    "statement": "A free web application built on common office tools routes partner requests for prepositioned supplies through the cluster to a government approver and issues an automatic authorisation, replacing a paper process that made reporting to donors difficult.",
@@ -27482,8 +27433,7 @@ window.SITE_DATA = {
    "id": "E0548",
    "finding_id": "F225",
    "theme": [
-    "ABC",
-    "Transition"
+    "Fundamentals"
    ],
    "type": "barrier",
    "statement": "A sharp expansion in assessment coverage raises whether the coordination structure can cover the provinces and districts involved, which has been flagged to the country office as a staffing question.",
@@ -27563,7 +27513,7 @@ window.SITE_DATA = {
    "id": "E0551",
    "finding_id": "F225",
    "theme": [
-    "Transition"
+    "Fundamentals"
    ],
    "type": "barrier",
    "statement": "Implementing the transition strategy needs someone working alongside provincial and national government continuously; a short consultancy would not cover it, and the initial timeline is at least two years depending on resources.",
@@ -27590,7 +27540,7 @@ window.SITE_DATA = {
    "id": "E0552",
    "finding_id": "F225",
    "theme": [
-    "ABC"
+    "Fundamentals"
    ],
    "type": "context",
    "statement": "A growing pooled fund envelope brings more partners and more monitoring expectations onto the cluster, and coordination is being activated at district level in one province because so many partners there now hold allocations.",
@@ -27753,8 +27703,7 @@ window.SITE_DATA = {
    "id": "E0558",
    "finding_id": "F027",
    "theme": [
-    "ABC",
-    "Transition"
+    "Fundamentals"
    ],
    "type": "barrier",
    "statement": "If the coordination function stops without a receiver, several years of accumulated information will not be picked up by either the government or the lead agency.",
@@ -27781,8 +27730,7 @@ window.SITE_DATA = {
    "id": "E0559",
    "finding_id": "F019",
    "theme": [
-    "ABC",
-    "Transition"
+    "Fundamentals"
    ],
    "type": "barrier",
    "statement": "Regional coordinator and information management posts were lost last year, and the one remaining double-hatting regional post ends as coordination shifts to area-based structures, leaving no sector presence in that region.",
@@ -28135,7 +28083,7 @@ window.SITE_DATA = {
    "id": "E0572",
    "finding_id": "F027",
    "theme": [
-    "ABC"
+    "Fundamentals"
    ],
    "type": "barrier",
    "statement": "Contact with area-based structures runs through agency colleagues in the region rather than directly, and that arrangement ends with the departure of the staff member concerned.",
@@ -28161,8 +28109,7 @@ window.SITE_DATA = {
    "id": "E0573",
    "finding_id": "F802",
    "theme": [
-    "ABC",
-    "Transition"
+    "Fundamentals"
    ],
    "type": "barrier",
    "statement": "Planned advocacy work slipped again because the dates set could not be held against other activities the cluster is required to take part in.",
@@ -28188,7 +28135,7 @@ window.SITE_DATA = {
    "id": "E0574",
    "finding_id": "F364",
    "theme": [
-    "Transition"
+    "Fundamentals"
    ],
    "type": "barrier",
    "statement": "Subnational coordination weakened from the start of the year when a ministry reform replaced the previous regional focal points with newly created directorates, and the structures are still bedding in.",
@@ -28656,8 +28603,7 @@ window.SITE_DATA = {
    "id": "E0591",
    "finding_id": "F019",
    "theme": [
-    "ABC",
-    "Transition"
+    "Fundamentals"
    ],
    "type": "barrier",
    "statement": "Every cluster coordinator post in the country was removed in a restructuring — across WASH, nutrition, education and protection — and most information management contracts were not renewed alongside them.",
@@ -28684,8 +28630,7 @@ window.SITE_DATA = {
    "id": "E0592",
    "finding_id": "F225",
    "theme": [
-    "ABC",
-    "Transition"
+    "Fundamentals"
    ],
    "type": "barrier",
    "statement": "Coordination is carried by a co-facilitator whose post is fully funded by programme, with around thirty per cent of time notionally available for the sector, and by a specialist contributing around twenty per cent.",
@@ -28712,7 +28657,6 @@ window.SITE_DATA = {
    "id": "E0593",
    "finding_id": "F386",
    "theme": [
-    "ABC",
     "Transition"
    ],
    "type": "enabler",
@@ -28740,7 +28684,7 @@ window.SITE_DATA = {
    "id": "E0594",
    "finding_id": "F364",
    "theme": [
-    "Transition"
+    "Fundamentals"
    ],
    "type": "barrier",
    "statement": "The government counterpart changed three times in a year: the official covering the role was promoted, the replacement took extended sick leave, and a new one was introduced less than a month ago.",
@@ -28847,7 +28791,7 @@ window.SITE_DATA = {
    "id": "E0598",
    "finding_id": "F225",
    "theme": [
-    "Transition"
+    "Fundamentals"
    ],
    "type": "barrier",
    "statement": "With the coordinator post vacant, decisions that would normally sit with a coordinator have no home: the co-facilitator is not placed to take them and there is nobody to refer them to.",
@@ -28873,7 +28817,7 @@ window.SITE_DATA = {
    "id": "E0599",
    "finding_id": "F225",
    "theme": [
-    "Transition"
+    "Fundamentals"
    ],
    "type": "barrier",
    "statement": "Attending meetings and producing the planning documentation are different demands: the staff member with a fraction of time available can attend, but cannot draft indicators, objectives and strategy against the planning deadlines.",
@@ -29037,8 +28981,7 @@ window.SITE_DATA = {
    "id": "E0605",
    "finding_id": "F225",
    "theme": [
-    "ABC",
-    "Transition"
+    "Fundamentals"
    ],
    "type": "practice",
    "statement": "An inter-sector working group is being formed to pool and harmonise the separate surveys, though the sector has nobody to represent it there once the remaining post ends.",
@@ -29065,8 +29008,7 @@ window.SITE_DATA = {
    "id": "E0606",
    "finding_id": "F360",
    "theme": [
-    "ABC",
-    "Transition"
+    "Fundamentals"
    ],
    "type": "barrier",
    "statement": "A thematic group is being stood up to develop a faecal sludge management strategy for displacement sites, and few partners approached so far have experience in that area.",
@@ -29202,8 +29144,7 @@ window.SITE_DATA = {
    "id": "E0611",
    "finding_id": "F019",
    "theme": [
-    "ABC",
-    "Transition"
+    "Fundamentals"
    ],
    "type": "barrier",
    "statement": "Five dedicated subnational coordinator posts were lost and state-level coordination now rests on voluntary arrangements; the co-coordinator seconded by an NGO and the one dedicated state post are both funded only to the end of the year.",
@@ -29230,8 +29171,7 @@ window.SITE_DATA = {
    "id": "E0612",
    "finding_id": "F225",
    "theme": [
-    "ABC",
-    "Transition"
+    "Fundamentals"
    ],
    "type": "barrier",
    "statement": "The information management post is half-time and split between the agency section and the cluster, with the planning season and its documentation demands arriving on top.",
@@ -29392,8 +29332,7 @@ window.SITE_DATA = {
    "id": "E0618",
    "finding_id": "F225",
    "theme": [
-    "ABC",
-    "Transition"
+    "Fundamentals"
    ],
    "type": "barrier",
    "statement": "The roving coordinator function that covered field monitoring across states is no longer operating, which leaves several of the core coordination functions without the field presence they depend on.",
@@ -29690,8 +29629,7 @@ window.SITE_DATA = {
    "id": "E0629",
    "finding_id": "F225",
    "theme": [
-    "ABC",
-    "Transition"
+    "Fundamentals"
    ],
    "type": "barrier",
    "statement": "Work on activity-based unit costing was started but stalled for want of people to carry it, leaving the sector without current cost figures for planning.",

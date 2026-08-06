@@ -10,7 +10,7 @@
   --line:#DFE6EC; --bg:#F5F8FA; --card:#FFFFFF;
   --accent:#1F5C8B;
   /* categorical — nominal classes */
-  --abc:#1F5C8B; --transition:#C0662B; --both:#6B4E9E;
+  --abc:#1F5C8B; --transition:#C0662B; --fundamentals:#4A7C59;
   --barrier:#B33A3A; --enabler:#2E7D5B; --recommendation:#6B4E9E;
   --practice:#177B8A; --context:#7A8794;
   /* sequential single hue — ordered values */
@@ -44,6 +44,7 @@ input[type=search]{flex:1;min-width:200px}
 .chip:hover{border-color:var(--ink-3)}
 .chip.on{background:var(--accent);border-color:var(--accent);color:#fff;font-weight:500}
 .chip.on[data-k=theme][data-v=Transition]{background:var(--transition);border-color:var(--transition)}
+.chip.on[data-k=theme][data-v=Fundamentals]{background:var(--fundamentals);border-color:var(--fundamentals)}
 .chip.on[data-k=type][data-v=barrier]{background:var(--barrier);border-color:var(--barrier)}
 .chip.on[data-k=type][data-v=enabler]{background:var(--enabler);border-color:var(--enabler)}
 .chip.on[data-k=type][data-v=recommendation]{background:var(--recommendation);border-color:var(--recommendation)}
@@ -64,9 +65,10 @@ input[type=search]{flex:1;min-width:200px}
 .pill{border-radius:4px;padding:2px 8px;color:#fff;font-weight:600;font-size:11px;
   text-transform:uppercase;letter-spacing:.4px}
 .pill.ABC{background:var(--abc)} .pill.Transition{background:var(--transition)}
+.pill.Fundamentals{background:var(--fundamentals)}
 /* One illustrative case, marked as such. The statement above it is the claim;
    this is one instance of it, and the records below are the full range. */
-.eg{margin:6px 0 0;padding:7px 11px;border-left:3px solid var(--abc);background:#F4F6F9;
+.eg{margin:6px 0 0;padding:7px 11px;border-left:3px solid var(--fundamentals);background:#F4F6F9;
     font-size:13px;line-height:1.5;color:#3A4551;border-radius:0 4px 4px 0}
 .pill.barrier{background:var(--barrier)} .pill.enabler{background:var(--enabler)}
 .pill.recommendation{background:var(--recommendation)} .pill.practice{background:var(--practice)}

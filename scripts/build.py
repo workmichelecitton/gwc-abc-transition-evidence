@@ -332,6 +332,22 @@ def main():
     if missing:
         warn("high-strength findings with no plain-language highlight yet: " + ", ".join(missing))
 
+    # ---- verifiability guard ------------------------------------------------
+    # A transcript record with no quote cannot be checked against its source by
+    # anyone who was not on the call. That is how an inference gets recorded as
+    # evidence: one Haiti record asserted a conclusion the speaker never drew,
+    # and it survived because there was nothing to check it against. Quotes are
+    # stripped at build time (see DROP), so capturing them costs nothing public.
+    tr = [r for r in evidence_rows if (r.get("stream") or "").strip() == "transcript"]
+    noq = [r for r in tr if not (r.get("quote") or "").strip()]
+    if noq:
+        by_src = defaultdict(int)
+        for r in noq:
+            by_src[(r.get("source_id") or "?").strip()] += 1
+        worst = ", ".join(f"{k}:{v}" for k, v in sorted(by_src.items(), key=lambda x: -x[1])[:6])
+        warn(f"verifiability: {len(noq)} of {len(tr)} transcript records carry no quote, so "
+             f"nothing anchors them to what was actually said. Worst sources — {worst}")
+
     # ---- granularity guard --------------------------------------------------
     # A finding is a claim plus everything supporting it. If most findings hold
     # a single record, the finding layer has drifted down to record level: the

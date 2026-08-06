@@ -20,7 +20,11 @@ data/follow-ups.csv ──► validated, never published
 
 `findings.csv` holds the statement shown for a finding that groups several records, plus one illustrative country example. Record statements are never rewritten to merge them — the country-specific detail stays intact underneath and appears when a card is expanded.
 
-**`theme` is multi-value.** `ABC`, `Transition`, or `ABC;Transition`. There is no `Both`: as a single third value it matched *neither* filter, so the cross-cutting evidence was unreachable from either side. 79 findings now appear under both.
+**`theme` is multi-value, with three values.** `ABC`, `Transition`, `Fundamentals`, or a combination. There is no `Both`: as a single value it matched *neither* filter.
+
+`Fundamentals` exists because ABC and Transition are *configurations*, and much of what coordinators raise is neither — staffing, funding, IM capacity, institutional memory, counterpart turnover. The test: **would this claim still be true in a country with no area-based structure and no transition under way?** If yes, it is a fundamentals finding. This departs from the SDR framing deliberately: filing a staffing constraint under Transition makes it look like a consequence of transition when it is a standing condition transition runs into.
+
+Theme says what a finding is *about*; `tags` say what it *bears on*.
 
 You edit the CSVs. A GitHub Action validates them, regenerates `site.json`, and the published site picks it up. **Nobody edits `index.html` to change what the site says.**
 

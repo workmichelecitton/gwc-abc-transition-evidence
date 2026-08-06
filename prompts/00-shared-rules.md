@@ -75,7 +75,7 @@ Every value in a controlled column must already exist in `data/taxonomy.json`. I
 |---|---|
 | `id` | `E####`, continuing from the highest existing id. Never reuse. |
 | `finding_id` | **Leave blank.** Prompt 04 assigns these. |
-| `theme` | `ABC`, `Transition`, or both as `ABC;Transition`. Semicolon-separated, like `tags`. There is no `Both` value: it used to be a third option and it matched *neither* filter, so cross-cutting evidence — the most useful kind — was unreachable. Use both labels only when the claim genuinely applies to each, not when you are unsure; when unsure, pick the one the source was actually talking about. |
+| `theme` | `ABC`, `Transition`, `Fundamentals`, or a semicolon-separated combination. **Apply the test:** would this claim still be true in a country with no area-based structure and no transition under way? Yes → `Fundamentals` (staffing, funding, information management capacity, institutional memory, counterpart turnover — the standing conditions any arrangement depends on). Only where coordination is organised by area → `ABC`. Only where it is being handed over → `Transition`. There is no `Both`: as a single value it matched *neither* filter. Theme says what the claim is **about**; `tags` say what it **bears on**, so a fundamentals finding relevant to handover still carries `transition-handover` and is reachable that way. |
 | `type` | `barrier` · `enabler` · `recommendation` · `practice` · `context` |
 | `statement` | One sentence, per above. Wrap in double quotes. |
 | `quote` | Verbatim, anonymised. Blank is fine and often correct. |
