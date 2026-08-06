@@ -13450,13 +13450,11 @@
   },
   {
    "finding_id": "F708",
-   "statement": "Gastroenteritis cases have been notified near the border with a neighbouring country where a large cholera outbreak is under way, and emergency preparations are being made with the zone offices.",
+   "statement": "An outbreak crossing a shared border is reported from both sides, but each country coordinates through its own platform and no forum convenes the neighbours together.",
    "theme": [
-    "ABC",
-    "Fundamentals",
-    "Transition"
+    "Fundamentals"
    ],
-   "example": "",
+   "example": "Chad — cholera in the west is understood to originate from the outbreak in the neighbouring country, which is separately reporting a cross-border dimension with three of its neighbours.",
    "type": "context",
    "strength": "high",
    "n_records": 3,
@@ -13484,7 +13482,12 @@
     "E0458",
     "E0670"
    ],
-   "unmerged": false
+   "unmerged": false,
+   "highlight": {
+    "headline": "An outbreak does not stop at the border, but the coordination does",
+    "plain": "Cholera moving across a shared border is being reported from both sides — one country tracing its cases to the outbreak next door. Each country coordinates its own response through its own platform, and there is no forum where the neighbours plan together. Containment depends on the part nobody owns.",
+    "so_what": "Convene the affected countries together early, even informally. A shared space for materials, case data and contacts costs little and is the one thing no single country platform can provide."
+   }
   },
   {
    "finding_id": "F709",
