@@ -8,11 +8,17 @@ Beta successor to [gwc-sdr-explorer](https://github.com/Global-WASH-Cluster/gwc-
 
 ```
 data/evidence.csv ─┐
-data/sources.csv  ─┼─► scripts/build.py ─► data/site.json ─► index.html
-data/taxonomy.json ┘      (GitHub Action)
+data/sources.csv  ─┤
+data/findings.csv ─┼─► scripts/build.py ─► data/site.json ─► index.html
+data/taxonomy.json ┤      (GitHub Action)
+data/highlights.csv┘
 
 data/follow-ups.csv ──► validated, never published
 ```
+
+**The three layers.** A *record* is one claim from one source. A *finding* is a claim plus every record supporting it — several countries reporting the same issue is one finding, not several. A *source* is where a record came from. Strength of evidence is computed from how many independent sources sit under a finding; it is never asserted by hand.
+
+`findings.csv` holds the statement shown for a finding that groups several records. Record statements are never rewritten to merge them — the country-specific detail stays intact underneath and appears when a card is expanded.
 
 You edit the CSVs. A GitHub Action validates them, regenerates `site.json`, and the published site picks it up. **Nobody edits `index.html` to change what the site says.**
 
@@ -61,6 +67,8 @@ Do not lose these. Both are deliberate "not yet", not oversights.
 |---|---|---|
 | 1 | **Remove the Matrix tab.** It is useful now for spotting where evidence is thick and thin while the base is being built. It is not useful to a reader once the base is complete. | After the SDR, workshop material and all country transcripts are in |
 | 2 | **Prune unused themes from `taxonomy.json`.** Tags that no evidence ever lands on are clutter in every filter. Currently unused: `advocacy`, `inclusion`, `markets`. | Same point — judge once, on the full base |
+| 3 | **Finish the consolidation.** `capacity` is done (122 findings → 41). The build warns while more than half of findings hold a single record. Remaining work packages, largest first: `transition-handover`, `coordination-architecture`, `information-management`, `government-engagement`, `funding` + `pooled-funds`, `localisation`, `hpc`. Method is in `prompts/04`. | Ongoing — a tag at a time |
+| 4 | **Group the Findings tab by tag.** Even consolidated, the list is long enough to want a top level. The tags already work as one; adding a new field is probably unnecessary. | After consolidation |
 
 ## Confidentiality: what is published and what is not
 
@@ -71,6 +79,7 @@ Do not lose these. Both are deliberate "not yet", not oversights.
 | `notes` | **No.** Never leaves the CSV. |
 | records marked `visibility: internal` | **No.** Dropped entirely. |
 | `follow-ups.csv` | Validated, never published to the site |
+| `findings.csv` | Yes — written at issue level, no country-identifying detail |
 
 A verbatim quote plus a country plus a role is enough to identify one coordinator. To publish quotes anyway, remove `"quote"` from `DROP` in `scripts/build.py`.
 

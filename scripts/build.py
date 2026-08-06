@@ -193,17 +193,70 @@ def main():
     for s in sources:
         group_of[s["source_id"]] = (s.get("source_group") or "").strip() or s["source_id"]
 
+    # ---- curated finding-level statements ----------------------------------
+    # data/findings.csv holds the statement shown for a finding that groups
+    # several records. Without it the build falls back to the longest record
+    # statement, which is wrong once a finding covers several countries: the
+    # reader sees one country's wording standing in for all of them.
+    #
+    # The record statements in evidence.csv are never rewritten. A merge is
+    # therefore two reversible edits — a finding_id reassignment, and a row
+    # here — and the country-specific detail stays intact underneath.
+    curated = {}
+    f_path = DATA / "findings.csv"
+    if f_path.exists():
+        f_types = allowed(taxonomy, "type")
+        f_themes = allowed(taxonomy, "theme")
+        for i, r in enumerate(read_csv(f_path), start=2):
+            fid = (r.get("finding_id") or "").strip()
+            if not fid:
+                continue
+            if not FID_RE.match(fid):
+                errors.append(f"  findings.csv row {i}: bad finding_id '{fid}'")
+                continue
+            if fid in curated:
+                errors.append(f"  findings.csv row {i}: duplicate finding_id '{fid}'")
+                continue
+            st = (r.get("statement") or "").strip()
+            if not st:
+                errors.append(f"  findings.csv row {i} ({fid}): statement is empty")
+            th, ty = (r.get("theme") or "").strip(), (r.get("type") or "").strip()
+            if th and th not in f_themes:
+                errors.append(f"  findings.csv row {i} ({fid}): theme '{th}' not in taxonomy.theme")
+            if ty and ty not in f_types:
+                errors.append(f"  findings.csv row {i} ({fid}): type '{ty}' not in taxonomy.type")
+            curated[fid] = {"statement": st, "theme": th, "type": ty}
+        for fid in curated:
+            if fid not in groups:
+                warn(f"findings.csv: '{fid}' has no evidence records — orphan row, delete it")
+        if errors:
+            report()
+            return 1
+
     findings = []
     for fid, rows in sorted(groups.items()):
         n_src = len({group_of.get(r["source_id"], r["source_id"]) for r in rows})
         n_str = len({r["stream"] for r in rows})
-        strength = "high" if (n_src >= 3 or n_str >= 2) else "medium" if n_src == 2 else "low"
+        # Two streams only corroborate if they are also two independent sources.
+        # The 2026 consultation carries records tagged 'workshop' and records
+        # tagged 'sdr'; both sit in one source_group, so a finding resting on it
+        # alone spans two streams while resting on one voice. Requiring n_src>=2
+        # closes that route — nothing can reach 'high' on a single source group.
+        strength = ("high" if (n_src >= 3 or (n_src >= 2 and n_str >= 2))
+                    else "medium" if n_src == 2 else "low")
         primary = max(rows, key=lambda r: len(r.get("statement", "")))
+        cur = curated.get(fid, {})
+        # A finding drawing on more than one country needs a curated statement,
+        # otherwise one country's wording is presented as the general claim.
+        if len(rows) > 1 and not cur.get("statement") and len(
+                {c for r in rows for c in r["countries"]}) > 1:
+            warn(f"{fid}: {len(rows)} records across several countries but no row in "
+                 f"findings.csv — the site is showing one record's wording as the finding")
         findings.append({
             "finding_id": fid,
-            "statement": primary["statement"],
-            "theme": primary["theme"],
-            "type": primary["type"],
+            "statement": cur.get("statement") or primary["statement"],
+            "theme": cur.get("theme") or primary["theme"],
+            "type": cur.get("type") or primary["type"],
             "strength": strength,
             "n_records": len(rows),
             "n_sources": n_src,
@@ -269,6 +322,44 @@ def main():
                if f["strength"] == "high" and f["finding_id"] not in hl]
     if missing:
         warn("high-strength findings with no plain-language highlight yet: " + ", ".join(missing))
+
+    # ---- granularity guard --------------------------------------------------
+    # A finding is a claim plus everything supporting it. If most findings hold
+    # a single record, the finding layer has drifted down to record level: the
+    # same issue reported by six countries reads as six 'low' findings instead
+    # of one 'high' one, and the base looks weaker than the evidence warrants.
+    # Extraction causes this quietly, because each batch merges only within
+    # itself. Run prompts/04 across the whole base when this warns.
+    solo = sum(1 for f in findings if f["n_records"] == 1)
+    if findings and solo / len(findings) > 0.50:
+        warn(f"granularity: {solo} of {len(findings)} findings ({solo/len(findings):.0%}) "
+             f"hold one record. Consolidation is overdue — run prompts/04 across the "
+             f"whole base, tag by tag, not just over the newest rows.")
+
+    # ---- independence guard -------------------------------------------------
+    # source_group already collapses the 2026 consultation into one source. What
+    # it cannot see is that a workshop claim attributed to country X and country
+    # X's own check-in are frequently the same person speaking twice. A finding
+    # resting on exactly those two is 'medium' when it should be 'low'.
+    consult = {s["source_id"] for s in sources
+               if (s.get("source_group") or "").strip() == "gwc-consult-2026"}
+    if consult:
+        for f in findings:
+            if f["n_sources"] != 2:
+                continue
+            sids = {r["source_id"] for r in published if r["id"] in set(f["record_ids"])}
+            if not (sids & consult):
+                continue
+            others = sids - consult
+            shared = {c for r in published if r["id"] in set(f["record_ids"])
+                      and r["source_id"] in consult for c in r["countries"]}
+            for r in published:
+                if r["id"] in set(f["record_ids"]) and r["source_id"] in others:
+                    if shared & set(r["countries"]):
+                        warn(f"{f['finding_id']}: rated medium on the 2026 consultation plus "
+                             f"a check-in from the same country — likely one voice twice, "
+                             f"not two independent sources. Check before relying on it.")
+                        break
 
     # ---- about text (editable without touching index.html) -----------------
     about_path = DATA / "about.json"

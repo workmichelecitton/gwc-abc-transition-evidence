@@ -6,9 +6,11 @@
 
 The site does not display the `confidence` column. It computes strength of evidence per `finding_id`:
 
-- **high** — three or more independent sources, **or** two or more different streams
+- **high** — three or more independent sources, **or** two or more streams *from at least two independent sources*
 - **medium** — two independent sources
 - **low** — one source
+
+The qualification on streams matters. The 2026 consultation carries records tagged `workshop` and records tagged `sdr`, all inside one `source_group`. Without it, a finding resting on that single event alone spanned two streams and rated **high**. Nothing can now reach high on one source group.
 
 So `finding_id` is not an organising convenience. It is the measurement. Group two records that do not really say the same thing and you manufacture corroboration that does not exist. Fail to group two that do, and real corroboration is invisible.
 
@@ -38,6 +40,32 @@ They do **not** belong together merely because they share a topic.
 
 When genuinely unsure, **keep them separate**. An under-merged base understates strength, which is a conservative and recoverable error. An over-merged base overstates it, which is the failure that discredits the product.
 
+## The consolidation pass — run this periodically, not just per batch
+
+The rule above is right within a batch and wrong as a permanent posture. Fourteen extraction passes, each merging only against what it could see, produced 483 findings over 635 records: 82% held a single record, and a term-overlap scan of the whole base returned **two** near-duplicate pairs. Nothing was duplicated. The finding layer had simply drifted down to record level — each country's instance of a shared phenomenon became its own finding, because each was worded in that country's terms.
+
+The cost is not untidiness. It is that the strength metric **understates** the evidence. Four countries independently describing subnational coordinators who double-hat read as four `low` findings when they are one `high` one.
+
+So: every few batches, and whenever the build warns on granularity, work across the whole base **tag by tag**.
+
+1. Pull every finding carrying one tag — `capacity`, `information-management`, `government-engagement` and so on. That is the work package.
+2. Within it, group by **issue**, not by wording. The test is whether the same remedy applies. If two records point at different remedies, they are different findings however similar the topic.
+3. Merge `barrier` with `context`, and `enabler` with `practice`, where they are the same issue in different registers. Keep `recommendation` separate — a recommendation is a different kind of statement from an observation.
+4. Write the general statement in `data/findings.csv`. **Do not rewrite the record statements.** The country-specific detail is the reason anyone believes the base; it stays in the records and surfaces when a card is expanded.
+5. Run the independence check below on every merge before accepting the new strength.
+
+A merge is therefore two reversible edits — a `finding_id` reassignment and a row in `findings.csv`. Nothing is deleted, and the previous state is recoverable from git.
+
+## `data/findings.csv`
+
+Columns: `finding_id,theme,type,statement`.
+
+Without a row here, the site displays the **longest record statement** as the finding. That is acceptable for a single-record finding and wrong for anything covering several countries — one country's wording gets presented as the general claim. The build warns whenever a multi-country finding has no row.
+
+Write the statement at the level of the issue, name the mechanism and its consequence, and let it carry the range of the evidence beneath it without naming every country.
+
+The one-sentence rule in `prompts/00-shared-rules.md` governs **record** statements. A finding statement standing over twenty records from eleven countries needs a short paragraph — three or four sentences. The register rules still apply in full.
+
 ## Independence check
 
 Before treating grouped records as corroboration, verify the sources are actually independent.
@@ -55,7 +83,7 @@ Where sources are not independent, keep the records separate and explain in `not
 
 - Any record whose statement duplicates another **from the same source**. That is a genuine duplicate — delete one.
 - Findings where every record has `status` = `draft`. Flag them; they have never been checked by a person.
-- Findings that have grown past six or seven records. Usually a sign the statement has drifted into a topic and should be split.
+- Findings where the records no longer point at one remedy. Size alone is not the signal — a finding can legitimately hold twenty records from a dozen countries. Split when a reader would give two different answers to "so what should change?"
 
 ## Output
 
