@@ -3622,7 +3622,7 @@ window.SITE_DATA = {
   },
   {
    "finding_id": "F1208",
-   "statement": "The multi-sector assessment expands from around twenty districts to over a hundred, covering conflict, floods and an anticipated climate event, using the same question set as the previous round so the analysis method is already established.",
+   "statement": "The multi-sector assessment will cover 121 districts this year, close to nationwide, spanning conflict, floods and cholera contexts.",
    "theme": [
     "ABC",
     "Transition"
@@ -27007,7 +27007,7 @@ window.SITE_DATA = {
     "Fundamentals"
    ],
    "type": "barrier",
-   "statement": "Both coordinators are double-hatting, and with assessment scope expanding sharply next year the country office has been told that a double-hatting arrangement is unlikely to be sufficient.",
+   "statement": "One of the two coordinators double-hats and has limited time for the role; the country office has committed two additional staff.",
    "level": "national",
    "countries": [
     "MOZ"
@@ -27160,7 +27160,7 @@ window.SITE_DATA = {
    "stream": "transcript",
    "source_id": "S110",
    "date_collected": "2026-07-03",
-   "confidence": "high",
+   "confidence": "low",
    "status": "draft"
   },
   {
@@ -27410,7 +27410,7 @@ window.SITE_DATA = {
     "Transition"
    ],
    "type": "practice",
-   "statement": "The multi-sector assessment expands from around twenty districts to over a hundred, covering conflict, floods and an anticipated climate event, using the same question set as the previous round so the analysis method is already established.",
+   "statement": "The multi-sector assessment will cover 121 districts this year, close to nationwide, spanning conflict, floods and cholera contexts.",
    "level": "national",
    "countries": [
     "MOZ"
