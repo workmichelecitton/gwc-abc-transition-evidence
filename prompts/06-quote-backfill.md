@@ -1,6 +1,6 @@
 # 06 — Quote backfill
 
-**Status: 2 of 14 transcripts done. 246 records still carry no quote.**
+**Status: 3 of 14 transcripts done. 218 records still carry no quote.**
 
 ## Why this exists
 
@@ -16,8 +16,15 @@ Two records have already been caught this way, both by reading the recording bac
 - **Sudan E0429** — asserted that a written explanation of the cluster's concerns
   with the pooled fund prioritisation did not change the approach. No supporting
   passage exists. Marked draft/low pending a check.
+- **Colombia E0399** — said a partner agency challenged the methodology "as reflecting
+  poverty rather than humanitarian need". The source records disagreement with the
+  calculation, nothing about poverty. Clause removed, rest kept.
+- **Colombia E0376** — asserted there has been no dedicated IM post this year, previously
+  supported by the refugee coordination platform. The transcript discusses IM support
+  being provided, not withdrawn. Marked draft/low.
 
-Two in the first two transcripts. Assume more.
+Four in the first three transcripts, roughly one in twenty records. Assume the same
+rate holds and budget for it: the pass is a correction exercise, not a clerical one.
 
 Quotes are stripped at build time (`DROP` in `build.py`), so capturing them costs
 nothing in confidentiality terms. They are for verification, not publication.
@@ -26,7 +33,6 @@ nothing in confidentiality terms. They are for verification, not publication.
 
 | Source | Country | Records | Drive file ID |
 |---|---|---|---|
-| S103 | Colombia (Spanish) | 29 | `1lQ7CR5Kxh2AKyn7sL98IR-MxNidY3dx9` |
 | S107 | Lebanon | 23 | `1VE8Q__LsIcJzAUojsJp41R5z2W-aQCyb` |
 | S012 | Myanmar | 22 | (two sessions) |
 | S110 | Mozambique | 22 | `11yJVtARQOv67hXRu7YXn9GqfMs3qBqGs` |
@@ -39,7 +45,7 @@ nothing in confidentiality terms. They are for verification, not publication.
 | S113 | Mali | 17 | `1l6YjJeZC1bch00MLO8ls2BL7hEp7pTUs` |
 | S106 | Niger | 16 | `1qX6mcFe04sXIrziYb1hduz6dAksPUzt-` |
 
-Done: **S109 Haiti** (17), **S104 Sudan** (31).
+Done: **S109 Haiti** (17), **S104 Sudan** (31), **S103 Colombia** (28).
 
 ## Method — one source per pass
 
@@ -58,9 +64,13 @@ from the records instead.
 5. **Where no passage supports the record, do not invent one.** Set `status: draft`,
    `confidence: low`, and write what you looked for in `notes`. Report it. This step
    only has value if it is allowed to fail.
-6. Watch for numbers that collide. Sudan's "65, 70 partners" sits close to "65
+6. **Long turns defeat a line-based search.** Colombia's opening turn runs several
+   hundred words, so every keyword matched the same block. Split turns into sentences
+   first, carrying the speaker label forward; searching 341 segments works where
+   searching 86 turns did not.
+7. Watch for numbers that collide. Sudan's "65, 70 partners" sits close to "65
    million" in funding — a keyword search finds the wrong one.
-7. Build, then commit per source so a bad pass can be reverted alone.
+8. Build, then commit per source so a bad pass can be reverted alone.
 
 ## When a record turns out to be identifying
 

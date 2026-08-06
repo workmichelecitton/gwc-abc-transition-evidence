@@ -11785,7 +11785,7 @@
   },
   {
    "finding_id": "F519",
-   "statement": "A partner agency challenged the sector needs methodology across several clusters as reflecting poverty rather than humanitarian need; the cluster defended it on the basis that it combines conflict exposure, disaster incidence and public health indicators alongside service coverage.",
+   "statement": "A partner agency questioned the sector needs methodology across several clusters, disagreeing with how the calculation was done.",
    "theme": [
     "Transition"
    ],
@@ -22863,7 +22863,7 @@
    "stream": "transcript",
    "source_id": "S103",
    "date_collected": "2026-08-03",
-   "confidence": "high",
+   "confidence": "low",
    "status": "draft"
   },
   {
@@ -23456,7 +23456,7 @@
     "Transition"
    ],
    "type": "context",
-   "statement": "A partner agency challenged the sector needs methodology across several clusters as reflecting poverty rather than humanitarian need; the cluster defended it on the basis that it combines conflict exposure, disaster incidence and public health indicators alongside service coverage.",
+   "statement": "A partner agency questioned the sector needs methodology across several clusters, disagreeing with how the calculation was done.",
    "level": "national",
    "countries": [
     "COL"
