@@ -58,13 +58,22 @@ A merge is therefore two reversible edits — a `finding_id` reassignment and a 
 
 ## `data/findings.csv`
 
-Columns: `finding_id,theme,type,statement`.
+Columns: `finding_id,theme,type,statement,example`.
 
 Without a row here, the site displays the **longest record statement** as the finding. That is acceptable for a single-record finding and wrong for anything covering several countries — one country's wording gets presented as the general claim. The build warns whenever a multi-country finding has no row.
 
 Write the statement at the level of the issue, name the mechanism and its consequence, and let it carry the range of the evidence beneath it without naming every country.
 
-The one-sentence rule in `prompts/00-shared-rules.md` governs **record** statements. A finding statement standing over twenty records from eleven countries needs a short paragraph — three or four sentences. The register rules still apply in full.
+Keep it to **one or two sentences, around 30 words**. A finding statement is a claim someone could disagree with, not a summary of everything underneath it. The first draft of this file failed on exactly that: each clause earned its place from a different record, and the result was accurate prose with no edge.
+
+`example` holds **one** case, country-named, one or two sentences. Two rules:
+
+- **It is a separate field, not part of the statement.** The statement is what gets lifted into an HNO, a slide or an advocacy note. If the example travels inside it, one country becomes the poster child for a problem that eleven countries share.
+- **Pick the clearest mechanism, not the strongest case.** The most vivid instance is usually the outlier. If the example is extreme, the finding reads as more severe than the pattern, and the first person who knows that country will say "that is a special case" and discount the whole finding. An ordinary, well-documented case where cause and consequence are both visible is harder to dismiss — a stronger advocacy position, not a weaker one.
+
+Leave `example` empty where every record is global-level. Do not invent one.
+
+The one-sentence rule in `prompts/00-shared-rules.md` governs **record** statements. The register rules apply in full to both fields.
 
 ## Independence check
 

@@ -75,7 +75,7 @@ Every value in a controlled column must already exist in `data/taxonomy.json`. I
 |---|---|
 | `id` | `E####`, continuing from the highest existing id. Never reuse. |
 | `finding_id` | **Leave blank.** Prompt 04 assigns these. |
-| `theme` | `ABC`, `Transition`, or `Both`. `Both` only when the claim genuinely applies to each — not when you are unsure. |
+| `theme` | `ABC`, `Transition`, or both as `ABC;Transition`. Semicolon-separated, like `tags`. There is no `Both` value: it used to be a third option and it matched *neither* filter, so cross-cutting evidence — the most useful kind — was unreachable. Use both labels only when the claim genuinely applies to each, not when you are unsure; when unsure, pick the one the source was actually talking about. |
 | `type` | `barrier` · `enabler` · `recommendation` · `practice` · `context` |
 | `statement` | One sentence, per above. Wrap in double quotes. |
 | `quote` | Verbatim, anonymised. Blank is fine and often correct. |

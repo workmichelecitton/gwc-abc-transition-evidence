@@ -18,7 +18,9 @@ data/follow-ups.csv ──► validated, never published
 
 **The three layers.** A *record* is one claim from one source. A *finding* is a claim plus every record supporting it — several countries reporting the same issue is one finding, not several. A *source* is where a record came from. Strength of evidence is computed from how many independent sources sit under a finding; it is never asserted by hand.
 
-`findings.csv` holds the statement shown for a finding that groups several records. Record statements are never rewritten to merge them — the country-specific detail stays intact underneath and appears when a card is expanded.
+`findings.csv` holds the statement shown for a finding that groups several records, plus one illustrative country example. Record statements are never rewritten to merge them — the country-specific detail stays intact underneath and appears when a card is expanded.
+
+**`theme` is multi-value.** `ABC`, `Transition`, or `ABC;Transition`. There is no `Both`: as a single third value it matched *neither* filter, so the cross-cutting evidence was unreachable from either side. 79 findings now appear under both.
 
 You edit the CSVs. A GitHub Action validates them, regenerates `site.json`, and the published site picks it up. **Nobody edits `index.html` to change what the site says.**
 

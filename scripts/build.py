@@ -27,7 +27,11 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 DATA = ROOT / "data"
 
-MULTI = ("countries", "actors", "tags")     # semicolon-separated columns
+# Semicolon-separated. `theme` is here rather than in ENUMS deliberately: a
+# single-select with a third value 'Both' meant that filtering on ABC excluded
+# every cross-cutting record, which is the evidence most worth finding. A
+# record that speaks to both is now 'ABC;Transition' and matches either filter.
+MULTI = ("countries", "actors", "tags", "theme")
 # Never published. Verbatim quotes are kept in evidence.csv for internal
 # analysis but stripped here: a quote plus a country plus a role is enough to
 # identify a single coordinator. Remove "quote" from this tuple to publish them.
@@ -41,10 +45,10 @@ REQUIRED = ["id", "theme", "type", "statement", "level", "stream",
             "source_id", "confidence", "visibility", "status"]
 
 # column -> taxonomy key, for single-value columns
-ENUMS = {"theme": "theme", "type": "type", "level": "level", "stream": "stream",
+ENUMS = {"type": "type", "level": "level", "stream": "stream",
          "confidence": "confidence", "visibility": "visibility", "status": "status"}
 # column -> taxonomy key, for multi-value columns
-LISTS = {"actors": "actors", "tags": "tags"}
+LISTS = {"actors": "actors", "tags": "tags", "theme": "theme"}
 
 errors, warnings = [], []
 
@@ -220,12 +224,14 @@ def main():
             st = (r.get("statement") or "").strip()
             if not st:
                 errors.append(f"  findings.csv row {i} ({fid}): statement is empty")
-            th, ty = (r.get("theme") or "").strip(), (r.get("type") or "").strip()
-            if th and th not in f_themes:
-                errors.append(f"  findings.csv row {i} ({fid}): theme '{th}' not in taxonomy.theme")
+            th, ty = split(r.get("theme", "")), (r.get("type") or "").strip()
+            for v in th:
+                if v not in f_themes:
+                    errors.append(f"  findings.csv row {i} ({fid}): theme '{v}' not in taxonomy.theme")
             if ty and ty not in f_types:
                 errors.append(f"  findings.csv row {i} ({fid}): type '{ty}' not in taxonomy.type")
-            curated[fid] = {"statement": st, "theme": th, "type": ty}
+            curated[fid] = {"statement": st, "theme": th, "type": ty,
+                            "example": (r.get("example") or "").strip()}
         for fid in curated:
             if fid not in groups:
                 warn(f"findings.csv: '{fid}' has no evidence records — orphan row, delete it")
@@ -255,7 +261,10 @@ def main():
         findings.append({
             "finding_id": fid,
             "statement": cur.get("statement") or primary["statement"],
-            "theme": cur.get("theme") or primary["theme"],
+            # Union, not the primary record's value: a finding drawing on ABC
+            # evidence and Transition evidence belongs in both filters.
+            "theme": cur.get("theme") or sorted({t for r in rows for t in r["theme"]}),
+            "example": cur.get("example", ""),
             "type": cur.get("type") or primary["type"],
             "strength": strength,
             "n_records": len(rows),

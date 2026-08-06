@@ -16,7 +16,7 @@
       "pattern": "^F[0-9]{3,4}$",
       "description": "Groups records that make the same point. Blank until the merge step (prompts/04) assigns one. The count of records sharing a finding_id IS the strength of evidence — do not assign one loosely."
     },
-    "theme": { "type": "string", "enum": ["ABC", "Transition", "Both"] },
+    "theme": { "type": "string", "pattern": "^(ABC|Transition)(;(ABC|Transition))*$" },
     "type": { "type": "string", "enum": ["barrier", "enabler", "recommendation", "practice", "context"] },
     "statement": {
       "type": "string",

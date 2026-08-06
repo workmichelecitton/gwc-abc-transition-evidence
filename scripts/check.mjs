@@ -107,6 +107,19 @@ async function exercise(label, url) {
      "a quote or notes column reached site.json — build-time redaction failed");
   ok(!site.findings.some((f) => f.strength === "high" && f.n_sources < 2),
      "a finding rated high rests on one source group");
+  // Theme is multi-value. 'Both' as a single value made cross-cutting evidence
+  // invisible to both filters; nothing may reintroduce it.
+  const themes = new Set(site.findings.flatMap((f) => f.theme)
+                   .concat(site.records.flatMap((r) => r.theme)));
+  ok(!themes.has("Both"), "'Both' is back as a theme value — it matches neither filter");
+  ok([...themes].every((t) => t === "ABC" || t === "Transition"),
+     `unexpected theme values: ${[...themes].join(", ")}`);
+  ok(!site.findings.some((f) => !f.theme.length),
+     "a finding has no theme and cannot be reached by either filter");
+  const abc = site.findings.filter((f) => f.theme.includes("ABC")).length;
+  const tr  = site.findings.filter((f) => f.theme.includes("Transition")).length;
+  console.log(`    theme filters reach ${abc} (ABC) and ${tr} (Transition) of ` +
+              `${site.findings.length} findings`);
   const solo = site.findings.filter((f) => f.n_records === 1).length;
   console.log(`    ${site.findings.length} findings, ${solo} holding one record ` +
               `(${Math.round((solo / site.findings.length) * 100)}%)`);

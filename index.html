@@ -44,7 +44,6 @@ input[type=search]{flex:1;min-width:200px}
 .chip:hover{border-color:var(--ink-3)}
 .chip.on{background:var(--accent);border-color:var(--accent);color:#fff;font-weight:500}
 .chip.on[data-k=theme][data-v=Transition]{background:var(--transition);border-color:var(--transition)}
-.chip.on[data-k=theme][data-v=Both]{background:var(--both);border-color:var(--both)}
 .chip.on[data-k=type][data-v=barrier]{background:var(--barrier);border-color:var(--barrier)}
 .chip.on[data-k=type][data-v=enabler]{background:var(--enabler);border-color:var(--enabler)}
 .chip.on[data-k=type][data-v=recommendation]{background:var(--recommendation);border-color:var(--recommendation)}
@@ -64,7 +63,11 @@ input[type=search]{flex:1;min-width:200px}
 .tag{background:var(--bg);border:1px solid var(--line);border-radius:4px;padding:2px 7px;color:var(--ink-2)}
 .pill{border-radius:4px;padding:2px 8px;color:#fff;font-weight:600;font-size:11px;
   text-transform:uppercase;letter-spacing:.4px}
-.pill.ABC{background:var(--abc)} .pill.Transition{background:var(--transition)} .pill.Both{background:var(--both)}
+.pill.ABC{background:var(--abc)} .pill.Transition{background:var(--transition)}
+/* One illustrative case, marked as such. The statement above it is the claim;
+   this is one instance of it, and the records below are the full range. */
+.eg{margin:6px 0 0;padding:7px 11px;border-left:3px solid var(--abc);background:#F4F6F9;
+    font-size:13px;line-height:1.5;color:#3A4551;border-radius:0 4px 4px 0}
 .pill.barrier{background:var(--barrier)} .pill.enabler{background:var(--enabler)}
 .pill.recommendation{background:var(--recommendation)} .pill.practice{background:var(--practice)}
 .pill.context{background:var(--context)}
@@ -319,7 +322,10 @@ function dropdown(id, blank, pairs){
 // survive — so a country filter shows the finding AND which evidence backs it
 // in that country, rather than dropping a global finding that has local proof.
 function matchRecord(r, skipCountry){
-  if (F.theme.length  && F.theme.indexOf(r.theme)<0) return false;
+  // Theme is multi-value. A record marked ABC;Transition matches a filter on
+  // either — which is the point of the change: cross-cutting evidence used to
+  // be invisible to both single-theme filters.
+  if (F.theme.length && !F.theme.some(function(t){ return r.theme.indexOf(t)>=0; })) return false;
   if (F.type.length   && F.type.indexOf(r.type)<0) return false;
   if (F.stream.length && F.stream.indexOf(r.stream)<0) return false;
   if (F.level.length  && F.level.indexOf(r.level)<0) return false;
@@ -379,6 +385,14 @@ function activeFilters(){
             F.stream.length||F.strength.length||F.level.length);
 }
 
+// One pill per theme. A finding covering both shows both, rather than a third
+// "Both" pill that belonged to neither filter.
+function themePills(themes){
+  return (themes||[]).map(function(t){
+    return '<span class="pill '+esc(t)+'">'+esc(label("theme",t))+'</span>';
+  }).join("");
+}
+
 function viewFindings(d){
   if (!d.findings.length) return empty();
   var byF = {};
@@ -390,8 +404,9 @@ function viewFindings(d){
     var recs = byF[f.finding_id] || [];
     var open = !!OPEN[f.finding_id];
     var head =
-      '<h3>'+esc(f.statement)+'</h3><div class="meta">' +
-      '<span class="pill '+esc(f.theme)+'">'+esc(f.theme)+'</span>' +
+      '<h3>'+esc(f.statement)+'</h3>' +
+      (f.example ? '<p class="eg">'+esc(f.example)+'</p>' : '') +
+      '<div class="meta">' + themePills(f.theme) +
       '<span class="pill '+esc(f.type)+'">'+esc(label("type",f.type))+'</span>' +
       '<span class="str '+esc(f.strength)+'">'+esc(f.strength)+' strength</span>' +
       '<span class="tag">'+f.n_sources+' source'+(f.n_sources===1?"":"s")+
@@ -463,8 +478,7 @@ function viewHighlights(d){
         (H.plain ? '<p class="hl-plain">' + esc(H.plain) + '</p>'
                  : '<p class="hl-plain">' + esc(f.statement) + '</p>') +
         (H.so_what ? '<p class="hl-so"><b>What to do</b> · ' + esc(H.so_what) + '</p>' : '') +
-        '<div class="meta">' +
-          '<span class="pill '+esc(f.theme)+'">'+esc(f.theme)+'</span>' +
+        '<div class="meta">' + themePills(f.theme) +
           '<span class="pill '+esc(f.type)+'">'+esc(label("type",f.type))+'</span>' +
           '<span class="str high">high strength</span>' +
           '<span class="tag">' + f.n_sources + ' independent sources · ' +
