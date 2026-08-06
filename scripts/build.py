@@ -32,9 +32,10 @@ DATA = ROOT / "data"
 # every cross-cutting record, which is the evidence most worth finding. A
 # record that speaks to both is now 'ABC;Transition' and matches either filter.
 MULTI = ("countries", "actors", "tags", "theme")
-# Never published. Verbatim quotes are kept in evidence.csv for internal
-# analysis but stripped here: a quote plus a country plus a role is enough to
-# identify a single coordinator. Remove "quote" from this tuple to publish them.
+# Kept out of site.json. NOTE: this does not make them private — evidence.csv is
+# committed to a public repo, so the quote column is readable on GitHub. Quotes
+# must be anonymised at source (roles in brackets, not names). Remove "quote"
+# from this tuple to show them on the site as well.
 DROP = ("notes", "quote")
 ID_RE = re.compile(r"^E\d{4}$")
 FID_RE = re.compile(r"^F\d{3,4}$")
@@ -338,6 +339,17 @@ def main():
     # evidence: one Haiti record asserted a conclusion the speaker never drew,
     # and it survived because there was nothing to check it against. Quotes are
     # stripped at build time (see DROP), so capturing them costs nothing public.
+    # evidence.csv is committed to a public repository. DROP keeps quotes out of
+    # site.json, but not out of git — anyone can read the CSV on GitHub. So the
+    # anonymisation rule applies to the quote column exactly as it does to
+    # statements: no personal names. Replace with the role in square brackets.
+    NAMEY = re.compile(r"\b(?:Mr|Ms|Mrs|Dr)\.?\s+[A-Z][a-z]+", re.U)
+    for i, r in enumerate(evidence_rows, start=2):
+        q = (r.get("quote") or "").strip()
+        if q and NAMEY.search(q):
+            warn(f"evidence.csv row {i} ({r.get('id')}): quote appears to name a person. "
+                 f"evidence.csv is public — use the role in brackets instead.")
+
     tr = [r for r in evidence_rows if (r.get("stream") or "").strip() == "transcript"]
     noq = [r for r in tr if not (r.get("quote") or "").strip()]
     if noq:

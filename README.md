@@ -82,13 +82,15 @@ Do not lose these. Both are deliberate "not yet", not oversights.
 | Field | Published? |
 |---|---|
 | `statement` | Yes — neutral summary |
-| `quote` | **No.** Stripped at build time. Held in `evidence.csv` for internal analysis only. |
+| `quote` | **Not on the site** — stripped at build time. But `evidence.csv` is committed to a public repository, so quotes are readable on GitHub. Treat them as public: anonymise personal names to a role in square brackets, exactly as for statements. |
 | `notes` | **No.** Never leaves the CSV. |
 | records marked `visibility: internal` | **No.** Dropped entirely. |
 | `follow-ups.csv` | Validated, never published to the site |
 | `findings.csv` | Yes — written at issue level, no country-identifying detail |
 
-A verbatim quote plus a country plus a role is enough to identify one coordinator. To publish quotes anyway, remove `"quote"` from `DROP` in `scripts/build.py`.
+A verbatim quote plus a country plus a role is enough to identify one coordinator. To show quotes on the site, remove `"quote"` from `DROP` in `scripts/build.py`.
+
+**Open question.** Quotes exist so a record can be checked against what was actually said — four records have already been corrected or withheld because of them. But `evidence.csv` lives in a public repo, so a fully verbatim quote cannot be kept private while staying portable. Two options, not yet decided: keep quotes in `evidence.csv` and anonymise them (portable, slightly less faithful), or move them to `data/quotes.csv` in `.gitignore` (fully faithful, but they do not travel with the repo to the next maintainer). Currently doing the first.
 
 ## Views
 

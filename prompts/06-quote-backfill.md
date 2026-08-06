@@ -1,6 +1,6 @@
 # 06 — Quote backfill
 
-**Status: 3 of 14 transcripts done. 218 records still carry no quote.**
+**Status: 4 of 14 transcripts done. 195 records still carry no quote.**
 
 ## Why this exists
 
@@ -26,14 +26,19 @@ Two records have already been caught this way, both by reading the recording bac
 Four in the first three transcripts, roughly one in twenty records. Assume the same
 rate holds and budget for it: the pass is a correction exercise, not a clerical one.
 
-Quotes are stripped at build time (`DROP` in `build.py`), so capturing them costs
-nothing in confidentiality terms. They are for verification, not publication.
+Quotes are stripped from `site.json` at build time (`DROP` in `build.py`) — but
+**that does not make them private.** `evidence.csv` is committed to a public
+repository, so anyone can read the quote column on GitHub.
+
+So anonymise as you write: replace personal names with the role in square
+brackets — `[the IM officer]`, `[the focal point]`. Organisation names are fine
+where they do not identify one individual. The build warns on obvious cases but
+cannot catch a bare first name.
 
 ## Remaining
 
 | Source | Country | Records | Drive file ID |
 |---|---|---|---|
-| S107 | Lebanon | 23 | `1VE8Q__LsIcJzAUojsJp41R5z2W-aQCyb` |
 | S012 | Myanmar | 22 | (two sessions) |
 | S110 | Mozambique | 22 | `11yJVtARQOv67hXRu7YXn9GqfMs3qBqGs` |
 | S114 | South Sudan | 22 | `1LFb1UZynhadK2Zsv3aZiDMmEMmOqD5TE` |
@@ -45,7 +50,9 @@ nothing in confidentiality terms. They are for verification, not publication.
 | S113 | Mali | 17 | `1l6YjJeZC1bch00MLO8ls2BL7hEp7pTUs` |
 | S106 | Niger | 16 | `1qX6mcFe04sXIrziYb1hduz6dAksPUzt-` |
 
-Done: **S109 Haiti** (17), **S104 Sudan** (31), **S103 Colombia** (28).
+Done: **S109 Haiti** (17), **S104 Sudan** (31), **S103 Colombia** (28), **S107 Lebanon** (23).
+
+Lebanon produced no corrections — the first clean transcript.
 
 ## Method — one source per pass
 
