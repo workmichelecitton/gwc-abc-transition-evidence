@@ -74,7 +74,8 @@ Do not lose these. Both are deliberate "not yet", not oversights.
 | 1 | **Remove the Matrix tab.** It is useful now for spotting where evidence is thick and thin while the base is being built. It is not useful to a reader once the base is complete. | After the SDR, workshop material and all country transcripts are in |
 | 2 | **Prune unused themes from `taxonomy.json`.** Tags that no evidence ever lands on are clutter in every filter. Currently unused: `advocacy`, `inclusion`, `markets`. | Same point — judge once, on the full base |
 | 3 | **Finish the consolidation.** `capacity` is done (122 findings → 41). The build warns while more than half of findings hold a single record. Remaining work packages, largest first: `transition-handover`, `coordination-architecture`, `information-management`, `government-engagement`, `funding` + `pooled-funds`, `localisation`, `hpc`. Method is in `prompts/04`. | Ongoing — a tag at a time |
-| 4 | **Group the Findings tab by tag.** Even consolidated, the list is long enough to want a top level. The tags already work as one; adding a new field is probably unnecessary. | After consolidation |
+| 4 | **Finish the quote backfill.** 246 of 313 transcript records still carry no quote and cannot be checked against their source. Two unsupported records have already been caught this way. Method and remaining list in `prompts/06-quote-backfill.md`. | One source per pass |
+| 5 | **Group the Findings tab by tag.** Even consolidated, the list is long enough to want a top level. The tags already work as one; adding a new field is probably unnecessary. | After consolidation |
 
 ## Confidentiality: what is published and what is not
 
