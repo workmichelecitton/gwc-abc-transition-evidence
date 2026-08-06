@@ -63,13 +63,13 @@ window.SITE_DATA = {
   ],
   "footer_note": "Findings are traceable to a source ID in the Sources tab. If something looks wrong, it probably is — say so and it will be corrected."
  },
- "generated": "2026-08-05",
+ "generated": "2026-08-06",
  "taxonomy_version": "0.4.0",
  "stats": {
-  "records": 616,
-  "findings": 469,
+  "records": 635,
+  "findings": 483,
   "sources": 104,
-  "countries": 26,
+  "countries": 28,
   "withheld_internal": 1
  },
  "taxonomy": {
@@ -5388,6 +5388,399 @@ window.SITE_DATA = {
    "unmerged": false
   },
   {
+   "finding_id": "F1700",
+   "statement": "Where a sudden escalation triggers a flash appeal, the lead agency has reclaimed coordination ownership, sidelining the successor actors that had been built up during the calmer period — at exactly the moment they would learn most by doing.",
+   "theme": "Transition",
+   "type": "barrier",
+   "strength": "low",
+   "n_records": 2,
+   "n_sources": 1,
+   "n_streams": 1,
+   "streams": [
+    "workshop"
+   ],
+   "countries": [
+    "KEN",
+    "MWI",
+    "PAK"
+   ],
+   "tags": [
+    "capacity",
+    "guidance",
+    "localisation",
+    "transition-handover"
+   ],
+   "actors": [
+    "cluster",
+    "local-ngo",
+    "un-agency"
+   ],
+   "record_ids": [
+    "E0630",
+    "E0631"
+   ],
+   "unmerged": false
+  },
+  {
+   "finding_id": "F1701",
+   "statement": "A flash appeal should not suspend a transition plan. Commit at senior level, through preparedness plans and emergency procedures, that the actors being capacitated stay in the room when an emergency hits — the emergency is the best available learning environment for a successor structure.",
+   "theme": "Transition",
+   "type": "recommendation",
+   "strength": "low",
+   "n_records": 1,
+   "n_sources": 1,
+   "n_streams": 1,
+   "streams": [
+    "workshop"
+   ],
+   "countries": [],
+   "tags": [
+    "capacity",
+    "guidance",
+    "transition-handover"
+   ],
+   "actors": [
+    "cluster",
+    "local-ngo",
+    "un-agency"
+   ],
+   "record_ids": [
+    "E0632"
+   ],
+   "unmerged": false
+  },
+  {
+   "finding_id": "F1702",
+   "statement": "Where a cluster deactivates but the lead agency continues running humanitarian-funded programming, it is unresolved who leads sectoral coordination: programme staff may argue the role is theirs, and the structure can dissolve on paper while the response keeps running with nobody formally accountable.",
+   "theme": "Transition",
+   "type": "barrier",
+   "strength": "low",
+   "n_records": 1,
+   "n_sources": 1,
+   "n_streams": 1,
+   "streams": [
+    "workshop"
+   ],
+   "countries": [],
+   "tags": [
+    "coordination-architecture",
+    "guidance",
+    "transition-handover"
+   ],
+   "actors": [
+    "cluster",
+    "un-agency"
+   ],
+   "record_ids": [
+    "E0633"
+   ],
+   "unmerged": false
+  },
+  {
+   "finding_id": "F1703",
+   "statement": "Participants put the question directly: what was actually transitioned? Where a national organisation replaces an international one doing the same work, the coordination architecture has changed but the sustainability question has not been answered.",
+   "theme": "Transition",
+   "type": "context",
+   "strength": "low",
+   "n_records": 1,
+   "n_sources": 1,
+   "n_streams": 1,
+   "streams": [
+    "workshop"
+   ],
+   "countries": [],
+   "tags": [
+    "localisation",
+    "transition-handover"
+   ],
+   "actors": [
+    "cluster",
+    "ingo",
+    "local-ngo"
+   ],
+   "record_ids": [
+    "E0634"
+   ],
+   "unmerged": false
+  },
+  {
+   "finding_id": "F1704",
+   "statement": "A national NGO may not exist the following year, which makes it a less durable transition endpoint than a public institution with independent funding, even where it is more locally rooted.",
+   "theme": "Transition",
+   "type": "barrier",
+   "strength": "low",
+   "n_records": 1,
+   "n_sources": 1,
+   "n_streams": 1,
+   "streams": [
+    "workshop"
+   ],
+   "countries": [],
+   "tags": [
+    "funding",
+    "localisation",
+    "transition-handover"
+   ],
+   "actors": [
+    "gov-national",
+    "local-ngo"
+   ],
+   "record_ids": [
+    "E0635"
+   ],
+   "unmerged": false
+  },
+  {
+   "finding_id": "F1705",
+   "statement": "More than twenty years of sector investment in one country has still not removed the need for a cluster, which participants read as evidence that investment without governance reform does not create absorptive capacity.",
+   "theme": "Transition",
+   "type": "barrier",
+   "strength": "low",
+   "n_records": 1,
+   "n_sources": 1,
+   "n_streams": 1,
+   "streams": [
+    "workshop"
+   ],
+   "countries": [
+    "SDN"
+   ],
+   "tags": [
+    "capacity",
+    "government-engagement",
+    "transition-handover"
+   ],
+   "actors": [
+    "gov-national",
+    "un-agency"
+   ],
+   "record_ids": [
+    "E0637"
+   ],
+   "unmerged": false
+  },
+  {
+   "finding_id": "F1706",
+   "statement": "Where water, sanitation and hygiene sit under a single government framework with one annual work plan, one budget and pooled funding, the sector has an institutional home and the handover has something coherent to transfer to.",
+   "theme": "Transition",
+   "type": "enabler",
+   "strength": "low",
+   "n_records": 1,
+   "n_sources": 1,
+   "n_streams": 1,
+   "streams": [
+    "workshop"
+   ],
+   "countries": [
+    "ETH"
+   ],
+   "tags": [
+    "government-engagement",
+    "sustainability",
+    "transition-handover"
+   ],
+   "actors": [
+    "gov-national"
+   ],
+   "record_ids": [
+    "E0638"
+   ],
+   "unmerged": false
+  },
+  {
+   "finding_id": "F1707",
+   "statement": "A strong institutional mandate reduces dependence on individual post-holders: where the coordination function sat with a person rather than being written into an institutional remit, a reshuffle removed it entirely.",
+   "theme": "Transition",
+   "type": "enabler",
+   "strength": "low",
+   "n_records": 1,
+   "n_sources": 1,
+   "n_streams": 1,
+   "streams": [
+    "workshop"
+   ],
+   "countries": [],
+   "tags": [
+    "government-engagement",
+    "staff-turnover",
+    "transition-handover"
+   ],
+   "actors": [
+    "cluster",
+    "gov-national"
+   ],
+   "record_ids": [
+    "E0639"
+   ],
+   "unmerged": false
+  },
+  {
+   "finding_id": "F1708",
+   "statement": "Where the lead agency sector chief and representative engaged on transition before funding forced it — commissioning sector assessments, embedding capacity, opening the conversation early — participants identified that as the working model rather than the exception.",
+   "theme": "Transition",
+   "type": "enabler",
+   "strength": "low",
+   "n_records": 1,
+   "n_sources": 1,
+   "n_streams": 1,
+   "streams": [
+    "workshop"
+   ],
+   "countries": [
+    "SDN"
+   ],
+   "tags": [
+    "capacity",
+    "government-engagement",
+    "transition-handover"
+   ],
+   "actors": [
+    "cluster",
+    "un-agency"
+   ],
+   "record_ids": [
+    "E0640"
+   ],
+   "unmerged": false
+  },
+  {
+   "finding_id": "F1709",
+   "statement": "A development-funded secondment that achieved a successful handover happened because an individual pushed it through the country office, not because the mechanism was available by default — the enabler depends on someone driving it.",
+   "theme": "Transition",
+   "type": "context",
+   "strength": "low",
+   "n_records": 1,
+   "n_sources": 1,
+   "n_streams": 1,
+   "streams": [
+    "workshop"
+   ],
+   "countries": [
+    "IRQ"
+   ],
+   "tags": [
+    "funding",
+    "nexus",
+    "transition-handover"
+   ],
+   "actors": [
+    "development",
+    "un-agency"
+   ],
+   "record_ids": [
+    "E0641"
+   ],
+   "unmerged": false
+  },
+  {
+   "finding_id": "F1710",
+   "statement": "Cyclical emergencies are an underestimated disruptor of transition: a plan can be overtaken by the next seasonal crisis before it has taken hold.",
+   "theme": "Transition",
+   "type": "barrier",
+   "strength": "low",
+   "n_records": 1,
+   "n_sources": 1,
+   "n_streams": 1,
+   "streams": [
+    "workshop"
+   ],
+   "countries": [],
+   "tags": [
+    "capacity",
+    "transition-handover"
+   ],
+   "actors": [
+    "cluster",
+    "un-agency"
+   ],
+   "record_ids": [
+    "E0643"
+   ],
+   "unmerged": false
+  },
+  {
+   "finding_id": "F1711",
+   "statement": "Participants ranked information management deterioration as the most immediately felt transition barrier, ahead of funding, and identified lead agency investment before transition is forced as the strongest enabler by a wide margin.",
+   "theme": "Transition",
+   "type": "context",
+   "strength": "low",
+   "n_records": 1,
+   "n_sources": 1,
+   "n_streams": 1,
+   "streams": [
+    "workshop"
+   ],
+   "countries": [],
+   "tags": [
+    "funding",
+    "information-management",
+    "transition-handover"
+   ],
+   "actors": [
+    "cluster",
+    "un-agency"
+   ],
+   "record_ids": [
+    "E0644"
+   ],
+   "unmerged": false
+  },
+  {
+   "finding_id": "F1712",
+   "statement": "Community-level structures linked coordination directly to service delivery and improved alignment across sectors.",
+   "theme": "ABC",
+   "type": "enabler",
+   "strength": "low",
+   "n_records": 1,
+   "n_sources": 1,
+   "n_streams": 1,
+   "streams": [
+    "workshop"
+   ],
+   "countries": [
+    "AFG"
+   ],
+   "tags": [
+    "coordination-architecture",
+    "localisation",
+    "multisector"
+   ],
+   "actors": [
+    "community",
+    "local-ngo"
+   ],
+   "record_ids": [
+    "E0646"
+   ],
+   "unmerged": false
+  },
+  {
+   "finding_id": "F1713",
+   "statement": "Participants ranked improved data sharing as the strongest enabler of area-based coordination and coordination and governance fragmentation as the strongest barrier.",
+   "theme": "ABC",
+   "type": "context",
+   "strength": "low",
+   "n_records": 1,
+   "n_sources": 1,
+   "n_streams": 1,
+   "streams": [
+    "workshop"
+   ],
+   "countries": [],
+   "tags": [
+    "coordination-architecture",
+    "information-management"
+   ],
+   "actors": [
+    "cluster",
+    "operational-cell"
+   ],
+   "record_ids": [
+    "E0648"
+   ],
+   "unmerged": false
+  },
+  {
    "finding_id": "F200",
    "statement": "Even where integrated area-based approaches are formally adopted, coordination stays constrained at implementation level because actors, sectors and delivery mechanisms are not aligned.",
    "theme": "ABC",
@@ -6138,29 +6531,38 @@ window.SITE_DATA = {
    "statement": "Area-based structures frequently operate without agreed rules on who participates, who decides and how priorities are set. In the absence of those rules, influence tends to follow voice and resources rather than mandate.",
    "theme": "ABC",
    "type": "barrier",
-   "strength": "low",
-   "n_records": 2,
+   "strength": "high",
+   "n_records": 3,
    "n_sources": 1,
-   "n_streams": 1,
+   "n_streams": 2,
    "streams": [
-    "sdr"
+    "sdr",
+    "workshop"
    ],
    "countries": [
     "SDN"
    ],
    "tags": [
     "coordination-architecture",
-    "guidance"
+    "guidance",
+    "localisation"
    ],
    "actors": [
     "ingo",
+    "local-ngo",
     "operational-cell"
    ],
    "record_ids": [
     "E0148",
-    "E0149"
+    "E0149",
+    "E0647"
    ],
-   "unmerged": false
+   "unmerged": false,
+   "highlight": {
+    "headline": "Whoever speaks loudest sets the agenda",
+    "plain": "Area structures often operate without agreed rules on who participates, who decides and how priorities are set. Influence then follows voice and resources rather than mandate — and localisation does not fix this, because local actors bring their own hierarchies too.",
+    "so_what": "Write the governance rules — participation, decision rights, how priorities are set — before the platform starts work."
+   }
   },
   {
    "finding_id": "F229",
@@ -8354,12 +8756,13 @@ window.SITE_DATA = {
    "theme": "Transition",
    "type": "enabler",
    "strength": "high",
-   "n_records": 2,
+   "n_records": 3,
    "n_sources": 2,
-   "n_streams": 2,
+   "n_streams": 3,
    "streams": [
     "sdr",
-    "transcript"
+    "transcript",
+    "workshop"
    ],
    "countries": [
     "COL"
@@ -8374,7 +8777,8 @@ window.SITE_DATA = {
    ],
    "record_ids": [
     "E0247",
-    "E0378"
+    "E0378",
+    "E0645"
    ],
    "unmerged": false,
    "highlight": {
@@ -8729,18 +9133,20 @@ window.SITE_DATA = {
   },
   {
    "finding_id": "F335",
-   "statement": "Funding-driven transition sits upstream of the other barriers: it drives weak planning, broken sequencing and fragmentation at the same time.",
+   "statement": "Participants ranked funding-driven transition low among barriers — not because it matters less, but because the decision is made outside the country and the practical entry point is to address its downstream effects.",
    "theme": "Transition",
-   "type": "barrier",
-   "strength": "low",
-   "n_records": 1,
+   "type": "context",
+   "strength": "high",
+   "n_records": 2,
    "n_sources": 1,
-   "n_streams": 1,
+   "n_streams": 2,
    "streams": [
-    "sdr"
+    "sdr",
+    "workshop"
    ],
    "countries": [],
    "tags": [
+    "advocacy",
     "coordination-architecture",
     "funding",
     "transition-handover"
@@ -8751,7 +9157,8 @@ window.SITE_DATA = {
     "ocha"
    ],
    "record_ids": [
-    "E0264"
+    "E0264",
+    "E0642"
    ],
    "unmerged": false,
    "highlight": {
@@ -9808,28 +10215,39 @@ window.SITE_DATA = {
    "statement": "The transition endpoint cannot be assumed to be government. Depending on context it may be a national institution with durable funding and a formal civil protection role, a development coordination pathway, continued sectoral leadership by the lead agency — or an honest conclusion that no transition is currently viable.",
    "theme": "Transition",
    "type": "enabler",
-   "strength": "low",
-   "n_records": 1,
+   "strength": "high",
+   "n_records": 2,
    "n_sources": 1,
-   "n_streams": 1,
+   "n_streams": 2,
    "streams": [
-    "sdr"
+    "sdr",
+    "workshop"
    ],
-   "countries": [],
+   "countries": [
+    "UKR"
+   ],
    "tags": [
     "government-engagement",
+    "localisation",
     "nexus",
     "transition-handover"
    ],
    "actors": [
     "development",
     "gov-national",
+    "local-ngo",
     "un-agency"
    ],
    "record_ids": [
-    "E0308"
+    "E0308",
+    "E0636"
    ],
-   "unmerged": false
+   "unmerged": false,
+   "highlight": {
+    "headline": "Pick a successor that will still exist in three years",
+    "plain": "The right endpoint is not always the most local one. A national society was chosen because it has durable funding and a formal civil protection role — and when funding fell away, it was still there. A national NGO doing exactly what an international one did changes the architecture without answering the sustainability question.",
+    "so_what": "Judge candidate successors on institutional permanence and independent funding, not on how local they are."
+   }
   },
   {
    "finding_id": "F374",
@@ -28694,6 +29112,456 @@ window.SITE_DATA = {
    "stream": "transcript",
    "source_id": "S114",
    "date_collected": "2026-07-29",
+   "confidence": "high",
+   "status": "draft"
+  },
+  {
+   "id": "E0630",
+   "finding_id": "F1700",
+   "theme": "Transition",
+   "type": "barrier",
+   "statement": "Where a sudden escalation triggers a flash appeal, the lead agency has reclaimed coordination ownership, sidelining the successor actors that had been built up during the calmer period — at exactly the moment they would learn most by doing.",
+   "level": "national",
+   "countries": [
+    "KEN"
+   ],
+   "actors": [
+    "un-agency",
+    "local-ngo"
+   ],
+   "tags": [
+    "transition-handover",
+    "capacity",
+    "localisation"
+   ],
+   "stream": "workshop",
+   "source_id": "S083",
+   "date_collected": "2026-06-09",
+   "confidence": "high",
+   "status": "draft"
+  },
+  {
+   "id": "E0631",
+   "finding_id": "F1700",
+   "theme": "Transition",
+   "type": "enabler",
+   "statement": "Where the lead agency programme and the cluster worked closely through cyclical events, the arrangement held; the missing element was a coordination protocol agreed in advance rather than negotiated during the emergency.",
+   "level": "national",
+   "countries": [
+    "PAK",
+    "MWI"
+   ],
+   "actors": [
+    "un-agency",
+    "cluster"
+   ],
+   "tags": [
+    "transition-handover",
+    "capacity",
+    "guidance"
+   ],
+   "stream": "workshop",
+   "source_id": "S083",
+   "date_collected": "2026-06-09",
+   "confidence": "high",
+   "status": "draft"
+  },
+  {
+   "id": "E0632",
+   "finding_id": "F1701",
+   "theme": "Transition",
+   "type": "recommendation",
+   "statement": "A flash appeal should not suspend a transition plan. Commit at senior level, through preparedness plans and emergency procedures, that the actors being capacitated stay in the room when an emergency hits — the emergency is the best available learning environment for a successor structure.",
+   "level": "global",
+   "countries": [],
+   "actors": [
+    "un-agency",
+    "local-ngo",
+    "cluster"
+   ],
+   "tags": [
+    "transition-handover",
+    "capacity",
+    "guidance"
+   ],
+   "stream": "workshop",
+   "source_id": "S083",
+   "date_collected": "2026-06-09",
+   "confidence": "high",
+   "status": "draft"
+  },
+  {
+   "id": "E0633",
+   "finding_id": "F1702",
+   "theme": "Transition",
+   "type": "barrier",
+   "statement": "Where a cluster deactivates but the lead agency continues running humanitarian-funded programming, it is unresolved who leads sectoral coordination: programme staff may argue the role is theirs, and the structure can dissolve on paper while the response keeps running with nobody formally accountable.",
+   "level": "global",
+   "countries": [],
+   "actors": [
+    "un-agency",
+    "cluster"
+   ],
+   "tags": [
+    "transition-handover",
+    "coordination-architecture",
+    "guidance"
+   ],
+   "stream": "workshop",
+   "source_id": "S083",
+   "date_collected": "2026-06-09",
+   "confidence": "high",
+   "status": "draft"
+  },
+  {
+   "id": "E0634",
+   "finding_id": "F1703",
+   "theme": "Transition",
+   "type": "context",
+   "statement": "Participants put the question directly: what was actually transitioned? Where a national organisation replaces an international one doing the same work, the coordination architecture has changed but the sustainability question has not been answered.",
+   "level": "global",
+   "countries": [],
+   "actors": [
+    "local-ngo",
+    "ingo",
+    "cluster"
+   ],
+   "tags": [
+    "transition-handover",
+    "localisation"
+   ],
+   "stream": "workshop",
+   "source_id": "S083",
+   "date_collected": "2026-06-09",
+   "confidence": "high",
+   "status": "draft"
+  },
+  {
+   "id": "E0635",
+   "finding_id": "F1704",
+   "theme": "Transition",
+   "type": "barrier",
+   "statement": "A national NGO may not exist the following year, which makes it a less durable transition endpoint than a public institution with independent funding, even where it is more locally rooted.",
+   "level": "global",
+   "countries": [],
+   "actors": [
+    "local-ngo",
+    "gov-national"
+   ],
+   "tags": [
+    "transition-handover",
+    "localisation",
+    "funding"
+   ],
+   "stream": "workshop",
+   "source_id": "S083",
+   "date_collected": "2026-06-09",
+   "confidence": "high",
+   "status": "draft"
+  },
+  {
+   "id": "E0636",
+   "finding_id": "F373",
+   "theme": "Transition",
+   "type": "enabler",
+   "statement": "A national society was judged a viable transition endpoint because it holds durable funding and a formal place in the civil protection mechanism — institutional permanence rather than local identity was the deciding factor. When funding fell away, it was still there.",
+   "level": "national",
+   "countries": [
+    "UKR"
+   ],
+   "actors": [
+    "gov-national",
+    "local-ngo"
+   ],
+   "tags": [
+    "transition-handover",
+    "localisation",
+    "government-engagement"
+   ],
+   "stream": "workshop",
+   "source_id": "S083",
+   "date_collected": "2026-06-09",
+   "confidence": "high",
+   "status": "draft"
+  },
+  {
+   "id": "E0637",
+   "finding_id": "F1705",
+   "theme": "Transition",
+   "type": "barrier",
+   "statement": "More than twenty years of sector investment in one country has still not removed the need for a cluster, which participants read as evidence that investment without governance reform does not create absorptive capacity.",
+   "level": "national",
+   "countries": [
+    "SDN"
+   ],
+   "actors": [
+    "gov-national",
+    "un-agency"
+   ],
+   "tags": [
+    "transition-handover",
+    "government-engagement",
+    "capacity"
+   ],
+   "stream": "workshop",
+   "source_id": "S083",
+   "date_collected": "2026-06-09",
+   "confidence": "high",
+   "status": "draft"
+  },
+  {
+   "id": "E0638",
+   "finding_id": "F1706",
+   "theme": "Transition",
+   "type": "enabler",
+   "statement": "Where water, sanitation and hygiene sit under a single government framework with one annual work plan, one budget and pooled funding, the sector has an institutional home and the handover has something coherent to transfer to.",
+   "level": "national",
+   "countries": [
+    "ETH"
+   ],
+   "actors": [
+    "gov-national"
+   ],
+   "tags": [
+    "government-engagement",
+    "transition-handover",
+    "sustainability"
+   ],
+   "stream": "workshop",
+   "source_id": "S083",
+   "date_collected": "2026-06-09",
+   "confidence": "high",
+   "status": "draft"
+  },
+  {
+   "id": "E0639",
+   "finding_id": "F1707",
+   "theme": "Transition",
+   "type": "enabler",
+   "statement": "A strong institutional mandate reduces dependence on individual post-holders: where the coordination function sat with a person rather than being written into an institutional remit, a reshuffle removed it entirely.",
+   "level": "global",
+   "countries": [],
+   "actors": [
+    "gov-national",
+    "cluster"
+   ],
+   "tags": [
+    "government-engagement",
+    "staff-turnover",
+    "transition-handover"
+   ],
+   "stream": "workshop",
+   "source_id": "S083",
+   "date_collected": "2026-06-09",
+   "confidence": "high",
+   "status": "draft"
+  },
+  {
+   "id": "E0640",
+   "finding_id": "F1708",
+   "theme": "Transition",
+   "type": "enabler",
+   "statement": "Where the lead agency sector chief and representative engaged on transition before funding forced it — commissioning sector assessments, embedding capacity, opening the conversation early — participants identified that as the working model rather than the exception.",
+   "level": "national",
+   "countries": [
+    "SDN"
+   ],
+   "actors": [
+    "un-agency",
+    "cluster"
+   ],
+   "tags": [
+    "transition-handover",
+    "government-engagement",
+    "capacity"
+   ],
+   "stream": "workshop",
+   "source_id": "S083",
+   "date_collected": "2026-06-09",
+   "confidence": "high",
+   "status": "draft"
+  },
+  {
+   "id": "E0641",
+   "finding_id": "F1709",
+   "theme": "Transition",
+   "type": "context",
+   "statement": "A development-funded secondment that achieved a successful handover happened because an individual pushed it through the country office, not because the mechanism was available by default — the enabler depends on someone driving it.",
+   "level": "national",
+   "countries": [
+    "IRQ"
+   ],
+   "actors": [
+    "un-agency",
+    "development"
+   ],
+   "tags": [
+    "transition-handover",
+    "funding",
+    "nexus"
+   ],
+   "stream": "workshop",
+   "source_id": "S083",
+   "date_collected": "2026-06-09",
+   "confidence": "high",
+   "status": "draft"
+  },
+  {
+   "id": "E0642",
+   "finding_id": "F335",
+   "theme": "Transition",
+   "type": "context",
+   "statement": "Participants ranked funding-driven transition low among barriers — not because it matters less, but because the decision is made outside the country and the practical entry point is to address its downstream effects.",
+   "level": "global",
+   "countries": [],
+   "actors": [
+    "cluster",
+    "donor"
+   ],
+   "tags": [
+    "transition-handover",
+    "funding",
+    "advocacy"
+   ],
+   "stream": "workshop",
+   "source_id": "S083",
+   "date_collected": "2026-06-09",
+   "confidence": "high",
+   "status": "draft"
+  },
+  {
+   "id": "E0643",
+   "finding_id": "F1710",
+   "theme": "Transition",
+   "type": "barrier",
+   "statement": "Cyclical emergencies are an underestimated disruptor of transition: a plan can be overtaken by the next seasonal crisis before it has taken hold.",
+   "level": "global",
+   "countries": [],
+   "actors": [
+    "cluster",
+    "un-agency"
+   ],
+   "tags": [
+    "transition-handover",
+    "capacity"
+   ],
+   "stream": "workshop",
+   "source_id": "S083",
+   "date_collected": "2026-06-09",
+   "confidence": "high",
+   "status": "draft"
+  },
+  {
+   "id": "E0644",
+   "finding_id": "F1711",
+   "theme": "Transition",
+   "type": "context",
+   "statement": "Participants ranked information management deterioration as the most immediately felt transition barrier, ahead of funding, and identified lead agency investment before transition is forced as the strongest enabler by a wide margin.",
+   "level": "global",
+   "countries": [],
+   "actors": [
+    "cluster",
+    "un-agency"
+   ],
+   "tags": [
+    "transition-handover",
+    "information-management",
+    "funding"
+   ],
+   "stream": "workshop",
+   "source_id": "S083",
+   "date_collected": "2026-06-09",
+   "confidence": "high",
+   "status": "draft"
+  },
+  {
+   "id": "E0645",
+   "finding_id": "F320",
+   "theme": "Transition",
+   "type": "enabler",
+   "statement": "Two tracks, not one: some information assets should be aligned with or moved to government systems early, while others must be retained by the sector for its own operational and preparedness capacity. Confusing the two produces a handover that serves neither.",
+   "level": "global",
+   "countries": [],
+   "actors": [
+    "cluster",
+    "gov-national"
+   ],
+   "tags": [
+    "information-management",
+    "transition-handover"
+   ],
+   "stream": "workshop",
+   "source_id": "S083",
+   "date_collected": "2026-06-09",
+   "confidence": "high",
+   "status": "draft"
+  },
+  {
+   "id": "E0646",
+   "finding_id": "F1712",
+   "theme": "ABC",
+   "type": "enabler",
+   "statement": "Community-level structures linked coordination directly to service delivery and improved alignment across sectors.",
+   "level": "subnational",
+   "countries": [
+    "AFG"
+   ],
+   "actors": [
+    "community",
+    "local-ngo"
+   ],
+   "tags": [
+    "coordination-architecture",
+    "localisation",
+    "multisector"
+   ],
+   "stream": "workshop",
+   "source_id": "S045",
+   "date_collected": "2026-06-09",
+   "confidence": "high",
+   "status": "draft"
+  },
+  {
+   "id": "E0647",
+   "finding_id": "F227",
+   "theme": "ABC",
+   "type": "barrier",
+   "statement": "Localisation does not by itself resolve power dynamics inside a platform: local actors bring their own hierarchies, and proximity to affected populations does not guarantee neutral or needs-driven representation.",
+   "level": "global",
+   "countries": [],
+   "actors": [
+    "local-ngo",
+    "operational-cell"
+   ],
+   "tags": [
+    "coordination-architecture",
+    "localisation"
+   ],
+   "stream": "workshop",
+   "source_id": "S045",
+   "date_collected": "2026-06-09",
+   "confidence": "high",
+   "status": "draft"
+  },
+  {
+   "id": "E0648",
+   "finding_id": "F1713",
+   "theme": "ABC",
+   "type": "context",
+   "statement": "Participants ranked improved data sharing as the strongest enabler of area-based coordination and coordination and governance fragmentation as the strongest barrier.",
+   "level": "global",
+   "countries": [],
+   "actors": [
+    "cluster",
+    "operational-cell"
+   ],
+   "tags": [
+    "coordination-architecture",
+    "information-management"
+   ],
+   "stream": "workshop",
+   "source_id": "S045",
+   "date_collected": "2026-06-09",
    "confidence": "high",
    "status": "draft"
   }

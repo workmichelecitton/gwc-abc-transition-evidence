@@ -45,7 +45,20 @@ Already extracted: Somalia (S011), Myanmar (S012), Colombia (S103), Sudan (S104)
 
 Still outstanding:
 
-- **Workshop briefing note** — registered as S045 / S083 but never extracted as a document. Use `prompts/02`.
+- ~~Workshop briefing note~~ **DONE.** Extracted directly from the primary document.
+  **Important:** it was NOT registered as a new source. The workshop already exists as S045 (Day 1)
+  and S083 (Day 2), both in `source_group: gwc-consult-2026` with the clinic (S084) and the KIIs
+  (S085). Records extracted from the briefing note carry those existing IDs, so they collapse into
+  one source and cannot inflate strength. Registering it separately would have double-counted the
+  same evidence; deleting the SDR-derived workshop records instead would have removed 40 findings
+  for no accuracy gain.
+
+- **Excluded by decision (2026-08):** `CBPF_Secondary_Data_Review_2010-2026` and
+  `SDR_brief_handing_coordination_to_national_actors`. Not to be extracted.
+
+- **Raw workshop transcripts** — available but NOT extracted, deliberately. They are a third
+  rendering of the same event already covered by S045/S083. Use them only to check a specific
+  detail, never as an additional source.
 - **Deferred decisions** in README — remove the Matrix tab; prune unused tags.
 - **Quarterly search** — `prompts/03`, first run due three months after the last source date.
 
@@ -70,6 +83,19 @@ Check the list before every merge.
 
 ## Also outstanding
 
-- **Workshop briefing note** — registered as S045 / S083 but never extracted as a document. Use `prompts/02`. Expect 20–30 records.
+- ~~Workshop briefing note~~ **DONE.** Extracted directly from the primary document.
+  **Important:** it was NOT registered as a new source. The workshop already exists as S045 (Day 1)
+  and S083 (Day 2), both in `source_group: gwc-consult-2026` with the clinic (S084) and the KIIs
+  (S085). Records extracted from the briefing note carry those existing IDs, so they collapse into
+  one source and cannot inflate strength. Registering it separately would have double-counted the
+  same evidence; deleting the SDR-derived workshop records instead would have removed 40 findings
+  for no accuracy gain.
+
+- **Excluded by decision (2026-08):** `CBPF_Secondary_Data_Review_2010-2026` and
+  `SDR_brief_handing_coordination_to_national_actors`. Not to be extracted.
+
+- **Raw workshop transcripts** — available but NOT extracted, deliberately. They are a third
+  rendering of the same event already covered by S045/S083. Use them only to check a specific
+  detail, never as an additional source. Expect 20–30 records.
 - **Deferred decisions** in README — remove the Matrix tab; prune `advocacy`, `inclusion`, `markets` if still unused once all transcripts are in.
 - **Quarterly search** — `prompts/03`, first run due three months after the last source date.
