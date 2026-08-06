@@ -75,9 +75,9 @@ window.SITE_DATA = {
  "generated": "2026-08-06",
  "taxonomy_version": "0.6.0",
  "stats": {
-  "records": 634,
-  "findings": 402,
-  "sources": 104,
+  "records": 650,
+  "findings": 416,
+  "sources": 105,
   "countries": 28,
   "withheld_internal": 2
  },
@@ -1149,8 +1149,8 @@ window.SITE_DATA = {
    "example": "Somalia — IM recruitment was cancelled and the post reissued as a volunteer role. Partner reporting continued to arrive while the public dashboard and contact lists went unupdated for months.",
    "type": "barrier",
    "strength": "high",
-   "n_records": 14,
-   "n_sources": 9,
+   "n_records": 15,
+   "n_sources": 10,
    "n_streams": 2,
    "streams": [
     "sdr",
@@ -1162,7 +1162,8 @@ window.SITE_DATA = {
     "HTI",
     "NER",
     "SDN",
-    "SOM"
+    "SOM",
+    "SYR"
    ],
    "tags": [
     "capacity",
@@ -1194,7 +1195,8 @@ window.SITE_DATA = {
     "E0508",
     "E0522",
     "E0523",
-    "E0524"
+    "E0524",
+    "E0663"
    ],
    "unmerged": false,
    "highlight": {
@@ -5295,6 +5297,438 @@ window.SITE_DATA = {
    "unmerged": false
   },
   {
+   "finding_id": "F1714",
+   "statement": "A transitional response plan for next year is under discussion following government advice, but is not confirmed, and the coordination team's own reading is that the system will still be needed.",
+   "theme": [
+    "Transition"
+   ],
+   "example": "",
+   "type": "context",
+   "strength": "low",
+   "n_records": 1,
+   "n_sources": 1,
+   "n_streams": 1,
+   "streams": [
+    "transcript"
+   ],
+   "countries": [
+    "SYR"
+   ],
+   "tags": [
+    "hpc",
+    "transition-handover"
+   ],
+   "actors": [
+    "cluster",
+    "gov-national"
+   ],
+   "record_ids": [
+    "E0649"
+   ],
+   "unmerged": false
+  },
+  {
+   "finding_id": "F1715",
+   "statement": "Household survey data was found to have real limits for identifying WASH need, because answers vary between households while the service that determines the need is provided at community level.",
+   "theme": [
+    "Fundamentals"
+   ],
+   "example": "",
+   "type": "barrier",
+   "strength": "low",
+   "n_records": 1,
+   "n_sources": 1,
+   "n_streams": 1,
+   "streams": [
+    "transcript"
+   ],
+   "countries": [
+    "SYR"
+   ],
+   "tags": [
+    "hpc"
+   ],
+   "actors": [
+    "cluster"
+   ],
+   "record_ids": [
+    "E0650"
+   ],
+   "unmerged": false
+  },
+  {
+   "finding_id": "F1716",
+   "statement": "The sector is asking for the joint assessment to cover community and facility level alongside households, on the basis that the intervention itself happens at community level.",
+   "theme": [
+    "Fundamentals"
+   ],
+   "example": "",
+   "type": "recommendation",
+   "strength": "low",
+   "n_records": 1,
+   "n_sources": 1,
+   "n_streams": 1,
+   "streams": [
+    "transcript"
+   ],
+   "countries": [
+    "SYR"
+   ],
+   "tags": [
+    "hpc"
+   ],
+   "actors": [
+    "cluster",
+    "ocha"
+   ],
+   "record_ids": [
+    "E0651"
+   ],
+   "unmerged": false
+  },
+  {
+   "finding_id": "F1717",
+   "statement": "The needs analysis was built by combining the household survey with a separate community-level vulnerability assessment run by another agency, applying the intersectoral analysis framework across both.",
+   "theme": [
+    "Fundamentals"
+   ],
+   "example": "",
+   "type": "practice",
+   "strength": "low",
+   "n_records": 1,
+   "n_sources": 1,
+   "n_streams": 1,
+   "streams": [
+    "transcript"
+   ],
+   "countries": [
+    "SYR"
+   ],
+   "tags": [
+    "hpc",
+    "information-management"
+   ],
+   "actors": [
+    "cluster"
+   ],
+   "record_ids": [
+    "E0652"
+   ],
+   "unmerged": false
+  },
+  {
+   "finding_id": "F1718",
+   "statement": "A facility assessment covering what is operating, what is missing and what capacity exists is owned by the line ministry rather than by the humanitarian sector.",
+   "theme": [
+    "Fundamentals"
+   ],
+   "example": "",
+   "type": "enabler",
+   "strength": "low",
+   "n_records": 1,
+   "n_sources": 1,
+   "n_streams": 1,
+   "streams": [
+    "transcript"
+   ],
+   "countries": [
+    "SYR"
+   ],
+   "tags": [
+    "government-engagement",
+    "hpc",
+    "transition-handover"
+   ],
+   "actors": [
+    "cluster",
+    "gov-national",
+    "ingo"
+   ],
+   "record_ids": [
+    "E0653"
+   ],
+   "unmerged": false
+  },
+  {
+   "finding_id": "F1719",
+   "statement": "With the central planning module suspended, the sector built its own reporting form covering activities, locations and costing, and estimated its funding appeal directly from partner inputs.",
+   "theme": [
+    "Fundamentals"
+   ],
+   "example": "",
+   "type": "practice",
+   "strength": "low",
+   "n_records": 1,
+   "n_sources": 1,
+   "n_streams": 1,
+   "streams": [
+    "transcript"
+   ],
+   "countries": [
+    "SYR"
+   ],
+   "tags": [
+    "funding",
+    "hpc",
+    "information-management"
+   ],
+   "actors": [
+    "cluster"
+   ],
+   "record_ids": [
+    "E0654"
+   ],
+   "unmerged": false
+  },
+  {
+   "finding_id": "F1720",
+   "statement": "Running one reporting platform for everything — activity reporting, budgeting, partner capacity and stocks, and a service mapping dashboard — has held 86 active partners on a single system since 2023.",
+   "theme": [
+    "Fundamentals"
+   ],
+   "example": "",
+   "type": "enabler",
+   "strength": "low",
+   "n_records": 1,
+   "n_sources": 1,
+   "n_streams": 1,
+   "streams": [
+    "transcript"
+   ],
+   "countries": [
+    "SYR"
+   ],
+   "tags": [
+    "information-management",
+    "partnerships"
+   ],
+   "actors": [
+    "cluster",
+    "ingo"
+   ],
+   "record_ids": [
+    "E0655"
+   ],
+   "unmerged": false
+  },
+  {
+   "finding_id": "F1721",
+   "statement": "Two databases are run in parallel: one controlled centrally so that organisation names and references are identical across all sectors, and one the sector controls itself for its own surveys.",
+   "theme": [
+    "Fundamentals"
+   ],
+   "example": "",
+   "type": "practice",
+   "strength": "low",
+   "n_records": 1,
+   "n_sources": 1,
+   "n_streams": 1,
+   "streams": [
+    "transcript"
+   ],
+   "countries": [
+    "SYR"
+   ],
+   "tags": [
+    "information-management"
+   ],
+   "actors": [
+    "cluster",
+    "ocha"
+   ],
+   "record_ids": [
+    "E0656"
+   ],
+   "unmerged": false
+  },
+  {
+   "finding_id": "F1722",
+   "statement": "The partner reporting template is being simplified to ask less of partners while keeping the same system.",
+   "theme": [
+    "Fundamentals"
+   ],
+   "example": "",
+   "type": "practice",
+   "strength": "low",
+   "n_records": 1,
+   "n_sources": 1,
+   "n_streams": 1,
+   "streams": [
+    "transcript"
+   ],
+   "countries": [
+    "SYR"
+   ],
+   "tags": [
+    "information-management",
+    "partnerships"
+   ],
+   "actors": [
+    "cluster"
+   ],
+   "record_ids": [
+    "E0657"
+   ],
+   "unmerged": false
+  },
+  {
+   "finding_id": "F1723",
+   "statement": "Beneficiary counting is the constraint on reporting reach credibly: partners running small-budget interventions report reach figures that the budget cannot support, which inflates the sector total and leads the coordination team to cap the figures it publishes.",
+   "theme": [
+    "Fundamentals"
+   ],
+   "example": "",
+   "type": "barrier",
+   "strength": "low",
+   "n_records": 1,
+   "n_sources": 1,
+   "n_streams": 1,
+   "streams": [
+    "transcript"
+   ],
+   "countries": [
+    "SYR"
+   ],
+   "tags": [
+    "information-management",
+    "performance"
+   ],
+   "actors": [
+    "cluster",
+    "ingo"
+   ],
+   "record_ids": [
+    "E0658"
+   ],
+   "unmerged": false
+  },
+  {
+   "finding_id": "F1724",
+   "statement": "A country task force produced a beneficiary counting guideline, but the coordination team is not confident it is sufficient and has asked for this to be worked through globally rather than country by country.",
+   "theme": [
+    "Fundamentals"
+   ],
+   "example": "",
+   "type": "recommendation",
+   "strength": "low",
+   "n_records": 1,
+   "n_sources": 1,
+   "n_streams": 1,
+   "streams": [
+    "transcript"
+   ],
+   "countries": [
+    "SYR"
+   ],
+   "tags": [
+    "guidance",
+    "information-management",
+    "performance"
+   ],
+   "actors": [
+    "cluster"
+   ],
+   "record_ids": [
+    "E0659"
+   ],
+   "unmerged": false
+  },
+  {
+   "finding_id": "F1725",
+   "statement": "Co-chairing arrangements were introduced at subnational level and, recently, at national level — a new arrangement in this context.",
+   "theme": [
+    "Transition"
+   ],
+   "example": "",
+   "type": "practice",
+   "strength": "low",
+   "n_records": 1,
+   "n_sources": 1,
+   "n_streams": 1,
+   "streams": [
+    "transcript"
+   ],
+   "countries": [
+    "SYR"
+   ],
+   "tags": [
+    "coordination-architecture",
+    "localisation",
+    "transition-handover"
+   ],
+   "actors": [
+    "cluster",
+    "ingo"
+   ],
+   "record_ids": [
+    "E0661"
+   ],
+   "unmerged": false
+  },
+  {
+   "finding_id": "F1726",
+   "statement": "Funding this year is comparatively strong — roughly two thirds of the appeal secured — with a further pooled fund allocation under way in which the sector is actively advocating for its share.",
+   "theme": [
+    "Fundamentals"
+   ],
+   "example": "",
+   "type": "context",
+   "strength": "low",
+   "n_records": 1,
+   "n_sources": 1,
+   "n_streams": 1,
+   "streams": [
+    "transcript"
+   ],
+   "countries": [
+    "SYR"
+   ],
+   "tags": [
+    "funding",
+    "pooled-funds"
+   ],
+   "actors": [
+    "cluster",
+    "ocha"
+   ],
+   "record_ids": [
+    "E0662"
+   ],
+   "unmerged": false
+  },
+  {
+   "finding_id": "F1727",
+   "statement": "Preparatory steps on the joint assessment are taken in advance of government approval, so that collection can begin immediately once approval is given rather than starting from scratch.",
+   "theme": [
+    "Fundamentals"
+   ],
+   "example": "",
+   "type": "enabler",
+   "strength": "low",
+   "n_records": 1,
+   "n_sources": 1,
+   "n_streams": 1,
+   "streams": [
+    "transcript"
+   ],
+   "countries": [
+    "SYR"
+   ],
+   "tags": [
+    "government-engagement",
+    "hpc"
+   ],
+   "actors": [
+    "cluster",
+    "gov-national",
+    "ocha"
+   ],
+   "record_ids": [
+    "E0664"
+   ],
+   "unmerged": false
+  },
+  {
    "finding_id": "F200",
    "statement": "Even where integrated area-based approaches are formally adopted, coordination stays constrained at implementation level because actors, sectors and delivery mechanisms are not aligned.",
    "theme": [
@@ -9359,8 +9793,8 @@ window.SITE_DATA = {
    "example": "Niger — the co-leading ministry has effectively one trained focal point who understands what a cluster is, no IM function, and no ministry of humanitarian action behind it.",
    "type": "barrier",
    "strength": "high",
-   "n_records": 9,
-   "n_sources": 6,
+   "n_records": 10,
+   "n_sources": 7,
    "n_streams": 3,
    "streams": [
     "sdr",
@@ -9374,7 +9808,8 @@ window.SITE_DATA = {
     "LBN",
     "NER",
     "NGA",
-    "SDN"
+    "SDN",
+    "SYR"
    ],
    "tags": [
     "capacity",
@@ -9398,7 +9833,8 @@ window.SITE_DATA = {
     "E0477",
     "E0482",
     "E0554",
-    "E0637"
+    "E0637",
+    "E0660"
    ],
    "unmerged": false,
    "highlight": {
@@ -30138,6 +30574,420 @@ window.SITE_DATA = {
    "date_collected": "2026-06-09",
    "confidence": "high",
    "status": "draft"
+  },
+  {
+   "id": "E0649",
+   "finding_id": "F1714",
+   "theme": [
+    "Transition"
+   ],
+   "type": "context",
+   "statement": "A transitional response plan for next year is under discussion following government advice, but is not confirmed, and the coordination team's own reading is that the system will still be needed.",
+   "level": "national",
+   "countries": [
+    "SYR"
+   ],
+   "actors": [
+    "gov-national",
+    "cluster"
+   ],
+   "tags": [
+    "transition-handover",
+    "hpc"
+   ],
+   "stream": "transcript",
+   "source_id": "S115",
+   "date_collected": "2026-08-06",
+   "confidence": "high",
+   "status": "draft"
+  },
+  {
+   "id": "E0650",
+   "finding_id": "F1715",
+   "theme": [
+    "Fundamentals"
+   ],
+   "type": "barrier",
+   "statement": "Household survey data was found to have real limits for identifying WASH need, because answers vary between households while the service that determines the need is provided at community level.",
+   "level": "national",
+   "countries": [
+    "SYR"
+   ],
+   "actors": [
+    "cluster"
+   ],
+   "tags": [
+    "hpc"
+   ],
+   "stream": "transcript",
+   "source_id": "S115",
+   "date_collected": "2026-08-06",
+   "confidence": "high",
+   "status": "draft"
+  },
+  {
+   "id": "E0651",
+   "finding_id": "F1716",
+   "theme": [
+    "Fundamentals"
+   ],
+   "type": "recommendation",
+   "statement": "The sector is asking for the joint assessment to cover community and facility level alongside households, on the basis that the intervention itself happens at community level.",
+   "level": "national",
+   "countries": [
+    "SYR"
+   ],
+   "actors": [
+    "cluster",
+    "ocha"
+   ],
+   "tags": [
+    "hpc"
+   ],
+   "stream": "transcript",
+   "source_id": "S115",
+   "date_collected": "2026-08-06",
+   "confidence": "high",
+   "status": "draft"
+  },
+  {
+   "id": "E0652",
+   "finding_id": "F1717",
+   "theme": [
+    "Fundamentals"
+   ],
+   "type": "practice",
+   "statement": "The needs analysis was built by combining the household survey with a separate community-level vulnerability assessment run by another agency, applying the intersectoral analysis framework across both.",
+   "level": "national",
+   "countries": [
+    "SYR"
+   ],
+   "actors": [
+    "cluster"
+   ],
+   "tags": [
+    "hpc",
+    "information-management"
+   ],
+   "stream": "transcript",
+   "source_id": "S115",
+   "date_collected": "2026-08-06",
+   "confidence": "high",
+   "status": "draft"
+  },
+  {
+   "id": "E0653",
+   "finding_id": "F1718",
+   "theme": [
+    "Fundamentals"
+   ],
+   "type": "enabler",
+   "statement": "A facility assessment covering what is operating, what is missing and what capacity exists is owned by the line ministry rather than by the humanitarian sector.",
+   "level": "national",
+   "countries": [
+    "SYR"
+   ],
+   "actors": [
+    "gov-national",
+    "cluster",
+    "ingo"
+   ],
+   "tags": [
+    "hpc",
+    "government-engagement",
+    "transition-handover"
+   ],
+   "stream": "transcript",
+   "source_id": "S115",
+   "date_collected": "2026-08-06",
+   "confidence": "high",
+   "status": "draft"
+  },
+  {
+   "id": "E0654",
+   "finding_id": "F1719",
+   "theme": [
+    "Fundamentals"
+   ],
+   "type": "practice",
+   "statement": "With the central planning module suspended, the sector built its own reporting form covering activities, locations and costing, and estimated its funding appeal directly from partner inputs.",
+   "level": "national",
+   "countries": [
+    "SYR"
+   ],
+   "actors": [
+    "cluster"
+   ],
+   "tags": [
+    "information-management",
+    "hpc",
+    "funding"
+   ],
+   "stream": "transcript",
+   "source_id": "S115",
+   "date_collected": "2026-08-06",
+   "confidence": "high",
+   "status": "draft"
+  },
+  {
+   "id": "E0655",
+   "finding_id": "F1720",
+   "theme": [
+    "Fundamentals"
+   ],
+   "type": "enabler",
+   "statement": "Running one reporting platform for everything — activity reporting, budgeting, partner capacity and stocks, and a service mapping dashboard — has held 86 active partners on a single system since 2023.",
+   "level": "national",
+   "countries": [
+    "SYR"
+   ],
+   "actors": [
+    "cluster",
+    "ingo"
+   ],
+   "tags": [
+    "information-management",
+    "partnerships"
+   ],
+   "stream": "transcript",
+   "source_id": "S115",
+   "date_collected": "2026-08-06",
+   "confidence": "high",
+   "status": "draft"
+  },
+  {
+   "id": "E0656",
+   "finding_id": "F1721",
+   "theme": [
+    "Fundamentals"
+   ],
+   "type": "practice",
+   "statement": "Two databases are run in parallel: one controlled centrally so that organisation names and references are identical across all sectors, and one the sector controls itself for its own surveys.",
+   "level": "national",
+   "countries": [
+    "SYR"
+   ],
+   "actors": [
+    "cluster",
+    "ocha"
+   ],
+   "tags": [
+    "information-management"
+   ],
+   "stream": "transcript",
+   "source_id": "S115",
+   "date_collected": "2026-08-06",
+   "confidence": "high",
+   "status": "draft"
+  },
+  {
+   "id": "E0657",
+   "finding_id": "F1722",
+   "theme": [
+    "Fundamentals"
+   ],
+   "type": "practice",
+   "statement": "The partner reporting template is being simplified to ask less of partners while keeping the same system.",
+   "level": "national",
+   "countries": [
+    "SYR"
+   ],
+   "actors": [
+    "cluster"
+   ],
+   "tags": [
+    "information-management",
+    "partnerships"
+   ],
+   "stream": "transcript",
+   "source_id": "S115",
+   "date_collected": "2026-08-06",
+   "confidence": "high",
+   "status": "draft"
+  },
+  {
+   "id": "E0658",
+   "finding_id": "F1723",
+   "theme": [
+    "Fundamentals"
+   ],
+   "type": "barrier",
+   "statement": "Beneficiary counting is the constraint on reporting reach credibly: partners running small-budget interventions report reach figures that the budget cannot support, which inflates the sector total and leads the coordination team to cap the figures it publishes.",
+   "level": "national",
+   "countries": [
+    "SYR"
+   ],
+   "actors": [
+    "cluster",
+    "ingo"
+   ],
+   "tags": [
+    "information-management",
+    "performance"
+   ],
+   "stream": "transcript",
+   "source_id": "S115",
+   "date_collected": "2026-08-06",
+   "confidence": "high",
+   "status": "draft"
+  },
+  {
+   "id": "E0659",
+   "finding_id": "F1724",
+   "theme": [
+    "Fundamentals"
+   ],
+   "type": "recommendation",
+   "statement": "A country task force produced a beneficiary counting guideline, but the coordination team is not confident it is sufficient and has asked for this to be worked through globally rather than country by country.",
+   "level": "national",
+   "countries": [
+    "SYR"
+   ],
+   "actors": [
+    "cluster"
+   ],
+   "tags": [
+    "information-management",
+    "guidance",
+    "performance"
+   ],
+   "stream": "transcript",
+   "source_id": "S115",
+   "date_collected": "2026-08-06",
+   "confidence": "high",
+   "status": "draft"
+  },
+  {
+   "id": "E0660",
+   "finding_id": "F361",
+   "theme": [
+    "Transition"
+   ],
+   "type": "barrier",
+   "statement": "The line ministry is engaged in and supportive of sector coordination, but its limited capacity is identified as the main risk if transition proceeds.",
+   "level": "national",
+   "countries": [
+    "SYR"
+   ],
+   "actors": [
+    "gov-national",
+    "cluster"
+   ],
+   "tags": [
+    "government-engagement",
+    "transition-handover",
+    "capacity"
+   ],
+   "stream": "transcript",
+   "source_id": "S115",
+   "date_collected": "2026-08-06",
+   "confidence": "high",
+   "status": "draft"
+  },
+  {
+   "id": "E0661",
+   "finding_id": "F1725",
+   "theme": [
+    "Transition"
+   ],
+   "type": "practice",
+   "statement": "Co-chairing arrangements were introduced at subnational level and, recently, at national level — a new arrangement in this context.",
+   "level": "national",
+   "countries": [
+    "SYR"
+   ],
+   "actors": [
+    "cluster",
+    "ingo"
+   ],
+   "tags": [
+    "coordination-architecture",
+    "localisation",
+    "transition-handover"
+   ],
+   "stream": "transcript",
+   "source_id": "S115",
+   "date_collected": "2026-08-06",
+   "confidence": "high",
+   "status": "draft"
+  },
+  {
+   "id": "E0662",
+   "finding_id": "F1726",
+   "theme": [
+    "Fundamentals"
+   ],
+   "type": "context",
+   "statement": "Funding this year is comparatively strong — roughly two thirds of the appeal secured — with a further pooled fund allocation under way in which the sector is actively advocating for its share.",
+   "level": "national",
+   "countries": [
+    "SYR"
+   ],
+   "actors": [
+    "cluster",
+    "ocha"
+   ],
+   "tags": [
+    "funding",
+    "pooled-funds"
+   ],
+   "stream": "transcript",
+   "source_id": "S115",
+   "date_collected": "2026-08-06",
+   "confidence": "high",
+   "status": "draft"
+  },
+  {
+   "id": "E0663",
+   "finding_id": "F028",
+   "theme": [
+    "Fundamentals"
+   ],
+   "type": "barrier",
+   "statement": "Information management capacity fell from three officers to one, who covers two sectors.",
+   "level": "national",
+   "countries": [
+    "SYR"
+   ],
+   "actors": [
+    "cluster"
+   ],
+   "tags": [
+    "information-management",
+    "capacity"
+   ],
+   "stream": "transcript",
+   "source_id": "S115",
+   "date_collected": "2026-08-06",
+   "confidence": "high",
+   "status": "draft"
+  },
+  {
+   "id": "E0664",
+   "finding_id": "F1727",
+   "theme": [
+    "Fundamentals"
+   ],
+   "type": "enabler",
+   "statement": "Preparatory steps on the joint assessment are taken in advance of government approval, so that collection can begin immediately once approval is given rather than starting from scratch.",
+   "level": "national",
+   "countries": [
+    "SYR"
+   ],
+   "actors": [
+    "ocha",
+    "gov-national",
+    "cluster"
+   ],
+   "tags": [
+    "hpc",
+    "government-engagement"
+   ],
+   "stream": "transcript",
+   "source_id": "S115",
+   "date_collected": "2026-08-06",
+   "confidence": "high",
+   "status": "draft"
   }
  ],
  "sources": [
@@ -31489,6 +32339,19 @@ window.SITE_DATA = {
    "url": "",
    "stream": "transcript",
    "date_added": "2026-07-29",
+   "access": "restricted",
+   "legacy_id": "",
+   "source_group": ""
+  },
+  {
+   "source_id": "S115",
+   "title": "Country consultation — Syria (session 1, information management and assessment)",
+   "organisation": "Global WASH Cluster",
+   "year": "2026",
+   "type": "interview",
+   "url": "",
+   "stream": "transcript",
+   "date_added": "2026-08-06",
    "access": "restricted",
    "legacy_id": "",
    "source_group": ""
