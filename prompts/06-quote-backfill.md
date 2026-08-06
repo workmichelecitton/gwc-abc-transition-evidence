@@ -1,6 +1,6 @@
 # 06 — Quote backfill
 
-**Status: 12 of 14 transcripts done. 44 records still carry no quote.**
+**Status: 13 of 14 transcripts done. 26 records still carry no quote.**
 
 ## Why this exists
 
@@ -39,17 +39,16 @@ cannot catch a bare first name.
 
 | Source | Country | Records | Drive file ID |
 |---|---|---|---|
-| S012 | Myanmar | 22 | (two sessions) |
-| S011 | Somalia | 18 | — |
+| S012 | Myanmar | 22 | **two sessions:** `1upnA8PUFBjetVQNSK3im-VpjZm43QTVb` (Myanmar 1) and `1UtANQjEM89NMS_EB4qxXHOeMWTsI6yL4` (Myanmar 2) |
 
 Done: Haiti (17), Sudan (31), Colombia (28), Lebanon (23), Mozambique (20),
 South Sudan (22), Bangladesh (20), Ethiopia (20), Nigeria (18), Burkina Faso (18),
-Mali (17), Niger (16). **Also outstanding:** a handful of stragglers — S110 (2),
+Mali (17), Niger (16), Somalia (18). **Also outstanding:** a handful of stragglers — S110 (2),
 S103 (1), S104 (1) — records whose supporting passage was not found on the first
 pass and which were left rather than guessed.
 
 Clean transcripts, no corrections needed: Lebanon, South Sudan, Nigeria,
-Burkina Faso, Mali, Niger.
+Burkina Faso, Mali, Niger, Somalia.
 
 ## Method — one source per pass
 
