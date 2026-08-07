@@ -72,11 +72,11 @@ window.SITE_DATA = {
   ],
   "footer_note": "Findings are traceable to a source ID in the Sources tab. If something looks wrong, it probably is — say so and it will be corrected."
  },
- "generated": "2026-08-06",
+ "generated": "2026-08-07",
  "taxonomy_version": "0.6.0",
  "stats": {
   "records": 656,
-  "findings": 421,
+  "findings": 347,
   "sources": 106,
   "countries": 29,
   "withheld_internal": 2
@@ -967,18 +967,20 @@ window.SITE_DATA = {
    ],
    "example": "",
    "type": "enabler",
-   "strength": "low",
-   "n_records": 1,
-   "n_sources": 1,
+   "strength": "medium",
+   "n_records": 2,
+   "n_sources": 2,
    "n_streams": 1,
    "streams": [
     "transcript"
    ],
    "countries": [
+    "ETH",
     "SOM"
    ],
    "tags": [
     "government-engagement",
+    "guidance",
     "transition-handover"
    ],
    "actors": [
@@ -986,7 +988,8 @@ window.SITE_DATA = {
     "gov-national"
    ],
    "record_ids": [
-    "E0029"
+    "E0029",
+    "E0563"
    ],
    "unmerged": false
   },
@@ -1040,7 +1043,7 @@ window.SITE_DATA = {
   },
   {
    "finding_id": "F026",
-   "statement": "Structured peer exchange is asked for repeatedly, across very different contexts, and works where it is actually run. No guidance product substitutes for it.",
+   "statement": "Structured peer exchange is asked for repeatedly, across very different contexts, and works where it is actually run. Coordinators in transition are answering the same questions in parallel without contact. No guidance product substitutes for it.",
    "theme": [
     "ABC",
     "Transition"
@@ -1048,10 +1051,11 @@ window.SITE_DATA = {
    "example": "Burkina Faso — bi-monthly discussion meetings with all regional focal points to work through challenges and share solutions were well received, and participants asked for them to continue.",
    "type": "recommendation",
    "strength": "high",
-   "n_records": 7,
-   "n_sources": 6,
-   "n_streams": 1,
+   "n_records": 8,
+   "n_sources": 7,
+   "n_streams": 2,
    "streams": [
+    "sdr",
     "transcript"
    ],
    "countries": [
@@ -1079,6 +1083,7 @@ window.SITE_DATA = {
     "E0032",
     "E0039",
     "E0070",
+    "E0340",
     "E0424",
     "E0440",
     "E0475",
@@ -2325,39 +2330,6 @@ window.SITE_DATA = {
    "unmerged": false
   },
   {
-   "finding_id": "F1007",
-   "statement": "Before formal planning begins, the sector holds bilateral discussions with each partner to establish whether they can continue what they are currently implementing.",
-   "theme": [
-    "Transition"
-   ],
-   "example": "",
-   "type": "practice",
-   "strength": "low",
-   "n_records": 1,
-   "n_sources": 1,
-   "n_streams": 1,
-   "streams": [
-    "transcript"
-   ],
-   "countries": [
-    "BGD"
-   ],
-   "tags": [
-    "hpc",
-    "partnerships",
-    "transition-handover"
-   ],
-   "actors": [
-    "cluster",
-    "ingo",
-    "local-ngo"
-   ],
-   "record_ids": [
-    "E0503"
-   ],
-   "unmerged": false
-  },
-  {
    "finding_id": "F1008",
    "statement": "Whether the host community is included in the joint assessment is unresolved, and the share of the response formally allocated to host communities is under review and may reduce.",
    "theme": [
@@ -2789,36 +2761,6 @@ window.SITE_DATA = {
    "unmerged": false
   },
   {
-   "finding_id": "F108",
-   "statement": "Work with OCHA on transparent deactivation criteria — Coordination structures are formally reviewed each year; making that review systematic, and publishing the criteria behind deactivation decisions, would give countries a predictable basis for planning.",
-   "theme": [
-    "Transition"
-   ],
-   "example": "",
-   "type": "recommendation",
-   "strength": "low",
-   "n_records": 1,
-   "n_sources": 1,
-   "n_streams": 1,
-   "streams": [
-    "sdr"
-   ],
-   "countries": [],
-   "tags": [
-    "advocacy",
-    "performance",
-    "transition-handover"
-   ],
-   "actors": [
-    "cluster",
-    "ocha"
-   ],
-   "record_ids": [
-    "E0080"
-   ],
-   "unmerged": false
-  },
-  {
    "finding_id": "F109",
    "statement": "Protect information management and coordination capacity through the transition, and treat IM as infrastructure rather than reporting. What is handed over should be a working system, not a set of files.",
    "theme": [
@@ -2826,9 +2768,9 @@ window.SITE_DATA = {
    ],
    "example": "",
    "type": "recommendation",
-   "strength": "medium",
-   "n_records": 2,
-   "n_sources": 2,
+   "strength": "high",
+   "n_records": 3,
+   "n_sources": 3,
    "n_streams": 1,
    "streams": [
     "sdr"
@@ -2846,9 +2788,15 @@ window.SITE_DATA = {
    ],
    "record_ids": [
     "E0081",
-    "E0220"
+    "E0220",
+    "E0369"
    ],
-   "unmerged": false
+   "unmerged": false,
+   "highlight": {
+    "headline": "Protect information management through the transition, and staff both sides",
+    "plain": "Coordinator and IM posts are consistently the first reduction in a budget cut, and deactivation has been used as a budget instrument. Continuity needs someone running cluster information management through the transition and someone building the counterpart function that will receive it.",
+    "so_what": "Treat information management as infrastructure with its own transition strategy, named custodians and archives — so what is handed over is a working system rather than a set of files."
+   }
   },
   {
    "finding_id": "F1100",
@@ -2976,39 +2924,6 @@ window.SITE_DATA = {
    "unmerged": false
   },
   {
-   "finding_id": "F1104",
-   "statement": "From the start of next year the coordinator and information manager posts will be nationalised, with government continuing its leadership and an NGO expected to co-facilitate at national or subnational level.",
-   "theme": [
-    "Transition"
-   ],
-   "example": "",
-   "type": "practice",
-   "strength": "low",
-   "n_records": 1,
-   "n_sources": 1,
-   "n_streams": 1,
-   "streams": [
-    "transcript"
-   ],
-   "countries": [
-    "HTI"
-   ],
-   "tags": [
-    "coordination-architecture",
-    "localisation",
-    "transition-handover"
-   ],
-   "actors": [
-    "gov-national",
-    "local-ngo",
-    "un-agency"
-   ],
-   "record_ids": [
-    "E0519"
-   ],
-   "unmerged": false
-  },
-  {
    "finding_id": "F1105",
    "statement": "A national NGO has expressed interest in co-leadership and sustained that interest for over a year, giving the sector a candidate already familiar with the response.",
    "theme": [
@@ -3041,14 +2956,14 @@ window.SITE_DATA = {
   },
   {
    "finding_id": "F111",
-   "statement": "Issue guidance on deactivation thresholds and successor scoping — Coordinators asked for practical guidance on when government-led coordination is realistic — including partner-count and complexity thresholds (a government can coordinate six partners;",
+   "statement": "Work with OCHA on transparent deactivation criteria — Coordination structures are formally reviewed each year; making that review systematic, and publishing the criteria behind deactivation decisions, would give countries a predictable basis for planning.",
    "theme": [
     "Transition"
    ],
    "example": "",
    "type": "recommendation",
    "strength": "low",
-   "n_records": 3,
+   "n_records": 4,
    "n_sources": 1,
    "n_streams": 1,
    "streams": [
@@ -3056,7 +2971,9 @@ window.SITE_DATA = {
    ],
    "countries": [],
    "tags": [
+    "advocacy",
     "guidance",
+    "performance",
     "transition-handover"
    ],
    "actors": [
@@ -3064,6 +2981,7 @@ window.SITE_DATA = {
     "ocha"
    ],
    "record_ids": [
+    "E0080",
     "E0084",
     "E0085",
     "E0086"
@@ -3200,64 +3118,6 @@ window.SITE_DATA = {
    "unmerged": false
   },
   {
-   "finding_id": "F112",
-   "statement": "Lead the transition conversation — do not wait for it — Develop a costed transition plan with agreed readiness indicators and benchmarks early, through a transition working group with key actors",
-   "theme": [
-    "Transition"
-   ],
-   "example": "",
-   "type": "recommendation",
-   "strength": "low",
-   "n_records": 1,
-   "n_sources": 1,
-   "n_streams": 1,
-   "streams": [
-    "sdr"
-   ],
-   "countries": [],
-   "tags": [
-    "hpc",
-    "transition-handover"
-   ],
-   "actors": [
-    "cluster"
-   ],
-   "record_ids": [
-    "E0087"
-   ],
-   "unmerged": false
-  },
-  {
-   "finding_id": "F113",
-   "statement": "Run the stakeholder and willingness analysis before drafting the strategy — Map who could receive coordination functions — ministries as they actually divide WASH, civil protection, development platforms, national institutions with durable funding — and assess capacity, financing, neutrality,…",
-   "theme": [
-    "Transition"
-   ],
-   "example": "",
-   "type": "recommendation",
-   "strength": "low",
-   "n_records": 2,
-   "n_sources": 1,
-   "n_streams": 1,
-   "streams": [
-    "sdr"
-   ],
-   "countries": [],
-   "tags": [
-    "government-engagement",
-    "transition-handover"
-   ],
-   "actors": [
-    "cluster",
-    "gov-national"
-   ],
-   "record_ids": [
-    "E0088",
-    "E0089"
-   ],
-   "unmerged": false
-  },
-  {
    "finding_id": "F114",
    "statement": "Map development actors as transition counterparts — Identify actors in the broader WASH sector — development programmes, national utilities, development banks and international financial institutions — with the technical skillset, funding horizon and field presence to absorb part of what the…",
    "theme": [
@@ -3297,68 +3157,6 @@ window.SITE_DATA = {
     "plain": "Handover needs a receiver. Development programmes, national water utilities and development banks work on much longer funding horizons than humanitarian actors, but they have to be identified and brought in well before the humanitarian response starts winding down.",
     "so_what": "Map potential successors at the start of the response, not at the point of exit."
    }
-  },
-  {
-   "finding_id": "F115",
-   "statement": "Secure a senior political directive — Ministry-by-ministry engagement fails without instruction from the top: work through the ICCG, OCHA and the HC/RC to obtain senior government direction for the transition, and engage the UNICEF Representative early on the CLA's continuing accountabilities (S33)",
-   "theme": [
-    "Transition"
-   ],
-   "example": "",
-   "type": "recommendation",
-   "strength": "low",
-   "n_records": 1,
-   "n_sources": 1,
-   "n_streams": 1,
-   "streams": [
-    "sdr"
-   ],
-   "countries": [],
-   "tags": [
-    "advocacy",
-    "government-engagement",
-    "transition-handover"
-   ],
-   "actors": [
-    "cluster",
-    "gov-national",
-    "ocha"
-   ],
-   "record_ids": [
-    "E0097"
-   ],
-   "unmerged": false
-  },
-  {
-   "finding_id": "F116",
-   "statement": "Categorize and align IM assets from response onset — Distinguish what aligns with government systems from the start (master facility lists, asset inventories), what transfers quickly (3W/4W in receiving-friendly formats), what requires long capacity building, and what should not transfer",
-   "theme": [
-    "Transition"
-   ],
-   "example": "",
-   "type": "recommendation",
-   "strength": "low",
-   "n_records": 3,
-   "n_sources": 1,
-   "n_streams": 1,
-   "streams": [
-    "sdr"
-   ],
-   "countries": [],
-   "tags": [
-    "information-management",
-    "transition-handover"
-   ],
-   "actors": [
-    "cluster",
-    "gov-national"
-   ],
-   "record_ids": [
-    "E0098",
-    "E0099",
-    "E0100"
-   ],
-   "unmerged": false
   },
   {
    "finding_id": "F118",
@@ -3686,102 +3484,6 @@ window.SITE_DATA = {
    "unmerged": false
   },
   {
-   "finding_id": "F1211",
-   "statement": "A detailed handover document produced with external support was reworked with the national authority into a government-side transition strategy, with very few changes to the structure originally proposed.",
-   "theme": [
-    "Transition"
-   ],
-   "example": "",
-   "type": "enabler",
-   "strength": "low",
-   "n_records": 1,
-   "n_sources": 1,
-   "n_streams": 1,
-   "streams": [
-    "transcript"
-   ],
-   "countries": [
-    "MOZ"
-   ],
-   "tags": [
-    "government-engagement",
-    "guidance",
-    "transition-handover"
-   ],
-   "actors": [
-    "cluster",
-    "gov-national"
-   ],
-   "record_ids": [
-    "E0550"
-   ],
-   "unmerged": false
-  },
-  {
-   "finding_id": "F1300",
-   "statement": "A transition plan was drafted by adapting examples from other countries and shared with the ministry, and no feedback had been received four months later despite repeated follow-up.",
-   "theme": [
-    "Transition"
-   ],
-   "example": "",
-   "type": "barrier",
-   "strength": "low",
-   "n_records": 1,
-   "n_sources": 1,
-   "n_streams": 1,
-   "streams": [
-    "transcript"
-   ],
-   "countries": [
-    "ETH"
-   ],
-   "tags": [
-    "government-engagement",
-    "guidance",
-    "transition-handover"
-   ],
-   "actors": [
-    "cluster",
-    "gov-national"
-   ],
-   "record_ids": [
-    "E0562"
-   ],
-   "unmerged": false
-  },
-  {
-   "finding_id": "F1301",
-   "statement": "The government asked to take over coordination and wants to do so gradually with continued support, while preferring not to have the arrangement set down in documents recorded in its own name.",
-   "theme": [
-    "Transition"
-   ],
-   "example": "",
-   "type": "context",
-   "strength": "low",
-   "n_records": 1,
-   "n_sources": 1,
-   "n_streams": 1,
-   "streams": [
-    "transcript"
-   ],
-   "countries": [
-    "ETH"
-   ],
-   "tags": [
-    "government-engagement",
-    "guidance",
-    "transition-handover"
-   ],
-   "actors": [
-    "cluster",
-    "gov-national"
-   ],
-   "record_ids": [
-    "E0563"
-   ],
-   "unmerged": false
-  },
-  {
    "finding_id": "F1302",
    "statement": "The ministry has not yet taken on convening the coordination meeting, which is still called and chaired by the outgoing coordinator.",
    "theme": [
@@ -3810,70 +3512,6 @@ window.SITE_DATA = {
    ],
    "record_ids": [
     "E0564"
-   ],
-   "unmerged": false
-  },
-  {
-   "finding_id": "F1303",
-   "statement": "The humanitarian coordination office agreed that six months is not sufficient for the handover, while the lead agency timeline remained unchanged.",
-   "theme": [
-    "Transition"
-   ],
-   "example": "",
-   "type": "context",
-   "strength": "low",
-   "n_records": 1,
-   "n_sources": 1,
-   "n_streams": 1,
-   "streams": [
-    "transcript"
-   ],
-   "countries": [
-    "ETH"
-   ],
-   "tags": [
-    "guidance",
-    "transition-handover"
-   ],
-   "actors": [
-    "cluster",
-    "ocha",
-    "un-agency"
-   ],
-   "record_ids": [
-    "E0565"
-   ],
-   "unmerged": false
-  },
-  {
-   "finding_id": "F1305",
-   "statement": "Sectors with a single line ministry counterpart move through deactivation faster than those split across two ministries, where the handover requires an inter-ministerial discussion first.",
-   "theme": [
-    "Transition"
-   ],
-   "example": "",
-   "type": "context",
-   "strength": "low",
-   "n_records": 1,
-   "n_sources": 1,
-   "n_streams": 1,
-   "streams": [
-    "transcript"
-   ],
-   "countries": [
-    "ETH"
-   ],
-   "tags": [
-    "coordination-architecture",
-    "government-engagement",
-    "transition-handover"
-   ],
-   "actors": [
-    "cluster",
-    "gov-national"
-   ],
-   "record_ids": [
-    "E0567"
    ],
    "unmerged": false
   },
@@ -4169,36 +3807,6 @@ window.SITE_DATA = {
    ],
    "record_ids": [
     "E0580"
-   ],
-   "unmerged": false
-  },
-  {
-   "finding_id": "F1405",
-   "statement": "The country is under a transitional administration whose stated position emphasises national self-reliance, including determining how partners engage.",
-   "theme": [
-    "Transition"
-   ],
-   "example": "",
-   "type": "context",
-   "strength": "low",
-   "n_records": 1,
-   "n_sources": 1,
-   "n_streams": 1,
-   "streams": [
-    "transcript"
-   ],
-   "countries": [
-    "BFA"
-   ],
-   "tags": [
-    "government-engagement",
-    "transition-handover"
-   ],
-   "actors": [
-    "gov-national"
-   ],
-   "record_ids": [
-    "E0581"
    ],
    "unmerged": false
   },
@@ -5023,96 +4631,6 @@ window.SITE_DATA = {
    "unmerged": false
   },
   {
-   "finding_id": "F1702",
-   "statement": "Where a cluster deactivates but the lead agency continues running humanitarian-funded programming, it is unresolved who leads sectoral coordination: programme staff may argue the role is theirs, and the structure can dissolve on paper while the response keeps running with nobody formally accountable.",
-   "theme": [
-    "Transition"
-   ],
-   "example": "",
-   "type": "barrier",
-   "strength": "low",
-   "n_records": 1,
-   "n_sources": 1,
-   "n_streams": 1,
-   "streams": [
-    "workshop"
-   ],
-   "countries": [],
-   "tags": [
-    "coordination-architecture",
-    "guidance",
-    "transition-handover"
-   ],
-   "actors": [
-    "cluster",
-    "un-agency"
-   ],
-   "record_ids": [
-    "E0633"
-   ],
-   "unmerged": false
-  },
-  {
-   "finding_id": "F1703",
-   "statement": "Participants put the question directly: what was actually transitioned? Where a national organisation replaces an international one doing the same work, the coordination architecture has changed but the sustainability question has not been answered.",
-   "theme": [
-    "Transition"
-   ],
-   "example": "",
-   "type": "context",
-   "strength": "low",
-   "n_records": 1,
-   "n_sources": 1,
-   "n_streams": 1,
-   "streams": [
-    "workshop"
-   ],
-   "countries": [],
-   "tags": [
-    "localisation",
-    "transition-handover"
-   ],
-   "actors": [
-    "cluster",
-    "ingo",
-    "local-ngo"
-   ],
-   "record_ids": [
-    "E0634"
-   ],
-   "unmerged": false
-  },
-  {
-   "finding_id": "F1704",
-   "statement": "A national NGO may not exist the following year, which makes it a less durable transition endpoint than a public institution with independent funding, even where it is more locally rooted.",
-   "theme": [
-    "Transition"
-   ],
-   "example": "",
-   "type": "barrier",
-   "strength": "low",
-   "n_records": 1,
-   "n_sources": 1,
-   "n_streams": 1,
-   "streams": [
-    "workshop"
-   ],
-   "countries": [],
-   "tags": [
-    "funding",
-    "localisation",
-    "transition-handover"
-   ],
-   "actors": [
-    "gov-national",
-    "local-ngo"
-   ],
-   "record_ids": [
-    "E0635"
-   ],
-   "unmerged": false
-  },
-  {
    "finding_id": "F1706",
    "statement": "Where water, sanitation and hygiene sit under a single government framework with one annual work plan, one budget and pooled funding, the sector has an institutional home and the handover has something coherent to transfer to.",
    "theme": [
@@ -5144,83 +4662,25 @@ window.SITE_DATA = {
    "unmerged": false
   },
   {
-   "finding_id": "F1707",
-   "statement": "A strong institutional mandate reduces dependence on individual post-holders: where the coordination function sat with a person rather than being written into an institutional remit, a reshuffle removed it entirely.",
+   "finding_id": "F1711",
+   "statement": "Information continuity is the first thing to degrade and the most immediately felt: coordinators ranked it ahead of funding. As mechanisms restructure, information flows break and the evidence base becomes hard to maintain at exactly the point transition decisions depend on it.",
    "theme": [
     "Transition"
    ],
-   "example": "",
-   "type": "enabler",
-   "strength": "low",
-   "n_records": 1,
-   "n_sources": 1,
-   "n_streams": 1,
+   "example": "Iraq — sustaining information flows proved difficult as coordination mechanisms restructured, and maintaining an accurate evidence base became harder as the transition itself changed shape.",
+   "type": "barrier",
+   "strength": "high",
+   "n_records": 3,
+   "n_sources": 3,
+   "n_streams": 2,
    "streams": [
-    "workshop"
-   ],
-   "countries": [],
-   "tags": [
-    "government-engagement",
-    "staff-turnover",
-    "transition-handover"
-   ],
-   "actors": [
-    "cluster",
-    "gov-national"
-   ],
-   "record_ids": [
-    "E0639"
-   ],
-   "unmerged": false
-  },
-  {
-   "finding_id": "F1709",
-   "statement": "A development-funded secondment that achieved a successful handover happened because an individual pushed it through the country office, not because the mechanism was available by default — the enabler depends on someone driving it.",
-   "theme": [
-    "Transition"
-   ],
-   "example": "",
-   "type": "context",
-   "strength": "low",
-   "n_records": 1,
-   "n_sources": 1,
-   "n_streams": 1,
-   "streams": [
+    "sdr",
     "workshop"
    ],
    "countries": [
-    "IRQ"
+    "IRQ",
+    "SOM"
    ],
-   "tags": [
-    "funding",
-    "nexus",
-    "transition-handover"
-   ],
-   "actors": [
-    "development",
-    "un-agency"
-   ],
-   "record_ids": [
-    "E0641"
-   ],
-   "unmerged": false
-  },
-  {
-   "finding_id": "F1711",
-   "statement": "Participants ranked information management deterioration as the most immediately felt transition barrier, ahead of funding, and identified lead agency investment before transition is forced as the strongest enabler by a wide margin.",
-   "theme": [
-    "Transition"
-   ],
-   "example": "",
-   "type": "context",
-   "strength": "low",
-   "n_records": 1,
-   "n_sources": 1,
-   "n_streams": 1,
-   "streams": [
-    "workshop"
-   ],
-   "countries": [],
    "tags": [
     "funding",
     "information-management",
@@ -5231,9 +4691,16 @@ window.SITE_DATA = {
     "un-agency"
    ],
    "record_ids": [
+    "E0238",
+    "E0239",
     "E0644"
    ],
-   "unmerged": false
+   "unmerged": false,
+   "highlight": {
+    "headline": "Information is the first thing to go, and the first thing you notice",
+    "plain": "Coordinators ranked the deterioration of information management as the transition problem they felt most immediately — ahead of funding. As structures restructure, reporting flows break and the evidence base becomes hard to maintain, at exactly the point when transition decisions depend on it.",
+    "so_what": "Treat the information handover as the first workstream of the transition, not the last. It degrades before anything else does."
+   }
   },
   {
    "finding_id": "F1712",
@@ -5634,38 +5101,6 @@ window.SITE_DATA = {
    "unmerged": false
   },
   {
-   "finding_id": "F1725",
-   "statement": "Co-chairing arrangements were introduced at subnational level and, recently, at national level — a new arrangement in this context.",
-   "theme": [
-    "Transition"
-   ],
-   "example": "",
-   "type": "practice",
-   "strength": "low",
-   "n_records": 1,
-   "n_sources": 1,
-   "n_streams": 1,
-   "streams": [
-    "transcript"
-   ],
-   "countries": [
-    "SYR"
-   ],
-   "tags": [
-    "coordination-architecture",
-    "localisation",
-    "transition-handover"
-   ],
-   "actors": [
-    "cluster",
-    "ingo"
-   ],
-   "record_ids": [
-    "E0661"
-   ],
-   "unmerged": false
-  },
-  {
    "finding_id": "F1726",
    "statement": "Funding this year is comparatively strong — roughly two thirds of the appeal secured — with a further pooled fund allocation under way in which the sector is actively advocating for its share.",
    "theme": [
@@ -5725,99 +5160,6 @@ window.SITE_DATA = {
    ],
    "record_ids": [
     "E0664"
-   ],
-   "unmerged": false
-  },
-  {
-   "finding_id": "F1728",
-   "statement": "A twelve-month transition was set with a twelve-week window to produce and validate the roadmap; that window has already passed its start date without the roadmap being validated, so the timetable is running behind before the substantive work begins.",
-   "theme": [
-    "Transition"
-   ],
-   "example": "",
-   "type": "barrier",
-   "strength": "low",
-   "n_records": 1,
-   "n_sources": 1,
-   "n_streams": 1,
-   "streams": [
-    "transcript"
-   ],
-   "countries": [
-    "TCD"
-   ],
-   "tags": [
-    "hpc",
-    "transition-handover"
-   ],
-   "actors": [
-    "cluster",
-    "gov-national"
-   ],
-   "record_ids": [
-    "E0665"
-   ],
-   "unmerged": false
-  },
-  {
-   "finding_id": "F1729",
-   "statement": "The roadmap is drafted but not yet validated; the sequence is validation with the water ministry, then endorsement by the ministry's secretary general, then a series of workshops to finalise the documents.",
-   "theme": [
-    "Transition"
-   ],
-   "example": "",
-   "type": "practice",
-   "strength": "low",
-   "n_records": 1,
-   "n_sources": 1,
-   "n_streams": 1,
-   "streams": [
-    "transcript"
-   ],
-   "countries": [
-    "TCD"
-   ],
-   "tags": [
-    "government-engagement",
-    "transition-handover"
-   ],
-   "actors": [
-    "cluster",
-    "gov-national"
-   ],
-   "record_ids": [
-    "E0666"
-   ],
-   "unmerged": false
-  },
-  {
-   "finding_id": "F1730",
-   "statement": "The three-month period allowed will not be enough to run the workshops and finalise the documents, and an extension is expected to have to be negotiated with the responsible ministry.",
-   "theme": [
-    "Transition"
-   ],
-   "example": "",
-   "type": "barrier",
-   "strength": "low",
-   "n_records": 1,
-   "n_sources": 1,
-   "n_streams": 1,
-   "streams": [
-    "transcript"
-   ],
-   "countries": [
-    "TCD"
-   ],
-   "tags": [
-    "government-engagement",
-    "transition-handover"
-   ],
-   "actors": [
-    "cluster",
-    "gov-national"
-   ],
-   "record_ids": [
-    "E0667"
    ],
    "unmerged": false
   },
@@ -8050,33 +7392,54 @@ window.SITE_DATA = {
   },
   {
    "finding_id": "F283",
-   "statement": "Shifts from internationally led to nationally anchored systems can create governance gaps in which coordination functions are duplicated or lost.",
+   "statement": "Shifting from an internationally led to a nationally anchored system leaves governance gaps: some functions are duplicated across several successor arrangements, others quietly disappear, and the gaps surface only once something needs deciding. Local forums lost in the process are slow and incomplete to rebuild.",
    "theme": [
-    "ABC",
     "Transition"
    ],
-   "example": "",
+   "example": "Iraq — coordination functions were redistributed across several successor arrangements without the links between them being set out, and newly established area structures were later found to cover only part of the displaced population.",
    "type": "barrier",
    "strength": "high",
-   "n_records": 3,
-   "n_sources": 3,
-   "n_streams": 1,
+   "n_records": 11,
+   "n_sources": 9,
+   "n_streams": 2,
    "streams": [
-    "sdr"
+    "sdr",
+    "workshop"
    ],
-   "countries": [],
+   "countries": [
+    "CMR",
+    "IRQ",
+    "SOM"
+   ],
    "tags": [
     "coordination-architecture",
+    "geographic-targeting",
+    "guidance",
+    "information-management",
+    "localisation",
+    "sustainability",
     "transition-handover"
    ],
    "actors": [
     "cluster",
-    "gov-national"
+    "gov-national",
+    "local-ngo",
+    "ocha",
+    "operational-cell",
+    "un-agency"
    ],
    "record_ids": [
     "E0212",
     "E0213",
-    "E0214"
+    "E0214",
+    "E0225",
+    "E0226",
+    "E0227",
+    "E0228",
+    "E0231",
+    "E0237",
+    "E0320",
+    "E0633"
    ],
    "unmerged": false,
    "highlight": {
@@ -8320,128 +7683,6 @@ window.SITE_DATA = {
    "unmerged": false
   },
   {
-   "finding_id": "F300",
-   "statement": "Transitions weaken coordination where successor structures are not defined and the links between local, national and sectoral platforms are not established before responsibilities move.",
-   "theme": [
-    "Transition"
-   ],
-   "example": "",
-   "type": "barrier",
-   "strength": "low",
-   "n_records": 1,
-   "n_sources": 1,
-   "n_streams": 1,
-   "streams": [
-    "sdr"
-   ],
-   "countries": [],
-   "tags": [
-    "coordination-architecture",
-    "transition-handover"
-   ],
-   "actors": [
-    "cluster",
-    "gov-national"
-   ],
-   "record_ids": [
-    "E0225"
-   ],
-   "unmerged": false
-  },
-  {
-   "finding_id": "F301",
-   "statement": "Redistributing coordination functions across several successor arrangements creates a fragmentation risk unless roles and linkages between them are explicitly managed.",
-   "theme": [
-    "Transition"
-   ],
-   "example": "",
-   "type": "barrier",
-   "strength": "low",
-   "n_records": 1,
-   "n_sources": 1,
-   "n_streams": 1,
-   "streams": [
-    "sdr"
-   ],
-   "countries": [
-    "IRQ"
-   ],
-   "tags": [
-    "coordination-architecture",
-    "transition-handover"
-   ],
-   "actors": [
-    "cluster",
-    "gov-national"
-   ],
-   "record_ids": [
-    "E0226"
-   ],
-   "unmerged": false
-  },
-  {
-   "finding_id": "F302",
-   "statement": "Newly established area-based structures covered only part of the displaced population after transition, leaving coverage gaps that were discovered after the handover.",
-   "theme": [
-    "Transition"
-   ],
-   "example": "",
-   "type": "barrier",
-   "strength": "low",
-   "n_records": 1,
-   "n_sources": 1,
-   "n_streams": 1,
-   "streams": [
-    "sdr"
-   ],
-   "countries": [
-    "IRQ"
-   ],
-   "tags": [
-    "geographic-targeting",
-    "transition-handover"
-   ],
-   "actors": [
-    "cluster",
-    "operational-cell"
-   ],
-   "record_ids": [
-    "E0227"
-   ],
-   "unmerged": false
-  },
-  {
-   "finding_id": "F303",
-   "statement": "Several coordination layers operating at once produced duplication and made operational accountability harder to locate.",
-   "theme": [
-    "Transition"
-   ],
-   "example": "",
-   "type": "barrier",
-   "strength": "low",
-   "n_records": 1,
-   "n_sources": 1,
-   "n_streams": 1,
-   "streams": [
-    "sdr"
-   ],
-   "countries": [
-    "CMR"
-   ],
-   "tags": [
-    "coordination-architecture",
-    "transition-handover"
-   ],
-   "actors": [
-    "cluster",
-    "ocha"
-   ],
-   "record_ids": [
-    "E0228"
-   ],
-   "unmerged": false
-  },
-  {
    "finding_id": "F304",
    "statement": "Humanitarian coordination ran separately from government systems rather than integrating into them, which stalled the move to national leadership.",
    "theme": [
@@ -8473,54 +7714,30 @@ window.SITE_DATA = {
    "unmerged": false
   },
   {
-   "finding_id": "F306",
-   "statement": "Service delivery continuity suffers in protracted transitions where coordination arrangements change without a defined successor.",
+   "finding_id": "F307",
+   "statement": "Government rarely organises itself the way the sector does. Water may sit with one ministry, sanitation with another, hygiene with neither, so there is no single counterpart able to receive a WASH handover. Sectors with one line ministry move through deactivation markedly faster than those split across two.",
    "theme": [
     "Transition"
    ],
-   "example": "",
+   "example": "Haiti — a transition handed water and sanitation to the water authority and hygiene and water quality to the health ministry, a split the successor coordination arrangement then had to work across.",
    "type": "barrier",
-   "strength": "low",
-   "n_records": 1,
-   "n_sources": 1,
-   "n_streams": 1,
+   "strength": "high",
+   "n_records": 5,
+   "n_sources": 2,
+   "n_streams": 2,
    "streams": [
-    "sdr"
+    "sdr",
+    "transcript"
    ],
    "countries": [
-    "SOM"
+    "ETH",
+    "HTI",
+    "IRQ"
    ],
    "tags": [
-    "sustainability",
-    "transition-handover"
-   ],
-   "actors": [
-    "cluster",
-    "gov-national"
-   ],
-   "record_ids": [
-    "E0231"
-   ],
-   "unmerged": false
-  },
-  {
-   "finding_id": "F307",
-   "statement": "Government structures rarely mirror the WASH sector: water may sit with a water resources ministry, sanitation with health, and hygiene promotion with neither, so there is no single counterpart to receive the handover.",
-   "theme": [
-    "Transition"
-   ],
-   "example": "",
-   "type": "barrier",
-   "strength": "low",
-   "n_records": 2,
-   "n_sources": 1,
-   "n_streams": 1,
-   "streams": [
-    "sdr"
-   ],
-   "countries": [],
-   "tags": [
+    "coordination-architecture",
     "government-engagement",
+    "sustainability",
     "transition-handover"
    ],
    "actors": [
@@ -8529,7 +7746,10 @@ window.SITE_DATA = {
    ],
    "record_ids": [
     "E0232",
-    "E0233"
+    "E0233",
+    "E0234",
+    "E0235",
+    "E0567"
    ],
    "unmerged": false,
    "highlight": {
@@ -8537,70 +7757,6 @@ window.SITE_DATA = {
     "plain": "Governments seldom organise themselves the way the sector does. Water may sit with one ministry, sanitation with another, hygiene with neither. There is often no single counterpart able to receive a WASH handover, and hygiene is what tends to fall through the gap.",
     "so_what": "Map the government architecture as it actually is before planning a handover, and negotiate explicit custody for hygiene and water quality."
    }
-  },
-  {
-   "finding_id": "F308",
-   "statement": "A transition handed water and sanitation to the water authority and hygiene and water quality to the health ministry, a split the successor coordination never fully bridged.",
-   "theme": [
-    "Transition"
-   ],
-   "example": "",
-   "type": "barrier",
-   "strength": "low",
-   "n_records": 1,
-   "n_sources": 1,
-   "n_streams": 1,
-   "streams": [
-    "sdr"
-   ],
-   "countries": [
-    "HTI"
-   ],
-   "tags": [
-    "government-engagement",
-    "sustainability",
-    "transition-handover"
-   ],
-   "actors": [
-    "cluster",
-    "gov-national"
-   ],
-   "record_ids": [
-    "E0234"
-   ],
-   "unmerged": false
-  },
-  {
-   "finding_id": "F309",
-   "statement": "Where government does not recognise WASH as a single sector, there is no obvious successor platform, and without a well-named one, several parallel platforms tend to develop.",
-   "theme": [
-    "Transition"
-   ],
-   "example": "",
-   "type": "barrier",
-   "strength": "low",
-   "n_records": 1,
-   "n_sources": 1,
-   "n_streams": 1,
-   "streams": [
-    "sdr"
-   ],
-   "countries": [
-    "IRQ"
-   ],
-   "tags": [
-    "coordination-architecture",
-    "government-engagement",
-    "transition-handover"
-   ],
-   "actors": [
-    "cluster",
-    "gov-national"
-   ],
-   "record_ids": [
-    "E0235"
-   ],
-   "unmerged": false
   },
   {
    "finding_id": "F310",
@@ -8630,96 +7786,6 @@ window.SITE_DATA = {
    ],
    "record_ids": [
     "E0236"
-   ],
-   "unmerged": false
-  },
-  {
-   "finding_id": "F311",
-   "statement": "The shift toward new coordination structures generated immediate risks of fragmented and parallel reporting systems.",
-   "theme": [
-    "Transition"
-   ],
-   "example": "",
-   "type": "barrier",
-   "strength": "low",
-   "n_records": 1,
-   "n_sources": 1,
-   "n_streams": 1,
-   "streams": [
-    "sdr"
-   ],
-   "countries": [
-    "CMR"
-   ],
-   "tags": [
-    "information-management",
-    "transition-handover"
-   ],
-   "actors": [
-    "cluster"
-   ],
-   "record_ids": [
-    "E0237"
-   ],
-   "unmerged": false
-  },
-  {
-   "finding_id": "F312",
-   "statement": "Maintaining an accurate evidence base proved difficult as transition dynamics evolved.",
-   "theme": [
-    "Transition"
-   ],
-   "example": "",
-   "type": "barrier",
-   "strength": "low",
-   "n_records": 1,
-   "n_sources": 1,
-   "n_streams": 1,
-   "streams": [
-    "sdr"
-   ],
-   "countries": [
-    "SOM"
-   ],
-   "tags": [
-    "information-management",
-    "transition-handover"
-   ],
-   "actors": [
-    "cluster"
-   ],
-   "record_ids": [
-    "E0238"
-   ],
-   "unmerged": false
-  },
-  {
-   "finding_id": "F313",
-   "statement": "Sustaining information flows proved difficult as coordination mechanisms restructured.",
-   "theme": [
-    "Transition"
-   ],
-   "example": "",
-   "type": "barrier",
-   "strength": "low",
-   "n_records": 1,
-   "n_sources": 1,
-   "n_streams": 1,
-   "streams": [
-    "sdr"
-   ],
-   "countries": [
-    "IRQ"
-   ],
-   "tags": [
-    "information-management",
-    "transition-handover"
-   ],
-   "actors": [
-    "cluster"
-   ],
-   "record_ids": [
-    "E0239"
    ],
    "unmerged": false
   },
@@ -8849,15 +7915,15 @@ window.SITE_DATA = {
   },
   {
    "finding_id": "F320",
-   "statement": "Information management assets can be sorted deliberately: those to align with government systems from the start, such as master facility lists and asset inventories; those that transfer quickly, such as partner activity data in a receiving-friendly format; and those too complex or not relevant to transfer.",
+   "statement": "Information assets can be sorted deliberately rather than handed over as a bundle: what should align with government systems from the start — master facility lists, asset inventories — separated from what is internal to humanitarian coordination, and built jointly so it remains useful to the receiving institution.",
    "theme": [
     "Transition"
    ],
-   "example": "",
+   "example": "Colombia — an inventory of the cluster's information resources was compiled as part of transition planning, so products could be summarised and handed over rather than lost.",
    "type": "enabler",
    "strength": "high",
-   "n_records": 3,
-   "n_sources": 2,
+   "n_records": 8,
+   "n_sources": 3,
    "n_streams": 3,
    "streams": [
     "sdr",
@@ -8865,9 +7931,12 @@ window.SITE_DATA = {
     "workshop"
    ],
    "countries": [
-    "COL"
+    "CMR",
+    "COL",
+    "PSE"
    ],
    "tags": [
+    "government-engagement",
     "information-management",
     "transition-handover"
    ],
@@ -8876,7 +7945,12 @@ window.SITE_DATA = {
     "gov-national"
    ],
    "record_ids": [
+    "E0098",
+    "E0099",
+    "E0100",
     "E0247",
+    "E0329",
+    "E0330",
     "E0378",
     "E0645"
    ],
@@ -8918,35 +7992,6 @@ window.SITE_DATA = {
    "unmerged": false
   },
   {
-   "finding_id": "F322",
-   "statement": "Without predictable resources, local authorities often lack both the interest and the financial capacity to absorb coordination and service delivery costs.",
-   "theme": [
-    "Transition"
-   ],
-   "example": "",
-   "type": "barrier",
-   "strength": "low",
-   "n_records": 1,
-   "n_sources": 1,
-   "n_streams": 1,
-   "streams": [
-    "sdr"
-   ],
-   "countries": [],
-   "tags": [
-    "funding",
-    "transition-handover"
-   ],
-   "actors": [
-    "donor",
-    "gov-local"
-   ],
-   "record_ids": [
-    "E0250"
-   ],
-   "unmerged": false
-  },
-  {
    "finding_id": "F323",
    "statement": "Structural public finance constraints compromised the long-term sustainability of essential WASH services after transition.",
    "theme": [
@@ -8979,20 +8024,22 @@ window.SITE_DATA = {
   },
   {
    "finding_id": "F324",
-   "statement": "Transition planning secured sustained development financing for transition support structures, reducing the risk of a funding-driven closure.",
+   "statement": "Where development financing was secured for the successor structure, the transition stopped being hostage to the humanitarian funding cycle. The arrangements that worked were specific — sequencing explicitly linked to financing continuity, and multi-year seconded posts paid from development programme funds.",
    "theme": [
     "Transition"
    ],
-   "example": "",
+   "example": "Iraq — a two-year seconded position was financed through development programme funds to accompany the successor structure. It happened because an individual pushed it through the country office, not because a route existed for it.",
    "type": "enabler",
-   "strength": "low",
-   "n_records": 1,
-   "n_sources": 1,
-   "n_streams": 1,
+   "strength": "high",
+   "n_records": 4,
+   "n_sources": 2,
+   "n_streams": 2,
    "streams": [
-    "sdr"
+    "sdr",
+    "workshop"
    ],
    "countries": [
+    "IRQ",
     "UKR"
    ],
    "tags": [
@@ -9002,202 +8049,78 @@ window.SITE_DATA = {
    ],
    "actors": [
     "cluster",
-    "development"
-   ],
-   "record_ids": [
-    "E0252"
-   ],
-   "unmerged": false
-  },
-  {
-   "finding_id": "F325",
-   "statement": "Abrupt withdrawal of coordination financing was identified as a specific risk to successor viability.",
-   "theme": [
-    "Transition"
-   ],
-   "example": "",
-   "type": "barrier",
-   "strength": "low",
-   "n_records": 1,
-   "n_sources": 1,
-   "n_streams": 1,
-   "streams": [
-    "sdr"
-   ],
-   "countries": [
-    "IRQ"
-   ],
-   "tags": [
-    "funding",
-    "transition-handover"
-   ],
-   "actors": [
-    "cluster",
-    "donor"
-   ],
-   "record_ids": [
-    "E0253"
-   ],
-   "unmerged": false
-  },
-  {
-   "finding_id": "F328",
-   "statement": "A coordination review was framed from the outset around the absence of funding rather than around operational need, which set its conclusion in advance.",
-   "theme": [
-    "Transition"
-   ],
-   "example": "",
-   "type": "barrier",
-   "strength": "low",
-   "n_records": 1,
-   "n_sources": 1,
-   "n_streams": 1,
-   "streams": [
-    "sdr"
-   ],
-   "countries": [
-    "IRQ"
-   ],
-   "tags": [
-    "funding",
-    "performance",
-    "transition-handover"
-   ],
-   "actors": [
-    "cluster",
+    "development",
     "un-agency"
    ],
    "record_ids": [
-    "E0256"
+    "E0252",
+    "E0268",
+    "E0337",
+    "E0641"
    ],
-   "unmerged": false
-  },
-  {
-   "finding_id": "F329",
-   "statement": "The stated basis for deactivation is needs and capacity, but funding now acts as a third and undeclared factor, with coordination posts among the first reduced inside the cluster lead agency.",
-   "theme": [
-    "Transition"
-   ],
-   "example": "",
-   "type": "barrier",
-   "strength": "low",
-   "n_records": 2,
-   "n_sources": 1,
-   "n_streams": 1,
-   "streams": [
-    "sdr"
-   ],
-   "countries": [],
-   "tags": [
-    "funding",
-    "guidance",
-    "transition-handover"
-   ],
-   "actors": [
-    "ocha",
-    "un-agency"
-   ],
-   "record_ids": [
-    "E0257",
-    "E0258"
-   ],
-   "unmerged": false
-  },
-  {
-   "finding_id": "F331",
-   "statement": "Coordinators expect deactivation to be read by donors as confirmation of disengagement from an already under-funded emergency.",
-   "theme": [
-    "Transition"
-   ],
-   "example": "",
-   "type": "context",
-   "strength": "low",
-   "n_records": 1,
-   "n_sources": 1,
-   "n_streams": 1,
-   "streams": [
-    "sdr"
-   ],
-   "countries": [
-    "CMR"
-   ],
-   "tags": [
-    "advocacy",
-    "funding",
-    "transition-handover"
-   ],
-   "actors": [
-    "cluster",
-    "donor"
-   ],
-   "record_ids": [
-    "E0260"
-   ],
-   "unmerged": false
-  },
-  {
-   "finding_id": "F332",
-   "statement": "International humanitarian funding fell from around 1.8 billion to 265 million US dollars, which forced an accelerated transition.",
-   "theme": [
-    "Transition"
-   ],
-   "example": "",
-   "type": "context",
-   "strength": "low",
-   "n_records": 1,
-   "n_sources": 1,
-   "n_streams": 1,
-   "streams": [
-    "sdr"
-   ],
-   "countries": [
-    "IRQ"
-   ],
-   "tags": [
-    "funding",
-    "transition-handover"
-   ],
-   "actors": [
-    "donor"
-   ],
-   "record_ids": [
-    "E0261"
-   ],
-   "unmerged": false
+   "unmerged": false,
+   "highlight": {
+    "headline": "Development money is what makes a successor durable",
+    "plain": "Where financing for the successor structure came from development rather than humanitarian sources, the transition stopped being hostage to the annual funding cycle. What worked was specific: sequencing tied to financing continuity, and multi-year seconded posts paid from development programme funds.",
+    "so_what": "Bring a development financing counterpart into the transition conversation early. In the cases that worked it happened because an individual pushed it through — there is no standing route for it, which is itself the problem."
+   }
   },
   {
    "finding_id": "F333",
-   "statement": "A six-month deadline for handover was set internally by the lead agency and is tied to the coordinator contract ending rather than to any assessment of whether the receiving institution is ready.",
+   "statement": "The deactivation timetable is set by something other than readiness — a contract end date, a support window, a budget cycle — and then everything else is compressed to fit it. Criteria get agreed after plans are drafted, or not at all.",
    "theme": [
     "Transition"
    ],
-   "example": "",
+   "example": "Ethiopia — a six-month handover deadline was set internally and tied to the coordinator's contract ending. The humanitarian coordination office agreed six months was not enough; the timetable did not change.",
    "type": "barrier",
    "strength": "high",
-   "n_records": 2,
-   "n_sources": 2,
+   "n_records": 16,
+   "n_sources": 9,
    "n_streams": 2,
    "streams": [
     "sdr",
     "transcript"
    ],
    "countries": [
+    "CMR",
     "ETH",
-    "IRQ"
+    "HND",
+    "IRQ",
+    "TCD"
    ],
    "tags": [
     "funding",
+    "government-engagement",
     "guidance",
+    "hpc",
+    "localisation",
     "transition-handover"
    ],
    "actors": [
     "cluster",
     "donor",
+    "gov-national",
+    "local-ngo",
+    "ocha",
     "un-agency"
    ],
    "record_ids": [
     "E0262",
-    "E0553"
+    "E0265",
+    "E0266",
+    "E0269",
+    "E0270",
+    "E0271",
+    "E0272",
+    "E0273",
+    "E0274",
+    "E0275",
+    "E0373",
+    "E0553",
+    "E0562",
+    "E0565",
+    "E0665",
+    "E0667"
    ],
    "unmerged": false,
    "highlight": {
@@ -9207,64 +8130,51 @@ window.SITE_DATA = {
    }
   },
   {
-   "finding_id": "F334",
-   "statement": "Large donor reductions, including the termination of a substantial majority of one major donor grant portfolio, pushed the sector into accelerated and involuntary transitions.",
-   "theme": [
-    "Transition"
-   ],
-   "example": "",
-   "type": "context",
-   "strength": "low",
-   "n_records": 1,
-   "n_sources": 1,
-   "n_streams": 1,
-   "streams": [
-    "sdr"
-   ],
-   "countries": [],
-   "tags": [
-    "funding",
-    "transition-handover"
-   ],
-   "actors": [
-    "donor",
-    "ingo"
-   ],
-   "record_ids": [
-    "E0263"
-   ],
-   "unmerged": false
-  },
-  {
    "finding_id": "F335",
-   "statement": "Participants ranked funding-driven transition low among barriers — not because it matters less, but because the decision is made outside the country and the practical entry point is to address its downstream effects.",
+   "statement": "Funding is the third and undeclared factor in deactivation decisions. The stated basis is needs and capacity, but the trigger is usually a shortfall — and because the decision is taken outside the country, coordinators rank it low among barriers while still living with its consequences.",
    "theme": [
     "Transition"
    ],
-   "example": "",
+   "example": "Iraq — international humanitarian funding fell from around 1.8 billion to 265 million US dollars, which forced an accelerated transition.",
    "type": "context",
-   "strength": "low",
-   "n_records": 2,
-   "n_sources": 1,
+   "strength": "high",
+   "n_records": 10,
+   "n_sources": 5,
    "n_streams": 2,
    "streams": [
     "sdr",
     "workshop"
    ],
-   "countries": [],
+   "countries": [
+    "CMR",
+    "IRQ"
+   ],
    "tags": [
     "advocacy",
     "coordination-architecture",
     "funding",
+    "guidance",
+    "hpc",
+    "performance",
     "transition-handover"
    ],
    "actors": [
     "cluster",
     "donor",
-    "ocha"
+    "ingo",
+    "ocha",
+    "un-agency"
    ],
    "record_ids": [
+    "E0253",
+    "E0256",
+    "E0257",
+    "E0258",
+    "E0260",
+    "E0261",
+    "E0263",
     "E0264",
+    "E0365",
     "E0642"
    ],
    "unmerged": false,
@@ -9275,310 +8185,49 @@ window.SITE_DATA = {
    }
   },
   {
-   "finding_id": "F336",
-   "statement": "Transition plans were developed before actors had agreed transition criteria, which produced misaligned planning and premature deactivation commitments.",
-   "theme": [
-    "Transition"
-   ],
-   "example": "",
-   "type": "barrier",
-   "strength": "low",
-   "n_records": 1,
-   "n_sources": 1,
-   "n_streams": 1,
-   "streams": [
-    "sdr"
-   ],
-   "countries": [
-    "CMR"
-   ],
-   "tags": [
-    "guidance",
-    "transition-handover"
-   ],
-   "actors": [
-    "cluster",
-    "ocha"
-   ],
-   "record_ids": [
-    "E0265"
-   ],
-   "unmerged": false
-  },
-  {
-   "finding_id": "F337",
-   "statement": "Rapid transition processes systematically weaken inclusive planning.",
-   "theme": [
-    "Transition"
-   ],
-   "example": "",
-   "type": "barrier",
-   "strength": "low",
-   "n_records": 1,
-   "n_sources": 1,
-   "n_streams": 1,
-   "streams": [
-    "sdr"
-   ],
-   "countries": [],
-   "tags": [
-    "localisation",
-    "transition-handover"
-   ],
-   "actors": [
-    "cluster",
-    "local-ngo"
-   ],
-   "record_ids": [
-    "E0266"
-   ],
-   "unmerged": false
-  },
-  {
-   "finding_id": "F339",
-   "statement": "Planning sequencing was explicitly linked to financing continuity rather than treated as a separate exercise.",
-   "theme": [
-    "Transition"
-   ],
-   "example": "",
-   "type": "enabler",
-   "strength": "low",
-   "n_records": 1,
-   "n_sources": 1,
-   "n_streams": 1,
-   "streams": [
-    "sdr"
-   ],
-   "countries": [
-    "UKR"
-   ],
-   "tags": [
-    "funding",
-    "transition-handover"
-   ],
-   "actors": [
-    "cluster",
-    "development"
-   ],
-   "record_ids": [
-    "E0268"
-   ],
-   "unmerged": false
-  },
-  {
-   "finding_id": "F340",
-   "statement": "Transitions launched without sufficient planning time, agreed criteria or post-handover support systematically underperform.",
-   "theme": [
-    "Transition"
-   ],
-   "example": "",
-   "type": "barrier",
-   "strength": "medium",
-   "n_records": 2,
-   "n_sources": 2,
-   "n_streams": 1,
-   "streams": [
-    "sdr"
-   ],
-   "countries": [],
-   "tags": [
-    "guidance",
-    "transition-handover"
-   ],
-   "actors": [
-    "cluster",
-    "ocha"
-   ],
-   "record_ids": [
-    "E0269",
-    "E0270"
-   ],
-   "unmerged": false
-  },
-  {
-   "finding_id": "F341",
-   "statement": "Transition discussions began years before the decision, but the deactivation decision itself came only months before the end, by which point opportunities to prepare had been lost.",
-   "theme": [
-    "Transition"
-   ],
-   "example": "",
-   "type": "barrier",
-   "strength": "low",
-   "n_records": 1,
-   "n_sources": 1,
-   "n_streams": 1,
-   "streams": [
-    "sdr"
-   ],
-   "countries": [
-    "IRQ"
-   ],
-   "tags": [
-    "guidance",
-    "transition-handover"
-   ],
-   "actors": [
-    "cluster",
-    "ocha"
-   ],
-   "record_ids": [
-    "E0271"
-   ],
-   "unmerged": false
-  },
-  {
-   "finding_id": "F342",
-   "statement": "Government formation delays, protests and cancelled meetings meant the transition timeline never held, and securing genuine government engagement took over a year.",
-   "theme": [
-    "Transition"
-   ],
-   "example": "",
-   "type": "barrier",
-   "strength": "low",
-   "n_records": 1,
-   "n_sources": 1,
-   "n_streams": 1,
-   "streams": [
-    "sdr"
-   ],
-   "countries": [
-    "IRQ"
-   ],
-   "tags": [
-    "government-engagement",
-    "transition-handover"
-   ],
-   "actors": [
-    "cluster",
-    "gov-national"
-   ],
-   "record_ids": [
-    "E0272"
-   ],
-   "unmerged": false
-  },
-  {
-   "finding_id": "F343",
-   "statement": "A three-month support window forced the transition strategy to be drafted before the stakeholder capacity analysis was done, and it emerged mid-process that it was unclear to the designated successor institution why it should lead WASH coordination at all.",
-   "theme": [
-    "Transition"
-   ],
-   "example": "",
-   "type": "barrier",
-   "strength": "low",
-   "n_records": 2,
-   "n_sources": 1,
-   "n_streams": 1,
-   "streams": [
-    "sdr"
-   ],
-   "countries": [
-    "HND"
-   ],
-   "tags": [
-    "government-engagement",
-    "transition-handover"
-   ],
-   "actors": [
-    "cluster",
-    "gov-national"
-   ],
-   "record_ids": [
-    "E0273",
-    "E0274"
-   ],
-   "unmerged": false
-  },
-  {
-   "finding_id": "F344",
-   "statement": "The expectation that every cluster develops a transition plan within three months of activation has in practice not been implemented.",
-   "theme": [
-    "Transition"
-   ],
-   "example": "",
-   "type": "barrier",
-   "strength": "low",
-   "n_records": 1,
-   "n_sources": 1,
-   "n_streams": 1,
-   "streams": [
-    "sdr"
-   ],
-   "countries": [],
-   "tags": [
-    "guidance",
-    "transition-handover"
-   ],
-   "actors": [
-    "cluster",
-    "ocha"
-   ],
-   "record_ids": [
-    "E0275"
-   ],
-   "unmerged": false
-  },
-  {
-   "finding_id": "F345",
-   "statement": "Clusters are frequently kept active well beyond the emergency phase to fill long-term sectoral gaps, which complicates defining an endpoint, and governments may resist deactivation because clusters also function as resource mobilisation channels.",
-   "theme": [
-    "Transition"
-   ],
-   "example": "",
-   "type": "barrier",
-   "strength": "low",
-   "n_records": 1,
-   "n_sources": 1,
-   "n_streams": 1,
-   "streams": [
-    "sdr"
-   ],
-   "countries": [],
-   "tags": [
-    "funding",
-    "government-engagement",
-    "transition-handover"
-   ],
-   "actors": [
-    "cluster",
-    "gov-national"
-   ],
-   "record_ids": [
-    "E0276"
-   ],
-   "unmerged": false
-  },
-  {
    "finding_id": "F346",
-   "statement": "A costed transfer plan was prepared with a risk analysis and an inventory of information resources, to be validated by the humanitarian coordinator, and deliberately framed as a transition rather than a deactivation.",
+   "statement": "Preparation that worked started earlier and in the right order: reconstruct how the structure was formed and how earlier transitions went, run the stakeholder and willingness analysis before drafting the strategy, then produce a costed transfer plan with risk analysis and an inventory of what is being handed over — developed with the receiving institution rather than for it.",
    "theme": [
     "Transition"
    ],
-   "example": "",
+   "example": "Colombia — a costed transfer plan was prepared with a risk analysis and an inventory of information resources, to be validated by the humanitarian coordinator and the clusters.",
    "type": "practice",
    "strength": "high",
-   "n_records": 2,
-   "n_sources": 2,
+   "n_records": 7,
+   "n_sources": 3,
    "n_streams": 2,
    "streams": [
     "sdr",
     "transcript"
    ],
    "countries": [
-    "COL"
+    "COL",
+    "MOZ"
    ],
    "tags": [
     "advocacy",
+    "government-engagement",
+    "guidance",
+    "hpc",
+    "information-management",
     "performance",
     "transition-handover"
    ],
    "actors": [
     "cluster",
+    "gov-national",
+    "ingo",
+    "local-ngo",
     "ocha"
    ],
    "record_ids": [
+    "E0087",
+    "E0088",
+    "E0089",
     "E0277",
-    "E0379"
+    "E0379",
+    "E0380",
+    "E0550"
    ],
    "unmerged": false,
    "highlight": {
@@ -10051,12 +8700,13 @@ window.SITE_DATA = {
    "example": "Mali — the government counterpart changed three times in one year: the official was promoted, the replacement took extended sick leave, and a third arrived without the background.",
    "type": "barrier",
    "strength": "high",
-   "n_records": 7,
+   "n_records": 8,
    "n_sources": 7,
-   "n_streams": 2,
+   "n_streams": 3,
    "streams": [
     "sdr",
-    "transcript"
+    "transcript",
+    "workshop"
    ],
    "countries": [
     "BFA",
@@ -10086,7 +8736,8 @@ window.SITE_DATA = {
     "E0454",
     "E0537",
     "E0574",
-    "E0594"
+    "E0594",
+    "E0639"
    ],
    "unmerged": false,
    "highlight": {
@@ -10096,142 +8747,15 @@ window.SITE_DATA = {
    }
   },
   {
-   "finding_id": "F366",
-   "statement": "Government is not willing to take over the response for certain population groups. Coordinators distinguished this from capacity, and transition planning currently offers no answer to it.",
-   "theme": [
-    "Transition"
-   ],
-   "example": "",
-   "type": "barrier",
-   "strength": "low",
-   "n_records": 1,
-   "n_sources": 1,
-   "n_streams": 1,
-   "streams": [
-    "sdr"
-   ],
-   "countries": [
-    "LBN"
-   ],
-   "tags": [
-    "government-engagement",
-    "inclusion",
-    "transition-handover"
-   ],
-   "actors": [
-    "cluster",
-    "gov-national"
-   ],
-   "record_ids": [
-    "E0300"
-   ],
-   "unmerged": false
-  },
-  {
-   "finding_id": "F367",
-   "statement": "Transition to a ministry led to allocation decisions following political alignment and reduced transparency toward donors, and the sector had to be re-established around two years after handover.",
-   "theme": [
-    "Transition"
-   ],
-   "example": "",
-   "type": "barrier",
-   "strength": "low",
-   "n_records": 1,
-   "n_sources": 1,
-   "n_streams": 1,
-   "streams": [
-    "sdr"
-   ],
-   "countries": [
-    "PSE"
-   ],
-   "tags": [
-    "government-engagement",
-    "transition-handover"
-   ],
-   "actors": [
-    "cluster",
-    "donor",
-    "gov-national"
-   ],
-   "record_ids": [
-    "E0301"
-   ],
-   "unmerged": false
-  },
-  {
-   "finding_id": "F368",
-   "statement": "Where government is a party to the conflict, handing coordination to it would create access and acceptance problems with non-state armed actors that the current arrangement avoids.",
-   "theme": [
-    "Transition"
-   ],
-   "example": "",
-   "type": "barrier",
-   "strength": "low",
-   "n_records": 1,
-   "n_sources": 1,
-   "n_streams": 1,
-   "streams": [
-    "sdr"
-   ],
-   "countries": [
-    "CMR"
-   ],
-   "tags": [
-    "government-engagement",
-    "transition-handover"
-   ],
-   "actors": [
-    "gov-national",
-    "un-agency"
-   ],
-   "record_ids": [
-    "E0302"
-   ],
-   "unmerged": false
-  },
-  {
-   "finding_id": "F369",
-   "statement": "An eventual government lead is structurally difficult for inter-agency coordination to accommodate, including access to the intersectoral group and constraints on information sharing.",
-   "theme": [
-    "Transition"
-   ],
-   "example": "",
-   "type": "barrier",
-   "strength": "low",
-   "n_records": 1,
-   "n_sources": 1,
-   "n_streams": 1,
-   "streams": [
-    "sdr"
-   ],
-   "countries": [
-    "SYR"
-   ],
-   "tags": [
-    "data-protection",
-    "government-engagement",
-    "transition-handover"
-   ],
-   "actors": [
-    "gov-national",
-    "ocha"
-   ],
-   "record_ids": [
-    "E0303"
-   ],
-   "unmerged": false
-  },
-  {
    "finding_id": "F370",
-   "statement": "Ministries declined to engage in transition until a directive came from the head of government, secured through engagement at humanitarian coordinator level.",
+   "statement": "Secure a senior political directive — Ministry-by-ministry engagement fails without instruction from the top: work through the ICCG, OCHA and the HC/RC to obtain senior government direction for the transition, and engage the UNICEF Representative early on the CLA's continuing accountabilities (S33)",
    "theme": [
     "Transition"
    ],
    "example": "",
-   "type": "enabler",
+   "type": "recommendation",
    "strength": "low",
-   "n_records": 1,
+   "n_records": 2,
    "n_sources": 1,
    "n_streams": 1,
    "streams": [
@@ -10246,41 +8770,13 @@ window.SITE_DATA = {
     "transition-handover"
    ],
    "actors": [
+    "cluster",
     "gov-national",
     "ocha"
    ],
    "record_ids": [
+    "E0097",
     "E0304"
-   ],
-   "unmerged": false
-  },
-  {
-   "finding_id": "F371",
-   "statement": "Transferring services directly to state authorities can expose groups with perceived political or ethnic affiliations.",
-   "theme": [
-    "Transition"
-   ],
-   "example": "",
-   "type": "barrier",
-   "strength": "low",
-   "n_records": 1,
-   "n_sources": 1,
-   "n_streams": 1,
-   "streams": [
-    "sdr"
-   ],
-   "countries": [],
-   "tags": [
-    "government-engagement",
-    "inclusion",
-    "transition-handover"
-   ],
-   "actors": [
-    "community",
-    "gov-national"
-   ],
-   "record_ids": [
-    "E0305"
    ],
    "unmerged": false
   },
@@ -10318,37 +8814,45 @@ window.SITE_DATA = {
   },
   {
    "finding_id": "F373",
-   "statement": "The transition endpoint cannot be assumed to be government. Depending on context it may be a national institution with durable funding and a formal civil protection role, a development coordination pathway, continued sectoral leadership by the lead agency — or an honest conclusion that no transition is currently viable.",
+   "statement": "The endpoint cannot be assumed to be government. Depending on context it may be a national institution with durable funding, a national society, or a development platform — and where a national organisation simply replaces an international one doing the same work with the same funding, it is worth asking what was actually transitioned. A national NGO may not exist the following year, which makes it a less durable endpoint than an institution with independent funding.",
    "theme": [
     "Transition"
    ],
-   "example": "",
+   "example": "Ukraine — the transition endpoint was scoped as a national institution with durable funding and a formal civil protection mandate, rather than defaulting to a line ministry.",
    "type": "enabler",
-   "strength": "low",
-   "n_records": 2,
-   "n_sources": 1,
+   "strength": "high",
+   "n_records": 6,
+   "n_sources": 2,
    "n_streams": 2,
    "streams": [
     "sdr",
     "workshop"
    ],
    "countries": [
+    "IRQ",
     "UKR"
    ],
    "tags": [
+    "funding",
     "government-engagement",
     "localisation",
     "nexus",
     "transition-handover"
    ],
    "actors": [
+    "cluster",
     "development",
     "gov-national",
+    "ingo",
     "local-ngo",
     "un-agency"
    ],
    "record_ids": [
+    "E0276",
     "E0308",
+    "E0317",
+    "E0634",
+    "E0635",
     "E0636"
    ],
    "unmerged": false,
@@ -10360,95 +8864,60 @@ window.SITE_DATA = {
   },
   {
    "finding_id": "F374",
-   "statement": "A transition that proceeds without a viable, neutral and willing counterpart does not transfer coordination but dissolves it, and the system pays a second time when reactivation becomes necessary.",
+   "statement": "Willingness is a separate question from capacity, and it is rarely assessed. Government may be unwilling to take responsibility for particular population groups, may be a party to the conflict, or may bring political alignment into allocation decisions. A transition without a viable, neutral and willing counterpart does not transfer coordination — it dissolves it.",
    "theme": [
     "Transition"
    ],
-   "example": "",
-   "type": "context",
-   "strength": "low",
-   "n_records": 1,
-   "n_sources": 1,
-   "n_streams": 1,
+   "example": "Lebanon — government was not willing to take over the response for certain population groups. Coordinators were explicit that this was distinct from a capacity constraint.",
+   "type": "barrier",
+   "strength": "high",
+   "n_records": 9,
+   "n_sources": 5,
+   "n_streams": 2,
    "streams": [
-    "sdr"
+    "sdr",
+    "transcript"
    ],
    "countries": [
-    "PSE"
+    "BFA",
+    "CMR",
+    "COL",
+    "ETH",
+    "LBN",
+    "PSE",
+    "SYR"
    ],
    "tags": [
+    "data-protection",
     "government-engagement",
+    "inclusion",
     "transition-handover"
    ],
    "actors": [
     "cluster",
-    "gov-national"
+    "community",
+    "donor",
+    "gov-national",
+    "ocha",
+    "un-agency"
    ],
    "record_ids": [
-    "E0309"
+    "E0300",
+    "E0301",
+    "E0302",
+    "E0303",
+    "E0305",
+    "E0309",
+    "E0383",
+    "E0556",
+    "E0581"
    ],
-   "unmerged": false
-  },
-  {
-   "finding_id": "F375",
-   "statement": "The transition was anchored by a formal durable solutions coordination structure.",
-   "theme": [
-    "Transition"
-   ],
-   "example": "",
-   "type": "enabler",
-   "strength": "low",
-   "n_records": 1,
-   "n_sources": 1,
-   "n_streams": 1,
-   "streams": [
-    "sdr"
-   ],
-   "countries": [
-    "IRQ"
-   ],
-   "tags": [
-    "coordination-architecture",
-    "transition-handover"
-   ],
-   "actors": [
-    "cluster",
-    "gov-national"
-   ],
-   "record_ids": [
-    "E0310"
-   ],
-   "unmerged": false
-  },
-  {
-   "finding_id": "F376",
-   "statement": "The coordination mandate was embedded in government through a dedicated durable solutions secretariat.",
-   "theme": [
-    "Transition"
-   ],
-   "example": "",
-   "type": "enabler",
-   "strength": "low",
-   "n_records": 1,
-   "n_sources": 1,
-   "n_streams": 1,
-   "streams": [
-    "sdr"
-   ],
-   "countries": [
-    "SOM"
-   ],
-   "tags": [
-    "government-engagement",
-    "transition-handover"
-   ],
-   "actors": [
-    "gov-national"
-   ],
-   "record_ids": [
-    "E0311"
-   ],
-   "unmerged": false
+   "unmerged": false,
+   "highlight": {
+    "headline": "Ask whether they want it, not just whether they can",
+    "plain": "Capacity assessments are routine; willingness assessments are not. Government may be unable to take on a role — or unwilling to take responsibility for particular population groups, or a party to the conflict, or inclined to let political alignment shape allocation. Coordinators were explicit that this is a different question from capacity, and it is the one that usually goes unasked.",
+    "so_what": "Put willingness in the stakeholder analysis as a named question with its own answer. A transition without a viable, neutral and willing counterpart does not transfer coordination — it dissolves it."
+   }
   },
   {
    "finding_id": "F377",
@@ -10484,25 +8953,33 @@ window.SITE_DATA = {
   },
   {
    "finding_id": "F378",
-   "statement": "The successor working group had a written terms of reference, clearly identified participants including the line ministry and development banks, and alignment with the development cooperation framework — basics coordinators credit for its survival.",
+   "statement": "Successor arrangements that held had a written terms of reference, named participants including the line ministry and development financing actors, and a home inside a structure that already existed and would outlast the cluster — rather than a new body created for the purpose.",
    "theme": [
     "Transition"
    ],
-   "example": "",
+   "example": "Colombia — the proposed successor is a specialised technical roundtable inside an existing inter-institutional environmental health commission, which already convenes the relevant government bodies.",
    "type": "enabler",
-   "strength": "low",
-   "n_records": 1,
-   "n_sources": 1,
-   "n_streams": 1,
+   "strength": "high",
+   "n_records": 6,
+   "n_sources": 5,
+   "n_streams": 2,
    "streams": [
-    "sdr"
+    "sdr",
+    "transcript"
    ],
    "countries": [
-    "LBY"
+    "COL",
+    "IRQ",
+    "LBY",
+    "NGA",
+    "SOM",
+    "SYR"
    ],
    "tags": [
     "coordination-architecture",
+    "government-engagement",
     "nexus",
+    "performance",
     "transition-handover"
    ],
    "actors": [
@@ -10511,71 +8988,19 @@ window.SITE_DATA = {
     "gov-national"
    ],
    "record_ids": [
-    "E0313"
+    "E0310",
+    "E0311",
+    "E0313",
+    "E0316",
+    "E0382",
+    "E0445"
    ],
-   "unmerged": false
-  },
-  {
-   "finding_id": "F381",
-   "statement": "Avoid creating additional structures — integrate the early recovery agenda within existing sectoral coordination.",
-   "theme": [
-    "Transition"
-   ],
-   "example": "",
-   "type": "recommendation",
-   "strength": "low",
-   "n_records": 1,
-   "n_sources": 1,
-   "n_streams": 1,
-   "streams": [
-    "sdr"
-   ],
-   "countries": [
-    "SYR"
-   ],
-   "tags": [
-    "coordination-architecture",
-    "transition-handover"
-   ],
-   "actors": [
-    "cluster",
-    "development"
-   ],
-   "record_ids": [
-    "E0316"
-   ],
-   "unmerged": false
-  },
-  {
-   "finding_id": "F382",
-   "statement": "Transition is better understood as building a partnership than as closing a structure, which includes naming and scoping the successor platform around what government actually wants to coordinate.",
-   "theme": [
-    "Transition"
-   ],
-   "example": "",
-   "type": "enabler",
-   "strength": "low",
-   "n_records": 1,
-   "n_sources": 1,
-   "n_streams": 1,
-   "streams": [
-    "sdr"
-   ],
-   "countries": [
-    "IRQ"
-   ],
-   "tags": [
-    "government-engagement",
-    "transition-handover"
-   ],
-   "actors": [
-    "cluster",
-    "gov-national"
-   ],
-   "record_ids": [
-    "E0317"
-   ],
-   "unmerged": false
+   "unmerged": false,
+   "highlight": {
+    "headline": "Put the successor somewhere that already exists",
+    "plain": "The successor arrangements that held had three things: a written terms of reference, named participants including the line ministry and development financing actors, and a home inside a structure that was already running and would outlast the cluster. New bodies created for the purpose fared worse.",
+    "so_what": "Look for an existing platform to attach to before proposing a new one, and write the mandate down before deactivation rather than after."
+   }
   },
   {
    "finding_id": "F383",
@@ -10635,37 +9060,6 @@ window.SITE_DATA = {
    ],
    "record_ids": [
     "E0319"
-   ],
-   "unmerged": false
-  },
-  {
-   "finding_id": "F385",
-   "statement": "Where local coordination forums are lost during transition, rebuilding those networks is slow and incomplete.",
-   "theme": [
-    "Transition"
-   ],
-   "example": "",
-   "type": "barrier",
-   "strength": "low",
-   "n_records": 1,
-   "n_sources": 1,
-   "n_streams": 1,
-   "streams": [
-    "sdr"
-   ],
-   "countries": [
-    "IRQ"
-   ],
-   "tags": [
-    "localisation",
-    "transition-handover"
-   ],
-   "actors": [
-    "cluster",
-    "local-ngo"
-   ],
-   "record_ids": [
-    "E0320"
    ],
    "unmerged": false
   },
@@ -10811,37 +9205,6 @@ window.SITE_DATA = {
    "unmerged": false
   },
   {
-   "finding_id": "F391",
-   "statement": "Institutional memory was preserved by archiving cluster files and maintaining continuous online access to them.",
-   "theme": [
-    "Transition"
-   ],
-   "example": "",
-   "type": "enabler",
-   "strength": "medium",
-   "n_records": 2,
-   "n_sources": 2,
-   "n_streams": 1,
-   "streams": [
-    "sdr"
-   ],
-   "countries": [
-    "IRQ"
-   ],
-   "tags": [
-    "information-management",
-    "transition-handover"
-   ],
-   "actors": [
-    "cluster"
-   ],
-   "record_ids": [
-    "E0326",
-    "E0327"
-   ],
-   "unmerged": false
-  },
-  {
    "finding_id": "F392",
    "statement": "A centralised, government-owned aid information management system was established.",
    "theme": [
@@ -10872,70 +9235,6 @@ window.SITE_DATA = {
    "unmerged": false
   },
   {
-   "finding_id": "F393",
-   "statement": "Integrating information management functions into national systems was prioritised in the transition plan.",
-   "theme": [
-    "Transition"
-   ],
-   "example": "",
-   "type": "practice",
-   "strength": "low",
-   "n_records": 1,
-   "n_sources": 1,
-   "n_streams": 1,
-   "streams": [
-    "sdr"
-   ],
-   "countries": [
-    "CMR"
-   ],
-   "tags": [
-    "government-engagement",
-    "information-management",
-    "transition-handover"
-   ],
-   "actors": [
-    "cluster",
-    "gov-national"
-   ],
-   "record_ids": [
-    "E0329"
-   ],
-   "unmerged": false
-  },
-  {
-   "finding_id": "F394",
-   "statement": "Master lists of WASH facilities and infrastructure asset inventories, built jointly so they remain useful to government after transition, are best started at the beginning of a response rather than at its end.",
-   "theme": [
-    "Transition"
-   ],
-   "example": "",
-   "type": "enabler",
-   "strength": "low",
-   "n_records": 1,
-   "n_sources": 1,
-   "n_streams": 1,
-   "streams": [
-    "sdr"
-   ],
-   "countries": [
-    "PSE"
-   ],
-   "tags": [
-    "government-engagement",
-    "information-management",
-    "transition-handover"
-   ],
-   "actors": [
-    "cluster",
-    "gov-national"
-   ],
-   "record_ids": [
-    "E0330"
-   ],
-   "unmerged": false
-  },
-  {
    "finding_id": "F395",
    "statement": "Cluster products should be backup-archived at global level, beyond the reach of a country-level deactivation, so technical decisions do not have to be reconstructed if coordination restarts.",
    "theme": [
@@ -10945,8 +9244,8 @@ window.SITE_DATA = {
    "example": "",
    "type": "recommendation",
    "strength": "high",
-   "n_records": 3,
-   "n_sources": 2,
+   "n_records": 5,
+   "n_sources": 4,
    "n_streams": 2,
    "streams": [
     "sdr",
@@ -10954,6 +9253,7 @@ window.SITE_DATA = {
    ],
    "countries": [
     "ETH",
+    "IRQ",
     "LBY"
    ],
    "tags": [
@@ -10965,6 +9265,8 @@ window.SITE_DATA = {
     "un-agency"
    ],
    "record_ids": [
+    "E0326",
+    "E0327",
     "E0331",
     "E0332",
     "E0561"
@@ -11018,98 +9320,6 @@ window.SITE_DATA = {
     "plain": "Continued technical support acts as a safety net for a newly established successor mechanism. The arrangements documented as working are specific and time-bound: six months of post-handover mentoring with quarterly reviews, twelve-month transition advisers covering all sectors, surge teams managing complex handovers to government, and direct mentoring of national co-facilitators.",
     "so_what": "Budget and staff the accompaniment period as part of the handover. A cut-over date with nothing after it is not a transition plan."
    }
-  },
-  {
-   "finding_id": "F397",
-   "statement": "Transition planning mandated retention of residual functions — quality assurance, technical standards and risk analysis — alongside a proposed six-month post-handover mentoring phase.",
-   "theme": [
-    "Transition"
-   ],
-   "example": "",
-   "type": "practice",
-   "strength": "medium",
-   "n_records": 2,
-   "n_sources": 2,
-   "n_streams": 1,
-   "streams": [
-    "sdr"
-   ],
-   "countries": [
-    "CMR"
-   ],
-   "tags": [
-    "performance",
-    "transition-handover"
-   ],
-   "actors": [
-    "cluster",
-    "gov-national"
-   ],
-   "record_ids": [
-    "E0334",
-    "E0335"
-   ],
-   "unmerged": false
-  },
-  {
-   "finding_id": "F399",
-   "statement": "A two-year seconded position was financed through development programme funds to accompany the successor structure.",
-   "theme": [
-    "Transition"
-   ],
-   "example": "",
-   "type": "enabler",
-   "strength": "low",
-   "n_records": 1,
-   "n_sources": 1,
-   "n_streams": 1,
-   "streams": [
-    "sdr"
-   ],
-   "countries": [
-    "IRQ"
-   ],
-   "tags": [
-    "funding",
-    "nexus",
-    "transition-handover"
-   ],
-   "actors": [
-    "cluster",
-    "development"
-   ],
-   "record_ids": [
-    "E0337"
-   ],
-   "unmerged": false
-  },
-  {
-   "finding_id": "F402",
-   "statement": "A community of practice connecting coordinators currently in transition would carry learning between countries, given how similar the questions are.",
-   "theme": [
-    "Transition"
-   ],
-   "example": "",
-   "type": "recommendation",
-   "strength": "low",
-   "n_records": 1,
-   "n_sources": 1,
-   "n_streams": 1,
-   "streams": [
-    "sdr"
-   ],
-   "countries": [],
-   "tags": [
-    "peer-learning",
-    "transition-handover"
-   ],
-   "actors": [
-    "cluster"
-   ],
-   "record_ids": [
-    "E0340"
-   ],
-   "unmerged": false
   },
   {
    "finding_id": "F406",
@@ -11279,47 +9489,6 @@ window.SITE_DATA = {
    "unmerged": false
   },
   {
-   "finding_id": "F414",
-   "statement": "Area-based coordination is a coordination configuration rather than a transition endpoint; transferring cluster functions to area structures without preserved technical custody reproduces the risks documented in both reviews.",
-   "theme": [
-    "ABC",
-    "Transition"
-   ],
-   "example": "",
-   "type": "context",
-   "strength": "high",
-   "n_records": 2,
-   "n_sources": 2,
-   "n_streams": 2,
-   "streams": [
-    "sdr",
-    "transcript"
-   ],
-   "countries": [
-    "ETH"
-   ],
-   "tags": [
-    "coordination-architecture",
-    "performance",
-    "transition-handover"
-   ],
-   "actors": [
-    "cluster",
-    "ocha",
-    "operational-cell"
-   ],
-   "record_ids": [
-    "E0353",
-    "E0560"
-   ],
-   "unmerged": false,
-   "highlight": {
-    "headline": "Area structures are becoming the thing left standing",
-    "plain": "In some contexts area-based structures will continue after the cluster is deactivated, making them the residual coordination arrangement by default rather than by design. Whether sector technical custody travels with them is usually unresolved.",
-    "so_what": "If area structures will outlast the cluster, name now who holds technical standards, analysis and provider-of-last-resort — before the cluster is no longer there to negotiate it."
-   }
-  },
-  {
    "finding_id": "F415",
    "statement": "Humanitarian actors remain within short-term funding cycles while development actors hold the long-term funding, which is the structural mismatch behind most failed handovers.",
    "theme": [
@@ -11327,9 +9496,9 @@ window.SITE_DATA = {
    ],
    "example": "",
    "type": "barrier",
-   "strength": "low",
-   "n_records": 1,
-   "n_sources": 1,
+   "strength": "medium",
+   "n_records": 2,
+   "n_sources": 2,
    "n_streams": 1,
    "streams": [
     "sdr"
@@ -11342,9 +9511,11 @@ window.SITE_DATA = {
    ],
    "actors": [
     "development",
-    "donor"
+    "donor",
+    "gov-local"
    ],
    "record_ids": [
+    "E0250",
     "E0354"
    ],
    "unmerged": false
@@ -11413,67 +9584,42 @@ window.SITE_DATA = {
    "unmerged": false
   },
   {
-   "finding_id": "F418",
-   "statement": "Six functions should be explicitly assigned and resourced after deactivation: technical standards custody, analysis and prioritisation, information management, partner mapping, risk analysis and preparedness, and provider of last resort.",
-   "theme": [
-    "Transition"
-   ],
-   "example": "",
-   "type": "recommendation",
-   "strength": "medium",
-   "n_records": 3,
-   "n_sources": 2,
-   "n_streams": 1,
-   "streams": [
-    "sdr"
-   ],
-   "countries": [],
-   "tags": [
-    "information-management",
-    "performance",
-    "transition-handover"
-   ],
-   "actors": [
-    "cluster",
-    "gov-national"
-   ],
-   "record_ids": [
-    "E0358",
-    "E0359",
-    "E0360"
-   ],
-   "unmerged": false
-  },
-  {
    "finding_id": "F419",
-   "statement": "Area-based coordination can increase operational fragmentation when functional links to national systems and sectoral coordination remain weak.",
+   "statement": "Area-based coordination is a coordination configuration rather than a transition endpoint; transferring cluster functions to area structures without preserved technical custody reproduces the risks documented in both reviews.",
    "theme": [
     "ABC",
     "Transition"
    ],
    "example": "",
-   "type": "barrier",
+   "type": "context",
    "strength": "high",
-   "n_records": 4,
-   "n_sources": 4,
-   "n_streams": 1,
+   "n_records": 6,
+   "n_sources": 6,
+   "n_streams": 2,
    "streams": [
-    "sdr"
+    "sdr",
+    "transcript"
    ],
-   "countries": [],
+   "countries": [
+    "ETH"
+   ],
    "tags": [
     "coordination-architecture",
+    "performance",
     "transition-handover"
    ],
    "actors": [
     "cluster",
+    "ocha",
     "operational-cell"
    ],
    "record_ids": [
+    "E0353",
     "E0361",
     "E0362",
     "E0363",
-    "E0364"
+    "E0364",
+    "E0560"
    ],
    "unmerged": false,
    "highlight": {
@@ -11483,52 +9629,27 @@ window.SITE_DATA = {
    }
   },
   {
-   "finding_id": "F420",
-   "statement": "Deactivating clusters while response plan objectives remain active creates operational gaps unless funding, partner presence and successor arrangements are adjusted at the same time.",
-   "theme": [
-    "Transition"
-   ],
-   "example": "",
-   "type": "barrier",
-   "strength": "low",
-   "n_records": 1,
-   "n_sources": 1,
-   "n_streams": 1,
-   "streams": [
-    "sdr"
-   ],
-   "countries": [],
-   "tags": [
-    "hpc",
-    "transition-handover"
-   ],
-   "actors": [
-    "cluster",
-    "ocha"
-   ],
-   "record_ids": [
-    "E0365"
-   ],
-   "unmerged": false
-  },
-  {
    "finding_id": "F421",
-   "statement": "Design successor architectures with written mandates, named participants and formalised links to national and development frameworks before deactivation.",
+   "statement": "Design the successor architecture explicitly before deactivation: written mandates, named participants, formalised links to national and development frameworks, and a stated home for each function that must survive — technical standards custody, analysis and prioritisation, information management, partner mapping, risk analysis, and provider of last resort.",
    "theme": [
     "Transition"
    ],
    "example": "",
    "type": "recommendation",
-   "strength": "low",
-   "n_records": 1,
-   "n_sources": 1,
+   "strength": "high",
+   "n_records": 7,
+   "n_sources": 4,
    "n_streams": 1,
    "streams": [
     "sdr"
    ],
-   "countries": [],
+   "countries": [
+    "CMR"
+   ],
    "tags": [
     "coordination-architecture",
+    "information-management",
+    "performance",
     "transition-handover"
    ],
    "actors": [
@@ -11536,9 +9657,20 @@ window.SITE_DATA = {
     "gov-national"
    ],
    "record_ids": [
-    "E0366"
+    "E0334",
+    "E0335",
+    "E0358",
+    "E0359",
+    "E0360",
+    "E0366",
+    "E0372"
    ],
-   "unmerged": false
+   "unmerged": false,
+   "highlight": {
+    "headline": "Name where every function goes before you close",
+    "plain": "Deactivation removes a structure, not the work it was doing. Six functions in particular need an explicit home afterwards: technical standards custody, analysis and prioritisation, information management, partner mapping, risk analysis, and provider of last resort. Where they were not assigned, they were duplicated across several arrangements or quietly dropped.",
+    "so_what": "Write the successor architecture down before deactivation — written mandates, named participants, and formal links to national and development frameworks."
+   }
   },
   {
    "finding_id": "F422",
@@ -11597,34 +9729,6 @@ window.SITE_DATA = {
    ],
    "record_ids": [
     "E0368"
-   ],
-   "unmerged": false
-  },
-  {
-   "finding_id": "F424",
-   "statement": "Treat information management as core infrastructure with its own transition strategy, named custodians and archives.",
-   "theme": [
-    "Transition"
-   ],
-   "example": "",
-   "type": "recommendation",
-   "strength": "low",
-   "n_records": 1,
-   "n_sources": 1,
-   "n_streams": 1,
-   "streams": [
-    "sdr"
-   ],
-   "countries": [],
-   "tags": [
-    "information-management",
-    "transition-handover"
-   ],
-   "actors": [
-    "cluster"
-   ],
-   "record_ids": [
-    "E0369"
    ],
    "unmerged": false
   },
@@ -11709,63 +9813,6 @@ window.SITE_DATA = {
    }
   },
   {
-   "finding_id": "F427",
-   "statement": "Retain technical standards custody, analysis, partner mapping, risk analysis and provider of last resort in explicit successor arrangements.",
-   "theme": [
-    "Transition"
-   ],
-   "example": "",
-   "type": "recommendation",
-   "strength": "low",
-   "n_records": 1,
-   "n_sources": 1,
-   "n_streams": 1,
-   "streams": [
-    "sdr"
-   ],
-   "countries": [],
-   "tags": [
-    "performance",
-    "transition-handover"
-   ],
-   "actors": [
-    "cluster",
-    "gov-national"
-   ],
-   "record_ids": [
-    "E0372"
-   ],
-   "unmerged": false
-  },
-  {
-   "finding_id": "F428",
-   "statement": "The gap between the pace of formal deactivation and the pace of operational readiness is the core driver of transition difficulty across contexts.",
-   "theme": [
-    "Transition"
-   ],
-   "example": "",
-   "type": "context",
-   "strength": "low",
-   "n_records": 1,
-   "n_sources": 1,
-   "n_streams": 1,
-   "streams": [
-    "sdr"
-   ],
-   "countries": [],
-   "tags": [
-    "transition-handover"
-   ],
-   "actors": [
-    "cluster",
-    "ocha"
-   ],
-   "record_ids": [
-    "E0373"
-   ],
-   "unmerged": false
-  },
-  {
    "finding_id": "F429",
    "statement": "Successful WASH transition cases remain far less documented than failures, which biases the available evidence base toward what goes wrong.",
    "theme": [
@@ -11790,38 +9837,6 @@ window.SITE_DATA = {
    ],
    "record_ids": [
     "E0374"
-   ],
-   "unmerged": false
-  },
-  {
-   "finding_id": "F500",
-   "statement": "Transition preparation began with a documentation exercise reconstructing how the cluster was formed and how earlier transitions went, combined with a partner survey on expectations and recommendations.",
-   "theme": [
-    "Transition"
-   ],
-   "example": "",
-   "type": "enabler",
-   "strength": "low",
-   "n_records": 1,
-   "n_sources": 1,
-   "n_streams": 1,
-   "streams": [
-    "transcript"
-   ],
-   "countries": [
-    "COL"
-   ],
-   "tags": [
-    "information-management",
-    "transition-handover"
-   ],
-   "actors": [
-    "cluster",
-    "ingo",
-    "local-ngo"
-   ],
-   "record_ids": [
-    "E0380"
    ],
    "unmerged": false
   },
@@ -11853,71 +9868,6 @@ window.SITE_DATA = {
    ],
    "record_ids": [
     "E0381"
-   ],
-   "unmerged": false
-  },
-  {
-   "finding_id": "F502",
-   "statement": "The proposed successor is a specialised technical roundtable inside an existing inter-institutional environmental health commission, which already brings together the water ministry, the health ministry and national research institutes, serving as both an operational and an advisory body.",
-   "theme": [
-    "Transition"
-   ],
-   "example": "",
-   "type": "practice",
-   "strength": "low",
-   "n_records": 1,
-   "n_sources": 1,
-   "n_streams": 1,
-   "streams": [
-    "transcript"
-   ],
-   "countries": [
-    "COL"
-   ],
-   "tags": [
-    "coordination-architecture",
-    "government-engagement",
-    "transition-handover"
-   ],
-   "actors": [
-    "cluster",
-    "gov-national"
-   ],
-   "record_ids": [
-    "E0382"
-   ],
-   "unmerged": false
-  },
-  {
-   "finding_id": "F503",
-   "statement": "A change of national government froze transition dialogues, with the incoming administration signalling a reduction in the number of government entities and its position on humanitarian cooperation not yet known.",
-   "theme": [
-    "Transition"
-   ],
-   "example": "",
-   "type": "barrier",
-   "strength": "medium",
-   "n_records": 2,
-   "n_sources": 2,
-   "n_streams": 1,
-   "streams": [
-    "transcript"
-   ],
-   "countries": [
-    "COL",
-    "ETH"
-   ],
-   "tags": [
-    "government-engagement",
-    "transition-handover"
-   ],
-   "actors": [
-    "cluster",
-    "gov-national"
-   ],
-   "record_ids": [
-    "E0383",
-    "E0556"
    ],
    "unmerged": false
   },
@@ -13289,68 +11239,54 @@ window.SITE_DATA = {
   },
   {
    "finding_id": "F700",
-   "statement": "Transition to government-led coordination began at the start of the year, with the line ministry taking the lead supported by an NGO co-coordinator, on a timetable running to the end of the following year.",
+   "statement": "Transitions in progress are being sequenced in recognisable ways: the line ministry takes the lead with an NGO co-coordinator alongside, international posts are nationalised, co-chairing is introduced at subnational then national level, and a roadmap is validated with the ministry before workshops begin.",
    "theme": [
     "Transition"
    ],
-   "example": "",
+   "example": "Nigeria — transition to government-led coordination began at the start of the year, with the line ministry taking the lead supported by an NGO co-coordinator, and a state advisory group to endorse the plan and provide continuing oversight.",
    "type": "practice",
-   "strength": "low",
-   "n_records": 1,
-   "n_sources": 1,
+   "strength": "high",
+   "n_records": 5,
+   "n_sources": 5,
    "n_streams": 1,
    "streams": [
     "transcript"
    ],
    "countries": [
-    "NGA"
+    "BGD",
+    "HTI",
+    "NGA",
+    "SYR",
+    "TCD"
    ],
    "tags": [
     "coordination-architecture",
     "government-engagement",
+    "hpc",
+    "localisation",
+    "partnerships",
     "transition-handover"
    ],
    "actors": [
     "cluster",
     "gov-national",
-    "ingo"
+    "ingo",
+    "local-ngo",
+    "un-agency"
    ],
    "record_ids": [
-    "E0442"
+    "E0442",
+    "E0503",
+    "E0519",
+    "E0661",
+    "E0666"
    ],
-   "unmerged": false
-  },
-  {
-   "finding_id": "F703",
-   "statement": "A state advisory group is to endorse the transition plan and provide continuing oversight, so that the arrangement is formalised within the ministry rather than resting on individual relationships.",
-   "theme": [
-    "Transition"
-   ],
-   "example": "",
-   "type": "practice",
-   "strength": "low",
-   "n_records": 1,
-   "n_sources": 1,
-   "n_streams": 1,
-   "streams": [
-    "transcript"
-   ],
-   "countries": [
-    "NGA"
-   ],
-   "tags": [
-    "government-engagement",
-    "performance",
-    "transition-handover"
-   ],
-   "actors": [
-    "cluster",
-    "gov-national"
-   ],
-   "record_ids": [
-    "E0445"
-   ],
-   "unmerged": false
+   "unmerged": false,
+   "highlight": {
+    "headline": "There is a recognisable shape to how this is being done",
+    "plain": "Transitions in progress look broadly alike: the line ministry takes the lead with an NGO co-coordinator alongside, international posts are nationalised, co-chairing is introduced at subnational level and then nationally, and a roadmap is validated with the ministry before workshops start.",
+    "so_what": "There is enough convergence here to be worth writing up as a sequence. Countries are arriving at the same steps independently, which is a strong argument for documenting them once."
+   }
   },
   {
    "finding_id": "F705",
@@ -16031,7 +13967,7 @@ window.SITE_DATA = {
   },
   {
    "id": "E0080",
-   "finding_id": "F108",
+   "finding_id": "F111",
    "theme": [
     "Transition"
    ],
@@ -16201,7 +14137,7 @@ window.SITE_DATA = {
   },
   {
    "id": "E0087",
-   "finding_id": "F112",
+   "finding_id": "F346",
    "theme": [
     "Transition"
    ],
@@ -16224,7 +14160,7 @@ window.SITE_DATA = {
   },
   {
    "id": "E0088",
-   "finding_id": "F113",
+   "finding_id": "F346",
    "theme": [
     "Transition"
    ],
@@ -16248,7 +14184,7 @@ window.SITE_DATA = {
   },
   {
    "id": "E0089",
-   "finding_id": "F113",
+   "finding_id": "F346",
    "theme": [
     "Transition"
    ],
@@ -16447,7 +14383,7 @@ window.SITE_DATA = {
   },
   {
    "id": "E0097",
-   "finding_id": "F115",
+   "finding_id": "F370",
    "theme": [
     "Transition"
    ],
@@ -16473,7 +14409,7 @@ window.SITE_DATA = {
   },
   {
    "id": "E0098",
-   "finding_id": "F116",
+   "finding_id": "F320",
    "theme": [
     "Transition"
    ],
@@ -16497,7 +14433,7 @@ window.SITE_DATA = {
   },
   {
    "id": "E0099",
-   "finding_id": "F116",
+   "finding_id": "F320",
    "theme": [
     "Transition"
    ],
@@ -16521,7 +14457,7 @@ window.SITE_DATA = {
   },
   {
    "id": "E0100",
-   "finding_id": "F116",
+   "finding_id": "F320",
    "theme": [
     "Transition"
    ],
@@ -19591,7 +17527,7 @@ window.SITE_DATA = {
   },
   {
    "id": "E0225",
-   "finding_id": "F300",
+   "finding_id": "F283",
    "theme": [
     "Transition"
    ],
@@ -19615,7 +17551,7 @@ window.SITE_DATA = {
   },
   {
    "id": "E0226",
-   "finding_id": "F301",
+   "finding_id": "F283",
    "theme": [
     "Transition"
    ],
@@ -19641,7 +17577,7 @@ window.SITE_DATA = {
   },
   {
    "id": "E0227",
-   "finding_id": "F302",
+   "finding_id": "F283",
    "theme": [
     "Transition"
    ],
@@ -19667,7 +17603,7 @@ window.SITE_DATA = {
   },
   {
    "id": "E0228",
-   "finding_id": "F303",
+   "finding_id": "F283",
    "theme": [
     "Transition"
    ],
@@ -19744,7 +17680,7 @@ window.SITE_DATA = {
   },
   {
    "id": "E0231",
-   "finding_id": "F306",
+   "finding_id": "F283",
    "theme": [
     "Transition"
    ],
@@ -19818,7 +17754,7 @@ window.SITE_DATA = {
   },
   {
    "id": "E0234",
-   "finding_id": "F308",
+   "finding_id": "F307",
    "theme": [
     "Transition"
    ],
@@ -19845,7 +17781,7 @@ window.SITE_DATA = {
   },
   {
    "id": "E0235",
-   "finding_id": "F309",
+   "finding_id": "F307",
    "theme": [
     "Transition"
    ],
@@ -19898,7 +17834,7 @@ window.SITE_DATA = {
   },
   {
    "id": "E0237",
-   "finding_id": "F311",
+   "finding_id": "F283",
    "theme": [
     "Transition"
    ],
@@ -19923,7 +17859,7 @@ window.SITE_DATA = {
   },
   {
    "id": "E0238",
-   "finding_id": "F312",
+   "finding_id": "F1711",
    "theme": [
     "Transition"
    ],
@@ -19948,7 +17884,7 @@ window.SITE_DATA = {
   },
   {
    "id": "E0239",
-   "finding_id": "F313",
+   "finding_id": "F1711",
    "theme": [
     "Transition"
    ],
@@ -20226,7 +18162,7 @@ window.SITE_DATA = {
   },
   {
    "id": "E0250",
-   "finding_id": "F322",
+   "finding_id": "F415",
    "theme": [
     "Transition"
    ],
@@ -20303,7 +18239,7 @@ window.SITE_DATA = {
   },
   {
    "id": "E0253",
-   "finding_id": "F325",
+   "finding_id": "F335",
    "theme": [
     "Transition"
    ],
@@ -20380,7 +18316,7 @@ window.SITE_DATA = {
   },
   {
    "id": "E0256",
-   "finding_id": "F328",
+   "finding_id": "F335",
    "theme": [
     "Transition"
    ],
@@ -20407,7 +18343,7 @@ window.SITE_DATA = {
   },
   {
    "id": "E0257",
-   "finding_id": "F329",
+   "finding_id": "F335",
    "theme": [
     "Transition"
    ],
@@ -20432,7 +18368,7 @@ window.SITE_DATA = {
   },
   {
    "id": "E0258",
-   "finding_id": "F329",
+   "finding_id": "F335",
    "theme": [
     "Transition"
    ],
@@ -20483,7 +18419,7 @@ window.SITE_DATA = {
   },
   {
    "id": "E0260",
-   "finding_id": "F331",
+   "finding_id": "F335",
    "theme": [
     "Transition"
    ],
@@ -20510,7 +18446,7 @@ window.SITE_DATA = {
   },
   {
    "id": "E0261",
-   "finding_id": "F332",
+   "finding_id": "F335",
    "theme": [
     "Transition"
    ],
@@ -20561,7 +18497,7 @@ window.SITE_DATA = {
   },
   {
    "id": "E0263",
-   "finding_id": "F334",
+   "finding_id": "F335",
    "theme": [
     "Transition"
    ],
@@ -20611,7 +18547,7 @@ window.SITE_DATA = {
   },
   {
    "id": "E0265",
-   "finding_id": "F336",
+   "finding_id": "F333",
    "theme": [
     "Transition"
    ],
@@ -20637,7 +18573,7 @@ window.SITE_DATA = {
   },
   {
    "id": "E0266",
-   "finding_id": "F337",
+   "finding_id": "F333",
    "theme": [
     "Transition"
    ],
@@ -20687,7 +18623,7 @@ window.SITE_DATA = {
   },
   {
    "id": "E0268",
-   "finding_id": "F339",
+   "finding_id": "F324",
    "theme": [
     "Transition"
    ],
@@ -20713,7 +18649,7 @@ window.SITE_DATA = {
   },
   {
    "id": "E0269",
-   "finding_id": "F340",
+   "finding_id": "F333",
    "theme": [
     "Transition"
    ],
@@ -20737,7 +18673,7 @@ window.SITE_DATA = {
   },
   {
    "id": "E0270",
-   "finding_id": "F340",
+   "finding_id": "F333",
    "theme": [
     "Transition"
    ],
@@ -20761,7 +18697,7 @@ window.SITE_DATA = {
   },
   {
    "id": "E0271",
-   "finding_id": "F341",
+   "finding_id": "F333",
    "theme": [
     "Transition"
    ],
@@ -20787,7 +18723,7 @@ window.SITE_DATA = {
   },
   {
    "id": "E0272",
-   "finding_id": "F342",
+   "finding_id": "F333",
    "theme": [
     "Transition"
    ],
@@ -20813,7 +18749,7 @@ window.SITE_DATA = {
   },
   {
    "id": "E0273",
-   "finding_id": "F343",
+   "finding_id": "F333",
    "theme": [
     "Transition"
    ],
@@ -20839,7 +18775,7 @@ window.SITE_DATA = {
   },
   {
    "id": "E0274",
-   "finding_id": "F343",
+   "finding_id": "F333",
    "theme": [
     "Transition"
    ],
@@ -20865,7 +18801,7 @@ window.SITE_DATA = {
   },
   {
    "id": "E0275",
-   "finding_id": "F344",
+   "finding_id": "F333",
    "theme": [
     "Transition"
    ],
@@ -20889,7 +18825,7 @@ window.SITE_DATA = {
   },
   {
    "id": "E0276",
-   "finding_id": "F345",
+   "finding_id": "F373",
    "theme": [
     "Transition"
    ],
@@ -21498,7 +19434,7 @@ window.SITE_DATA = {
   },
   {
    "id": "E0300",
-   "finding_id": "F366",
+   "finding_id": "F374",
    "theme": [
     "Transition"
    ],
@@ -21525,7 +19461,7 @@ window.SITE_DATA = {
   },
   {
    "id": "E0301",
-   "finding_id": "F367",
+   "finding_id": "F374",
    "theme": [
     "Transition"
    ],
@@ -21552,7 +19488,7 @@ window.SITE_DATA = {
   },
   {
    "id": "E0302",
-   "finding_id": "F368",
+   "finding_id": "F374",
    "theme": [
     "Transition"
    ],
@@ -21578,7 +19514,7 @@ window.SITE_DATA = {
   },
   {
    "id": "E0303",
-   "finding_id": "F369",
+   "finding_id": "F374",
    "theme": [
     "Transition"
    ],
@@ -21632,7 +19568,7 @@ window.SITE_DATA = {
   },
   {
    "id": "E0305",
-   "finding_id": "F371",
+   "finding_id": "F374",
    "theme": [
     "Transition"
    ],
@@ -21761,7 +19697,7 @@ window.SITE_DATA = {
   },
   {
    "id": "E0310",
-   "finding_id": "F375",
+   "finding_id": "F378",
    "theme": [
     "Transition"
    ],
@@ -21787,7 +19723,7 @@ window.SITE_DATA = {
   },
   {
    "id": "E0311",
-   "finding_id": "F376",
+   "finding_id": "F378",
    "theme": [
     "Transition"
    ],
@@ -21920,7 +19856,7 @@ window.SITE_DATA = {
   },
   {
    "id": "E0316",
-   "finding_id": "F381",
+   "finding_id": "F378",
    "theme": [
     "Transition"
    ],
@@ -21946,7 +19882,7 @@ window.SITE_DATA = {
   },
   {
    "id": "E0317",
-   "finding_id": "F382",
+   "finding_id": "F373",
    "theme": [
     "Transition"
    ],
@@ -22023,7 +19959,7 @@ window.SITE_DATA = {
   },
   {
    "id": "E0320",
-   "finding_id": "F385",
+   "finding_id": "F283",
    "theme": [
     "Transition"
    ],
@@ -22179,7 +20115,7 @@ window.SITE_DATA = {
   },
   {
    "id": "E0326",
-   "finding_id": "F391",
+   "finding_id": "F395",
    "theme": [
     "Transition"
    ],
@@ -22204,7 +20140,7 @@ window.SITE_DATA = {
   },
   {
    "id": "E0327",
-   "finding_id": "F391",
+   "finding_id": "F395",
    "theme": [
     "Transition"
    ],
@@ -22254,7 +20190,7 @@ window.SITE_DATA = {
   },
   {
    "id": "E0329",
-   "finding_id": "F393",
+   "finding_id": "F320",
    "theme": [
     "Transition"
    ],
@@ -22281,7 +20217,7 @@ window.SITE_DATA = {
   },
   {
    "id": "E0330",
-   "finding_id": "F394",
+   "finding_id": "F320",
    "theme": [
     "Transition"
    ],
@@ -22384,7 +20320,7 @@ window.SITE_DATA = {
   },
   {
    "id": "E0334",
-   "finding_id": "F397",
+   "finding_id": "F421",
    "theme": [
     "Transition"
    ],
@@ -22410,7 +20346,7 @@ window.SITE_DATA = {
   },
   {
    "id": "E0335",
-   "finding_id": "F397",
+   "finding_id": "F421",
    "theme": [
     "Transition"
    ],
@@ -22462,7 +20398,7 @@ window.SITE_DATA = {
   },
   {
    "id": "E0337",
-   "finding_id": "F399",
+   "finding_id": "F324",
    "theme": [
     "Transition"
    ],
@@ -22539,7 +20475,7 @@ window.SITE_DATA = {
   },
   {
    "id": "E0340",
-   "finding_id": "F402",
+   "finding_id": "F026",
    "theme": [
     "Transition"
    ],
@@ -22867,7 +20803,7 @@ window.SITE_DATA = {
   },
   {
    "id": "E0353",
-   "finding_id": "F414",
+   "finding_id": "F419",
    "theme": [
     "ABC",
     "Transition"
@@ -22996,7 +20932,7 @@ window.SITE_DATA = {
   },
   {
    "id": "E0358",
-   "finding_id": "F418",
+   "finding_id": "F421",
    "theme": [
     "Transition"
    ],
@@ -23021,7 +20957,7 @@ window.SITE_DATA = {
   },
   {
    "id": "E0359",
-   "finding_id": "F418",
+   "finding_id": "F421",
    "theme": [
     "Transition"
    ],
@@ -23046,7 +20982,7 @@ window.SITE_DATA = {
   },
   {
    "id": "E0360",
-   "finding_id": "F418",
+   "finding_id": "F421",
    "theme": [
     "Transition"
    ],
@@ -23171,7 +21107,7 @@ window.SITE_DATA = {
   },
   {
    "id": "E0365",
-   "finding_id": "F420",
+   "finding_id": "F335",
    "theme": [
     "Transition"
    ],
@@ -23269,7 +21205,7 @@ window.SITE_DATA = {
   },
   {
    "id": "E0369",
-   "finding_id": "F424",
+   "finding_id": "F109",
    "theme": [
     "Transition"
    ],
@@ -23340,7 +21276,7 @@ window.SITE_DATA = {
   },
   {
    "id": "E0372",
-   "finding_id": "F427",
+   "finding_id": "F421",
    "theme": [
     "Transition"
    ],
@@ -23364,7 +21300,7 @@ window.SITE_DATA = {
   },
   {
    "id": "E0373",
-   "finding_id": "F428",
+   "finding_id": "F333",
    "theme": [
     "Transition"
    ],
@@ -23544,7 +21480,7 @@ window.SITE_DATA = {
   },
   {
    "id": "E0380",
-   "finding_id": "F500",
+   "finding_id": "F346",
    "theme": [
     "Transition"
    ],
@@ -23597,7 +21533,7 @@ window.SITE_DATA = {
   },
   {
    "id": "E0382",
-   "finding_id": "F502",
+   "finding_id": "F378",
    "theme": [
     "Transition"
    ],
@@ -23624,7 +21560,7 @@ window.SITE_DATA = {
   },
   {
    "id": "E0383",
-   "finding_id": "F503",
+   "finding_id": "F374",
    "theme": [
     "Transition"
    ],
@@ -25277,7 +23213,7 @@ window.SITE_DATA = {
   },
   {
    "id": "E0445",
-   "finding_id": "F703",
+   "finding_id": "F378",
    "theme": [
     "Transition"
    ],
@@ -26840,7 +24776,7 @@ window.SITE_DATA = {
   },
   {
    "id": "E0503",
-   "finding_id": "F1007",
+   "finding_id": "F700",
    "theme": [
     "Transition"
    ],
@@ -27249,7 +25185,7 @@ window.SITE_DATA = {
   },
   {
    "id": "E0519",
-   "finding_id": "F1104",
+   "finding_id": "F700",
    "theme": [
     "Transition"
    ],
@@ -28080,7 +26016,7 @@ window.SITE_DATA = {
   },
   {
    "id": "E0550",
-   "finding_id": "F1211",
+   "finding_id": "F346",
    "theme": [
     "Transition"
    ],
@@ -28243,7 +26179,7 @@ window.SITE_DATA = {
   },
   {
    "id": "E0556",
-   "finding_id": "F503",
+   "finding_id": "F374",
    "theme": [
     "Transition"
    ],
@@ -28351,7 +26287,7 @@ window.SITE_DATA = {
   },
   {
    "id": "E0560",
-   "finding_id": "F414",
+   "finding_id": "F419",
    "theme": [
     "ABC",
     "Transition"
@@ -28405,7 +26341,7 @@ window.SITE_DATA = {
   },
   {
    "id": "E0562",
-   "finding_id": "F1300",
+   "finding_id": "F333",
    "theme": [
     "Transition"
    ],
@@ -28432,7 +26368,7 @@ window.SITE_DATA = {
   },
   {
    "id": "E0563",
-   "finding_id": "F1301",
+   "finding_id": "F023",
    "theme": [
     "Transition"
    ],
@@ -28486,7 +26422,7 @@ window.SITE_DATA = {
   },
   {
    "id": "E0565",
-   "finding_id": "F1303",
+   "finding_id": "F333",
    "theme": [
     "Transition"
    ],
@@ -28540,7 +26476,7 @@ window.SITE_DATA = {
   },
   {
    "id": "E0567",
-   "finding_id": "F1305",
+   "finding_id": "F307",
    "theme": [
     "Transition"
    ],
@@ -28924,7 +26860,7 @@ window.SITE_DATA = {
   },
   {
    "id": "E0581",
-   "finding_id": "F1405",
+   "finding_id": "F374",
    "theme": [
     "Transition"
    ],
@@ -30330,7 +28266,7 @@ window.SITE_DATA = {
   },
   {
    "id": "E0633",
-   "finding_id": "F1702",
+   "finding_id": "F283",
    "theme": [
     "Transition"
    ],
@@ -30355,7 +28291,7 @@ window.SITE_DATA = {
   },
   {
    "id": "E0634",
-   "finding_id": "F1703",
+   "finding_id": "F373",
    "theme": [
     "Transition"
    ],
@@ -30380,7 +28316,7 @@ window.SITE_DATA = {
   },
   {
    "id": "E0635",
-   "finding_id": "F1704",
+   "finding_id": "F373",
    "theme": [
     "Transition"
    ],
@@ -30485,7 +28421,7 @@ window.SITE_DATA = {
   },
   {
    "id": "E0639",
-   "finding_id": "F1707",
+   "finding_id": "F364",
    "theme": [
     "Transition"
    ],
@@ -30537,7 +28473,7 @@ window.SITE_DATA = {
   },
   {
    "id": "E0641",
-   "finding_id": "F1709",
+   "finding_id": "F324",
    "theme": [
     "Transition"
    ],
@@ -31046,7 +28982,7 @@ window.SITE_DATA = {
   },
   {
    "id": "E0661",
-   "finding_id": "F1725",
+   "finding_id": "F700",
    "theme": [
     "Transition"
    ],
@@ -31151,7 +29087,7 @@ window.SITE_DATA = {
   },
   {
    "id": "E0665",
-   "finding_id": "F1728",
+   "finding_id": "F333",
    "theme": [
     "Transition"
    ],
@@ -31177,7 +29113,7 @@ window.SITE_DATA = {
   },
   {
    "id": "E0666",
-   "finding_id": "F1729",
+   "finding_id": "F700",
    "theme": [
     "Transition"
    ],
@@ -31203,7 +29139,7 @@ window.SITE_DATA = {
   },
   {
    "id": "E0667",
-   "finding_id": "F1730",
+   "finding_id": "F333",
    "theme": [
     "Transition"
    ],

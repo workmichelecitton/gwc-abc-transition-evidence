@@ -73,10 +73,10 @@ Do not lose these. Both are deliberate "not yet", not oversights.
 
 | # | Decision | Trigger |
 |---|---|---|
-| 1 | **Remove the Matrix tab.** It is useful now for spotting where evidence is thick and thin while the base is being built. It is not useful to a reader once the base is complete. | After the SDR, workshop material and all country transcripts are in |
-| 2 | **Prune unused themes from `taxonomy.json`.** Tags that no evidence ever lands on are clutter in every filter. Currently unused: `advocacy`, `inclusion`, `markets`. | Same point — judge once, on the full base |
-| 3 | **Finish the consolidation.** `capacity` is done (122 findings → 41). The build warns while more than half of findings hold a single record. Remaining work packages, largest first: `transition-handover`, `coordination-architecture`, `information-management`, `government-engagement`, `funding` + `pooled-funds`, `localisation`, `hpc`. Method is in `prompts/04`. | Ongoing — a tag at a time |
-| 4 | **Finish the quote backfill.** 218 of 313 transcript records still carry no quote and cannot be checked against their source. Four unsupported or overstated records have already been caught this way — roughly one in twenty. Method and remaining list in `prompts/06-quote-backfill.md`. | One source per pass |
+| 1 | **Remove the Matrix tab.** It is useful now for spotting where evidence is thick and thin while the base is being built. It is not useful to a reader once the base is complete. | **Trigger met** — the SDR, workshop material and all sixteen transcripts are in |
+| 2 | **Prune unused tags from `taxonomy.json`.** Only `markets` is now genuinely unused — `advocacy` and `inclusion` have picked up evidence since. One line to delete. | Ready now |
+| 3 | **Finish the consolidation.** Done: `capacity` (122 → 41) and `transition-handover` (146 → 72). The build warns while more than half of findings hold a single record — currently 75%. Remaining packages, largest first: `coordination-architecture` (139), `information-management` (116), `government-engagement` (91), `funding` + `pooled-funds` (111), `localisation` (69), `hpc` (69). Method is in `prompts/04`. | Ongoing — a tag at a time |
+| 4 | ~~Finish the quote backfill.~~ **Done.** 331 of 335 transcript records carry a verifiable quote. The four blanks are deliberate and flagged — see `prompts/06`. Nine records were corrected or withheld as a result. | — |
 | 5 | **Group the Findings tab by tag.** Even consolidated, the list is long enough to want a top level. The tags already work as one; adding a new field is probably unnecessary. | After consolidation |
 
 ## Confidentiality: what is published and what is not
