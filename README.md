@@ -67,17 +67,25 @@ Only countries that have evidence are drawn in colour; the rest form the grey si
 
 You only need to regenerate it if you add a country to `taxonomy.json` that has no shape. The generator needs the ISO 3166 **numeric** code for the new country mapped to its ISO3 code; ask an assistant to regenerate `geo.js` from `world-atlas` 110m and it will take a few minutes. Everything else in the repo is untouched by this.
 
-## Deferred decisions — revisit after the full run
+## Deferred decisions
 
-Do not lose these. Both are deliberate "not yet", not oversights.
+All five original deferred decisions are now closed. Removed the Matrix tab,
+pruned the unused `markets` tag, finished the consolidation and the quote
+backfill, and grouped the Findings list.
+
+**Still open, and each needs your judgement rather than mine:**
+
+| Item | Why it is waiting |
+|---|---|
+| Three unverified records — Sudan `E0429`, Colombia `E0376`, Mozambique `E0537` | No supporting passage exists in the transcript. Marked `draft`/`low`. Either you remember it happening, or they should be deleted. |
+| `F261` and `F270` | Rated `medium` on the 2026 consultation plus a check-in from the same country. Probably one person counted twice; the build warns on every run. |
+| Syria session 2 | Attaches to `S115`. Coordination architecture is the gap in session 1. |
+| Quarterly search | `prompts/03`, due three months after the last source date. |
 
 | # | Decision | Trigger |
 |---|---|---|
-| 1 | **Remove the Matrix tab.** It is useful now for spotting where evidence is thick and thin while the base is being built. It is not useful to a reader once the base is complete. | **Trigger met** — the SDR, workshop material and all sixteen transcripts are in |
-| 2 | **Prune unused tags from `taxonomy.json`.** Only `markets` is now genuinely unused — `advocacy` and `inclusion` have picked up evidence since. One line to delete. | Ready now |
 | 3 | ~~Finish the consolidation.~~ **Done.** All seven packages complete: `capacity`, `transition-handover`, `coordination-architecture`, `information-management` + `hpc`, `funding` + `pooled-funds`, `localisation`, `government-engagement`. Base went 483 → 208 findings, singletons 82% → 44%, high-strength 41 → 80. The granularity warning no longer fires. Re-run `prompts/04` whenever it starts warning again. | — |
 | 4 | ~~Finish the quote backfill.~~ **Done.** 331 of 335 transcript records carry a verifiable quote. The four blanks are deliberate and flagged — see `prompts/06`. Nine records were corrected or withheld as a result. | — |
-| 5 | **Group the Findings tab by tag.** Even consolidated, 208 findings is long enough to want a top level. The tags already work as one; adding a new field is probably unnecessary. | **Trigger met** — consolidation is done |
 
 ## Confidentiality: what is published and what is not
 
@@ -99,7 +107,6 @@ A verbatim quote plus a country plus a role is enough to identify one coordinato
 - **About** — what this is, where the evidence comes from, what strength means, and how to read it with care. Text lives in `data/about.json`.
 - **Highlights** — high-strength findings only, in plain language, with a suggested action. Text lives in `data/highlights.csv`.
 - **Findings** — every finding with its computed strength, above an interactive map. Click countries to filter; select several to see evidence from any of them. Click a card to see the underlying evidence records.
-- **Matrix** — theme × type, showing where the evidence is thick and where it is thin *(see deferred decisions)*
 - **Sources** — registry with reverse citations, so you can see which sources carry the weight and which are cited by nothing
 
 Filters apply across all views except About: theme, type, source stream, strength, level, country (multi-select), thematic tag, actor, plus full-text search.

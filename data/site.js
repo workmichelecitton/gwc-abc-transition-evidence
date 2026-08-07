@@ -73,7 +73,7 @@ window.SITE_DATA = {
   "footer_note": "Findings are traceable to a source ID in the Sources tab. If something looks wrong, it probably is — say so and it will be corrected."
  },
  "generated": "2026-08-07",
- "taxonomy_version": "0.6.0",
+ "taxonomy_version": "0.7.0",
  "stats": {
   "records": 656,
   "findings": 208,
@@ -83,7 +83,7 @@ window.SITE_DATA = {
  },
  "taxonomy": {
   "_comment": "Controlled vocabularies. The build script rejects any value in evidence.csv that is not listed here. To add a value, add it here first, then use it. Keep this list short — every addition is a permanent filter option.",
-  "version": "0.6.0",
+  "version": "0.7.0",
   "updated": "2026-08-05",
   "theme": [
    {
@@ -314,10 +314,6 @@ window.SITE_DATA = {
    {
     "value": "inclusion",
     "label": "Inclusion & vulnerable groups"
-   },
-   {
-    "value": "markets",
-    "label": "Markets & private sector"
    },
    {
     "value": "transition-handover",

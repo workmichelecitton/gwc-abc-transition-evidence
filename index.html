@@ -66,6 +66,11 @@ input[type=search]{flex:1;min-width:200px}
   text-transform:uppercase;letter-spacing:.4px}
 .pill.ABC{background:var(--abc)} .pill.Transition{background:var(--transition)}
 .pill.Fundamentals{background:var(--fundamentals)}
+h2.grp{font-size:13px;text-transform:uppercase;letter-spacing:.07em;color:#5A6675;
+  margin:26px 0 10px;padding-bottom:6px;border-bottom:1px solid #DDE2E8;
+  display:flex;align-items:baseline;gap:9px}
+h2.grp:first-child{margin-top:6px}
+.grp-n{font-size:12px;color:#8A94A2;font-weight:400;letter-spacing:0}
 /* One illustrative case, marked as such. The statement above it is the claim;
    this is one instance of it, and the records below are the full range. */
 .eg{margin:6px 0 0;padding:7px 11px;border-left:3px solid var(--fundamentals);background:#F4F6F9;
@@ -171,6 +176,13 @@ footer{padding:22px 26px;color:var(--ink-3);font-size:12px;border-top:1px solid 
       <div class="frow"><span class="flabel">Source</span><span id="f-stream"></span></div>
       <div class="frow"><span class="flabel">Strength</span><span id="f-strength"></span>
         <span class="flabel" style="margin-left:18px">Level</span><span id="f-level"></span></div>
+      <div class="frow"><span class="flabel">Group by</span>
+        <select id="groupby">
+          <option value="strength">Strength of evidence</option>
+          <option value="theme">Theme</option>
+          <option value="type">Type</option>
+          <option value="">No grouping</option>
+        </select></div>
     </div>
     <p class="count" id="count"></p>
     <div id="view"></div>
@@ -201,10 +213,31 @@ var F = { q:"", theme:[], type:[], stream:[], strength:[], level:[],
           countries:[], tag:"", actor:"" };
 var OPEN = {};                      // which finding cards are expanded
 
+// Matrix removed 2026-08. It existed to show where evidence was thick and thin
+// while the base was being built; with all sources in and the consolidation
+// done, it told a reader nothing the Findings filters do not. viewMatrix() went
+// with it — recover from git if a coverage view is ever wanted again.
 var TABS = [["about","About"],["highlights","Highlights"],["findings","Findings"],
-            ["matrix","Matrix"],["sources","Sources"]];
+            ["sources","Sources"]];
 var NOFILTER = { about:1 };         // views the filter bar does not apply to
 var MAPON = true;                   // map shown above the findings list
+// Grouping the findings list. Deliberately NOT by tag: findings carry 3.3 tags
+// on average, so a tag grouping would list most cards three times over. The tag
+// dropdown already scopes the list to one tag, which is the same job without
+// the duplication. Strength first is the default because it puts what the base
+// is most confident about at the top.
+var GROUPBY = "strength";
+var GROUPS = {
+  strength: { order: ["high","medium","low"],
+              label: function(v){ return label("strength", v) || v; },
+              of: function(f){ return f.strength; } },
+  theme:    { order: ["ABC","Transition","Fundamentals"],
+              label: function(v){ return label("theme", v) || v; },
+              of: function(f){ return f.theme.slice().sort().join(" + "); } },
+  type:     { order: ["barrier","enabler","practice","context","recommendation"],
+              label: function(v){ return label("type", v) || v; },
+              of: function(f){ return f.type; } }
+};
 
 function el(id){ return document.getElementById(id); }
 function esc(s){ return String(s==null?"":s).replace(/[&<>"]/g, function(c){
@@ -271,6 +304,9 @@ function init(){
     (D.taxonomy.tags||[]).map(function(t){ return [t.value, t.label]; }));
   dropdown("actor","All actors",
     (D.taxonomy.actors||[]).map(function(t){ return [t.value, t.label]; }));
+
+  el("groupby").value = GROUPBY;
+  el("groupby").onchange = function(){ GROUPBY = this.value; render(); };
 
   el("q").oninput = function(){ F.q = this.value.toLowerCase().trim(); render(); };
   ["tag","actor"].forEach(function(k){
@@ -378,7 +414,6 @@ function render(){
   if (TAB==="about")      v.innerHTML = viewAbout();
   if (TAB==="highlights") v.innerHTML = viewHighlights(d);
   if (TAB==="findings")   v.innerHTML = viewMap() + viewFindings(d);
-  if (TAB==="matrix")     v.innerHTML = viewMatrix(d);
   if (TAB==="sources")    v.innerHTML = viewSources(d);
   wire();
 }
@@ -402,7 +437,28 @@ function viewFindings(d){
     var k = r.finding_id || ("_solo_"+r.id);
     (byF[k] = byF[k] || []).push(r);
   });
-  return d.findings.map(function(f){
+
+  var g = GROUPS[GROUPBY];
+  if (!g) return d.findings.map(card).join("");
+
+  var buckets = {}, seen = [];
+  d.findings.forEach(function(f){
+    var k = g.of(f);
+    if (!buckets[k]) { buckets[k] = []; seen.push(k); }
+    buckets[k].push(f);
+  });
+  // Known values in their intended order first, then anything else alphabetically.
+  var keys = g.order.filter(function(k){ return buckets[k]; })
+    .concat(seen.filter(function(k){ return g.order.indexOf(k)<0; }).sort());
+
+  return keys.map(function(k){
+    var items = buckets[k];
+    return '<h2 class="grp">' + esc(g.label(k)) +
+           '<span class="grp-n">' + items.length + '</span></h2>' +
+           items.map(card).join("");
+  }).join("");
+
+  function card(f){
     var recs = byF[f.finding_id] || [];
     var open = !!OPEN[f.finding_id];
     var head =
@@ -419,7 +475,7 @@ function viewFindings(d){
       '</div>';
     var body = open ? '<div class="detail">' + recs.map(evidenceBlock).join("") + '</div>' : "";
     return '<div class="card '+esc(f.type)+'" data-f="'+esc(f.finding_id)+'">'+head+body+'</div>';
-  }).join("");
+  }
 }
 
 // Verbatim quotes are stripped at build time and are not available here.
@@ -558,35 +614,6 @@ function viewMap(){
     : '') + '</div>';
 }
 
-function viewMatrix(d){
-  var types = (D.taxonomy.type||[]).map(function(t){ return t.value; });
-  var tags  = (D.taxonomy.tags||[]).map(function(t){ return t.value; });
-  var m = {}, max = 0;
-  d.records.forEach(function(r){
-    r.tags.forEach(function(tg){
-      m[tg] = m[tg] || {};
-      m[tg][r.type] = (m[tg][r.type]||0) + 1;
-      if (m[tg][r.type] > max) max = m[tg][r.type];
-    });
-  });
-  var used = tags.filter(function(t){ return m[t]; });
-  if (!used.length) return empty();
-  return '<table class="mtable"><thead><tr><th>Theme</th>' +
-    types.map(function(t){ return '<th style="text-align:center">'+esc(label("type",t))+'</th>'; }).join("") +
-    '<th style="text-align:center">Total</th></tr></thead><tbody>' +
-    used.map(function(tg){
-      var tot = 0;
-      var cells = types.map(function(ty){
-        var n = (m[tg]&&m[tg][ty])||0; tot += n;
-        var a = max ? n/max : 0;
-        var bg = n ? 'background:rgba(31,92,139,'+(0.10+a*0.72).toFixed(2)+');color:'+(a>0.55?'#fff':'#16212B') : '';
-        return '<td class="n" style="'+bg+'" data-tag="'+esc(tg)+'" data-type="'+esc(ty)+'">'+(n||"·")+'</td>';
-      }).join("");
-      return '<tr><td>'+esc(label("tags",tg))+'</td>'+cells+'<td class="n">'+tot+'</td></tr>';
-    }).join("") + '</tbody></table>' +
-    '<p class="count" style="margin-top:10px">Counts are evidence records. Click any cell to filter. ' +
-    'Darker means more evidence — not stronger evidence.</p>';
-}
 
 function viewSources(d){
   var cited = {};

@@ -1,6 +1,6 @@
 {
  "_comment": "Controlled vocabularies. The build script rejects any value in evidence.csv that is not listed here. To add a value, add it here first, then use it. Keep this list short — every addition is a permanent filter option.",
- "version": "0.6.0",
+ "version": "0.7.0",
  "updated": "2026-08-05",
  "theme": [
   {
@@ -231,10 +231,6 @@
   {
    "value": "inclusion",
    "label": "Inclusion & vulnerable groups"
-  },
-  {
-   "value": "markets",
-   "label": "Markets & private sector"
   },
   {
    "value": "transition-handover",

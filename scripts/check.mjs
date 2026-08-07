@@ -68,7 +68,7 @@ async function exercise(label, url) {
   ok(errs.length === 0, `${label}: script errors — ${errs.join(" | ")}`);
 
   const tabs = $$("[data-tab]");
-  ok(tabs.length >= 4, `${label}: expected the tab bar, found ${tabs.length} tabs`);
+  ok(tabs.length === 4, `${label}: expected 4 tabs (About, Highlights, Findings, Sources), found ${tabs.length}`);
 
   for (const t of tabs) {
     t.dispatchEvent(new dom.window.Event("click", { bubbles: true }));
@@ -86,6 +86,25 @@ async function exercise(label, url) {
     const cards = $$("#view .card[data-f]").length;
     ok(cards === site.findings.length,
        `${label}: ${cards} finding cards rendered, site.json has ${site.findings.length}`);
+
+    // The list is grouped. The invariant that matters is that grouping shows
+    // every finding exactly once — a grouping keyed on a multi-value field
+    // would silently duplicate cards, which is why it is not keyed on tags.
+    const ids = $$("#view .card[data-f]").map((c) => c.dataset.f);
+    ok(new Set(ids).size === ids.length,
+       `${label}: grouping duplicated cards — ${ids.length} rendered, ${new Set(ids).size} distinct`);
+    ok($$("#view h2.grp").length > 0, `${label}: findings list rendered with no group headers`);
+
+    // Switching the grouping must not change what is shown, only its order.
+    const sel = d.querySelector("#groupby");
+    for (const mode of ["theme", "type", ""]) {
+      sel.value = mode;
+      sel.dispatchEvent(new dom.window.Event("change", { bubbles: true }));
+      await new Promise((r) => setTimeout(r, 80));
+      const n = $$("#view .card[data-f]").length;
+      ok(n === site.findings.length,
+         `${label}: group-by "${mode || "none"}" shows ${n} of ${site.findings.length} findings`);
+    }
   }
 
   // Highlights must carry curated plain-language text, not the analytic statement.
