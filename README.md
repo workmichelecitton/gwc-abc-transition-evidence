@@ -75,9 +75,9 @@ Do not lose these. Both are deliberate "not yet", not oversights.
 |---|---|---|
 | 1 | **Remove the Matrix tab.** It is useful now for spotting where evidence is thick and thin while the base is being built. It is not useful to a reader once the base is complete. | **Trigger met** — the SDR, workshop material and all sixteen transcripts are in |
 | 2 | **Prune unused tags from `taxonomy.json`.** Only `markets` is now genuinely unused — `advocacy` and `inclusion` have picked up evidence since. One line to delete. | Ready now |
-| 3 | **Finish the consolidation.** Done: `capacity` (122 → 41), `transition-handover` (146 → 72), `coordination-architecture` (128 → 82). Base is down from 483 findings to 301 and singletons from 82% to 69%. Remaining packages: `information-management`, `government-engagement`, `funding` + `pooled-funds`, `localisation`, `hpc` — all smaller, and each now overlaps heavily with work already done. Method is in `prompts/04`. | Ongoing — a tag at a time |
+| 3 | ~~Finish the consolidation.~~ **Done.** All seven packages complete: `capacity`, `transition-handover`, `coordination-architecture`, `information-management` + `hpc`, `funding` + `pooled-funds`, `localisation`, `government-engagement`. Base went 483 → 208 findings, singletons 82% → 44%, high-strength 41 → 80. The granularity warning no longer fires. Re-run `prompts/04` whenever it starts warning again. | — |
 | 4 | ~~Finish the quote backfill.~~ **Done.** 331 of 335 transcript records carry a verifiable quote. The four blanks are deliberate and flagged — see `prompts/06`. Nine records were corrected or withheld as a result. | — |
-| 5 | **Group the Findings tab by tag.** Even consolidated, the list is long enough to want a top level. The tags already work as one; adding a new field is probably unnecessary. | After consolidation |
+| 5 | **Group the Findings tab by tag.** Even consolidated, 208 findings is long enough to want a top level. The tags already work as one; adding a new field is probably unnecessary. | **Trigger met** — consolidation is done |
 
 ## Confidentiality: what is published and what is not
 

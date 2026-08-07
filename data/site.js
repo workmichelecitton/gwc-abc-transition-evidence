@@ -76,7 +76,7 @@ window.SITE_DATA = {
  "taxonomy_version": "0.6.0",
  "stats": {
   "records": 656,
-  "findings": 269,
+  "findings": 208,
   "sources": 106,
   "countries": 29,
   "withheld_internal": 2
@@ -796,70 +796,6 @@ window.SITE_DATA = {
    }
   },
   {
-   "finding_id": "F020",
-   "statement": "The cluster lead agency signalled an eventual handover of coordination to the line ministry without setting a timeline, prompting early informal engagement rather than a planned process.",
-   "theme": [
-    "Transition"
-   ],
-   "example": "",
-   "type": "context",
-   "strength": "low",
-   "n_records": 1,
-   "n_sources": 1,
-   "n_streams": 1,
-   "streams": [
-    "transcript"
-   ],
-   "countries": [
-    "SOM"
-   ],
-   "tags": [
-    "government-engagement",
-    "transition-handover"
-   ],
-   "actors": [
-    "cluster",
-    "gov-national",
-    "un-agency"
-   ],
-   "record_ids": [
-    "E0026"
-   ],
-   "unmerged": false
-  },
-  {
-   "finding_id": "F021",
-   "statement": "Joint agenda setting with the line ministry and inviting ministry representatives to chair national coordination meetings moved government participation beyond opening and closing formalities.",
-   "theme": [
-    "Transition"
-   ],
-   "example": "",
-   "type": "enabler",
-   "strength": "low",
-   "n_records": 1,
-   "n_sources": 1,
-   "n_streams": 1,
-   "streams": [
-    "transcript"
-   ],
-   "countries": [
-    "SOM"
-   ],
-   "tags": [
-    "capacity",
-    "government-engagement",
-    "transition-handover"
-   ],
-   "actors": [
-    "cluster",
-    "gov-national"
-   ],
-   "record_ids": [
-    "E0027"
-   ],
-   "unmerged": false
-  },
-  {
    "finding_id": "F022",
    "statement": "A development-oriented WASH coordination platform carried a standing humanitarian agenda item, allowing humanitarian briefing to continue inside a development structure.",
    "theme": [
@@ -1296,38 +1232,6 @@ window.SITE_DATA = {
    "unmerged": false
   },
   {
-   "finding_id": "F036",
-   "statement": "Paid area coordinator posts were created alongside the elected chairs and co-chairs, with job descriptions drafted centrally, which leaves the role of the elected leadership unclear.",
-   "theme": [
-    "ABC"
-   ],
-   "example": "",
-   "type": "barrier",
-   "strength": "low",
-   "n_records": 1,
-   "n_sources": 1,
-   "n_streams": 1,
-   "streams": [
-    "transcript"
-   ],
-   "countries": [
-    "MMR"
-   ],
-   "tags": [
-    "coordination-architecture",
-    "localisation"
-   ],
-   "actors": [
-    "local-ngo",
-    "ocha",
-    "operational-cell"
-   ],
-   "record_ids": [
-    "E0043"
-   ],
-   "unmerged": false
-  },
-  {
    "finding_id": "F037",
    "statement": "Every area coordinator post across all eleven structures was awarded to one national NGO that is the nationalised affiliate of an international confederation, which raises a question about how localisation is defined in practice.",
    "theme": [
@@ -1559,72 +1463,6 @@ window.SITE_DATA = {
    ],
    "record_ids": [
     "E0055"
-   ],
-   "unmerged": false
-  },
-  {
-   "finding_id": "F048",
-   "statement": "WASH was not prioritised in a pooled fund localisation allocation, obliging the cluster to lobby partners to embed WASH activities inside other sectors proposals.",
-   "theme": [
-    "ABC"
-   ],
-   "example": "",
-   "type": "barrier",
-   "strength": "low",
-   "n_records": 1,
-   "n_sources": 1,
-   "n_streams": 1,
-   "streams": [
-    "transcript"
-   ],
-   "countries": [
-    "MMR"
-   ],
-   "tags": [
-    "funding",
-    "multisector",
-    "pooled-funds"
-   ],
-   "actors": [
-    "cluster",
-    "local-ngo",
-    "ocha"
-   ],
-   "record_ids": [
-    "E0056"
-   ],
-   "unmerged": false
-  },
-  {
-   "finding_id": "F049",
-   "statement": "Local NGOs were added to a proposal review committee that had been composed only of international organisations, at the cluster's insistence.",
-   "theme": [
-    "ABC"
-   ],
-   "example": "",
-   "type": "enabler",
-   "strength": "low",
-   "n_records": 1,
-   "n_sources": 1,
-   "n_streams": 1,
-   "streams": [
-    "transcript"
-   ],
-   "countries": [
-    "MMR"
-   ],
-   "tags": [
-    "localisation",
-    "partnerships",
-    "pooled-funds"
-   ],
-   "actors": [
-    "cluster",
-    "ingo",
-    "local-ngo"
-   ],
-   "record_ids": [
-    "E0057"
    ],
    "unmerged": false
   },
@@ -1863,39 +1701,6 @@ window.SITE_DATA = {
    "unmerged": false
   },
   {
-   "finding_id": "F1002",
-   "statement": "A rationalisation model gives NGOs responsibility for day-to-day operation and maintenance while UN agencies cover supplies, gap-filling and strategic issues, and the sector is regarded within the operation as a working example of the approach.",
-   "theme": [
-    "Transition"
-   ],
-   "example": "",
-   "type": "enabler",
-   "strength": "low",
-   "n_records": 1,
-   "n_sources": 1,
-   "n_streams": 1,
-   "streams": [
-    "transcript"
-   ],
-   "countries": [
-    "BGD"
-   ],
-   "tags": [
-    "coordination-architecture",
-    "localisation",
-    "partnerships"
-   ],
-   "actors": [
-    "ingo",
-    "local-ngo",
-    "un-agency"
-   ],
-   "record_ids": [
-    "E0498"
-   ],
-   "unmerged": false
-  },
-  {
    "finding_id": "F1003",
    "statement": "A consortium of national implementing partners was established that receives funding directly from a bilateral donor rather than through an intermediary.",
    "theme": [
@@ -1924,39 +1729,6 @@ window.SITE_DATA = {
    ],
    "record_ids": [
     "E0499"
-   ],
-   "unmerged": false
-  },
-  {
-   "finding_id": "F1004",
-   "statement": "Of the pooled fund allocation reaching the sector, around one eighth went to international NGOs and the remainder to UN agencies.",
-   "theme": [
-    "ABC"
-   ],
-   "example": "",
-   "type": "barrier",
-   "strength": "low",
-   "n_records": 1,
-   "n_sources": 1,
-   "n_streams": 1,
-   "streams": [
-    "transcript"
-   ],
-   "countries": [
-    "BGD"
-   ],
-   "tags": [
-    "funding",
-    "localisation",
-    "pooled-funds"
-   ],
-   "actors": [
-    "donor",
-    "ingo",
-    "un-agency"
-   ],
-   "record_ids": [
-    "E0500"
    ],
    "unmerged": false
   },
@@ -2093,69 +1865,57 @@ window.SITE_DATA = {
    "unmerged": false
   },
   {
-   "finding_id": "F1014",
-   "statement": "Area-based coordination is being piloted at local level, accompanied by capacity mapping of local partners with a focus on local NGOs, women-led organisations and local government offices.",
-   "theme": [
-    "ABC"
-   ],
-   "example": "",
-   "type": "practice",
-   "strength": "low",
-   "n_records": 1,
-   "n_sources": 1,
-   "n_streams": 1,
-   "streams": [
-    "transcript"
-   ],
-   "countries": [
-    "BGD"
-   ],
-   "tags": [
-    "capacity",
-    "coordination-architecture",
-    "localisation"
-   ],
-   "actors": [
-    "cluster",
-    "gov-local",
-    "local-ngo"
-   ],
-   "record_ids": [
-    "E0510"
-   ],
-   "unmerged": false
-  },
-  {
    "finding_id": "F1015",
-   "statement": "A localisation capacity assessment was carried out with global support, scoring where the sector stands against the localisation agenda.",
+   "statement": "Where localisation is being measured rather than asserted, the tools are concrete: a capacity assessment scoring the sector against localisation commitments with global support, partner capacity mapping focused on local NGOs and women-led organisations, national NGOs co-coordinating at subnational level, and national organisations leading the country assessment programme or chairing the outbreak technical group.",
    "theme": [
     "ABC",
     "Transition"
    ],
-   "example": "",
+   "example": "Bangladesh — a localisation capacity assessment was carried out with global support, scoring where the sector stands against the localisation commitments.",
    "type": "practice",
-   "strength": "low",
-   "n_records": 1,
-   "n_sources": 1,
+   "strength": "high",
+   "n_records": 5,
+   "n_sources": 3,
    "n_streams": 1,
    "streams": [
     "transcript"
    ],
    "countries": [
-    "BGD"
+    "BGD",
+    "MOZ",
+    "NGA"
    ],
    "tags": [
+    "capacity",
+    "coordination-architecture",
+    "hpc",
+    "information-management",
     "localisation",
+    "partnerships",
     "performance"
    ],
    "actors": [
     "cluster",
-    "local-ngo"
+    "gov-local",
+    "gov-national",
+    "ingo",
+    "local-ngo",
+    "ocha",
+    "un-agency"
    ],
    "record_ids": [
-    "E0511"
+    "E0447",
+    "E0451",
+    "E0510",
+    "E0511",
+    "E0543"
    ],
-   "unmerged": false
+   "unmerged": false,
+   "highlight": {
+    "headline": "Measuring localisation rather than asserting it",
+    "plain": "Where localisation is being measured, the tools are concrete: a capacity assessment scoring the sector against the localisation commitments, partner capacity mapping focused on local NGOs and women-led organisations, national NGOs co-coordinating at subnational level, and national organisations leading the country assessment programme or chairing the outbreak technical group.",
+    "so_what": "These are transferable. A scored self-assessment against the commitments is a modest exercise and gives a baseline to argue from."
+   }
   },
   {
    "finding_id": "F102",
@@ -2263,32 +2023,56 @@ window.SITE_DATA = {
   },
   {
    "finding_id": "F107",
-   "statement": "Maintain direct engagement with line ministries — Sustaining a direct relationship with government counterparts — independent of ABC structures — is necessary to protect the cluster’s standing in higher-level coordination discussions and to reaffirm the technical leadership of the WASH Cluster",
+   "statement": "Keep a direct relationship with line ministries, independent of whether a transition is under way. What moved engagement was practical: joint agenda setting, inviting ministry representatives to chair coordination meetings, field missions to meet newly appointed officials after briefing them first, and switching counterpart where the formal ministry proved not to be operational in emergencies.",
    "theme": [
-    "ABC"
+    "Transition"
    ],
-   "example": "",
+   "example": "Colombia — when the regulatory water ministry proved not to be operational during emergencies, the cluster moved its transition counterpart to the health ministry.",
    "type": "recommendation",
-   "strength": "low",
-   "n_records": 1,
-   "n_sources": 1,
-   "n_streams": 1,
+   "strength": "high",
+   "n_records": 7,
+   "n_sources": 5,
+   "n_streams": 2,
    "streams": [
-    "sdr"
+    "sdr",
+    "transcript"
    ],
-   "countries": [],
+   "countries": [
+    "BFA",
+    "COL",
+    "HTI",
+    "SOM"
+   ],
    "tags": [
+    "advocacy",
+    "capacity",
+    "coordination-architecture",
     "government-engagement",
-    "partnerships"
+    "partnerships",
+    "transition-handover"
    ],
    "actors": [
     "cluster",
-    "gov-national"
+    "donor",
+    "gov-local",
+    "gov-national",
+    "un-agency"
    ],
    "record_ids": [
-    "E0079"
+    "E0026",
+    "E0027",
+    "E0079",
+    "E0381",
+    "E0516",
+    "E0577",
+    "E0587"
    ],
-   "unmerged": false
+   "unmerged": false,
+   "highlight": {
+    "headline": "Keep the ministry relationship whether or not you are transitioning",
+    "plain": "What moved government engagement was practical and unglamorous: joint agenda setting, inviting ministry representatives to chair coordination meetings, field missions to meet newly appointed officials after briefing them first, and switching counterpart where the formal ministry turned out not to be operational in emergencies.",
+    "so_what": "Maintain the relationship independently of the transition timetable. Every case where engagement improved came from ordinary contact, not from a transition process."
+   }
   },
   {
    "finding_id": "F109",
@@ -2329,68 +2113,6 @@ window.SITE_DATA = {
    }
   },
   {
-   "finding_id": "F1100",
-   "statement": "The emergency classification is being stepped down while the crisis itself continues, which the sector expects to reduce institutional attention rather than reflect improved conditions.",
-   "theme": [
-    "Transition"
-   ],
-   "example": "",
-   "type": "context",
-   "strength": "low",
-   "n_records": 1,
-   "n_sources": 1,
-   "n_streams": 1,
-   "streams": [
-    "transcript"
-   ],
-   "countries": [
-    "HTI"
-   ],
-   "tags": [
-    "advocacy",
-    "funding"
-   ],
-   "actors": [
-    "cluster",
-    "un-agency"
-   ],
-   "record_ids": [
-    "E0515"
-   ],
-   "unmerged": false
-  },
-  {
-   "finding_id": "F1101",
-   "statement": "After several years of limited engagement, the national water authority became noticeably more active over recent months following a new appointment, and has begun facilitating meetings itself.",
-   "theme": [
-    "Transition"
-   ],
-   "example": "",
-   "type": "enabler",
-   "strength": "low",
-   "n_records": 1,
-   "n_sources": 1,
-   "n_streams": 1,
-   "streams": [
-    "transcript"
-   ],
-   "countries": [
-    "HTI"
-   ],
-   "tags": [
-    "coordination-architecture",
-    "government-engagement"
-   ],
-   "actors": [
-    "cluster",
-    "gov-national"
-   ],
-   "record_ids": [
-    "E0516"
-   ],
-   "unmerged": false
-  },
-  {
    "finding_id": "F1103",
    "statement": "Coordination runs as a government-led sector rather than an activated cluster, because the government does not want activation. The sector operates inside a national system, and the authorities' position is that support should go to subnational coordination rather than to national co-leadership.",
    "theme": [
@@ -2429,37 +2151,6 @@ window.SITE_DATA = {
    "unmerged": false
   },
   {
-   "finding_id": "F1105",
-   "statement": "A national NGO has expressed interest in co-leadership and sustained that interest for over a year, giving the sector a candidate already familiar with the response.",
-   "theme": [
-    "Transition"
-   ],
-   "example": "",
-   "type": "enabler",
-   "strength": "low",
-   "n_records": 1,
-   "n_sources": 1,
-   "n_streams": 1,
-   "streams": [
-    "transcript"
-   ],
-   "countries": [
-    "HTI"
-   ],
-   "tags": [
-    "localisation",
-    "partnerships"
-   ],
-   "actors": [
-    "cluster",
-    "local-ngo"
-   ],
-   "record_ids": [
-    "E0520"
-   ],
-   "unmerged": false
-  },
-  {
    "finding_id": "F111",
    "statement": "Work with OCHA on transparent deactivation criteria — Coordination structures are formally reviewed each year; making that review systematic, and publishing the criteria behind deactivation decisions, would give countries a predictable basis for planning.",
    "theme": [
@@ -2490,39 +2181,6 @@ window.SITE_DATA = {
     "E0084",
     "E0085",
     "E0086"
-   ],
-   "unmerged": false
-  },
-  {
-   "finding_id": "F1112",
-   "statement": "Government uses its own monitoring platform, shared across humanitarian and development work, and has consistently done so — a position not tested against the requirement to move partner reporting to a central humanitarian system.",
-   "theme": [
-    "ABC",
-    "Transition"
-   ],
-   "example": "",
-   "type": "barrier",
-   "strength": "low",
-   "n_records": 1,
-   "n_sources": 1,
-   "n_streams": 1,
-   "streams": [
-    "transcript"
-   ],
-   "countries": [
-    "HTI"
-   ],
-   "tags": [
-    "government-engagement",
-    "information-management",
-    "nexus"
-   ],
-   "actors": [
-    "cluster",
-    "gov-national"
-   ],
-   "record_ids": [
-    "E0527"
    ],
    "unmerged": false
   },
@@ -2804,38 +2462,6 @@ window.SITE_DATA = {
    "unmerged": false
   },
   {
-   "finding_id": "F1204",
-   "statement": "All provincial focal points are lead agency staff except one province where a national NGO co-coordinates, an arrangement started recently with ongoing capacity support.",
-   "theme": [
-    "ABC",
-    "Transition"
-   ],
-   "example": "",
-   "type": "practice",
-   "strength": "low",
-   "n_records": 1,
-   "n_sources": 1,
-   "n_streams": 1,
-   "streams": [
-    "transcript"
-   ],
-   "countries": [
-    "MOZ"
-   ],
-   "tags": [
-    "coordination-architecture",
-    "localisation"
-   ],
-   "actors": [
-    "local-ngo",
-    "un-agency"
-   ],
-   "record_ids": [
-    "E0543"
-   ],
-   "unmerged": false
-  },
-  {
    "finding_id": "F1205",
    "statement": "District-level reports generated from partner reporting data give district authorities a view of what WASH activity is ongoing, planned or complete in their area.",
    "theme": [
@@ -2900,38 +2526,6 @@ window.SITE_DATA = {
    "unmerged": false
   },
   {
-   "finding_id": "F1302",
-   "statement": "The ministry has not yet taken on convening the coordination meeting, which is still called and chaired by the outgoing coordinator.",
-   "theme": [
-    "Transition"
-   ],
-   "example": "",
-   "type": "barrier",
-   "strength": "low",
-   "n_records": 1,
-   "n_sources": 1,
-   "n_streams": 1,
-   "streams": [
-    "transcript"
-   ],
-   "countries": [
-    "ETH"
-   ],
-   "tags": [
-    "coordination-architecture",
-    "government-engagement",
-    "transition-handover"
-   ],
-   "actors": [
-    "cluster",
-    "gov-national"
-   ],
-   "record_ids": [
-    "E0564"
-   ],
-   "unmerged": false
-  },
-  {
    "finding_id": "F1306",
    "statement": "The cluster sits under the emergency unit rather than the sector programme section, so there is no natural route for programme resources or attention to support the transition.",
    "theme": [
@@ -2965,36 +2559,48 @@ window.SITE_DATA = {
   },
   {
    "finding_id": "F1307",
-   "statement": "Government will lead the food, agriculture and nutrition assessments; other sectors may run their own tools, but results have to be endorsed by the ministry before use.",
+   "statement": "Government increasingly sets the terms of assessment. It leads the assessments for some sectors outright, allows others to run their own tools but requires the results to be endorsed, and can delay or withhold authorisation — so preparatory work is done in advance of approval to avoid losing the collection window entirely.",
    "theme": [
-    "ABC",
     "Transition"
    ],
-   "example": "",
+   "example": "Ethiopia — government will lead the food, agriculture and nutrition assessments; other sectors may run their own tools, but the results have to be endorsed by the ministry.",
    "type": "context",
-   "strength": "low",
-   "n_records": 1,
-   "n_sources": 1,
+   "strength": "high",
+   "n_records": 4,
+   "n_sources": 4,
    "n_streams": 1,
    "streams": [
     "transcript"
    ],
    "countries": [
-    "ETH"
+    "COL",
+    "ETH",
+    "LBN",
+    "SYR"
    ],
    "tags": [
     "government-engagement",
     "hpc",
+    "inclusion",
     "information-management"
    ],
    "actors": [
     "cluster",
-    "gov-national"
+    "gov-national",
+    "ocha"
    ],
    "record_ids": [
-    "E0569"
+    "E0401",
+    "E0489",
+    "E0569",
+    "E0664"
    ],
-   "unmerged": false
+   "unmerged": false,
+   "highlight": {
+    "headline": "Government increasingly sets the terms of assessment",
+    "plain": "Government leads the assessments for some sectors outright, allows others to run their own tools but requires the results to be endorsed, and can delay or withhold authorisation altogether. Teams have responded by doing the preparatory work in advance of approval so that collection can start the moment it arrives.",
+    "so_what": "Build the approval step into the assessment timetable as a dependency with its own lead time, and prepare against it rather than after it."
+   }
   },
   {
    "finding_id": "F1308",
@@ -3111,40 +2717,6 @@ window.SITE_DATA = {
    "unmerged": false
   },
   {
-   "finding_id": "F1401",
-   "statement": "The advocacy note will be disseminated partly through an existing sector dialogue framework where the situation is presented to government and donors every two months, using a channel that already exists rather than creating one.",
-   "theme": [
-    "ABC",
-    "Transition"
-   ],
-   "example": "",
-   "type": "enabler",
-   "strength": "low",
-   "n_records": 1,
-   "n_sources": 1,
-   "n_streams": 1,
-   "streams": [
-    "transcript"
-   ],
-   "countries": [
-    "BFA"
-   ],
-   "tags": [
-    "advocacy",
-    "government-engagement",
-    "partnerships"
-   ],
-   "actors": [
-    "cluster",
-    "donor",
-    "gov-national"
-   ],
-   "record_ids": [
-    "E0577"
-   ],
-   "unmerged": false
-  },
-  {
    "finding_id": "F1402",
    "statement": "The global financial tracking service does not reflect actual sector funding in the country, so the cluster runs its own funding matrix to establish the real trend and to map which donors have financed the sector.",
    "theme": [
@@ -3212,100 +2784,58 @@ window.SITE_DATA = {
   },
   {
    "finding_id": "F1404",
-   "statement": "WASH is not treated as a priority in national decision-making or in humanitarian resource allocation, even where it registers as a priority at community level and in needs data.",
+   "statement": "WASH loses allocation arguments it should win. It is not treated as a priority in national decision-making or in humanitarian resource allocation even where it registers as a need; it goes unprioritised in pooled fund rounds, obliging the cluster to lobby other sectors to embed WASH activities in their proposals; and where a single strategic outcome is set above sector level, the gaps that fall outside it stay unfunded.",
    "theme": [
-    "ABC",
-    "Transition"
+    "Fundamentals"
    ],
-   "example": "",
+   "example": "Colombia — the sector's main humanitarian donor prioritises protection, health and education, funding very little WASH directly.",
    "type": "barrier",
-   "strength": "low",
-   "n_records": 1,
-   "n_sources": 1,
-   "n_streams": 1,
+   "strength": "high",
+   "n_records": 7,
+   "n_sources": 6,
+   "n_streams": 2,
    "streams": [
+    "sdr",
     "transcript"
    ],
    "countries": [
-    "BFA"
+    "BFA",
+    "COL",
+    "HTI",
+    "MMR",
+    "SDN",
+    "YEM"
    ],
    "tags": [
     "advocacy",
-    "funding"
+    "funding",
+    "inclusion",
+    "multisector",
+    "pooled-funds"
    ],
    "actors": [
     "cluster",
     "donor",
-    "gov-national"
+    "gov-national",
+    "local-ngo",
+    "ocha",
+    "un-agency"
    ],
    "record_ids": [
+    "E0056",
+    "E0161",
+    "E0394",
+    "E0402",
+    "E0430",
+    "E0515",
     "E0580"
    ],
-   "unmerged": false
-  },
-  {
-   "finding_id": "F1409",
-   "statement": "Running a parallel government data collection alongside the cluster system while the cluster is still active creates duplicate reporting for partners and divides the coordination picture, where a sequenced handover of the same function would not.",
-   "theme": [
-    "Transition"
-   ],
-   "example": "",
-   "type": "barrier",
-   "strength": "low",
-   "n_records": 1,
-   "n_sources": 1,
-   "n_streams": 1,
-   "streams": [
-    "transcript"
-   ],
-   "countries": [
-    "BFA"
-   ],
-   "tags": [
-    "government-engagement",
-    "information-management",
-    "transition-handover"
-   ],
-   "actors": [
-    "cluster",
-    "gov-national",
-    "ingo"
-   ],
-   "record_ids": [
-    "E0585"
-   ],
-   "unmerged": false
-  },
-  {
-   "finding_id": "F1411",
-   "statement": "A field mission is planned to meet the newly appointed regional officials directly, after asking in-country colleagues to brief them first on what regional coordination involves.",
-   "theme": [
-    "Transition"
-   ],
-   "example": "",
-   "type": "practice",
-   "strength": "low",
-   "n_records": 1,
-   "n_sources": 1,
-   "n_streams": 1,
-   "streams": [
-    "transcript"
-   ],
-   "countries": [
-    "BFA"
-   ],
-   "tags": [
-    "capacity",
-    "government-engagement"
-   ],
-   "actors": [
-    "cluster",
-    "gov-local"
-   ],
-   "record_ids": [
-    "E0587"
-   ],
-   "unmerged": false
+   "unmerged": false,
+   "highlight": {
+    "headline": "WASH loses arguments it should win",
+    "plain": "WASH is not treated as a priority in national decision-making or in humanitarian allocation, even where it registers clearly as a need. It goes unprioritised in pooled fund rounds, leaving the cluster to lobby other sectors to embed WASH activities in their proposals. Where a single strategic outcome is set above sector level, whatever falls outside it stays unfunded.",
+    "so_what": "Bring the allocation argument with evidence attached and bring it early — the cases where it worked involved sustained presence at country team level, not a better proposal."
+   }
   },
   {
    "finding_id": "F1413",
@@ -3438,39 +2968,6 @@ window.SITE_DATA = {
    "unmerged": false
   },
   {
-   "finding_id": "F1509",
-   "statement": "Advocacy with the fund is being framed around complementarity: nutrition and food security outcomes both depend on water, so allocations to those sectors should carry corresponding WASH provision rather than leaving it unfunded.",
-   "theme": [
-    "ABC"
-   ],
-   "example": "",
-   "type": "practice",
-   "strength": "low",
-   "n_records": 1,
-   "n_sources": 1,
-   "n_streams": 1,
-   "streams": [
-    "transcript"
-   ],
-   "countries": [
-    "MLI"
-   ],
-   "tags": [
-    "advocacy",
-    "multisector",
-    "pooled-funds"
-   ],
-   "actors": [
-    "cluster",
-    "donor",
-    "ocha"
-   ],
-   "record_ids": [
-    "E0607"
-   ],
-   "unmerged": false
-  },
-  {
    "finding_id": "F1600",
    "statement": "Eight clusters were confirmed following the humanitarian reset, with WASH remaining standalone while shelter-related coordination was reorganised into three, and the intersectoral group continues to meet fortnightly.",
    "theme": [
@@ -3531,165 +3028,6 @@ window.SITE_DATA = {
    "record_ids": [
     "E0619",
     "E0624"
-   ],
-   "unmerged": false
-  },
-  {
-   "finding_id": "F1605",
-   "statement": "The pooled fund allocation strategy changed repeatedly during a single round — the split between national and international partners, the number of envelopes and partner eligibility were all revised as the process ran.",
-   "theme": [
-    "ABC"
-   ],
-   "example": "",
-   "type": "barrier",
-   "strength": "low",
-   "n_records": 1,
-   "n_sources": 1,
-   "n_streams": 1,
-   "streams": [
-    "transcript"
-   ],
-   "countries": [
-    "SSD"
-   ],
-   "tags": [
-    "funding",
-    "guidance",
-    "pooled-funds"
-   ],
-   "actors": [
-    "cluster",
-    "ingo",
-    "ocha"
-   ],
-   "record_ids": [
-    "E0621"
-   ],
-   "unmerged": false
-  },
-  {
-   "finding_id": "F1606",
-   "statement": "Global guidance on the allocation existed and had been circulated to countries, but was not shared onward in country, so clusters prepared without knowing the criteria that applied.",
-   "theme": [
-    "ABC"
-   ],
-   "example": "",
-   "type": "barrier",
-   "strength": "low",
-   "n_records": 1,
-   "n_sources": 1,
-   "n_streams": 1,
-   "streams": [
-    "transcript"
-   ],
-   "countries": [
-    "SSD"
-   ],
-   "tags": [
-    "advocacy",
-    "guidance",
-    "pooled-funds"
-   ],
-   "actors": [
-    "cluster",
-    "ocha"
-   ],
-   "record_ids": [
-    "E0622"
-   ],
-   "unmerged": false
-  },
-  {
-   "finding_id": "F1607",
-   "statement": "One funding envelope for continuity of services covered nutrition, health, protection and food security in areas affected by cholera and hepatitis E, without including WASH.",
-   "theme": [
-    "ABC"
-   ],
-   "example": "",
-   "type": "barrier",
-   "strength": "low",
-   "n_records": 1,
-   "n_sources": 1,
-   "n_streams": 1,
-   "streams": [
-    "transcript"
-   ],
-   "countries": [
-    "SSD"
-   ],
-   "tags": [
-    "advocacy",
-    "multisector",
-    "pooled-funds"
-   ],
-   "actors": [
-    "cluster",
-    "donor",
-    "ocha"
-   ],
-   "record_ids": [
-    "E0623"
-   ],
-   "unmerged": false
-  },
-  {
-   "finding_id": "F1609",
-   "statement": "Proposal review timelines are short — at times several proposals to assess within a day — which limits how thoroughly each can be checked against sector standards.",
-   "theme": [
-    "ABC"
-   ],
-   "example": "",
-   "type": "barrier",
-   "strength": "low",
-   "n_records": 1,
-   "n_sources": 1,
-   "n_streams": 1,
-   "streams": [
-    "transcript"
-   ],
-   "countries": [
-    "SSD"
-   ],
-   "tags": [
-    "performance",
-    "pooled-funds"
-   ],
-   "actors": [
-    "cluster",
-    "ocha"
-   ],
-   "record_ids": [
-    "E0625"
-   ],
-   "unmerged": false
-  },
-  {
-   "finding_id": "F1610",
-   "statement": "A shared scoring sheet with proposals as columns and criteria as rows, divided among reviewers with deliberate overlap so every proposal is read by at least two people, makes a large review round manageable and leaves a written record.",
-   "theme": [
-    "ABC"
-   ],
-   "example": "",
-   "type": "practice",
-   "strength": "low",
-   "n_records": 1,
-   "n_sources": 1,
-   "n_streams": 1,
-   "streams": [
-    "transcript"
-   ],
-   "countries": [],
-   "tags": [
-    "partnerships",
-    "performance",
-    "pooled-funds"
-   ],
-   "actors": [
-    "cluster",
-    "ingo"
-   ],
-   "record_ids": [
-    "E0626"
    ],
    "unmerged": false
   },
@@ -4160,38 +3498,6 @@ window.SITE_DATA = {
    ],
    "record_ids": [
     "E0662"
-   ],
-   "unmerged": false
-  },
-  {
-   "finding_id": "F1727",
-   "statement": "Preparatory steps on the joint assessment are taken in advance of government approval, so that collection can begin immediately once approval is given rather than starting from scratch.",
-   "theme": [
-    "Fundamentals"
-   ],
-   "example": "",
-   "type": "enabler",
-   "strength": "low",
-   "n_records": 1,
-   "n_sources": 1,
-   "n_streams": 1,
-   "streams": [
-    "transcript"
-   ],
-   "countries": [
-    "SYR"
-   ],
-   "tags": [
-    "government-engagement",
-    "hpc"
-   ],
-   "actors": [
-    "cluster",
-    "gov-national",
-    "ocha"
-   ],
-   "record_ids": [
-    "E0664"
    ],
    "unmerged": false
   },
@@ -4955,127 +4261,51 @@ window.SITE_DATA = {
    "unmerged": false
   },
   {
-   "finding_id": "F233",
-   "statement": "Funding allocation strategies show the difficulty of aligning financial flows with area-based targeting and priorities.",
-   "theme": [
-    "ABC"
-   ],
-   "example": "",
-   "type": "barrier",
-   "strength": "low",
-   "n_records": 1,
-   "n_sources": 1,
-   "n_streams": 1,
-   "streams": [
-    "sdr"
-   ],
-   "countries": [
-    "SYR"
-   ],
-   "tags": [
-    "funding",
-    "geographic-targeting",
-    "pooled-funds"
-   ],
-   "actors": [
-    "donor",
-    "ocha"
-   ],
-   "record_ids": [
-    "E0154"
-   ],
-   "unmerged": false
-  },
-  {
    "finding_id": "F234",
-   "statement": "Funding remains largely centralised, limiting the ability of local actors to engage meaningfully in coordination and implementation.",
+   "statement": "Funding stays centralised, which is what keeps local actors out of coordination rather than any question of their capability. Material costs are a structural barrier to national and local NGO participation, most of an allocation reaching the sector still goes to UN agencies, and cost differentials make localisation an attractive framing for a shrinking response without the funding architecture changing to match.",
    "theme": [
-    "ABC"
+    "Fundamentals"
    ],
-   "example": "",
+   "example": "Bangladesh — around one eighth of the pooled fund allocation reaching the sector went to international NGOs, and the remainder to UN agencies.",
    "type": "barrier",
-   "strength": "low",
-   "n_records": 1,
-   "n_sources": 1,
-   "n_streams": 1,
+   "strength": "high",
+   "n_records": 6,
+   "n_sources": 6,
+   "n_streams": 2,
    "streams": [
-    "sdr"
-   ],
-   "countries": [],
-   "tags": [
-    "funding",
-    "localisation"
-   ],
-   "actors": [
-    "donor",
-    "local-ngo"
-   ],
-   "record_ids": [
-    "E0155"
-   ],
-   "unmerged": false
-  },
-  {
-   "finding_id": "F235",
-   "statement": "The need to establish dedicated coordination platforms reflects the absence of embedded funding mechanisms to support integrated coordination approaches.",
-   "theme": [
-    "ABC"
-   ],
-   "example": "",
-   "type": "barrier",
-   "strength": "low",
-   "n_records": 1,
-   "n_sources": 1,
-   "n_streams": 1,
-   "streams": [
-    "sdr"
+    "sdr",
+    "transcript"
    ],
    "countries": [
-    "AFG"
+    "BGD"
    ],
    "tags": [
     "coordination-architecture",
-    "funding"
+    "funding",
+    "localisation",
+    "pooled-funds"
    ],
    "actors": [
     "cluster",
-    "donor"
+    "donor",
+    "ingo",
+    "local-ngo",
+    "un-agency"
    ],
    "record_ids": [
-    "E0156"
+    "E0155",
+    "E0164",
+    "E0215",
+    "E0285",
+    "E0370",
+    "E0500"
    ],
-   "unmerged": false
-  },
-  {
-   "finding_id": "F239",
-   "statement": "Under current resource constraints, advocating for area-based coordination resourcing and advocating for sector response funding have become competing rather than complementary asks on the same diminished pool.",
-   "theme": [
-    "ABC"
-   ],
-   "example": "",
-   "type": "barrier",
-   "strength": "low",
-   "n_records": 1,
-   "n_sources": 1,
-   "n_streams": 1,
-   "streams": [
-    "sdr"
-   ],
-   "countries": [
-    "YEM"
-   ],
-   "tags": [
-    "advocacy",
-    "funding"
-   ],
-   "actors": [
-    "cluster",
-    "donor"
-   ],
-   "record_ids": [
-    "E0161"
-   ],
-   "unmerged": false
+   "unmerged": false,
+   "highlight": {
+    "headline": "The money is centralised, which is what keeps local actors out",
+    "plain": "Local actors are not excluded from coordination because of doubts about their capability. They are excluded because material costs are a structural barrier to participation, and because most of an allocation reaching the sector still goes to UN agencies. Cost differentials then make localisation an attractive framing for a shrinking response, without the funding architecture changing to match.",
+    "so_what": "Treat funding access as the localisation indicator. Participation without it is a reporting requirement, not a transfer of authority."
+   }
   },
   {
    "finding_id": "F240",
@@ -5154,62 +4384,51 @@ window.SITE_DATA = {
    }
   },
   {
-   "finding_id": "F242",
-   "statement": "Material costs are a structural barrier limiting national and local NGO participation and leadership in area-based coordination, rather than an incidental detail.",
-   "theme": [
-    "ABC"
-   ],
-   "example": "",
-   "type": "barrier",
-   "strength": "low",
-   "n_records": 1,
-   "n_sources": 1,
-   "n_streams": 1,
-   "streams": [
-    "sdr"
-   ],
-   "countries": [],
-   "tags": [
-    "funding",
-    "localisation"
-   ],
-   "actors": [
-    "donor",
-    "local-ngo"
-   ],
-   "record_ids": [
-    "E0164"
-   ],
-   "unmerged": false
-  },
-  {
    "finding_id": "F243",
-   "statement": "The terms of reference and the accompanying guidance differ on who is responsible for resourcing area-based structures, which leaves country coordinators without a clear basis for funding conversations.",
+   "statement": "Nobody agreed who resources area-based structures. The terms of reference and the accompanying guidance differ on the point, so it falls between them; dedicated coordination platforms have had to be created precisely because no funding mechanism supports integrated working; and aligning financial flows with area-based targeting has proved consistently difficult.",
    "theme": [
     "ABC"
    ],
    "example": "",
    "type": "barrier",
-   "strength": "low",
-   "n_records": 1,
-   "n_sources": 1,
+   "strength": "high",
+   "n_records": 5,
+   "n_sources": 5,
    "n_streams": 1,
    "streams": [
     "sdr"
    ],
-   "countries": [],
+   "countries": [
+    "AFG",
+    "SYR"
+   ],
    "tags": [
+    "coordination-architecture",
     "funding",
-    "guidance"
+    "geographic-targeting",
+    "guidance",
+    "multisector",
+    "pooled-funds"
    ],
    "actors": [
     "cluster",
-    "ocha"
+    "donor",
+    "ocha",
+    "operational-cell"
    ],
    "record_ids": [
-    "E0165"
+    "E0154",
+    "E0156",
+    "E0165",
+    "E0197",
+    "E0224"
    ],
-   "unmerged": false
+   "unmerged": false,
+   "highlight": {
+    "headline": "Nobody agreed who pays for area structures",
+    "plain": "The terms of reference and the guidance that accompanies them differ on who is responsible for resourcing area-based structures, so the question falls between them. Dedicated platforms have had to be created precisely because no funding mechanism supports integrated working, and aligning financial flows to area-based targeting has proved consistently hard.",
+    "so_what": "Settle the resourcing question in the terms of reference. It is one line, and its absence is doing a surprising amount of damage."
+   }
   },
   {
    "finding_id": "F245",
@@ -5313,34 +4532,6 @@ window.SITE_DATA = {
    "unmerged": false
   },
   {
-   "finding_id": "F253",
-   "statement": "Shifting decision-making authority to local level, where supported by inclusive structures, generates more context-appropriate solutions.",
-   "theme": [
-    "ABC"
-   ],
-   "example": "",
-   "type": "enabler",
-   "strength": "low",
-   "n_records": 1,
-   "n_sources": 1,
-   "n_streams": 1,
-   "streams": [
-    "sdr"
-   ],
-   "countries": [],
-   "tags": [
-    "localisation"
-   ],
-   "actors": [
-    "gov-local",
-    "local-ngo"
-   ],
-   "record_ids": [
-    "E0179"
-   ],
-   "unmerged": false
-  },
-  {
    "finding_id": "F254",
    "statement": "Localisation of coordination raises uneven technical capacity at subnational level, inconsistent quality assurance across areas, and exposure of coordination priorities to local political dynamics.",
    "theme": [
@@ -5372,60 +4563,109 @@ window.SITE_DATA = {
   },
   {
    "finding_id": "F258",
-   "statement": "Area-based models facilitated participation by subnational authorities, local and national NGOs and affected people, but participation alone rarely increased their ability to influence the response.",
+   "statement": "Local actors chair and participate, but the terms are set elsewhere. Paid coordinator posts have been created alongside elected chairs with job descriptions drafted centrally; language barriers and untranslated materials keep local actors out of substantive discussion; and local organisations remain marginal in the design of transition, as distinct from its implementation.",
    "theme": [
-    "ABC"
+    "ABC",
+    "Transition"
    ],
-   "example": "",
+   "example": "Myanmar — paid area coordinator posts were created alongside the elected chairs and co-chairs, with the job descriptions drafted centrally.",
    "type": "barrier",
-   "strength": "low",
-   "n_records": 1,
-   "n_sources": 1,
-   "n_streams": 1,
+   "strength": "high",
+   "n_records": 6,
+   "n_sources": 6,
+   "n_streams": 2,
    "streams": [
-    "sdr"
+    "sdr",
+    "transcript"
    ],
-   "countries": [],
+   "countries": [
+    "IRQ",
+    "MMR",
+    "NGA",
+    "SOM"
+   ],
    "tags": [
     "aap",
-    "localisation"
+    "capacity",
+    "coordination-architecture",
+    "inclusion",
+    "localisation",
+    "transition-handover"
    ],
    "actors": [
+    "cluster",
     "community",
-    "local-ngo"
+    "local-ngo",
+    "ocha",
+    "operational-cell",
+    "un-agency"
    ],
    "record_ids": [
-    "E0185"
+    "E0043",
+    "E0185",
+    "E0279",
+    "E0280",
+    "E0286",
+    "E0288"
    ],
-   "unmerged": false
+   "unmerged": false,
+   "highlight": {
+    "headline": "Local actors chair, but the terms are set elsewhere",
+    "plain": "Paid coordinator posts created alongside elected chairs, with the job descriptions drafted centrally. Untranslated materials and language barriers keeping local actors out of substantive discussion. Local organisations marginal in the design of transition, as distinct from its implementation. The formal position is local; the decisions that shape the role are not.",
+    "so_what": "Look at who drafts the terms of reference, not who holds the chair."
+   }
   },
   {
    "finding_id": "F259",
-   "statement": "Local ownership was achieved only where international actors supported local decision-making processes rather than running their own.",
+   "statement": "Local ownership was achieved where international actors supported local decision-making rather than running the process alongside it. Formally appointing local NGOs as co-chairs measurably increases wider local participation; shifting authority to local level produces more context-appropriate decisions where the structures supporting it are inclusive; and a national organisation sustaining interest in co-leadership over a year gives the sector a real candidate rather than a theoretical one.",
    "theme": [
-    "ABC"
+    "ABC",
+    "Transition"
    ],
-   "example": "",
+   "example": "Indonesia — international organisations shifted to supporting existing local leadership instead of maintaining parallel systems.",
    "type": "enabler",
-   "strength": "low",
-   "n_records": 1,
-   "n_sources": 1,
-   "n_streams": 1,
+   "strength": "high",
+   "n_records": 7,
+   "n_sources": 7,
+   "n_streams": 2,
    "streams": [
-    "sdr"
+    "sdr",
+    "transcript"
    ],
-   "countries": [],
+   "countries": [
+    "BGD",
+    "CMR",
+    "HTI",
+    "IDN"
+   ],
    "tags": [
-    "localisation"
+    "coordination-architecture",
+    "localisation",
+    "partnerships",
+    "transition-handover"
    ],
    "actors": [
+    "cluster",
+    "gov-local",
     "ingo",
-    "local-ngo"
+    "local-ngo",
+    "un-agency"
    ],
    "record_ids": [
-    "E0186"
+    "E0179",
+    "E0186",
+    "E0318",
+    "E0319",
+    "E0323",
+    "E0498",
+    "E0520"
    ],
-   "unmerged": false
+   "unmerged": false,
+   "highlight": {
+    "headline": "Support local decision-making rather than running it alongside",
+    "plain": "Local ownership was achieved where international actors backed local decision-making instead of maintaining a parallel process next to it. Formally appointing local NGOs as co-chairs measurably increases wider local participation, and a national organisation that has sustained interest in co-leadership over a year is a real candidate rather than a theoretical one.",
+    "so_what": "The distinction that matters is between supporting a process and running one beside it. It shows up repeatedly and in both directions."
+   }
   },
   {
    "finding_id": "F260",
@@ -5597,35 +4837,6 @@ window.SITE_DATA = {
    "record_ids": [
     "E0195",
     "E0196"
-   ],
-   "unmerged": false
-  },
-  {
-   "finding_id": "F268",
-   "statement": "Area-based approaches achieved strong multisectoral linkages because they are multisectoral by design, with dedicated funding enabling sequenced and controlled responses.",
-   "theme": [
-    "ABC"
-   ],
-   "example": "",
-   "type": "enabler",
-   "strength": "low",
-   "n_records": 1,
-   "n_sources": 1,
-   "n_streams": 1,
-   "streams": [
-    "sdr"
-   ],
-   "countries": [],
-   "tags": [
-    "funding",
-    "multisector"
-   ],
-   "actors": [
-    "donor",
-    "operational-cell"
-   ],
-   "record_ids": [
-    "E0197"
    ],
    "unmerged": false
   },
@@ -5942,35 +5153,6 @@ window.SITE_DATA = {
    }
   },
   {
-   "finding_id": "F284",
-   "statement": "Financial flows remain largely centralised, sector-specific or project-based, which limits their ability to support cross-sector coordination, subnational planning and sustained local engagement.",
-   "theme": [
-    "ABC"
-   ],
-   "example": "",
-   "type": "barrier",
-   "strength": "low",
-   "n_records": 1,
-   "n_sources": 1,
-   "n_streams": 1,
-   "streams": [
-    "sdr"
-   ],
-   "countries": [],
-   "tags": [
-    "coordination-architecture",
-    "funding"
-   ],
-   "actors": [
-    "cluster",
-    "donor"
-   ],
-   "record_ids": [
-    "E0215"
-   ],
-   "unmerged": false
-  },
-  {
    "finding_id": "F287",
    "statement": "Improve interoperability between coordination mechanisms, information systems and implementation pathways so that joint planning and delivery become possible.",
    "theme": [
@@ -6029,65 +5211,57 @@ window.SITE_DATA = {
    "unmerged": false
   },
   {
-   "finding_id": "F293",
-   "statement": "Align funding mechanisms with area-based approaches: support integrated programming, ensure resources reach subnational actors, and fund both operational and technical coordination functions.",
-   "theme": [
-    "ABC"
-   ],
-   "example": "",
-   "type": "recommendation",
-   "strength": "low",
-   "n_records": 1,
-   "n_sources": 1,
-   "n_streams": 1,
-   "streams": [
-    "sdr"
-   ],
-   "countries": [],
-   "tags": [
-    "funding",
-    "pooled-funds"
-   ],
-   "actors": [
-    "cluster",
-    "donor",
-    "ocha"
-   ],
-   "record_ids": [
-    "E0224"
-   ],
-   "unmerged": false
-  },
-  {
    "finding_id": "F304",
-   "statement": "Humanitarian coordination ran separately from government systems rather than integrating into them, which stalled the move to national leadership.",
+   "statement": "Coordination runs beside government systems rather than inside them, which stalls the move to national leadership. Government maintains its own monitoring platform and collects partner data separately while the cluster system is still running, producing duplicate reporting; data the cluster needs sits in national registries it cannot readily access; and the ministry has not taken on convening the meeting it is meant to lead.",
    "theme": [
     "Transition"
    ],
-   "example": "",
+   "example": "Burkina Faso — government moved to collect partner activity data itself on the basis that the data should be nationally held, alongside the cluster's own collection.",
    "type": "barrier",
-   "strength": "low",
-   "n_records": 1,
-   "n_sources": 1,
-   "n_streams": 1,
+   "strength": "high",
+   "n_records": 6,
+   "n_sources": 6,
+   "n_streams": 2,
    "streams": [
-    "sdr"
+    "sdr",
+    "transcript"
    ],
    "countries": [
-    "IDN"
+    "BFA",
+    "COL",
+    "ETH",
+    "HTI",
+    "IDN",
+    "NER"
    ],
    "tags": [
+    "coordination-architecture",
     "government-engagement",
+    "guidance",
+    "information-management",
+    "nexus",
     "transition-handover"
    ],
    "actors": [
     "cluster",
-    "gov-national"
+    "gov-national",
+    "ingo",
+    "ocha"
    ],
    "record_ids": [
-    "E0229"
+    "E0229",
+    "E0397",
+    "E0467",
+    "E0527",
+    "E0564",
+    "E0585"
    ],
-   "unmerged": false
+   "unmerged": false,
+   "highlight": {
+    "headline": "Running beside government systems rather than inside them",
+    "plain": "Government maintains its own monitoring platform and collects partner data separately while the cluster system is still running, so partners report twice. Data the cluster needs sits in national registries it cannot readily access. The ministry has not taken on convening the meeting it is meant to lead. Each of these stalls the move to national leadership rather than advancing it.",
+    "so_what": "Where government wants to hold the data, work out how to feed it rather than how to run alongside it. Duplicate collection is the clearest signal that integration was never designed."
+   }
   },
   {
    "finding_id": "F307",
@@ -6385,34 +5559,56 @@ window.SITE_DATA = {
   },
   {
    "finding_id": "F323",
-   "statement": "Structural public finance constraints compromised the long-term sustainability of essential WASH services after transition.",
+   "statement": "What survives after transition is decided by public finance, not by humanitarian funding. Currency collapse left utilities unable to fund basic operations even after internationally financed repairs; recovery financing stayed blocked for years behind political deadlock; and development and reconstruction finance is channelled through UN agencies because it cannot be given directly. Where the investment did change the economics — replacing emergency trucking with solarised piped systems — the cost per cubic metre fell by more than 90 per cent.",
    "theme": [
     "Transition"
    ],
-   "example": "",
+   "example": "Lebanon — water establishments could not fund basic operations after currency collapse, even where repairs had been financed internationally.",
    "type": "barrier",
-   "strength": "low",
-   "n_records": 1,
-   "n_sources": 1,
-   "n_streams": 1,
+   "strength": "high",
+   "n_records": 6,
+   "n_sources": 5,
+   "n_streams": 2,
    "streams": [
-    "sdr"
+    "sdr",
+    "transcript"
    ],
    "countries": [
-    "IRQ"
+    "ETH",
+    "IRQ",
+    "LBN",
+    "SDN"
    ],
    "tags": [
     "funding",
-    "sustainability"
+    "nexus",
+    "partnerships",
+    "sustainability",
+    "transition-handover"
    ],
    "actors": [
+    "cluster",
+    "community",
+    "development",
     "donor",
-    "gov-national"
+    "gov-local",
+    "gov-national",
+    "un-agency"
    ],
    "record_ids": [
-    "E0251"
+    "E0251",
+    "E0351",
+    "E0352",
+    "E0355",
+    "E0433",
+    "E0434"
    ],
-   "unmerged": false
+   "unmerged": false,
+   "highlight": {
+    "headline": "Public finance decides what survives, not humanitarian funding",
+    "plain": "Currency collapse left utilities unable to fund basic operations even after internationally financed repairs. Recovery financing stayed blocked for years behind political deadlock. Development and reconstruction finance is channelled through UN agencies because it cannot be given directly. Where investment changed the underlying economics — replacing emergency trucking with solarised piped systems — cost per cubic metre fell by more than ninety per cent.",
+    "so_what": "Ask what the receiving institution's operating budget actually is before planning a handover to it. Repairs financed once do not make a service sustainable."
+   }
   },
   {
    "finding_id": "F324",
@@ -6629,66 +5825,6 @@ window.SITE_DATA = {
    }
   },
   {
-   "finding_id": "F348",
-   "statement": "Local organisations remain marginal in the design of transition itself, as distinct from its implementation.",
-   "theme": [
-    "Transition"
-   ],
-   "example": "",
-   "type": "barrier",
-   "strength": "low",
-   "n_records": 1,
-   "n_sources": 1,
-   "n_streams": 1,
-   "streams": [
-    "sdr"
-   ],
-   "countries": [],
-   "tags": [
-    "localisation",
-    "transition-handover"
-   ],
-   "actors": [
-    "cluster",
-    "local-ngo"
-   ],
-   "record_ids": [
-    "E0279"
-   ],
-   "unmerged": false
-  },
-  {
-   "finding_id": "F349",
-   "statement": "Community involvement in transition planning and implementation was limited.",
-   "theme": [
-    "Transition"
-   ],
-   "example": "",
-   "type": "barrier",
-   "strength": "low",
-   "n_records": 1,
-   "n_sources": 1,
-   "n_streams": 1,
-   "streams": [
-    "sdr"
-   ],
-   "countries": [
-    "SOM"
-   ],
-   "tags": [
-    "aap",
-    "localisation"
-   ],
-   "actors": [
-    "cluster",
-    "community"
-   ],
-   "record_ids": [
-    "E0280"
-   ],
-   "unmerged": false
-  },
-  {
    "finding_id": "F350",
    "statement": "Localisation commitments are not consistently translated into operational authority for local actors.",
    "theme": [
@@ -6722,100 +5858,6 @@ window.SITE_DATA = {
     "plain": "Local actors are consistently present in coordination but consistently without decision-making power, direct funding access, or influence over how transitions are designed. This shows up the same way across very different contexts.",
     "so_what": "Make localisation measurable in transition criteria — a seat, a budget line, and a named decision it can actually take."
    }
-  },
-  {
-   "finding_id": "F352",
-   "statement": "Cost differentials make localisation an attractive framing for a response whose funding is falling, while the pooled funding that national NGOs would need remains a small share of the response and largely inaccessible to them.",
-   "theme": [
-    "Transition"
-   ],
-   "example": "",
-   "type": "barrier",
-   "strength": "low",
-   "n_records": 1,
-   "n_sources": 1,
-   "n_streams": 1,
-   "streams": [
-    "sdr"
-   ],
-   "countries": [
-    "BGD"
-   ],
-   "tags": [
-    "funding",
-    "localisation",
-    "pooled-funds"
-   ],
-   "actors": [
-    "donor",
-    "local-ngo"
-   ],
-   "record_ids": [
-    "E0285"
-   ],
-   "unmerged": false
-  },
-  {
-   "finding_id": "F353",
-   "statement": "Abolished national staff positions are re-emerging as newly created local NGOs, which raises the question of whether localisation is moving faster than capacity and safeguards can follow.",
-   "theme": [
-    "Transition"
-   ],
-   "example": "",
-   "type": "context",
-   "strength": "low",
-   "n_records": 1,
-   "n_sources": 1,
-   "n_streams": 1,
-   "streams": [
-    "sdr"
-   ],
-   "countries": [
-    "NGA"
-   ],
-   "tags": [
-    "capacity",
-    "localisation"
-   ],
-   "actors": [
-    "local-ngo",
-    "un-agency"
-   ],
-   "record_ids": [
-    "E0286"
-   ],
-   "unmerged": false
-  },
-  {
-   "finding_id": "F355",
-   "statement": "Structural power imbalances and language barriers, including the absence of translated materials, prevent local actors from participating in or leading coordination.",
-   "theme": [
-    "Transition"
-   ],
-   "example": "",
-   "type": "barrier",
-   "strength": "low",
-   "n_records": 1,
-   "n_sources": 1,
-   "n_streams": 1,
-   "streams": [
-    "sdr"
-   ],
-   "countries": [
-    "IRQ"
-   ],
-   "tags": [
-    "inclusion",
-    "localisation"
-   ],
-   "actors": [
-    "cluster",
-    "local-ngo"
-   ],
-   "record_ids": [
-    "E0288"
-   ],
-   "unmerged": false
   },
   {
    "finding_id": "F356",
@@ -7317,67 +6359,6 @@ window.SITE_DATA = {
    }
   },
   {
-   "finding_id": "F383",
-   "statement": "International organisations shifted to supporting existing local leadership rather than maintaining parallel systems.",
-   "theme": [
-    "Transition"
-   ],
-   "example": "",
-   "type": "enabler",
-   "strength": "low",
-   "n_records": 1,
-   "n_sources": 1,
-   "n_streams": 1,
-   "streams": [
-    "sdr"
-   ],
-   "countries": [
-    "IDN"
-   ],
-   "tags": [
-    "localisation",
-    "transition-handover"
-   ],
-   "actors": [
-    "ingo",
-    "local-ngo"
-   ],
-   "record_ids": [
-    "E0318"
-   ],
-   "unmerged": false
-  },
-  {
-   "finding_id": "F384",
-   "statement": "Locally anchored coordination arrangements were explored as part of the transition design.",
-   "theme": [
-    "Transition"
-   ],
-   "example": "",
-   "type": "practice",
-   "strength": "low",
-   "n_records": 1,
-   "n_sources": 1,
-   "n_streams": 1,
-   "streams": [
-    "sdr"
-   ],
-   "countries": [
-    "CMR"
-   ],
-   "tags": [
-    "localisation"
-   ],
-   "actors": [
-    "cluster",
-    "local-ngo"
-   ],
-   "record_ids": [
-    "E0319"
-   ],
-   "unmerged": false
-  },
-  {
    "finding_id": "F386",
    "statement": "A national co-coordinator anchored in an institution rather than in a post carries continuity through the departure of international staff — particularly when recruited with an overlap period and paired with a national information management position.",
    "theme": [
@@ -7488,35 +6469,6 @@ window.SITE_DATA = {
     "plain": "Embedded coordination posts work where the receiving institution wants them. One government requested an embedded post directly; another had two staff placed into it to cover a missing emergency coordination function. Where the offer came from outside without being asked for, candidates were presented and none were taken.",
     "so_what": "Ask the ministry what it needs before offering a post. An embedded position the government asked for gets used; one it did not ask for gets declined."
    }
-  },
-  {
-   "finding_id": "F388",
-   "statement": "Formally appointing local NGOs as co-chairs of coordination forums measurably increases wider local participation.",
-   "theme": [
-    "Transition"
-   ],
-   "example": "",
-   "type": "enabler",
-   "strength": "low",
-   "n_records": 1,
-   "n_sources": 1,
-   "n_streams": 1,
-   "streams": [
-    "sdr"
-   ],
-   "countries": [],
-   "tags": [
-    "localisation",
-    "partnerships"
-   ],
-   "actors": [
-    "cluster",
-    "local-ngo"
-   ],
-   "record_ids": [
-    "E0323"
-   ],
-   "unmerged": false
   },
   {
    "finding_id": "F395",
@@ -7710,69 +6662,6 @@ window.SITE_DATA = {
    "unmerged": false
   },
   {
-   "finding_id": "F412",
-   "statement": "Replacing emergency water trucking with solarised piped systems cut water supply costs from 11.38 to 0.93 US dollars per cubic metre — the kind of investment that makes service continuity financially viable after transition.",
-   "theme": [
-    "Transition"
-   ],
-   "example": "",
-   "type": "enabler",
-   "strength": "low",
-   "n_records": 1,
-   "n_sources": 1,
-   "n_streams": 1,
-   "streams": [
-    "sdr"
-   ],
-   "countries": [
-    "ETH"
-   ],
-   "tags": [
-    "funding",
-    "sustainability",
-    "transition-handover"
-   ],
-   "actors": [
-    "development",
-    "gov-local"
-   ],
-   "record_ids": [
-    "E0351"
-   ],
-   "unmerged": false
-  },
-  {
-   "finding_id": "F413",
-   "statement": "Currency collapse left water establishments unable to fund basic operations even after internationally financed repairs, showing that continuity depends on the counterpart financial viability and not only on infrastructure.",
-   "theme": [
-    "Transition"
-   ],
-   "example": "",
-   "type": "barrier",
-   "strength": "low",
-   "n_records": 1,
-   "n_sources": 1,
-   "n_streams": 1,
-   "streams": [
-    "sdr"
-   ],
-   "countries": [
-    "LBN"
-   ],
-   "tags": [
-    "funding",
-    "sustainability"
-   ],
-   "actors": [
-    "development",
-    "gov-national"
-   ],
-   "record_ids": [
-    "E0352"
-   ],
-   "unmerged": false
-  },
-  {
    "finding_id": "F415",
    "statement": "Humanitarian actors remain within short-term funding cycles while development actors hold the long-term funding, which is the structural mismatch behind most failed handovers.",
    "theme": [
@@ -7801,37 +6690,6 @@ window.SITE_DATA = {
    "record_ids": [
     "E0250",
     "E0354"
-   ],
-   "unmerged": false
-  },
-  {
-   "finding_id": "F416",
-   "statement": "Recovery financing can remain blocked for years where political deadlock stalls reform agendas.",
-   "theme": [
-    "Transition"
-   ],
-   "example": "",
-   "type": "barrier",
-   "strength": "low",
-   "n_records": 1,
-   "n_sources": 1,
-   "n_streams": 1,
-   "streams": [
-    "sdr"
-   ],
-   "countries": [
-    "LBN"
-   ],
-   "tags": [
-    "funding",
-    "nexus"
-   ],
-   "actors": [
-    "development",
-    "gov-national"
-   ],
-   "record_ids": [
-    "E0355"
    ],
    "unmerged": false
   },
@@ -8017,35 +6875,6 @@ window.SITE_DATA = {
    "unmerged": false
   },
   {
-   "finding_id": "F425",
-   "statement": "Convert localisation commitments into authority, funding access and usable tools for local actors.",
-   "theme": [
-    "Transition"
-   ],
-   "example": "",
-   "type": "recommendation",
-   "strength": "low",
-   "n_records": 1,
-   "n_sources": 1,
-   "n_streams": 1,
-   "streams": [
-    "sdr"
-   ],
-   "countries": [],
-   "tags": [
-    "funding",
-    "localisation"
-   ],
-   "actors": [
-    "donor",
-    "local-ngo"
-   ],
-   "record_ids": [
-    "E0370"
-   ],
-   "unmerged": false
-  },
-  {
    "finding_id": "F426",
    "statement": "Find out what the capacity gap actually is before designing the support, and anchor what you build in an institution rather than in whoever currently holds the post.",
    "theme": [
@@ -8121,37 +6950,6 @@ window.SITE_DATA = {
    ],
    "record_ids": [
     "E0374"
-   ],
-   "unmerged": false
-  },
-  {
-   "finding_id": "F501",
-   "statement": "When the regulatory water ministry proved not to be operational during emergencies, the cluster shifted its transition counterpart to the health ministry, which works directly with municipalities on water quality, vector control, sanitation and hygiene.",
-   "theme": [
-    "Transition"
-   ],
-   "example": "",
-   "type": "enabler",
-   "strength": "low",
-   "n_records": 1,
-   "n_sources": 1,
-   "n_streams": 1,
-   "streams": [
-    "transcript"
-   ],
-   "countries": [
-    "COL"
-   ],
-   "tags": [
-    "government-engagement",
-    "transition-handover"
-   ],
-   "actors": [
-    "cluster",
-    "gov-national"
-   ],
-   "record_ids": [
-    "E0381"
    ],
    "unmerged": false
   },
@@ -8297,130 +7095,54 @@ window.SITE_DATA = {
   },
   {
    "finding_id": "F508",
-   "statement": "Clusters were consulted in the second allocation round, asked to submit a matrix recommending municipalities together with substantive observations, after having raised the omission from the first round.",
+   "statement": "Where the cluster brings the analysis, it gets a say. Being asked for a matrix of recommended municipalities with the supporting rationale, adding local NGOs to a review committee that had been entirely international, framing the ask around complementarity with nutrition and food security outcomes, and a shared scoring sheet with deliberate reviewer overlap have all moved allocation decisions.",
    "theme": [
-    "ABC"
+    "Fundamentals"
    ],
-   "example": "",
+   "example": "Colombia — in the second allocation round the clusters were consulted and asked to submit a matrix recommending municipalities together with the reasoning.",
    "type": "enabler",
-   "strength": "low",
-   "n_records": 1,
-   "n_sources": 1,
+   "strength": "high",
+   "n_records": 6,
+   "n_sources": 4,
    "n_streams": 1,
    "streams": [
     "transcript"
    ],
    "countries": [
-    "COL"
+    "COL",
+    "MLI",
+    "MMR"
    ],
    "tags": [
     "advocacy",
-    "pooled-funds"
-   ],
-   "actors": [
-    "cluster",
-    "ocha"
-   ],
-   "record_ids": [
-    "E0388"
-   ],
-   "unmerged": false
-  },
-  {
-   "finding_id": "F509",
-   "statement": "Life-saving criteria should extend beyond supply distribution to include contributions to protective environments — water and sanitation in schools, shelters and temporary accommodation — so that funded actions are intersectoral rather than dispersed.",
-   "theme": [
-    "Transition"
-   ],
-   "example": "",
-   "type": "recommendation",
-   "strength": "low",
-   "n_records": 1,
-   "n_sources": 1,
-   "n_streams": 1,
-   "streams": [
-    "transcript"
-   ],
-   "countries": [
-    "COL"
-   ],
-   "tags": [
-    "advocacy",
-    "multisector",
-    "pooled-funds"
-   ],
-   "actors": [
-    "cluster",
-    "donor",
-    "ocha"
-   ],
-   "record_ids": [
-    "E0389"
-   ],
-   "unmerged": false
-  },
-  {
-   "finding_id": "F510",
-   "statement": "The cluster recommended including municipalities at the second-highest severity level where armed conflict had recently intensified or where gaps in child health and preventable mortality persisted, rather than restricting allocations to the highest severity band alone.",
-   "theme": [
-    "Transition"
-   ],
-   "example": "",
-   "type": "practice",
-   "strength": "low",
-   "n_records": 1,
-   "n_sources": 1,
-   "n_streams": 1,
-   "streams": [
-    "transcript"
-   ],
-   "countries": [
-    "COL"
-   ],
-   "tags": [
     "geographic-targeting",
+    "localisation",
+    "multisector",
+    "partnerships",
+    "performance",
     "pooled-funds"
    ],
    "actors": [
     "cluster",
+    "donor",
+    "ingo",
+    "local-ngo",
     "ocha"
    ],
    "record_ids": [
-    "E0390"
+    "E0057",
+    "E0388",
+    "E0389",
+    "E0390",
+    "E0607",
+    "E0626"
    ],
-   "unmerged": false
-  },
-  {
-   "finding_id": "F511",
-   "statement": "Rapid entries into and exits from communities, driven by the need to reach the highest-severity municipalities within a short window, carry a risk of unintended harm — a point the cluster raised with the donor.",
-   "theme": [
-    "Transition"
-   ],
-   "example": "",
-   "type": "barrier",
-   "strength": "low",
-   "n_records": 1,
-   "n_sources": 1,
-   "n_streams": 1,
-   "streams": [
-    "transcript"
-   ],
-   "countries": [
-    "COL"
-   ],
-   "tags": [
-    "aap",
-    "pooled-funds"
-   ],
-   "actors": [
-    "community",
-    "donor",
-    "ingo"
-   ],
-   "record_ids": [
-    "E0391"
-   ],
-   "unmerged": false
+   "unmerged": false,
+   "highlight": {
+    "headline": "Bring the analysis and you get a say",
+    "plain": "Where the cluster arrived with the analysis, allocation decisions moved. What worked was specific: a matrix of recommended municipalities with the reasoning attached, local NGOs added to a review committee that had been entirely international, the ask framed around complementarity with nutrition and food security outcomes, and a shared scoring sheet with deliberate reviewer overlap.",
+    "so_what": "The route into allocation decisions is analytical, not positional. This is the most repeatable finding in the funding evidence."
+   }
   },
   {
    "finding_id": "F512",
@@ -8481,67 +7203,6 @@ window.SITE_DATA = {
    ],
    "record_ids": [
     "E0393"
-   ],
-   "unmerged": false
-  },
-  {
-   "finding_id": "F514",
-   "statement": "The main humanitarian donor for the sector prioritises protection, health and education, funding very little WASH directly and concentrating instead on intersectoral coordination and information.",
-   "theme": [
-    "Transition"
-   ],
-   "example": "",
-   "type": "context",
-   "strength": "low",
-   "n_records": 1,
-   "n_sources": 1,
-   "n_streams": 1,
-   "streams": [
-    "transcript"
-   ],
-   "countries": [
-    "COL"
-   ],
-   "tags": [
-    "funding"
-   ],
-   "actors": [
-    "cluster",
-    "donor"
-   ],
-   "record_ids": [
-    "E0394"
-   ],
-   "unmerged": false
-  },
-  {
-   "finding_id": "F517",
-   "statement": "Data needed to estimate refugee and migrant needs sits in a national government social registry that the cluster has found difficult to obtain access to.",
-   "theme": [
-    "Transition"
-   ],
-   "example": "",
-   "type": "barrier",
-   "strength": "low",
-   "n_records": 1,
-   "n_sources": 1,
-   "n_streams": 1,
-   "streams": [
-    "transcript"
-   ],
-   "countries": [
-    "COL"
-   ],
-   "tags": [
-    "government-engagement",
-    "information-management"
-   ],
-   "actors": [
-    "cluster",
-    "gov-national"
-   ],
-   "record_ids": [
-    "E0397"
    ],
    "unmerged": false
   },
@@ -8635,69 +7296,6 @@ window.SITE_DATA = {
    ],
    "record_ids": [
     "E0400"
-   ],
-   "unmerged": false
-  },
-  {
-   "finding_id": "F521",
-   "statement": "Temporary accommodation is set up quickly under national disaster arrangements, and gender and child-specific considerations, along with shelter and WASH standards, are not always applied consistently.",
-   "theme": [
-    "Transition"
-   ],
-   "example": "",
-   "type": "barrier",
-   "strength": "low",
-   "n_records": 1,
-   "n_sources": 1,
-   "n_streams": 1,
-   "streams": [
-    "transcript"
-   ],
-   "countries": [
-    "COL"
-   ],
-   "tags": [
-    "government-engagement",
-    "inclusion"
-   ],
-   "actors": [
-    "cluster",
-    "gov-national"
-   ],
-   "record_ids": [
-    "E0401"
-   ],
-   "unmerged": false
-  },
-  {
-   "finding_id": "F522",
-   "statement": "Gender and sexual and reproductive health areas of responsibility have been heavily defunded, and education was excluded from both allocation rounds on the grounds that its activities are not life-saving.",
-   "theme": [
-    "Transition"
-   ],
-   "example": "",
-   "type": "context",
-   "strength": "low",
-   "n_records": 1,
-   "n_sources": 1,
-   "n_streams": 1,
-   "streams": [
-    "transcript"
-   ],
-   "countries": [
-    "COL"
-   ],
-   "tags": [
-    "funding",
-    "inclusion",
-    "multisector"
-   ],
-   "actors": [
-    "donor",
-    "ocha"
-   ],
-   "record_ids": [
-    "E0402"
    ],
    "unmerged": false
   },
@@ -9011,35 +7609,55 @@ window.SITE_DATA = {
   },
   {
    "finding_id": "F618",
-   "statement": "The pooled fund prioritisation exercise required localities to be selected within forty-eight hours using a model the cluster had reservations about, on the understanding it could be refined later; in practice the initial selection has held for the year.",
+   "statement": "Allocation processes move faster than the analysis behind them. Localities have been selected within forty-eight hours on a model the cluster had not seen; strategy changed repeatedly inside a single round; several proposals arrive to be assessed in a day; and global guidance that existed was not passed on in country. Rapid entry and exit from communities follows, which carries its own risk of harm.",
    "theme": [
-    "ABC"
+    "Fundamentals"
    ],
-   "example": "",
+   "example": "Sudan — the prioritisation exercise required localities to be chosen within forty-eight hours, and a written explanation of the cluster's concerns did not change the approach for that allocation.",
    "type": "barrier",
-   "strength": "low",
-   "n_records": 1,
-   "n_sources": 1,
+   "strength": "high",
+   "n_records": 6,
+   "n_sources": 3,
    "n_streams": 1,
    "streams": [
     "transcript"
    ],
    "countries": [
-    "SDN"
+    "COL",
+    "SDN",
+    "SSD"
    ],
    "tags": [
+    "aap",
+    "advocacy",
+    "funding",
     "geographic-targeting",
+    "guidance",
     "hpc",
+    "performance",
     "pooled-funds"
    ],
    "actors": [
     "cluster",
+    "community",
+    "donor",
+    "ingo",
     "ocha"
    ],
    "record_ids": [
-    "E0427"
+    "E0391",
+    "E0427",
+    "E0429",
+    "E0621",
+    "E0622",
+    "E0625"
    ],
-   "unmerged": false
+   "unmerged": false,
+   "highlight": {
+    "headline": "The allocation moves faster than the analysis behind it",
+    "plain": "Localities selected within forty-eight hours on a model the cluster had not seen. Strategy changing repeatedly inside a single round. Several proposals to assess in a day. Global guidance that existed but was not passed on in country. Rapid entry and exit from communities follows from all of it, which carries its own risk of harm.",
+    "so_what": "Ask for the model and the timetable at the start of the round rather than on receipt of the request. Where the cluster saw the methodology early, it was able to shape it."
+   }
   },
   {
    "finding_id": "F619",
@@ -9049,89 +7667,31 @@ window.SITE_DATA = {
    ],
    "example": "",
    "type": "barrier",
-   "strength": "low",
-   "n_records": 1,
-   "n_sources": 1,
+   "strength": "medium",
+   "n_records": 2,
+   "n_sources": 2,
    "n_streams": 1,
    "streams": [
     "transcript"
    ],
    "countries": [
-    "SDN"
-   ],
-   "tags": [
-    "geographic-targeting",
-    "pooled-funds"
-   ],
-   "actors": [
-    "cluster",
-    "ocha"
-   ],
-   "record_ids": [
-    "E0428"
-   ],
-   "unmerged": false
-  },
-  {
-   "finding_id": "F620",
-   "statement": "A written explanation of the cluster's concerns with the prioritisation methodology did not change the approach for that allocation; an after-action review is now underway, which offers a route to revisit it.",
-   "theme": [
-    "ABC"
-   ],
-   "example": "",
-   "type": "context",
-   "strength": "low",
-   "n_records": 1,
-   "n_sources": 1,
-   "n_streams": 1,
-   "streams": [
-    "transcript"
-   ],
-   "countries": [
-    "SDN"
+    "SDN",
+    "SSD"
    ],
    "tags": [
     "advocacy",
-    "performance",
+    "geographic-targeting",
+    "multisector",
     "pooled-funds"
    ],
    "actors": [
     "cluster",
+    "donor",
     "ocha"
    ],
    "record_ids": [
-    "E0429"
-   ],
-   "unmerged": false
-  },
-  {
-   "finding_id": "F621",
-   "statement": "A single strategic outcome set at humanitarian coordinator level gives the allocation coherence, while leaving sector gaps that sit outside its scope still needing a funding route.",
-   "theme": [
-    "ABC"
-   ],
-   "example": "",
-   "type": "barrier",
-   "strength": "low",
-   "n_records": 1,
-   "n_sources": 1,
-   "n_streams": 1,
-   "streams": [
-    "transcript"
-   ],
-   "countries": [
-    "SDN"
-   ],
-   "tags": [
-    "funding",
-    "pooled-funds"
-   ],
-   "actors": [
-    "cluster",
-    "ocha"
-   ],
-   "record_ids": [
-    "E0430"
+    "E0428",
+    "E0623"
    ],
    "unmerged": false
   },
@@ -9145,7 +7705,7 @@ window.SITE_DATA = {
    "example": "",
    "type": "barrier",
    "strength": "low",
-   "n_records": 1,
+   "n_records": 2,
    "n_sources": 1,
    "n_streams": 1,
    "streams": [
@@ -9162,104 +7722,8 @@ window.SITE_DATA = {
     "ocha"
    ],
    "record_ids": [
-    "E0431"
-   ],
-   "unmerged": false
-  },
-  {
-   "finding_id": "F623",
-   "statement": "Adding public health outcomes and indicators to pooled fund reporting structures would let outbreak response be planned and measured as transmission reduction rather than as separate water, sanitation and hygiene outputs.",
-   "theme": [
-    "ABC",
-    "Transition"
-   ],
-   "example": "",
-   "type": "recommendation",
-   "strength": "low",
-   "n_records": 1,
-   "n_sources": 1,
-   "n_streams": 1,
-   "streams": [
-    "transcript"
-   ],
-   "countries": [],
-   "tags": [
-    "performance",
-    "pooled-funds"
-   ],
-   "actors": [
-    "cluster",
-    "ocha"
-   ],
-   "record_ids": [
+    "E0431",
     "E0432"
-   ],
-   "unmerged": false
-  },
-  {
-   "finding_id": "F624",
-   "statement": "Development and reconstruction finance from development banks is channelled through UN agencies because it cannot be given directly to government, creating a parallel and much larger funding stream alongside the humanitarian one.",
-   "theme": [
-    "Transition"
-   ],
-   "example": "",
-   "type": "context",
-   "strength": "low",
-   "n_records": 1,
-   "n_sources": 1,
-   "n_streams": 1,
-   "streams": [
-    "transcript"
-   ],
-   "countries": [
-    "SDN"
-   ],
-   "tags": [
-    "funding",
-    "nexus"
-   ],
-   "actors": [
-    "development",
-    "gov-national",
-    "un-agency"
-   ],
-   "record_ids": [
-    "E0433"
-   ],
-   "unmerged": false
-  },
-  {
-   "finding_id": "F625",
-   "statement": "After a survey exposed water supply gaps, a bilateral donor funded six semi-decentralised systems designed to exit water trucking, with a joint cluster concept note, a steering committee overseeing installation, and explicit decisions on operating costs and whether management would be community-based or utility-run.",
-   "theme": [
-    "Transition"
-   ],
-   "example": "",
-   "type": "enabler",
-   "strength": "low",
-   "n_records": 1,
-   "n_sources": 1,
-   "n_streams": 1,
-   "streams": [
-    "transcript"
-   ],
-   "countries": [
-    "SDN"
-   ],
-   "tags": [
-    "funding",
-    "nexus",
-    "partnerships",
-    "sustainability"
-   ],
-   "actors": [
-    "cluster",
-    "community",
-    "donor",
-    "un-agency"
-   ],
-   "record_ids": [
-    "E0434"
    ],
    "unmerged": false
   },
@@ -9346,39 +7810,6 @@ window.SITE_DATA = {
    }
   },
   {
-   "finding_id": "F705",
-   "statement": "The multi-sector needs assessment is led by a national NGO, which has run the country assessment programme for several years in place of an international assessment partner.",
-   "theme": [
-    "ABC",
-    "Transition"
-   ],
-   "example": "",
-   "type": "enabler",
-   "strength": "low",
-   "n_records": 1,
-   "n_sources": 1,
-   "n_streams": 1,
-   "streams": [
-    "transcript"
-   ],
-   "countries": [
-    "NGA"
-   ],
-   "tags": [
-    "hpc",
-    "information-management",
-    "localisation"
-   ],
-   "actors": [
-    "local-ngo",
-    "ocha"
-   ],
-   "record_ids": [
-    "E0447"
-   ],
-   "unmerged": false
-  },
-  {
    "finding_id": "F707",
    "statement": "A large cholera outbreak is running concurrently with the transition, with cases declining in one urban area while rising in others, and the household-level response approach is not sufficient in the worst-affected locations.",
    "theme": [
@@ -9449,40 +7880,6 @@ window.SITE_DATA = {
     "plain": "Cholera moving across a shared border is being reported from both sides — one country tracing its cases to the outbreak next door. Each country coordinates its own response through its own platform, and there is no forum where the neighbours plan together. Containment depends on the part nobody owns.",
     "so_what": "Convene the affected countries together early, even informally. A shared space for materials, case data and contacts costs little and is the one thing no single country platform can provide."
    }
-  },
-  {
-   "finding_id": "F709",
-   "statement": "The technical working group leading the outbreak response is chaired by an international NGO rather than the lead agency, with the sector spanning all partner agencies and the ministry.",
-   "theme": [
-    "ABC",
-    "Transition"
-   ],
-   "example": "",
-   "type": "enabler",
-   "strength": "low",
-   "n_records": 1,
-   "n_sources": 1,
-   "n_streams": 1,
-   "streams": [
-    "transcript"
-   ],
-   "countries": [
-    "NGA"
-   ],
-   "tags": [
-    "coordination-architecture",
-    "localisation",
-    "partnerships"
-   ],
-   "actors": [
-    "cluster",
-    "gov-national",
-    "ingo"
-   ],
-   "record_ids": [
-    "E0451"
-   ],
-   "unmerged": false
   },
   {
    "finding_id": "F710",
@@ -9661,39 +8058,6 @@ window.SITE_DATA = {
    "record_ids": [
     "E0466",
     "E0597"
-   ],
-   "unmerged": false
-  },
-  {
-   "finding_id": "F808",
-   "statement": "A transition plan was raised once at an intersectoral meeting as something every cluster should have; the cluster asked how it should be done, received no answer, and has not been contacted since, so ordinary coordination continues with neither government nor partners raising it.",
-   "theme": [
-    "Transition"
-   ],
-   "example": "",
-   "type": "barrier",
-   "strength": "low",
-   "n_records": 1,
-   "n_sources": 1,
-   "n_streams": 1,
-   "streams": [
-    "transcript"
-   ],
-   "countries": [
-    "NER"
-   ],
-   "tags": [
-    "government-engagement",
-    "guidance",
-    "transition-handover"
-   ],
-   "actors": [
-    "cluster",
-    "gov-national",
-    "ocha"
-   ],
-   "record_ids": [
-    "E0467"
    ],
    "unmerged": false
   },
@@ -9977,38 +8341,6 @@ window.SITE_DATA = {
     "plain": "Coverage stops short of nationwide, and the areas left out are often those the conflict changed most. The number of sector questions is capped, so only a fraction of a standard measure fits. Whether host communities are included goes unresolved. Clusters that contributed the questions have then been left out of enumerator training.",
     "so_what": "Negotiate the sector's questions and its coverage as one ask, early, and get a place in enumerator training — the questions surviving the cut are worth little if they are asked badly."
    }
-  },
-  {
-   "finding_id": "F912",
-   "statement": "A national survey was published several years after collection and only at subnational level, and the ministry was not inclined to adopt the results, so its value for planning was limited.",
-   "theme": [
-    "Transition"
-   ],
-   "example": "",
-   "type": "barrier",
-   "strength": "low",
-   "n_records": 1,
-   "n_sources": 1,
-   "n_streams": 1,
-   "streams": [
-    "transcript"
-   ],
-   "countries": [
-    "LBN"
-   ],
-   "tags": [
-    "government-engagement",
-    "hpc",
-    "information-management"
-   ],
-   "actors": [
-    "cluster",
-    "gov-national"
-   ],
-   "record_ids": [
-    "E0489"
-   ],
-   "unmerged": false
   },
   {
    "finding_id": "F914",
@@ -10434,7 +8766,7 @@ window.SITE_DATA = {
   },
   {
    "id": "E0026",
-   "finding_id": "F020",
+   "finding_id": "F107",
    "theme": [
     "Transition"
    ],
@@ -10461,7 +8793,7 @@ window.SITE_DATA = {
   },
   {
    "id": "E0027",
-   "finding_id": "F021",
+   "finding_id": "F107",
    "theme": [
     "Transition"
    ],
@@ -10890,7 +9222,7 @@ window.SITE_DATA = {
   },
   {
    "id": "E0043",
-   "finding_id": "F036",
+   "finding_id": "F258",
    "theme": [
     "ABC"
    ],
@@ -11234,7 +9566,7 @@ window.SITE_DATA = {
   },
   {
    "id": "E0056",
-   "finding_id": "F048",
+   "finding_id": "F1404",
    "theme": [
     "ABC"
    ],
@@ -11262,7 +9594,7 @@ window.SITE_DATA = {
   },
   {
    "id": "E0057",
-   "finding_id": "F049",
+   "finding_id": "F508",
    "theme": [
     "ABC"
    ],
@@ -13643,7 +11975,7 @@ window.SITE_DATA = {
   },
   {
    "id": "E0154",
-   "finding_id": "F233",
+   "finding_id": "F243",
    "theme": [
     "ABC"
    ],
@@ -13694,7 +12026,7 @@ window.SITE_DATA = {
   },
   {
    "id": "E0156",
-   "finding_id": "F235",
+   "finding_id": "F243",
    "theme": [
     "ABC"
    ],
@@ -13817,7 +12149,7 @@ window.SITE_DATA = {
   },
   {
    "id": "E0161",
-   "finding_id": "F239",
+   "finding_id": "F1404",
    "theme": [
     "ABC"
    ],
@@ -13896,7 +12228,7 @@ window.SITE_DATA = {
   },
   {
    "id": "E0164",
-   "finding_id": "F242",
+   "finding_id": "F234",
    "theme": [
     "ABC"
    ],
@@ -14260,7 +12592,7 @@ window.SITE_DATA = {
   },
   {
    "id": "E0179",
-   "finding_id": "F253",
+   "finding_id": "F259",
    "theme": [
     "ABC"
    ],
@@ -14705,7 +13037,7 @@ window.SITE_DATA = {
   },
   {
    "id": "E0197",
-   "finding_id": "F268",
+   "finding_id": "F243",
    "theme": [
     "ABC"
    ],
@@ -15144,7 +13476,7 @@ window.SITE_DATA = {
   },
   {
    "id": "E0215",
-   "finding_id": "F284",
+   "finding_id": "F234",
    "theme": [
     "ABC"
    ],
@@ -15360,7 +13692,7 @@ window.SITE_DATA = {
   },
   {
    "id": "E0224",
-   "finding_id": "F293",
+   "finding_id": "F243",
    "theme": [
     "ABC"
    ],
@@ -16757,7 +15089,7 @@ window.SITE_DATA = {
   },
   {
    "id": "E0279",
-   "finding_id": "F348",
+   "finding_id": "F258",
    "theme": [
     "Transition"
    ],
@@ -16781,7 +15113,7 @@ window.SITE_DATA = {
   },
   {
    "id": "E0280",
-   "finding_id": "F349",
+   "finding_id": "F258",
    "theme": [
     "Transition"
    ],
@@ -16902,7 +15234,7 @@ window.SITE_DATA = {
   },
   {
    "id": "E0285",
-   "finding_id": "F352",
+   "finding_id": "F234",
    "theme": [
     "Transition"
    ],
@@ -16929,7 +15261,7 @@ window.SITE_DATA = {
   },
   {
    "id": "E0286",
-   "finding_id": "F353",
+   "finding_id": "F258",
    "theme": [
     "Transition"
    ],
@@ -16981,7 +15313,7 @@ window.SITE_DATA = {
   },
   {
    "id": "E0288",
-   "finding_id": "F355",
+   "finding_id": "F258",
    "theme": [
     "Transition"
    ],
@@ -17766,7 +16098,7 @@ window.SITE_DATA = {
   },
   {
    "id": "E0318",
-   "finding_id": "F383",
+   "finding_id": "F259",
    "theme": [
     "Transition"
    ],
@@ -17792,7 +16124,7 @@ window.SITE_DATA = {
   },
   {
    "id": "E0319",
-   "finding_id": "F384",
+   "finding_id": "F259",
    "theme": [
     "Transition"
    ],
@@ -17897,7 +16229,7 @@ window.SITE_DATA = {
   },
   {
    "id": "E0323",
-   "finding_id": "F388",
+   "finding_id": "F259",
    "theme": [
     "Transition"
    ],
@@ -18608,7 +16940,7 @@ window.SITE_DATA = {
   },
   {
    "id": "E0351",
-   "finding_id": "F412",
+   "finding_id": "F323",
    "theme": [
     "Transition"
    ],
@@ -18635,7 +16967,7 @@ window.SITE_DATA = {
   },
   {
    "id": "E0352",
-   "finding_id": "F413",
+   "finding_id": "F323",
    "theme": [
     "Transition"
    ],
@@ -18712,7 +17044,7 @@ window.SITE_DATA = {
   },
   {
    "id": "E0355",
-   "finding_id": "F416",
+   "finding_id": "F323",
    "theme": [
     "Transition"
    ],
@@ -19086,7 +17418,7 @@ window.SITE_DATA = {
   },
   {
    "id": "E0370",
-   "finding_id": "F425",
+   "finding_id": "F234",
    "theme": [
     "Transition"
    ],
@@ -19365,7 +17697,7 @@ window.SITE_DATA = {
   },
   {
    "id": "E0381",
-   "finding_id": "F501",
+   "finding_id": "F107",
    "theme": [
     "Transition"
    ],
@@ -19578,7 +17910,7 @@ window.SITE_DATA = {
   },
   {
    "id": "E0389",
-   "finding_id": "F509",
+   "finding_id": "F508",
    "theme": [
     "Transition"
    ],
@@ -19606,7 +17938,7 @@ window.SITE_DATA = {
   },
   {
    "id": "E0390",
-   "finding_id": "F510",
+   "finding_id": "F508",
    "theme": [
     "Transition"
    ],
@@ -19632,7 +17964,7 @@ window.SITE_DATA = {
   },
   {
    "id": "E0391",
-   "finding_id": "F511",
+   "finding_id": "F618",
    "theme": [
     "Transition"
    ],
@@ -19711,7 +18043,7 @@ window.SITE_DATA = {
   },
   {
    "id": "E0394",
-   "finding_id": "F514",
+   "finding_id": "F1404",
    "theme": [
     "Transition"
    ],
@@ -19789,7 +18121,7 @@ window.SITE_DATA = {
   },
   {
    "id": "E0397",
-   "finding_id": "F517",
+   "finding_id": "F304",
    "theme": [
     "Transition"
    ],
@@ -19893,7 +18225,7 @@ window.SITE_DATA = {
   },
   {
    "id": "E0401",
-   "finding_id": "F521",
+   "finding_id": "F1307",
    "theme": [
     "Transition"
    ],
@@ -19919,7 +18251,7 @@ window.SITE_DATA = {
   },
   {
    "id": "E0402",
-   "finding_id": "F522",
+   "finding_id": "F1404",
    "theme": [
     "Transition"
    ],
@@ -20643,7 +18975,7 @@ window.SITE_DATA = {
   },
   {
    "id": "E0429",
-   "finding_id": "F620",
+   "finding_id": "F618",
    "theme": [
     "ABC"
    ],
@@ -20670,7 +19002,7 @@ window.SITE_DATA = {
   },
   {
    "id": "E0430",
-   "finding_id": "F621",
+   "finding_id": "F1404",
    "theme": [
     "ABC"
    ],
@@ -20722,7 +19054,7 @@ window.SITE_DATA = {
   },
   {
    "id": "E0432",
-   "finding_id": "F623",
+   "finding_id": "F622",
    "theme": [
     "ABC",
     "Transition"
@@ -20747,7 +19079,7 @@ window.SITE_DATA = {
   },
   {
    "id": "E0433",
-   "finding_id": "F624",
+   "finding_id": "F323",
    "theme": [
     "Transition"
    ],
@@ -20774,7 +19106,7 @@ window.SITE_DATA = {
   },
   {
    "id": "E0434",
-   "finding_id": "F625",
+   "finding_id": "F323",
    "theme": [
     "Transition"
    ],
@@ -21125,7 +19457,7 @@ window.SITE_DATA = {
   },
   {
    "id": "E0447",
-   "finding_id": "F705",
+   "finding_id": "F1015",
    "theme": [
     "ABC",
     "Transition"
@@ -21231,7 +19563,7 @@ window.SITE_DATA = {
   },
   {
    "id": "E0451",
-   "finding_id": "F709",
+   "finding_id": "F1015",
    "theme": [
     "ABC",
     "Transition"
@@ -21656,7 +19988,7 @@ window.SITE_DATA = {
   },
   {
    "id": "E0467",
-   "finding_id": "F808",
+   "finding_id": "F304",
    "theme": [
     "Transition"
    ],
@@ -22255,7 +20587,7 @@ window.SITE_DATA = {
   },
   {
    "id": "E0489",
-   "finding_id": "F912",
+   "finding_id": "F1307",
    "theme": [
     "Transition"
    ],
@@ -22495,7 +20827,7 @@ window.SITE_DATA = {
   },
   {
    "id": "E0498",
-   "finding_id": "F1002",
+   "finding_id": "F259",
    "theme": [
     "Transition"
    ],
@@ -22550,7 +20882,7 @@ window.SITE_DATA = {
   },
   {
    "id": "E0500",
-   "finding_id": "F1004",
+   "finding_id": "F234",
    "theme": [
     "ABC"
    ],
@@ -22826,7 +21158,7 @@ window.SITE_DATA = {
   },
   {
    "id": "E0510",
-   "finding_id": "F1014",
+   "finding_id": "F1015",
    "theme": [
     "ABC"
    ],
@@ -22938,7 +21270,7 @@ window.SITE_DATA = {
   },
   {
    "id": "E0515",
-   "finding_id": "F1100",
+   "finding_id": "F1404",
    "theme": [
     "Transition"
    ],
@@ -22964,7 +21296,7 @@ window.SITE_DATA = {
   },
   {
    "id": "E0516",
-   "finding_id": "F1101",
+   "finding_id": "F107",
    "theme": [
     "Transition"
    ],
@@ -23071,7 +21403,7 @@ window.SITE_DATA = {
   },
   {
    "id": "E0520",
-   "finding_id": "F1105",
+   "finding_id": "F259",
    "theme": [
     "Transition"
    ],
@@ -23256,7 +21588,7 @@ window.SITE_DATA = {
   },
   {
    "id": "E0527",
-   "finding_id": "F1112",
+   "finding_id": "F304",
    "theme": [
     "ABC",
     "Transition"
@@ -23687,7 +22019,7 @@ window.SITE_DATA = {
   },
   {
    "id": "E0543",
-   "finding_id": "F1204",
+   "finding_id": "F1015",
    "theme": [
     "ABC",
     "Transition"
@@ -24253,7 +22585,7 @@ window.SITE_DATA = {
   },
   {
    "id": "E0564",
-   "finding_id": "F1302",
+   "finding_id": "F304",
    "theme": [
     "Transition"
    ],
@@ -24605,7 +22937,7 @@ window.SITE_DATA = {
   },
   {
    "id": "E0577",
-   "finding_id": "F1401",
+   "finding_id": "F107",
    "theme": [
     "ABC",
     "Transition"
@@ -24825,7 +23157,7 @@ window.SITE_DATA = {
   },
   {
    "id": "E0585",
-   "finding_id": "F1409",
+   "finding_id": "F304",
    "theme": [
     "Transition"
    ],
@@ -24881,7 +23213,7 @@ window.SITE_DATA = {
   },
   {
    "id": "E0587",
-   "finding_id": "F1411",
+   "finding_id": "F107",
    "theme": [
     "Transition"
    ],
@@ -25424,7 +23756,7 @@ window.SITE_DATA = {
   },
   {
    "id": "E0607",
-   "finding_id": "F1509",
+   "finding_id": "F508",
    "theme": [
     "ABC"
    ],
@@ -25800,7 +24132,7 @@ window.SITE_DATA = {
   },
   {
    "id": "E0621",
-   "finding_id": "F1605",
+   "finding_id": "F618",
    "theme": [
     "ABC"
    ],
@@ -25828,7 +24160,7 @@ window.SITE_DATA = {
   },
   {
    "id": "E0622",
-   "finding_id": "F1606",
+   "finding_id": "F618",
    "theme": [
     "ABC"
    ],
@@ -25855,7 +24187,7 @@ window.SITE_DATA = {
   },
   {
    "id": "E0623",
-   "finding_id": "F1607",
+   "finding_id": "F619",
    "theme": [
     "ABC"
    ],
@@ -25910,7 +24242,7 @@ window.SITE_DATA = {
   },
   {
    "id": "E0625",
-   "finding_id": "F1609",
+   "finding_id": "F618",
    "theme": [
     "ABC"
    ],
@@ -25936,7 +24268,7 @@ window.SITE_DATA = {
   },
   {
    "id": "E0626",
-   "finding_id": "F1610",
+   "finding_id": "F508",
    "theme": [
     "ABC"
    ],
@@ -26918,7 +25250,7 @@ window.SITE_DATA = {
   },
   {
    "id": "E0664",
-   "finding_id": "F1727",
+   "finding_id": "F1307",
    "theme": [
     "Fundamentals"
    ],
