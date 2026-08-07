@@ -76,7 +76,7 @@ window.SITE_DATA = {
  "taxonomy_version": "0.6.0",
  "stats": {
   "records": 656,
-  "findings": 301,
+  "findings": 269,
   "sources": 106,
   "countries": 29,
   "withheld_internal": 2
@@ -1757,37 +1757,6 @@ window.SITE_DATA = {
    "unmerged": false
   },
   {
-   "finding_id": "F055",
-   "statement": "Partner assessments cannot be processed with AI tools without anonymisation first, because of data confidentiality obligations the cluster is unwilling to breach.",
-   "theme": [
-    "ABC",
-    "Transition"
-   ],
-   "example": "",
-   "type": "barrier",
-   "strength": "low",
-   "n_records": 1,
-   "n_sources": 1,
-   "n_streams": 1,
-   "streams": [
-    "transcript"
-   ],
-   "countries": [
-    "MMR"
-   ],
-   "tags": [
-    "data-protection",
-    "information-management"
-   ],
-   "actors": [
-    "cluster"
-   ],
-   "record_ids": [
-    "E0063"
-   ],
-   "unmerged": false
-  },
-  {
    "finding_id": "F056",
    "statement": "An information sharing protocol required clusters to classify their products by sensitivity, and the exercise found sensitive material openly accessible on a shared drive.",
    "theme": [
@@ -1821,53 +1790,22 @@ window.SITE_DATA = {
   },
   {
    "finding_id": "F057",
-   "statement": "Sensitivity classification is harder for WASH than for other sectors because infrastructure locations and chemical stocks carry dual-use risk in a conflict setting.",
+   "statement": "WASH data carries risks that other sectors' data does not. Infrastructure locations and chemical stocks have dual-use sensitivity, so sensitivity classification is harder than for sectors whose products are not operationally exploitable. Rules on collecting location data differ between areas of the same country, and subnational data on violations is published openly on platforms outside any cluster control.",
    "theme": [
-    "ABC",
-    "Transition"
+    "Fundamentals"
    ],
-   "example": "",
+   "example": "Myanmar — classification proved harder for WASH than for other sectors, because infrastructure locations and chemical stocks carry a dual-use risk.",
    "type": "barrier",
-   "strength": "low",
-   "n_records": 1,
-   "n_sources": 1,
+   "strength": "medium",
+   "n_records": 4,
+   "n_sources": 2,
    "n_streams": 1,
    "streams": [
     "transcript"
    ],
    "countries": [
-    "MMR"
-   ],
-   "tags": [
-    "data-protection",
-    "information-management"
-   ],
-   "actors": [
-    "cluster"
-   ],
-   "record_ids": [
-    "E0065"
-   ],
-   "unmerged": false
-  },
-  {
-   "finding_id": "F058",
-   "statement": "Sub-national level data on violations is published openly on an external platform outside any cluster control, and cross-border information about the country cannot be governed by the in-country protocol at all.",
-   "theme": [
-    "ABC",
-    "Transition"
-   ],
-   "example": "",
-   "type": "barrier",
-   "strength": "low",
-   "n_records": 1,
-   "n_sources": 1,
-   "n_streams": 1,
-   "streams": [
-    "transcript"
-   ],
-   "countries": [
-    "MMR"
+    "MMR",
+    "SDN"
    ],
    "tags": [
     "data-protection",
@@ -1875,10 +1813,14 @@ window.SITE_DATA = {
    ],
    "actors": [
     "cluster",
+    "gov-local",
     "ocha"
    ],
    "record_ids": [
-    "E0066"
+    "E0063",
+    "E0065",
+    "E0066",
+    "E0425"
    ],
    "unmerged": false
   },
@@ -2054,72 +1996,6 @@ window.SITE_DATA = {
    "unmerged": false
   },
   {
-   "finding_id": "F1006",
-   "statement": "Because the joint assessment is capped, the sector runs complementary exercises — an annual water network performance review with a partner, a coverage survey, and a sustainability assessment built from secondary data — deliberately designed not to duplicate the joint round.",
-   "theme": [
-    "ABC",
-    "Transition"
-   ],
-   "example": "",
-   "type": "practice",
-   "strength": "low",
-   "n_records": 1,
-   "n_sources": 1,
-   "n_streams": 1,
-   "streams": [
-    "transcript"
-   ],
-   "countries": [
-    "BGD"
-   ],
-   "tags": [
-    "hpc",
-    "information-management",
-    "sustainability"
-   ],
-   "actors": [
-    "cluster",
-    "ingo"
-   ],
-   "record_ids": [
-    "E0502"
-   ],
-   "unmerged": false
-  },
-  {
-   "finding_id": "F1008",
-   "statement": "Whether the host community is included in the joint assessment is unresolved, and the share of the response formally allocated to host communities is under review and may reduce.",
-   "theme": [
-    "ABC",
-    "Transition"
-   ],
-   "example": "",
-   "type": "barrier",
-   "strength": "low",
-   "n_records": 1,
-   "n_sources": 1,
-   "n_streams": 1,
-   "streams": [
-    "transcript"
-   ],
-   "countries": [
-    "BGD"
-   ],
-   "tags": [
-    "funding",
-    "hpc",
-    "inclusion"
-   ],
-   "actors": [
-    "community",
-    "ocha"
-   ],
-   "record_ids": [
-    "E0504"
-   ],
-   "unmerged": false
-  },
-  {
    "finding_id": "F1009",
    "statement": "Where responsibility for a service was contested between sectors, the sector agreed an institutional policy endorsed by the authorities setting out that its role is technical support rather than operational maintenance, and is now briefing camp-level authorities on it directly.",
    "theme": [
@@ -2150,34 +2026,6 @@ window.SITE_DATA = {
    ],
    "record_ids": [
     "E0505"
-   ],
-   "unmerged": false
-  },
-  {
-   "finding_id": "F101",
-   "statement": "Reinforce the WASH analytical framework as a strategic resource — WIA, severity analysis, and AQA are not only technical tools — they are the evidence base that grounds cluster leadership, supports collective decision-making, and makes the case for WASH prioritization in HCT and inter-cluster…",
-   "theme": [
-    "ABC"
-   ],
-   "example": "",
-   "type": "recommendation",
-   "strength": "low",
-   "n_records": 1,
-   "n_sources": 1,
-   "n_streams": 1,
-   "streams": [
-    "sdr"
-   ],
-   "countries": [],
-   "tags": [
-    "hpc",
-    "information-management"
-   ],
-   "actors": [
-    "cluster"
-   ],
-   "record_ids": [
-    "E0072"
    ],
    "unmerged": false
   },
@@ -2241,38 +2089,6 @@ window.SITE_DATA = {
    ],
    "record_ids": [
     "E0507"
-   ],
-   "unmerged": false
-  },
-  {
-   "finding_id": "F1013",
-   "statement": "No in-depth severity analysis has been produced at national level for around a decade, which makes estimating people in need across a very large population difficult to defend.",
-   "theme": [
-    "Transition"
-   ],
-   "example": "",
-   "type": "barrier",
-   "strength": "low",
-   "n_records": 1,
-   "n_sources": 1,
-   "n_streams": 1,
-   "streams": [
-    "transcript"
-   ],
-   "countries": [
-    "BGD"
-   ],
-   "tags": [
-    "hpc",
-    "information-management",
-    "performance"
-   ],
-   "actors": [
-    "cluster",
-    "gov-national"
-   ],
-   "record_ids": [
-    "E0509"
    ],
    "unmerged": false
   },
@@ -2350,7 +2166,7 @@ window.SITE_DATA = {
    "example": "",
    "type": "recommendation",
    "strength": "high",
-   "n_records": 6,
+   "n_records": 7,
    "n_sources": 3,
    "n_streams": 1,
    "streams": [
@@ -2361,6 +2177,7 @@ window.SITE_DATA = {
     "advocacy",
     "coordination-architecture",
     "guidance",
+    "hpc",
     "information-management",
     "performance"
    ],
@@ -2371,6 +2188,7 @@ window.SITE_DATA = {
    ],
    "record_ids": [
     "E0071",
+    "E0072",
     "E0073",
     "E0074",
     "E0076",
@@ -2741,32 +2559,35 @@ window.SITE_DATA = {
   },
   {
    "finding_id": "F1114",
-   "statement": "The sector maintains one of the larger assessment toolkits among clusters, organised as thematic response packs each containing its own assessment section, and has scheduled a revision of the tools in its annual workplan.",
+   "statement": "Where the joint assessment is capped or absent, sectors run their own complementary exercises alongside it — an annual water network performance review, thematic response packs each containing its own assessment tools — rather than accepting the gap.",
    "theme": [
-    "ABC",
-    "Transition"
+    "Fundamentals"
    ],
-   "example": "",
+   "example": "Bangladesh — because the joint assessment caps sector questions, the sector runs an annual water network performance review with a partner alongside it.",
    "type": "practice",
-   "strength": "low",
-   "n_records": 1,
-   "n_sources": 1,
+   "strength": "medium",
+   "n_records": 2,
+   "n_sources": 2,
    "n_streams": 1,
    "streams": [
     "transcript"
    ],
    "countries": [
+    "BGD",
     "HTI"
    ],
    "tags": [
     "guidance",
     "hpc",
-    "information-management"
+    "information-management",
+    "sustainability"
    ],
    "actors": [
-    "cluster"
+    "cluster",
+    "ingo"
    ],
    "record_ids": [
+    "E0502",
     "E0529"
    ],
    "unmerged": false
@@ -3047,36 +2868,6 @@ window.SITE_DATA = {
    "unmerged": false
   },
   {
-   "finding_id": "F1207",
-   "statement": "Intersectoral projects still have to be reported separately under each sector in the central platform, so a single integrated project cannot be recorded as one.",
-   "theme": [
-    "ABC",
-    "Transition"
-   ],
-   "example": "",
-   "type": "barrier",
-   "strength": "low",
-   "n_records": 1,
-   "n_sources": 1,
-   "n_streams": 1,
-   "streams": [
-    "transcript"
-   ],
-   "countries": [],
-   "tags": [
-    "information-management",
-    "multisector"
-   ],
-   "actors": [
-    "cluster",
-    "ocha"
-   ],
-   "record_ids": [
-    "E0546"
-   ],
-   "unmerged": false
-  },
-  {
    "finding_id": "F1208",
    "statement": "The multi-sector assessment will cover 121 districts this year, close to nationwide, spanning conflict, floods and cholera contexts.",
    "theme": [
@@ -3105,37 +2896,6 @@ window.SITE_DATA = {
    ],
    "record_ids": [
     "E0547"
-   ],
-   "unmerged": false
-  },
-  {
-   "finding_id": "F1210",
-   "statement": "Historical cholera and disaster data were layered onto household survey results at area level to produce the severity analysis, rather than relying on the survey alone.",
-   "theme": [
-    "ABC",
-    "Transition"
-   ],
-   "example": "",
-   "type": "practice",
-   "strength": "low",
-   "n_records": 1,
-   "n_sources": 1,
-   "n_streams": 1,
-   "streams": [
-    "transcript"
-   ],
-   "countries": [
-    "MOZ"
-   ],
-   "tags": [
-    "hpc",
-    "information-management"
-   ],
-   "actors": [
-    "cluster"
-   ],
-   "record_ids": [
-    "E0549"
    ],
    "unmerged": false
   },
@@ -3238,35 +2998,52 @@ window.SITE_DATA = {
   },
   {
    "finding_id": "F1308",
-   "statement": "A government-developed system for water point assessment, capturing access at a small administrative level, is being built and will remain government-led.",
+   "statement": "Assessment systems owned by government rather than by the humanitarian sector survive the cluster. A government-developed water point assessment capturing access at small administrative level, a government-owned aid information system, and a ministry-owned facility assessment covering what is operating and what is missing are all being built as national infrastructure. Facility and asset mapping is among the most effective bridges to development actors, because it produces something they need anyway.",
    "theme": [
-    "ABC",
     "Transition"
    ],
-   "example": "",
+   "example": "Ethiopia — a government-developed water point assessment system, capturing access at admin 3 level, is being built and will continue to be led by government.",
    "type": "enabler",
-   "strength": "low",
-   "n_records": 1,
-   "n_sources": 1,
-   "n_streams": 1,
+   "strength": "high",
+   "n_records": 5,
+   "n_sources": 4,
+   "n_streams": 2,
    "streams": [
+    "sdr",
     "transcript"
    ],
    "countries": [
-    "ETH"
+    "ETH",
+    "SDN",
+    "SOM",
+    "SYR"
    ],
    "tags": [
     "government-engagement",
     "hpc",
-    "information-management"
+    "information-management",
+    "nexus",
+    "transition-handover"
    ],
    "actors": [
-    "gov-national"
+    "cluster",
+    "development",
+    "gov-national",
+    "ingo"
    ],
    "record_ids": [
-    "E0570"
+    "E0328",
+    "E0411",
+    "E0412",
+    "E0570",
+    "E0653"
    ],
-   "unmerged": false
+   "unmerged": false,
+   "highlight": {
+    "headline": "Assessment systems owned by government outlast the cluster",
+    "plain": "A government-developed water point assessment capturing access at small administrative level; a government-owned aid information system; a ministry-owned facility assessment recording what is operating, what is missing and what capacity exists. These are being built as national infrastructure rather than humanitarian products, and facility and asset mapping turns out to be among the most effective bridges to development actors — because it produces something they need anyway.",
+    "so_what": "Build the assessment inside the government system from the start where you can. It is the one information product that reliably survives deactivation."
+   }
   },
   {
    "finding_id": "F1309",
@@ -3531,38 +3308,6 @@ window.SITE_DATA = {
    "unmerged": false
   },
   {
-   "finding_id": "F1412",
-   "statement": "Needs assessment is limited to small exercises run by regional directorates or individual partners, with no systematic assessment to monitor the response, because each round carries a cost nobody has budgeted.",
-   "theme": [
-    "ABC",
-    "Transition"
-   ],
-   "example": "",
-   "type": "barrier",
-   "strength": "low",
-   "n_records": 1,
-   "n_sources": 1,
-   "n_streams": 1,
-   "streams": [
-    "transcript"
-   ],
-   "countries": [
-    "BFA"
-   ],
-   "tags": [
-    "funding",
-    "hpc"
-   ],
-   "actors": [
-    "cluster",
-    "gov-local"
-   ],
-   "record_ids": [
-    "E0588"
-   ],
-   "unmerged": false
-  },
-  {
    "finding_id": "F1413",
    "statement": "A needs assessment strategy led by the national authority, with a budget line attached, would give the sector a predictable basis for data rather than depending on partner-by-partner exercises.",
    "theme": [
@@ -3596,40 +3341,6 @@ window.SITE_DATA = {
    "unmerged": false
   },
   {
-   "finding_id": "F1414",
-   "statement": "The multi-sector assessment depends on two separate approvals — donor funding and a government statistical authorisation — and neither is confirmed, with the window for producing data in time for planning closing.",
-   "theme": [
-    "ABC",
-    "Transition"
-   ],
-   "example": "",
-   "type": "barrier",
-   "strength": "low",
-   "n_records": 1,
-   "n_sources": 1,
-   "n_streams": 1,
-   "streams": [
-    "transcript"
-   ],
-   "countries": [
-    "BFA"
-   ],
-   "tags": [
-    "funding",
-    "government-engagement",
-    "hpc"
-   ],
-   "actors": [
-    "donor",
-    "gov-national",
-    "ocha"
-   ],
-   "record_ids": [
-    "E0590"
-   ],
-   "unmerged": false
-  },
-  {
    "finding_id": "F1503",
    "statement": "Strategic advisory meetings could not be held on the intended cycle through the period of staffing and counterpart changes, with the second of the year taking place only recently.",
    "theme": [
@@ -3657,40 +3368,6 @@ window.SITE_DATA = {
    ],
    "record_ids": [
     "E0601"
-   ],
-   "unmerged": false
-  },
-  {
-   "finding_id": "F1504",
-   "statement": "Three separate channels collect needs data: a government departmental framework running twice a year but not aligned to planning periods, a national social development channel run with an agency, and the international assessment partner.",
-   "theme": [
-    "ABC",
-    "Transition"
-   ],
-   "example": "",
-   "type": "context",
-   "strength": "low",
-   "n_records": 1,
-   "n_sources": 1,
-   "n_streams": 1,
-   "streams": [
-    "transcript"
-   ],
-   "countries": [
-    "MLI"
-   ],
-   "tags": [
-    "government-engagement",
-    "hpc",
-    "information-management"
-   ],
-   "actors": [
-    "cluster",
-    "gov-national",
-    "ocha"
-   ],
-   "record_ids": [
-    "E0602"
    ],
    "unmerged": false
   },
@@ -3826,15 +3503,14 @@ window.SITE_DATA = {
   },
   {
    "finding_id": "F1603",
-   "statement": "Assessment data is generally used only to produce needs figures and severity and then goes no further; an analysis output and dashboard would let the sector get more from assessments it already runs.",
+   "statement": "Assessment data is generally used to produce needs figures and severity and then goes no further, so gap analysis for allocations falls back on response plan figures several months old. An analysis output designed for operational use — not only for the planning cycle — would make the same data usable for the decisions that follow it.",
    "theme": [
-    "ABC",
-    "Transition"
+    "Fundamentals"
    ],
    "example": "",
    "type": "recommendation",
    "strength": "low",
-   "n_records": 1,
+   "n_records": 2,
    "n_sources": 1,
    "n_streams": 1,
    "streams": [
@@ -3845,46 +3521,16 @@ window.SITE_DATA = {
    ],
    "tags": [
     "hpc",
-    "information-management"
+    "information-management",
+    "pooled-funds"
    ],
    "actors": [
     "cluster",
     "ocha"
    ],
    "record_ids": [
-    "E0619"
-   ],
-   "unmerged": false
-  },
-  {
-   "finding_id": "F1604",
-   "statement": "Only four of the twelve water insecurity questions could be accommodated in the joint tool, and the severity scale is being interpolated across that reduced set rather than dropped.",
-   "theme": [
-    "ABC",
-    "Transition"
-   ],
-   "example": "",
-   "type": "practice",
-   "strength": "low",
-   "n_records": 1,
-   "n_sources": 1,
-   "n_streams": 1,
-   "streams": [
-    "transcript"
-   ],
-   "countries": [
-    "SSD"
-   ],
-   "tags": [
-    "hpc",
-    "information-management"
-   ],
-   "actors": [
-    "cluster",
-    "ocha"
-   ],
-   "record_ids": [
-    "E0620"
+    "E0619",
+    "E0624"
    ],
    "unmerged": false
   },
@@ -3983,38 +3629,6 @@ window.SITE_DATA = {
    ],
    "record_ids": [
     "E0623"
-   ],
-   "unmerged": false
-  },
-  {
-   "finding_id": "F1608",
-   "statement": "Gap analysis for allocations had to rest on response plan figures that are already several months old, with no mechanism producing fresher data to argue from.",
-   "theme": [
-    "ABC"
-   ],
-   "example": "",
-   "type": "barrier",
-   "strength": "low",
-   "n_records": 1,
-   "n_sources": 1,
-   "n_streams": 1,
-   "streams": [
-    "transcript"
-   ],
-   "countries": [
-    "SSD"
-   ],
-   "tags": [
-    "hpc",
-    "information-management",
-    "pooled-funds"
-   ],
-   "actors": [
-    "cluster",
-    "ocha"
-   ],
-   "record_ids": [
-    "E0624"
    ],
    "unmerged": false
   },
@@ -4306,35 +3920,6 @@ window.SITE_DATA = {
    }
   },
   {
-   "finding_id": "F1713",
-   "statement": "Participants ranked improved data sharing as the strongest enabler of area-based coordination and coordination and governance fragmentation as the strongest barrier.",
-   "theme": [
-    "ABC"
-   ],
-   "example": "",
-   "type": "context",
-   "strength": "low",
-   "n_records": 1,
-   "n_sources": 1,
-   "n_streams": 1,
-   "streams": [
-    "workshop"
-   ],
-   "countries": [],
-   "tags": [
-    "coordination-architecture",
-    "information-management"
-   ],
-   "actors": [
-    "cluster",
-    "operational-cell"
-   ],
-   "record_ids": [
-    "E0648"
-   ],
-   "unmerged": false
-  },
-  {
    "finding_id": "F1714",
    "statement": "A transitional response plan for next year is under discussion following government advice, but is not confirmed, and the coordination team's own reading is that the system will still be needed.",
    "theme": [
@@ -4425,100 +4010,6 @@ window.SITE_DATA = {
    "unmerged": false
   },
   {
-   "finding_id": "F1717",
-   "statement": "The needs analysis was built by combining the household survey with a separate community-level vulnerability assessment run by another agency, applying the intersectoral analysis framework across both.",
-   "theme": [
-    "Fundamentals"
-   ],
-   "example": "",
-   "type": "practice",
-   "strength": "low",
-   "n_records": 1,
-   "n_sources": 1,
-   "n_streams": 1,
-   "streams": [
-    "transcript"
-   ],
-   "countries": [
-    "SYR"
-   ],
-   "tags": [
-    "hpc",
-    "information-management"
-   ],
-   "actors": [
-    "cluster"
-   ],
-   "record_ids": [
-    "E0652"
-   ],
-   "unmerged": false
-  },
-  {
-   "finding_id": "F1718",
-   "statement": "A facility assessment covering what is operating, what is missing and what capacity exists is owned by the line ministry rather than by the humanitarian sector.",
-   "theme": [
-    "Fundamentals"
-   ],
-   "example": "",
-   "type": "enabler",
-   "strength": "low",
-   "n_records": 1,
-   "n_sources": 1,
-   "n_streams": 1,
-   "streams": [
-    "transcript"
-   ],
-   "countries": [
-    "SYR"
-   ],
-   "tags": [
-    "government-engagement",
-    "hpc",
-    "transition-handover"
-   ],
-   "actors": [
-    "cluster",
-    "gov-national",
-    "ingo"
-   ],
-   "record_ids": [
-    "E0653"
-   ],
-   "unmerged": false
-  },
-  {
-   "finding_id": "F1719",
-   "statement": "With the central planning module suspended, the sector built its own reporting form covering activities, locations and costing, and estimated its funding appeal directly from partner inputs.",
-   "theme": [
-    "Fundamentals"
-   ],
-   "example": "",
-   "type": "practice",
-   "strength": "low",
-   "n_records": 1,
-   "n_sources": 1,
-   "n_streams": 1,
-   "streams": [
-    "transcript"
-   ],
-   "countries": [
-    "SYR"
-   ],
-   "tags": [
-    "funding",
-    "hpc",
-    "information-management"
-   ],
-   "actors": [
-    "cluster"
-   ],
-   "record_ids": [
-    "E0654"
-   ],
-   "unmerged": false
-  },
-  {
    "finding_id": "F1720",
    "statement": "Running one reporting platform for everything — activity reporting, budgeting, partner capacity and stocks, and a service mapping dashboard — has held 86 active partners on a single system since 2023.",
    "theme": [
@@ -4576,36 +4067,6 @@ window.SITE_DATA = {
    ],
    "record_ids": [
     "E0656"
-   ],
-   "unmerged": false
-  },
-  {
-   "finding_id": "F1722",
-   "statement": "The partner reporting template is being simplified to ask less of partners while keeping the same system.",
-   "theme": [
-    "Fundamentals"
-   ],
-   "example": "",
-   "type": "practice",
-   "strength": "low",
-   "n_records": 1,
-   "n_sources": 1,
-   "n_streams": 1,
-   "streams": [
-    "transcript"
-   ],
-   "countries": [
-    "SYR"
-   ],
-   "tags": [
-    "information-management",
-    "partnerships"
-   ],
-   "actors": [
-    "cluster"
-   ],
-   "record_ids": [
-    "E0657"
    ],
    "unmerged": false
   },
@@ -4960,60 +4421,50 @@ window.SITE_DATA = {
   },
   {
    "finding_id": "F211",
-   "statement": "The absence of shared data systems and harmonised assessment frameworks limits joint analysis and prioritisation across actors.",
+   "statement": "Parallel information systems prevent joint analysis. Needs data arrives through several unaligned channels on different cycles, intersectoral projects have to be reported separately under each sector so an integrated project never appears as one, and platform migrations ask partners to re-enter work retroactively.",
    "theme": [
-    "ABC"
+    "Fundamentals"
    ],
-   "example": "",
+   "example": "Mali — three separate channels collect needs data, including a government framework running twice a year on a cycle that does not align with planning.",
    "type": "barrier",
-   "strength": "low",
-   "n_records": 1,
-   "n_sources": 1,
-   "n_streams": 1,
+   "strength": "high",
+   "n_records": 5,
+   "n_sources": 5,
+   "n_streams": 2,
    "streams": [
-    "sdr"
-   ],
-   "countries": [],
-   "tags": [
-    "information-management"
-   ],
-   "actors": [
-    "cluster"
-   ],
-   "record_ids": [
-    "E0119"
-   ],
-   "unmerged": false
-  },
-  {
-   "finding_id": "F212",
-   "statement": "Fragmented data flows and parallel information systems prevent effective information sharing, producing duplication and inefficiency in response planning.",
-   "theme": [
-    "ABC"
-   ],
-   "example": "",
-   "type": "barrier",
-   "strength": "low",
-   "n_records": 1,
-   "n_sources": 1,
-   "n_streams": 1,
-   "streams": [
-    "sdr"
+    "sdr",
+    "transcript"
    ],
    "countries": [
-    "PSE"
+    "MLI",
+    "PSE",
+    "SDN"
    ],
    "tags": [
-    "information-management"
+    "government-engagement",
+    "hpc",
+    "information-management",
+    "multisector"
    ],
    "actors": [
     "cluster",
+    "gov-national",
+    "ingo",
     "ocha"
    ],
    "record_ids": [
-    "E0120"
+    "E0119",
+    "E0120",
+    "E0415",
+    "E0546",
+    "E0602"
    ],
-   "unmerged": false
+   "unmerged": false,
+   "highlight": {
+    "headline": "Several systems, none of them talking",
+    "plain": "Needs data arrives through channels that do not align, on cycles that do not match planning. Intersectoral projects have to be reported separately under each sector, so an integrated project never appears anywhere as one thing. Platform migrations ask partners to re-enter months of work retroactively.",
+    "so_what": "Before adding a system, ask what it replaces. Every one of these was introduced to improve information flow."
+   }
   },
   {
    "finding_id": "F214",
@@ -6049,24 +5500,28 @@ window.SITE_DATA = {
    "unmerged": false
   },
   {
-   "finding_id": "F262",
-   "statement": "Improved data sharing is associated with better coordination and more coherent prioritisation of needs.",
+   "finding_id": "F263",
+   "statement": "Shared data systems and harmonised assessment frameworks are what make joint analysis and coherent prioritisation possible — and coordinators ranked improved data sharing as the single strongest enabler of area-based coordination, with fragmentation of data and governance as the strongest barrier.",
    "theme": [
-    "ABC"
+    "ABC",
+    "Fundamentals"
    ],
-   "example": "",
+   "example": "Palestine — better data sharing was associated directly with better coordination and more coherent prioritisation of needs.",
    "type": "enabler",
-   "strength": "low",
-   "n_records": 1,
-   "n_sources": 1,
-   "n_streams": 1,
+   "strength": "high",
+   "n_records": 3,
+   "n_sources": 3,
+   "n_streams": 2,
    "streams": [
-    "sdr"
+    "sdr",
+    "workshop"
    ],
    "countries": [
     "PSE"
    ],
    "tags": [
+    "coordination-architecture",
+    "hpc",
     "information-management"
    ],
    "actors": [
@@ -6074,37 +5529,16 @@ window.SITE_DATA = {
     "operational-cell"
    ],
    "record_ids": [
-    "E0190"
+    "E0190",
+    "E0191",
+    "E0648"
    ],
-   "unmerged": false
-  },
-  {
-   "finding_id": "F263",
-   "statement": "Harmonised assessment frameworks and shared data systems are critical to enabling joint analysis and coordinated decision-making.",
-   "theme": [
-    "ABC"
-   ],
-   "example": "",
-   "type": "enabler",
-   "strength": "low",
-   "n_records": 1,
-   "n_sources": 1,
-   "n_streams": 1,
-   "streams": [
-    "sdr"
-   ],
-   "countries": [],
-   "tags": [
-    "hpc",
-    "information-management"
-   ],
-   "actors": [
-    "cluster"
-   ],
-   "record_ids": [
-    "E0191"
-   ],
-   "unmerged": false
+   "unmerged": false,
+   "highlight": {
+    "headline": "Data sharing is the strongest enabler in the evidence base",
+    "plain": "Shared data systems and harmonised assessment frameworks are what make joint analysis and coherent prioritisation possible. Asked to rank enablers of area-based coordination, coordinators put improved data sharing first — and fragmentation of data and governance first among the barriers. It is the same finding stated twice.",
+    "so_what": "If only one thing can be fixed in an area-based arrangement, fix the information architecture. The evidence points at it more consistently than at anything else."
+   }
   },
   {
    "finding_id": "F265",
@@ -7385,32 +6819,45 @@ window.SITE_DATA = {
   },
   {
    "finding_id": "F356",
-   "statement": "Successor reporting systems should be lean, digital and mobile-first rather than replicas of cluster tools, because local actors will not sustain cluster-format reporting.",
+   "statement": "Successor reporting systems should be lean, digital and mobile-first rather than replicas of cluster tools. Simplifying the partner template while keeping the same system reduces what is asked of partners without losing the data, and maintaining the same figures in more than one format at once accommodates partners with different technical capacity.",
    "theme": [
     "Transition"
    ],
    "example": "",
    "type": "recommendation",
-   "strength": "low",
-   "n_records": 1,
-   "n_sources": 1,
-   "n_streams": 1,
+   "strength": "high",
+   "n_records": 3,
+   "n_sources": 3,
+   "n_streams": 2,
    "streams": [
-    "sdr"
+    "sdr",
+    "transcript"
    ],
-   "countries": [],
+   "countries": [
+    "LBN",
+    "SYR"
+   ],
    "tags": [
     "information-management",
-    "localisation"
+    "localisation",
+    "partnerships"
    ],
    "actors": [
     "cluster",
+    "ingo",
     "local-ngo"
    ],
    "record_ids": [
-    "E0289"
+    "E0289",
+    "E0486",
+    "E0657"
    ],
-   "unmerged": false
+   "unmerged": false,
+   "highlight": {
+    "headline": "A successor system has to be lighter than the one it replaces",
+    "plain": "Successor reporting should be lean, digital and mobile-first, not a copy of cluster tools. Simplifying the partner template while keeping the same system reduces what is asked without losing data, and keeping the same figures in more than one format at once accommodates partners with very different technical capacity.",
+    "so_what": "Design the handover system for the organisation receiving it, not for the one leaving. A replica of the cluster's tooling will not be maintained."
+   }
   },
   {
    "finding_id": "F360",
@@ -8068,36 +7515,6 @@ window.SITE_DATA = {
    ],
    "record_ids": [
     "E0323"
-   ],
-   "unmerged": false
-  },
-  {
-   "finding_id": "F392",
-   "statement": "A centralised, government-owned aid information management system was established.",
-   "theme": [
-    "Transition"
-   ],
-   "example": "",
-   "type": "enabler",
-   "strength": "low",
-   "n_records": 1,
-   "n_sources": 1,
-   "n_streams": 1,
-   "streams": [
-    "sdr"
-   ],
-   "countries": [
-    "SOM"
-   ],
-   "tags": [
-    "government-engagement",
-    "information-management"
-   ],
-   "actors": [
-    "gov-national"
-   ],
-   "record_ids": [
-    "E0328"
    ],
    "unmerged": false
   },
@@ -9098,37 +8515,6 @@ window.SITE_DATA = {
    "unmerged": false
   },
   {
-   "finding_id": "F515",
-   "statement": "Multi-sector needs assessment has not been run for around three years because the country has substantial official data, and the sector calculation does not rely on it.",
-   "theme": [
-    "Transition"
-   ],
-   "example": "",
-   "type": "context",
-   "strength": "low",
-   "n_records": 1,
-   "n_sources": 1,
-   "n_streams": 1,
-   "streams": [
-    "transcript"
-   ],
-   "countries": [
-    "COL"
-   ],
-   "tags": [
-    "hpc",
-    "information-management"
-   ],
-   "actors": [
-    "cluster",
-    "ocha"
-   ],
-   "record_ids": [
-    "E0395"
-   ],
-   "unmerged": false
-  },
-  {
    "finding_id": "F517",
    "statement": "Data needed to estimate refugee and migrant needs sits in a national government social registry that the cluster has found difficult to obtain access to.",
    "theme": [
@@ -9349,166 +8735,49 @@ window.SITE_DATA = {
   },
   {
    "finding_id": "F600",
-   "statement": "State-level expert judgement is built into the severity and needs analysis alongside the survey results, because data quality and the pace of change make survey data alone unreliable and the eighteen state coordination platforms hold genuine field knowledge.",
+   "statement": "Structured expert judgement alongside survey data produces a more usable analysis than either alone. Where data quality is uneven or the situation changes fast, state and district coordinators contribute judgement against the survey results; layering historical outbreak and disaster data, infrastructure damage and displaced-to-host ratios onto household findings gives an area-level picture the household survey cannot. Running needs figures, vulnerability analysis and planning as one exercise rather than three engages the same people once.",
    "theme": [
-    "ABC",
-    "Transition"
+    "Fundamentals"
    ],
-   "example": "",
+   "example": "Sudan — expert judgement is built in at state level alongside the survey, because data quality and the pace of change make survey results alone unreliable.",
    "type": "enabler",
-   "strength": "low",
-   "n_records": 1,
-   "n_sources": 1,
+   "strength": "high",
+   "n_records": 5,
+   "n_sources": 4,
    "n_streams": 1,
    "streams": [
     "transcript"
    ],
    "countries": [
-    "SDN"
+    "LBN",
+    "MOZ",
+    "SDN",
+    "SYR"
    ],
    "tags": [
     "hpc",
     "information-management",
-    "localisation"
+    "localisation",
+    "pooled-funds"
    ],
    "actors": [
     "cluster",
-    "local-ngo"
-   ],
-   "record_ids": [
-    "E0409"
-   ],
-   "unmerged": false
-  },
-  {
-   "finding_id": "F601",
-   "statement": "Running the expert judgement exercise as a single process covering needs figures, vulnerability analysis and planning together engages state coordinators in the analysis rather than presenting them with a finished product.",
-   "theme": [
-    "ABC",
-    "Transition"
-   ],
-   "example": "",
-   "type": "enabler",
-   "strength": "low",
-   "n_records": 1,
-   "n_sources": 1,
-   "n_streams": 1,
-   "streams": [
-    "transcript"
-   ],
-   "countries": [
-    "SDN"
-   ],
-   "tags": [
-    "hpc",
-    "information-management"
-   ],
-   "actors": [
-    "cluster",
-    "local-ngo"
-   ],
-   "record_ids": [
-    "E0410"
-   ],
-   "unmerged": false
-  },
-  {
-   "finding_id": "F602",
-   "statement": "An assessment of more than sixteen hundred water points, heading toward twenty-two hundred, was presented to a government-development water task force with an accompanying dashboard.",
-   "theme": [
-    "Transition"
-   ],
-   "example": "",
-   "type": "practice",
-   "strength": "low",
-   "n_records": 1,
-   "n_sources": 1,
-   "n_streams": 1,
-   "streams": [
-    "transcript"
-   ],
-   "countries": [
-    "SDN"
-   ],
-   "tags": [
-    "government-engagement",
-    "information-management",
-    "nexus"
-   ],
-   "actors": [
-    "cluster",
-    "development",
-    "gov-national"
-   ],
-   "record_ids": [
-    "E0411"
-   ],
-   "unmerged": false
-  },
-  {
-   "finding_id": "F603",
-   "statement": "Facility and asset mapping is among the most effective bridges to development actors, because it produces something they need and creates a shared table where sector coordination otherwise has none.",
-   "theme": [
-    "Transition"
-   ],
-   "example": "",
-   "type": "enabler",
-   "strength": "low",
-   "n_records": 1,
-   "n_sources": 1,
-   "n_streams": 1,
-   "streams": [
-    "transcript"
-   ],
-   "countries": [
-    "SDN"
-   ],
-   "tags": [
-    "government-engagement",
-    "information-management",
-    "nexus"
-   ],
-   "actors": [
-    "cluster",
-    "development",
-    "gov-national"
-   ],
-   "record_ids": [
-    "E0412"
-   ],
-   "unmerged": false
-  },
-  {
-   "finding_id": "F606",
-   "statement": "A central reporting platform launched mid-year asks partners to upload projects retroactively from the start of the year, which is difficult alongside the reporting systems already in use.",
-   "theme": [
-    "ABC"
-   ],
-   "example": "",
-   "type": "barrier",
-   "strength": "low",
-   "n_records": 1,
-   "n_sources": 1,
-   "n_streams": 1,
-   "streams": [
-    "transcript"
-   ],
-   "countries": [
-    "SDN"
-   ],
-   "tags": [
-    "hpc",
-    "information-management"
-   ],
-   "actors": [
-    "cluster",
-    "ingo",
+    "local-ngo",
     "ocha"
    ],
    "record_ids": [
-    "E0415"
+    "E0409",
+    "E0410",
+    "E0490",
+    "E0549",
+    "E0652"
    ],
-   "unmerged": false
+   "unmerged": false,
+   "highlight": {
+    "headline": "Expert judgement is not a fallback, it is part of the method",
+    "plain": "Where data quality is uneven or the situation moves fast, structured judgement from state and district coordinators alongside the survey produces a more usable analysis than the survey alone. Layering outbreak history, infrastructure damage and displaced-to-host ratios onto household findings gives an area-level picture households cannot. Running needs, vulnerability and planning as one exercise engages the same people once instead of three times.",
+    "so_what": "Build the expert judgement step into the methodology and document it, rather than treating it as an adjustment made afterwards."
+   }
   },
   {
    "finding_id": "F608",
@@ -9630,35 +8899,51 @@ window.SITE_DATA = {
   },
   {
    "finding_id": "F613",
-   "statement": "The most recent census predates the current crisis by close to a decade, so there is no reliable baseline against which needs can be measured.",
+   "statement": "There is often no usable baseline to measure need against. Censuses predate the crisis by close to a decade, no in-depth severity analysis has been produced nationally for years, and where the joint assessment was not run the response plan rested on secondary data alone — or on small exercises by regional directorates covering no one systematically.",
    "theme": [
-    "ABC",
-    "Transition"
+    "Fundamentals"
    ],
-   "example": "",
+   "example": "Sudan — the most recent census dates from 2016–18, so there is no established baseline the current caseload can be measured against.",
    "type": "barrier",
-   "strength": "low",
-   "n_records": 1,
-   "n_sources": 1,
+   "strength": "high",
+   "n_records": 5,
+   "n_sources": 5,
    "n_streams": 1,
    "streams": [
     "transcript"
    ],
    "countries": [
+    "BFA",
+    "BGD",
+    "COL",
+    "NGA",
     "SDN"
    ],
    "tags": [
+    "funding",
     "hpc",
-    "information-management"
+    "information-management",
+    "performance"
    ],
    "actors": [
     "cluster",
-    "gov-national"
+    "gov-local",
+    "gov-national",
+    "ocha"
    ],
    "record_ids": [
-    "E0422"
+    "E0395",
+    "E0422",
+    "E0448",
+    "E0509",
+    "E0588"
    ],
-   "unmerged": false
+   "unmerged": false,
+   "highlight": {
+    "headline": "You cannot measure need against a baseline that does not exist",
+    "plain": "Censuses predate the crisis by close to a decade. Some countries have had no in-depth severity analysis at national level for years. Where the joint assessment did not run, the response plan rested on secondary data alone, or on small exercises by regional directorates that covered nobody systematically. The figures still get produced — they just have nothing solid underneath them.",
+    "so_what": "Say plainly in the methodology note what the baseline is and how old it is. A number with a stated weakness is more defensible than a number that looks precise."
+   }
   },
   {
    "finding_id": "F614",
@@ -9690,38 +8975,6 @@ window.SITE_DATA = {
    ],
    "record_ids": [
     "E0423"
-   ],
-   "unmerged": false
-  },
-  {
-   "finding_id": "F616",
-   "statement": "Rules on collecting location data differ between states, with coordinates permitted in some and prohibited in others, which constrains outbreak response planning.",
-   "theme": [
-    "ABC",
-    "Transition"
-   ],
-   "example": "",
-   "type": "barrier",
-   "strength": "low",
-   "n_records": 1,
-   "n_sources": 1,
-   "n_streams": 1,
-   "streams": [
-    "transcript"
-   ],
-   "countries": [
-    "SDN"
-   ],
-   "tags": [
-    "data-protection",
-    "information-management"
-   ],
-   "actors": [
-    "cluster",
-    "gov-local"
-   ],
-   "record_ids": [
-    "E0425"
    ],
    "unmerged": false
   },
@@ -10126,38 +9379,6 @@ window.SITE_DATA = {
    "unmerged": false
   },
   {
-   "finding_id": "F706",
-   "statement": "No wider multi-sector needs assessment was conducted last year, so the response plan rested on secondary data analysis alone.",
-   "theme": [
-    "ABC",
-    "Transition"
-   ],
-   "example": "",
-   "type": "barrier",
-   "strength": "low",
-   "n_records": 1,
-   "n_sources": 1,
-   "n_streams": 1,
-   "streams": [
-    "transcript"
-   ],
-   "countries": [
-    "NGA"
-   ],
-   "tags": [
-    "hpc",
-    "information-management"
-   ],
-   "actors": [
-    "cluster",
-    "ocha"
-   ],
-   "record_ids": [
-    "E0448"
-   ],
-   "unmerged": false
-  },
-  {
    "finding_id": "F707",
    "statement": "A large cholera outbreak is running concurrently with the transition, with cases declining in one urban area while rising in others, and the household-level response approach is not sufficient in the worst-affected locations.",
    "theme": [
@@ -10477,40 +9698,6 @@ window.SITE_DATA = {
    "unmerged": false
   },
   {
-   "finding_id": "F809",
-   "statement": "The cluster contributed indicators and questionnaire content to the planned multi-sector assessment and asked to take part in enumerator training, was told it would be included, and then heard nothing; collection was due to start in July and had not begun by mid-month.",
-   "theme": [
-    "ABC",
-    "Transition"
-   ],
-   "example": "",
-   "type": "barrier",
-   "strength": "low",
-   "n_records": 1,
-   "n_sources": 1,
-   "n_streams": 1,
-   "streams": [
-    "transcript"
-   ],
-   "countries": [
-    "NER"
-   ],
-   "tags": [
-    "hpc",
-    "information-management",
-    "partnerships"
-   ],
-   "actors": [
-    "cluster",
-    "ingo",
-    "ocha"
-   ],
-   "record_ids": [
-    "E0468"
-   ],
-   "unmerged": false
-  },
-  {
    "finding_id": "F810",
    "statement": "With no multi-sector assessment last year, the cluster updated the previous one through key informants and agreed severity levels collectively at a cluster workshop.",
    "theme": [
@@ -10672,23 +9859,25 @@ window.SITE_DATA = {
   },
   {
    "finding_id": "F907",
-   "statement": "Where rapid needs assessment required an approval that took time to obtain, the exercise was reframed as a rapid technical assessment focused on shelter conditions and standards, which allowed it to proceed and has now run three rounds.",
+   "statement": "Where the formal process did not fit, coordination teams built around it rather than waiting. A rapid needs assessment requiring an approval that took months was reframed as a rapid technical assessment and proceeded; with the central planning module suspended, the sector built its own reporting form covering activities, locations and costing and estimated its appeal from partner inputs.",
    "theme": [
-    "Transition"
+    "Fundamentals"
    ],
-   "example": "",
+   "example": "Lebanon — the rapid needs assessment was reframed as a rapid technical assessment, which allowed shelter assessments to proceed while the approval was outstanding.",
    "type": "practice",
-   "strength": "low",
-   "n_records": 1,
-   "n_sources": 1,
+   "strength": "medium",
+   "n_records": 2,
+   "n_sources": 2,
    "n_streams": 1,
    "streams": [
     "transcript"
    ],
    "countries": [
-    "LBN"
+    "LBN",
+    "SYR"
    ],
    "tags": [
+    "funding",
     "government-engagement",
     "hpc",
     "information-management"
@@ -10698,7 +9887,8 @@ window.SITE_DATA = {
     "gov-national"
    ],
    "record_ids": [
-    "E0484"
+    "E0484",
+    "E0654"
    ],
    "unmerged": false
   },
@@ -10735,100 +9925,58 @@ window.SITE_DATA = {
    "unmerged": false
   },
   {
-   "finding_id": "F909",
-   "statement": "Maintaining the same data in several formats at once — dashboard and spreadsheet — accommodates partners with different technical capacities without splitting the underlying data.",
+   "finding_id": "F910",
+   "statement": "The joint assessment rarely covers what the sector needs. Coverage stops short of nationwide and the excluded areas are often those most changed by the conflict; the number of sector questions is capped, so only a fraction of a standard measure fits; whether host communities are included stays unresolved; and clusters that contributed questions have then been left out of enumerator training. Two parallel population assessments may run at once covering different groups.",
    "theme": [
-    "ABC",
-    "Transition"
+    "Fundamentals"
    ],
-   "example": "",
-   "type": "enabler",
-   "strength": "low",
-   "n_records": 1,
-   "n_sources": 1,
+   "example": "South Sudan — only four of the twelve water insecurity questions could be accommodated in the joint tool, so the severity scale had to be reinterpreted around them.",
+   "type": "barrier",
+   "strength": "high",
+   "n_records": 6,
+   "n_sources": 5,
    "n_streams": 1,
    "streams": [
     "transcript"
    ],
    "countries": [
-    "LBN"
+    "BFA",
+    "BGD",
+    "LBN",
+    "NER",
+    "SSD"
    ],
    "tags": [
+    "funding",
+    "government-engagement",
+    "hpc",
+    "inclusion",
     "information-management",
+    "multisector",
     "partnerships"
    ],
    "actors": [
     "cluster",
-    "ingo"
-   ],
-   "record_ids": [
-    "E0486"
-   ],
-   "unmerged": false
-  },
-  {
-   "finding_id": "F910",
-   "statement": "The multi-sector assessment does not reach nationwide coverage, and the areas excluded are among those most changed by the conflict, so the change in conditions is the part hardest to measure.",
-   "theme": [
-    "ABC",
-    "Transition"
-   ],
-   "example": "",
-   "type": "barrier",
-   "strength": "low",
-   "n_records": 1,
-   "n_sources": 1,
-   "n_streams": 1,
-   "streams": [
-    "transcript"
-   ],
-   "countries": [
-    "LBN"
-   ],
-   "tags": [
-    "hpc",
-    "information-management"
-   ],
-   "actors": [
-    "cluster",
+    "community",
+    "donor",
+    "gov-national",
+    "ingo",
     "ocha"
    ],
    "record_ids": [
-    "E0487"
+    "E0468",
+    "E0487",
+    "E0488",
+    "E0504",
+    "E0590",
+    "E0620"
    ],
-   "unmerged": false
-  },
-  {
-   "finding_id": "F911",
-   "statement": "Two separate population assessments run in parallel covering different groups, and although the sector aligned the questions between them, merging the two has been discussed for a long time without resolution.",
-   "theme": [
-    "ABC",
-    "Transition"
-   ],
-   "example": "",
-   "type": "barrier",
-   "strength": "low",
-   "n_records": 1,
-   "n_sources": 1,
-   "n_streams": 1,
-   "streams": [
-    "transcript"
-   ],
-   "countries": [
-    "LBN"
-   ],
-   "tags": [
-    "hpc",
-    "multisector"
-   ],
-   "actors": [
-    "cluster",
-    "ocha"
-   ],
-   "record_ids": [
-    "E0488"
-   ],
-   "unmerged": false
+   "unmerged": false,
+   "highlight": {
+    "headline": "The joint assessment rarely asks what WASH needs to know",
+    "plain": "Coverage stops short of nationwide, and the areas left out are often those the conflict changed most. The number of sector questions is capped, so only a fraction of a standard measure fits. Whether host communities are included goes unresolved. Clusters that contributed the questions have then been left out of enumerator training.",
+    "so_what": "Negotiate the sector's questions and its coverage as one ask, early, and get a place in enumerator training — the questions surviving the cut are worth little if they are asked badly."
+   }
   },
   {
    "finding_id": "F912",
@@ -10859,38 +10007,6 @@ window.SITE_DATA = {
    ],
    "record_ids": [
     "E0489"
-   ],
-   "unmerged": false
-  },
-  {
-   "finding_id": "F913",
-   "statement": "A district-level severity analysis combining infrastructure damage, displaced-to-host population ratios and rapid assessment findings gave the sector a defensible basis for pooled fund prioritisation.",
-   "theme": [
-    "ABC"
-   ],
-   "example": "",
-   "type": "enabler",
-   "strength": "low",
-   "n_records": 1,
-   "n_sources": 1,
-   "n_streams": 1,
-   "streams": [
-    "transcript"
-   ],
-   "countries": [
-    "LBN"
-   ],
-   "tags": [
-    "hpc",
-    "information-management",
-    "pooled-funds"
-   ],
-   "actors": [
-    "cluster",
-    "ocha"
-   ],
-   "record_ids": [
-    "E0490"
    ],
    "unmerged": false
   },
@@ -12305,7 +11421,7 @@ window.SITE_DATA = {
   },
   {
    "id": "E0063",
-   "finding_id": "F055",
+   "finding_id": "F057",
    "theme": [
     "ABC",
     "Transition"
@@ -12384,7 +11500,7 @@ window.SITE_DATA = {
   },
   {
    "id": "E0066",
-   "finding_id": "F058",
+   "finding_id": "F057",
    "theme": [
     "ABC",
     "Transition"
@@ -12516,7 +11632,7 @@ window.SITE_DATA = {
   },
   {
    "id": "E0072",
-   "finding_id": "F101",
+   "finding_id": "F102",
    "theme": [
     "ABC"
    ],
@@ -13692,7 +12808,7 @@ window.SITE_DATA = {
   },
   {
    "id": "E0120",
-   "finding_id": "F212",
+   "finding_id": "F211",
    "theme": [
     "ABC"
    ],
@@ -15418,7 +14534,7 @@ window.SITE_DATA = {
   },
   {
    "id": "E0190",
-   "finding_id": "F262",
+   "finding_id": "F263",
    "theme": [
     "ABC"
    ],
@@ -18907,7 +18023,7 @@ window.SITE_DATA = {
   },
   {
    "id": "E0328",
-   "finding_id": "F392",
+   "finding_id": "F1308",
    "theme": [
     "Transition"
    ],
@@ -20620,7 +19736,7 @@ window.SITE_DATA = {
   },
   {
    "id": "E0395",
-   "finding_id": "F515",
+   "finding_id": "F613",
    "theme": [
     "Transition"
    ],
@@ -21020,7 +20136,7 @@ window.SITE_DATA = {
   },
   {
    "id": "E0410",
-   "finding_id": "F601",
+   "finding_id": "F600",
    "theme": [
     "ABC",
     "Transition"
@@ -21047,7 +20163,7 @@ window.SITE_DATA = {
   },
   {
    "id": "E0411",
-   "finding_id": "F602",
+   "finding_id": "F1308",
    "theme": [
     "Transition"
    ],
@@ -21075,7 +20191,7 @@ window.SITE_DATA = {
   },
   {
    "id": "E0412",
-   "finding_id": "F603",
+   "finding_id": "F1308",
    "theme": [
     "Transition"
    ],
@@ -21156,7 +20272,7 @@ window.SITE_DATA = {
   },
   {
    "id": "E0415",
-   "finding_id": "F606",
+   "finding_id": "F211",
    "theme": [
     "ABC"
    ],
@@ -21421,7 +20537,7 @@ window.SITE_DATA = {
   },
   {
    "id": "E0425",
-   "finding_id": "F616",
+   "finding_id": "F057",
    "theme": [
     "ABC",
     "Transition"
@@ -22037,7 +21153,7 @@ window.SITE_DATA = {
   },
   {
    "id": "E0448",
-   "finding_id": "F706",
+   "finding_id": "F613",
    "theme": [
     "ABC",
     "Transition"
@@ -22568,7 +21684,7 @@ window.SITE_DATA = {
   },
   {
    "id": "E0468",
-   "finding_id": "F809",
+   "finding_id": "F910",
    "theme": [
     "ABC",
     "Transition"
@@ -23058,7 +22174,7 @@ window.SITE_DATA = {
   },
   {
    "id": "E0486",
-   "finding_id": "F909",
+   "finding_id": "F356",
    "theme": [
     "ABC",
     "Transition"
@@ -23112,7 +22228,7 @@ window.SITE_DATA = {
   },
   {
    "id": "E0488",
-   "finding_id": "F911",
+   "finding_id": "F910",
    "theme": [
     "ABC",
     "Transition"
@@ -23166,7 +22282,7 @@ window.SITE_DATA = {
   },
   {
    "id": "E0490",
-   "finding_id": "F913",
+   "finding_id": "F600",
    "theme": [
     "ABC"
    ],
@@ -23490,7 +22606,7 @@ window.SITE_DATA = {
   },
   {
    "id": "E0502",
-   "finding_id": "F1006",
+   "finding_id": "F1114",
    "theme": [
     "ABC",
     "Transition"
@@ -23546,7 +22662,7 @@ window.SITE_DATA = {
   },
   {
    "id": "E0504",
-   "finding_id": "F1008",
+   "finding_id": "F910",
    "theme": [
     "ABC",
     "Transition"
@@ -23683,7 +22799,7 @@ window.SITE_DATA = {
   },
   {
    "id": "E0509",
-   "finding_id": "F1013",
+   "finding_id": "F613",
    "theme": [
     "Transition"
    ],
@@ -24653,7 +23769,7 @@ window.SITE_DATA = {
   },
   {
    "id": "E0546",
-   "finding_id": "F1207",
+   "finding_id": "F211",
    "theme": [
     "ABC",
     "Transition"
@@ -24732,7 +23848,7 @@ window.SITE_DATA = {
   },
   {
    "id": "E0549",
-   "finding_id": "F1210",
+   "finding_id": "F600",
    "theme": [
     "ABC",
     "Transition"
@@ -25791,7 +24907,7 @@ window.SITE_DATA = {
   },
   {
    "id": "E0588",
-   "finding_id": "F1412",
+   "finding_id": "F613",
    "theme": [
     "ABC",
     "Transition"
@@ -25846,7 +24962,7 @@ window.SITE_DATA = {
   },
   {
    "id": "E0590",
-   "finding_id": "F1414",
+   "finding_id": "F910",
    "theme": [
     "ABC",
     "Transition"
@@ -26168,7 +25284,7 @@ window.SITE_DATA = {
   },
   {
    "id": "E0602",
-   "finding_id": "F1504",
+   "finding_id": "F211",
    "theme": [
     "ABC",
     "Transition"
@@ -26657,7 +25773,7 @@ window.SITE_DATA = {
   },
   {
    "id": "E0620",
-   "finding_id": "F1604",
+   "finding_id": "F910",
    "theme": [
     "ABC",
     "Transition"
@@ -26767,7 +25883,7 @@ window.SITE_DATA = {
   },
   {
    "id": "E0624",
-   "finding_id": "F1608",
+   "finding_id": "F1603",
    "theme": [
     "ABC"
    ],
@@ -27391,7 +26507,7 @@ window.SITE_DATA = {
   },
   {
    "id": "E0648",
-   "finding_id": "F1713",
+   "finding_id": "F263",
    "theme": [
     "ABC"
    ],
@@ -27490,7 +26606,7 @@ window.SITE_DATA = {
   },
   {
    "id": "E0652",
-   "finding_id": "F1717",
+   "finding_id": "F600",
    "theme": [
     "Fundamentals"
    ],
@@ -27515,7 +26631,7 @@ window.SITE_DATA = {
   },
   {
    "id": "E0653",
-   "finding_id": "F1718",
+   "finding_id": "F1308",
    "theme": [
     "Fundamentals"
    ],
@@ -27543,7 +26659,7 @@ window.SITE_DATA = {
   },
   {
    "id": "E0654",
-   "finding_id": "F1719",
+   "finding_id": "F907",
    "theme": [
     "Fundamentals"
    ],
@@ -27620,7 +26736,7 @@ window.SITE_DATA = {
   },
   {
    "id": "E0657",
-   "finding_id": "F1722",
+   "finding_id": "F356",
    "theme": [
     "Fundamentals"
    ],
