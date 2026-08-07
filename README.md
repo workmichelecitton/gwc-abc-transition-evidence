@@ -26,7 +26,9 @@ data/follow-ups.csv ──► validated, never published
 
 Theme says what a finding is *about*; `tags` say what it *bears on*.
 
-You edit the CSVs. A GitHub Action validates them, regenerates `site.json`, and the published site picks it up. **Nobody edits `index.html` to change what the site says.**
+You edit the CSVs. A GitHub Action validates them, regenerates `site.json` and `site.js`, and the published site picks it up. **Nobody edits `index.html` to change what the site says.**
+
+**If the Action emails you that it failed,** open the run and look at the last step. If it says *permission denied* or shows a 403, the workflow token is read-only: fix it at **Settings → Actions → General → Workflow permissions → "Read and write permissions"**. The build itself almost never fails — it refuses to write and exits with a clear message naming the bad row, which shows up as a failure on the *Validate and build* step instead.
 
 If a CSV is malformed the build fails, nothing is written, and the live site keeps serving the last good version.
 

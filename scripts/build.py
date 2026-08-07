@@ -431,6 +431,23 @@ def main():
     }
 
     out = DATA / "site.json"
+
+    # `generated` is the one field that changes without the data changing. Left
+    # alone, a rebuild on any later day produces a different file, so the CI job
+    # commits and pushes on every run — and every one of those pushes was being
+    # rejected, which is what filled the inbox with failure mail. Keep the old
+    # date when nothing else moved, so the build is idempotent and CI has
+    # genuinely nothing to commit.
+    if out.exists():
+        try:
+            previous = json.loads(out.read_text(encoding="utf-8"))
+            a = {k: v for k, v in previous.items() if k != "generated"}
+            b = {k: v for k, v in site.items() if k != "generated"}
+            if json.dumps(a, sort_keys=True) == json.dumps(b, sort_keys=True):
+                site["generated"] = previous.get("generated", site["generated"])
+        except (ValueError, OSError):
+            pass  # unreadable previous build — just write the new one
+
     payload = json.dumps(site, ensure_ascii=False, indent=1)
     out.write_text(payload, encoding="utf-8")
 

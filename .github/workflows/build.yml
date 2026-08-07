@@ -1,16 +1,24 @@
 name: Build evidence data
 
-# Runs whenever the CSV masters or the taxonomy change.
-# On main: rebuilds data/site.json and commits it back, which republishes the site.
-# On a pull request: validates only, so a bad edit is caught before it reaches main.
+# Runs whenever anything the build reads changes.
+# On main: rebuilds data/site.json and data/site.js and commits them back, which
+# republishes the site. On a pull request: validates only, so a bad edit is
+# caught before it reaches main.
 
 on:
   push:
     branches: [main]
     paths:
+      # Every input build.py reads. Miss one and editing it silently fails to
+      # republish — findings.csv and highlights.csv were missing from this list,
+      # so curated statements and plain-language text never reached the site.
       - 'data/evidence.csv'
       - 'data/sources.csv'
+      - 'data/findings.csv'
+      - 'data/highlights.csv'
+      - 'data/follow-ups.csv'
       - 'data/taxonomy.json'
+      - 'data/about.json'
       - 'scripts/build.py'
   pull_request:
     paths:
@@ -20,6 +28,13 @@ on:
 
 permissions:
   contents: write
+
+# Two pushes in quick succession start two runs. Without this, the slower one
+# finishes second, tries to push onto a branch that has already moved, and fails
+# with a rejection that looks like a broken build.
+concurrency:
+  group: build-${{ github.ref }}
+  cancel-in-progress: false
 
 jobs:
   build:
@@ -34,15 +49,36 @@ jobs:
       - name: Validate and build
         run: python scripts/build.py
 
-      - name: Commit site.json
+      - name: Commit rebuilt data
         if: github.event_name != 'pull_request'
         run: |
           git config user.name  "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add data/site.json
+
+          # site.js is the file:// fallback and is generated alongside site.json.
+          # It used to be left out here, so it drifted out of step with site.json
+          # every time CI rebuilt.
+          git add data/site.json data/site.js
+
           if git diff --staged --quiet; then
-            echo "No change to site.json."
-          else
-            git commit -m "Rebuild site.json [skip ci]"
-            git push
+            echo "No change — data/site.json and data/site.js are already current."
+            exit 0
           fi
+
+          git commit -m "Rebuild site.json [skip ci]"
+
+          # Someone may have pushed while this job was running.
+          for attempt in 1 2 3; do
+            if git push; then
+              echo "Pushed on attempt $attempt."
+              exit 0
+            fi
+            echo "Push rejected — rebasing on origin/main and retrying."
+            git pull --rebase origin "${GITHUB_REF_NAME}" || exit 1
+          done
+
+          echo "::error::Could not push the rebuilt data after three attempts."
+          echo "::error::If the log above says 'permission to ... denied' or shows a 403,"
+          echo "::error::the workflow token is read-only. Fix it in Settings -> Actions ->"
+          echo "::error::General -> Workflow permissions -> 'Read and write permissions'."
+          exit 1
