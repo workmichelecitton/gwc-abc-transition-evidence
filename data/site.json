@@ -76,7 +76,7 @@
  "taxonomy_version": "0.6.0",
  "stats": {
   "records": 656,
-  "findings": 347,
+  "findings": 301,
   "sources": 106,
   "countries": 29,
   "withheld_internal": 2
@@ -445,14 +445,14 @@
  "findings": [
   {
    "finding_id": "F001",
-   "statement": "Where area-based structures report upward through a separate operational cell rather than to the cluster, the same needs information travels up and back down again, looping between two parallel structures.",
+   "statement": "Information and decisions route around the cluster. Where area structures report upward through a separate operational cell, the same needs information travels a longer path before reaching anyone who can act on it; where subnational coordinators are approached directly, the national team cannot see what has been asked or answered.",
    "theme": [
     "ABC"
    ],
-   "example": "",
+   "example": "Somalia — subnational coordinators were asked for allocation input without the national coordinator copied in, and the cluster first saw the allocation strategy when a partner forwarded it.",
    "type": "barrier",
    "strength": "high",
-   "n_records": 4,
+   "n_records": 8,
    "n_sources": 4,
    "n_streams": 2,
    "streams": [
@@ -465,7 +465,10 @@
    ],
    "tags": [
     "coordination-architecture",
-    "information-management"
+    "funding",
+    "information-management",
+    "partnerships",
+    "pooled-funds"
    ],
    "actors": [
     "cluster",
@@ -476,6 +479,10 @@
    ],
    "record_ids": [
     "E0013",
+    "E0014",
+    "E0015",
+    "E0022",
+    "E0023",
     "E0112",
     "E0113",
     "E0115"
@@ -489,14 +496,14 @@
   },
   {
    "finding_id": "F002",
-   "statement": "The coordination structure mirrors the government structure: each province has a provincial administration able to take decisions without referring to the capital, so provincial coordination has a counterpart with real authority.",
+   "statement": "Where the coordination structure mirrors the government's own structure, provincial authorities can take decisions without referring upward, and operational questions and partner-level discussion are handled better than a national platform can manage.",
    "theme": [
     "ABC"
    ],
-   "example": "",
+   "example": "Mozambique — the cluster structure reflects the government structure, because every province has a strong provincial administration.",
    "type": "enabler",
    "strength": "low",
-   "n_records": 1,
+   "n_records": 2,
    "n_sources": 1,
    "n_streams": 1,
    "streams": [
@@ -515,41 +522,8 @@
     "gov-local"
    ],
    "record_ids": [
-    "E0531"
-   ],
-   "unmerged": false
-  },
-  {
-   "finding_id": "F010",
-   "statement": "Subnational cluster coordinators may attend area-based coordination meetings only if invited, leaving the cluster with no standing presence at district level.",
-   "theme": [
-    "ABC"
-   ],
-   "example": "",
-   "type": "barrier",
-   "strength": "low",
-   "n_records": 2,
-   "n_sources": 1,
-   "n_streams": 1,
-   "streams": [
-    "transcript"
-   ],
-   "countries": [
-    "SOM"
-   ],
-   "tags": [
-    "coordination-architecture",
-    "partnerships"
-   ],
-   "actors": [
-    "cluster",
-    "ingo",
-    "operational-cell",
-    "un-agency"
-   ],
-   "record_ids": [
-    "E0014",
-    "E0015"
+    "E0531",
+    "E0539"
    ],
    "unmerged": false
   },
@@ -587,14 +561,14 @@
   },
   {
    "finding_id": "F013",
-   "statement": "Area-based coordination was introduced to counterbalance a coordination architecture perceived as UN-centred and out of touch with international and national NGOs and with communities at district level.",
+   "statement": "Area-based coordination was introduced to counterbalance an architecture seen as UN-centred and remote from the district level. Where it met resistance, coordinators attributed that to how it was introduced rather than to the concept — community consultation and local needs prioritisation were not themselves contested.",
    "theme": [
     "ABC"
    ],
-   "example": "",
+   "example": "Somalia — resistance reflected the way the model was introduced rather than the model itself.",
    "type": "context",
    "strength": "low",
-   "n_records": 1,
+   "n_records": 2,
    "n_sources": 1,
    "n_streams": 1,
    "streams": [
@@ -615,7 +589,8 @@
     "local-ngo"
    ],
    "record_ids": [
-    "E0018"
+    "E0018",
+    "E0038"
    ],
    "unmerged": false
   },
@@ -728,40 +703,6 @@
    "record_ids": [
     "E0021",
     "E0615"
-   ],
-   "unmerged": false
-  },
-  {
-   "finding_id": "F017",
-   "statement": "Subnational cluster coordinators were approached directly for allocation input without the national coordinator included, which made it harder for the cluster to present a single position.",
-   "theme": [
-    "ABC"
-   ],
-   "example": "",
-   "type": "barrier",
-   "strength": "low",
-   "n_records": 2,
-   "n_sources": 1,
-   "n_streams": 1,
-   "streams": [
-    "transcript"
-   ],
-   "countries": [
-    "SOM"
-   ],
-   "tags": [
-    "coordination-architecture",
-    "funding",
-    "information-management",
-    "pooled-funds"
-   ],
-   "actors": [
-    "cluster",
-    "ocha"
-   ],
-   "record_ids": [
-    "E0022",
-    "E0023"
    ],
    "unmerged": false
   },
@@ -1290,48 +1231,15 @@
    }
   },
   {
-   "finding_id": "F032",
-   "statement": "Resistance to area-based coordination reflects how it was introduced rather than the concept itself, since community consultation and needs prioritisation were already standard practice among partners.",
-   "theme": [
-    "ABC"
-   ],
-   "example": "",
-   "type": "context",
-   "strength": "low",
-   "n_records": 1,
-   "n_sources": 1,
-   "n_streams": 1,
-   "streams": [
-    "transcript"
-   ],
-   "countries": [
-    "SOM"
-   ],
-   "tags": [
-    "aap",
-    "coordination-architecture",
-    "localisation"
-   ],
-   "actors": [
-    "cluster",
-    "community",
-    "ingo"
-   ],
-   "record_ids": [
-    "E0038"
-   ],
-   "unmerged": false
-  },
-  {
    "finding_id": "F034",
-   "statement": "A zonal coordination layer chaired by the humanitarian coordination office replaced the subnational intersectoral tier, with clusters positioned as technical advisers to it.",
+   "statement": "A zonal coordination layer chaired by the humanitarian coordination office replaced the subnational intersectoral tier, with clusters repositioned as technical advisers. In one area partners formally asked for the previous arrangement to be retained, and it was kept in place pending a decision.",
    "theme": [
     "ABC"
    ],
-   "example": "",
+   "example": "Myanmar — partners in one area formally demanded that the previous subnational cluster arrangement be retained.",
    "type": "context",
    "strength": "low",
-   "n_records": 1,
+   "n_records": 2,
    "n_sources": 1,
    "n_streams": 1,
    "streams": [
@@ -1341,14 +1249,18 @@
     "MMR"
    ],
    "tags": [
-    "coordination-architecture"
+    "coordination-architecture",
+    "partnerships"
    ],
    "actors": [
     "cluster",
+    "ingo",
+    "local-ngo",
     "ocha"
    ],
    "record_ids": [
-    "E0041"
+    "E0041",
+    "E0050"
    ],
    "unmerged": false
   },
@@ -1449,37 +1361,6 @@
    "unmerged": false
   },
   {
-   "finding_id": "F038",
-   "statement": "The area coordinator arrangement was not set out in published guidance, and the cluster learned of it informally before seeking confirmation.",
-   "theme": [
-    "ABC"
-   ],
-   "example": "",
-   "type": "barrier",
-   "strength": "low",
-   "n_records": 1,
-   "n_sources": 1,
-   "n_streams": 1,
-   "streams": [
-    "transcript"
-   ],
-   "countries": [
-    "MMR"
-   ],
-   "tags": [
-    "coordination-architecture",
-    "guidance"
-   ],
-   "actors": [
-    "cluster",
-    "ocha"
-   ],
-   "record_ids": [
-    "E0045"
-   ],
-   "unmerged": false
-  },
-  {
    "finding_id": "F040",
    "statement": "Area coordination groups work in detail locally but there is no equivalent operational discussion at central level, so issues stay compartmentalised within each area rather than aggregating into a national picture.",
    "theme": [
@@ -1550,70 +1431,6 @@
    ],
    "record_ids": [
     "E0049"
-   ],
-   "unmerged": false
-  },
-  {
-   "finding_id": "F042",
-   "statement": "Partners in one area formally demanded that the previous subnational cluster arrangement be retained, and it was kept in place pending a decision.",
-   "theme": [
-    "ABC"
-   ],
-   "example": "",
-   "type": "context",
-   "strength": "low",
-   "n_records": 1,
-   "n_sources": 1,
-   "n_streams": 1,
-   "streams": [
-    "transcript"
-   ],
-   "countries": [
-    "MMR"
-   ],
-   "tags": [
-    "coordination-architecture",
-    "partnerships"
-   ],
-   "actors": [
-    "cluster",
-    "ingo",
-    "local-ngo"
-   ],
-   "record_ids": [
-    "E0050"
-   ],
-   "unmerged": false
-  },
-  {
-   "finding_id": "F043",
-   "statement": "Final versions of the national area-coordination guidance were not held by the cluster lead agency, and the cluster had to assemble a comparison against global guidance itself to establish what applied.",
-   "theme": [
-    "ABC"
-   ],
-   "example": "",
-   "type": "barrier",
-   "strength": "low",
-   "n_records": 1,
-   "n_sources": 1,
-   "n_streams": 1,
-   "streams": [
-    "transcript"
-   ],
-   "countries": [
-    "MMR"
-   ],
-   "tags": [
-    "coordination-architecture",
-    "guidance"
-   ],
-   "actors": [
-    "cluster",
-    "ocha",
-    "un-agency"
-   ],
-   "record_ids": [
-    "E0051"
    ],
    "unmerged": false
   },
@@ -2062,66 +1879,6 @@
    ],
    "record_ids": [
     "E0066"
-   ],
-   "unmerged": false
-  },
-  {
-   "finding_id": "F100",
-   "statement": "Set roles and accountability at core function level — Map the 6+1 cluster core functions one by one — which must remain with the cluster, which can be shared with ABC, and which can be delegated — and record who is accountable for each",
-   "theme": [
-    "ABC"
-   ],
-   "example": "",
-   "type": "recommendation",
-   "strength": "low",
-   "n_records": 1,
-   "n_sources": 1,
-   "n_streams": 1,
-   "streams": [
-    "sdr"
-   ],
-   "countries": [],
-   "tags": [
-    "coordination-architecture",
-    "guidance"
-   ],
-   "actors": [
-    "cluster",
-    "operational-cell"
-   ],
-   "record_ids": [
-    "E0071"
-   ],
-   "unmerged": false
-  },
-  {
-   "finding_id": "F1000",
-   "statement": "At national level the coordination platform is government-led, so the sector operates inside a national cluster system rather than an internationally led one, alongside a separate sector arrangement for the refugee response.",
-   "theme": [
-    "Transition"
-   ],
-   "example": "",
-   "type": "context",
-   "strength": "low",
-   "n_records": 1,
-   "n_sources": 1,
-   "n_streams": 1,
-   "streams": [
-    "transcript"
-   ],
-   "countries": [
-    "BGD"
-   ],
-   "tags": [
-    "coordination-architecture",
-    "government-engagement"
-   ],
-   "actors": [
-    "cluster",
-    "gov-national"
-   ],
-   "record_ids": [
-    "E0496"
    ],
    "unmerged": false
   },
@@ -2586,15 +2343,15 @@
   },
   {
    "finding_id": "F102",
-   "statement": "Propose a minimum terms of reference and performance framework for area structures — A standard requiring a designated WASH focal point with defined technical escalation rights, and a performance framework equivalent to cluster coordination performance monitoring, would give both sides a shared reference.",
+   "statement": "Set a minimum terms of reference for area structures, function by function. Map the cluster core functions one at a time — which must stay with the cluster, which can move, and which are shared — then require a designated WASH focal point with defined technical requirements, written escalation pathways, and a stated owner for the analytical framework.",
    "theme": [
     "ABC"
    ],
    "example": "",
    "type": "recommendation",
-   "strength": "medium",
-   "n_records": 2,
-   "n_sources": 2,
+   "strength": "high",
+   "n_records": 6,
+   "n_sources": 3,
    "n_streams": 1,
    "streams": [
     "sdr"
@@ -2603,17 +2360,29 @@
    "tags": [
     "advocacy",
     "coordination-architecture",
+    "guidance",
+    "information-management",
     "performance"
    ],
    "actors": [
     "cluster",
-    "ocha"
+    "ocha",
+    "operational-cell"
    ],
    "record_ids": [
+    "E0071",
     "E0073",
-    "E0074"
+    "E0074",
+    "E0076",
+    "E0077",
+    "E0221"
    ],
-   "unmerged": false
+   "unmerged": false,
+   "highlight": {
+    "headline": "Set the minimum, function by function",
+    "plain": "Coordinators asked repeatedly for a standard to hold area structures to. The specific asks were consistent: map the cluster core functions one at a time and say which must stay, which can move and which are shared; require a designated WASH focal point with defined technical requirements; write the escalation pathway; and name who owns the analytical framework.",
+    "so_what": "A short minimum terms of reference would settle most of the disputes in this evidence base. It does not exist, and country teams are each writing their own version of it."
+   }
   },
   {
    "finding_id": "F103",
@@ -2642,63 +2411,6 @@
    ],
    "record_ids": [
     "E0075"
-   ],
-   "unmerged": false
-  },
-  {
-   "finding_id": "F104",
-   "statement": "Position the cluster as the analytical framework owner — The cluster provides the framework;",
-   "theme": [
-    "ABC"
-   ],
-   "example": "",
-   "type": "recommendation",
-   "strength": "low",
-   "n_records": 1,
-   "n_sources": 1,
-   "n_streams": 1,
-   "streams": [
-    "sdr"
-   ],
-   "countries": [],
-   "tags": [
-    "coordination-architecture",
-    "information-management"
-   ],
-   "actors": [
-    "cluster"
-   ],
-   "record_ids": [
-    "E0076"
-   ],
-   "unmerged": false
-  },
-  {
-   "finding_id": "F105",
-   "statement": "Clarify roles, mandates, and escalation pathways at country level — Advocate within the HCT and ICCG for a structured mapping of who does what at each coordination level, with clear escalation pathways for technical and strategic issues",
-   "theme": [
-    "ABC"
-   ],
-   "example": "",
-   "type": "recommendation",
-   "strength": "low",
-   "n_records": 1,
-   "n_sources": 1,
-   "n_streams": 1,
-   "streams": [
-    "sdr"
-   ],
-   "countries": [],
-   "tags": [
-    "coordination-architecture",
-    "guidance"
-   ],
-   "actors": [
-    "cluster",
-    "ocha"
-   ],
-   "record_ids": [
-    "E0077"
    ],
    "unmerged": false
   },
@@ -2861,21 +2573,23 @@
    "unmerged": false
   },
   {
-   "finding_id": "F1102",
-   "statement": "The authority position is that national-level co-leadership is not needed, and that support should instead go to strengthening coordination at subnational level with NGO involvement.",
+   "finding_id": "F1103",
+   "statement": "Coordination runs as a government-led sector rather than an activated cluster, because the government does not want activation. The sector operates inside a national system, and the authorities' position is that support should go to subnational coordination rather than to national co-leadership.",
    "theme": [
+    "ABC",
     "Transition"
    ],
-   "example": "",
+   "example": "Haiti — coordination operates as a government-led sector; the authority's position is that national-level co-leadership is not needed.",
    "type": "context",
-   "strength": "low",
-   "n_records": 1,
-   "n_sources": 1,
+   "strength": "medium",
+   "n_records": 3,
+   "n_sources": 2,
    "n_streams": 1,
    "streams": [
     "transcript"
    ],
    "countries": [
+    "BGD",
     "HTI"
    ],
    "tags": [
@@ -2884,41 +2598,14 @@
     "localisation"
    ],
    "actors": [
+    "cluster",
     "gov-national",
-    "local-ngo"
-   ],
-   "record_ids": [
-    "E0517"
-   ],
-   "unmerged": false
-  },
-  {
-   "finding_id": "F1103",
-   "statement": "Coordination operates as a government-led sector rather than an activated cluster, because the government does not want cluster activation.",
-   "theme": [
-    "Transition"
-   ],
-   "example": "",
-   "type": "context",
-   "strength": "low",
-   "n_records": 1,
-   "n_sources": 1,
-   "n_streams": 1,
-   "streams": [
-    "transcript"
-   ],
-   "countries": [
-    "HTI"
-   ],
-   "tags": [
-    "coordination-architecture",
-    "government-engagement"
-   ],
-   "actors": [
-    "gov-national",
+    "local-ngo",
     "ocha"
    ],
    "record_ids": [
+    "E0496",
+    "E0517",
     "E0518"
    ],
    "unmerged": false
@@ -3230,37 +2917,6 @@
     "E0344",
     "E0349",
     "E0632"
-   ],
-   "unmerged": false
-  },
-  {
-   "finding_id": "F1200",
-   "statement": "Provincial coordination handles operational questions and partner-level discussion more effectively than a national platform can, while national level is better placed for strategy, tools, harmonisation and information flow.",
-   "theme": [
-    "ABC"
-   ],
-   "example": "",
-   "type": "enabler",
-   "strength": "low",
-   "n_records": 1,
-   "n_sources": 1,
-   "n_streams": 1,
-   "streams": [
-    "transcript"
-   ],
-   "countries": [
-    "MOZ"
-   ],
-   "tags": [
-    "coordination-architecture",
-    "localisation"
-   ],
-   "actors": [
-    "cluster",
-    "gov-local"
-   ],
-   "record_ids": [
-    "E0539"
    ],
    "unmerged": false
   },
@@ -3811,71 +3467,6 @@
    "unmerged": false
   },
   {
-   "finding_id": "F1406",
-   "statement": "A ministry reform merged water into a larger ministry and dissolved the emergency technical secretariat that had been the cluster counterpart; its functions moved to the equivalent structure on the food security side, where a new WASH department was created staffed largely by the same people.",
-   "theme": [
-    "Transition"
-   ],
-   "example": "",
-   "type": "context",
-   "strength": "low",
-   "n_records": 1,
-   "n_sources": 1,
-   "n_streams": 1,
-   "streams": [
-    "transcript"
-   ],
-   "countries": [
-    "BFA"
-   ],
-   "tags": [
-    "coordination-architecture",
-    "government-engagement",
-    "staff-turnover"
-   ],
-   "actors": [
-    "cluster",
-    "gov-national"
-   ],
-   "record_ids": [
-    "E0582"
-   ],
-   "unmerged": false
-  },
-  {
-   "finding_id": "F1408",
-   "statement": "Government has moved to collect partner activity data itself, on the basis that the data should be nationally held, through a separate government-partner framework that sits outside the cluster.",
-   "theme": [
-    "Transition"
-   ],
-   "example": "",
-   "type": "barrier",
-   "strength": "low",
-   "n_records": 1,
-   "n_sources": 1,
-   "n_streams": 1,
-   "streams": [
-    "transcript"
-   ],
-   "countries": [
-    "BFA"
-   ],
-   "tags": [
-    "coordination-architecture",
-    "government-engagement",
-    "information-management"
-   ],
-   "actors": [
-    "cluster",
-    "gov-national",
-    "ingo"
-   ],
-   "record_ids": [
-    "E0584"
-   ],
-   "unmerged": false
-  },
-  {
    "finding_id": "F1409",
    "statement": "Running a parallel government data collection alongside the cluster system while the cluster is still active creates duplicate reporting for partners and divides the coordination picture, where a sequenced handover of the same function would not.",
    "theme": [
@@ -4230,38 +3821,6 @@
    ],
    "record_ids": [
     "E0616"
-   ],
-   "unmerged": false
-  },
-  {
-   "finding_id": "F1601",
-   "statement": "The area-based structures here are organised around transition, durable solutions and peace rather than around operational service coordination, and have been in place since well before the approach was adopted globally.",
-   "theme": [
-    "ABC",
-    "Transition"
-   ],
-   "example": "",
-   "type": "context",
-   "strength": "low",
-   "n_records": 1,
-   "n_sources": 1,
-   "n_streams": 1,
-   "streams": [
-    "transcript"
-   ],
-   "countries": [
-    "SSD"
-   ],
-   "tags": [
-    "coordination-architecture",
-    "transition-handover"
-   ],
-   "actors": [
-    "operational-cell",
-    "un-agency"
-   ],
-   "record_ids": [
-    "E0617"
    ],
    "unmerged": false
   },
@@ -4704,35 +4263,47 @@
   },
   {
    "finding_id": "F1712",
-   "statement": "Community-level structures linked coordination directly to service delivery and improved alignment across sectors.",
+   "statement": "Structures at community level connect coordination directly to delivery and improve alignment across sectors, and agencies with strong local presence have used them to lead joint access negotiations that a national platform could not.",
    "theme": [
     "ABC"
    ],
-   "example": "",
+   "example": "Haiti — area-based coordination let agencies with established local presence lead joint access negotiations with armed groups and community members.",
    "type": "enabler",
-   "strength": "low",
-   "n_records": 1,
-   "n_sources": 1,
-   "n_streams": 1,
+   "strength": "high",
+   "n_records": 3,
+   "n_sources": 3,
+   "n_streams": 2,
    "streams": [
+    "sdr",
     "workshop"
    ],
    "countries": [
-    "AFG"
+    "AFG",
+    "HTI"
    ],
    "tags": [
     "coordination-architecture",
     "localisation",
-    "multisector"
+    "multisector",
+    "partnerships"
    ],
    "actors": [
+    "cluster",
     "community",
+    "gov-local",
     "local-ngo"
    ],
    "record_ids": [
+    "E0175",
+    "E0183",
     "E0646"
    ],
-   "unmerged": false
+   "unmerged": false,
+   "highlight": {
+    "headline": "Community-level structures are where coordination meets delivery",
+    "plain": "Structures at community level connect coordination directly to service delivery and improve alignment across sectors. Agencies with strong local presence have used them to lead joint access negotiations that a national platform could not have attempted.",
+    "so_what": "Where local presence is the asset, the coordination structure should sit where that presence is. This is the strongest operational case for area-based working in the evidence base."
+   }
   },
   {
    "finding_id": "F1713",
@@ -5225,34 +4796,6 @@
    "unmerged": false
   },
   {
-   "finding_id": "F200",
-   "statement": "Even where integrated area-based approaches are formally adopted, coordination stays constrained at implementation level because actors, sectors and delivery mechanisms are not aligned.",
-   "theme": [
-    "ABC"
-   ],
-   "example": "",
-   "type": "barrier",
-   "strength": "low",
-   "n_records": 1,
-   "n_sources": 1,
-   "n_streams": 1,
-   "streams": [
-    "sdr"
-   ],
-   "countries": [],
-   "tags": [
-    "coordination-architecture"
-   ],
-   "actors": [
-    "cluster",
-    "operational-cell"
-   ],
-   "record_ids": [
-    "E0107"
-   ],
-   "unmerged": false
-  },
-  {
    "finding_id": "F201",
    "statement": "The need to create dedicated structures such as a drought strategic working group and community resource centres shows that existing coordination systems could not support integrated multi-sectoral assistance.",
    "theme": [
@@ -5284,197 +4827,105 @@
    "unmerged": false
   },
   {
-   "finding_id": "F202",
-   "statement": "Drought response revealed uneven sectoral delivery, with actors operating in the same areas without harmonised planning frameworks.",
-   "theme": [
-    "ABC"
-   ],
-   "example": "",
-   "type": "barrier",
-   "strength": "low",
-   "n_records": 1,
-   "n_sources": 1,
-   "n_streams": 1,
-   "streams": [
-    "sdr"
-   ],
-   "countries": [
-    "SOM"
-   ],
-   "tags": [
-    "coordination-architecture",
-    "multisector"
-   ],
-   "actors": [
-    "cluster",
-    "ingo"
-   ],
-   "record_ids": [
-    "E0109"
-   ],
-   "unmerged": false
-  },
-  {
    "finding_id": "F203",
-   "statement": "Parallel coordination and implementation channels persist despite the formal presence of coordination structures.",
+   "statement": "Parallel coordination and implementation channels persist alongside the formal structures, and adding an area-based layer in a context that already has an intersectoral tier has increased complexity rather than reduced it. Actors work in the same areas without harmonised planning frameworks.",
    "theme": [
     "ABC"
    ],
-   "example": "",
+   "example": "Somalia — the drought response revealed uneven sectoral delivery, with actors operating in the same areas without a shared planning framework.",
    "type": "barrier",
-   "strength": "low",
-   "n_records": 1,
-   "n_sources": 1,
+   "strength": "high",
+   "n_records": 4,
+   "n_sources": 4,
    "n_streams": 1,
    "streams": [
     "sdr"
    ],
    "countries": [
+    "SOM",
     "YEM"
    ],
    "tags": [
-    "coordination-architecture"
-   ],
-   "actors": [
-    "cluster",
-    "ocha"
-   ],
-   "record_ids": [
-    "E0110"
-   ],
-   "unmerged": false
-  },
-  {
-   "finding_id": "F204",
-   "statement": "Transition processes exposed subnational coordination gaps where national-level frameworks did not translate into effective operational coordination on the ground.",
-   "theme": [
-    "ABC"
-   ],
-   "example": "",
-   "type": "barrier",
-   "strength": "low",
-   "n_records": 1,
-   "n_sources": 1,
-   "n_streams": 1,
-   "streams": [
-    "sdr"
-   ],
-   "countries": [
-    "IDN"
-   ],
-   "tags": [
     "coordination-architecture",
-    "transition-handover"
-   ],
-   "actors": [
-    "cluster",
-    "gov-national"
-   ],
-   "record_ids": [
-    "E0111"
-   ],
-   "unmerged": false
-  },
-  {
-   "finding_id": "F206",
-   "statement": "Area-based units were activated across the country with no standard mandate, and those structures then approached clusters to ask what they were supposed to do.",
-   "theme": [
-    "ABC"
-   ],
-   "example": "",
-   "type": "barrier",
-   "strength": "low",
-   "n_records": 1,
-   "n_sources": 1,
-   "n_streams": 1,
-   "streams": [
-    "sdr"
-   ],
-   "countries": [
-    "MMR"
-   ],
-   "tags": [
-    "coordination-architecture",
-    "guidance"
-   ],
-   "actors": [
-    "cluster",
-    "ocha",
-    "operational-cell"
-   ],
-   "record_ids": [
-    "E0114"
-   ],
-   "unmerged": false
-  },
-  {
-   "finding_id": "F208",
-   "statement": "Introducing area-based coordination added complexity in countries that already had a humanitarian country team, and where parallel processes emerged, accountability for the response became harder to maintain.",
-   "theme": [
-    "ABC"
-   ],
-   "example": "",
-   "type": "barrier",
-   "strength": "low",
-   "n_records": 1,
-   "n_sources": 1,
-   "n_streams": 1,
-   "streams": [
-    "sdr"
-   ],
-   "countries": [],
-   "tags": [
-    "coordination-architecture",
+    "multisector",
     "performance"
    ],
    "actors": [
     "cluster",
-    "ocha"
+    "ingo",
+    "ocha",
+    "operational-cell"
    ],
    "record_ids": [
+    "E0107",
+    "E0109",
+    "E0110",
     "E0116"
    ],
-   "unmerged": false
+   "unmerged": false,
+   "highlight": {
+    "headline": "Adding a layer has not removed the parallel channels",
+    "plain": "Parallel coordination and implementation channels persist alongside the formal structures. Introducing an area-based layer in a context that already had an intersectoral tier added complexity rather than resolving it, and actors continue to work in the same areas without a shared planning framework.",
+    "so_what": "Before adding a structure, map what is already running in that space. The problem being solved is usually fragmentation, and another layer is not automatically a reduction in it."
+   }
   },
   {
    "finding_id": "F209",
-   "statement": "Area-based coordination remained functionally complementary to cluster coordination in those cases where roles and linkages between the two were formalised.",
+   "statement": "Area-based structures work alongside cluster coordination where the roles and linkages between them are explicit. What determines effectiveness is not whether the structure exists but how it is configured — clear mandates, a defined information architecture, and a stated division of labour. Where subnational cluster coordination was weak or absent, area-based programming still adhered to cluster technical guidance.",
    "theme": [
     "ABC"
    ],
-   "example": "",
+   "example": "Palestine — a working division of labour has the cluster providing the analytical framework, area structures collecting data within it, and the cluster retaining the analysis.",
    "type": "enabler",
-   "strength": "low",
-   "n_records": 1,
-   "n_sources": 1,
+   "strength": "high",
+   "n_records": 7,
+   "n_sources": 5,
    "n_streams": 1,
    "streams": [
     "sdr"
    ],
-   "countries": [],
+   "countries": [
+    "PSE"
+   ],
    "tags": [
     "coordination-architecture",
-    "guidance"
+    "guidance",
+    "information-management",
+    "localisation",
+    "multisector",
+    "performance"
    ],
    "actors": [
     "cluster",
+    "gov-local",
     "operational-cell"
    ],
    "record_ids": [
-    "E0117"
+    "E0117",
+    "E0174",
+    "E0176",
+    "E0192",
+    "E0194",
+    "E0208",
+    "E0216"
    ],
-   "unmerged": false
+   "unmerged": false,
+   "highlight": {
+    "headline": "What matters is how it is configured, not whether it exists",
+    "plain": "Area structures and clusters work alongside each other perfectly well where the roles and the linkages between them are written down. Where they are not, the same two structures produce duplication and gaps. The evidence does not support a general verdict on area-based coordination; it supports a verdict on how it is set up. Even where subnational cluster coordination was weak or missing, area-based programming still followed cluster technical guidance.",
+    "so_what": "Agree the division of labour explicitly and early — who owns the analytical framework, who collects within it, who does the analysis. That single agreement accounts for most of the difference between the cases that worked and the cases that did not."
+   }
   },
   {
    "finding_id": "F210",
-   "statement": "The area-based arrangement here divides the country into zones each led by a UN organisation on a permanent basis, covering two or three states — closer in shape to the existing subnational cluster tier than to local multi-sector operational coordination.",
+   "statement": "What is called area-based coordination differs enormously between contexts. In one it is a permanent division of the country into zones each led by a UN organisation covering two or three states; in another it is organised around transition, durable solutions and peace rather than around operational service coordination.",
    "theme": [
     "ABC"
    ],
-   "example": "",
+   "example": "South Sudan — the country is divided into zones led permanently by UN organisations, which the coordination team distinguished from area-based coordination as described in global guidance.",
    "type": "context",
    "strength": "high",
-   "n_records": 2,
+   "n_records": 3,
    "n_sources": 2,
    "n_streams": 2,
    "streams": [
@@ -5486,7 +4937,8 @@
    ],
    "tags": [
     "coordination-architecture",
-    "guidance"
+    "guidance",
+    "transition-handover"
    ],
    "actors": [
     "cluster",
@@ -5496,7 +4948,8 @@
    ],
    "record_ids": [
     "E0118",
-    "E0608"
+    "E0608",
+    "E0617"
    ],
    "unmerged": false,
    "highlight": {
@@ -5564,41 +5017,51 @@
   },
   {
    "finding_id": "F214",
-   "statement": "The cluster 5W sits on a platform built in-country and shared with other sectors; with a new central module also asking partners to report, it is unresolved whether partners should continue filling the cluster system, both, or neither.",
+   "statement": "Two reporting architectures run at once. A platform built in-country and shared across sectors sits alongside a new central module asking partners for the same thing, and separate government or outbreak-specific collections are added on top — so partners report several times and it becomes unclear which figure is authoritative.",
    "theme": [
-    "ABC"
+    "ABC",
+    "Transition"
    ],
-   "example": "",
+   "example": "Sudan — some states moved to create a separate outbreak coordination platform with its own information management, alongside the existing cluster reporting.",
    "type": "barrier",
    "strength": "high",
-   "n_records": 5,
-   "n_sources": 5,
+   "n_records": 9,
+   "n_sources": 7,
    "n_streams": 2,
    "streams": [
     "sdr",
     "transcript"
    ],
    "countries": [
+    "BFA",
     "MOZ",
     "NER",
     "SDN"
    ],
    "tags": [
     "coordination-architecture",
+    "government-engagement",
     "hpc",
-    "information-management"
+    "information-management",
+    "performance"
    ],
    "actors": [
     "cluster",
+    "gov-local",
+    "gov-national",
     "ingo",
     "ocha"
    ],
    "record_ids": [
     "E0122",
     "E0123",
+    "E0130",
     "E0408",
+    "E0416",
+    "E0420",
     "E0456",
-    "E0535"
+    "E0535",
+    "E0584"
    ],
    "unmerged": false,
    "highlight": {
@@ -5666,37 +5129,6 @@
     "E0127",
     "E0128",
     "E0129"
-   ],
-   "unmerged": false
-  },
-  {
-   "finding_id": "F217",
-   "statement": "Parallel data architectures can emerge outside cluster frameworks and gain traction, which shifts the cluster's position as analytical reference point before any formal coordination change has taken place.",
-   "theme": [
-    "ABC"
-   ],
-   "example": "",
-   "type": "barrier",
-   "strength": "low",
-   "n_records": 1,
-   "n_sources": 1,
-   "n_streams": 1,
-   "streams": [
-    "sdr"
-   ],
-   "countries": [
-    "SDN"
-   ],
-   "tags": [
-    "coordination-architecture",
-    "information-management"
-   ],
-   "actors": [
-    "cluster",
-    "gov-national"
-   ],
-   "record_ids": [
-    "E0130"
    ],
    "unmerged": false
   },
@@ -5769,34 +5201,57 @@
   },
   {
    "finding_id": "F220",
-   "statement": "Where technical prioritisation functions such as standards, indicators and public health guidance migrate to area-based structures without matching mandate or capacity, the risk to sectoral quality assurance rises, particularly for WASH.",
+   "statement": "Decisions needing sector expertise — indicator selection, assessment methodology, response modality, technical standards — are increasingly taken in structures that do not hold that expertise, and quality assurance is correspondingly weak. Three cluster functions in particular have not been replicated by area structures: technical leadership, data analysis and sector-level advocacy. This matters more for WASH than for most sectors, because errors in water quality or cholera response cause harm quickly.",
    "theme": [
     "ABC"
    ],
-   "example": "",
+   "example": "Myanmar — subnational clusters were redefined as technical advisers and stopped holding standing meetings. During a sudden emergency no forum held the question of who was working where.",
    "type": "barrier",
    "strength": "high",
-   "n_records": 5,
-   "n_sources": 3,
-   "n_streams": 1,
+   "n_records": 18,
+   "n_sources": 7,
+   "n_streams": 2,
    "streams": [
-    "sdr"
+    "sdr",
+    "transcript"
    ],
-   "countries": [],
+   "countries": [
+    "MMR"
+   ],
    "tags": [
+    "advocacy",
+    "capacity",
     "coordination-architecture",
+    "guidance",
+    "information-management",
+    "localisation",
     "performance"
    ],
    "actors": [
     "cluster",
+    "ingo",
+    "ocha",
     "operational-cell"
    ],
    "record_ids": [
+    "E0040",
+    "E0046",
     "E0135",
     "E0136",
     "E0137",
     "E0138",
-    "E0139"
+    "E0139",
+    "E0141",
+    "E0150",
+    "E0166",
+    "E0167",
+    "E0170",
+    "E0171",
+    "E0172",
+    "E0173",
+    "E0206",
+    "E0217",
+    "E0222"
    ],
    "unmerged": false,
    "highlight": {
@@ -5804,68 +5259,6 @@
     "plain": "Choices that need sector expertise — which indicators to use, how to assess, which standard applies — are increasingly taken in area structures that do not have technical staff. This matters more for WASH than for most sectors, because errors in water quality or cholera response cause harm quickly.",
     "so_what": "Agree which technical decisions stay with the cluster and set out a route for escalating a technical question. Neither side benefits from leaving this unwritten."
    }
-  },
-  {
-   "finding_id": "F221",
-   "statement": "Local actors participated in coordination structures but had limited influence over decisions and resources.",
-   "theme": [
-    "ABC"
-   ],
-   "example": "",
-   "type": "barrier",
-   "strength": "low",
-   "n_records": 1,
-   "n_sources": 1,
-   "n_streams": 1,
-   "streams": [
-    "sdr"
-   ],
-   "countries": [
-    "UKR"
-   ],
-   "tags": [
-    "coordination-architecture",
-    "localisation"
-   ],
-   "actors": [
-    "cluster",
-    "local-ngo"
-   ],
-   "record_ids": [
-    "E0140"
-   ],
-   "unmerged": false
-  },
-  {
-   "finding_id": "F223",
-   "statement": "Subnational coordination gaps constrained nexus-based planning.",
-   "theme": [
-    "ABC"
-   ],
-   "example": "",
-   "type": "barrier",
-   "strength": "low",
-   "n_records": 1,
-   "n_sources": 1,
-   "n_streams": 1,
-   "streams": [
-    "sdr"
-   ],
-   "countries": [
-    "IRQ"
-   ],
-   "tags": [
-    "coordination-architecture",
-    "nexus"
-   ],
-   "actors": [
-    "cluster",
-    "development"
-   ],
-   "record_ids": [
-    "E0142"
-   ],
-   "unmerged": false
   },
   {
    "finding_id": "F224",
@@ -5983,36 +5376,50 @@
   },
   {
    "finding_id": "F227",
-   "statement": "Area-based structures frequently operate without agreed rules on who participates, who decides and how priorities are set. In the absence of those rules, influence tends to follow voice and resources rather than mandate.",
+   "statement": "There is no agreed inter-agency definition of area-based coordination, so structures are stood up without a standard mandate and without agreed rules on who participates, who decides and how priorities are set. Arrangements have appeared that were in no published guidance, and countries cannot tell whether what they have counts as the same thing.",
    "theme": [
     "ABC"
    ],
-   "example": "",
+   "example": "Myanmar — an arrangement placing paid coordinators alongside the elected chairs was not set out in any guidance; the cluster learned of it informally and had to assemble a comparison of the documents itself.",
    "type": "barrier",
-   "strength": "low",
-   "n_records": 3,
-   "n_sources": 1,
-   "n_streams": 2,
+   "strength": "high",
+   "n_records": 9,
+   "n_sources": 4,
+   "n_streams": 3,
    "streams": [
     "sdr",
+    "transcript",
     "workshop"
    ],
    "countries": [
+    "MMR",
+    "NER",
     "SDN"
    ],
    "tags": [
     "coordination-architecture",
+    "geographic-targeting",
     "guidance",
     "localisation"
    ],
    "actors": [
+    "cluster",
+    "gov-local",
     "ingo",
     "local-ngo",
-    "operational-cell"
+    "ocha",
+    "operational-cell",
+    "un-agency"
    ],
    "record_ids": [
+    "E0045",
+    "E0051",
+    "E0114",
     "E0148",
     "E0149",
+    "E0152",
+    "E0459",
+    "E0460",
     "E0647"
    ],
    "unmerged": false,
@@ -6020,52 +5427,6 @@
     "headline": "Whoever speaks loudest sets the agenda",
     "plain": "Area structures often operate without agreed rules on who participates, who decides and how priorities are set. Influence then follows voice and resources rather than mandate — and localisation does not fix this, because local actors bring their own hierarchies too.",
     "so_what": "Write the governance rules — participation, decision rights, how priorities are set — before the platform starts work."
-   }
-  },
-  {
-   "finding_id": "F229",
-   "statement": "Area-based structures are not required or resourced to hold sector technical capacity. Where sector coordination has been placed under them, operational gap analysis has lost its platform — which shows most in a sudden emergency.",
-   "theme": [
-    "ABC"
-   ],
-   "example": "Myanmar — subnational clusters were redefined as technical advisers and stopped holding standing meetings. During a sudden emergency no forum held the question of who was working where.",
-   "type": "barrier",
-   "strength": "high",
-   "n_records": 6,
-   "n_sources": 3,
-   "n_streams": 2,
-   "streams": [
-    "sdr",
-    "transcript"
-   ],
-   "countries": [
-    "MMR"
-   ],
-   "tags": [
-    "capacity",
-    "coordination-architecture",
-    "guidance",
-    "localisation"
-   ],
-   "actors": [
-    "cluster",
-    "ingo",
-    "ocha",
-    "operational-cell"
-   ],
-   "record_ids": [
-    "E0040",
-    "E0046",
-    "E0141",
-    "E0150",
-    "E0173",
-    "E0206"
-   ],
-   "unmerged": false,
-   "highlight": {
-    "headline": "Area structures are asked to hold technical work they were never staffed for",
-    "plain": "Terms of reference for area-based focal points set no requirement to hold technical capacity matching the response. Several pilots ran on external facilitation rather than local capacity. Where sector coordination has been placed under an area structure, the work that depends on technical staffing — knowing who is doing what, and where the gaps are — has lost its home, which shows most in a sudden emergency.",
-    "so_what": "Before moving a function, name who holds the technical capacity for it afterwards. Coordinators are asking what has to be in place first, and the question does not yet have a settled answer."
    }
   },
   {
@@ -6110,34 +5471,6 @@
     "plain": "There is no agreed way to assess how area-based structures are performing, and coordination performance reviews are rarely run on the sector either. Coordinators are left saying it works well while personally absorbing the strain that keeps it working.",
     "so_what": "Ask partners and ministries how coordination is functioning, not the coordination team. The answer is what turns a felt problem into a case you can act on."
    }
-  },
-  {
-   "finding_id": "F231",
-   "statement": "There is no agreed inter-agency definition or guidance for area-based coordination, and without structured learning across operations, country teams repeat work already done elsewhere.",
-   "theme": [
-    "ABC"
-   ],
-   "example": "",
-   "type": "barrier",
-   "strength": "low",
-   "n_records": 1,
-   "n_sources": 1,
-   "n_streams": 1,
-   "streams": [
-    "sdr"
-   ],
-   "countries": [],
-   "tags": [
-    "coordination-architecture",
-    "guidance"
-   ],
-   "actors": [
-    "ocha"
-   ],
-   "record_ids": [
-    "E0152"
-   ],
-   "unmerged": false
   },
   {
    "finding_id": "F232",
@@ -6263,36 +5596,6 @@
    "unmerged": false
   },
   {
-   "finding_id": "F237",
-   "statement": "Funding mechanisms linked to area-based structures may sit outside established coordination structures, which can affect collective prioritisation and overall coherence.",
-   "theme": [
-    "ABC"
-   ],
-   "example": "",
-   "type": "barrier",
-   "strength": "low",
-   "n_records": 1,
-   "n_sources": 1,
-   "n_streams": 1,
-   "streams": [
-    "sdr"
-   ],
-   "countries": [],
-   "tags": [
-    "coordination-architecture",
-    "funding",
-    "pooled-funds"
-   ],
-   "actors": [
-    "donor",
-    "operational-cell"
-   ],
-   "record_ids": [
-    "E0158"
-   ],
-   "unmerged": false
-  },
-  {
    "finding_id": "F239",
    "statement": "Under current resource constraints, advocating for area-based coordination resourcing and advocating for sector response funding have become competing rather than complementary asks on the same diminished pool.",
    "theme": [
@@ -6325,15 +5628,15 @@
   },
   {
    "finding_id": "F240",
-   "statement": "Partners engage with coordination platforms because pooled fund allocations sit behind them; as area-based structures take on prioritisation, partner engagement migrates to wherever allocation power resides.",
+   "statement": "Partners engage with whichever platform the money sits behind. As prioritisation moves to area structures, participation follows it — and where funding mechanisms sit outside the established coordination structures altogether, collective prioritisation weakens.",
    "theme": [
     "ABC"
    ],
    "example": "",
    "type": "barrier",
-   "strength": "low",
-   "n_records": 1,
-   "n_sources": 1,
+   "strength": "medium",
+   "n_records": 2,
+   "n_sources": 2,
    "n_streams": 1,
    "streams": [
     "sdr"
@@ -6347,11 +5650,13 @@
     "pooled-funds"
    ],
    "actors": [
+    "donor",
     "ingo",
     "ocha",
     "operational-cell"
    ],
    "record_ids": [
+    "E0158",
     "E0162"
    ],
    "unmerged": false
@@ -6456,36 +5761,6 @@
    "unmerged": false
   },
   {
-   "finding_id": "F244",
-   "statement": "In some contexts, decisions requiring sector expertise — indicator selection, assessment methodology, response modality — are taken in structures that do not have technical staff.",
-   "theme": [
-    "ABC"
-   ],
-   "example": "",
-   "type": "barrier",
-   "strength": "low",
-   "n_records": 2,
-   "n_sources": 1,
-   "n_streams": 1,
-   "streams": [
-    "sdr"
-   ],
-   "countries": [],
-   "tags": [
-    "coordination-architecture",
-    "performance"
-   ],
-   "actors": [
-    "cluster",
-    "operational-cell"
-   ],
-   "record_ids": [
-    "E0166",
-    "E0167"
-   ],
-   "unmerged": false
-  },
-  {
    "finding_id": "F245",
    "statement": "Indicators and assessment methods not suited to specialised responses, including cholera and public health, have been applied in area-based settings.",
    "theme": [
@@ -6512,126 +5787,6 @@
    "record_ids": [
     "E0168",
     "E0169"
-   ],
-   "unmerged": false
-  },
-  {
-   "finding_id": "F246",
-   "statement": "Quality assurance within area-based structures is weak or absent — limited technical review of assessment tools, inconsistent adherence to sector minimum standards, and no mechanism for technical escalation to cluster leadership.",
-   "theme": [
-    "ABC"
-   ],
-   "example": "",
-   "type": "barrier",
-   "strength": "low",
-   "n_records": 3,
-   "n_sources": 1,
-   "n_streams": 1,
-   "streams": [
-    "sdr"
-   ],
-   "countries": [],
-   "tags": [
-    "coordination-architecture",
-    "performance"
-   ],
-   "actors": [
-    "cluster",
-    "operational-cell"
-   ],
-   "record_ids": [
-    "E0170",
-    "E0171",
-    "E0172"
-   ],
-   "unmerged": false
-  },
-  {
-   "finding_id": "F248",
-   "statement": "Area-based programming generally adhered to cluster technical guidance, and where subnational cluster coordination was weak or absent, area-based coordination provided feedback on the suitability of technical standards.",
-   "theme": [
-    "ABC"
-   ],
-   "example": "",
-   "type": "enabler",
-   "strength": "low",
-   "n_records": 1,
-   "n_sources": 1,
-   "n_streams": 1,
-   "streams": [
-    "sdr"
-   ],
-   "countries": [],
-   "tags": [
-    "coordination-architecture",
-    "performance"
-   ],
-   "actors": [
-    "cluster",
-    "operational-cell"
-   ],
-   "record_ids": [
-    "E0174"
-   ],
-   "unmerged": false
-  },
-  {
-   "finding_id": "F249",
-   "statement": "A drought strategic working group and community resource centres supported multi-sector coordination and improved alignment of interventions at local level.",
-   "theme": [
-    "ABC"
-   ],
-   "example": "",
-   "type": "enabler",
-   "strength": "low",
-   "n_records": 1,
-   "n_sources": 1,
-   "n_streams": 1,
-   "streams": [
-    "sdr"
-   ],
-   "countries": [
-    "AFG"
-   ],
-   "tags": [
-    "coordination-architecture",
-    "multisector"
-   ],
-   "actors": [
-    "cluster",
-    "gov-local"
-   ],
-   "record_ids": [
-    "E0175"
-   ],
-   "unmerged": false
-  },
-  {
-   "finding_id": "F250",
-   "statement": "Decentralised, operationally focused subnational platforms improve responsiveness and the ability to adapt to local needs.",
-   "theme": [
-    "ABC"
-   ],
-   "example": "",
-   "type": "enabler",
-   "strength": "low",
-   "n_records": 1,
-   "n_sources": 1,
-   "n_streams": 1,
-   "streams": [
-    "sdr"
-   ],
-   "countries": [],
-   "tags": [
-    "coordination-architecture",
-    "localisation"
-   ],
-   "actors": [
-    "cluster",
-    "gov-local"
-   ],
-   "record_ids": [
-    "E0176"
    ],
    "unmerged": false
   },
@@ -6765,37 +5920,6 @@
    "unmerged": false
   },
   {
-   "finding_id": "F256",
-   "statement": "Area-based coordination enabled agencies with strong local presence to lead joint access negotiations with armed groups and community members, a function only locally anchored coordination can perform.",
-   "theme": [
-    "ABC"
-   ],
-   "example": "",
-   "type": "enabler",
-   "strength": "low",
-   "n_records": 1,
-   "n_sources": 1,
-   "n_streams": 1,
-   "streams": [
-    "sdr"
-   ],
-   "countries": [
-    "HTI"
-   ],
-   "tags": [
-    "coordination-architecture",
-    "partnerships"
-   ],
-   "actors": [
-    "community",
-    "local-ngo"
-   ],
-   "record_ids": [
-    "E0183"
-   ],
-   "unmerged": false
-  },
-  {
    "finding_id": "F258",
    "statement": "Area-based models facilitated participation by subnational authorities, local and national NGOs and affected people, but participation alone rarely increased their ability to influence the response.",
    "theme": [
@@ -6854,32 +5978,42 @@
   },
   {
    "finding_id": "F260",
-   "statement": "Where local actors have formal presence without decision-making power, the platform adds reporting workload without giving them influence over priorities or resources.",
+   "statement": "Local actors are consistently present in area structures and consistently without power in them. Formal presence without decision-making authority adds reporting workload while leaving influence over priorities and resources unchanged.",
    "theme": [
     "ABC"
    ],
-   "example": "",
+   "example": "Ukraine — local actors participated in coordination structures but had limited influence over decisions and over resources.",
    "type": "barrier",
-   "strength": "low",
-   "n_records": 1,
-   "n_sources": 1,
+   "strength": "high",
+   "n_records": 3,
+   "n_sources": 3,
    "n_streams": 1,
    "streams": [
     "sdr"
    ],
-   "countries": [],
+   "countries": [
+    "UKR"
+   ],
    "tags": [
     "coordination-architecture",
     "localisation"
    ],
    "actors": [
+    "cluster",
     "local-ngo",
     "operational-cell"
    ],
    "record_ids": [
-    "E0187"
+    "E0140",
+    "E0187",
+    "E0278"
    ],
-   "unmerged": false
+   "unmerged": false,
+   "highlight": {
+    "headline": "A seat at the table is not a say in the decision",
+    "plain": "Local actors are consistently present in area structures and consistently without power in them. Formal participation without decision-making authority adds reporting workload while leaving influence over priorities and resources exactly where it was.",
+    "so_what": "Make participation measurable: a named decision the local members can actually take, and a budget line they control. Otherwise presence is a reporting requirement dressed as inclusion."
+   }
   },
   {
    "finding_id": "F261",
@@ -6973,37 +6107,6 @@
    "unmerged": false
   },
   {
-   "finding_id": "F264",
-   "statement": "A working division of labour has the cluster providing the analytical framework, area-based structures collecting data within it, and the cluster analysing and feeding results back into joint planning — already operational in one context and validated as replicable.",
-   "theme": [
-    "ABC"
-   ],
-   "example": "",
-   "type": "practice",
-   "strength": "low",
-   "n_records": 1,
-   "n_sources": 1,
-   "n_streams": 1,
-   "streams": [
-    "sdr"
-   ],
-   "countries": [
-    "PSE"
-   ],
-   "tags": [
-    "coordination-architecture",
-    "information-management"
-   ],
-   "actors": [
-    "cluster",
-    "operational-cell"
-   ],
-   "record_ids": [
-    "E0192"
-   ],
-   "unmerged": false
-  },
-  {
    "finding_id": "F265",
    "statement": "A well-configured area-based structure, with the cluster retaining the analytical function, can close the loop between needs assessment, planning, delivery and monitoring back to what people actually preferred.",
    "theme": [
@@ -7030,35 +6133,6 @@
    ],
    "record_ids": [
     "E0193"
-   ],
-   "unmerged": false
-  },
-  {
-   "finding_id": "F266",
-   "statement": "Integrated programming across sectors was achieved where coordination mechanisms were operationally strong enough to support joint planning and delivery.",
-   "theme": [
-    "ABC"
-   ],
-   "example": "",
-   "type": "enabler",
-   "strength": "low",
-   "n_records": 1,
-   "n_sources": 1,
-   "n_streams": 1,
-   "streams": [
-    "sdr"
-   ],
-   "countries": [],
-   "tags": [
-    "coordination-architecture",
-    "multisector"
-   ],
-   "actors": [
-    "cluster",
-    "operational-cell"
-   ],
-   "record_ids": [
-    "E0194"
    ],
    "unmerged": false
   },
@@ -7326,62 +6400,47 @@
    "unmerged": false
   },
   {
-   "finding_id": "F281",
-   "statement": "Effectiveness depends less on whether an area-based structure exists than on how it is configured: where mandates are clear, the information architecture is sound and technical accountability for WASH is preserved, it works.",
-   "theme": [
-    "ABC"
-   ],
-   "example": "",
-   "type": "context",
-   "strength": "low",
-   "n_records": 1,
-   "n_sources": 1,
-   "n_streams": 1,
-   "streams": [
-    "sdr"
-   ],
-   "countries": [],
-   "tags": [
-    "coordination-architecture",
-    "guidance"
-   ],
-   "actors": [
-    "cluster",
-    "operational-cell"
-   ],
-   "record_ids": [
-    "E0208"
-   ],
-   "unmerged": false
-  },
-  {
    "finding_id": "F282",
-   "statement": "Role clarity across national, subnational and sectoral tiers is often insufficient, which limits how well the tiers work together.",
+   "statement": "National, subnational and area structures frequently lack a shared statement of who leads what, with what mandate, and how something escalates between them. National frameworks do not translate into operational coordination on the ground, and the gaps only become visible once something needs deciding quickly.",
    "theme": [
-    "ABC"
+    "ABC",
+    "Transition"
    ],
-   "example": "",
+   "example": "Ukraine — the successor arrangement had no operational coordination mandate at subnational level to rest on.",
    "type": "barrier",
    "strength": "high",
-   "n_records": 3,
-   "n_sources": 3,
+   "n_records": 6,
+   "n_sources": 6,
    "n_streams": 1,
    "streams": [
     "sdr"
    ],
-   "countries": [],
+   "countries": [
+    "IDN",
+    "IRQ",
+    "UKR"
+   ],
    "tags": [
     "coordination-architecture",
-    "guidance"
+    "government-engagement",
+    "guidance",
+    "nexus",
+    "transition-handover"
    ],
    "actors": [
     "cluster",
+    "development",
+    "gov-local",
+    "gov-national",
     "ocha"
    ],
    "record_ids": [
+    "E0111",
+    "E0142",
     "E0209",
     "E0210",
-    "E0211"
+    "E0211",
+    "E0292"
    ],
    "unmerged": false,
    "highlight": {
@@ -7478,64 +6537,6 @@
    "unmerged": false
   },
   {
-   "finding_id": "F285",
-   "statement": "Integration across sectors does not follow automatically from the presence of coordination structures; it requires deliberate alignment of sectoral priorities, joint planning processes and operational collaboration.",
-   "theme": [
-    "ABC"
-   ],
-   "example": "",
-   "type": "enabler",
-   "strength": "low",
-   "n_records": 1,
-   "n_sources": 1,
-   "n_streams": 1,
-   "streams": [
-    "sdr"
-   ],
-   "countries": [],
-   "tags": [
-    "coordination-architecture",
-    "multisector"
-   ],
-   "actors": [
-    "cluster",
-    "operational-cell"
-   ],
-   "record_ids": [
-    "E0216"
-   ],
-   "unmerged": false
-  },
-  {
-   "finding_id": "F286",
-   "statement": "Three cluster functions cannot be replicated by area-based structures: technical leadership, data analysis, and sector-level advocacy. These are the starting point for deciding what to share and what to retain.",
-   "theme": [
-    "ABC"
-   ],
-   "example": "",
-   "type": "context",
-   "strength": "low",
-   "n_records": 1,
-   "n_sources": 1,
-   "n_streams": 1,
-   "streams": [
-    "sdr"
-   ],
-   "countries": [],
-   "tags": [
-    "advocacy",
-    "coordination-architecture",
-    "information-management"
-   ],
-   "actors": [
-    "cluster"
-   ],
-   "record_ids": [
-    "E0217"
-   ],
-   "unmerged": false
-  },
-  {
    "finding_id": "F287",
    "statement": "Improve interoperability between coordination mechanisms, information systems and implementation pathways so that joint planning and delivery become possible.",
    "theme": [
@@ -7561,65 +6562,6 @@
    ],
    "record_ids": [
     "E0218"
-   ],
-   "unmerged": false
-  },
-  {
-   "finding_id": "F290",
-   "statement": "Simplify and clarify terms of reference and governance frameworks so that roles, accountability and alignment between national, subnational and area levels are explicit.",
-   "theme": [
-    "ABC"
-   ],
-   "example": "",
-   "type": "recommendation",
-   "strength": "low",
-   "n_records": 1,
-   "n_sources": 1,
-   "n_streams": 1,
-   "streams": [
-    "sdr"
-   ],
-   "countries": [],
-   "tags": [
-    "coordination-architecture",
-    "guidance"
-   ],
-   "actors": [
-    "cluster",
-    "ocha",
-    "operational-cell"
-   ],
-   "record_ids": [
-    "E0221"
-   ],
-   "unmerged": false
-  },
-  {
-   "finding_id": "F291",
-   "statement": "Preserve residual technical governance functions within sectors even under area-based models, with clear escalation pathways.",
-   "theme": [
-    "ABC"
-   ],
-   "example": "",
-   "type": "recommendation",
-   "strength": "low",
-   "n_records": 1,
-   "n_sources": 1,
-   "n_streams": 1,
-   "streams": [
-    "sdr"
-   ],
-   "countries": [],
-   "tags": [
-    "coordination-architecture",
-    "performance"
-   ],
-   "actors": [
-    "cluster",
-    "operational-cell"
-   ],
-   "record_ids": [
-    "E0222"
    ],
    "unmerged": false
   },
@@ -7760,34 +6702,50 @@
   },
   {
    "finding_id": "F310",
-   "statement": "Formal deactivation was never discussed, but the architecture was reduced from a two-level platform to a single subnational hub while the response target was halved — transition by attrition, without a transition framework.",
+   "statement": "The architecture changes without anyone deciding to change it. Platforms are reduced from two levels to one while the response target grows, ministry reforms dissolve the counterpart body the cluster worked with, and the closure of an NGO coordination committee removes collective NGO coordination — none of it framed as a deactivation decision.",
    "theme": [
     "Transition"
    ],
-   "example": "",
+   "example": "Burkina Faso — a ministry reform merged water into a larger ministry and dissolved the emergency technical secretariat that had been the cluster's counterpart.",
    "type": "context",
-   "strength": "low",
-   "n_records": 1,
-   "n_sources": 1,
-   "n_streams": 1,
+   "strength": "high",
+   "n_records": 3,
+   "n_sources": 3,
+   "n_streams": 2,
    "streams": [
-    "sdr"
+    "sdr",
+    "transcript"
    ],
    "countries": [
+    "BFA",
+    "IRQ",
     "MOZ"
    ],
    "tags": [
     "coordination-architecture",
+    "government-engagement",
+    "localisation",
+    "staff-turnover",
     "transition-handover"
    ],
    "actors": [
     "cluster",
+    "gov-national",
+    "ingo",
+    "local-ngo",
     "ocha"
    ],
    "record_ids": [
-    "E0236"
+    "E0236",
+    "E0284",
+    "E0582"
    ],
-   "unmerged": false
+   "unmerged": false,
+   "highlight": {
+    "headline": "The architecture can change without anyone deciding to change it",
+    "plain": "Platforms get reduced from two levels to one while the response target grows. Ministry reforms dissolve the counterpart body the cluster worked with. An NGO coordination committee closes and collective NGO coordination goes with it. None of this is framed as a deactivation decision, so none of it gets the scrutiny a deactivation would.",
+    "so_what": "Treat a structural change as a decision even when nobody calls it one — the same questions apply about who picks up which function."
+   }
   },
   {
    "finding_id": "F316",
@@ -8237,35 +7195,6 @@
    }
   },
   {
-   "finding_id": "F347",
-   "statement": "Coordination structures invite local actors to meetings without giving them real decision-making power.",
-   "theme": [
-    "Transition"
-   ],
-   "example": "",
-   "type": "barrier",
-   "strength": "low",
-   "n_records": 1,
-   "n_sources": 1,
-   "n_streams": 1,
-   "streams": [
-    "sdr"
-   ],
-   "countries": [],
-   "tags": [
-    "coordination-architecture",
-    "localisation"
-   ],
-   "actors": [
-    "cluster",
-    "local-ngo"
-   ],
-   "record_ids": [
-    "E0278"
-   ],
-   "unmerged": false
-  },
-  {
    "finding_id": "F348",
    "statement": "Local organisations remain marginal in the design of transition itself, as distinct from its implementation.",
    "theme": [
@@ -8359,37 +7288,6 @@
     "plain": "Local actors are consistently present in coordination but consistently without decision-making power, direct funding access, or influence over how transitions are designed. This shows up the same way across very different contexts.",
     "so_what": "Make localisation measurable in transition criteria — a seat, a budget line, and a named decision it can actually take."
    }
-  },
-  {
-   "finding_id": "F351",
-   "statement": "The closure of the NGO coordination committee significantly weakened collective NGO coordination.",
-   "theme": [
-    "Transition"
-   ],
-   "example": "",
-   "type": "barrier",
-   "strength": "low",
-   "n_records": 1,
-   "n_sources": 1,
-   "n_streams": 1,
-   "streams": [
-    "sdr"
-   ],
-   "countries": [
-    "IRQ"
-   ],
-   "tags": [
-    "coordination-architecture",
-    "localisation"
-   ],
-   "actors": [
-    "ingo",
-    "local-ngo"
-   ],
-   "record_ids": [
-    "E0284"
-   ],
-   "unmerged": false
   },
   {
    "finding_id": "F352",
@@ -8511,37 +7409,6 @@
    ],
    "record_ids": [
     "E0289"
-   ],
-   "unmerged": false
-  },
-  {
-   "finding_id": "F359",
-   "statement": "There was no operational coordination mandate at subnational level for the successor arrangement to rest on.",
-   "theme": [
-    "Transition"
-   ],
-   "example": "",
-   "type": "barrier",
-   "strength": "low",
-   "n_records": 1,
-   "n_sources": 1,
-   "n_streams": 1,
-   "streams": [
-    "sdr"
-   ],
-   "countries": [
-    "UKR"
-   ],
-   "tags": [
-    "coordination-architecture",
-    "government-engagement"
-   ],
-   "actors": [
-    "cluster",
-    "gov-local"
-   ],
-   "record_ids": [
-    "E0292"
    ],
    "unmerged": false
   },
@@ -10644,38 +9511,6 @@
    "unmerged": false
   },
   {
-   "finding_id": "F607",
-   "statement": "Replacing cluster reporting with a central system changes beneficiary counting, indicators and data flow at once, and raises a question about where responsibility for defining how sector results are measured should sit..",
-   "theme": [
-    "ABC"
-   ],
-   "example": "",
-   "type": "barrier",
-   "strength": "low",
-   "n_records": 1,
-   "n_sources": 1,
-   "n_streams": 1,
-   "streams": [
-    "transcript"
-   ],
-   "countries": [
-    "SDN"
-   ],
-   "tags": [
-    "coordination-architecture",
-    "information-management",
-    "performance"
-   ],
-   "actors": [
-    "cluster",
-    "ocha"
-   ],
-   "record_ids": [
-    "E0416"
-   ],
-   "unmerged": false
-  },
-  {
    "finding_id": "F608",
    "statement": "WASH beneficiary calculation is context-specific — a water yard serves a set number of people in one country and a different number elsewhere, and source types differ between contexts — so a single standardised reporting model risks misrepresenting what the sector delivered.",
    "theme": [
@@ -10759,37 +9594,6 @@
     "plain": "Where a country has a reporting system that partners use and government shares, replacing it with a central platform costs more than it gains. Bridging the two keeps the sector calculation with the people who understand it and avoids partners entering everything twice.",
     "so_what": "Ask for an interface rather than a migration. The flexibility exists — the answer that there is no choice is not accurate."
    }
-  },
-  {
-   "finding_id": "F611",
-   "statement": "Some states moved to create a separate outbreak coordination platform with its own information management, which the cluster raised concerns about, given how many coordination structures are already in place.",
-   "theme": [
-    "ABC"
-   ],
-   "example": "",
-   "type": "barrier",
-   "strength": "low",
-   "n_records": 1,
-   "n_sources": 1,
-   "n_streams": 1,
-   "streams": [
-    "transcript"
-   ],
-   "countries": [
-    "SDN"
-   ],
-   "tags": [
-    "coordination-architecture",
-    "information-management"
-   ],
-   "actors": [
-    "cluster",
-    "gov-local"
-   ],
-   "record_ids": [
-    "E0420"
-   ],
-   "unmerged": false
   },
   {
    "finding_id": "F612",
@@ -11492,68 +10296,6 @@
    "unmerged": false
   },
   {
-   "finding_id": "F800",
-   "statement": "Measured against a definition of area-based coordination operating at the smallest administrative unit, the country does not have it: a pilot covering four of two hundred and sixty-six communes was tried and did not continue beyond the pilot.",
-   "theme": [
-    "ABC"
-   ],
-   "example": "",
-   "type": "context",
-   "strength": "low",
-   "n_records": 1,
-   "n_sources": 1,
-   "n_streams": 1,
-   "streams": [
-    "transcript"
-   ],
-   "countries": [
-    "NER"
-   ],
-   "tags": [
-    "coordination-architecture",
-    "geographic-targeting"
-   ],
-   "actors": [
-    "cluster",
-    "ocha"
-   ],
-   "record_ids": [
-    "E0459"
-   ],
-   "unmerged": false
-  },
-  {
-   "finding_id": "F801",
-   "statement": "Treated instead as regional structures, five functional coordination groups meet monthly and work for practically all sectors — so whether the country has area-based coordination depends entirely on which administrative level the definition refers to.",
-   "theme": [
-    "ABC"
-   ],
-   "example": "",
-   "type": "context",
-   "strength": "low",
-   "n_records": 1,
-   "n_sources": 1,
-   "n_streams": 1,
-   "streams": [
-    "transcript"
-   ],
-   "countries": [
-    "NER"
-   ],
-   "tags": [
-    "coordination-architecture",
-    "guidance"
-   ],
-   "actors": [
-    "cluster",
-    "gov-local"
-   ],
-   "record_ids": [
-    "E0460"
-   ],
-   "unmerged": false
-  },
-  {
    "finding_id": "F802",
    "statement": "Planned coordination work is repeatedly displaced by emergency and process demands. Commitments carried in the workplan for years remain unstarted, because each year something arrives that cannot be deferred.",
    "theme": [
@@ -12247,7 +10989,7 @@
   },
   {
    "id": "E0014",
-   "finding_id": "F010",
+   "finding_id": "F001",
    "theme": [
     "ABC"
    ],
@@ -12275,7 +11017,7 @@
   },
   {
    "id": "E0015",
-   "finding_id": "F010",
+   "finding_id": "F001",
    "theme": [
     "ABC"
    ],
@@ -12466,7 +11208,7 @@
   },
   {
    "id": "E0022",
-   "finding_id": "F017",
+   "finding_id": "F001",
    "theme": [
     "ABC"
    ],
@@ -12494,7 +11236,7 @@
   },
   {
    "id": "E0023",
-   "finding_id": "F017",
+   "finding_id": "F001",
    "theme": [
     "ABC"
    ],
@@ -12901,7 +11643,7 @@
   },
   {
    "id": "E0038",
-   "finding_id": "F032",
+   "finding_id": "F013",
    "theme": [
     "ABC"
    ],
@@ -12955,7 +11697,7 @@
   },
   {
    "id": "E0040",
-   "finding_id": "F229",
+   "finding_id": "F220",
    "theme": [
     "ABC"
    ],
@@ -13087,7 +11829,7 @@
   },
   {
    "id": "E0045",
-   "finding_id": "F038",
+   "finding_id": "F227",
    "theme": [
     "ABC"
    ],
@@ -13113,7 +11855,7 @@
   },
   {
    "id": "E0046",
-   "finding_id": "F229",
+   "finding_id": "F220",
    "theme": [
     "ABC"
    ],
@@ -13217,7 +11959,7 @@
   },
   {
    "id": "E0050",
-   "finding_id": "F042",
+   "finding_id": "F034",
    "theme": [
     "ABC"
    ],
@@ -13244,7 +11986,7 @@
   },
   {
    "id": "E0051",
-   "finding_id": "F043",
+   "finding_id": "F227",
    "theme": [
     "ABC"
    ],
@@ -13750,7 +12492,7 @@
   },
   {
    "id": "E0071",
-   "finding_id": "F100",
+   "finding_id": "F102",
    "theme": [
     "ABC"
    ],
@@ -13872,7 +12614,7 @@
   },
   {
    "id": "E0076",
-   "finding_id": "F104",
+   "finding_id": "F102",
    "theme": [
     "ABC"
    ],
@@ -13895,7 +12637,7 @@
   },
   {
    "id": "E0077",
-   "finding_id": "F105",
+   "finding_id": "F102",
    "theme": [
     "ABC"
    ],
@@ -14629,7 +13371,7 @@
   },
   {
    "id": "E0107",
-   "finding_id": "F200",
+   "finding_id": "F203",
    "theme": [
     "ABC"
    ],
@@ -14678,7 +13420,7 @@
   },
   {
    "id": "E0109",
-   "finding_id": "F202",
+   "finding_id": "F203",
    "theme": [
     "ABC"
    ],
@@ -14729,7 +13471,7 @@
   },
   {
    "id": "E0111",
-   "finding_id": "F204",
+   "finding_id": "F282",
    "theme": [
     "ABC"
    ],
@@ -14803,7 +13545,7 @@
   },
   {
    "id": "E0114",
-   "finding_id": "F206",
+   "finding_id": "F227",
    "theme": [
     "ABC"
    ],
@@ -14856,7 +13598,7 @@
   },
   {
    "id": "E0116",
-   "finding_id": "F208",
+   "finding_id": "F203",
    "theme": [
     "ABC"
    ],
@@ -15191,7 +13933,7 @@
   },
   {
    "id": "E0130",
-   "finding_id": "F217",
+   "finding_id": "F214",
    "theme": [
     "ABC"
    ],
@@ -15439,7 +14181,7 @@
   },
   {
    "id": "E0140",
-   "finding_id": "F221",
+   "finding_id": "F260",
    "theme": [
     "ABC"
    ],
@@ -15465,7 +14207,7 @@
   },
   {
    "id": "E0141",
-   "finding_id": "F229",
+   "finding_id": "F220",
    "theme": [
     "ABC"
    ],
@@ -15489,7 +14231,7 @@
   },
   {
    "id": "E0142",
-   "finding_id": "F223",
+   "finding_id": "F282",
    "theme": [
     "ABC"
    ],
@@ -15688,7 +14430,7 @@
   },
   {
    "id": "E0150",
-   "finding_id": "F229",
+   "finding_id": "F220",
    "theme": [
     "ABC"
    ],
@@ -15736,7 +14478,7 @@
   },
   {
    "id": "E0152",
-   "finding_id": "F231",
+   "finding_id": "F227",
    "theme": [
     "ABC"
    ],
@@ -15886,7 +14628,7 @@
   },
   {
    "id": "E0158",
-   "finding_id": "F237",
+   "finding_id": "F240",
    "theme": [
     "ABC"
    ],
@@ -16086,7 +14828,7 @@
   },
   {
    "id": "E0166",
-   "finding_id": "F244",
+   "finding_id": "F220",
    "theme": [
     "ABC"
    ],
@@ -16110,7 +14852,7 @@
   },
   {
    "id": "E0167",
-   "finding_id": "F244",
+   "finding_id": "F220",
    "theme": [
     "ABC"
    ],
@@ -16182,7 +14924,7 @@
   },
   {
    "id": "E0170",
-   "finding_id": "F246",
+   "finding_id": "F220",
    "theme": [
     "ABC"
    ],
@@ -16206,7 +14948,7 @@
   },
   {
    "id": "E0171",
-   "finding_id": "F246",
+   "finding_id": "F220",
    "theme": [
     "ABC"
    ],
@@ -16230,7 +14972,7 @@
   },
   {
    "id": "E0172",
-   "finding_id": "F246",
+   "finding_id": "F220",
    "theme": [
     "ABC"
    ],
@@ -16254,7 +14996,7 @@
   },
   {
    "id": "E0173",
-   "finding_id": "F229",
+   "finding_id": "F220",
    "theme": [
     "ABC"
    ],
@@ -16278,7 +15020,7 @@
   },
   {
    "id": "E0174",
-   "finding_id": "F248",
+   "finding_id": "F209",
    "theme": [
     "ABC"
    ],
@@ -16302,7 +15044,7 @@
   },
   {
    "id": "E0175",
-   "finding_id": "F249",
+   "finding_id": "F1712",
    "theme": [
     "ABC"
    ],
@@ -16328,7 +15070,7 @@
   },
   {
    "id": "E0176",
-   "finding_id": "F250",
+   "finding_id": "F209",
    "theme": [
     "ABC"
    ],
@@ -16499,7 +15241,7 @@
   },
   {
    "id": "E0183",
-   "finding_id": "F256",
+   "finding_id": "F1712",
    "theme": [
     "ABC"
    ],
@@ -16724,7 +15466,7 @@
   },
   {
    "id": "E0192",
-   "finding_id": "F264",
+   "finding_id": "F209",
    "theme": [
     "ABC"
    ],
@@ -16775,7 +15517,7 @@
   },
   {
    "id": "E0194",
-   "finding_id": "F266",
+   "finding_id": "F209",
    "theme": [
     "ABC"
    ],
@@ -17068,7 +15810,7 @@
   },
   {
    "id": "E0206",
-   "finding_id": "F229",
+   "finding_id": "F220",
    "theme": [
     "ABC"
    ],
@@ -17115,7 +15857,7 @@
   },
   {
    "id": "E0208",
-   "finding_id": "F281",
+   "finding_id": "F209",
    "theme": [
     "ABC"
    ],
@@ -17310,7 +16052,7 @@
   },
   {
    "id": "E0216",
-   "finding_id": "F285",
+   "finding_id": "F209",
    "theme": [
     "ABC"
    ],
@@ -17334,7 +16076,7 @@
   },
   {
    "id": "E0217",
-   "finding_id": "F286",
+   "finding_id": "F220",
    "theme": [
     "ABC"
    ],
@@ -17429,7 +16171,7 @@
   },
   {
    "id": "E0221",
-   "finding_id": "F290",
+   "finding_id": "F102",
    "theme": [
     "ABC"
    ],
@@ -17454,7 +16196,7 @@
   },
   {
    "id": "E0222",
-   "finding_id": "F291",
+   "finding_id": "F220",
    "theme": [
     "ABC"
    ],
@@ -18875,7 +17617,7 @@
   },
   {
    "id": "E0278",
-   "finding_id": "F347",
+   "finding_id": "F260",
    "theme": [
     "Transition"
    ],
@@ -19018,7 +17760,7 @@
   },
   {
    "id": "E0284",
-   "finding_id": "F351",
+   "finding_id": "F310",
    "theme": [
     "Transition"
    ],
@@ -19224,7 +17966,7 @@
   },
   {
    "id": "E0292",
-   "finding_id": "F359",
+   "finding_id": "F282",
    "theme": [
     "Transition"
    ],
@@ -22441,7 +21183,7 @@
   },
   {
    "id": "E0416",
-   "finding_id": "F607",
+   "finding_id": "F214",
    "theme": [
     "ABC"
    ],
@@ -22543,7 +21285,7 @@
   },
   {
    "id": "E0420",
-   "finding_id": "F611",
+   "finding_id": "F214",
    "theme": [
     "ABC"
    ],
@@ -23589,7 +22331,7 @@
   },
   {
    "id": "E0459",
-   "finding_id": "F800",
+   "finding_id": "F227",
    "theme": [
     "ABC"
    ],
@@ -23615,7 +22357,7 @@
   },
   {
    "id": "E0460",
-   "finding_id": "F801",
+   "finding_id": "F227",
    "theme": [
     "ABC"
    ],
@@ -24584,7 +23326,7 @@
   },
   {
    "id": "E0496",
-   "finding_id": "F1000",
+   "finding_id": "F1103",
    "theme": [
     "Transition"
    ],
@@ -25132,7 +23874,7 @@
   },
   {
    "id": "E0517",
-   "finding_id": "F1102",
+   "finding_id": "F1103",
    "theme": [
     "Transition"
    ],
@@ -25724,7 +24466,7 @@
   },
   {
    "id": "E0539",
-   "finding_id": "F1200",
+   "finding_id": "F002",
    "theme": [
     "ABC"
    ],
@@ -26885,7 +25627,7 @@
   },
   {
    "id": "E0582",
-   "finding_id": "F1406",
+   "finding_id": "F310",
    "theme": [
     "Transition"
    ],
@@ -26939,7 +25681,7 @@
   },
   {
    "id": "E0584",
-   "finding_id": "F1408",
+   "finding_id": "F214",
    "theme": [
     "Transition"
    ],
@@ -27835,7 +26577,7 @@
   },
   {
    "id": "E0617",
-   "finding_id": "F1601",
+   "finding_id": "F210",
    "theme": [
     "ABC",
     "Transition"
