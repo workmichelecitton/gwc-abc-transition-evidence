@@ -333,9 +333,16 @@ def main():
             if fid not in known:
                 warn(f"highlights.csv row {i}: finding_id '{fid}' is not a published finding")
                 continue
+            rank = (r.get("rank") or "").strip()
+            if rank and not rank.isdigit():
+                errors.append(f"  highlights.csv row {i} ({fid}): rank '{rank}' must be a number")
             hl[fid] = {"headline": (r.get("headline") or "").strip(),
                        "plain": (r.get("plain") or "").strip(),
-                       "so_what": (r.get("so_what") or "").strip()}
+                       "so_what": (r.get("so_what") or "").strip(),
+                       # Optional. Lower numbers surface first within a theme.
+                       # Left blank, the Highlights tab falls back to ordering by
+                       # weight of evidence.
+                       "rank": int(rank) if rank else None}
     for f in findings:
         if f["finding_id"] in hl:
             f["highlight"] = hl[f["finding_id"]]

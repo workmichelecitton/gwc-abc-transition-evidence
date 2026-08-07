@@ -70,6 +70,7 @@ h2.grp{font-size:13px;text-transform:uppercase;letter-spacing:.07em;color:#5A667
   margin:26px 0 10px;padding-bottom:6px;border-bottom:1px solid #DDE2E8;
   display:flex;align-items:baseline;gap:9px}
 h2.grp:first-child{margin-top:6px}
+h2.grp .linkbtn{margin-left:auto;font-size:12px}
 .grp-n{font-size:12px;color:#8A94A2;font-weight:400;letter-spacing:0}
 /* One illustrative case, marked as such. The statement above it is the claim;
    this is one instance of it, and the records below are the full range. */
@@ -110,7 +111,10 @@ footer{padding:22px 26px;color:var(--ink-3);font-size:12px;border-top:1px solid 
 .hidden{display:none}
 /* About */
 .prose{background:var(--card);border:1px solid var(--line);border-radius:8px;
-  padding:26px 32px;max-width:760px}
+  padding:26px 32px}
+/* Prose is full width to match the filter bar and the finding cards, but a
+   1200px measure is unreadable, so the text inside is held to a sane column. */
+.prose>*{max-width:82ch}
 .prose h2{margin:0 0 6px;font-size:20px;letter-spacing:-.2px}
 .prose h3{margin:26px 0 8px;font-size:15px;color:var(--accent)}
 .prose p{margin:0 0 11px}
@@ -138,10 +142,25 @@ footer{padding:22px 26px;color:var(--ink-3);font-size:12px;border-top:1px solid 
 .lg{width:26px;height:9px;border-radius:2px;display:inline-block}
 .lg.lo{background:rgba(31,92,139,.22)} .lg.hi{background:rgba(31,92,139,.92);margin-left:10px}
 .lgnote{margin-left:12px;font-style:italic}
+text.ctyl{font-size:6.5px;font-weight:600;fill:#12325180;text-anchor:middle;
+  paint-order:stroke;stroke:#FFFFFFC0;stroke-width:1.6px;pointer-events:none;
+  letter-spacing:.02em}
+text.ctyl.sel{fill:var(--transition);stroke:#FFF;stroke-width:2px}
+.ctylist{margin-top:14px;border-top:1px solid var(--line);padding-top:10px;
+  display:grid;grid-template-columns:repeat(auto-fill,minmax(168px,1fr));gap:4px}
+.ctylist .maphead{grid-column:1/-1;margin:0 0 4px}
+.ctybtn{display:flex;justify-content:space-between;align-items:center;gap:8px;
+  background:none;border:1px solid transparent;border-radius:5px;cursor:pointer;
+  padding:4px 8px;font:inherit;font-size:13px;color:var(--ink-2);text-align:left}
+.ctybtn:hover{background:var(--bg);border-color:var(--line)}
+.ctybtn.on{background:var(--transition);border-color:var(--transition);color:#fff;font-weight:600}
+.ctyn{font-size:11.5px;color:var(--ink-3);font-variant-numeric:tabular-nums}
+.ctybtn.on .ctyn{color:#FFFFFFCC}
 .note-inline{font-size:11.5px;color:var(--ink-3);font-style:italic}
 /* Highlights */
 .hl{background:var(--card);border:1px solid var(--line);border-left:4px solid var(--s-high);
-  border-radius:8px;padding:20px 24px;margin-bottom:12px;max-width:840px}
+  border-radius:8px;padding:20px 24px;margin-bottom:12px}
+.hl>*{max-width:82ch}
 .hl h3{margin:0 0 8px;font-size:18px;line-height:1.35;letter-spacing:-.2px}
 .hl-plain{margin:0 0 10px;font-size:15.5px;line-height:1.6}
 .hl-so{margin:0 0 12px;padding:9px 13px;background:var(--bg);border-radius:5px;
@@ -227,6 +246,7 @@ var MAPON = true;                   // map shown above the findings list
 // the duplication. Strength first is the default because it puts what the base
 // is most confident about at the top.
 var GROUPBY = "strength";
+var HLALL = false;               // "the rest" of the highlights, collapsed by default
 var GROUPS = {
   strength: { order: ["high","medium","low"],
               label: function(v){ return label("strength", v) || v; },
@@ -527,23 +547,61 @@ function viewHighlights(d){
   var hi = d.findings.filter(function(f){ return f.strength==="high"; });
   if (!hi.length) return empty(
     "No high-strength findings match these filters. A finding reaches high strength once three independent sources, or two different kinds of source, support it.");
-  return '<p class="count">' + hi.length + ' finding' + (hi.length===1?"":"s") +
-    ' supported by several independent sources. Everything else is in the Findings tab, with its strength shown.</p>' +
-    hi.map(function(f){
-      var H = f.highlight || {};
-      return '<div class="hl">' +
-        '<h3>' + esc(H.headline || f.statement) + '</h3>' +
-        (H.plain ? '<p class="hl-plain">' + esc(H.plain) + '</p>'
-                 : '<p class="hl-plain">' + esc(f.statement) + '</p>') +
-        (H.so_what ? '<p class="hl-so"><b>What to do</b> · ' + esc(H.so_what) + '</p>' : '') +
-        '<div class="meta">' + themePills(f.theme) +
-          '<span class="pill '+esc(f.type)+'">'+esc(label("type",f.type))+'</span>' +
-          '<span class="str high">high strength</span>' +
-          '<span class="tag">' + f.n_sources + ' independent sources · ' +
-             f.streams.map(function(s){ return label("stream", s); }).join(" + ") + '</span>' +
-          f.countries.map(function(c){ return '<span class="tag">'+esc(countryName(c))+'</span>'; }).join("") +
-        '</div></div>';
-    }).join("");
+
+  // Eighty cards is not a highlights page. Show the leading five per theme and
+  // fold the rest away — still one click from here, and all of it in Findings.
+  // A finding covering two themes appears under both, which is correct: it is
+  // one of the five most useful things to say about each.
+  var THEMES = ["ABC","Transition","Fundamentals"];
+  var TOP = 5;
+  var shown = {}, out = "";
+
+  THEMES.forEach(function(t){
+    var inTheme = hi.filter(function(f){ return f.theme.indexOf(t)>=0; });
+    if (!inTheme.length) return;
+    inTheme.sort(function(a,b){
+      var ra = (a.highlight&&a.highlight.rank) || 99, rb = (b.highlight&&b.highlight.rank) || 99;
+      if (ra !== rb) return ra - rb;                       // curated order first
+      if (b.n_sources !== a.n_sources) return b.n_sources - a.n_sources;
+      if (b.n_records !== a.n_records) return b.n_records - a.n_records;
+      return b.countries.length - a.countries.length;      // then weight of evidence
+    });
+    var top = inTheme.slice(0, TOP);
+    top.forEach(function(f){ shown[f.finding_id] = 1; });
+    out += '<h2 class="grp">' + esc(label("theme", t) || t) +
+           '<span class="grp-n">' + top.length + ' of ' + inTheme.length + '</span></h2>' +
+           top.map(hlCard).join("");
+  });
+
+  var rest = hi.filter(function(f){ return !shown[f.finding_id]; });
+  var intro = '<p class="count">' + hi.length + ' finding' + (hi.length===1?"":"s") +
+    ' supported by several independent sources. The leading five per theme are below' +
+    (rest.length ? '; the other ' + rest.length + ' are one click away' : '') +
+    '. Everything else is in the Findings tab, with its strength shown.</p>';
+
+  if (rest.length) {
+    out += '<h2 class="grp">The rest' +
+           '<span class="grp-n">' + rest.length + '</span>' +
+           '<button class="linkbtn" id="hlMore">' + (HLALL?'Hide':'Show') + '</button></h2>' +
+           (HLALL ? rest.map(hlCard).join("") : "");
+  }
+  return intro + out;
+
+  function hlCard(f){
+    var H = f.highlight || {};
+    return '<div class="hl">' +
+      '<h3>' + esc(H.headline || f.statement) + '</h3>' +
+      (H.plain ? '<p class="hl-plain">' + esc(H.plain) + '</p>'
+               : '<p class="hl-plain">' + esc(f.statement) + '</p>') +
+      (H.so_what ? '<p class="hl-so"><b>What to do</b> · ' + esc(H.so_what) + '</p>' : '') +
+      '<div class="meta">' + themePills(f.theme) +
+        '<span class="pill '+esc(f.type)+'">'+esc(label("type",f.type))+'</span>' +
+        '<span class="str high">high strength</span>' +
+        '<span class="tag">' + f.n_sources + ' independent sources · ' +
+           f.streams.map(function(s){ return label("stream", s); }).join(" + ") + '</span>' +
+        f.countries.map(function(c){ return '<span class="tag">'+esc(countryName(c))+'</span>'; }).join("") +
+      '</div></div>';
+  }
 }
 
 // --- map -------------------------------------------------------------------
@@ -577,6 +635,21 @@ function selectedCountryChips(){
       ? ' <span class="note-inline">showing evidence from any of these</span>' : '');
 }
 
+// Horizontal extent of an SVG path, in viewBox units. Cached — the geometry
+// never changes, and this runs on every render.
+var _pw = {};
+function pathWidth(d){
+  if (_pw[d] != null) return _pw[d];
+  var nums = d.match(/-?\d+(?:\.\d+)?/g) || [];
+  var lo = Infinity, hi = -Infinity;
+  for (var i = 0; i < nums.length; i += 2) {
+    var x = parseFloat(nums[i]);
+    if (x < lo) lo = x;
+    if (x > hi) hi = x;
+  }
+  return (_pw[d] = (hi > lo ? hi - lo : 0));
+}
+
 function viewMap(){
   var G = window.GEO_DATA;
   if (!G) return '';
@@ -594,6 +667,36 @@ function viewMap(){
            '\n'+(F.countries.indexOf(c)>=0?'click to remove':'click to filter')+'</title></path>';
   }).join("");
 
+  // ISO3 labels at the country centroid. Only where the shape is actually wide
+  // enough to hold three characters — labelling every country puts BFA, MLI,
+  // NER, TCD, CMR and CAF on top of each other in West Africa, and prints text
+  // wider than the country on Lebanon and Palestine. Everything unlabelled is
+  // still reachable by hover and by the list underneath, which is the reliable
+  // route anyway for anyone who does not already know the map.
+  // Two passes. First drop anything whose shape is too narrow to hold three
+  // characters. Then drop whatever would collide with a label already placed,
+  // working from the most evidence to the least, so where West Africa is too
+  // crowded for all of them the country with more findings keeps its label.
+  var placed = [];
+  var labels = Object.keys(m)
+    .filter(function(c){
+      return G.countries[c] && G.centroids[c] && pathWidth(G.countries[c]) >= 15;
+    })
+    .sort(function(a,b){ return m[b].n - m[a].n; })
+    .filter(function(c){
+      var p = G.centroids[c];
+      var clash = placed.some(function(q){
+        return Math.abs(q[0]-p[0]) < 13 && Math.abs(q[1]-p[1]) < 7;
+      });
+      if (!clash) placed.push(p);
+      return !clash;
+    })
+    .map(function(c){
+      var p = G.centroids[c];
+      return '<text class="ctyl'+(F.countries.indexOf(c)>=0?' sel':'')+
+             '" x="'+p[0]+'" y="'+p[1]+'" data-c="'+esc(c)+'">'+esc(c)+'</text>';
+    }).join("");
+
   // countries with no geometry (regional codes) get chips instead
   var noGeo = Object.keys(m).filter(function(c){ return !G.countries[c]; });
 
@@ -603,15 +706,26 @@ function viewMap(){
       '<button class="linkbtn" id="mapToggle">' + (MAPON?'Hide map':'Show map') + '</button></div>' +
     (MAPON ?
       '<svg viewBox="'+G.viewBox+'" class="map" role="img" aria-label="Countries with evidence">' +
-        '<path d="'+G.world+'" class="land"/>' + shapes +
+        '<path d="'+G.world+'" class="land"/>' + shapes + labels +
       '</svg>' +
       '<div class="maplegend"><span class="lg lo"></span>fewer findings' +
         '<span class="lg hi"></span>more findings' +
         '<span class="lgnote">Shading shows how much evidence exists, not how strong it is.</span></div>' +
-      (noGeo.length ? '<div class="meta" style="margin-top:8px">' +
+      (noGeo.length ? '<div class="meta" style="margin-top:8px"><span class="flabel">No map shape</span>' +
         noGeo.map(function(c){ return '<button class="chip'+(F.countries.indexOf(c)>=0?' on':'')+
           ' selc-add" data-c="'+esc(c)+'">'+esc(countryName(c))+'</button>'; }).join(" ") + '</div>' : '')
-    : '') + '</div>';
+    : '') +
+    // The same filter as the map, as a plain list. A map is a poor interface if
+    // you do not already know where a country is, and it cannot show a count.
+    '<div class="ctylist"><div class="maphead"><span>Or choose from the list</span></div>' +
+      Object.keys(m).sort(function(a,b){
+        return countryName(a).localeCompare(countryName(b)); })
+      .map(function(c){
+        return '<button class="ctybtn'+(F.countries.indexOf(c)>=0?' on':'')+
+          '" data-c="'+esc(c)+'"><span>'+esc(countryName(c))+'</span>' +
+          '<span class="ctyn">'+m[c].n+'</span></button>';
+      }).join("") +
+    '</div></div>';
 }
 
 
@@ -642,9 +756,11 @@ function wire(){
       var k = c.dataset.f; OPEN[k] = !OPEN[k]; render();
     };
   });
-  document.querySelectorAll("path.cty, .selc, .selc-add").forEach(function(n){
+  document.querySelectorAll("path.cty, .selc, .selc-add, .ctybtn").forEach(function(n){
     n.onclick = function(e){ e.stopPropagation(); toggleCountry(n.dataset.c || n.getAttribute("data-c")); };
   });
+  var hm = el("hlMore");
+  if (hm) hm.onclick = function(){ HLALL = !HLALL; render(); };
   var mt = el("mapToggle");
   if (mt) mt.onclick = function(){ MAPON = !MAPON; render(); };
   document.querySelectorAll("td.n[data-tag]").forEach(function(td){
