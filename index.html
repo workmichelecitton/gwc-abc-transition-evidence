@@ -70,7 +70,16 @@ h2.grp{font-size:13px;text-transform:uppercase;letter-spacing:.07em;color:#5A667
   margin:26px 0 10px;padding-bottom:6px;border-bottom:1px solid #DDE2E8;
   display:flex;align-items:baseline;gap:9px}
 h2.grp:first-child{margin-top:6px}
-h2.grp .linkbtn{margin-left:auto;font-size:12px}
+.hlgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;align-items:start}
+.hlcol{min-width:0}
+.hlcol .hl{padding:14px 16px;margin-bottom:9px}
+.hlcol .hl>*{max-width:none}
+.hlcol .hl h3{font-size:15px;line-height:1.3}
+.hlcol .hl-plain{font-size:13.5px;line-height:1.5}
+.hlcol .hl-so{font-size:12.5px;padding:7px 10px}
+.hlcol .meta{font-size:11px}
+.hlnote{margin:-4px 0 10px;font-size:12px;color:var(--ink-3);font-style:italic}
+@media (max-width:1100px){ .hlgrid{grid-template-columns:1fr} }
 .grp-n{font-size:12px;color:#8A94A2;font-weight:400;letter-spacing:0}
 /* One illustrative case, marked as such. The statement above it is the claim;
    this is one instance of it, and the records below are the full range. */
@@ -115,6 +124,9 @@ footer{padding:22px 26px;color:var(--ink-3);font-size:12px;border-top:1px solid 
 /* Prose is full width to match the filter bar and the finding cards, but a
    1200px measure is unreadable, so the text inside is held to a sane column. */
 .prose>*{max-width:82ch}
+.aboutstats{display:flex;gap:26px;flex-wrap:wrap;margin:14px 0 4px;padding:14px 0;
+  border-top:1px solid var(--line);border-bottom:1px solid var(--line);max-width:none}
+.aboutstats .stat b{font-size:24px}
 .prose h2{margin:0 0 6px;font-size:20px;letter-spacing:-.2px}
 .prose h3{margin:26px 0 8px;font-size:15px;color:var(--accent)}
 .prose p{margin:0 0 11px}
@@ -246,7 +258,6 @@ var MAPON = true;                   // map shown above the findings list
 // the duplication. Strength first is the default because it puts what the base
 // is most confident about at the top.
 var GROUPBY = "strength";
-var HLALL = false;               // "the rest" of the highlights, collapsed by default
 var GROUPS = {
   strength: { order: ["high","medium","low"],
               label: function(v){ return label("strength", v) || v; },
@@ -513,31 +524,35 @@ function evidenceBlock(r){
 function viewAbout(){
   var a = D.about;
   if (!a) return empty("data/about.json is missing.");
-  var h = '<div class="prose"><h2>' + esc(a.title) + '</h2><p class="lead">' + esc(a.intro) + '</p>';
+  var s = D.stats;
 
-  (a.sections||[]).forEach(function(s){
-    h += '<h3>' + esc(s.heading) + '</h3>';
-    (s.body||[]).forEach(function(p){ h += '<p>' + esc(p) + '</p>'; });
-    if (s.list) h += '<ul>' + s.list.map(function(li){ return '<li>'+esc(li)+'</li>'; }).join("") + '</ul>';
+  // Scale first. A coordinator wants to know how big this is before reading
+  // anything about how it works.
+  var h = '<div class="prose"><h2>' + esc(a.title) + '</h2>' +
+    '<p class="lead">' + esc(a.intro) + '</p>' +
+    '<div class="aboutstats">' +
+      stat(s.findings, "Findings") + stat(s.records, "Evidence records") +
+      stat(s.sources, "Sources") + stat(s.countries, "Countries") +
+    '</div>' +
+    '<p class="note">Last rebuilt ' + esc(D.generated) + '.</p>';
+
+  (a.sections||[]).forEach(function(sec){
+    h += '<h3>' + esc(sec.heading) + '</h3>';
+    (sec.body||[]).forEach(function(p){ h += '<p>' + esc(p) + '</p>'; });
+    if (sec.list) h += '<ul>' + sec.list.map(function(li){ return '<li>'+esc(li)+'</li>'; }).join("") + '</ul>';
   });
 
-  h += '<h3>What “strength” means</h3><p>' + esc(a.strength_intro) + '</p>' +
+  h += '<h3>What "strength" means</h3><p>' + esc(a.strength_intro) + '</p>' +
        '<table class="strengthtable"><thead><tr><th>Strength</th><th>When it applies</th>' +
        '<th>How to read it</th></tr></thead><tbody>' +
-       (a.strength||[]).map(function(s){
-         return '<tr><td><span class="str '+esc(s.level)+'">'+esc(s.level)+'</span></td>' +
-                '<td>'+esc(s.rule)+'</td><td>'+esc(s.meaning)+'</td></tr>';
+       (a.strength||[]).map(function(x){
+         return '<tr><td><span class="str '+esc(x.level)+'">'+esc(x.level)+'</span></td>' +
+                '<td>'+esc(x.rule)+'</td><td>'+esc(x.meaning)+'</td></tr>';
        }).join("") + '</tbody></table>' +
        '<p class="note">' + esc(a.strength_note) + '</p>';
 
   h += '<h3>Read this with care</h3><ul class="caveats">' +
        (a.caveats||[]).map(function(c){ return '<li>'+esc(c)+'</li>'; }).join("") + '</ul>';
-
-  var s = D.stats;
-  h += '<h3>What is in it right now</h3><p>' +
-       s.findings + ' findings, drawn from ' + s.records + ' evidence records across ' +
-       s.sources + ' sources and ' + s.countries + ' countries. Last updated ' +
-       esc(D.generated) + '.</p>';
 
   if (a.footer_note) h += '<p class="note">' + esc(a.footer_note) + '</p>';
   return h + '</div>';
@@ -548,44 +563,51 @@ function viewHighlights(d){
   if (!hi.length) return empty(
     "No high-strength findings match these filters. A finding reaches high strength once three independent sources, or two different kinds of source, support it.");
 
-  // Eighty cards is not a highlights page. Show the leading five per theme and
-  // fold the rest away — still one click from here, and all of it in Findings.
-  // A finding covering two themes appears under both, which is correct: it is
-  // one of the five most useful things to say about each.
-  var THEMES = ["ABC","Transition","Fundamentals"];
-  var TOP = 5;
-  var shown = {}, out = "";
+  // Three columns, ten each. A finding carrying more than one theme goes in the
+  // first column only — previously it appeared under every theme it touched,
+  // so the area-based findings were showing up twice on the same page.
+  var COLS = [
+    { key:"general",     title:"General coordination",     note:"Applies whatever the configuration" },
+    { key:"ABC",         title:"Area-Based Coordination",  note:"Specific to organising by area" },
+    { key:"Transition",  title:"Transition",               note:"Specific to handing over or winding down" }
+  ];
+  var TOP = 10;
 
-  THEMES.forEach(function(t){
-    var inTheme = hi.filter(function(f){ return f.theme.indexOf(t)>=0; });
-    if (!inTheme.length) return;
-    inTheme.sort(function(a,b){
-      var ra = (a.highlight&&a.highlight.rank) || 99, rb = (b.highlight&&b.highlight.rank) || 99;
-      if (ra !== rb) return ra - rb;                       // curated order first
-      if (b.n_sources !== a.n_sources) return b.n_sources - a.n_sources;
-      if (b.n_records !== a.n_records) return b.n_records - a.n_records;
-      return b.countries.length - a.countries.length;      // then weight of evidence
-    });
-    var top = inTheme.slice(0, TOP);
-    top.forEach(function(f){ shown[f.finding_id] = 1; });
-    out += '<h2 class="grp">' + esc(label("theme", t) || t) +
-           '<span class="grp-n">' + top.length + ' of ' + inTheme.length + '</span></h2>' +
-           top.map(hlCard).join("");
-  });
-
-  var rest = hi.filter(function(f){ return !shown[f.finding_id]; });
-  var intro = '<p class="count">' + hi.length + ' finding' + (hi.length===1?"":"s") +
-    ' supported by several independent sources. The leading five per theme are below' +
-    (rest.length ? '; the other ' + rest.length + ' are one click away' : '') +
-    '. Everything else is in the Findings tab, with its strength shown.</p>';
-
-  if (rest.length) {
-    out += '<h2 class="grp">The rest' +
-           '<span class="grp-n">' + rest.length + '</span>' +
-           '<button class="linkbtn" id="hlMore">' + (HLALL?'Hide':'Show') + '</button></h2>' +
-           (HLALL ? rest.map(hlCard).join("") : "");
+  function column(f){
+    if (f.theme.length > 1) return 0;          // cross-cutting -> general
+    if (f.theme[0] === "ABC") return 1;
+    if (f.theme[0] === "Transition") return 2;
+    return 0;                                   // Fundamentals
   }
-  return intro + out;
+  function weight(a, b){
+    var ra = (a.highlight&&a.highlight.rank) || 99, rb = (b.highlight&&b.highlight.rank) || 99;
+    if (ra !== rb) return ra - rb;                          // curated order first
+    if (b.n_sources !== a.n_sources) return b.n_sources - a.n_sources;
+    if (b.n_records !== a.n_records) return b.n_records - a.n_records;
+    return b.countries.length - a.countries.length;         // then weight of evidence
+  }
+
+  var buckets = [[],[],[]];
+  hi.forEach(function(f){ buckets[column(f)].push(f); });
+  buckets.forEach(function(b){ b.sort(weight); });
+
+  var shownTotal = buckets.reduce(function(n,b){ return n + Math.min(b.length, TOP); }, 0);
+  var intro = '<p class="count">' + hi.length + ' finding' + (hi.length===1?"":"s") +
+    ' rest on several independent sources. The strongest ' + shownTotal +
+    ' are below, grouped by what they apply to. Everything else is in the Findings tab, with its strength shown.</p>';
+
+  var grid = '<div class="hlgrid">' + COLS.map(function(c, ix){
+    var items = buckets[ix].slice(0, TOP);
+    return '<section class="hlcol"><h2 class="grp">' + esc(c.title) +
+      '<span class="grp-n">' + items.length +
+      (buckets[ix].length > items.length ? ' of ' + buckets[ix].length : '') + '</span></h2>' +
+      '<p class="hlnote">' + esc(c.note) + '</p>' +
+      (items.length ? items.map(hlCard).join("")
+                    : '<p class="hlnote">Nothing at high strength here yet.</p>') +
+      '</section>';
+  }).join("") + '</div>';
+
+  return intro + grid;
 
   function hlCard(f){
     var H = f.highlight || {};
@@ -596,10 +618,8 @@ function viewHighlights(d){
       (H.so_what ? '<p class="hl-so"><b>What to do</b> · ' + esc(H.so_what) + '</p>' : '') +
       '<div class="meta">' + themePills(f.theme) +
         '<span class="pill '+esc(f.type)+'">'+esc(label("type",f.type))+'</span>' +
-        '<span class="str high">high strength</span>' +
-        '<span class="tag">' + f.n_sources + ' independent sources · ' +
-           f.streams.map(function(s){ return label("stream", s); }).join(" + ") + '</span>' +
-        f.countries.map(function(c){ return '<span class="tag">'+esc(countryName(c))+'</span>'; }).join("") +
+        '<span class="tag">' + f.n_sources + ' sources · ' + f.countries.length +
+          ' countr' + (f.countries.length===1?'y':'ies') + '</span>' +
       '</div></div>';
   }
 }
@@ -759,8 +779,6 @@ function wire(){
   document.querySelectorAll("path.cty, .selc, .selc-add, .ctybtn").forEach(function(n){
     n.onclick = function(e){ e.stopPropagation(); toggleCountry(n.dataset.c || n.getAttribute("data-c")); };
   });
-  var hm = el("hlMore");
-  if (hm) hm.onclick = function(){ HLALL = !HLALL; render(); };
   var mt = el("mapToggle");
   if (mt) mt.onclick = function(){ MAPON = !MAPON; render(); };
   document.querySelectorAll("td.n[data-tag]").forEach(function(td){

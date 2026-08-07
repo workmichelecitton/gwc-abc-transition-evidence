@@ -2,53 +2,53 @@ window.SITE_DATA = {
  "about": {
   "_comment": "Edit this file to change the About tab. Never edit index.html for content.",
   "title": "What this is",
-  "intro": "A live map of the evidence on Area-Based Coordination and Transition in humanitarian WASH coordination. It brings together what national clusters are telling us, what the published literature says, and what comes out of workshops — and shows where those sources agree, where they disagree, and where we simply do not know yet.",
+  "intro": "A live map of the evidence on Area-Based Coordination and Transition in humanitarian WASH coordination. It brings together what national clusters say in country conversations, what the published literature and evaluations say, and what comes out of workshops — and shows where those sources agree, where they disagree, and where there is simply not enough to say yet.",
   "sections": [
    {
     "heading": "What it is for",
     "body": [
-     "Two things. First, to inform WASH cluster coordinators — country teams keep asking the same questions, and the answers exist, scattered across conversations and reports. Second, to give coordinators an evidence base they can use when negotiating coordination arrangements with OCHA, humanitarian country teams and their own agencies.",
-     "It is not a guidance document. It is the evidence a guidance document would have to be built on."
+     "Two things. To answer the questions country teams keep asking each other, where the answers already exist but are scattered across conversations and reports. And to give coordinators something to negotiate with — an evidence base they can take into a discussion with OCHA, a humanitarian country team or their own agency.",
+     "It is not guidance. It is the evidence guidance would have to be built on."
     ]
    },
    {
-    "heading": "How the evidence is grouped",
+    "heading": "How to read a finding",
     "body": [
-     "Three themes, not two. Area-Based Coordination and Transition are configurations — particular ways of arranging coordination. A great deal of what coordinators actually raise is neither: staffing, funding, information management capacity, institutional memory, counterpart turnover. These determine whether any arrangement works, and they were previously forced into one label or the other.",
-     "The test is simple. Would the claim still be true in a country with no area-based structure and no transition under way? If yes, it sits under Coordination fundamentals. If it only holds where coordination is organised by area, it is ABC. If it only holds where coordination is being handed over, it is Transition.",
-     "This departs from how the secondary data reviews framed the material, deliberately. Filing a staffing constraint under Transition makes it look like a consequence of transition when it is a standing condition that transition then runs into.",
-     "A theme says what a finding is about. The tags say what it bears on — so a fundamentals finding that matters for handover still carries the transition-handover tag and can be found that way."
-    ]
-   },
-   {
-    "heading": "How it is written",
-    "body": [
-     "Entries describe what happened and what followed from it, not who is at fault. Where a barrier has an obvious remedy, the entry points toward it.",
-     "This is deliberate. Area-based coordination is still being designed, in most countries by people who are also trying to make it work. Evidence framed as a shared problem is more useful in a coordination meeting than the same evidence framed as an accusation — and the underlying finding is unchanged either way."
+     "The unit of data is an evidence record: one claim, from one source. Records making the same point are grouped into a finding. So a finding is not one person's view — it is a claim, plus everything supporting it, plus a count of how many independent sources it rests on.",
+     "Open any card to see the records underneath it, each traceable to a source in the Sources tab."
     ]
    },
    {
     "heading": "Where the evidence comes from",
-    "list": [
-     "Country conversations — check-ins with national clusters and coordination teams",
-     "Secondary data reviews — published evaluations, studies and guidance",
-     "Workshops — validation sessions and regional meetings",
-     "Search updates — a periodic scan for new published material"
+    "body": [
+     "Four streams, kept distinct so you can see which kind of source is carrying a finding.",
+     "Country conversations are check-ins with national coordination teams. Secondary data reviews cover published evaluations, reviews and guidance. Workshops are the 2026 consultation sessions. Search updates are periodic scans for new material.",
+     "A finding supported by two different kinds of source is stronger than the same point made twice in two interviews."
     ]
    },
    {
-    "heading": "How it is organised",
+    "heading": "The three themes",
     "body": [
-     "The unit of data is an evidence record: one claim, from one source. Records that make the same point are grouped into a finding.",
-     "So a finding is not one person's opinion. It is a claim, plus everything that supports it, plus a count of how many independent sources it rests on."
+     "Area-Based Coordination and Transition are configurations — particular ways of arranging coordination. Much of what coordinators actually raise is neither: staffing, funding, information management, institutional memory, counterpart turnover. These determine whether any arrangement works.",
+     "The test: would this claim still be true in a country with no area-based structure and no transition under way? If yes, it sits under Coordination fundamentals.",
+     "This departs from how the secondary data reviews framed the material, deliberately. Filing a staffing constraint under Transition makes it look like a consequence of transition, when it is a standing condition that transition then runs into.",
+     "A theme says what a finding is about. Tags say what it bears on — so a fundamentals finding that matters for handover still carries the transition-handover tag and can be found that way."
+    ]
+   },
+   {
+    "heading": "How entries are written",
+    "body": [
+     "Entries describe what happened and what followed from it, not who is at fault. Where a barrier has an obvious remedy, the entry points toward it.",
+     "This is deliberate rather than diplomatic. Area-based coordination is still being designed, in most countries by the same people trying to make it work. Evidence framed as an accusation gets argued with; evidence framed as a mechanism gets acted on.",
+     "Everything is anonymised. Verbatim quotes are held for verification but never published — a quote plus a country plus a role identifies one person."
     ]
    }
   ],
-  "strength_intro": "Strength is calculated, not asserted. Nobody types it in. It reflects only how many independent sources support a finding — not how confident anyone feels about it, and not how serious the problem is.",
+  "strength_intro": "Strength is calculated, not asserted. Nobody types it in. It reflects only how many independent sources support a finding — not how confident anyone feels, and not how serious the problem is.",
   "strength": [
    {
     "level": "high",
-    "rule": "Three or more independent sources, or two or more different types of source",
+    "rule": "Three or more independent sources, or two different kinds of source from at least two independent sources",
     "meaning": "Seen in several places. Safe to act on."
    },
    {
@@ -59,18 +59,17 @@ window.SITE_DATA = {
    {
     "level": "low",
     "rule": "One source",
-    "meaning": "Reported once. Not wrong — just not yet corroborated. Most new evidence starts here."
+    "meaning": "Recorded, not corroborated. Treat as a lead."
    }
   ],
-  "strength_note": "Two sources of different kinds — a country conversation and an evaluation, say — count for more than the same point made twice in two interviews. Independence is what matters, not volume.",
+  "strength_note": "Sources sharing an origin count once. Three sessions of the same workshop series are one source, not three — otherwise the count manufactures corroboration that does not exist.",
   "caveats": [
-   "Most findings are currently low strength. That is expected while the evidence base is being built, and it is shown honestly rather than hidden.",
-   "Coverage is uneven. Countries that have had a recent check-in are heavily represented; others are absent. Absence of evidence here is not evidence of absence.",
-   "Barriers outnumber enablers. People raise problems more readily than things that are working, so read the balance with care.",
-   "Verbatim quotes are held internally and are not published. Statements are neutral summaries, not the words anyone used.",
-   "There is no single model of area-based coordination. Arrangements differ sharply between countries, so a finding from one context may not transfer."
+   "Coverage is uneven. Countries with a recent check-in are heavily represented; others are absent. An absence here means nobody has been asked, not that nothing is happening.",
+   "Low strength does not mean untrue. It means one source said it and nobody else has been asked.",
+   "The strength count measures corroboration, not severity. A widely reported problem is not necessarily the most serious one.",
+   "Findings are a snapshot of what has been collected so far, not a systematic review."
   ],
-  "footer_note": "Findings are traceable to a source ID in the Sources tab. If something looks wrong, it probably is — say so and it will be corrected."
+  "footer_note": "Every finding traces to a source ID in the Sources tab. If something looks wrong, it probably is — say so and it will be corrected."
  },
  "generated": "2026-08-07",
  "taxonomy_version": "0.7.0",
@@ -2127,7 +2126,7 @@ window.SITE_DATA = {
    "unmerged": false,
    "highlight": {
     "headline": "Community-level structures are where coordination meets delivery",
-    "plain": "Structures at community level connect coordination directly to service delivery and improve alignment across sectors. Agencies with strong local presence have used them to lead joint access negotiations that a national platform could not have attempted.",
+    "plain": "Coordination sitting at community level does something a national platform cannot: it puts the people coordinating in the same place as the people delivering. In one context that proximity was what allowed joint access negotiations with armed groups to happen at all.",
     "so_what": "Where local presence is the asset, the coordination structure should sit where that presence is. This is the strongest operational case for area-based working in the evidence base.",
     "rank": null
    }
@@ -2297,7 +2296,7 @@ window.SITE_DATA = {
    "unmerged": false,
    "highlight": {
     "headline": "Adding a layer has not removed the parallel channels",
-    "plain": "Parallel coordination and implementation channels persist alongside the formal structures. Introducing an area-based layer in a context that already had an intersectoral tier added complexity rather than resolving it, and actors continue to work in the same areas without a shared planning framework.",
+    "plain": "Adding an area-based layer was meant to reduce fragmentation. Where an intersectoral tier already existed, it added another set of meetings instead, and the informal channels that prompted the reform carried on alongside all of it.",
     "so_what": "Before adding a structure, map what is already running in that space. The problem being solved is usually fragmentation, and another layer is not automatically a reduction in it.",
     "rank": null
    }
@@ -3393,7 +3392,7 @@ window.SITE_DATA = {
    "unmerged": false,
    "highlight": {
     "headline": "A seat at the table is not a say in the decision",
-    "plain": "Local actors are consistently present in area structures and consistently without power in them. Formal participation without decision-making authority adds reporting workload while leaving influence over priorities and resources exactly where it was.",
+    "plain": "Being in the room is not the same as deciding anything. Local actors are reliably present in area structures and reliably without authority in them — so the structure adds a reporting obligation while leaving the questions of what gets prioritised, and who is funded to do it, exactly where they were.",
     "so_what": "Make participation measurable: a named decision the local members can actually take, and a budget line they control. Otherwise presence is a reporting requirement dressed as inclusion.",
     "rank": 4
    }
@@ -5941,7 +5940,7 @@ window.SITE_DATA = {
    "unmerged": false,
    "highlight": {
     "headline": "There is a recognisable shape to how this is being done",
-    "plain": "Transitions in progress look broadly alike: the line ministry takes the lead with an NGO co-coordinator alongside, international posts are nationalised, co-chairing is introduced at subnational level and then nationally, and a roadmap is validated with the ministry before workshops start.",
+    "plain": "Countries arriving at this independently are converging on the same sequence: ministry takes the lead, an NGO co-coordinator alongside, international posts nationalised, co-chairing introduced subnationally then nationally, roadmap validated with the ministry before workshops start. Nobody wrote that down as guidance — it emerged.",
     "so_what": "There is enough convergence here to be worth writing up as a sequence. Countries are arriving at the same steps independently, which is a strong argument for documenting them once.",
     "rank": null
    }

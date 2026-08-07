@@ -107,6 +107,25 @@ async function exercise(label, url) {
     }
   }
 
+  // Highlights: three columns, and no finding in more than one of them. It used
+  // to be grouped by theme, so anything tagged ABC;Transition rendered twice on
+  // the same page.
+  const hlTab = tabs.find((t) => /highlight/i.test(t.dataset.tab));
+  if (hlTab) {
+    hlTab.dispatchEvent(new dom.window.Event("click", { bubbles: true }));
+    await new Promise((r) => setTimeout(r, 120));
+    const cols = $$("#view .hlcol");
+    ok(cols.length === 3, `${label}: expected 3 highlight columns, found ${cols.length}`);
+    const heads = $$("#view .hlcol .hl h3").map((h) => h.textContent.trim());
+    ok(new Set(heads).size === heads.length,
+       `${label}: a highlight appears in more than one column — ` +
+       heads.filter((h, i) => heads.indexOf(h) !== i).join(" | "));
+    cols.forEach((c, i) => {
+      const n = c.querySelectorAll(".hl").length;
+      ok(n <= 10, `${label}: highlight column ${i + 1} shows ${n} cards, cap is 10`);
+    });
+  }
+
   // Highlights must carry curated plain-language text, not the analytic statement.
   const hi = site.findings.filter((f) => f.strength === "high");
   const noHl = hi.filter((f) => !f.highlight || !f.highlight.plain);
