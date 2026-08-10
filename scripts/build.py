@@ -270,13 +270,39 @@ def main():
     for fid, rows in sorted(groups.items()):
         n_src = len({group_of.get(r["source_id"], r["source_id"]) for r in rows})
         n_str = len({r["stream"] for r in rows})
+        n_cty = len({c for r in rows for c in r["countries"]})
+        # Five bands, counted — never assigned. The old three-band scale put 81
+        # of 137 findings in 'high', which is not a filter, it is a majority: a
+        # claim with three sources ranked identically to one with thirteen across
+        # four streams.
+        #
         # Two streams only corroborate if they are also two independent sources.
         # The 2026 consultation carries records tagged 'workshop' and records
         # tagged 'sdr'; both sit in one source_group, so a finding resting on it
-        # alone spans two streams while resting on one voice. Requiring n_src>=2
-        # closes that route — nothing can reach 'high' on a single source group.
-        strength = ("high" if (n_src >= 3 or (n_src >= 2 and n_str >= 2))
-                    else "medium" if n_src == 2 else "low")
+        # alone spans two streams while resting on one voice. Every band above 1
+        # therefore requires n_src >= 2 — nothing climbs on a single source group.
+        #
+        # Band 5 also requires two countries. Three findings had six to eight
+        # sources all from one country; that is depth in one place, not breadth,
+        # and it should not outrank a claim heard in eight countries.
+        if n_src >= 6 and n_str >= 2 and n_cty >= 2:
+            strength = 5
+        elif n_src >= 3 and n_str >= 2:
+            strength = 4
+        elif n_src >= 3 or (n_src >= 2 and n_str >= 2):
+            strength = 3
+        elif n_src >= 2:
+            strength = 2
+        else:
+            strength = 1
+
+        # One source group appearing under two stream labels is not corroboration,
+        # it is the same voice filed twice. The source_group rule exists to stop
+        # exactly this, so when it still happens the registration is wrong.
+        if n_src == 1 and n_str > 1:
+            warn(f"{fid}: one independent source group but {n_str} streams "
+                 f"({', '.join(sorted({r['stream'] for r in rows}))}) — the same origin is "
+                 f"registered under two stream labels. Fix the registration, not the band.")
         primary = max(rows, key=lambda r: len(r.get("statement", "")))
         cur = curated.get(fid, {})
         # A finding drawing on more than one country needs a curated statement,
@@ -362,9 +388,9 @@ def main():
         if f["finding_id"] in hl:
             f["highlight"] = hl[f["finding_id"]]
     missing = [f["finding_id"] for f in findings
-               if f["strength"] == "high" and f["finding_id"] not in hl]
+               if f["strength"] >= 4 and f["finding_id"] not in hl]
     if missing:
-        warn("high-strength findings with no plain-language highlight yet: " + ", ".join(missing))
+        warn("band 4+ findings with no plain-language highlight yet: " + ", ".join(missing))
 
     # ---- unmined sources ----------------------------------------------------
     # A source in the registry with no evidence record against it has been
@@ -417,8 +443,8 @@ def main():
     # ---- granularity guard --------------------------------------------------
     # A finding is a claim plus everything supporting it. If most findings hold
     # a single record, the finding layer has drifted down to record level: the
-    # same issue reported by six countries reads as six 'low' findings instead
-    # of one 'high' one, and the base looks weaker than the evidence warrants.
+    # same issue reported by six countries reads as six band-1 findings instead
+    # of one band-5 finding, and the base looks weaker than the evidence warrants.
     # Extraction causes this quietly, because each batch merges only within
     # itself. Run prompts/04 across the whole base when this warns.
     solo = sum(1 for f in findings if f["n_records"] == 1)
@@ -431,7 +457,7 @@ def main():
     # source_group already collapses the 2026 consultation into one source. What
     # it cannot see is that a workshop claim attributed to country X and country
     # X's own check-in are frequently the same person speaking twice. A finding
-    # resting on exactly those two is 'medium' when it should be 'low'.
+    # resting on exactly those two sits in band 2 when it belongs in band 1.
     consult = {s["source_id"] for s in sources
                if (s.get("source_group") or "").strip() == "gwc-consult-2026"}
     if consult:
@@ -447,9 +473,9 @@ def main():
             for r in published:
                 if r["id"] in set(f["record_ids"]) and r["source_id"] in others:
                     if shared & set(r["countries"]):
-                        warn(f"{f['finding_id']}: rated medium on the 2026 consultation plus "
-                             f"a check-in from the same country — likely one voice twice, "
-                             f"not two independent sources. Check before relying on it.")
+                        warn(f"{f['finding_id']}: reaches band {f['strength']} on the 2026 "
+                             f"consultation plus a check-in from the same country — likely one "
+                             f"voice twice, not two independent sources. Check before relying on it.")
                         break
 
     # ---- guidance: what the rules say, kept apart from what the evidence says
@@ -534,7 +560,7 @@ def main():
     # Shape version, read by index.html. Bump it whenever a field the page reads
     # is renamed or removed — guidance "column" became "topics" in v2. A reader
     # holding a cached older page then sees a warning instead of empty sections.
-    SCHEMA = 2
+    SCHEMA = 3
 
     site = {
         "about": about,

@@ -179,10 +179,13 @@ async function exercise(label, url) {
     ok(new Set(heads).size === heads.length,
        `${label}: a highlight appears in more than one column — ` +
        heads.filter((h, i) => heads.indexOf(h) !== i).join(" | "));
-    cols.forEach((c, i) => {
-      const n = c.querySelectorAll(".hl").length;
-      ok(n <= 10, `${label}: highlight column ${i + 1} shows ${n} cards, cap is 10`);
-    });
+    // No cap any more: the bands decide what appears, so every band 4+ finding
+    // must be on the page. A cap would hide evidence for a reason the reader
+    // cannot see, which is what the old top-ten did.
+    const shown = $$("#view .hlcol .hl").length;
+    const expect = site.findings.filter((f) => f.strength >= 4).length;
+    ok(shown === expect,
+       `${label}: Highlights shows ${shown} cards for ${expect} findings at band 4+`);
   }
 
   // ---- every filter, on every tab ----------------------------------------
@@ -285,10 +288,10 @@ async function exercise(label, url) {
      `${label}: reset did not clear the search box`);
 
   // Highlights must carry curated plain-language text, not the analytic statement.
-  const hi = site.findings.filter((f) => f.strength === "high");
+  const hi = site.findings.filter((f) => f.strength >= 4);
   const noHl = hi.filter((f) => !f.highlight || !f.highlight.plain);
   ok(noHl.length === 0,
-     `${label}: high-strength findings with no plain-language text — ${noHl.map((f) => f.finding_id).join(", ")}`);
+     `${label}: band 4+ findings with no plain-language text — ${noHl.map((f) => f.finding_id).join(", ")}`);
 
   dom.window.close();
 }
@@ -301,8 +304,24 @@ async function exercise(label, url) {
   ok(orphan.length === 0, `records pointing at a finding that does not exist: ${orphan.length}`);
   ok(!site.records.some((r) => "quote" in r || "notes" in r),
      "a quote or notes column reached site.json — build-time redaction failed");
-  ok(!site.findings.some((f) => f.strength === "high" && f.n_sources < 2),
-     "a finding rated high rests on one source group");
+  // Bands are counted, so they can be recomputed here from the raw numbers. If
+  // this ever disagrees with build.py, one of the two has drifted.
+  const band = (f) =>
+    f.n_sources >= 6 && f.n_streams >= 2 && f.countries.length >= 2 ? 5
+    : f.n_sources >= 3 && f.n_streams >= 2 ? 4
+    : f.n_sources >= 3 || (f.n_sources >= 2 && f.n_streams >= 2) ? 3
+    : f.n_sources >= 2 ? 2 : 1;
+  const drift = site.findings.filter((f) => f.strength !== band(f));
+  ok(drift.length === 0,
+     `band drift between build.py and the rule: ${drift.map((f) =>
+        `${f.finding_id} is ${f.strength}, should be ${band(f)}`).join("; ")}`);
+  ok(!site.findings.some((f) => f.strength > 1 && f.n_sources < 2),
+     "a finding above band 1 rests on one source group");
+  ok(!site.findings.some((f) => f.strength === 5 && f.countries.length < 2),
+     "a band 5 finding sits in a single country — depth is passing for breadth");
+  const dist = [5, 4, 3, 2, 1].map((b) =>
+    `${b}:${site.findings.filter((f) => f.strength === b).length}`).join(" · ");
+  console.log(`    bands  ${dist}  of ${site.findings.length} findings`);
   // Theme is multi-value. 'Both' as a single value made cross-cutting evidence
   // invisible to both filters; nothing may reintroduce it.
   const themes = new Set(site.findings.flatMap((f) => f.theme)

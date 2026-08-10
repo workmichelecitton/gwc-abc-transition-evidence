@@ -86,7 +86,7 @@ Every value in a controlled column must already exist in `data/taxonomy.json`. I
 | `stream` | Set by the prompt you are running. |
 | `source_id` | Existing `S###`, or the next free one if you are adding a source. Add the row to `sources.csv` in the same pass. |
 | `date_collected` | Date of the conversation or publication, `YYYY-MM-DD`. |
-| `confidence` | Your judgement of this single record. The site ignores it for display — strength is computed from how many independent sources support the finding — so do not inflate it. |
+| `confidence` | Your judgement of this single record. The build validates it and then ignores it: a finding's band is computed from independent sources, streams and countries, so nothing you type here changes what a reader sees. Do not inflate it. |
 | `visibility` | `public` unless anonymisation is uncertain. |
 | `status` | `draft`. Only a human sets `validated`. |
 | `notes` | Working notes. Never published. Use it to flag doubts. |

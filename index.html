@@ -19,7 +19,9 @@
   --barrier:#B33A3A; --enabler:#2E7D5B; --recommendation:#6B4E9E;
   --practice:#177B8A; --context:#7A8794;
   /* sequential single hue — ordered values */
-  --s-low:#CFE0EC; --s-med:#6C9FC4; --s-high:#1F5C8B;
+  /* Five bands, one ramp. Darker means more independent corroboration, never
+     "more true" — a band-1 finding is often the most interesting thing here. */
+  --s1:#DCE7EF; --s2:#B0CBDE; --s3:#7BA8C8; --s4:#3F7BA6; --s5:#1B4F79;
 }
 *{box-sizing:border-box}
 body{margin:0;font:15px/1.55 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
@@ -122,8 +124,10 @@ h2.grp:first-child{margin-top:6px}
 .pill.recommendation{background:var(--recommendation)} .pill.practice{background:var(--practice)}
 .pill.context{background:var(--context)}
 .str{border-radius:4px;padding:2px 8px;font-weight:600;font-size:11px;text-transform:uppercase;letter-spacing:.4px}
-.str.low{background:var(--s-low);color:#25506F} .str.medium{background:var(--s-med);color:#fff}
-.str.high{background:var(--s-high);color:#fff}
+.str.b1{background:var(--s1);color:#2A4A61} .str.b2{background:var(--s2);color:#22415A}
+.str.b3{background:var(--s3);color:#fff}     .str.b4{background:var(--s4);color:#fff}
+.str.b5{background:var(--s5);color:#fff}
+.str-n{opacity:.65;font-weight:700;margin-right:5px}
 .detail{margin-top:13px;padding-top:13px;border-top:1px solid var(--line)}
 .ev{padding:10px 0;border-bottom:1px dashed var(--line)}
 .ev:last-child{border-bottom:0}
@@ -206,7 +210,7 @@ text.ctyl.sel{fill:var(--transition);stroke:#FFF;stroke-width:2px}
 .ctybtn.on .ctyn{color:#FFFFFFCC}
 .note-inline{font-size:11.5px;color:var(--ink-3);font-style:italic}
 /* Highlights */
-.hl{background:var(--card);border:1px solid var(--line);border-left:4px solid var(--s-high);
+.hl{background:var(--card);border:1px solid var(--line);border-left:4px solid var(--s5);
   border-radius:8px;padding:20px 24px;margin-bottom:12px}
 .hl>*{max-width:82ch}
 .hl h3{margin:0 0 8px;font-size:18px;line-height:1.35;letter-spacing:-.2px}
@@ -295,8 +299,8 @@ var MAPON = true;                   // map shown above the findings list
 // is most confident about at the top.
 var GROUPBY = "strength";
 var GROUPS = {
-  strength: { order: ["high","medium","low"],
-              label: function(v){ return label("strength", v) || v; },
+  strength: { order: [5,4,3,2,1],
+              label: function(v){ return bandLabel(v); },
               of: function(f){ return f.strength; } },
   theme:    { order: ["ABC","Transition","Fundamentals"],
               label: function(v){ return label("theme", v) || v; },
@@ -315,6 +319,22 @@ function label(key, value){
   return value;
 }
 function countryName(iso){ return (D.taxonomy.countries||{})[iso] || iso; }
+// Strength is a number 1-5 so it sorts and compares without a lookup table.
+// The words come from the taxonomy so the site and the build never disagree.
+function bandLabel(b){
+  var list = (D.taxonomy.strength||[]);
+  for (var i=0;i<list.length;i++) if (list[i].value===b) return list[i].label;
+  return String(b);
+}
+function bandDef(b){
+  var list = (D.taxonomy.strength||[]);
+  for (var i=0;i<list.length;i++) if (list[i].value===b) return list[i].definition||"";
+  return "";
+}
+function bandTag(b){
+  return '<span class="str b'+b+'" title="'+esc(bandDef(b))+'">' +
+         '<span class="str-n">'+b+'</span>'+esc(bandLabel(b))+'</span>';
+}
 function uniq(a){ return a.filter(function(v,i){ return a.indexOf(v)===i; }); }
 
 // --- load ------------------------------------------------------------------
@@ -344,7 +364,7 @@ fetch("data/site.json", {cache:"no-store"})
 // field the build had replaced with "topics". Zero results looked like missing
 // content rather than a stale page. Bump SCHEMA whenever a field the page reads
 // is renamed or removed, and the mismatch announces itself instead.
-var SCHEMA = 2;
+var SCHEMA = 3;
 function staleBanner(){
   if (!D || D.schema === SCHEMA) return "";
   return '<div class="warn stale"><b>This page is out of date.</b> ' +
@@ -376,7 +396,8 @@ function init(){
   chips("f-theme","theme","theme");
   chips("f-type","type","type");
   chips("f-stream","stream","stream");
-  chips("f-strength","strength",null,[["high","High"],["medium","Medium"],["low","Low"]]);
+  chips("f-strength","strength",null,
+        [5,4,3,2,1].map(function(b){ return [b, b + " " + bandLabel(b)]; }));
   chips("f-level","level","level");
 
   dropdown("country","Add a country…",
@@ -410,7 +431,7 @@ function init(){
   el("foot").innerHTML =
     "Global WASH Cluster · beta · data generated " + esc(D.generated) +
     " · taxonomy v" + esc(D.taxonomy_version) +
-    " · strength of evidence is computed from the number of independent sources and streams, not asserted." +
+    " · strength of evidence is computed from independent sources, streams and countries, not asserted." +
     (D.stats.withheld_internal ? " · " + D.stats.withheld_internal +
       " record(s) marked internal are excluded from this build." : "");
 
@@ -474,7 +495,9 @@ function filtered(skipCountry){
   recs.forEach(function(r){ keep[r.finding_id || ("_solo_"+r.id)] = true; });
   var finds = D.findings.filter(function(f){
     if (!keep[f.finding_id]) return false;
-    if (F.strength.length && F.strength.indexOf(f.strength)<0) return false;
+    // dataset.v is always a string, f.strength is a number. Compare as strings
+    // or every band filter silently matches nothing.
+    if (F.strength.length && F.strength.indexOf(String(f.strength))<0) return false;
     return true;
   });
   var fset = {}; finds.forEach(function(f){ fset[f.finding_id]=true; });
@@ -568,7 +591,7 @@ function viewFindings(d){
       (f.example ? '<p class="eg">'+esc(f.example)+'</p>' : '') +
       '<div class="meta">' + themePills(f.theme) +
       '<span class="pill '+esc(f.type)+'">'+esc(label("type",f.type))+'</span>' +
-      '<span class="str '+esc(f.strength)+'">'+esc(f.strength)+' strength</span>' +
+      bandTag(f.strength) +
       '<span class="tag">'+f.n_sources+' source'+(f.n_sources===1?"":"s")+
         ' · '+f.n_streams+' stream'+(f.n_streams===1?"":"s")+'</span>' +
       (f.unmerged ? '<span class="tag" style="color:#B33A3A">not yet merged</span>' : '') +
@@ -614,10 +637,10 @@ function viewAbout(){
   });
 
   h += '<h3>What "strength" means</h3><p>' + esc(a.strength_intro) + '</p>' +
-       '<table class="strengthtable"><thead><tr><th>Strength</th><th>When it applies</th>' +
+       '<table class="strengthtable"><thead><tr><th>Band</th><th>When it applies</th>' +
        '<th>How to read it</th></tr></thead><tbody>' +
        (a.strength||[]).map(function(x){
-         return '<tr><td><span class="str '+esc(x.level)+'">'+esc(x.level)+'</span></td>' +
+         return '<tr><td>' + bandTag(x.level) + '</td>' +
                 '<td>'+esc(x.rule)+'</td><td>'+esc(x.meaning)+'</td></tr>';
        }).join("") + '</tbody></table>' +
        '<p class="note">' + esc(a.strength_note) + '</p>';
@@ -700,7 +723,7 @@ function viewGuidance(){
         var f = fmap[fid];
         if (!f) return '';
         return '<p class="gd-ev"><b>In this base</b> · ' + esc(f.statement) +
-               ' <span class="tag">' + esc(f.strength) + ' strength</span></p>';
+               ' ' + bandTag(f.strength) + '</p>';
       }).join("");
       var labels = (g.topics||[]).map(function(t, i){
         return '<span class="pill ' + esc(t === "abc" ? "ABC" : t === "transition" ? "Transition" : "Fundamentals") +
@@ -719,20 +742,24 @@ function viewGuidance(){
 }
 
 function viewHighlights(d){
-  var hi = d.findings.filter(function(f){ return f.strength==="high"; });
+  // Band 5 and 4 only. Under the old three-band scale this tab had to take the
+  // top ten per column, because 81 of 137 findings counted as "high" and showing
+  // them all was useless. The cap was arbitrary — it hid findings for no reason
+  // a reader could see. The bands now do that job by counting, so the cut is
+  // explicable: everything here rests on at least three independent sources
+  // across at least two kinds of source.
+  var hi = d.findings.filter(function(f){ return f.strength >= 4; });
   if (!hi.length) return empty(
-    "No high-strength findings match these filters. A finding reaches high strength once three independent sources, or two different kinds of source, support it.");
+    "Nothing at band 4 or above matches these filters. A finding reaches band 4 once three independent sources across two different kinds of source support it.");
 
-  // Three columns, ten each. A finding carrying more than one theme goes in the
-  // first column only — previously it appeared under every theme it touched,
-  // so the area-based findings were showing up twice on the same page.
+  // A finding carrying more than one theme goes in the first column only —
+  // previously it appeared under every theme it touched, so the area-based
+  // findings were showing up twice on the same page.
   var COLS = [
     { key:"general",     title:"General coordination",     note:"Applies whatever the configuration" },
     { key:"ABC",         title:"Area-Based Coordination",  note:"Specific to organising by area" },
     { key:"Transition",  title:"Transition",               note:"Specific to handing over or winding down" }
   ];
-  var TOP = 10;
-
   function column(f){
     if (f.theme.length > 1) return 0;          // cross-cutting -> general
     if (f.theme[0] === "ABC") return 1;
@@ -740,8 +767,9 @@ function viewHighlights(d){
     return 0;                                   // Fundamentals
   }
   function weight(a, b){
+    if (b.strength !== a.strength) return b.strength - a.strength;   // band 5 above band 4
     var ra = (a.highlight&&a.highlight.rank) || 99, rb = (b.highlight&&b.highlight.rank) || 99;
-    if (ra !== rb) return ra - rb;                          // curated order first
+    if (ra !== rb) return ra - rb;                          // curated order next
     if (b.n_sources !== a.n_sources) return b.n_sources - a.n_sources;
     if (b.n_records !== a.n_records) return b.n_records - a.n_records;
     return b.countries.length - a.countries.length;         // then weight of evidence
@@ -751,19 +779,19 @@ function viewHighlights(d){
   hi.forEach(function(f){ buckets[column(f)].push(f); });
   buckets.forEach(function(b){ b.sort(weight); });
 
-  var shownTotal = buckets.reduce(function(n,b){ return n + Math.min(b.length, TOP); }, 0);
+  var n5 = hi.filter(function(f){ return f.strength === 5; }).length;
   var intro = '<p class="count">' + hi.length + ' finding' + (hi.length===1?"":"s") +
-    ' rest on several independent sources. The strongest ' + shownTotal +
-    ' are below, grouped by what they apply to. Everything else is in the Findings tab, with its strength shown.</p>';
+    ' at band 4 or above, of which ' + n5 + ' reach band 5 — six or more independent ' +
+    'sources, across two kinds of source, in two or more countries. Nothing is capped or ' +
+    'hidden here: everything below band 4 is in the Findings tab with its band shown.</p>';
 
   var grid = '<div class="hlgrid">' + COLS.map(function(c, ix){
-    var items = buckets[ix].slice(0, TOP);
+    var items = buckets[ix];
     return '<section class="hlcol"><h2 class="grp">' + esc(c.title) +
-      '<span class="grp-n">' + items.length +
-      (buckets[ix].length > items.length ? ' of ' + buckets[ix].length : '') + '</span></h2>' +
+      '<span class="grp-n">' + items.length + '</span></h2>' +
       '<p class="hlnote">' + esc(c.note) + '</p>' +
       (items.length ? items.map(hlCard).join("")
-                    : '<p class="hlnote">Nothing at high strength here yet.</p>') +
+                    : '<p class="hlnote">Nothing at band 4 or above here yet.</p>') +
       '</section>';
   }).join("") + '</div>';
 

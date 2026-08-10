@@ -51,25 +51,40 @@
    ]
   }
  ],
- "strength_intro": "Strength is calculated, not asserted. Nobody types it in. It reflects only how many independent sources support a finding — not how confident anyone feels, and not how serious the problem is.",
+ "strength_intro": "Strength is calculated, not asserted. Nobody types it in. It counts how many independent sources support a finding, across how many kinds of source, and in how many countries — not how confident anyone feels, and not how serious the problem is. A band 1 finding is not a weak one; it is one nobody else has said yet.",
  "strength": [
   {
-   "level": "high",
-   "rule": "Three or more independent sources, or two different kinds of source from at least two independent sources",
-   "meaning": "Seen in several places. Safe to act on."
+   "level": 5,
+   "label": "Very strong",
+   "rule": "Six or more independent sources, across two kinds of source, in two or more countries",
+   "meaning": "Seen widely and from more than one direction. This is the evidence to lead with."
   },
   {
-   "level": "medium",
+   "level": 4,
+   "label": "Strong",
+   "rule": "Three or more independent sources across two kinds of source",
+   "meaning": "Corroborated from different directions. Safe to act on."
+  },
+  {
+   "level": 3,
+   "label": "Moderate",
+   "rule": "Three or more independent sources, or two across two kinds of source",
+   "meaning": "More than a one-off. Worth carrying into a discussion."
+  },
+  {
+   "level": 2,
+   "label": "Limited",
    "rule": "Two independent sources",
-   "meaning": "More than one country or document says this. Worth testing further."
+   "meaning": "Corroborated, but narrowly. Worth testing further."
   },
   {
-   "level": "low",
+   "level": 1,
+   "label": "Single source",
    "rule": "One source",
-   "meaning": "Recorded, not corroborated. Treat as a lead."
+   "meaning": "Recorded, not yet corroborated. Treat as a lead — several of these are the most interesting things here."
   }
  ],
- "strength_note": "Sources sharing an origin count once. Three sessions of the same workshop series are one source, not three — otherwise the count manufactures corroboration that does not exist.",
+ "strength_note": "Sources sharing an origin count once. Three sessions of the same workshop series are one source, not three — otherwise the count manufactures corroboration that does not exist. Band 5 also requires two countries, so depth in one place cannot pass for breadth.",
  "caveats": [
   "Coverage is uneven. Countries with a recent check-in are heavily represented; others are absent. An absence here means nobody has been asked, not that nothing is happening.",
   "Low strength does not mean untrue. It means one source said it and nobody else has been asked.",

@@ -1,7 +1,7 @@
 {
  "_comment": "Controlled vocabularies. The build script rejects any value in evidence.csv that is not listed here. To add a value, add it here first, then use it. Keep this list short — every addition is a permanent filter option.",
- "version": "0.7.0",
- "updated": "2026-08-05",
+ "version": "0.8.0",
+ "updated": "2026-08-10",
  "theme": [
   {
    "value": "ABC",
@@ -98,6 +98,34 @@
    "value": "low",
    "label": "Low",
    "definition": "Single source. Not wrong — just not yet corroborated."
+  }
+ ],
+ "_strength_comment": "Strength of a FINDING. Computed by scripts/build.py from independent source groups, streams and countries — never assigned by hand. Sources sharing a source_group count once. Distinct from the per-record 'confidence' column above, which the build validates but does not use.",
+ "strength": [
+  {
+   "value": 5,
+   "label": "Very strong",
+   "definition": "Six or more independent sources, across two or more streams, in two or more countries. Breadth as well as depth."
+  },
+  {
+   "value": 4,
+   "label": "Strong",
+   "definition": "Three or more independent sources across two or more streams."
+  },
+  {
+   "value": 3,
+   "label": "Moderate",
+   "definition": "Three or more independent sources, or two independent sources across two streams."
+  },
+  {
+   "value": 2,
+   "label": "Limited",
+   "definition": "Two independent sources. Corroborated, but narrowly."
+  },
+  {
+   "value": 1,
+   "label": "Single source",
+   "definition": "One voice. Not wrong, and often the most interesting thing here — just not yet corroborated."
   }
  ],
  "visibility": [

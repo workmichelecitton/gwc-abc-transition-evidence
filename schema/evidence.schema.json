@@ -55,7 +55,7 @@
     "confidence": {
       "type": "string",
       "enum": ["high", "medium", "low"],
-      "description": "Set at record level as an initial judgement. The viewer recomputes strength of evidence per finding_id from the number of independent sources — that computed value is what users see."
+      "description": "Set at record level as an initial judgement. Validated but not used. The band a reader sees is computed per finding_id from independent source groups, streams and countries (1-5, see data/taxonomy.json -> strength)."
     },
     "visibility": { "type": "string", "enum": ["public", "internal"] },
     "status": { "type": "string", "enum": ["draft", "validated"] },

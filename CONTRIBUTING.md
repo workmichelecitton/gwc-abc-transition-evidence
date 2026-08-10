@@ -49,7 +49,7 @@ Use roles rather than names in `owner_role` — this file is in the public repos
 
 Run `prompts/04-merge-and-dedupe.md`. This assigns `finding_id`.
 
-**Do not skip this.** Strength of evidence is calculated from how many independent sources share a `finding_id`. Ungrouped records show as isolated low-strength findings, and the site quietly understates what you actually know.
+**Do not skip this.** Strength of evidence is calculated from how many independent sources share a `finding_id`. Ungrouped records show as isolated band 1 findings, and the site quietly understates what you actually know.
 
 ### 4. Commit
 
