@@ -452,6 +452,47 @@ def main():
                              f"not two independent sources. Check before relying on it.")
                         break
 
+    # ---- guidance: what the rules say, kept apart from what the evidence says
+    # Deliberately NOT in sources.csv. Guidance is normative — it states what
+    # should happen. This base records what did. Mixing them is what made seven
+    # normative documents awkward in the source registry, where they sat with no
+    # records against them looking like gaps. They are not sources of evidence
+    # and must never touch a strength count.
+    guidance = []
+    g_path = DATA / "guidance.csv"
+    if g_path.exists():
+        known_f = {f["finding_id"] for f in findings}
+        g_cols = {"general", "transition", "abc"}
+        for i, r in enumerate(read_csv(g_path), start=2):
+            gid = (r.get("id") or "").strip()
+            if not gid:
+                continue
+            col = (r.get("column") or "").strip()
+            if col not in g_cols:
+                errors.append(f"  guidance.csv row {i} ({gid}): column '{col}' must be one of "
+                              f"{sorted(g_cols)}")
+            if not (r.get("title") or "").strip():
+                errors.append(f"  guidance.csv row {i} ({gid}): title is empty")
+            ev = [f for f in split(r.get("evidence", "")) ]
+            for f in ev:
+                if f not in known_f:
+                    warn(f"guidance.csv row {i} ({gid}): evidence '{f}' is not a published finding")
+            guidance.append({"id": gid, "column": col,
+                             "title": (r.get("title") or "").strip(),
+                             "organisation": (r.get("organisation") or "").strip(),
+                             "year": (r.get("year") or "").strip(),
+                             "url": (r.get("url") or "").strip(),
+                             "summary": (r.get("summary") or "").strip(),
+                             "evidence": [f for f in ev if f in known_f]})
+        if errors:
+            report()
+            return 1
+        by_col = defaultdict(int)
+        for g in guidance:
+            by_col[g["column"]] += 1
+        print(f"    guidance.csv: {len(guidance)} entries "
+              f"({', '.join(f'{c} {by_col[c]}' for c in ('general', 'transition', 'abc'))})")
+
     # ---- about text (editable without touching index.html) -----------------
     about_path = DATA / "about.json"
     about = json.loads(about_path.read_text(encoding="utf-8")) if about_path.exists() else None
@@ -468,6 +509,7 @@ def main():
             "withheld_internal": withheld,
         },
         "taxonomy": taxonomy,
+        "guidance": guidance,
         "findings": findings,
         "records": published,
         "sources": sources,

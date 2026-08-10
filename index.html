@@ -79,6 +79,16 @@ h2.grp:first-child{margin-top:6px}
 .hlcol .hl-so{font-size:12.5px;padding:7px 10px}
 .hlcol .meta{font-size:11px}
 .hlnote{margin:-4px 0 10px;font-size:12px;color:var(--ink-3);font-style:italic}
+.gd{background:var(--card);border:1px solid var(--line);border-left:4px solid var(--ink-3);
+  border-radius:8px;padding:14px 16px;margin-bottom:9px}
+.gd h3{margin:0 0 3px;font-size:15px;line-height:1.3}
+.gd h3 a{color:var(--accent);text-decoration:none}
+.gd h3 a:hover{text-decoration:underline}
+.gd-meta{margin:0 0 8px;font-size:12px;color:var(--ink-3)}
+.gd-sum{margin:0 0 9px;font-size:13.5px;line-height:1.5}
+.gd-ev{margin:0;padding:9px 11px;background:var(--bg);border-radius:5px;
+  font-size:12.5px;line-height:1.5;color:var(--ink-2)}
+.gd-ev b{color:var(--accent)}
 @media (max-width:1100px){ .hlgrid{grid-template-columns:1fr} }
 .grp-n{font-size:12px;color:#8A94A2;font-weight:400;letter-spacing:0}
 /* One illustrative case, marked as such. The statement above it is the claim;
@@ -248,9 +258,9 @@ var OPEN = {};                      // which finding cards are expanded
 // while the base was being built; with all sources in and the consolidation
 // done, it told a reader nothing the Findings filters do not. viewMatrix() went
 // with it — recover from git if a coverage view is ever wanted again.
-var TABS = [["about","About"],["highlights","Highlights"],["findings","Findings"],
-            ["sources","Sources"]];
-var NOFILTER = { about:1 };         // views the filter bar does not apply to
+var TABS = [["about","About"],["guidance","Guidance"],["highlights","Highlights"],
+            ["findings","Findings"],["sources","Sources"]];
+var NOFILTER = { about:1, guidance:1 };   // views the filter bar does not apply to
 var MAPON = true;                   // map shown above the findings list
 // Grouping the findings list. Deliberately NOT by tag: findings carry 3.3 tags
 // on average, so a tag grouping would list most cards three times over. The tag
@@ -460,6 +470,7 @@ function render(){
   if (!hideFilters) selectedCountryChips();
   var v = el("view");
   if (TAB==="about")      v.innerHTML = viewAbout();
+  if (TAB==="guidance")   v.innerHTML = viewGuidance();
   if (TAB==="highlights") v.innerHTML = viewHighlights(d);
   if (TAB==="findings")   v.innerHTML = viewMap() + viewFindings(d);
   if (TAB==="sources")    v.innerHTML = viewSources(d);
@@ -573,6 +584,50 @@ function viewAbout(){
 
   if (a.footer_note) h += '<p class="note">' + esc(a.footer_note) + '</p>';
   return h + '</div>';
+}
+
+// Guidance is what the rules say. Everything else on this site is what the
+// evidence records. They are kept in separate files and shown on separate tabs
+// on purpose — a normative document is not a source of evidence and must never
+// count toward a finding's strength.
+function viewGuidance(){
+  var G = D.guidance || [];
+  if (!G.length) return empty("data/guidance.csv is missing or empty.");
+  var COLS = [
+    { key:"general",    title:"Coordination in general",
+      note:"What a cluster is for, and how the system is being reshaped." },
+    { key:"transition", title:"Transition and deactivation",
+      note:"When coordination changes hands, and what is expected before it does." },
+    { key:"abc",        title:"Area-Based Coordination",
+      note:"The newest and thinnest of the three. That is itself a finding." }
+  ];
+  var fmap = {};
+  D.findings.forEach(function(f){ fmap[f.finding_id] = f; });
+
+  return '<p class="count">Guidance sets out what should happen. The rest of this site ' +
+    'records what did. Where the two diverge, both are worth having in the room.</p>' +
+    '<div class="hlgrid">' + COLS.map(function(c){
+      var items = G.filter(function(g){ return g.column === c.key; });
+      return '<section class="hlcol"><h2 class="grp">' + esc(c.title) +
+        '<span class="grp-n">' + items.length + '</span></h2>' +
+        '<p class="hlnote">' + esc(c.note) + '</p>' +
+        items.map(function(g){
+          var ev = (g.evidence||[]).map(function(fid){
+            var f = fmap[fid];
+            if (!f) return '';
+            return '<p class="gd-ev"><b>In this base</b> · ' + esc(f.statement) +
+                   ' <span class="tag">' + esc(f.strength) + ' strength</span></p>';
+          }).join("");
+          return '<div class="gd">' +
+            '<h3>' + (g.url ? '<a href="'+esc(g.url)+'" target="_blank" rel="noopener">' +
+                              esc(g.title) + '</a>' : esc(g.title)) + '</h3>' +
+            '<p class="gd-meta">' + esc(g.organisation) +
+              (g.year ? ' · ' + esc(g.year) : '') +
+              (g.url ? '' : ' · <span class="note-inline">no public link</span>') + '</p>' +
+            (g.summary ? '<p class="gd-sum">' + esc(g.summary) + '</p>' : '') + ev +
+            '</div>';
+        }).join("") + '</section>';
+    }).join("") + '</div>';
 }
 
 function viewHighlights(d){

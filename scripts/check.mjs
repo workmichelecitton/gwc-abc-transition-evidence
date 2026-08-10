@@ -68,7 +68,7 @@ async function exercise(label, url) {
   ok(errs.length === 0, `${label}: script errors — ${errs.join(" | ")}`);
 
   const tabs = $$("[data-tab]");
-  ok(tabs.length === 4, `${label}: expected 4 tabs (About, Highlights, Findings, Sources), found ${tabs.length}`);
+  ok(tabs.length === 5, `${label}: expected 5 tabs (About, Guidance, Highlights, Findings, Sources), found ${tabs.length}`);
 
   for (const t of tabs) {
     t.dispatchEvent(new dom.window.Event("click", { bubbles: true }));
@@ -105,6 +105,22 @@ async function exercise(label, url) {
       ok(n === site.findings.length,
          `${label}: group-by "${mode || "none"}" shows ${n} of ${site.findings.length} findings`);
     }
+  }
+
+  // Guidance is normative and must stay out of the evidence. Assert the wall:
+  // it has its own three columns, and nothing in guidance.csv is a source_id or
+  // affects a strength count.
+  const gTab = tabs.find((t) => t.dataset.tab === "guidance");
+  if (gTab) {
+    gTab.dispatchEvent(new dom.window.Event("click", { bubbles: true }));
+    await new Promise((r) => setTimeout(r, 120));
+    ok($$("#view .hlcol").length === 3,
+       `${label}: expected 3 guidance columns, found ${$$("#view .hlcol").length}`);
+    ok($$("#view .gd").length === site.guidance.length,
+       `${label}: ${$$("#view .gd").length} guidance cards for ${site.guidance.length} entries`);
+    // The filter bar must be hidden — guidance is not filterable evidence.
+    ok(d.querySelector(".filters").classList.contains("hidden"),
+       `${label}: the filter bar is showing on the Guidance tab`);
   }
 
   // Highlights: three columns, and no finding in more than one of them. It used
@@ -259,6 +275,16 @@ async function exercise(label, url) {
   // Quotes make a record checkable against its source. They are stripped at
   // build time, so capturing them costs nothing publicly.
   console.log(`    (quote coverage is reported by build.py, not here)`);
+  // Guidance must never leak into the source registry or a strength count.
+  const gids = new Set((site.guidance || []).map((g) => g.id));
+  const sids = new Set(site.sources.map((x) => x.source_id));
+  ok([...gids].every((g) => !sids.has(g)),
+     "a guidance id also appears as a source_id — the normative/evidence wall is broken");
+  ok(!site.records.some((r) => gids.has(r.source_id)),
+     "an evidence record cites a guidance entry as its source");
+  console.log(`    guidance: ${(site.guidance || []).length} entries, separate from ` +
+              `${site.sources.length} evidence sources`);
+
   const solo = site.findings.filter((f) => f.n_records === 1).length;
   console.log(`    ${site.findings.length} findings, ${solo} holding one record ` +
               `(${Math.round((solo / site.findings.length) * 100)}%)`);

@@ -7,6 +7,8 @@ Beta successor to [gwc-sdr-explorer](https://github.com/Global-WASH-Cluster/gwc-
 ## How it works
 
 ```
+data/guidance.csv ────► Guidance tab (normative, never counted as evidence)
+
 data/evidence.csv ─┐
 data/sources.csv  ─┤
 data/findings.csv ─┼─► scripts/build.py ─► data/site.json ─► index.html
@@ -107,6 +109,7 @@ A verbatim quote plus a country plus a role is enough to identify one coordinato
 
 ## Views
 
+- **Guidance** — the normative documents, in three columns: coordination in general, transition, area-based coordination. Held in `data/guidance.csv`, **not** `sources.csv`. Guidance states what should happen; the rest of the site records what did. A guidance entry can never contribute to a finding's strength, and `check.mjs` asserts that wall holds.
 - **About** — what this is, where the evidence comes from, what strength means, and how to read it with care. Text lives in `data/about.json`.
 - **Highlights** — high-strength findings only, in plain language, with a suggested action. Text lives in `data/highlights.csv`.
 - **Findings** — every finding with its computed strength, above an interactive map. Click countries to filter; select several to see evidence from any of them. Click a card to see the underlying evidence records.

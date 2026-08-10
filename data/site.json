@@ -19,6 +19,14 @@
     ]
    },
    {
+    "heading": "Guidance is kept separate",
+    "body": [
+     "The Guidance tab holds the normative documents — what the rules say should happen. Everything else here records what did happen. They are held in different files and shown on different tabs deliberately.",
+     "A guidance note is not a source of evidence. It never counts toward a finding's strength, and nothing in it can raise or lower a strength rating. Mixing the two would let a statement of intent look like a corroborated observation.",
+     "Where a guidance entry has something to say about a finding in this base, the connection is shown on the Guidance tab. Sometimes the guidance answers a documented gap — the standard terms of reference for area-based coordination, issued in March 2026, addresses exactly the absence this base recorded. Sometimes the two diverge, and that is worth knowing before walking into a discussion."
+    ]
+   },
+   {
     "heading": "Where the evidence comes from",
     "body": [
      "Four streams, kept distinct so you can see which kind of source is carrying a finding.",
@@ -437,6 +445,136 @@
    }
   ]
  },
+ "guidance": [
+  {
+   "id": "G01",
+   "column": "general",
+   "title": "Guidance Note on Cluster Simplification and Adapting In-Country Coordination",
+   "organisation": "IASC Humanitarian Working Group",
+   "year": "2026-03",
+   "url": "https://interagencystandingcommittee.org/sites/default/files/2026-03/IASC%20Guidance%20Note%20on%20Cluster%20Simplification%20and%20Adapting%20In-Country%20Coordination%20to%20Context_March%202026.pdf",
+   "summary": "The reference point for the current reshaping of coordination. Reduces the system to eight clusters — nutrition, protection, shelter/land/site coordination, WASH, education, food security, health, and logistics with telecommunications — and carries an annex on lead and accountability arrangements for consolidated clusters. WASH remains standalone.",
+   "evidence": [
+    "F421"
+   ]
+  },
+  {
+   "id": "G02",
+   "column": "general",
+   "title": "Reference Module for Cluster Coordination at Country Level",
+   "organisation": "IASC",
+   "year": "2015",
+   "url": "https://www.cccmcluster.org/sites/default/files/2019-01/IASC-TransAg4_Cluster_Coordination_reference_module-2012-lang_EN-ref025.pdf",
+   "summary": "The foundational description of what a cluster is for and what its core functions are. Everything in the transition and area-based material assumes it.",
+   "evidence": []
+  },
+  {
+   "id": "G03",
+   "column": "general",
+   "title": "Q&A: the process of cluster simplification within the Humanitarian Reset",
+   "organisation": "Global Nutrition Cluster",
+   "year": "2025-04",
+   "url": "https://www.nutritioncluster.net/sites/nutritioncluster.com/files/2025-07/Q&A-Webinar%20The%20Process%20of%20Cluster%20Simplification%20within%20the%20Humanitarian%20Reset_April%202025.pdf",
+   "summary": "Plainer answers to the questions country teams were actually asking about simplification, written before the March 2026 guidance settled them.",
+   "evidence": []
+  },
+  {
+   "id": "G04",
+   "column": "general",
+   "title": "Understanding and influencing the IASC system at country level",
+   "organisation": "ICVA",
+   "year": "2025-05",
+   "url": "https://www.icvanetwork.org/uploads/2025/05/Understanding-and-influencing-the-IASC-system-at-country-level-EN.pdf",
+   "summary": "Written for NGOs rather than for cluster staff. Useful if the question is how a partner gets a decision changed rather than how the structure is meant to work.",
+   "evidence": [
+    "F260"
+   ]
+  },
+  {
+   "id": "G10",
+   "column": "transition",
+   "title": "Guidance on Cluster Transition and Deactivation",
+   "organisation": "IASC",
+   "year": "2024",
+   "url": "https://healthcluster.who.int/docs/librariesprovider16/meeting-reports/iasc-guidance-on-cluster-transition-and-deactivation.pdf",
+   "summary": "The normative basis for deactivation: when the conditions for activation are no longer met, and what a phased handover is expected to involve. Sets out that transition is a change in how coordination is arranged, not an end to it.",
+   "evidence": [
+    "F333"
+   ]
+  },
+  {
+   "id": "G11",
+   "column": "transition",
+   "title": "Transition and Deactivation Checklist for HCs and HCTs",
+   "organisation": "IASC",
+   "year": "2024",
+   "url": "https://www.unicefintercluster.net/sites/default/files/2025-05/8_HC-HCT%20Transition%20and%20Deactivation%20Checklist.pdf",
+   "summary": "The operational companion to the guidance — what a humanitarian coordinator and country team are expected to have done before a deactivation decision.",
+   "evidence": [
+    "F421"
+   ]
+  },
+  {
+   "id": "G12",
+   "column": "transition",
+   "title": "Annex B — example template for a transition strategy",
+   "organisation": "IASC",
+   "year": "2024",
+   "url": "",
+   "summary": "A worked template rather than a narrative document. The starting structure if a country is drafting a transition strategy from nothing.",
+   "evidence": [
+    "F346"
+   ]
+  },
+  {
+   "id": "G13",
+   "column": "transition",
+   "title": "Protection Toolkit — Chapter 8: Cluster Transition",
+   "organisation": "Global Protection Cluster",
+   "year": "2025",
+   "url": "",
+   "summary": "Another sector's version of the same problem. Worth reading alongside the WASH material because the difficulties are largely shared, and because a comparison is useful when arguing that a constraint is systemic rather than sectoral.",
+   "evidence": [
+    "F421"
+   ]
+  },
+  {
+   "id": "G20",
+   "column": "abc",
+   "title": "Standard Terms of Reference for Area-Based Coordination",
+   "organisation": "IASC",
+   "year": "2026-03",
+   "url": "https://interagencystandingcommittee.org/sites/default/files/2026-03/Standard%20Terms%20of%20Reference%20for%20Area-Based%20Coordination.pdf",
+   "summary": "Newly issued. This is the first standard terms of reference for area-based coordination at inter-agency level — which matters because the absence of one is a documented problem in this evidence base, not a theoretical gap.",
+   "evidence": [
+    "F227"
+   ]
+  },
+  {
+   "id": "G21",
+   "column": "abc",
+   "title": "Area-Based Development Practice Note",
+   "organisation": "UNDP",
+   "year": "2025",
+   "url": "",
+   "summary": "The development-side framing of area-based working. Useful where the successor arrangement is a development platform rather than a humanitarian one, which is a live question in several transition contexts.",
+   "evidence": [
+    "F373"
+   ]
+  },
+  {
+   "id": "G22",
+   "column": "abc",
+   "title": "Guidance Note on Cluster Simplification and Adapting In-Country Coordination",
+   "organisation": "IASC Humanitarian Working Group",
+   "year": "2026-03",
+   "url": "https://interagencystandingcommittee.org/sites/default/files/2026-03/IASC%20Guidance%20Note%20on%20Cluster%20Simplification%20and%20Adapting%20In-Country%20Coordination%20to%20Context_March%202026.pdf",
+   "summary": "Listed here as well as under general coordination: the adapting-to-context half of this note is where area-based arrangements are addressed at inter-agency level.",
+   "evidence": [
+    "F209"
+   ]
+  }
+ ],
  "findings": [
   {
    "finding_id": "F001",
