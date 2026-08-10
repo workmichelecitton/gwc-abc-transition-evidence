@@ -3,6 +3,11 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- GitHub Pages serves this file with a ten-minute cache. That is how a reader
+     ends up holding an old page while the data underneath it has moved on. This
+     does not override the CDN, but it stops the browser reusing its own copy
+     without checking first. The SCHEMA guard in the script catches the rest. -->
+<meta http-equiv="Cache-Control" content="no-cache, must-revalidate">
 <title>ABC &amp; Transition Evidence Explorer — Global WASH Cluster</title>
 <style>
 :root{
@@ -144,6 +149,9 @@ tr:last-child td{border-bottom:0}
 .warn{background:#FFF6E5;border:1px solid #E8CE9A;color:#6B4E12;padding:13px 16px;
   border-radius:7px;margin-bottom:16px;font-size:13.5px}
 .warn code{background:#fff;padding:1px 5px;border-radius:3px;font-size:12.5px}
+.warn.stale{background:#FDECEC;border-color:#E5B4B4;color:#7A2E2E}
+.warn kbd{background:#fff;border:1px solid #D9C0C0;border-bottom-width:2px;border-radius:4px;
+  padding:1px 5px;font:inherit;font-size:12px}
 footer{padding:22px 26px;color:var(--ink-3);font-size:12px;border-top:1px solid var(--line);background:var(--card)}
 .hidden{display:none}
 /* About */
@@ -329,6 +337,22 @@ fetch("data/site.json", {cache:"no-store"})
       '<span style="color:#8797A5">' + esc(e.message) + '</span></div>';
   });
 
+// The data is fetched fresh every time (cache:"no-store") but this file is not
+// — GitHub Pages serves HTML with a ten-minute cache, so a reader can hold an
+// old page while receiving new data. That is what produced three guidance
+// headings with nothing under them: the page was still looking for a "column"
+// field the build had replaced with "topics". Zero results looked like missing
+// content rather than a stale page. Bump SCHEMA whenever a field the page reads
+// is renamed or removed, and the mismatch announces itself instead.
+var SCHEMA = 2;
+function staleBanner(){
+  if (!D || D.schema === SCHEMA) return "";
+  return '<div class="warn stale"><b>This page is out of date.</b> ' +
+    'You are seeing an old copy of the site with newer data, so parts of it may ' +
+    'look empty. Reload with <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>R</kbd> ' +
+    '(<kbd>Cmd</kbd>+<kbd>Shift</kbd>+<kbd>R</kbd> on a Mac).</div>';
+}
+
 function init(){
   el("boot").classList.add("hidden");
   el("app").classList.remove("hidden");
@@ -487,11 +511,12 @@ function render(){
     (activeFilters() ? " (filtered)" : "");
   if (!hideFilters) selectedCountryChips();
   var v = el("view");
-  if (TAB==="about")      v.innerHTML = viewAbout();
-  if (TAB==="guidance")   v.innerHTML = viewGuidance();
-  if (TAB==="highlights") v.innerHTML = viewHighlights(d);
-  if (TAB==="findings")   v.innerHTML = viewMap() + viewFindings(d);
-  if (TAB==="sources")    v.innerHTML = viewSources(d);
+  var b = staleBanner();
+  if (TAB==="about")      v.innerHTML = b + viewAbout();
+  if (TAB==="guidance")   v.innerHTML = b + viewGuidance();
+  if (TAB==="highlights") v.innerHTML = b + viewHighlights(d);
+  if (TAB==="findings")   v.innerHTML = b + viewMap() + viewFindings(d);
+  if (TAB==="sources")    v.innerHTML = b + viewSources(d);
   wire();
 }
 function activeFilters(){
@@ -614,13 +639,16 @@ function viewAbout(){
 // Each entry now carries every topic it covers, primary focus first, and the
 // reader narrows rather than the file duplicating.
 var GF = { topic:"", doctype:"" };
+// Both go through render() rather than writing the view directly. Writing it
+// directly worked, but it silently dropped anything render() adds around the
+// view — the stale-page banner disappeared as soon as anyone touched a filter.
 function setGF(k, v){
   GF[k] = (GF[k] === v) ? "" : v;
-  el("view").innerHTML = viewGuidance();
+  render();
 }
 function clearGF(){
   GF.topic = ""; GF.doctype = "";
-  el("view").innerHTML = viewGuidance();
+  render();
 }
 var GTOPIC = { coordination:"Coordination", transition:"Transition", abc:"Area-Based" };
 var GTYPE  = { guideline:"Guidelines", checklist:"Checklists", faq:"FAQs", template:"Templates" };

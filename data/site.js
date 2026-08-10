@@ -79,6 +79,7 @@ window.SITE_DATA = {
   ],
   "footer_note": "Every finding traces to a source ID in the Sources tab. If something looks wrong, it probably is — say so and it will be corrected."
  },
+ "schema": 2,
  "generated": "2026-08-10",
  "taxonomy_version": "0.7.0",
  "stats": {

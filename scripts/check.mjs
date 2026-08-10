@@ -145,6 +145,17 @@ async function exercise(label, url) {
     await new Promise((r) => setTimeout(r, 60));
     ok($$("#view .gd").length === site.guidance.length,
        `${label}: guidance filters did not reset cleanly`);
+    // The page and the data must agree on the shape. This is the check that
+    // would have caught three guidance headings rendering zero items: the page
+    // was reading "column", the build had written "topics", and nothing said so.
+    const declared = readFileSync(join(ROOT, "index.html"), "utf8")
+      .match(/^var SCHEMA = (\d+);/m);
+    ok(!!declared, `${label}: index.html declares no SCHEMA version`);
+    ok(declared && Number(declared[1]) === site.schema,
+       `${label}: index.html expects schema ${declared && declared[1]}, ` +
+       `site.json is schema ${site.schema}`);
+    ok(!$$("#view .warn.stale").length,
+       `${label}: the stale-page banner is showing against freshly built data`);
     // Multi-label is the whole point: at least one entry must carry more than
     // one topic, otherwise the columns were removed for nothing.
     ok(site.guidance.some((g) => g.topics.length > 1),

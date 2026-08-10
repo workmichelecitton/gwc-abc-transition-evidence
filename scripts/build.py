@@ -531,8 +531,14 @@ def main():
     about_path = DATA / "about.json"
     about = json.loads(about_path.read_text(encoding="utf-8")) if about_path.exists() else None
 
+    # Shape version, read by index.html. Bump it whenever a field the page reads
+    # is renamed or removed — guidance "column" became "topics" in v2. A reader
+    # holding a cached older page then sees a warning instead of empty sections.
+    SCHEMA = 2
+
     site = {
         "about": about,
+        "schema": SCHEMA,
         "generated": date.today().isoformat(),
         "taxonomy_version": taxonomy.get("version"),
         "stats": {
