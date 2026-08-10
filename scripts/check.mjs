@@ -114,13 +114,45 @@ async function exercise(label, url) {
   if (gTab) {
     gTab.dispatchEvent(new dom.window.Event("click", { bubbles: true }));
     await new Promise((r) => setTimeout(r, 120));
-    ok($$("#view .hlcol").length === 3,
-       `${label}: expected 3 guidance columns, found ${$$("#view .hlcol").length}`);
     ok($$("#view .gd").length === site.guidance.length,
        `${label}: ${$$("#view .gd").length} guidance cards for ${site.guidance.length} entries`);
-    // The filter bar must be hidden — guidance is not filterable evidence.
+    // The evidence filter bar must stay hidden — guidance is not evidence and
+    // must not respond to country or strength.
     ok(d.querySelector(".filters").classList.contains("hidden"),
-       `${label}: the filter bar is showing on the Guidance tab`);
+       `${label}: the evidence filter bar is showing on the Guidance tab`);
+    // Guidance has its own filter instead. Every entry must be reachable by at
+    // least one topic button and one type button, or it is invisible.
+    const gbtns = $$("#view .gfb").filter((b) => !b.classList.contains("clr"));
+    ok(gbtns.length >= 2, `${label}: guidance filter bar has ${gbtns.length} buttons`);
+    for (const [key, vals] of [["topics", ["coordination", "transition", "abc"]],
+                               ["doctype", ["guideline", "checklist", "faq", "template"]]]) {
+      for (const v of vals) {
+        const expect = site.guidance.filter((g) =>
+          key === "topics" ? g.topics.includes(v) : g.doctype === v).length;
+        if (!expect) continue;
+        const btn = gbtns.find((b) => b.getAttribute("onclick").includes(`'${v}'`));
+        ok(!!btn, `${label}: no guidance filter button for ${key}=${v}`);
+        if (!btn) continue;
+        btn.dispatchEvent(new dom.window.Event("click", { bubbles: true }));
+        await new Promise((r) => setTimeout(r, 60));
+        const shown = $$("#view .gd").length;
+        ok(shown === expect,
+           `${label}: guidance ${key}=${v} shows ${shown}, expected ${expect}`);
+        btn.dispatchEvent(new dom.window.Event("click", { bubbles: true }));
+        await new Promise((r) => setTimeout(r, 60));
+      }
+    }
+    await new Promise((r) => setTimeout(r, 60));
+    ok($$("#view .gd").length === site.guidance.length,
+       `${label}: guidance filters did not reset cleanly`);
+    // Multi-label is the whole point: at least one entry must carry more than
+    // one topic, otherwise the columns were removed for nothing.
+    ok(site.guidance.some((g) => g.topics.length > 1),
+       `${label}: no guidance entry carries more than one topic`);
+    // Every entry needs a working link. Michele's rule: if it cannot be opened,
+    // it does not belong on this tab.
+    ok(site.guidance.every((g) => /^https?:\/\//.test(g.url || "")),
+       `${label}: a guidance entry has no URL`);
   }
 
   // Highlights: three columns, and no finding in more than one of them. It used

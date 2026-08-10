@@ -462,36 +462,70 @@ def main():
     g_path = DATA / "guidance.csv"
     if g_path.exists():
         known_f = {f["finding_id"] for f in findings}
-        g_cols = {"general", "transition", "abc"}
+        # Topics are multi-valued and the first one is the primary focus, which
+        # is what the list sorts on. A document is rarely about only one of
+        # these: the cluster simplification note is coordination, area-based and
+        # transition all at once. Forcing it into one column meant listing it
+        # twice, which is how the duplicate G01/G22 pair happened.
+        g_topics = {"coordination", "transition", "abc"}
+        g_types = {"guideline", "checklist", "faq", "template"}
+        g_ids = set()
         for i, r in enumerate(read_csv(g_path), start=2):
             gid = (r.get("id") or "").strip()
             if not gid:
                 continue
-            col = (r.get("column") or "").strip()
-            if col not in g_cols:
-                errors.append(f"  guidance.csv row {i} ({gid}): column '{col}' must be one of "
-                              f"{sorted(g_cols)}")
+            if gid in g_ids:
+                errors.append(f"  guidance.csv row {i}: id '{gid}' is used twice")
+            g_ids.add(gid)
+            topics = split(r.get("topics", ""))
+            if not topics:
+                errors.append(f"  guidance.csv row {i} ({gid}): topics is empty")
+            for t in topics:
+                if t not in g_topics:
+                    errors.append(f"  guidance.csv row {i} ({gid}): topic '{t}' must be one of "
+                                  f"{sorted(g_topics)}")
+            doctype = (r.get("doctype") or "").strip()
+            if doctype not in g_types:
+                errors.append(f"  guidance.csv row {i} ({gid}): doctype '{doctype}' must be one of "
+                              f"{sorted(g_types)}")
             if not (r.get("title") or "").strip():
                 errors.append(f"  guidance.csv row {i} ({gid}): title is empty")
+            # Every entry must be reachable. An unlinkable normative document is
+            # worse than no entry: the reader cannot check it, and cannot tell
+            # whether the summary is fair.
+            url = (r.get("url") or "").strip()
+            if not url.startswith("http"):
+                errors.append(f"  guidance.csv row {i} ({gid}): url is missing. Every guidance "
+                              f"entry must be findable online — drop the row instead.")
             ev = [f for f in split(r.get("evidence", "")) ]
             for f in ev:
                 if f not in known_f:
                     warn(f"guidance.csv row {i} ({gid}): evidence '{f}' is not a published finding")
-            guidance.append({"id": gid, "column": col,
+            guidance.append({"id": gid, "topics": topics, "doctype": doctype,
                              "title": (r.get("title") or "").strip(),
                              "organisation": (r.get("organisation") or "").strip(),
                              "year": (r.get("year") or "").strip(),
-                             "url": (r.get("url") or "").strip(),
+                             "url": url,
                              "summary": (r.get("summary") or "").strip(),
                              "evidence": [f for f in ev if f in known_f]})
         if errors:
             report()
             return 1
-        by_col = defaultdict(int)
+        by_topic = defaultdict(int)
+        by_type = defaultdict(int)
         for g in guidance:
-            by_col[g["column"]] += 1
+            for t in g["topics"]:
+                by_topic[t] += 1
+            by_type[g["doctype"]] += 1
         print(f"    guidance.csv: {len(guidance)} entries "
-              f"({', '.join(f'{c} {by_col[c]}' for c in ('general', 'transition', 'abc'))})")
+              f"({', '.join(f'{t} {by_topic[t]}' for t in sorted(g_topics))}"
+              f" | {', '.join(f'{d} {by_type[d]}' for d in sorted(g_types) if by_type[d])})")
+        # Say plainly where a doctype has nothing behind it rather than padding
+        # the shelf with something that only half fits.
+        for t in sorted(g_topics):
+            for d in ("guideline", "checklist", "faq"):
+                if not any(d == g["doctype"] and t in g["topics"] for g in guidance):
+                    print(f"      note: no {d} found for '{t}' — a real gap, not an omission.")
 
     # ---- about text (editable without touching index.html) -----------------
     about_path = DATA / "about.json"

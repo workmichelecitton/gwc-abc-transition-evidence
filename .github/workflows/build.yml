@@ -19,6 +19,7 @@ on:
       - 'data/follow-ups.csv'
       - 'data/taxonomy.json'
       - 'data/about.json'
+      - 'data/guidance.csv'
       - 'scripts/build.py'
   pull_request:
     paths:

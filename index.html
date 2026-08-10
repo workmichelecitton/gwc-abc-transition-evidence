@@ -89,6 +89,24 @@ h2.grp:first-child{margin-top:6px}
 .gd-ev{margin:0;padding:9px 11px;background:var(--bg);border-radius:5px;
   font-size:12.5px;line-height:1.5;color:var(--ink-2)}
 .gd-ev b{color:var(--accent)}
+.gdlist{max-width:840px}
+.gfbar{display:flex;flex-wrap:wrap;align-items:center;gap:7px;margin:0 0 14px;
+  padding:11px 13px;background:var(--card);border:1px solid var(--line);border-radius:8px}
+.gfl{font-size:11px;text-transform:uppercase;letter-spacing:.06em;color:var(--ink-3);
+  font-weight:600;margin-right:2px}
+.gfl-2{margin-left:12px;padding-left:14px;border-left:1px solid var(--line)}
+.gfb{font:inherit;font-size:12.5px;cursor:pointer;padding:5px 11px;border-radius:14px;
+  border:1px solid var(--line);background:var(--bg);color:var(--ink-2)}
+.gfb:hover{border-color:var(--accent);color:var(--accent)}
+.gfb.on{background:var(--accent);border-color:var(--accent);color:#fff}
+.gfb.on .gfb-n{color:#fff;opacity:.75}
+.gfb-n{color:var(--ink-3);font-size:11px;margin-left:2px}
+.gfb.clr{margin-left:auto;border-style:dashed}
+/* The primary focus is the first topic listed. Showing it solid and the rest
+   faded keeps the multi-label honest: a document can be about three things, but
+   it is filed under one. */
+.pill.primary{font-weight:700}
+.gd-meta .pill:not(.primary){opacity:.55}
 @media (max-width:1100px){ .hlgrid{grid-template-columns:1fr} }
 .grp-n{font-size:12px;color:#8A94A2;font-weight:400;letter-spacing:0}
 /* One illustrative case, marked as such. The statement above it is the claim;
@@ -590,44 +608,86 @@ function viewAbout(){
 // evidence records. They are kept in separate files and shown on separate tabs
 // on purpose — a normative document is not a source of evidence and must never
 // count toward a finding's strength.
+// Filters, not columns. Splitting guidance into three columns forced a choice
+// that the documents themselves do not make — the cluster simplification note is
+// coordination, area-based and transition at once, so it had to be listed twice.
+// Each entry now carries every topic it covers, primary focus first, and the
+// reader narrows rather than the file duplicating.
+var GF = { topic:"", doctype:"" };
+function setGF(k, v){
+  GF[k] = (GF[k] === v) ? "" : v;
+  el("view").innerHTML = viewGuidance();
+}
+function clearGF(){
+  GF.topic = ""; GF.doctype = "";
+  el("view").innerHTML = viewGuidance();
+}
+var GTOPIC = { coordination:"Coordination", transition:"Transition", abc:"Area-Based" };
+var GTYPE  = { guideline:"Guidelines", checklist:"Checklists", faq:"FAQs", template:"Templates" };
+
 function viewGuidance(){
   var G = D.guidance || [];
   if (!G.length) return empty("data/guidance.csv is missing or empty.");
-  var COLS = [
-    { key:"general",    title:"Coordination in general",
-      note:"What a cluster is for, and how the system is being reshaped." },
-    { key:"transition", title:"Transition and deactivation",
-      note:"When coordination changes hands, and what is expected before it does." },
-    { key:"abc",        title:"Area-Based Coordination",
-      note:"The newest and thinnest of the three. That is itself a finding." }
-  ];
   var fmap = {};
   D.findings.forEach(function(f){ fmap[f.finding_id] = f; });
 
+  var items = G.filter(function(g){
+    return (!GF.topic   || (g.topics||[]).indexOf(GF.topic) !== -1) &&
+           (!GF.doctype || g.doctype === GF.doctype);
+  });
+  // Primary focus first, then newest first within it. The primary topic is
+  // simply the first one listed, so ordering the file orders the page. Sorting
+  // by document type instead would have buried the 2026 area-based terms of
+  // reference — the newest and most consequential item — under a 2018 note.
+  var TORDER = ["coordination","transition","abc"];
+  var DORDER = ["guideline","checklist","faq","template"];
+  items = items.slice().sort(function(a,b){
+    return TORDER.indexOf((a.topics||[])[0]) - TORDER.indexOf((b.topics||[])[0]) ||
+           String(b.year).localeCompare(String(a.year)) ||
+           DORDER.indexOf(a.doctype) - DORDER.indexOf(b.doctype);
+  });
+
+  function bar(key, map, order){
+    return order.map(function(v){
+      var n = G.filter(function(g){
+        return key === "topic" ? (g.topics||[]).indexOf(v) !== -1 : g.doctype === v;
+      }).length;
+      if (!n) return '';
+      return '<button class="gfb' + (GF[key]===v ? ' on' : '') +
+        '" onclick="setGF(\'' + key + '\',\'' + v + '\')">' + esc(map[v]) +
+        ' <span class="gfb-n">' + n + '</span></button>';
+    }).join("");
+  }
+
   return '<p class="count">Guidance sets out what should happen. The rest of this site ' +
     'records what did. Where the two diverge, both are worth having in the room.</p>' +
-    '<div class="hlgrid">' + COLS.map(function(c){
-      var items = G.filter(function(g){ return g.column === c.key; });
-      return '<section class="hlcol"><h2 class="grp">' + esc(c.title) +
-        '<span class="grp-n">' + items.length + '</span></h2>' +
-        '<p class="hlnote">' + esc(c.note) + '</p>' +
-        items.map(function(g){
-          var ev = (g.evidence||[]).map(function(fid){
-            var f = fmap[fid];
-            if (!f) return '';
-            return '<p class="gd-ev"><b>In this base</b> · ' + esc(f.statement) +
-                   ' <span class="tag">' + esc(f.strength) + ' strength</span></p>';
-          }).join("");
-          return '<div class="gd">' +
-            '<h3>' + (g.url ? '<a href="'+esc(g.url)+'" target="_blank" rel="noopener">' +
-                              esc(g.title) + '</a>' : esc(g.title)) + '</h3>' +
-            '<p class="gd-meta">' + esc(g.organisation) +
-              (g.year ? ' · ' + esc(g.year) : '') +
-              (g.url ? '' : ' · <span class="note-inline">no public link</span>') + '</p>' +
-            (g.summary ? '<p class="gd-sum">' + esc(g.summary) + '</p>' : '') + ev +
-            '</div>';
-        }).join("") + '</section>';
-    }).join("") + '</div>';
+    '<div class="gfbar"><span class="gfl">Topic</span>' + bar("topic", GTOPIC, TORDER) +
+      '<span class="gfl gfl-2">Type</span>' + bar("doctype", GTYPE, DORDER) +
+      (GF.topic || GF.doctype ? '<button class="gfb clr" onclick="clearGF()">Clear</button>' : '') +
+    '</div>' +
+    '<p class="count">' + items.length + ' document' + (items.length===1?"":"s") +
+      (GF.topic || GF.doctype ? ' (filtered)' : '') + '</p>' +
+    (items.length ? '<div class="gdlist">' + items.map(function(g){
+      var ev = (g.evidence||[]).map(function(fid){
+        var f = fmap[fid];
+        if (!f) return '';
+        return '<p class="gd-ev"><b>In this base</b> · ' + esc(f.statement) +
+               ' <span class="tag">' + esc(f.strength) + ' strength</span></p>';
+      }).join("");
+      var labels = (g.topics||[]).map(function(t, i){
+        return '<span class="pill ' + esc(t === "abc" ? "ABC" : t === "transition" ? "Transition" : "Fundamentals") +
+          (i === 0 ? ' primary' : '') + '">' + esc(GTOPIC[t] || t) + '</span>';
+      }).join("");
+      return '<div class="gd">' +
+        '<h3><a href="'+esc(g.url)+'" target="_blank" rel="noopener">' + esc(g.title) + '</a></h3>' +
+        '<p class="gd-meta">' + esc(g.organisation) + (g.year ? ' · ' + esc(g.year) : '') +
+          ' · <span class="tag">' + esc((GTYPE[g.doctype]||g.doctype).replace(/s$/,"")) + '</span> ' +
+          labels + '</p>' +
+        (g.summary ? '<p class="gd-sum">' + esc(g.summary) + '</p>' : '') + ev +
+        '</div>';
+    }).join("") + '</div>'
+     : '<p class="empty">Nothing published that is both. That combination is a real gap, ' +
+       'not a missing entry.</p>');
 }
 
 function viewHighlights(d){
