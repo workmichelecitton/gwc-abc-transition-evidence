@@ -120,6 +120,21 @@ def main():
         clean = {k: (v or "").strip() for k, v in r.items() if k not in DROP and k}
         sources.append(clean)
 
+    # Two sources with the same title are almost always one document registered
+    # twice, which quietly inflates every strength count that touches both. It
+    # happened once: a search run added a paper that was already in the registry
+    # because it did not check first. If they really are distinct, give them the
+    # same source_group so they count once, and the warning stops mattering.
+    by_title = defaultdict(list)
+    for s in sources:
+        t = (s.get("title") or "").strip().lower()
+        if t:
+            by_title[t].append(s)
+    for t, group in by_title.items():
+        if len(group) > 1 and len({g.get("source_group") or g["source_id"] for g in group}) > 1:
+            warn(f"sources.csv: {', '.join(g['source_id'] for g in group)} share the title "
+                 f"'{group[0]['title'][:60]}' but are counted as separate sources")
+
     # ---- evidence ----------------------------------------------------------
     records, seen_ids = [], set()
     countries_ref = taxonomy.get("countries", {})

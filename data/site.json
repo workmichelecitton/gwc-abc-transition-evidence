@@ -76,7 +76,7 @@
  "stats": {
   "records": 672,
   "findings": 135,
-  "sources": 108,
+  "sources": 107,
   "countries": 29,
   "withheld_internal": 2
  },
@@ -2243,7 +2243,7 @@
    "n_sources": 1,
    "n_streams": 1,
    "streams": [
-    "search"
+    "sdr"
    ],
    "countries": [],
    "tags": [
@@ -2272,7 +2272,7 @@
    "n_sources": 1,
    "n_streams": 1,
    "streams": [
-    "search"
+    "sdr"
    ],
    "countries": [],
    "tags": [
@@ -2374,10 +2374,9 @@
    "strength": "high",
    "n_records": 18,
    "n_sources": 12,
-   "n_streams": 3,
+   "n_streams": 2,
    "streams": [
     "sdr",
-    "search",
     "transcript"
    ],
    "countries": [
@@ -2721,10 +2720,9 @@
    "strength": "high",
    "n_records": 22,
    "n_sources": 8,
-   "n_streams": 3,
+   "n_streams": 2,
    "streams": [
     "sdr",
-    "search",
     "transcript"
    ],
    "countries": [
@@ -2909,10 +2907,9 @@
    "strength": "high",
    "n_records": 10,
    "n_sources": 5,
-   "n_streams": 4,
+   "n_streams": 3,
    "streams": [
     "sdr",
-    "search",
     "transcript",
     "workshop"
    ],
@@ -3371,7 +3368,7 @@
    "type": "enabler",
    "strength": "high",
    "n_records": 10,
-   "n_sources": 9,
+   "n_sources": 8,
    "n_streams": 3,
    "streams": [
     "sdr",
@@ -23483,8 +23480,8 @@
     "coordination-architecture",
     "performance"
    ],
-   "stream": "search",
-   "source_id": "S117",
+   "stream": "sdr",
+   "source_id": "S015",
    "date_collected": "2026-08-07",
    "confidence": "high",
    "status": "draft"
@@ -23507,8 +23504,8 @@
     "coordination-architecture",
     "performance"
    ],
-   "stream": "search",
-   "source_id": "S117",
+   "stream": "sdr",
+   "source_id": "S015",
    "date_collected": "2026-08-07",
    "confidence": "high",
    "status": "draft"
@@ -23531,8 +23528,8 @@
     "coordination-architecture",
     "localisation"
    ],
-   "stream": "search",
-   "source_id": "S117",
+   "stream": "sdr",
+   "source_id": "S015",
    "date_collected": "2026-08-07",
    "confidence": "high",
    "status": "draft"
@@ -23554,8 +23551,8 @@
     "coordination-architecture",
     "guidance"
    ],
-   "stream": "search",
-   "source_id": "S117",
+   "stream": "sdr",
+   "source_id": "S015",
    "date_collected": "2026-08-07",
    "confidence": "high",
    "status": "draft"
@@ -23578,8 +23575,8 @@
     "guidance",
     "performance"
    ],
-   "stream": "search",
-   "source_id": "S117",
+   "stream": "sdr",
+   "source_id": "S015",
    "date_collected": "2026-08-07",
    "confidence": "high",
    "status": "draft"
@@ -23601,8 +23598,8 @@
     "coordination-architecture",
     "guidance"
    ],
-   "stream": "search",
-   "source_id": "S117",
+   "stream": "sdr",
+   "source_id": "S015",
    "date_collected": "2026-08-07",
    "confidence": "high",
    "status": "draft"
@@ -23624,8 +23621,8 @@
    "tags": [
     "coordination-architecture"
    ],
-   "stream": "search",
-   "source_id": "S117",
+   "stream": "sdr",
+   "source_id": "S015",
    "date_collected": "2026-08-07",
    "confidence": "high",
    "status": "draft"
@@ -23933,7 +23930,7 @@
    "organisation": "ACTED",
    "year": "2024",
    "type": "evaluation",
-   "url": "",
+   "url": "https://reliefweb.int/report/world/acted-reflections-area-based-coordination",
    "stream": "sdr",
    "date_added": "2026-07-17",
    "access": "public",
@@ -23959,7 +23956,7 @@
    "organisation": "OCHA",
    "year": "2025",
    "type": "report",
-   "url": "",
+   "url": "https://www.unocha.org/publications/report/world/pulse-humanitarian-coordination-2023-overview-iasc-structures-country-level-december-2024",
    "stream": "sdr",
    "date_added": "2026-07-17",
    "access": "public",
@@ -24011,7 +24008,7 @@
    "organisation": "OCHA",
    "year": "2025",
    "type": "report",
-   "url": "",
+   "url": "https://www.unocha.org/publications/report/world/flagship-initiative-second-year-learning-report-april-2025",
    "stream": "sdr",
    "date_added": "2026-07-17",
    "access": "public",
@@ -24089,7 +24086,7 @@
    "organisation": "IAHE",
    "year": "2024",
    "type": "evaluation",
-   "url": "",
+   "url": "https://www.unhcr.org/sites/default/files/2025-03/inter-agency-humanitarian-evaluation-of-the-response-to-the-humanitarian-crisis-in-somalia.pdf",
    "stream": "sdr",
    "date_added": "2026-07-17",
    "access": "public",
@@ -24167,12 +24164,12 @@
    "organisation": "ICVA",
    "year": "2025",
    "type": "report",
-   "url": "",
+   "url": "https://www.icvanetwork.org/resource/coordination-for-ngos-after-transition-of-iasc-coordination-structures/",
    "stream": "sdr",
    "date_added": "2026-07-17",
    "access": "public",
    "legacy_id": "ABC-S21",
-   "source_group": ""
+   "source_group": "icva-coordination-in-transition"
   },
   {
    "source_id": "S034",
@@ -24185,7 +24182,7 @@
    "date_added": "2026-07-17",
    "access": "public",
    "legacy_id": "ABC-S22",
-   "source_group": ""
+   "source_group": "undp-abd-practice-note"
   },
   {
    "source_id": "S035",
@@ -24271,7 +24268,7 @@
    "organisation": "Derzsi-Horváth, A",
    "year": "2025",
    "type": "study",
-   "url": "",
+   "url": "https://reliefweb.int/report/central-african-republic/area-based-coordination-and-area-based-programming-typology-lessons-and-implications-final-report",
    "stream": "sdr",
    "date_added": "2026-07-17",
    "access": "public",
@@ -24362,7 +24359,7 @@
    "organisation": "ICVA",
    "year": "2024",
    "type": "report",
-   "url": "",
+   "url": "https://www.icvanetwork.org/uploads/2024/11/Localisation-in-Humanitarian-Leadership-Report.pdf",
    "stream": "sdr",
    "date_added": "2026-07-17",
    "access": "public",
@@ -24427,12 +24424,12 @@
    "organisation": "IASC",
    "year": "2024",
    "type": "guidance",
-   "url": "",
+   "url": "https://healthcluster.who.int/docs/librariesprovider16/meeting-reports/iasc-guidance-on-cluster-transition-and-deactivation.pdf",
    "stream": "sdr",
    "date_added": "2026-07-17",
    "access": "public",
    "legacy_id": "Transition-S2",
-   "source_group": ""
+   "source_group": "iasc-transition-deactivation-guidance"
   },
   {
    "source_id": "S054",
@@ -24466,12 +24463,12 @@
    "organisation": "Holland, K",
    "year": "2025",
    "type": "report",
-   "url": "",
+   "url": "https://www.icvanetwork.org/uploads/2025/10/Coordination-in-Transition-How-NGOs-are-Navigating-and-Adapting-beyond-the-IASC.pdf",
    "stream": "sdr",
    "date_added": "2026-07-17",
    "access": "public",
    "legacy_id": "Transition-S5",
-   "source_group": ""
+   "source_group": "icva-coordination-in-transition"
   },
   {
    "source_id": "S057",
@@ -24479,12 +24476,12 @@
    "organisation": "IASC",
    "year": "2024",
    "type": "guidance",
-   "url": "",
+   "url": "https://healthcluster.who.int/docs/librariesprovider16/meeting-reports/iasc-guidance-on-cluster-transition-and-deactivation.pdf",
    "stream": "sdr",
    "date_added": "2026-07-17",
    "access": "public",
    "legacy_id": "Transition-S6",
-   "source_group": ""
+   "source_group": "iasc-transition-deactivation-guidance"
   },
   {
    "source_id": "S058",
@@ -24505,7 +24502,7 @@
    "organisation": "IASC",
    "year": "2025",
    "type": "report",
-   "url": "",
+   "url": "https://www.unocha.org/publications/report/world/pulse-humanitarian-coordination-2024-overview-iasc-structures-country-level-december-2025",
    "stream": "sdr",
    "date_added": "2026-07-17",
    "access": "public",
@@ -24536,7 +24533,7 @@
    "date_added": "2026-07-17",
    "access": "public",
    "legacy_id": "Transition-S10",
-   "source_group": ""
+   "source_group": "cameroon-health-transition-2026"
   },
   {
    "source_id": "S062",
@@ -24744,7 +24741,7 @@
    "date_added": "2026-07-17",
    "access": "public",
    "legacy_id": "Transition-S26",
-   "source_group": ""
+   "source_group": "undp-abd-practice-note"
   },
   {
    "source_id": "S078",
@@ -24869,7 +24866,7 @@
    "organisation": "IASC",
    "year": "2024",
    "type": "report",
-   "url": "",
+   "url": "https://www.unicefintercluster.net/sites/default/files/2025-05/8_HC-HCT%20Transition%20and%20Deactivation%20Checklist.pdf",
    "stream": "sdr",
    "date_added": "2026-07-17",
    "access": "public",
@@ -24882,7 +24879,7 @@
    "organisation": "Stoddard et al",
    "year": "2007",
    "type": "report",
-   "url": "",
+   "url": "https://humanitarianoutcomes.org/sites/default/files/publications/cluster_evaluation_report.pdf",
    "stream": "sdr",
    "date_added": "2026-07-17",
    "access": "public",
@@ -25254,19 +25251,6 @@
    "source_group": ""
   },
   {
-   "source_id": "S117",
-   "title": "Reflections on Area-Based Coordination",
-   "organisation": "ACTED",
-   "year": "2025",
-   "type": "report",
-   "url": "https://reliefweb.int/report/world/acted-reflections-area-based-coordination",
-   "stream": "search",
-   "date_added": "2026-08-07",
-   "access": "public",
-   "legacy_id": "",
-   "source_group": ""
-  },
-  {
    "source_id": "S118",
    "title": "Local leadership at the centre of transition — reflections from Cameroon",
    "organisation": "Global Health Cluster / WHO",
@@ -25277,7 +25261,7 @@
    "date_added": "2026-08-07",
    "access": "public",
    "legacy_id": "",
-   "source_group": ""
+   "source_group": "cameroon-health-transition-2026"
   }
  ]
 }

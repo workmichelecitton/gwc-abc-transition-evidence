@@ -80,6 +80,8 @@ backfill, and grouped the Findings list.
 | Three unverified records — Sudan `E0429`, Colombia `E0376`, Mozambique `E0537` | No supporting passage exists in the transcript. Marked `draft`/`low`. Either you remember it happening, or they should be deleted. |
 | `F261` and `F270` | Rated `medium` on the 2026 consultation plus a check-in from the same country. Probably one person counted twice; the build warns on every run. |
 | Syria session 2 | Attaches to `S115`. Coordination architecture is the gap in session 1. |
+| Source URLs | 14 of 107 sources have one. The rest are listed in `prompts/07-source-urls.md`, ordered by how much evidence rests on them. Paste into the `url` column and the Sources tab links it. |
+| `status` is `draft` on every record | By the schema's own definition that means nobody has checked them, which is no longer true — most have been through a tone pass, quote verification and consolidation. Either promote them honestly or change the vocabulary. |
 | Quarterly search | `prompts/03`, due three months after the last source date. |
 
 | # | Decision | Trigger |
