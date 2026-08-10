@@ -1,6 +1,37 @@
 # Sources in the registry that have never been read
 
-**23 of 107 sources carry no evidence record.** They are listed in the
+**Status 2026-08-07: resolved from 23 down to 9.**
+
+- 1 deleted (S089, a placeholder carrying nothing)
+- 12 marked deliberately unused with a reason — 7 normative documents (guidance,
+  templates, checklists, strategy) and 5 out of scope (situation reports, appeals,
+  programme case studies that are not about coordination arrangements)
+- 1 extracted from: **S088**, the 2007 cluster approach evaluation, 10 records
+- **9 still to read** — listed at the bottom
+
+The build warning now ignores sources marked as a deliberate decision, so it
+counts only genuinely unread ones. That keeps the signal worth looking at.
+
+## Why S088 was worth the effort
+
+Its value is age. Several claims this base records from 2026 country conversations
+appear almost verbatim in an evaluation written in 2007:
+
+- Local and national organisations seeing no real increase in participation or
+  funding through the cluster system — 2007 and 2026, independently.
+- Joint needs assessments increasing in number while quality and tool
+  harmonisation stay unresolved — 2007 and 2026.
+- The provider-of-last-resort commitment not being seen as practically relevant —
+  2007, and again in a 2025 INGO paper.
+
+That changes what those findings mean. A problem reported by country teams this
+year reads as a current difficulty. The same problem in a 2007 evaluation reads as
+structural. For advocacy that is a much stronger position, and it is only visible
+because both sources are in the base.
+
+---
+
+**Original note.** 23 of 107 sources carried no evidence record. They are listed in the
 Sources tab, which makes the base look broader than the evidence actually is.
 The build now warns on every run.
 

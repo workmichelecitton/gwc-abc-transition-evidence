@@ -372,12 +372,20 @@ def main():
     # base look broader than the evidence actually is. S086-S100 sat like this
     # for months — a contiguous block imported with the registry and never
     # extracted from, including several substantive evaluations.
+    # A source marked in `notes` as deliberately not extracted is a decision, not
+    # a gap — it stays in the registry as a record of what was considered and
+    # ruled out. Only genuinely unread sources should warn, or the signal
+    # becomes noise and stops being looked at.
+    DECIDED = ("deliberately not extracted", "out of scope")
     used = {r.get("source_id") for r in evidence_rows}
-    unmined = [s for s in sources if s["source_id"] not in used]
+    decided = {r["source_id"] for r in sources_rows
+               if any(d in (r.get("notes") or "").lower() for d in DECIDED)}
+    unmined = [s for s in sources
+               if s["source_id"] not in used and s["source_id"] not in decided]
     if unmined:
-        warn(f"{len(unmined)} sources are registered but carry no evidence record — "
-             f"listed, never read: {', '.join(s['source_id'] for s in unmined[:16])}"
-             + (" …" if len(unmined) > 16 else ""))
+        warn(f"{len(unmined)} sources registered but never read — neither extracted from nor "
+             f"marked as a deliberate decision in notes: "
+             f"{', '.join(s['source_id'] for s in unmined)}")
 
     # ---- verifiability guard ------------------------------------------------
     # A transcript record with no quote cannot be checked against its source by
