@@ -71,12 +71,12 @@ window.SITE_DATA = {
   ],
   "footer_note": "Every finding traces to a source ID in the Sources tab. If something looks wrong, it probably is — say so and it will be corrected."
  },
- "generated": "2026-08-07",
+ "generated": "2026-08-10",
  "taxonomy_version": "0.7.0",
  "stats": {
-  "records": 656,
-  "findings": 133,
-  "sources": 106,
+  "records": 672,
+  "findings": 135,
+  "sources": 108,
   "countries": 29,
   "withheld_internal": 2
  },
@@ -2053,14 +2053,16 @@ window.SITE_DATA = {
    "example": "Iraq — sustaining information flows proved difficult as coordination mechanisms restructured, and maintaining an accurate evidence base became harder as the transition itself changed shape.",
    "type": "barrier",
    "strength": "high",
-   "n_records": 3,
-   "n_sources": 3,
-   "n_streams": 2,
+   "n_records": 4,
+   "n_sources": 4,
+   "n_streams": 3,
    "streams": [
     "sdr",
+    "search",
     "workshop"
    ],
    "countries": [
+    "CMR",
     "IRQ",
     "SOM"
    ],
@@ -2071,12 +2073,14 @@ window.SITE_DATA = {
    ],
    "actors": [
     "cluster",
+    "gov-national",
     "un-agency"
    ],
    "record_ids": [
     "E0238",
     "E0239",
-    "E0644"
+    "E0644",
+    "E0680"
    ],
    "unmerged": false,
    "highlight": {
@@ -2227,6 +2231,64 @@ window.SITE_DATA = {
    "unmerged": false
   },
   {
+   "finding_id": "F1727",
+   "statement": "A cluster lead holding both funding or operational responsibility inside its own agency and the mandate to coordinate that agency's work carries a structural conflict of interest, which is separate from the workload question usually raised about double-hatting.",
+   "theme": [
+    "ABC"
+   ],
+   "example": "",
+   "type": "barrier",
+   "strength": "low",
+   "n_records": 1,
+   "n_sources": 1,
+   "n_streams": 1,
+   "streams": [
+    "search"
+   ],
+   "countries": [],
+   "tags": [
+    "coordination-architecture",
+    "performance"
+   ],
+   "actors": [
+    "cluster",
+    "un-agency"
+   ],
+   "record_ids": [
+    "E0671"
+   ],
+   "unmerged": false
+  },
+  {
+   "finding_id": "F1728",
+   "statement": "The provider-of-last-resort undertaking, which is part of the justification for agency-led cluster leadership, has too often not materialised in practice.",
+   "theme": [
+    "ABC"
+   ],
+   "example": "",
+   "type": "barrier",
+   "strength": "low",
+   "n_records": 1,
+   "n_sources": 1,
+   "n_streams": 1,
+   "streams": [
+    "search"
+   ],
+   "countries": [],
+   "tags": [
+    "coordination-architecture",
+    "performance"
+   ],
+   "actors": [
+    "cluster",
+    "un-agency"
+   ],
+   "record_ids": [
+    "E0672"
+   ],
+   "unmerged": false
+  },
+  {
    "finding_id": "F201",
    "statement": "The need to create dedicated structures such as a drought strategic working group and community resource centres shows that existing coordination systems could not support integrated multi-sectoral assistance.",
    "theme": [
@@ -2310,11 +2372,12 @@ window.SITE_DATA = {
    "example": "Palestine — a working division of labour has the cluster providing the analytical framework, area structures collecting data within it, and the cluster retaining the analysis.",
    "type": "enabler",
    "strength": "high",
-   "n_records": 17,
-   "n_sources": 11,
-   "n_streams": 2,
+   "n_records": 18,
+   "n_sources": 12,
+   "n_streams": 3,
    "streams": [
     "sdr",
+    "search",
     "transcript"
    ],
    "countries": [
@@ -2366,7 +2429,8 @@ window.SITE_DATA = {
     "E0208",
     "E0216",
     "E0312",
-    "E0480"
+    "E0480",
+    "E0677"
    ],
    "unmerged": false,
    "highlight": {
@@ -2385,14 +2449,16 @@ window.SITE_DATA = {
    "example": "South Sudan — the country is divided into zones led permanently by UN organisations, which the coordination team distinguished from area-based coordination as described in global guidance.",
    "type": "context",
    "strength": "high",
-   "n_records": 3,
-   "n_sources": 2,
-   "n_streams": 2,
+   "n_records": 5,
+   "n_sources": 4,
+   "n_streams": 3,
    "streams": [
     "sdr",
+    "search",
     "transcript"
    ],
    "countries": [
+    "CMR",
     "SSD"
    ],
    "tags": [
@@ -2402,6 +2468,7 @@ window.SITE_DATA = {
    ],
    "actors": [
     "cluster",
+    "gov-national",
     "ocha",
     "operational-cell",
     "un-agency"
@@ -2409,7 +2476,9 @@ window.SITE_DATA = {
    "record_ids": [
     "E0118",
     "E0608",
-    "E0617"
+    "E0617",
+    "E0674",
+    "E0683"
    ],
    "unmerged": false,
    "highlight": {
@@ -2650,11 +2719,12 @@ window.SITE_DATA = {
    "example": "Myanmar — subnational clusters were redefined as technical advisers and stopped holding standing meetings. During a sudden emergency no forum held the question of who was working where.",
    "type": "barrier",
    "strength": "high",
-   "n_records": 21,
-   "n_sources": 7,
-   "n_streams": 2,
+   "n_records": 22,
+   "n_sources": 8,
+   "n_streams": 3,
    "streams": [
     "sdr",
+    "search",
     "transcript"
    ],
    "countries": [
@@ -2697,7 +2767,8 @@ window.SITE_DATA = {
     "E0206",
     "E0217",
     "E0222",
-    "E0223"
+    "E0223",
+    "E0675"
    ],
    "unmerged": false,
    "highlight": {
@@ -2836,11 +2907,12 @@ window.SITE_DATA = {
    "example": "Myanmar — an arrangement placing paid coordinators alongside the elected chairs was not set out in any guidance; the cluster learned of it informally and had to assemble a comparison of the documents itself.",
    "type": "barrier",
    "strength": "high",
-   "n_records": 9,
-   "n_sources": 4,
-   "n_streams": 3,
+   "n_records": 10,
+   "n_sources": 5,
+   "n_streams": 4,
    "streams": [
     "sdr",
+    "search",
     "transcript",
     "workshop"
    ],
@@ -2873,7 +2945,8 @@ window.SITE_DATA = {
     "E0152",
     "E0459",
     "E0460",
-    "E0647"
+    "E0647",
+    "E0676"
    ],
    "unmerged": false,
    "highlight": {
@@ -3297,11 +3370,12 @@ window.SITE_DATA = {
    "example": "Indonesia — international organisations shifted to supporting existing local leadership instead of maintaining parallel systems.",
    "type": "enabler",
    "strength": "high",
-   "n_records": 9,
-   "n_sources": 8,
-   "n_streams": 2,
+   "n_records": 10,
+   "n_sources": 9,
+   "n_streams": 3,
    "streams": [
     "sdr",
+    "search",
     "transcript"
    ],
    "countries": [
@@ -3336,7 +3410,8 @@ window.SITE_DATA = {
     "E0323",
     "E0498",
     "E0499",
-    "E0520"
+    "E0520",
+    "E0684"
    ],
    "unmerged": false,
    "highlight": {
@@ -3355,14 +3430,16 @@ window.SITE_DATA = {
    "example": "Ukraine — local actors participated in coordination structures but had limited influence over decisions and over resources.",
    "type": "barrier",
    "strength": "high",
-   "n_records": 6,
-   "n_sources": 5,
-   "n_streams": 2,
+   "n_records": 8,
+   "n_sources": 7,
+   "n_streams": 3,
    "streams": [
     "sdr",
+    "search",
     "transcript"
    ],
    "countries": [
+    "CMR",
     "MMR",
     "UKR"
    ],
@@ -3371,7 +3448,9 @@ window.SITE_DATA = {
     "coordination-architecture",
     "localisation",
     "partnerships",
-    "pooled-funds"
+    "performance",
+    "pooled-funds",
+    "transition-handover"
    ],
    "actors": [
     "cluster",
@@ -3387,7 +3466,9 @@ window.SITE_DATA = {
     "E0187",
     "E0202",
     "E0203",
-    "E0278"
+    "E0278",
+    "E0673",
+    "E0678"
    ],
    "unmerged": false,
    "highlight": {
@@ -4138,11 +4219,12 @@ window.SITE_DATA = {
    "example": "Ethiopia — a six-month handover deadline was set internally and tied to the coordinator's contract ending. The humanitarian coordination office agreed six months was not enough; the timetable did not change.",
    "type": "barrier",
    "strength": "high",
-   "n_records": 19,
-   "n_sources": 11,
-   "n_streams": 2,
+   "n_records": 20,
+   "n_sources": 12,
+   "n_streams": 3,
    "streams": [
     "sdr",
+    "search",
     "transcript"
    ],
    "countries": [
@@ -4155,6 +4237,7 @@ window.SITE_DATA = {
     "TCD"
    ],
    "tags": [
+    "coordination-architecture",
     "funding",
     "government-engagement",
     "guidance",
@@ -4190,7 +4273,8 @@ window.SITE_DATA = {
     "E0565",
     "E0649",
     "E0665",
-    "E0667"
+    "E0667",
+    "E0686"
    ],
    "unmerged": false,
    "highlight": {
@@ -4209,11 +4293,12 @@ window.SITE_DATA = {
    "example": "Iraq — international humanitarian funding fell from around 1.8 billion to 265 million US dollars, which forced an accelerated transition.",
    "type": "context",
    "strength": "high",
-   "n_records": 13,
-   "n_sources": 7,
-   "n_streams": 3,
+   "n_records": 14,
+   "n_sources": 8,
+   "n_streams": 4,
    "streams": [
     "sdr",
+    "search",
     "transcript",
     "workshop"
    ],
@@ -4231,6 +4316,7 @@ window.SITE_DATA = {
     "geographic-targeting",
     "guidance",
     "hpc",
+    "localisation",
     "performance",
     "pooled-funds",
     "transition-handover"
@@ -4239,6 +4325,7 @@ window.SITE_DATA = {
     "cluster",
     "donor",
     "ingo",
+    "local-ngo",
     "ocha",
     "un-agency"
    ],
@@ -4255,7 +4342,8 @@ window.SITE_DATA = {
     "E0365",
     "E0568",
     "E0571",
-    "E0642"
+    "E0642",
+    "E0679"
    ],
    "unmerged": false,
    "highlight": {
@@ -4274,14 +4362,16 @@ window.SITE_DATA = {
    "example": "Colombia — a costed transfer plan was prepared with a risk analysis and an inventory of information resources, to be validated by the humanitarian coordinator and the clusters.",
    "type": "practice",
    "strength": "high",
-   "n_records": 7,
-   "n_sources": 3,
-   "n_streams": 2,
+   "n_records": 8,
+   "n_sources": 4,
+   "n_streams": 3,
    "streams": [
     "sdr",
+    "search",
     "transcript"
    ],
    "countries": [
+    "CMR",
     "COL",
     "MOZ"
    ],
@@ -4308,7 +4398,8 @@ window.SITE_DATA = {
     "E0277",
     "E0379",
     "E0380",
-    "E0550"
+    "E0550",
+    "E0685"
    ],
    "unmerged": false,
    "highlight": {
@@ -4997,11 +5088,12 @@ window.SITE_DATA = {
    "example": "Cameroon — transition planning proposed a six-month post-handover mentoring phase with quarterly reviews, rather than ending support at the point of transfer.",
    "type": "enabler",
    "strength": "high",
-   "n_records": 4,
-   "n_sources": 4,
-   "n_streams": 1,
+   "n_records": 5,
+   "n_sources": 5,
+   "n_streams": 2,
    "streams": [
-    "sdr"
+    "sdr",
+    "search"
    ],
    "countries": [
     "CMR",
@@ -5009,11 +5101,13 @@ window.SITE_DATA = {
    ],
    "tags": [
     "capacity",
+    "funding",
     "localisation",
     "transition-handover"
    ],
    "actors": [
     "cluster",
+    "donor",
     "gov-national",
     "local-ngo",
     "un-agency"
@@ -5022,7 +5116,8 @@ window.SITE_DATA = {
     "E0267",
     "E0333",
     "E0336",
-    "E0339"
+    "E0339",
+    "E0681"
    ],
    "unmerged": false,
    "highlight": {
@@ -5199,11 +5294,12 @@ window.SITE_DATA = {
    "example": "",
    "type": "recommendation",
    "strength": "high",
-   "n_records": 10,
-   "n_sources": 6,
-   "n_streams": 2,
+   "n_records": 11,
+   "n_sources": 7,
+   "n_streams": 3,
    "streams": [
     "sdr",
+    "search",
     "transcript"
    ],
    "countries": [
@@ -5224,7 +5320,8 @@ window.SITE_DATA = {
     "gov-local",
     "gov-national",
     "ingo",
-    "ocha"
+    "ocha",
+    "un-agency"
    ],
    "record_ids": [
     "E0334",
@@ -5236,7 +5333,8 @@ window.SITE_DATA = {
     "E0372",
     "E0542",
     "E0616",
-    "E0627"
+    "E0627",
+    "E0682"
    ],
    "unmerged": false,
    "highlight": {
@@ -23366,6 +23464,414 @@ window.SITE_DATA = {
    "date_collected": "2026-07-21",
    "confidence": "high",
    "status": "draft"
+  },
+  {
+   "id": "E0671",
+   "finding_id": "F1727",
+   "theme": [
+    "ABC"
+   ],
+   "type": "barrier",
+   "statement": "A cluster lead holding both funding or operational responsibility inside its own agency and the mandate to coordinate that agency's work carries a structural conflict of interest, which is separate from the workload question usually raised about double-hatting.",
+   "level": "global",
+   "countries": [],
+   "actors": [
+    "cluster",
+    "un-agency"
+   ],
+   "tags": [
+    "coordination-architecture",
+    "performance"
+   ],
+   "stream": "search",
+   "source_id": "S117",
+   "date_collected": "2026-08-07",
+   "confidence": "high",
+   "status": "draft"
+  },
+  {
+   "id": "E0672",
+   "finding_id": "F1728",
+   "theme": [
+    "ABC"
+   ],
+   "type": "barrier",
+   "statement": "The provider-of-last-resort undertaking, which is part of the justification for agency-led cluster leadership, has too often not materialised in practice.",
+   "level": "global",
+   "countries": [],
+   "actors": [
+    "cluster",
+    "un-agency"
+   ],
+   "tags": [
+    "coordination-architecture",
+    "performance"
+   ],
+   "stream": "search",
+   "source_id": "S117",
+   "date_collected": "2026-08-07",
+   "confidence": "high",
+   "status": "draft"
+  },
+  {
+   "id": "E0673",
+   "finding_id": "F260",
+   "theme": [
+    "ABC"
+   ],
+   "type": "barrier",
+   "statement": "The cluster system is criticised for being organised around capital-based international agencies, which excludes local and national organisations from coordination despite agreed localisation commitments.",
+   "level": "global",
+   "countries": [],
+   "actors": [
+    "cluster",
+    "local-ngo"
+   ],
+   "tags": [
+    "coordination-architecture",
+    "localisation"
+   ],
+   "stream": "search",
+   "source_id": "S117",
+   "date_collected": "2026-08-07",
+   "confidence": "high",
+   "status": "draft"
+  },
+  {
+   "id": "E0674",
+   "finding_id": "F210",
+   "theme": [
+    "ABC"
+   ],
+   "type": "context",
+   "statement": "Area-based models take two distinguishable forms: one where national structures keep the mandate for planning and only operational coordination devolves, and one where planning itself moves to a multi-sector local level. Which is in use determines what the cluster still holds.",
+   "level": "global",
+   "countries": [],
+   "actors": [
+    "cluster"
+   ],
+   "tags": [
+    "coordination-architecture",
+    "guidance"
+   ],
+   "stream": "search",
+   "source_id": "S117",
+   "date_collected": "2026-08-07",
+   "confidence": "high",
+   "status": "draft"
+  },
+  {
+   "id": "E0675",
+   "finding_id": "F220",
+   "theme": [
+    "ABC"
+   ],
+   "type": "context",
+   "statement": "Area-based models reposition clusters as technical reference points at national level — quality assurance, standards development and roll-out, and sharing practice across contexts — rather than as the holders of operational coordination.",
+   "level": "global",
+   "countries": [],
+   "actors": [
+    "cluster"
+   ],
+   "tags": [
+    "coordination-architecture",
+    "guidance",
+    "performance"
+   ],
+   "stream": "search",
+   "source_id": "S117",
+   "date_collected": "2026-08-07",
+   "confidence": "high",
+   "status": "draft"
+  },
+  {
+   "id": "E0676",
+   "finding_id": "F227",
+   "theme": [
+    "ABC"
+   ],
+   "type": "barrier",
+   "statement": "Area-based pilots have so far struggled to arrive at an operational model that works and satisfies the priorities of all the actors involved.",
+   "level": "global",
+   "countries": [],
+   "actors": [
+    "cluster"
+   ],
+   "tags": [
+    "coordination-architecture",
+    "guidance"
+   ],
+   "stream": "search",
+   "source_id": "S117",
+   "date_collected": "2026-08-07",
+   "confidence": "high",
+   "status": "draft"
+  },
+  {
+   "id": "E0677",
+   "finding_id": "F209",
+   "theme": [
+    "ABC"
+   ],
+   "type": "context",
+   "statement": "Overall response planning and coordination is expected to remain a national-level agreement even under area-based models, to hold coherence and buy-in — so the question is which functions move, not whether the national tier survives.",
+   "level": "global",
+   "countries": [],
+   "actors": [
+    "cluster",
+    "ocha"
+   ],
+   "tags": [
+    "coordination-architecture"
+   ],
+   "stream": "search",
+   "source_id": "S117",
+   "date_collected": "2026-08-07",
+   "confidence": "high",
+   "status": "draft"
+  },
+  {
+   "id": "E0678",
+   "finding_id": "F260",
+   "theme": [
+    "Transition"
+   ],
+   "type": "barrier",
+   "statement": "A national partner in an accelerated transition named the central risk as symbolic localisation: responsibilities moving to national actors without the authority, resources or decision-making power that would make them real.",
+   "level": "national",
+   "countries": [
+    "CMR"
+   ],
+   "actors": [
+    "local-ngo",
+    "cluster"
+   ],
+   "tags": [
+    "localisation",
+    "transition-handover",
+    "performance"
+   ],
+   "stream": "search",
+   "source_id": "S118",
+   "date_collected": "2026-08-07",
+   "confidence": "high",
+   "status": "draft"
+  },
+  {
+   "id": "E0679",
+   "finding_id": "F335",
+   "theme": [
+    "Transition"
+   ],
+   "type": "barrier",
+   "statement": "Funding gaps after deactivation are the principal concern of the national organisations expected to carry operations afterwards.",
+   "level": "national",
+   "countries": [
+    "CMR"
+   ],
+   "actors": [
+    "local-ngo"
+   ],
+   "tags": [
+    "funding",
+    "transition-handover",
+    "localisation"
+   ],
+   "stream": "search",
+   "source_id": "S118",
+   "date_collected": "2026-08-07",
+   "confidence": "high",
+   "status": "draft"
+  },
+  {
+   "id": "E0680",
+   "finding_id": "F1711",
+   "theme": [
+    "Transition"
+   ],
+   "type": "barrier",
+   "statement": "Where information management is being migrated into a national system as part of the transition, the migration has to keep pace with the deactivation or a coordination gap opens between the two.",
+   "level": "national",
+   "countries": [
+    "CMR"
+   ],
+   "actors": [
+    "cluster",
+    "gov-national"
+   ],
+   "tags": [
+    "information-management",
+    "transition-handover"
+   ],
+   "stream": "search",
+   "source_id": "S118",
+   "date_collected": "2026-08-07",
+   "confidence": "high",
+   "status": "draft"
+  },
+  {
+   "id": "E0681",
+   "finding_id": "F396",
+   "theme": [
+    "Transition"
+   ],
+   "type": "recommendation",
+   "statement": "National partners set out what a workable transition needs from their side: multi-year and flexible funding, continued investment in institutional capacity, access to pooled funding and direct donor engagement, and technical mentorship running through the transition period.",
+   "level": "national",
+   "countries": [
+    "CMR"
+   ],
+   "actors": [
+    "local-ngo",
+    "donor"
+   ],
+   "tags": [
+    "funding",
+    "localisation",
+    "capacity",
+    "transition-handover"
+   ],
+   "stream": "search",
+   "source_id": "S118",
+   "date_collected": "2026-08-07",
+   "confidence": "high",
+   "status": "draft"
+  },
+  {
+   "id": "E0682",
+   "finding_id": "F421",
+   "theme": [
+    "Transition"
+   ],
+   "type": "practice",
+   "statement": "The lead agency retains the provider-of-last-resort role after the cluster deactivates, with some technical functions such as standards and guidance held temporarily during the transition rather than transferred at the point of closure.",
+   "level": "national",
+   "countries": [
+    "CMR"
+   ],
+   "actors": [
+    "cluster",
+    "un-agency",
+    "gov-national"
+   ],
+   "tags": [
+    "transition-handover",
+    "coordination-architecture",
+    "guidance"
+   ],
+   "stream": "search",
+   "source_id": "S118",
+   "date_collected": "2026-08-07",
+   "confidence": "high",
+   "status": "draft"
+  },
+  {
+   "id": "E0683",
+   "finding_id": "F210",
+   "theme": [
+    "ABC",
+    "Transition"
+   ],
+   "type": "context",
+   "statement": "Different coordination models are being applied in different regions of the same country according to the nature of the crisis — area-based coordination in two regions and a variant of it in a third — rather than one model applied nationally.",
+   "level": "subnational",
+   "countries": [
+    "CMR"
+   ],
+   "actors": [
+    "cluster",
+    "gov-national"
+   ],
+   "tags": [
+    "coordination-architecture",
+    "transition-handover"
+   ],
+   "stream": "search",
+   "source_id": "S118",
+   "date_collected": "2026-08-07",
+   "confidence": "high",
+   "status": "draft"
+  },
+  {
+   "id": "E0684",
+   "finding_id": "F259",
+   "theme": [
+    "Transition"
+   ],
+   "type": "enabler",
+   "statement": "Leadership of the successor coordination structure is being selected by a vote among participating organisations rather than by appointment.",
+   "level": "national",
+   "countries": [
+    "CMR"
+   ],
+   "actors": [
+    "local-ngo",
+    "cluster"
+   ],
+   "tags": [
+    "localisation",
+    "coordination-architecture",
+    "transition-handover"
+   ],
+   "stream": "search",
+   "source_id": "S118",
+   "date_collected": "2026-08-07",
+   "confidence": "high",
+   "status": "draft"
+  },
+  {
+   "id": "E0685",
+   "finding_id": "F346",
+   "theme": [
+    "Transition"
+   ],
+   "type": "practice",
+   "statement": "The transition runs in phases across three years, opening with formal communication to the line ministry and an identification of capacity-building needs, then strengthening sector coordination jointly with the ministry, then migrating information management into national systems, ending with humanitarian preparedness written into national sector planning.",
+   "level": "national",
+   "countries": [
+    "CMR"
+   ],
+   "actors": [
+    "cluster",
+    "gov-national"
+   ],
+   "tags": [
+    "transition-handover",
+    "government-engagement",
+    "hpc"
+   ],
+   "stream": "search",
+   "source_id": "S118",
+   "date_collected": "2026-08-07",
+   "confidence": "high",
+   "status": "draft"
+  },
+  {
+   "id": "E0686",
+   "finding_id": "F333",
+   "theme": [
+    "Transition"
+   ],
+   "type": "context",
+   "statement": "This country is one of eight piloting an accelerated transition to nationally anchored coordination under the humanitarian reset, with a proposed deactivation date at the end of the year.",
+   "level": "national",
+   "countries": [
+    "CMR"
+   ],
+   "actors": [
+    "cluster",
+    "ocha",
+    "gov-national"
+   ],
+   "tags": [
+    "transition-handover",
+    "coordination-architecture"
+   ],
+   "stream": "search",
+   "source_id": "S118",
+   "date_collected": "2026-08-07",
+   "confidence": "high",
+   "status": "draft"
   }
  ],
  "sources": [
@@ -24744,6 +25250,32 @@ window.SITE_DATA = {
    "stream": "transcript",
    "date_added": "2026-07-21",
    "access": "restricted",
+   "legacy_id": "",
+   "source_group": ""
+  },
+  {
+   "source_id": "S117",
+   "title": "Reflections on Area-Based Coordination",
+   "organisation": "ACTED",
+   "year": "2025",
+   "type": "report",
+   "url": "https://reliefweb.int/report/world/acted-reflections-area-based-coordination",
+   "stream": "search",
+   "date_added": "2026-08-07",
+   "access": "public",
+   "legacy_id": "",
+   "source_group": ""
+  },
+  {
+   "source_id": "S118",
+   "title": "Local leadership at the centre of transition — reflections from Cameroon",
+   "organisation": "Global Health Cluster / WHO",
+   "year": "2026",
+   "type": "report",
+   "url": "https://healthcluster.who.int/newsroom/news/item/19-03-2026-local-leadership-at-the-centre-of-transition-reflections-from-cameroon",
+   "stream": "search",
+   "date_added": "2026-08-07",
+   "access": "public",
    "legacy_id": "",
    "source_group": ""
   }

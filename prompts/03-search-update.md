@@ -2,6 +2,9 @@
 
 **Stream:** `search` · **Read `00-shared-rules.md` first.** Suggested cadence: quarterly.
 
+**Last run: 2026-08-07.** Two sources added (S117, S118), 16 records. Next run due
+around November 2026 — search from `date_added` 2026-08-07 forward.
+
 ## Task
 
 Find material published since the last run that adds something the evidence base does not already have. Extract records for `data/evidence.csv`.
@@ -47,6 +50,25 @@ Include only material that is:
 Exclude: news coverage, press releases, project announcements, funding appeals, and anything that only restates existing guidance.
 
 Most quarters this will yield very few records. That is the correct result and you should report it as such rather than lowering the bar to produce volume.
+
+## What the first run found, and why it mattered
+
+Two sources from roughly a dozen candidates. Everything else was guidance restating
+guidance, event announcements or news.
+
+- **An operational INGO position paper on ABC.** Valuable because it is written from
+  outside the cluster system rather than by it — almost every other source in this
+  base is written by or for cluster actors. It named the double-hatting conflict of
+  interest, which the base had only as a workload problem.
+- **A health cluster account of a country transition**, reporting a national NGO
+  partner. Valuable because it is a *different sector* in a country already in the
+  base, so it corroborates without the independence problem that a second WASH
+  source from the same country would carry.
+
+That is the pattern worth repeating: **search for sources that are independent of
+the cluster system, or from another sector, rather than more of the same.** Twelve
+existing findings gained a fourth stream from this run, several reaching four
+independent source types. That is what the search stream is for — not volume.
 
 ## Step 4 — Extract
 
