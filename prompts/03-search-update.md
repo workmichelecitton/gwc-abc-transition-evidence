@@ -2,8 +2,20 @@
 
 **Stream:** `search` · **Read `00-shared-rules.md` first.** Suggested cadence: quarterly.
 
-**Last run: 2026-08-07.** Two sources added (S117, S118), 16 records. Next run due
-around November 2026 — search from `date_added` 2026-08-07 forward.
+**Last run: 2026-08-07.** Net result: **one source, nine records.** Two were added
+(S117, S118) but S117 turned out to duplicate S015 — the run had skipped Step 1 —
+and was deleted. Next run due around November 2026 — search from `date_added`
+2026-08-07 forward.
+
+**Known constraint, and the reason this stream is thin.** Web search returns these
+documents readily; fetching them often fails. Domains that return nothing to an
+automated fetch include `interagencystandingcommittee.org`, `reliefweb.int`,
+`unicefintercluster.net`, `washcluster.net` and `icvanetwork.org`. Domains that
+work include `globalprotectioncluster.org`, `nutritioncluster.net`,
+`healthcluster.who.int`, `emergency.unhcr.org`, `cccmcluster.org` and `undp.org`.
+Never record a claim from a search result summary — only from the document itself.
+Where a document cannot be opened, list it as a fetch failure for the user to
+supply, rather than extracting from its abstract.
 
 ## Task
 
