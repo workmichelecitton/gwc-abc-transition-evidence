@@ -95,6 +95,36 @@ CSV mechanics: quote any field containing a comma. Use `;` inside multi-value fi
 
 ---
 
+## Relationship to the GWC SDR method
+
+The Global WASH Cluster runs Secondary Data Reviews under a separate master prompt (Steps A–E, mandatory iteration passes, lead-analyst and editorial checklists). That method produces a **narrative product under a locked scope, once**. This repository is a **cumulative database that counts rather than narrates**. They are complementary, not interchangeable, so parts of the SDR method are adopted here and parts are deliberately refused. Both decisions are recorded so nobody has to re-argue them.
+
+**Adopted**
+
+| SDR rule | Where it lives here |
+|---|---|
+| Gap loop: identify → classify → target search → update → reassess | `prompts/03`, and the extraction steps of `prompts/02` |
+| Gap severity: Critical / Important / Minor | Same |
+| Stop rule — stop after the last pass, then state what remains unresolved | Same. The build reports remaining gaps on every run for the same reason |
+| Every source carries a working URL | Enforced by `build.py` for newly added sources |
+| Source label `ORG dd/mm/yyyy` | Computed by `build.py`, shown on the Sources tab |
+| Traceability from claim to document | Already the three-layer model: record → finding → source |
+| Evidence lock — no new facts at the writing stage | `prompts/09`, and the viewer, which only ever displays what the CSVs contain |
+
+**Deliberately not adopted**
+
+| SDR rule | Why not |
+|---|---|
+| Five-point analyst-assigned confidence (Very high → Very low) | This base computes a band from independent sources, streams and countries and asserts nothing. An assigned confidence would quietly reintroduce judgement into the one number that is defensible precisely because no judgement went into it. A five-band scale **was** adopted — but it is counted, not assigned. |
+| Population logic (`affected ≥ in need ≥ target`) | This base records coordination arrangements, not caseloads. The SDR prompt itself permits saying so rather than forcing an estimate. |
+| Severity, Anticipate, Prescribe | These turn evidence into an argument. They belong in the product written *from* this base (`prompts/09`), not in the data. Keeping them out is what lets the same records serve a country coordinator and an advocacy note without being rewritten. |
+| Three-to-four mandatory passes at every step | Re-reading one document three times adds nothing. The pass discipline is kept only where it earns its place: searching, where each pass can be aimed at a different gap. |
+| Pillar / sub-pillar / sector / sub-sector hierarchy | The equivalent here is `theme` + `tags` + `level`, which is already in use and already filterable. |
+
+**Still open.** The SDR's evidence hierarchy — **Direct > Proxy > Inferred** — is the strongest remaining candidate. The `confidence` column is validated and unused, and would hold it. It would have caught the Haiti record where a speaker's hypothetical was written up as a statement of fact. It needs a review pass over the records that carry no quote before it can be switched on, so it is noted here rather than half-implemented.
+
+---
+
 ## Before you hand back
 
 State plainly:

@@ -24443,7 +24443,8 @@
    "date_added": "2026-08-03",
    "access": "restricted",
    "legacy_id": "",
-   "source_group": ""
+   "source_group": "",
+   "label": "Global WASH Cluster 2026"
   },
   {
    "source_id": "S012",
@@ -24456,7 +24457,8 @@
    "date_added": "2026-07-28",
    "access": "restricted",
    "legacy_id": "",
-   "source_group": ""
+   "source_group": "",
+   "label": "Global WASH Cluster 2026"
   },
   {
    "source_id": "S013",
@@ -24469,7 +24471,8 @@
    "date_added": "2026-07-17",
    "access": "public",
    "legacy_id": "ABC-S1",
-   "source_group": ""
+   "source_group": "",
+   "label": "Flagship Initiative"
   },
   {
    "source_id": "S014",
@@ -24482,7 +24485,8 @@
    "date_added": "2026-07-17",
    "access": "public",
    "legacy_id": "ABC-S2",
-   "source_group": ""
+   "source_group": "",
+   "label": "Food Security Cluster 2023"
   },
   {
    "source_id": "S015",
@@ -24495,7 +24499,8 @@
    "date_added": "2026-07-17",
    "access": "public",
    "legacy_id": "ABC-S3",
-   "source_group": ""
+   "source_group": "",
+   "label": "ACTED 2024"
   },
   {
    "source_id": "S016",
@@ -24508,7 +24513,8 @@
    "date_added": "2026-07-17",
    "access": "public",
    "legacy_id": "ABC-S4",
-   "source_group": ""
+   "source_group": "",
+   "label": "Refugees International 2024"
   },
   {
    "source_id": "S017",
@@ -24521,7 +24527,8 @@
    "date_added": "2026-07-17",
    "access": "public",
    "legacy_id": "ABC-S5",
-   "source_group": ""
+   "source_group": "",
+   "label": "OCHA 2025"
   },
   {
    "source_id": "S018",
@@ -24534,7 +24541,8 @@
    "date_added": "2026-07-17",
    "access": "public",
    "legacy_id": "ABC-S6",
-   "source_group": ""
+   "source_group": "",
+   "label": "CCCM Cluster 2020"
   },
   {
    "source_id": "S019",
@@ -24547,7 +24555,8 @@
    "date_added": "2026-07-17",
    "access": "public",
    "legacy_id": "ABC-S7",
-   "source_group": ""
+   "source_group": "",
+   "label": "IASC HWG 2026"
   },
   {
    "source_id": "S020",
@@ -24560,7 +24569,8 @@
    "date_added": "2026-07-17",
    "access": "public",
    "legacy_id": "ABC-S8",
-   "source_group": ""
+   "source_group": "",
+   "label": "UN Women 2026"
   },
   {
    "source_id": "S021",
@@ -24573,7 +24583,8 @@
    "date_added": "2026-07-17",
    "access": "public",
    "legacy_id": "ABC-S9",
-   "source_group": ""
+   "source_group": "",
+   "label": "OCHA 2025"
   },
   {
    "source_id": "S022",
@@ -24586,7 +24597,8 @@
    "date_added": "2026-07-17",
    "access": "public",
    "legacy_id": "ABC-S10",
-   "source_group": ""
+   "source_group": "",
+   "label": "Health Cluster"
   },
   {
    "source_id": "S023",
@@ -24599,7 +24611,8 @@
    "date_added": "2026-07-17",
    "access": "public",
    "legacy_id": "ABC-S11",
-   "source_group": ""
+   "source_group": "",
+   "label": "OCHA 2022"
   },
   {
    "source_id": "S024",
@@ -24612,7 +24625,8 @@
    "date_added": "2026-07-17",
    "access": "public",
    "legacy_id": "ABC-S12",
-   "source_group": ""
+   "source_group": "",
+   "label": "OCHA 2025"
   },
   {
    "source_id": "S025",
@@ -24625,7 +24639,8 @@
    "date_added": "2026-07-17",
    "access": "public",
    "legacy_id": "ABC-S13",
-   "source_group": ""
+   "source_group": "",
+   "label": "ADE 2022"
   },
   {
    "source_id": "S026",
@@ -24638,7 +24653,8 @@
    "date_added": "2026-07-17",
    "access": "public",
    "legacy_id": "ABC-S14",
-   "source_group": ""
+   "source_group": "",
+   "label": "DG ECHO 2023"
   },
   {
    "source_id": "S027",
@@ -24651,7 +24667,8 @@
    "date_added": "2026-07-17",
    "access": "public",
    "legacy_id": "ABC-S15",
-   "source_group": ""
+   "source_group": "",
+   "label": "IAHE 2024"
   },
   {
    "source_id": "S028",
@@ -24664,7 +24681,8 @@
    "date_added": "2026-07-17",
    "access": "public",
    "legacy_id": "ABC-S16",
-   "source_group": ""
+   "source_group": "",
+   "label": "Stoddard et al 2023"
   },
   {
    "source_id": "S029",
@@ -24677,7 +24695,8 @@
    "date_added": "2026-07-17",
    "access": "public",
    "legacy_id": "ABC-S17",
-   "source_group": ""
+   "source_group": "",
+   "label": "Coalition for Accountability and Integrity 2025"
   },
   {
    "source_id": "S030",
@@ -24690,7 +24709,8 @@
    "date_added": "2026-07-17",
    "access": "public",
    "legacy_id": "ABC-S18",
-   "source_group": ""
+   "source_group": "",
+   "label": "OCHA 2023"
   },
   {
    "source_id": "S031",
@@ -24703,7 +24723,8 @@
    "date_added": "2026-07-17",
    "access": "public",
    "legacy_id": "ABC-S19",
-   "source_group": ""
+   "source_group": "",
+   "label": "OCHA 2024"
   },
   {
    "source_id": "S032",
@@ -24716,7 +24737,8 @@
    "date_added": "2026-07-17",
    "access": "public",
    "legacy_id": "ABC-S20",
-   "source_group": ""
+   "source_group": "",
+   "label": "Global Shelter Cluster 2018"
   },
   {
    "source_id": "S033",
@@ -24729,7 +24751,8 @@
    "date_added": "2026-07-17",
    "access": "public",
    "legacy_id": "ABC-S21",
-   "source_group": "icva-coordination-in-transition"
+   "source_group": "icva-coordination-in-transition",
+   "label": "ICVA 2025"
   },
   {
    "source_id": "S034",
@@ -24742,7 +24765,8 @@
    "date_added": "2026-07-17",
    "access": "public",
    "legacy_id": "ABC-S22",
-   "source_group": "undp-abd-practice-note"
+   "source_group": "undp-abd-practice-note",
+   "label": "UNDP 2025"
   },
   {
    "source_id": "S035",
@@ -24755,7 +24779,8 @@
    "date_added": "2026-07-17",
    "access": "public",
    "legacy_id": "ABC-S23",
-   "source_group": ""
+   "source_group": "",
+   "label": "UNDP 2026"
   },
   {
    "source_id": "S036",
@@ -24768,7 +24793,8 @@
    "date_added": "2026-07-17",
    "access": "public",
    "legacy_id": "ABC-S24",
-   "source_group": ""
+   "source_group": "",
+   "label": "Collinson & Schenkenberg 2019"
   },
   {
    "source_id": "S037",
@@ -24781,7 +24807,8 @@
    "date_added": "2026-07-17",
    "access": "public",
    "legacy_id": "ABC-S25",
-   "source_group": ""
+   "source_group": "",
+   "label": "Global Health Cluster 2025"
   },
   {
    "source_id": "S038",
@@ -24794,7 +24821,8 @@
    "date_added": "2026-07-17",
    "access": "public",
    "legacy_id": "ABC-S26",
-   "source_group": ""
+   "source_group": "",
+   "label": "Global Shelter Cluster 2024"
   },
   {
    "source_id": "S039",
@@ -24807,7 +24835,8 @@
    "date_added": "2026-07-17",
    "access": "public",
    "legacy_id": "ABC-S27",
-   "source_group": ""
+   "source_group": "",
+   "label": "Global Shelter Cluster 2024"
   },
   {
    "source_id": "S040",
@@ -24820,7 +24849,8 @@
    "date_added": "2026-07-17",
    "access": "public",
    "legacy_id": "ABC-S28",
-   "source_group": ""
+   "source_group": "",
+   "label": "Global Education Cluster 2024"
   },
   {
    "source_id": "S041",
@@ -24833,7 +24863,8 @@
    "date_added": "2026-07-17",
    "access": "public",
    "legacy_id": "ABC-S29",
-   "source_group": ""
+   "source_group": "",
+   "label": "Derzsi-Horváth, A 2025"
   },
   {
    "source_id": "S042",
@@ -24846,7 +24877,8 @@
    "date_added": "2026-07-17",
    "access": "public",
    "legacy_id": "ABC-S30",
-   "source_group": "gwc-consult-2025"
+   "source_group": "gwc-consult-2025",
+   "label": "GWC 2026"
   },
   {
    "source_id": "S043",
@@ -24859,7 +24891,8 @@
    "date_added": "2026-07-17",
    "access": "public",
    "legacy_id": "ABC-S31",
-   "source_group": "gwc-consult-2025"
+   "source_group": "gwc-consult-2025",
+   "label": "GWC 2024"
   },
   {
    "source_id": "S044",
@@ -24872,7 +24905,8 @@
    "date_added": "2026-07-17",
    "access": "public",
    "legacy_id": "ABC-S32",
-   "source_group": "gwc-consult-2025"
+   "source_group": "gwc-consult-2025",
+   "label": "GWC 2024"
   },
   {
    "source_id": "S045",
@@ -24885,7 +24919,8 @@
    "date_added": "2026-07-17",
    "access": "public",
    "legacy_id": "ABC-S33",
-   "source_group": "gwc-consult-2026"
+   "source_group": "gwc-consult-2026",
+   "label": "GWC 2026"
   },
   {
    "source_id": "S046",
@@ -24898,7 +24933,8 @@
    "date_added": "2026-07-17",
    "access": "public",
    "legacy_id": "ABC-A1",
-   "source_group": ""
+   "source_group": "",
+   "label": "HERE-Geneva 2021"
   },
   {
    "source_id": "S047",
@@ -24911,7 +24947,8 @@
    "date_added": "2026-07-17",
    "access": "public",
    "legacy_id": "ABC-A2",
-   "source_group": ""
+   "source_group": "",
+   "label": "OCHA 2025"
   },
   {
    "source_id": "S048",
@@ -24924,7 +24961,8 @@
    "date_added": "2026-07-17",
    "access": "public",
    "legacy_id": "ABC-A3",
-   "source_group": ""
+   "source_group": "",
+   "label": "ICVA 2024"
   },
   {
    "source_id": "S049",
@@ -24937,7 +24975,8 @@
    "date_added": "2026-07-17",
    "access": "public",
    "legacy_id": "ABC-A4",
-   "source_group": ""
+   "source_group": "",
+   "label": "Global Shelter Cluster 2018"
   },
   {
    "source_id": "S050",
@@ -24950,7 +24989,8 @@
    "date_added": "2026-07-17",
    "access": "public",
    "legacy_id": "ABC-A5",
-   "source_group": ""
+   "source_group": "",
+   "label": "UNICEF 2024"
   },
   {
    "source_id": "S051",
@@ -24963,7 +25003,8 @@
    "date_added": "2026-07-17",
    "access": "public",
    "legacy_id": "ABC-A6",
-   "source_group": ""
+   "source_group": "",
+   "label": "IOM 2024"
   },
   {
    "source_id": "S052",
@@ -24976,7 +25017,8 @@
    "date_added": "2026-07-17",
    "access": "public",
    "legacy_id": "Transition-S1",
-   "source_group": ""
+   "source_group": "",
+   "label": "IASC. (2024.). 5\\_Annex "
   },
   {
    "source_id": "S053",
@@ -24989,7 +25031,8 @@
    "date_added": "2026-07-17",
    "access": "public",
    "legacy_id": "Transition-S2",
-   "source_group": "iasc-transition-deactivation-guidance"
+   "source_group": "iasc-transition-deactivation-guidance",
+   "label": "IASC 2024"
   },
   {
    "source_id": "S054",
@@ -25002,7 +25045,8 @@
    "date_added": "2026-07-17",
    "access": "public",
    "legacy_id": "Transition-S3",
-   "source_group": ""
+   "source_group": "",
+   "label": "CCCM Cluster Iraq 2022"
   },
   {
    "source_id": "S055",
@@ -25015,7 +25059,8 @@
    "date_added": "2026-07-17",
    "access": "public",
    "legacy_id": "Transition-S4",
-   "source_group": ""
+   "source_group": "",
+   "label": "UNICEF 2026"
   },
   {
    "source_id": "S056",
@@ -25028,7 +25073,8 @@
    "date_added": "2026-07-17",
    "access": "public",
    "legacy_id": "Transition-S5",
-   "source_group": "icva-coordination-in-transition"
+   "source_group": "icva-coordination-in-transition",
+   "label": "Holland, K 2025"
   },
   {
    "source_id": "S057",
@@ -25041,7 +25087,8 @@
    "date_added": "2026-07-17",
    "access": "public",
    "legacy_id": "Transition-S6",
-   "source_group": "iasc-transition-deactivation-guidance"
+   "source_group": "iasc-transition-deactivation-guidance",
+   "label": "IASC 2024"
   },
   {
    "source_id": "S058",
@@ -25054,7 +25101,8 @@
    "date_added": "2026-07-17",
    "access": "public",
    "legacy_id": "Transition-S7",
-   "source_group": ""
+   "source_group": "",
+   "label": "UNICEF GCCS 2026"
   },
   {
    "source_id": "S059",
@@ -25067,7 +25115,8 @@
    "date_added": "2026-07-17",
    "access": "public",
    "legacy_id": "Transition-S8",
-   "source_group": ""
+   "source_group": "",
+   "label": "IASC 2025"
   },
   {
    "source_id": "S060",
@@ -25080,7 +25129,8 @@
    "date_added": "2026-07-17",
    "access": "public",
    "legacy_id": "Transition-S9",
-   "source_group": ""
+   "source_group": "",
+   "label": "Federal Government of Somalia 2020"
   },
   {
    "source_id": "S061",
@@ -25093,7 +25143,8 @@
    "date_added": "2026-07-17",
    "access": "public",
    "legacy_id": "Transition-S10",
-   "source_group": "cameroon-health-transition-2026"
+   "source_group": "cameroon-health-transition-2026",
+   "label": "WHO 2026"
   },
   {
    "source_id": "S062",
@@ -25106,7 +25157,8 @@
    "date_added": "2026-07-17",
    "access": "public",
    "legacy_id": "Transition-S11",
-   "source_group": ""
+   "source_group": "",
+   "label": "GCCG — Localisation Working Group 2026"
   },
   {
    "source_id": "S063",
@@ -25119,7 +25171,8 @@
    "date_added": "2026-07-17",
    "access": "public",
    "legacy_id": "Transition-S12",
-   "source_group": ""
+   "source_group": "",
+   "label": "UNICEF 2025"
   },
   {
    "source_id": "S064",
@@ -25132,7 +25185,8 @@
    "date_added": "2026-07-17",
    "access": "public",
    "legacy_id": "Transition-S13",
-   "source_group": ""
+   "source_group": "",
+   "label": "UNICEF 2023"
   },
   {
    "source_id": "S065",
@@ -25145,7 +25199,8 @@
    "date_added": "2026-07-17",
    "access": "public",
    "legacy_id": "Transition-S14",
-   "source_group": ""
+   "source_group": "",
+   "label": "Kalden & Rymarenko 2025"
   },
   {
    "source_id": "S066",
@@ -25158,7 +25213,8 @@
    "date_added": "2026-07-17",
    "access": "public",
    "legacy_id": "Transition-S15",
-   "source_group": ""
+   "source_group": "",
+   "label": "Task Force Transition 2026"
   },
   {
    "source_id": "S067",
@@ -25171,7 +25227,8 @@
    "date_added": "2026-07-17",
    "access": "public",
    "legacy_id": "Transition-S16",
-   "source_group": ""
+   "source_group": "",
+   "label": "Termes, M 2022"
   },
   {
    "source_id": "S068",
@@ -25184,7 +25241,8 @@
    "date_added": "2026-07-17",
    "access": "public",
    "legacy_id": "Transition-S17",
-   "source_group": ""
+   "source_group": "",
+   "label": "Termes, M 2023"
   },
   {
    "source_id": "S069",
@@ -25197,7 +25255,8 @@
    "date_added": "2026-07-17",
    "access": "public",
    "legacy_id": "Transition-S18",
-   "source_group": ""
+   "source_group": "",
+   "label": "UNICEF Evaluation Office 2013"
   },
   {
    "source_id": "S070",
@@ -25210,7 +25269,8 @@
    "date_added": "2026-07-17",
    "access": "public",
    "legacy_id": "Transition-S19",
-   "source_group": ""
+   "source_group": "",
+   "label": "Global Protection Cluster & NRC 2025"
   },
   {
    "source_id": "S071",
@@ -25223,7 +25283,8 @@
    "date_added": "2026-07-17",
    "access": "public",
    "legacy_id": "Transition-S20",
-   "source_group": ""
+   "source_group": "",
+   "label": "OCHA 2024"
   },
   {
    "source_id": "S072",
@@ -25236,7 +25297,8 @@
    "date_added": "2026-07-17",
    "access": "public",
    "legacy_id": "Transition-S21",
-   "source_group": ""
+   "source_group": "",
+   "label": "OCHA 2023"
   },
   {
    "source_id": "S073",
@@ -25249,7 +25311,8 @@
    "date_added": "2026-07-17",
    "access": "public",
    "legacy_id": "Transition-S22",
-   "source_group": ""
+   "source_group": "",
+   "label": "Palacios & Tonea 2025"
   },
   {
    "source_id": "S074",
@@ -25262,7 +25325,8 @@
    "date_added": "2026-07-17",
    "access": "public",
    "legacy_id": "Transition-S23",
-   "source_group": ""
+   "source_group": "",
+   "label": "Triangle Consulting 2023"
   },
   {
    "source_id": "S075",
@@ -25275,7 +25339,8 @@
    "date_added": "2026-07-17",
    "access": "public",
    "legacy_id": "Transition-S24",
-   "source_group": ""
+   "source_group": "",
+   "label": "UNDP Lebanon 2025"
   },
   {
    "source_id": "S076",
@@ -25288,7 +25353,8 @@
    "date_added": "2026-07-17",
    "access": "public",
    "legacy_id": "Transition-S25",
-   "source_group": ""
+   "source_group": "",
+   "label": "IEO/UNDP 2025"
   },
   {
    "source_id": "S077",
@@ -25301,7 +25367,8 @@
    "date_added": "2026-07-17",
    "access": "public",
    "legacy_id": "Transition-S26",
-   "source_group": "undp-abd-practice-note"
+   "source_group": "undp-abd-practice-note",
+   "label": "UNDP 2025"
   },
   {
    "source_id": "S078",
@@ -25314,7 +25381,8 @@
    "date_added": "2026-07-17",
    "access": "public",
    "legacy_id": "Transition-S27",
-   "source_group": ""
+   "source_group": "",
+   "label": "Heylen et al 2023"
   },
   {
    "source_id": "S079",
@@ -25327,7 +25395,8 @@
    "date_added": "2026-07-17",
    "access": "public",
    "legacy_id": "Transition-S28",
-   "source_group": ""
+   "source_group": "",
+   "label": "ACF & GWC 2025"
   },
   {
    "source_id": "S080",
@@ -25340,7 +25409,8 @@
    "date_added": "2026-07-17",
    "access": "public",
    "legacy_id": "Transition-S29",
-   "source_group": ""
+   "source_group": "",
+   "label": "GWN 2024"
   },
   {
    "source_id": "S081",
@@ -25353,7 +25423,8 @@
    "date_added": "2026-07-17",
    "access": "public",
    "legacy_id": "Transition-S30",
-   "source_group": ""
+   "source_group": "",
+   "label": "NRC 2025"
   },
   {
    "source_id": "S082",
@@ -25366,7 +25437,8 @@
    "date_added": "2026-07-17",
    "access": "public",
    "legacy_id": "Transition-S31",
-   "source_group": ""
+   "source_group": "",
+   "label": "NRC 2025"
   },
   {
    "source_id": "S083",
@@ -25379,7 +25451,8 @@
    "date_added": "2026-07-17",
    "access": "public",
    "legacy_id": "Transition-S32",
-   "source_group": "gwc-consult-2026"
+   "source_group": "gwc-consult-2026",
+   "label": "GWC 2026"
   },
   {
    "source_id": "S084",
@@ -25392,7 +25465,8 @@
    "date_added": "2026-07-17",
    "access": "public",
    "legacy_id": "Transition-S33",
-   "source_group": "gwc-consult-2026"
+   "source_group": "gwc-consult-2026",
+   "label": "GWC 2026"
   },
   {
    "source_id": "S085",
@@ -25405,7 +25479,8 @@
    "date_added": "2026-07-17",
    "access": "public",
    "legacy_id": "Transition-S34",
-   "source_group": "gwc-consult-2026"
+   "source_group": "gwc-consult-2026",
+   "label": "GWC 2026"
   },
   {
    "source_id": "S086",
@@ -25418,7 +25493,8 @@
    "date_added": "2026-07-17",
    "access": "public",
    "legacy_id": "Transition-A1",
-   "source_group": ""
+   "source_group": "",
+   "label": "IASC 2024"
   },
   {
    "source_id": "S087",
@@ -25431,7 +25507,8 @@
    "date_added": "2026-07-17",
    "access": "public",
    "legacy_id": "Transition-A2",
-   "source_group": ""
+   "source_group": "",
+   "label": "IASC 2024"
   },
   {
    "source_id": "S088",
@@ -25444,7 +25521,8 @@
    "date_added": "2026-07-17",
    "access": "public",
    "legacy_id": "Transition-A3",
-   "source_group": ""
+   "source_group": "",
+   "label": "Stoddard et al 2007"
   },
   {
    "source_id": "S090",
@@ -25457,7 +25535,8 @@
    "date_added": "2026-07-17",
    "access": "public",
    "legacy_id": "Transition-A5",
-   "source_group": ""
+   "source_group": "",
+   "label": "UNICEF 2019"
   },
   {
    "source_id": "S091",
@@ -25470,7 +25549,8 @@
    "date_added": "2026-07-17",
    "access": "public",
    "legacy_id": "Transition-A6",
-   "source_group": ""
+   "source_group": "",
+   "label": "WASH Cluster Iraq & Mercy Corps 2021"
   },
   {
    "source_id": "S092",
@@ -25483,7 +25563,8 @@
    "date_added": "2026-07-17",
    "access": "public",
    "legacy_id": "Transition-A7",
-   "source_group": ""
+   "source_group": "",
+   "label": "Murray et al 2018"
   },
   {
    "source_id": "S093",
@@ -25496,7 +25577,8 @@
    "date_added": "2026-07-17",
    "access": "public",
    "legacy_id": "Transition-A8",
-   "source_group": ""
+   "source_group": "",
+   "label": "Itad 2020"
   },
   {
    "source_id": "S094",
@@ -25509,7 +25591,8 @@
    "date_added": "2026-07-17",
    "access": "public",
    "legacy_id": "Transition-A9",
-   "source_group": ""
+   "source_group": "",
+   "label": "Itad 2020"
   },
   {
    "source_id": "S095",
@@ -25522,7 +25605,8 @@
    "date_added": "2026-07-17",
    "access": "public",
    "legacy_id": "Transition-A10",
-   "source_group": ""
+   "source_group": "",
+   "label": "Global Protection Cluster 2025"
   },
   {
    "source_id": "S096",
@@ -25535,7 +25619,8 @@
    "date_added": "2026-07-17",
    "access": "public",
    "legacy_id": "Transition-A11",
-   "source_group": ""
+   "source_group": "",
+   "label": "Mosello et al 2016"
   },
   {
    "source_id": "S097",
@@ -25548,7 +25633,8 @@
    "date_added": "2026-07-17",
    "access": "public",
    "legacy_id": "Transition-A12",
-   "source_group": ""
+   "source_group": "",
+   "label": "UN-Habitat & WSSCC 2016"
   },
   {
    "source_id": "S098",
@@ -25561,7 +25647,8 @@
    "date_added": "2026-07-17",
    "access": "public",
    "legacy_id": "Transition-A13",
-   "source_group": ""
+   "source_group": "",
+   "label": "UNICEF 2024"
   },
   {
    "source_id": "S099",
@@ -25574,7 +25661,8 @@
    "date_added": "2026-07-17",
    "access": "public",
    "legacy_id": "Transition-A14",
-   "source_group": ""
+   "source_group": "",
+   "label": "Global Shelter Cluster 2019"
   },
   {
    "source_id": "S100",
@@ -25587,7 +25675,8 @@
    "date_added": "2026-07-17",
    "access": "public",
    "legacy_id": "Transition-A15",
-   "source_group": ""
+   "source_group": "",
+   "label": "GWC 2022"
   },
   {
    "source_id": "S101",
@@ -25600,7 +25689,8 @@
    "date_added": "2026-07-17",
    "access": "public",
    "legacy_id": "",
-   "source_group": "abc-sdr"
+   "source_group": "abc-sdr",
+   "label": "Global WASH Cluster 2026"
   },
   {
    "source_id": "S102",
@@ -25613,7 +25703,8 @@
    "date_added": "2026-07-17",
    "access": "public",
    "legacy_id": "",
-   "source_group": "transition-sdr"
+   "source_group": "transition-sdr",
+   "label": "Global WASH Cluster 2026"
   },
   {
    "source_id": "S103",
@@ -25626,7 +25717,8 @@
    "date_added": "2026-08-03",
    "access": "restricted",
    "legacy_id": "",
-   "source_group": ""
+   "source_group": "",
+   "label": "Global WASH Cluster 2026"
   },
   {
    "source_id": "S104",
@@ -25639,7 +25731,8 @@
    "date_added": "2026-07-27",
    "access": "restricted",
    "legacy_id": "",
-   "source_group": ""
+   "source_group": "",
+   "label": "Global WASH Cluster 2026"
   },
   {
    "source_id": "S105",
@@ -25652,7 +25745,8 @@
    "date_added": "2026-07-17",
    "access": "restricted",
    "legacy_id": "",
-   "source_group": ""
+   "source_group": "",
+   "label": "Global WASH Cluster 2026"
   },
   {
    "source_id": "S106",
@@ -25665,7 +25759,8 @@
    "date_added": "2026-07-13",
    "access": "restricted",
    "legacy_id": "",
-   "source_group": ""
+   "source_group": "",
+   "label": "Global WASH Cluster 2026"
   },
   {
    "source_id": "S107",
@@ -25678,7 +25773,8 @@
    "date_added": "2026-07-23",
    "access": "restricted",
    "legacy_id": "",
-   "source_group": ""
+   "source_group": "",
+   "label": "Global WASH Cluster 2026"
   },
   {
    "source_id": "S108",
@@ -25691,7 +25787,8 @@
    "date_added": "2026-07-17",
    "access": "restricted",
    "legacy_id": "",
-   "source_group": ""
+   "source_group": "",
+   "label": "Global WASH Cluster 2026"
   },
   {
    "source_id": "S109",
@@ -25704,7 +25801,8 @@
    "date_added": "2026-07-13",
    "access": "restricted",
    "legacy_id": "",
-   "source_group": ""
+   "source_group": "",
+   "label": "Global WASH Cluster 2026"
   },
   {
    "source_id": "S110",
@@ -25717,7 +25815,8 @@
    "date_added": "2026-07-03",
    "access": "restricted",
    "legacy_id": "",
-   "source_group": ""
+   "source_group": "",
+   "label": "Global WASH Cluster 2026"
   },
   {
    "source_id": "S111",
@@ -25730,7 +25829,8 @@
    "date_added": "2026-06-23",
    "access": "restricted",
    "legacy_id": "",
-   "source_group": ""
+   "source_group": "",
+   "label": "Global WASH Cluster 2026"
   },
   {
    "source_id": "S112",
@@ -25743,7 +25843,8 @@
    "date_added": "2026-06-23",
    "access": "restricted",
    "legacy_id": "",
-   "source_group": ""
+   "source_group": "",
+   "label": "Global WASH Cluster 2026"
   },
   {
    "source_id": "S113",
@@ -25756,7 +25857,8 @@
    "date_added": "2026-07-28",
    "access": "restricted",
    "legacy_id": "",
-   "source_group": ""
+   "source_group": "",
+   "label": "Global WASH Cluster 2026"
   },
   {
    "source_id": "S114",
@@ -25769,7 +25871,8 @@
    "date_added": "2026-07-29",
    "access": "restricted",
    "legacy_id": "",
-   "source_group": ""
+   "source_group": "",
+   "label": "Global WASH Cluster 2026"
   },
   {
    "source_id": "S115",
@@ -25782,7 +25885,8 @@
    "date_added": "2026-08-06",
    "access": "restricted",
    "legacy_id": "",
-   "source_group": ""
+   "source_group": "",
+   "label": "Global WASH Cluster 2026"
   },
   {
    "source_id": "S116",
@@ -25795,7 +25899,8 @@
    "date_added": "2026-07-21",
    "access": "restricted",
    "legacy_id": "",
-   "source_group": ""
+   "source_group": "",
+   "label": "Global WASH Cluster 2026"
   },
   {
    "source_id": "S118",
@@ -25808,7 +25913,8 @@
    "date_added": "2026-08-07",
    "access": "public",
    "legacy_id": "",
-   "source_group": "cameroon-health-transition-2026"
+   "source_group": "cameroon-health-transition-2026",
+   "label": "Global Health Cluster / WHO 2026"
   }
  ]
 }

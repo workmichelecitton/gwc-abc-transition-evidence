@@ -103,7 +103,10 @@ def main():
         return 1
 
     # ---- sources -----------------------------------------------------------
-    sources, source_ids = [], set()
+    # Sources registered before this date predate the rule and are warned about,
+    # not rejected. Move it forward only when the backlog is actually cleared.
+    URL_RULE_FROM = "2026-08-10"
+    sources, source_ids, no_url = [], set(), []
     src_types = allowed(taxonomy, "source_type")
     for i, r in enumerate(sources_rows, start=2):
         sid = (r.get("source_id") or "").strip()
@@ -118,7 +121,36 @@ def main():
         if stype and stype not in src_types:
             errors.append(f"  sources.csv row {i}: type '{stype}' not in taxonomy.source_type")
         clean = {k: (v or "").strip() for k, v in r.items() if k not in DROP and k}
+
+        # Every source must be reachable. Adopted from the GWC SDR method, which
+        # requires a working link on every entry in its source registry — for the
+        # practical reason that an unlinkable source cannot be checked, and the
+        # nine sources sitting unread in this base are unread precisely because
+        # nobody can open them.
+        #
+        # Enforced for anything added from URL_RULE_FROM onward only. Making it
+        # retroactive would fail the build on 92 legacy rows and help nobody; the
+        # warning below keeps them visible instead of pretending they are fine.
+        added = clean.get("date_added", "")
+        if not clean.get("url", "").startswith("http"):
+            if added >= URL_RULE_FROM:
+                errors.append(
+                    f"  sources.csv row {i} ({sid}): no URL. Every source added from "
+                    f"{URL_RULE_FROM} must have one — if it is not online, put the file in "
+                    f"/raw/ and record the filename in notes, but do not register it linkless.")
+            else:
+                no_url.append(sid)
+
+        # ORG dd/mm/yyyy, the SDR source-label convention. Computed rather than
+        # stored so it cannot drift from the organisation and year columns.
+        org = clean.get("organisation") or clean.get("title", "")[:24]
+        year = (clean.get("year") or "").strip()
+        clean["label"] = f"{org} {year}".strip() if year else org
         sources.append(clean)
+
+    if no_url:
+        warn(f"{len(no_url)} sources registered before {URL_RULE_FROM} carry no URL, so nobody "
+             f"can check what they say. Listed in prompts/07-source-urls.md, worst first.")
 
     # Two sources with the same title are almost always one document registered
     # twice, which quietly inflates every strength count that touches both. It

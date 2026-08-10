@@ -37,11 +37,23 @@ You are given a published document — evaluation, study, guidance, strategy or 
 S0##,<full document title>,<publishing organisation>,<year>,<evaluation|study|guidance|report|strategy>,<url>,sdr,<today>,public,
 ```
 
-Include the URL. A source registry without links is much less useful to anyone who comes after you.
+**The URL is mandatory.** `build.py` rejects a newly added source without one. This is not tidiness: 92 of the 106 sources already registered have no link, which is why nine of them have sat unread for months — nobody can open them to check what they say.
+
+## Gaps, classified
+
+After extracting, say what this document did **not** settle. Use the SDR severity scale:
+
+| Severity | Meaning |
+|---|---|
+| **Critical** | Blocks a claim from being usable — the document raises an issue but gives no evidence either way, and nothing else in the base covers it |
+| **Important** | Materially reduces confidence — a claim is supported for one region or one period only |
+| **Minor** | Worth noting, blocks nothing |
+
+Then **stop**. Do not re-read the document hoping for more. One honest pass with a classified gap list is worth more than three passes over the same text — that is why the SDR method's mandatory repetition is not carried over here.
 
 ## Output
 
-A CSV block ready to append, the new `sources.csv` row, and the hand-back summary.
+A CSV block ready to append, the new `sources.csv` row, the classified gap list, and the hand-back summary.
 
 Flag explicitly where this document **contradicts** something already in `evidence.csv`. Contradictions are the most useful thing a secondary review produces and they are the first thing a summary loses.
 

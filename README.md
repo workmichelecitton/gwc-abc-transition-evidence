@@ -69,6 +69,14 @@ So a finding gets stronger on its own as evidence accumulates. A barrier reporte
 
 All four produce the same CSV shape. `prompts/04` then groups new records into findings — run it every time.
 
+## Writing from the base
+
+`prompts/09` drafts a report section from published findings, in the GWC SDR's Step E format, under an **evidence lock**: every claim must trace to a finding, and where the base has nothing the section says so rather than filling the gap. It reads only — nothing it produces is written back.
+
+Its most useful output is the last one: *what this section could not say*, classified by severity. That list is the input to the next `prompts/03` run, so writing the product tells you what evidence to go and find.
+
+`prompts/00-shared-rules.md` records which parts of the GWC SDR method were adopted here, which were refused, and why — so the question does not have to be reopened.
+
 ## The map
 
 `data/geo.js` holds simplified country outlines, generated once from Natural Earth 110m data and committed as data. No CDN, no map library, no network call — the map works offline and from a local file, and will still work in ten years.
@@ -91,7 +99,7 @@ backfill, and grouped the Findings list.
 | `F261` and `F270` | Reach band 2 on the 2026 consultation plus a check-in from the same country. Probably one person counted twice; the build warns on every run. |
 | Syria session 2 | Attaches to `S115`. Coordination architecture is the gap in session 1. |
 | 9 sources never read | Registered but carrying no evidence record: S046–S049, S091–S094, S096. Down from 23. Seven have no URL, which is why they stalled. Listed in `prompts/08-unmined-sources.md`. The build warns every run. |
-| Source URLs | 14 of 106 sources have one. The rest are listed in `prompts/07-source-urls.md`, ordered by how much evidence rests on them. Paste into the `url` column and the Sources tab links it. |
+| Source URLs | 14 of 106 sources have one. Any source added from 2026-08-10 must have one — the build rejects it otherwise. The rest are listed in `prompts/07-source-urls.md`, ordered by how much evidence rests on them. Paste into the `url` column and the Sources tab links it. |
 | `status` is `draft` on every record | By the schema's own definition that means nobody has checked them, which is no longer true — most have been through a tone pass, quote verification and consolidation. Either promote them honestly or change the vocabulary. |
 | Quarterly search | `prompts/03`, due three months after the last source date. |
 

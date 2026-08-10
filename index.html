@@ -944,13 +944,16 @@ function viewSources(d){
     (cited[r.source_id] = cited[r.source_id] || []).push(r.finding_id||r.id);
   });
   if (!d.sources.length) return empty("No sources match these filters.");
-  return '<table><thead><tr><th>ID</th><th>Title</th><th>Year</th><th>Type</th>' +
+  return '<table><thead><tr><th>ID</th><th>Title</th><th>Cite as</th><th>Type</th>' +
     '<th>Stream</th><th>Access</th><th>Cited in</th></tr></thead><tbody>' +
     d.sources.map(function(s){
       var c = uniq(cited[s.source_id]||[]);
       return '<tr><td>'+esc(s.source_id)+'</td>' +
-        '<td>'+(s.url ? '<a href="'+esc(s.url)+'" target="_blank" rel="noopener">'+esc(s.title)+'</a>' : esc(s.title))+'</td>' +
-        '<td>'+esc(s.year||"")+'</td><td>'+esc(label("source_type", s.type))+'</td>' +
+        '<td>'+(s.url ? '<a href="'+esc(s.url)+'" target="_blank" rel="noopener">'+esc(s.title)+'</a>'
+                      : esc(s.title) + ' <span class="note-inline">no link</span>')+'</td>' +
+        // The label the build computes, so a section drafted from this base
+        // cites sources the same way every time.
+        '<td>'+esc(s.label||s.year||"")+'</td><td>'+esc(label("source_type", s.type))+'</td>' +
         '<td>'+esc(label("stream", s.stream))+'</td><td>'+esc(s.access||"")+'</td>' +
         '<td>'+(c.length ? esc(c.join(", ")) : '<span style="color:#B33A3A">not cited</span>')+'</td></tr>';
     }).join("") + '</tbody></table>';
