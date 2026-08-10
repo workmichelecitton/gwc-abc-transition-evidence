@@ -427,7 +427,21 @@ function filtered(skipCountry){
   });
   var fset = {}; finds.forEach(function(f){ fset[f.finding_id]=true; });
   recs = recs.filter(function(r){ return fset[r.finding_id || ("_solo_"+r.id)]; });
-  return { records: recs, findings: finds };
+
+  // Sources actually behind the surviving records. This used to be left out of
+  // the return value entirely, so the Sources tab read D.sources and showed all
+  // 107 whatever was filtered — selecting a stream changed nothing.
+  var sids = {};
+  recs.forEach(function(r){ sids[r.source_id] = true; });
+  // Unfiltered, show the whole registry so that sources carrying no records
+  // stay visible and flagged — that red "not cited" marker is how you notice a
+  // source was registered and then never used. Once a filter is on, show only
+  // what matches, which is what the tab is for.
+  var srcs = activeFilters()
+    ? D.sources.filter(function(x){ return sids[x.source_id]; })
+    : D.sources;
+
+  return { records: recs, findings: finds, sources: srcs };
 }
 
 // --- render ----------------------------------------------------------------
@@ -437,8 +451,11 @@ function render(){
   document.querySelector(".filters").classList.toggle("hidden", hideFilters);
   el("count").classList.toggle("hidden", hideFilters);
   el("count").textContent =
-    d.findings.length + " finding" + (d.findings.length===1?"":"s") + " · " +
-    d.records.length + " evidence record" + (d.records.length===1?"":"s") +
+    (TAB === "sources"
+      ? d.sources.length + " source" + (d.sources.length===1?"":"s") + " · " +
+        d.records.length + " evidence record" + (d.records.length===1?"":"s")
+      : d.findings.length + " finding" + (d.findings.length===1?"":"s") + " · " +
+        d.records.length + " evidence record" + (d.records.length===1?"":"s")) +
     (activeFilters() ? " (filtered)" : "");
   if (!hideFilters) selectedCountryChips();
   var v = el("view");
@@ -750,13 +767,15 @@ function viewMap(){
 
 
 function viewSources(d){
+  // Everything here reads the FILTERED set. Both of these used to read D.
   var cited = {};
-  D.records.forEach(function(r){
+  d.records.forEach(function(r){
     (cited[r.source_id] = cited[r.source_id] || []).push(r.finding_id||r.id);
   });
+  if (!d.sources.length) return empty("No sources match these filters.");
   return '<table><thead><tr><th>ID</th><th>Title</th><th>Year</th><th>Type</th>' +
     '<th>Stream</th><th>Access</th><th>Cited in</th></tr></thead><tbody>' +
-    D.sources.map(function(s){
+    d.sources.map(function(s){
       var c = uniq(cited[s.source_id]||[]);
       return '<tr><td>'+esc(s.source_id)+'</td>' +
         '<td>'+(s.url ? '<a href="'+esc(s.url)+'" target="_blank" rel="noopener">'+esc(s.title)+'</a>' : esc(s.title))+'</td>' +

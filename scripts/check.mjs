@@ -126,6 +126,105 @@ async function exercise(label, url) {
     });
   }
 
+  // ---- every filter, on every tab ----------------------------------------
+  // The Sources tab was showing all 107 sources whatever was selected, because
+  // filtered() never returned a sources list and the view fell back to the full
+  // one. Nothing caught it because nothing exercised a filter and checked the
+  // result. This does.
+  const click = async (sel) => {
+    const el = d.querySelector(sel);
+    if (!el) return false;
+    el.dispatchEvent(new dom.window.Event("click", { bubbles: true }));
+    await new Promise((r) => setTimeout(r, 90));
+    return true;
+  };
+  const goTab = async (name) => {
+    const t = tabs.find((x) => x.dataset.tab === name);
+    t.dispatchEvent(new dom.window.Event("click", { bubbles: true }));
+    await new Promise((r) => setTimeout(r, 110));
+  };
+  const reset = async () => {
+    await click("#reset");
+    await new Promise((r) => setTimeout(r, 110));
+  };
+
+  // What the data says a filter should produce, computed independently of the page.
+  const expect = (pred) => {
+    const recs = site.records.filter(pred);
+    const fids = new Set(recs.map((r) => r.finding_id));
+    const finds = site.findings.filter((f) => fids.has(f.finding_id));
+    const kept = new Set(finds.map((f) => f.finding_id));
+    const recs2 = recs.filter((r) => kept.has(r.finding_id));
+    return { findings: finds.length, sources: new Set(recs2.map((r) => r.source_id)).size };
+  };
+
+  const CASES = [
+    ["stream", "search",       (r) => r.stream === "search"],
+    ["stream", "transcript",   (r) => r.stream === "transcript"],
+    ["stream", "workshop",     (r) => r.stream === "workshop"],
+    ["theme",  "ABC",          (r) => r.theme.includes("ABC")],
+    ["theme",  "Fundamentals", (r) => r.theme.includes("Fundamentals")],
+    ["type",   "barrier",      (r) => r.type === "barrier"],
+    ["type",   "recommendation", (r) => r.type === "recommendation"],
+    ["level",  "global",       (r) => r.level === "global"],
+  ];
+
+  for (const [k, v, pred] of CASES) {
+    await reset();
+    await goTab("sources");
+    const before = $$("#view tbody tr").length;
+    const hit = await click(`.chip[data-k="${k}"][data-v="${v}"]`);
+    ok(hit, `${label}: no filter chip for ${k}=${v}`);
+    const rows = $$("#view tbody tr").length;
+    const exp = expect(pred);
+    ok(rows === exp.sources,
+       `${label}: Sources tab with ${k}=${v} shows ${rows} rows, expected ${exp.sources}`);
+    ok(rows < before,
+       `${label}: filtering ${k}=${v} did not reduce the Sources tab (${before} -> ${rows})`);
+
+    await goTab("findings");
+    const cards = $$("#view .card[data-f]").length;
+    ok(cards === exp.findings,
+       `${label}: Findings tab with ${k}=${v} shows ${cards} cards, expected ${exp.findings}`);
+  }
+
+  // Reset must actually clear everything on every tab. Unfiltered, the Sources
+  // tab shows the WHOLE registry including sources carrying no records, so the
+  // red "not cited" flag stays visible — that is how an unmined source gets
+  // noticed. Filtered, it shows only what matches.
+  await reset();
+  for (const [tab, sel, total] of [
+    ["findings", "#view .card[data-f]", site.findings.length],
+    ["sources",  "#view tbody tr",      site.sources.length],
+  ]) {
+    await goTab(tab);
+    const n = $$(sel).length;
+    ok(n === total, `${label}: after reset, ${tab} shows ${n} of ${total}`);
+  }
+  await goTab("sources");
+  const uncited = new Set(site.sources.map((x) => x.source_id));
+  site.records.forEach((r) => uncited.delete(r.source_id));
+  ok($$("#view tbody tr").length === site.sources.length,
+     `${label}: unfiltered Sources tab hides the ${uncited.size} uncited sources`);
+
+  // The count line must describe the tab you are looking at.
+  await goTab("sources");
+  ok(/\bsources?\b/i.test(d.querySelector("#count").textContent),
+     `${label}: Sources tab count line does not mention sources — "${d.querySelector("#count").textContent}"`);
+
+  // Search box narrows and clears.
+  await reset();
+  await goTab("findings");
+  const q = d.querySelector("#q");
+  q.value = "zzzznotarealword";
+  q.dispatchEvent(new dom.window.Event("input", { bubbles: true }));
+  await new Promise((r) => setTimeout(r, 110));
+  ok($$("#view .card[data-f]").length === 0,
+     `${label}: search for nonsense still returned findings`);
+  await reset();
+  ok($$("#view .card[data-f]").length === site.findings.length,
+     `${label}: reset did not clear the search box`);
+
   // Highlights must carry curated plain-language text, not the analytic statement.
   const hi = site.findings.filter((f) => f.strength === "high");
   const noHl = hi.filter((f) => !f.highlight || !f.highlight.plain);

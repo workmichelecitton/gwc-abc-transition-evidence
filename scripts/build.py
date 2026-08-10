@@ -366,6 +366,19 @@ def main():
     if missing:
         warn("high-strength findings with no plain-language highlight yet: " + ", ".join(missing))
 
+    # ---- unmined sources ----------------------------------------------------
+    # A source in the registry with no evidence record against it has been
+    # listed but never read. That is a silent gap: the Sources tab makes the
+    # base look broader than the evidence actually is. S086-S100 sat like this
+    # for months — a contiguous block imported with the registry and never
+    # extracted from, including several substantive evaluations.
+    used = {r.get("source_id") for r in evidence_rows}
+    unmined = [s for s in sources if s["source_id"] not in used]
+    if unmined:
+        warn(f"{len(unmined)} sources are registered but carry no evidence record — "
+             f"listed, never read: {', '.join(s['source_id'] for s in unmined[:16])}"
+             + (" …" if len(unmined) > 16 else ""))
+
     # ---- verifiability guard ------------------------------------------------
     # A transcript record with no quote cannot be checked against its source by
     # anyone who was not on the call. That is how an inference gets recorded as
