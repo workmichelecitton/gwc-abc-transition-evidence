@@ -131,13 +131,32 @@ def main():
         # Enforced for anything added from URL_RULE_FROM onward only. Making it
         # retroactive would fail the build on 92 legacy rows and help nobody; the
         # warning below keeps them visible instead of pretending they are fine.
+        # Restricted material is exempt, and has to be. A country conversation is
+        # confidential by design: the raw transcript never enters this repository
+        # and there is no link to give. Requiring one would force the choice
+        # between breaking the build and publishing something that must not be
+        # published. What is required instead is a note saying where it is held,
+        # so the record is still traceable to a human who can check it.
         added = clean.get("date_added", "")
-        if not clean.get("url", "").startswith("http"):
+        restricted = clean.get("access", "") == "restricted"
+        if restricted:
+            # Same shape as the URL rule, and for the same reason: a new rule that
+            # fails the build on rows written before it existed helps nobody.
+            if "outside this repository" not in (r.get("notes") or "").lower():
+                msg = (f"sources.csv row {i} ({sid}): restricted source with no note saying "
+                       f"where the raw material is held. Say 'outside this repository' — that "
+                       f"is the phrase the next person will search for.")
+                if added >= URL_RULE_FROM:
+                    errors.append("  " + msg)
+                else:
+                    warn(msg)
+        elif not clean.get("url", "").startswith("http"):
             if added >= URL_RULE_FROM:
                 errors.append(
-                    f"  sources.csv row {i} ({sid}): no URL. Every source added from "
+                    f"  sources.csv row {i} ({sid}): no URL. Every published source added from "
                     f"{URL_RULE_FROM} must have one — if it is not online, put the file in "
-                    f"/raw/ and record the filename in notes, but do not register it linkless.")
+                    f"/raw/ and record the filename in notes, but do not register it linkless. "
+                    f"If it is confidential, set access to 'restricted'.")
             else:
                 no_url.append(sid)
 

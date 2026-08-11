@@ -95,13 +95,13 @@
   "footer_note": "Every finding traces to a source ID in the Sources tab. If something looks wrong, it probably is — say so and it will be corrected."
  },
  "schema": 3,
- "generated": "2026-08-10",
+ "generated": "2026-08-11",
  "taxonomy_version": "0.8.0",
  "stats": {
-  "records": 682,
-  "findings": 137,
-  "sources": 106,
-  "countries": 29,
+  "records": 720,
+  "findings": 160,
+  "sources": 107,
+  "countries": 30,
   "withheld_internal": 2
  },
  "taxonomy": {
@@ -685,8 +685,8 @@
    "example": "Somalia — subnational coordinators were asked for allocation input without the national coordinator copied in, and the cluster first saw the allocation strategy when a partner forwarded it.",
    "type": "barrier",
    "strength": 4,
-   "n_records": 8,
-   "n_sources": 4,
+   "n_records": 9,
+   "n_sources": 5,
    "n_streams": 2,
    "streams": [
     "sdr",
@@ -694,17 +694,20 @@
    ],
    "countries": [
     "SDN",
-    "SOM"
+    "SOM",
+    "VEN"
    ],
    "tags": [
     "coordination-architecture",
     "funding",
+    "government-engagement",
     "information-management",
     "partnerships",
     "pooled-funds"
    ],
    "actors": [
     "cluster",
+    "gov-national",
     "ingo",
     "ocha",
     "operational-cell",
@@ -718,7 +721,8 @@
     "E0023",
     "E0112",
     "E0113",
-    "E0115"
+    "E0115",
+    "E0720"
    ],
    "unmerged": false,
    "highlight": {
@@ -736,28 +740,32 @@
    ],
    "example": "Mozambique — the cluster structure reflects the government structure, because every province has a strong provincial administration.",
    "type": "enabler",
-   "strength": 1,
-   "n_records": 2,
-   "n_sources": 1,
+   "strength": 2,
+   "n_records": 3,
+   "n_sources": 2,
    "n_streams": 1,
    "streams": [
     "transcript"
    ],
    "countries": [
-    "MOZ"
+    "MOZ",
+    "VEN"
    ],
    "tags": [
     "coordination-architecture",
+    "geographic-targeting",
     "government-engagement",
     "localisation"
    ],
    "actors": [
     "cluster",
-    "gov-local"
+    "gov-local",
+    "ingo"
    ],
    "record_ids": [
     "E0531",
-    "E0539"
+    "E0539",
+    "E0712"
    ],
    "unmerged": false
   },
@@ -2337,19 +2345,22 @@
    "example": "Haiti — area-based coordination let agencies with established local presence lead joint access negotiations with armed groups and community members.",
    "type": "enabler",
    "strength": 4,
-   "n_records": 3,
-   "n_sources": 3,
-   "n_streams": 2,
+   "n_records": 4,
+   "n_sources": 4,
+   "n_streams": 3,
    "streams": [
     "sdr",
+    "transcript",
     "workshop"
    ],
    "countries": [
     "AFG",
-    "HTI"
+    "HTI",
+    "VEN"
    ],
    "tags": [
     "coordination-architecture",
+    "geographic-targeting",
     "localisation",
     "multisector",
     "partnerships"
@@ -2358,12 +2369,14 @@
     "cluster",
     "community",
     "gov-local",
+    "ingo",
     "local-ngo"
    ],
    "record_ids": [
     "E0175",
     "E0183",
-    "E0646"
+    "E0646",
+    "E0709"
    ],
    "unmerged": false,
    "highlight": {
@@ -2588,6 +2601,727 @@
    "unmerged": false
   },
   {
+   "finding_id": "F1901",
+   "statement": "Organisations arriving after a sudden-onset disaster mostly approach the sector without knowing what a cluster is or how coordination is arranged in the country, so the coordination team spends the first weeks explaining the system rather than running it.",
+   "theme": [
+    "Fundamentals"
+   ],
+   "example": "Venezuela: more than fifty organisations made contact after the earthquake; around a dozen memberships were concluded, and the same pattern was reported from a separate response in the region.",
+   "type": "barrier",
+   "strength": 1,
+   "n_records": 2,
+   "n_sources": 1,
+   "n_streams": 1,
+   "streams": [
+    "transcript"
+   ],
+   "countries": [
+    "VEN"
+   ],
+   "tags": [
+    "capacity",
+    "coordination-architecture",
+    "peer-learning"
+   ],
+   "actors": [
+    "cluster",
+    "ingo"
+   ],
+   "record_ids": [
+    "E0697",
+    "E0734"
+   ],
+   "unmerged": false
+  },
+  {
+   "finding_id": "F1902",
+   "statement": "Organisations deployed for a short rapid-response window cannot say what they will do afterwards, so the coordination team cannot judge whether admitting them establishes a lasting relationship or a temporary one.",
+   "theme": [
+    "Fundamentals"
+   ],
+   "example": "",
+   "type": "barrier",
+   "strength": 1,
+   "n_records": 1,
+   "n_sources": 1,
+   "n_streams": 1,
+   "streams": [
+    "transcript"
+   ],
+   "countries": [
+    "VEN"
+   ],
+   "tags": [
+    "coordination-architecture",
+    "partnerships"
+   ],
+   "actors": [
+    "cluster",
+    "ingo"
+   ],
+   "record_ids": [
+    "E0699"
+   ],
+   "unmerged": false
+  },
+  {
+   "finding_id": "F1903",
+   "statement": "Some newly arriving organisations did not meet minimum safeguarding and protection-from-exploitation requirements, which the coordination team had to establish case by case before admitting them.",
+   "theme": [
+    "Fundamentals"
+   ],
+   "example": "",
+   "type": "barrier",
+   "strength": 1,
+   "n_records": 1,
+   "n_sources": 1,
+   "n_streams": 1,
+   "streams": [
+    "transcript"
+   ],
+   "countries": [
+    "VEN"
+   ],
+   "tags": [
+    "partnerships",
+    "performance"
+   ],
+   "actors": [
+    "cluster",
+    "ingo"
+   ],
+   "record_ids": [
+    "E0700"
+   ],
+   "unmerged": false
+  },
+  {
+   "finding_id": "F1904",
+   "statement": "Incoming organisations that implement without engaging the coordination structure put at risk relationships with national authorities that took the humanitarian community years to build.",
+   "theme": [
+    "Fundamentals"
+   ],
+   "example": "Venezuela: authorities became measurably more willing to meet coordination structures after the earthquake, an opening that predates none of the new arrivals.",
+   "type": "barrier",
+   "strength": 1,
+   "n_records": 1,
+   "n_sources": 1,
+   "n_streams": 1,
+   "streams": [
+    "transcript"
+   ],
+   "countries": [
+    "VEN"
+   ],
+   "tags": [
+    "coordination-architecture",
+    "government-engagement"
+   ],
+   "actors": [
+    "cluster",
+    "gov-national",
+    "ingo"
+   ],
+   "record_ids": [
+    "E0701"
+   ],
+   "unmerged": false
+  },
+  {
+   "finding_id": "F1905",
+   "statement": "Staff hired on one- and two-month emergency contracts bypass established coordination because delivering inside their contract leaves no time to work at the structure's pace.",
+   "theme": [
+    "Fundamentals"
+   ],
+   "example": "",
+   "type": "barrier",
+   "strength": 1,
+   "n_records": 1,
+   "n_sources": 1,
+   "n_streams": 1,
+   "streams": [
+    "transcript"
+   ],
+   "countries": [
+    "VEN"
+   ],
+   "tags": [
+    "coordination-architecture",
+    "staff-turnover"
+   ],
+   "actors": [
+    "ingo"
+   ],
+   "record_ids": [
+    "E0703"
+   ],
+   "unmerged": false
+  },
+  {
+   "finding_id": "F1906",
+   "statement": "A sudden-onset disaster made national authorities more willing to meet coordination structures than they had been for years, opening an engagement window that predates none of the new arrivals.",
+   "theme": [
+    "Fundamentals"
+   ],
+   "example": "",
+   "type": "context",
+   "strength": 1,
+   "n_records": 1,
+   "n_sources": 1,
+   "n_streams": 1,
+   "streams": [
+    "transcript"
+   ],
+   "countries": [
+    "VEN"
+   ],
+   "tags": [
+    "government-engagement"
+   ],
+   "actors": [
+    "cluster",
+    "gov-national"
+   ],
+   "record_ids": [
+    "E0702"
+   ],
+   "unmerged": false
+  },
+  {
+   "finding_id": "F1907",
+   "statement": "The cluster passed lists of established local partners to the humanitarian coordination office so that funding opportunities could reach them, using its partner knowledge as a localisation instrument.",
+   "theme": [
+    "Fundamentals"
+   ],
+   "example": "",
+   "type": "practice",
+   "strength": 1,
+   "n_records": 1,
+   "n_sources": 1,
+   "n_streams": 1,
+   "streams": [
+    "transcript"
+   ],
+   "countries": [
+    "VEN"
+   ],
+   "tags": [
+    "funding",
+    "localisation"
+   ],
+   "actors": [
+    "cluster",
+    "local-ngo",
+    "ocha"
+   ],
+   "record_ids": [
+    "E0705"
+   ],
+   "unmerged": false
+  },
+  {
+   "finding_id": "F1908",
+   "statement": "Membership renewal was kept open all year rather than run as an annual cycle, so organisations that had withdrawn during the previous year's funding contraction could rejoin by expressing interest against the sector's stated minimum criteria.",
+   "theme": [
+    "Fundamentals"
+   ],
+   "example": "",
+   "type": "practice",
+   "strength": 1,
+   "n_records": 1,
+   "n_sources": 1,
+   "n_streams": 1,
+   "streams": [
+    "transcript"
+   ],
+   "countries": [
+    "VEN"
+   ],
+   "tags": [
+    "funding",
+    "partnerships"
+   ],
+   "actors": [
+    "cluster",
+    "local-ngo"
+   ],
+   "record_ids": [
+    "E0706"
+   ],
+   "unmerged": false
+  },
+  {
+   "finding_id": "F1909",
+   "statement": "A funding contraction the previous year pushed WASH actors out of the country, so the response to a new emergency began with fewer known partners than the country had before.",
+   "theme": [
+    "Fundamentals"
+   ],
+   "example": "",
+   "type": "barrier",
+   "strength": 1,
+   "n_records": 1,
+   "n_sources": 1,
+   "n_streams": 1,
+   "streams": [
+    "transcript"
+   ],
+   "countries": [
+    "VEN"
+   ],
+   "tags": [
+    "capacity",
+    "funding"
+   ],
+   "actors": [
+    "ingo",
+    "local-ngo"
+   ],
+   "record_ids": [
+    "E0707"
+   ],
+   "unmerged": false
+  },
+  {
+   "finding_id": "F1910",
+   "statement": "Access to some displacement sites is guaranteed through particular UN agencies' relationships with the authorities, and other organisations reach those sites through that channel — so who can coordinate where is set by agency-level relationships rather than by the sector.",
+   "theme": [
+    "ABC"
+   ],
+   "example": "",
+   "type": "context",
+   "strength": 1,
+   "n_records": 1,
+   "n_sources": 1,
+   "n_streams": 1,
+   "streams": [
+    "transcript"
+   ],
+   "countries": [
+    "VEN"
+   ],
+   "tags": [
+    "geographic-targeting",
+    "government-engagement"
+   ],
+   "actors": [
+    "cluster",
+    "gov-national",
+    "un-agency"
+   ],
+   "record_ids": [
+    "E0710"
+   ],
+   "unmerged": false
+  },
+  {
+   "finding_id": "F1911",
+   "statement": "A local coordination forum is being established in the worst-affected area, and the sector is proposing that it carry a mapping instrument capable of showing sector-specific activity at that level.",
+   "theme": [
+    "ABC"
+   ],
+   "example": "",
+   "type": "practice",
+   "strength": 1,
+   "n_records": 1,
+   "n_sources": 1,
+   "n_streams": 1,
+   "streams": [
+    "transcript"
+   ],
+   "countries": [
+    "VEN"
+   ],
+   "tags": [
+    "geographic-targeting",
+    "information-management",
+    "multisector"
+   ],
+   "actors": [
+    "cluster",
+    "gov-local"
+   ],
+   "record_ids": [
+    "E0713"
+   ],
+   "unmerged": false
+  },
+  {
+   "finding_id": "F1912",
+   "statement": "Services that fall between sector mandates are routinely left out of planning because no sector owns them — waste management between shelter and WASH, and laundry, washing and cooking space in displacement sites.",
+   "theme": [
+    "Fundamentals"
+   ],
+   "example": "Venezuela: at community level waste management merges with debris removal, which is a municipal and state responsibility rather than a humanitarian one.",
+   "type": "barrier",
+   "strength": 1,
+   "n_records": 2,
+   "n_sources": 1,
+   "n_streams": 1,
+   "streams": [
+    "transcript"
+   ],
+   "countries": [
+    "VEN"
+   ],
+   "tags": [
+    "coordination-architecture",
+    "multisector"
+   ],
+   "actors": [
+    "cluster",
+    "gov-local"
+   ],
+   "record_ids": [
+    "E0714",
+    "E0715"
+   ],
+   "unmerged": false
+  },
+  {
+   "finding_id": "F1913",
+   "statement": "Where WASH and health responsibilities meet, the division of labour has never been formalised in the country, and each response reopens the same question of who covers what.",
+   "theme": [
+    "Fundamentals"
+   ],
+   "example": "",
+   "type": "barrier",
+   "strength": 1,
+   "n_records": 1,
+   "n_sources": 1,
+   "n_streams": 1,
+   "streams": [
+    "transcript"
+   ],
+   "countries": [
+    "VEN"
+   ],
+   "tags": [
+    "coordination-architecture",
+    "guidance"
+   ],
+   "actors": [
+    "cluster"
+   ],
+   "record_ids": [
+    "E0717"
+   ],
+   "unmerged": false
+  },
+  {
+   "finding_id": "F1914",
+   "statement": "A cross-cluster responsibility matrix, setting out what each sector needs from the other and what the two must do jointly, gives two sectors a documented basis for agreeing a division of labour instead of renegotiating it verbally each time.",
+   "theme": [
+    "Fundamentals"
+   ],
+   "example": "",
+   "type": "recommendation",
+   "strength": 1,
+   "n_records": 1,
+   "n_sources": 1,
+   "n_streams": 1,
+   "streams": [
+    "transcript"
+   ],
+   "countries": [],
+   "tags": [
+    "coordination-architecture",
+    "guidance"
+   ],
+   "actors": [
+    "cluster"
+   ],
+   "record_ids": [
+    "E0718"
+   ],
+   "unmerged": false
+  },
+  {
+   "finding_id": "F1915",
+   "statement": "During an earlier emergency the two sectors worked under a joint leadership arrangement in which one sector carried most of the work while the other retained visible co-leadership, which was enough to keep the two aligned.",
+   "theme": [
+    "Fundamentals"
+   ],
+   "example": "",
+   "type": "practice",
+   "strength": 1,
+   "n_records": 1,
+   "n_sources": 1,
+   "n_streams": 1,
+   "streams": [
+    "transcript"
+   ],
+   "countries": [
+    "VEN"
+   ],
+   "tags": [
+    "coordination-architecture",
+    "partnerships"
+   ],
+   "actors": [
+    "cluster"
+   ],
+   "record_ids": [
+    "E0719"
+   ],
+   "unmerged": false
+  },
+  {
+   "finding_id": "F1916",
+   "statement": "Post-disaster recovery assessment and planning is convened between government and development finance actors, and sector coordination structures have no defined route into it even though the reconstruction being planned is theirs.",
+   "theme": [
+    "Transition"
+   ],
+   "example": "Venezuela: clusters were not involved at the outset of the post-disaster needs assessment and learned about it indirectly through agency programme sections.",
+   "type": "barrier",
+   "strength": 1,
+   "n_records": 2,
+   "n_sources": 1,
+   "n_streams": 1,
+   "streams": [
+    "transcript"
+   ],
+   "countries": [
+    "VEN"
+   ],
+   "tags": [
+    "government-engagement",
+    "hpc",
+    "nexus",
+    "transition-handover"
+   ],
+   "actors": [
+    "cluster",
+    "development",
+    "gov-national"
+   ],
+   "record_ids": [
+    "E0721",
+    "E0722"
+   ],
+   "unmerged": false
+  },
+  {
+   "finding_id": "F1917",
+   "statement": "Assessment design for the planning cycle improved on two fronts at once: household-level data collection replacing key-informant interviews, and a common instrument across separate sudden-onset events so both feed one analysis.",
+   "theme": [
+    "Fundamentals"
+   ],
+   "example": "",
+   "type": "practice",
+   "strength": 1,
+   "n_records": 2,
+   "n_sources": 1,
+   "n_streams": 1,
+   "streams": [
+    "transcript"
+   ],
+   "countries": [
+    "VEN"
+   ],
+   "tags": [
+    "hpc",
+    "information-management"
+   ],
+   "actors": [
+    "cluster",
+    "ocha"
+   ],
+   "record_ids": [
+    "E0723",
+    "E0724"
+   ],
+   "unmerged": false
+  },
+  {
+   "finding_id": "F1918",
+   "statement": "A sudden-onset emergency displaced the planning calendar for the following year, pushing back the main data collection and leaving the analysis timetable unsettled.",
+   "theme": [
+    "Fundamentals"
+   ],
+   "example": "",
+   "type": "barrier",
+   "strength": 1,
+   "n_records": 1,
+   "n_sources": 1,
+   "n_streams": 1,
+   "streams": [
+    "transcript"
+   ],
+   "countries": [
+    "VEN"
+   ],
+   "tags": [
+    "hpc"
+   ],
+   "actors": [
+    "cluster",
+    "ocha"
+   ],
+   "record_ids": [
+    "E0725"
+   ],
+   "unmerged": false
+  },
+  {
+   "finding_id": "F1919",
+   "statement": "The sector set aside part of its capacity-building budget to run a workshop with partners on harmonising information ahead of the planning cycle, rather than treating analysis as a coordination-team task.",
+   "theme": [
+    "Fundamentals"
+   ],
+   "example": "",
+   "type": "practice",
+   "strength": 1,
+   "n_records": 1,
+   "n_sources": 1,
+   "n_streams": 1,
+   "streams": [
+    "transcript"
+   ],
+   "countries": [
+    "VEN"
+   ],
+   "tags": [
+    "capacity",
+    "hpc",
+    "information-management"
+   ],
+   "actors": [
+    "cluster",
+    "local-ngo"
+   ],
+   "record_ids": [
+    "E0726"
+   ],
+   "unmerged": false
+  },
+  {
+   "finding_id": "F1920",
+   "statement": "A partner capacity map built in the first week of a response records who is present but goes out of date as funding and activities shift; the instrument that lasted was built later, with partner input, and extended to new settings as demand appeared.",
+   "theme": [
+    "Fundamentals"
+   ],
+   "example": "Venezuela: the mapping tool is being extended from displacement sites and communities to health facilities, with schools expected to follow.",
+   "type": "practice",
+   "strength": 1,
+   "n_records": 2,
+   "n_sources": 1,
+   "n_streams": 1,
+   "streams": [
+    "transcript"
+   ],
+   "countries": [
+    "VEN"
+   ],
+   "tags": [
+    "capacity",
+    "information-management"
+   ],
+   "actors": [
+    "cluster",
+    "ingo"
+   ],
+   "record_ids": [
+    "E0727",
+    "E0728"
+   ],
+   "unmerged": false
+  },
+  {
+   "finding_id": "F1921",
+   "statement": "The sector convened a meeting for the specific group of partners working in health facilities, rather than raising the issue in the general sector meeting, in order to prevent duplication in that setting.",
+   "theme": [
+    "Fundamentals"
+   ],
+   "example": "",
+   "type": "practice",
+   "strength": 1,
+   "n_records": 1,
+   "n_sources": 1,
+   "n_streams": 1,
+   "streams": [
+    "transcript"
+   ],
+   "countries": [
+    "VEN"
+   ],
+   "tags": [
+    "coordination-architecture",
+    "multisector"
+   ],
+   "actors": [
+    "cluster",
+    "ingo"
+   ],
+   "record_ids": [
+    "E0729"
+   ],
+   "unmerged": false
+  },
+  {
+   "finding_id": "F1922",
+   "statement": "Sector meetings were opened to every actor present rather than to members only, which reached the new arrivals but made the meetings harder to run and drew in suppliers and private-sector actors offering services.",
+   "theme": [
+    "Fundamentals"
+   ],
+   "example": "",
+   "type": "practice",
+   "strength": 1,
+   "n_records": 1,
+   "n_sources": 1,
+   "n_streams": 1,
+   "streams": [
+    "transcript"
+   ],
+   "countries": [
+    "VEN"
+   ],
+   "tags": [
+    "coordination-architecture",
+    "partnerships"
+   ],
+   "actors": [
+    "cluster",
+    "ingo",
+    "private-sector"
+   ],
+   "record_ids": [
+    "E0730"
+   ],
+   "unmerged": false
+  },
+  {
+   "finding_id": "F1923",
+   "statement": "Donors attended regular sector meetings and held bilateral sessions with the coordination team on gaps and the six- to twelve-month outlook, which gave the sector a direct channel into allocation decisions.",
+   "theme": [
+    "Fundamentals"
+   ],
+   "example": "",
+   "type": "enabler",
+   "strength": 1,
+   "n_records": 1,
+   "n_sources": 1,
+   "n_streams": 1,
+   "streams": [
+    "transcript"
+   ],
+   "countries": [
+    "VEN"
+   ],
+   "tags": [
+    "advocacy",
+    "funding",
+    "partnerships"
+   ],
+   "actors": [
+    "cluster",
+    "donor"
+   ],
+   "record_ids": [
+    "E0733"
+   ],
+   "unmerged": false
+  },
+  {
    "finding_id": "F201",
    "statement": "The need to create dedicated structures such as a drought strategic working group and community resource centres shows that existing coordination systems could not support integrated multi-sectoral assistance.",
    "theme": [
@@ -2626,19 +3360,22 @@
    ],
    "example": "Somalia — the drought response revealed uneven sectoral delivery, with actors operating in the same areas without a shared planning framework.",
    "type": "barrier",
-   "strength": 3,
-   "n_records": 5,
-   "n_sources": 5,
-   "n_streams": 1,
+   "strength": 5,
+   "n_records": 6,
+   "n_sources": 6,
+   "n_streams": 2,
    "streams": [
-    "sdr"
+    "sdr",
+    "transcript"
    ],
    "countries": [
     "SOM",
+    "VEN",
     "YEM"
    ],
    "tags": [
     "coordination-architecture",
+    "information-management",
     "multisector",
     "performance"
    ],
@@ -2646,14 +3383,16 @@
     "cluster",
     "ingo",
     "ocha",
-    "operational-cell"
+    "operational-cell",
+    "un-agency"
    ],
    "record_ids": [
     "E0107",
     "E0109",
     "E0110",
     "E0116",
-    "E0691"
+    "E0691",
+    "E0716"
    ],
    "unmerged": false,
    "highlight": {
@@ -3080,20 +3819,23 @@
   },
   {
    "finding_id": "F224",
-   "statement": "Local actors have limited access to funding, to decision-making spaces and to long-term institutional support, which persistently undermines equitable partnership.",
+   "statement": "Local actors have limited access to funding, to decision-making spaces and to long-term institutional support, and a sudden influx of international actors makes that worse by competing for access and partnership as well as money.",
    "theme": [
-    "ABC"
+    "Fundamentals"
    ],
-   "example": "",
+   "example": "Venezuela: established national organisations reported feeling displaced after the earthquake, not only for funding but for access to affected areas.",
    "type": "barrier",
-   "strength": 2,
-   "n_records": 2,
-   "n_sources": 2,
-   "n_streams": 1,
+   "strength": 4,
+   "n_records": 3,
+   "n_sources": 3,
+   "n_streams": 2,
    "streams": [
-    "sdr"
+    "sdr",
+    "transcript"
    ],
-   "countries": [],
+   "countries": [
+    "VEN"
+   ],
    "tags": [
     "funding",
     "localisation",
@@ -3101,13 +3843,21 @@
    ],
    "actors": [
     "donor",
+    "ingo",
     "local-ngo"
    ],
    "record_ids": [
     "E0143",
-    "E0144"
+    "E0144",
+    "E0704"
    ],
-   "unmerged": false
+   "unmerged": false,
+   "highlight": {
+    "headline": "A surge of new arrivals pushes local organisations further out",
+    "plain": "Local organisations already struggle to reach funding, decision-making and steady institutional support. When a new emergency brings in a wave of international actors, the competition extends to access and partnerships too, so the organisations that were there before the crisis end up with less.",
+    "so_what": "When a response scales up quickly, protecting the position of established local actors has to be deliberate — it does not happen on its own.",
+    "rank": 6
+   }
   },
   {
    "finding_id": "F225",
@@ -3544,8 +4294,8 @@
    "example": "Somalia — a major drought scale-up was anchored by five operational coordination hubs with dedicated subnational capacity and district-level area coordination groups.",
    "type": "enabler",
    "strength": 4,
-   "n_records": 4,
-   "n_sources": 4,
+   "n_records": 5,
+   "n_sources": 5,
    "n_streams": 2,
    "streams": [
     "sdr",
@@ -3553,11 +4303,13 @@
    ],
    "countries": [
     "SDN",
-    "SOM"
+    "SOM",
+    "VEN"
    ],
    "tags": [
     "capacity",
     "coordination-architecture",
+    "geographic-targeting",
     "information-management"
    ],
    "actors": [
@@ -3569,7 +4321,8 @@
     "E0177",
     "E0182",
     "E0419",
-    "E0696"
+    "E0696",
+    "E0711"
    ],
    "unmerged": false,
    "highlight": {
@@ -5817,8 +6570,8 @@
    "example": "Colombia — in the second allocation round the clusters were consulted and asked to submit a matrix recommending municipalities together with the reasoning.",
    "type": "enabler",
    "strength": 3,
-   "n_records": 9,
-   "n_sources": 5,
+   "n_records": 11,
+   "n_sources": 6,
    "n_streams": 1,
    "streams": [
     "transcript"
@@ -5827,10 +6580,12 @@
     "COL",
     "LBN",
     "MLI",
-    "MMR"
+    "MMR",
+    "VEN"
    ],
    "tags": [
     "advocacy",
+    "coordination-architecture",
     "funding",
     "geographic-targeting",
     "information-management",
@@ -5856,7 +6611,9 @@
     "E0485",
     "E0491",
     "E0607",
-    "E0626"
+    "E0626",
+    "E0731",
+    "E0732"
    ],
    "unmerged": false,
    "highlight": {
@@ -6400,8 +7157,8 @@
    "example": "Niger — a change to the pooled fund review process arrived with a day's notice, required the committee to meet across the week, and displaced the cluster meeting and other planned work.",
    "type": "barrier",
    "strength": 3,
-   "n_records": 7,
-   "n_sources": 5,
+   "n_records": 9,
+   "n_sources": 6,
    "n_streams": 1,
    "streams": [
     "transcript"
@@ -6411,7 +7168,8 @@
     "LBN",
     "MLI",
     "MMR",
-    "NER"
+    "NER",
+    "VEN"
    ],
    "tags": [
     "advocacy",
@@ -6436,7 +7194,9 @@
     "E0492",
     "E0573",
     "E0576",
-    "E0601"
+    "E0601",
+    "E0698",
+    "E0708"
    ],
    "unmerged": false,
    "highlight": {
@@ -24429,6 +25189,991 @@
    "date_collected": "2026-08-07",
    "confidence": "high",
    "status": "draft"
+  },
+  {
+   "id": "E0697",
+   "finding_id": "F1901",
+   "theme": [
+    "Fundamentals"
+   ],
+   "type": "barrier",
+   "statement": "A sudden-onset emergency inside a protracted crisis draws in organisations with no prior presence, most of which approach the cluster without understanding what a cluster is or how coordination is arranged in the country.",
+   "level": "national",
+   "countries": [
+    "VEN"
+   ],
+   "actors": [
+    "cluster",
+    "ingo"
+   ],
+   "tags": [
+    "coordination-architecture",
+    "capacity"
+   ],
+   "stream": "transcript",
+   "source_id": "S119",
+   "date_collected": "2026-08-10",
+   "confidence": "high",
+   "status": "draft"
+  },
+  {
+   "id": "E0698",
+   "finding_id": "F802",
+   "theme": [
+    "Fundamentals"
+   ],
+   "type": "barrier",
+   "statement": "Screening an influx of new organisations falls to the coordination team as unplanned bilateral work, on top of the existing coordination load and with no additional capacity.",
+   "level": "national",
+   "countries": [
+    "VEN"
+   ],
+   "actors": [
+    "cluster"
+   ],
+   "tags": [
+    "capacity",
+    "partnerships"
+   ],
+   "stream": "transcript",
+   "source_id": "S119",
+   "date_collected": "2026-08-10",
+   "confidence": "high",
+   "status": "draft"
+  },
+  {
+   "id": "E0699",
+   "finding_id": "F1902",
+   "theme": [
+    "Fundamentals"
+   ],
+   "type": "barrier",
+   "statement": "Organisations arriving for a short rapid-response window cannot say what they will be doing afterwards, so the cluster cannot tell whether admitting them to the sector is a lasting arrangement or a temporary one.",
+   "level": "national",
+   "countries": [
+    "VEN"
+   ],
+   "actors": [
+    "cluster",
+    "ingo"
+   ],
+   "tags": [
+    "partnerships",
+    "coordination-architecture"
+   ],
+   "stream": "transcript",
+   "source_id": "S119",
+   "date_collected": "2026-08-10",
+   "confidence": "high",
+   "status": "draft"
+  },
+  {
+   "id": "E0700",
+   "finding_id": "F1903",
+   "theme": [
+    "Fundamentals"
+   ],
+   "type": "barrier",
+   "statement": "Some newly arriving organisations did not meet minimum safeguarding and protection-from-exploitation requirements, which the coordination team had to establish case by case before admitting them.",
+   "level": "national",
+   "countries": [
+    "VEN"
+   ],
+   "actors": [
+    "cluster",
+    "ingo"
+   ],
+   "tags": [
+    "partnerships",
+    "performance"
+   ],
+   "stream": "transcript",
+   "source_id": "S119",
+   "date_collected": "2026-08-10",
+   "confidence": "high",
+   "status": "draft"
+  },
+  {
+   "id": "E0701",
+   "finding_id": "F1904",
+   "theme": [
+    "Fundamentals"
+   ],
+   "type": "barrier",
+   "statement": "Incoming organisations implement without engaging the coordination structure, and in doing so put at risk relationships with national authorities that the humanitarian community built over several years.",
+   "level": "national",
+   "countries": [
+    "VEN"
+   ],
+   "actors": [
+    "ingo",
+    "gov-national",
+    "cluster"
+   ],
+   "tags": [
+    "government-engagement",
+    "coordination-architecture"
+   ],
+   "stream": "transcript",
+   "source_id": "S119",
+   "date_collected": "2026-08-10",
+   "confidence": "high",
+   "status": "draft"
+  },
+  {
+   "id": "E0702",
+   "finding_id": "F1906",
+   "theme": [
+    "Fundamentals"
+   ],
+   "type": "context",
+   "statement": "A sudden-onset disaster made national authorities more willing to meet coordination structures than they had been for years, opening an engagement window that predates none of the new arrivals.",
+   "level": "national",
+   "countries": [
+    "VEN"
+   ],
+   "actors": [
+    "gov-national",
+    "cluster"
+   ],
+   "tags": [
+    "government-engagement"
+   ],
+   "stream": "transcript",
+   "source_id": "S119",
+   "date_collected": "2026-08-10",
+   "confidence": "high",
+   "status": "draft"
+  },
+  {
+   "id": "E0703",
+   "finding_id": "F1905",
+   "theme": [
+    "Fundamentals"
+   ],
+   "type": "barrier",
+   "statement": "Staff hired specifically for an emergency surge, on one- and two-month contracts, bypass established coordination because delivering within their contract leaves no time to work at the pace of the existing structure.",
+   "level": "national",
+   "countries": [
+    "VEN"
+   ],
+   "actors": [
+    "ingo"
+   ],
+   "tags": [
+    "staff-turnover",
+    "coordination-architecture"
+   ],
+   "stream": "transcript",
+   "source_id": "S119",
+   "date_collected": "2026-08-10",
+   "confidence": "high",
+   "status": "draft"
+  },
+  {
+   "id": "E0704",
+   "finding_id": "F224",
+   "theme": [
+    "Fundamentals"
+   ],
+   "type": "barrier",
+   "statement": "Local and long-established national organisations report feeling displaced by incoming international actors, not only for funding but for access to affected areas and to partnership opportunities.",
+   "level": "national",
+   "countries": [
+    "VEN"
+   ],
+   "actors": [
+    "local-ngo",
+    "ingo"
+   ],
+   "tags": [
+    "localisation",
+    "funding"
+   ],
+   "stream": "transcript",
+   "source_id": "S119",
+   "date_collected": "2026-08-10",
+   "confidence": "high",
+   "status": "draft"
+  },
+  {
+   "id": "E0705",
+   "finding_id": "F1907",
+   "theme": [
+    "Fundamentals"
+   ],
+   "type": "practice",
+   "statement": "The cluster passed lists of established local partners to the humanitarian coordination office so that funding opportunities could reach them, using its partner knowledge as a localisation instrument.",
+   "level": "national",
+   "countries": [
+    "VEN"
+   ],
+   "actors": [
+    "cluster",
+    "local-ngo",
+    "ocha"
+   ],
+   "tags": [
+    "localisation",
+    "funding"
+   ],
+   "stream": "transcript",
+   "source_id": "S119",
+   "date_collected": "2026-08-10",
+   "confidence": "high",
+   "status": "draft"
+  },
+  {
+   "id": "E0706",
+   "finding_id": "F1908",
+   "theme": [
+    "Fundamentals"
+   ],
+   "type": "practice",
+   "statement": "Membership renewal was kept open all year rather than run as an annual cycle, so organisations that had withdrawn during the previous year's funding contraction could rejoin by expressing interest against the sector's stated minimum criteria.",
+   "level": "national",
+   "countries": [
+    "VEN"
+   ],
+   "actors": [
+    "cluster",
+    "local-ngo"
+   ],
+   "tags": [
+    "partnerships",
+    "funding"
+   ],
+   "stream": "transcript",
+   "source_id": "S119",
+   "date_collected": "2026-08-10",
+   "confidence": "high",
+   "status": "draft"
+  },
+  {
+   "id": "E0707",
+   "finding_id": "F1909",
+   "theme": [
+    "Fundamentals"
+   ],
+   "type": "barrier",
+   "statement": "A funding contraction the previous year pushed WASH actors out of the country, so the response to a new emergency began with fewer known partners than the country had before.",
+   "level": "national",
+   "countries": [
+    "VEN"
+   ],
+   "actors": [
+    "ingo",
+    "local-ngo"
+   ],
+   "tags": [
+    "funding",
+    "capacity"
+   ],
+   "stream": "transcript",
+   "source_id": "S119",
+   "date_collected": "2026-08-10",
+   "confidence": "medium",
+   "status": "draft"
+  },
+  {
+   "id": "E0708",
+   "finding_id": "F802",
+   "theme": [
+    "Fundamentals"
+   ],
+   "type": "barrier",
+   "statement": "Coordinators were contacted through every available channel at once during the surge, and managing that contact became a significant drain on the coordination team.",
+   "level": "national",
+   "countries": [
+    "VEN"
+   ],
+   "actors": [
+    "cluster"
+   ],
+   "tags": [
+    "capacity"
+   ],
+   "stream": "transcript",
+   "source_id": "S119",
+   "date_collected": "2026-08-10",
+   "confidence": "high",
+   "status": "draft"
+  },
+  {
+   "id": "E0709",
+   "finding_id": "F1712",
+   "theme": [
+    "ABC"
+   ],
+   "type": "practice",
+   "statement": "Operational and technical tables were set up inside individual displacement sites so that organisations working in the same site would not duplicate each other, rather than coordinating them only through the national sector meeting.",
+   "level": "subnational",
+   "countries": [
+    "VEN"
+   ],
+   "actors": [
+    "cluster",
+    "ingo"
+   ],
+   "tags": [
+    "geographic-targeting",
+    "coordination-architecture"
+   ],
+   "stream": "transcript",
+   "source_id": "S119",
+   "date_collected": "2026-08-10",
+   "confidence": "high",
+   "status": "draft"
+  },
+  {
+   "id": "E0710",
+   "finding_id": "F1910",
+   "theme": [
+    "ABC"
+   ],
+   "type": "context",
+   "statement": "Access to some displacement sites is guaranteed through particular UN agencies' relationships with the authorities, and other organisations reach those sites through that channel — so who can coordinate where is set by agency-level relationships rather than by the sector.",
+   "level": "subnational",
+   "countries": [
+    "VEN"
+   ],
+   "actors": [
+    "un-agency",
+    "gov-national",
+    "cluster"
+   ],
+   "tags": [
+    "government-engagement",
+    "geographic-targeting"
+   ],
+   "stream": "transcript",
+   "source_id": "S119",
+   "date_collected": "2026-08-10",
+   "confidence": "high",
+   "status": "draft"
+  },
+  {
+   "id": "E0711",
+   "finding_id": "F251",
+   "theme": [
+    "ABC"
+   ],
+   "type": "barrier",
+   "statement": "Sector coordination had no standing presence in the worst-affected area, so the coordination team could only visit for specific information-gathering and could not see how site-level dynamics were working.",
+   "level": "subnational",
+   "countries": [
+    "VEN"
+   ],
+   "actors": [
+    "cluster"
+   ],
+   "tags": [
+    "capacity",
+    "geographic-targeting"
+   ],
+   "stream": "transcript",
+   "source_id": "S119",
+   "date_collected": "2026-08-10",
+   "confidence": "high",
+   "status": "draft"
+  },
+  {
+   "id": "E0712",
+   "finding_id": "F002",
+   "theme": [
+    "ABC"
+   ],
+   "type": "enabler",
+   "statement": "A local coordination forum covering several states gave the sector a route to raise technical issues directly with a state government, which produced joint training for site managers on waste management and vector control.",
+   "level": "subnational",
+   "countries": [
+    "VEN"
+   ],
+   "actors": [
+    "gov-local",
+    "cluster",
+    "ingo"
+   ],
+   "tags": [
+    "government-engagement",
+    "geographic-targeting"
+   ],
+   "stream": "transcript",
+   "source_id": "S119",
+   "date_collected": "2026-08-10",
+   "confidence": "high",
+   "status": "draft"
+  },
+  {
+   "id": "E0713",
+   "finding_id": "F1911",
+   "theme": [
+    "ABC"
+   ],
+   "type": "practice",
+   "statement": "A local coordination forum is being established in the worst-affected area, and the sector is proposing that it carry a mapping instrument capable of showing sector-specific activity at that level.",
+   "level": "subnational",
+   "countries": [
+    "VEN"
+   ],
+   "actors": [
+    "cluster",
+    "gov-local"
+   ],
+   "tags": [
+    "geographic-targeting",
+    "information-management",
+    "multisector"
+   ],
+   "stream": "transcript",
+   "source_id": "S119",
+   "date_collected": "2026-08-10",
+   "confidence": "high",
+   "status": "draft"
+  },
+  {
+   "id": "E0714",
+   "finding_id": "F1912",
+   "theme": [
+    "Fundamentals"
+   ],
+   "type": "barrier",
+   "statement": "Solid waste management sits between sectors: inside displacement sites it falls between shelter and WASH, and in communities it merges with debris removal, which is a municipal and state responsibility rather than a humanitarian one.",
+   "level": "national",
+   "countries": [
+    "VEN"
+   ],
+   "actors": [
+    "cluster",
+    "gov-local"
+   ],
+   "tags": [
+    "coordination-architecture",
+    "multisector"
+   ],
+   "stream": "transcript",
+   "source_id": "S119",
+   "date_collected": "2026-08-10",
+   "confidence": "high",
+   "status": "draft"
+  },
+  {
+   "id": "E0715",
+   "finding_id": "F1912",
+   "theme": [
+    "Fundamentals"
+   ],
+   "type": "barrier",
+   "statement": "Services that fall between sector mandates in displacement sites — laundry, washing and drying space, cooking and eating areas — are routinely left out of planning because no sector owns them.",
+   "level": "global",
+   "countries": [],
+   "actors": [
+    "cluster"
+   ],
+   "tags": [
+    "coordination-architecture",
+    "multisector"
+   ],
+   "stream": "transcript",
+   "source_id": "S119",
+   "date_collected": "2026-08-10",
+   "confidence": "medium",
+   "status": "draft"
+  },
+  {
+   "id": "E0716",
+   "finding_id": "F203",
+   "theme": [
+    "Fundamentals"
+   ],
+   "type": "barrier",
+   "statement": "A health-sector actor ran a parallel WASH implementation and circulated its own WASH information tools without validating them with the sector, so two sets of sector data existed at once.",
+   "level": "national",
+   "countries": [
+    "VEN"
+   ],
+   "actors": [
+    "un-agency",
+    "cluster"
+   ],
+   "tags": [
+    "coordination-architecture",
+    "information-management"
+   ],
+   "stream": "transcript",
+   "source_id": "S119",
+   "date_collected": "2026-08-10",
+   "confidence": "high",
+   "status": "draft"
+  },
+  {
+   "id": "E0717",
+   "finding_id": "F1913",
+   "theme": [
+    "Fundamentals"
+   ],
+   "type": "barrier",
+   "statement": "Where WASH and health responsibilities meet, the division of labour has never been formalised in the country, and each response reopens the same question of who covers what.",
+   "level": "national",
+   "countries": [
+    "VEN"
+   ],
+   "actors": [
+    "cluster"
+   ],
+   "tags": [
+    "coordination-architecture",
+    "guidance"
+   ],
+   "stream": "transcript",
+   "source_id": "S119",
+   "date_collected": "2026-08-10",
+   "confidence": "high",
+   "status": "draft"
+  },
+  {
+   "id": "E0718",
+   "finding_id": "F1914",
+   "theme": [
+    "Fundamentals"
+   ],
+   "type": "recommendation",
+   "statement": "A cross-cluster responsibility matrix, setting out what each sector needs from the other and what the two must do jointly, gives two sectors a documented basis for agreeing a division of labour instead of renegotiating it verbally each time.",
+   "level": "global",
+   "countries": [],
+   "actors": [
+    "cluster"
+   ],
+   "tags": [
+    "coordination-architecture",
+    "guidance"
+   ],
+   "stream": "transcript",
+   "source_id": "S119",
+   "date_collected": "2026-08-10",
+   "confidence": "high",
+   "status": "draft"
+  },
+  {
+   "id": "E0719",
+   "finding_id": "F1915",
+   "theme": [
+    "Fundamentals"
+   ],
+   "type": "practice",
+   "statement": "During an earlier emergency the two sectors worked under a joint leadership arrangement in which one sector carried most of the work while the other retained visible co-leadership, which was enough to keep the two aligned.",
+   "level": "national",
+   "countries": [
+    "VEN"
+   ],
+   "actors": [
+    "cluster"
+   ],
+   "tags": [
+    "coordination-architecture",
+    "partnerships"
+   ],
+   "stream": "transcript",
+   "source_id": "S119",
+   "date_collected": "2026-08-10",
+   "confidence": "medium",
+   "status": "draft"
+  },
+  {
+   "id": "E0720",
+   "finding_id": "F001",
+   "theme": [
+    "Fundamentals"
+   ],
+   "type": "barrier",
+   "statement": "UN agencies run parts of the response and engage authorities directly, somewhat apart from the coordination structures, which makes it difficult for the inter-sector group to align all of the response.",
+   "level": "national",
+   "countries": [
+    "VEN"
+   ],
+   "actors": [
+    "un-agency",
+    "cluster",
+    "gov-national"
+   ],
+   "tags": [
+    "coordination-architecture",
+    "government-engagement"
+   ],
+   "stream": "transcript",
+   "source_id": "S119",
+   "date_collected": "2026-08-10",
+   "confidence": "high",
+   "status": "draft"
+  },
+  {
+   "id": "E0721",
+   "finding_id": "F1916",
+   "theme": [
+    "Fundamentals"
+   ],
+   "type": "barrier",
+   "statement": "Clusters were not brought into the post-disaster needs assessment at the outset, learning about it indirectly through agency programme sections while the assessment was being shaped with government, development banks and international financial institutions.",
+   "level": "national",
+   "countries": [
+    "VEN"
+   ],
+   "actors": [
+    "cluster",
+    "gov-national",
+    "development"
+   ],
+   "tags": [
+    "hpc",
+    "nexus",
+    "government-engagement"
+   ],
+   "stream": "transcript",
+   "source_id": "S119",
+   "date_collected": "2026-08-10",
+   "confidence": "high",
+   "status": "draft"
+  },
+  {
+   "id": "E0722",
+   "finding_id": "F1916",
+   "theme": [
+    "Transition"
+   ],
+   "type": "barrier",
+   "statement": "Recovery planning after a disaster is convened between government and development finance actors, and sector coordination structures have no defined route into it even though the reconstruction being planned is in their sector.",
+   "level": "national",
+   "countries": [
+    "VEN"
+   ],
+   "actors": [
+    "gov-national",
+    "development",
+    "cluster"
+   ],
+   "tags": [
+    "nexus",
+    "transition-handover",
+    "government-engagement"
+   ],
+   "stream": "transcript",
+   "source_id": "S119",
+   "date_collected": "2026-08-10",
+   "confidence": "medium",
+   "status": "draft"
+  },
+  {
+   "id": "E0723",
+   "finding_id": "F1917",
+   "theme": [
+    "Fundamentals"
+   ],
+   "type": "practice",
+   "statement": "The needs assessment for the coming planning cycle moved from key-informant interviews to household-level data collection, giving broader coverage than previous years.",
+   "level": "national",
+   "countries": [
+    "VEN"
+   ],
+   "actors": [
+    "cluster",
+    "ocha"
+   ],
+   "tags": [
+    "hpc",
+    "information-management"
+   ],
+   "stream": "transcript",
+   "source_id": "S119",
+   "date_collected": "2026-08-10",
+   "confidence": "high",
+   "status": "draft"
+  },
+  {
+   "id": "E0724",
+   "finding_id": "F1917",
+   "theme": [
+    "Fundamentals"
+   ],
+   "type": "practice",
+   "statement": "Rapid needs assessments run for two separate sudden-onset events were built on a common instrument, so both can be folded into the same analysis for the planning cycle.",
+   "level": "national",
+   "countries": [
+    "VEN"
+   ],
+   "actors": [
+    "cluster",
+    "ocha"
+   ],
+   "tags": [
+    "information-management",
+    "hpc"
+   ],
+   "stream": "transcript",
+   "source_id": "S119",
+   "date_collected": "2026-08-10",
+   "confidence": "high",
+   "status": "draft"
+  },
+  {
+   "id": "E0725",
+   "finding_id": "F1918",
+   "theme": [
+    "Fundamentals"
+   ],
+   "type": "barrier",
+   "statement": "A sudden-onset emergency displaced the planning calendar for the following year, pushing back the main data collection and leaving the analysis timetable unsettled.",
+   "level": "national",
+   "countries": [
+    "VEN"
+   ],
+   "actors": [
+    "cluster",
+    "ocha"
+   ],
+   "tags": [
+    "hpc"
+   ],
+   "stream": "transcript",
+   "source_id": "S119",
+   "date_collected": "2026-08-10",
+   "confidence": "high",
+   "status": "draft"
+  },
+  {
+   "id": "E0726",
+   "finding_id": "F1919",
+   "theme": [
+    "Fundamentals"
+   ],
+   "type": "practice",
+   "statement": "The sector set aside part of its capacity-building budget to run a workshop with partners on harmonising information ahead of the planning cycle, rather than treating analysis as a coordination-team task.",
+   "level": "national",
+   "countries": [
+    "VEN"
+   ],
+   "actors": [
+    "cluster",
+    "local-ngo"
+   ],
+   "tags": [
+    "capacity",
+    "hpc",
+    "information-management"
+   ],
+   "stream": "transcript",
+   "source_id": "S119",
+   "date_collected": "2026-08-10",
+   "confidence": "high",
+   "status": "draft"
+  },
+  {
+   "id": "E0727",
+   "finding_id": "F1920",
+   "theme": [
+    "Fundamentals"
+   ],
+   "type": "practice",
+   "statement": "A partner capacity-mapping instrument built for displacement sites and communities is being extended to institutions after partners asked for health facilities to be mapped, with schools expected to follow.",
+   "level": "national",
+   "countries": [
+    "VEN"
+   ],
+   "actors": [
+    "cluster",
+    "ingo"
+   ],
+   "tags": [
+    "information-management",
+    "capacity"
+   ],
+   "stream": "transcript",
+   "source_id": "S119",
+   "date_collected": "2026-08-10",
+   "confidence": "high",
+   "status": "draft"
+  },
+  {
+   "id": "E0728",
+   "finding_id": "F1920",
+   "theme": [
+    "Fundamentals"
+   ],
+   "type": "barrier",
+   "statement": "A capacity map built in the first week after a disaster went out of date quickly, because it recorded who was present but not the funding and activity changes that followed.",
+   "level": "national",
+   "countries": [
+    "VEN"
+   ],
+   "actors": [
+    "cluster"
+   ],
+   "tags": [
+    "information-management"
+   ],
+   "stream": "transcript",
+   "source_id": "S119",
+   "date_collected": "2026-08-10",
+   "confidence": "high",
+   "status": "draft"
+  },
+  {
+   "id": "E0729",
+   "finding_id": "F1921",
+   "theme": [
+    "Fundamentals"
+   ],
+   "type": "practice",
+   "statement": "The sector convened a meeting for the specific group of partners working in health facilities, rather than raising the issue in the general sector meeting, in order to prevent duplication in that setting.",
+   "level": "national",
+   "countries": [
+    "VEN"
+   ],
+   "actors": [
+    "cluster",
+    "ingo"
+   ],
+   "tags": [
+    "coordination-architecture",
+    "multisector"
+   ],
+   "stream": "transcript",
+   "source_id": "S119",
+   "date_collected": "2026-08-10",
+   "confidence": "high",
+   "status": "draft"
+  },
+  {
+   "id": "E0730",
+   "finding_id": "F1922",
+   "theme": [
+    "Fundamentals"
+   ],
+   "type": "practice",
+   "statement": "Sector meetings were opened to every actor present rather than to members only, which reached the new arrivals but made the meetings harder to run and drew in suppliers and private-sector actors offering services.",
+   "level": "national",
+   "countries": [
+    "VEN"
+   ],
+   "actors": [
+    "cluster",
+    "private-sector",
+    "ingo"
+   ],
+   "tags": [
+    "coordination-architecture",
+    "partnerships"
+   ],
+   "stream": "transcript",
+   "source_id": "S119",
+   "date_collected": "2026-08-10",
+   "confidence": "high",
+   "status": "draft"
+  },
+  {
+   "id": "E0731",
+   "finding_id": "F508",
+   "theme": [
+    "Fundamentals"
+   ],
+   "type": "practice",
+   "statement": "Pooled fund allocation required the inter-sector group to agree a joint strategy first, which gave the sector a defined place in the allocation process rather than a reactive one.",
+   "level": "national",
+   "countries": [
+    "VEN"
+   ],
+   "actors": [
+    "cluster",
+    "ocha",
+    "donor"
+   ],
+   "tags": [
+    "pooled-funds",
+    "funding",
+    "coordination-architecture"
+   ],
+   "stream": "transcript",
+   "source_id": "S119",
+   "date_collected": "2026-08-10",
+   "confidence": "high",
+   "status": "draft"
+  },
+  {
+   "id": "E0732",
+   "finding_id": "F508",
+   "theme": [
+    "Fundamentals"
+   ],
+   "type": "practice",
+   "statement": "The sector reviewed every funding proposal and project extension for technical coherence and indicator alignment before submission, using field visits already made with the fund's own team as a check.",
+   "level": "national",
+   "countries": [
+    "VEN"
+   ],
+   "actors": [
+    "cluster",
+    "donor"
+   ],
+   "tags": [
+    "pooled-funds",
+    "funding",
+    "performance"
+   ],
+   "stream": "transcript",
+   "source_id": "S119",
+   "date_collected": "2026-08-10",
+   "confidence": "high",
+   "status": "draft"
+  },
+  {
+   "id": "E0733",
+   "finding_id": "F1923",
+   "theme": [
+    "Fundamentals"
+   ],
+   "type": "enabler",
+   "statement": "Donors attended regular sector meetings and held bilateral sessions with the coordination team on gaps and the six- to twelve-month outlook, which gave the sector a direct channel into allocation decisions.",
+   "level": "national",
+   "countries": [
+    "VEN"
+   ],
+   "actors": [
+    "donor",
+    "cluster"
+   ],
+   "tags": [
+    "funding",
+    "advocacy",
+    "partnerships"
+   ],
+   "stream": "transcript",
+   "source_id": "S119",
+   "date_collected": "2026-08-10",
+   "confidence": "high",
+   "status": "draft"
+  },
+  {
+   "id": "E0734",
+   "finding_id": "F1901",
+   "theme": [
+    "Fundamentals"
+   ],
+   "type": "context",
+   "statement": "The same pattern of unaffiliated organisations arriving after a sudden-onset disaster, willing to work but unfamiliar with cluster structures, was reported from a separate response in the same region.",
+   "level": "global",
+   "countries": [],
+   "actors": [
+    "cluster",
+    "ingo"
+   ],
+   "tags": [
+    "coordination-architecture",
+    "peer-learning"
+   ],
+   "stream": "transcript",
+   "source_id": "S119",
+   "date_collected": "2026-08-10",
+   "confidence": "low",
+   "status": "draft"
   }
  ],
  "sources": [
@@ -25915,6 +27660,20 @@
    "legacy_id": "",
    "source_group": "cameroon-health-transition-2026",
    "label": "Global Health Cluster / WHO 2026"
+  },
+  {
+   "source_id": "S119",
+   "title": "Country consultation — Venezuela (post-earthquake response and 2027 planning)",
+   "organisation": "Global WASH Cluster",
+   "year": "2026",
+   "type": "interview",
+   "url": "",
+   "stream": "transcript",
+   "date_added": "2026-08-10",
+   "access": "restricted",
+   "legacy_id": "",
+   "source_group": "",
+   "label": "Global WASH Cluster 2026"
   }
  ]
 }
