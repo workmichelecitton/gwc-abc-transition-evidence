@@ -373,6 +373,11 @@ def main():
             "strength": strength,
             "n_records": len(rows),
             "n_sources": n_src,
+            # Documents behind the finding, before grouping. When this exceeds
+            # n_sources the finding rests on several documents that share an
+            # origin — a card reading "1 source" beside five country chips looks
+            # like a contradiction until the page says why.
+            "n_documents": len({r["source_id"] for r in rows}),
             "n_streams": n_str,
             "streams": sorted({r["stream"] for r in rows}),
             "countries": sorted({c for r in rows for c in r["countries"]}),
@@ -474,6 +479,20 @@ def main():
     # site.json, but not out of git — anyone can read the CSV on GitHub. So the
     # anonymisation rule applies to the quote column exactly as it does to
     # statements: no personal names. Replace with the role in square brackets.
+    # A record's stream must match the stream its source is registered under.
+    # 163 records once said 'sdr' while their source said 'workshop', which made
+    # a single workshop look like two streams and lifted findings a band they had
+    # not earned. The source registration is authoritative: a workshop is a
+    # workshop whatever document came out of it.
+    stream_of_source = {s["source_id"]: s.get("stream", "") for s in sources}
+    for i, r in enumerate(evidence_rows, start=2):
+        sid, rs = (r.get("source_id") or "").strip(), (r.get("stream") or "").strip()
+        ss = stream_of_source.get(sid)
+        if ss and rs and rs != ss:
+            errors.append(f"  evidence.csv row {i} ({r.get('id')}): stream '{rs}' but {sid} is "
+                          f"registered as '{ss}'. Change one of them — a record cannot be in a "
+                          f"different stream from the source it came from.")
+
     NAMEY = re.compile(r"\b(?:Mr|Ms|Mrs|Dr)\.?\s+[A-Z][a-z]+", re.U)
     for i, r in enumerate(evidence_rows, start=2):
         q = (r.get("quote") or "").strip()

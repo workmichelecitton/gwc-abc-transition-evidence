@@ -687,10 +687,11 @@ window.SITE_DATA = {
    "strength": 4,
    "n_records": 9,
    "n_sources": 5,
+   "n_documents": 5,
    "n_streams": 2,
    "streams": [
-    "sdr",
-    "transcript"
+    "transcript",
+    "workshop"
    ],
    "countries": [
     "SDN",
@@ -743,6 +744,7 @@ window.SITE_DATA = {
    "strength": 2,
    "n_records": 3,
    "n_sources": 2,
+   "n_documents": 2,
    "n_streams": 1,
    "streams": [
     "transcript"
@@ -780,6 +782,7 @@ window.SITE_DATA = {
    "strength": 1,
    "n_records": 2,
    "n_sources": 1,
+   "n_documents": 1,
    "n_streams": 1,
    "streams": [
     "transcript"
@@ -815,6 +818,7 @@ window.SITE_DATA = {
    "strength": 3,
    "n_records": 3,
    "n_sources": 3,
+   "n_documents": 3,
    "n_streams": 1,
    "streams": [
     "transcript"
@@ -861,6 +865,7 @@ window.SITE_DATA = {
    "strength": 2,
    "n_records": 2,
    "n_sources": 2,
+   "n_documents": 2,
    "n_streams": 1,
    "streams": [
     "transcript"
@@ -896,10 +901,11 @@ window.SITE_DATA = {
    "strength": 5,
    "n_records": 11,
    "n_sources": 8,
+   "n_documents": 11,
    "n_streams": 2,
    "streams": [
-    "sdr",
-    "transcript"
+    "transcript",
+    "workshop"
    ],
    "countries": [
     "BGD",
@@ -955,10 +961,11 @@ window.SITE_DATA = {
    "strength": 3,
    "n_records": 2,
    "n_sources": 2,
+   "n_documents": 2,
    "n_streams": 2,
    "streams": [
-    "sdr",
-    "transcript"
+    "transcript",
+    "workshop"
    ],
    "countries": [
     "LBY",
@@ -997,6 +1004,7 @@ window.SITE_DATA = {
    "strength": 2,
    "n_records": 2,
    "n_sources": 2,
+   "n_documents": 2,
    "n_streams": 1,
    "streams": [
     "transcript"
@@ -1031,10 +1039,11 @@ window.SITE_DATA = {
    "strength": 4,
    "n_records": 4,
    "n_sources": 4,
+   "n_documents": 4,
    "n_streams": 2,
    "streams": [
-    "sdr",
-    "transcript"
+    "transcript",
+    "workshop"
    ],
    "countries": [
     "LBN",
@@ -1081,10 +1090,11 @@ window.SITE_DATA = {
    "strength": 5,
    "n_records": 11,
    "n_sources": 8,
+   "n_documents": 9,
    "n_streams": 2,
    "streams": [
-    "sdr",
-    "transcript"
+    "transcript",
+    "workshop"
    ],
    "countries": [
     "BFA",
@@ -1145,10 +1155,12 @@ window.SITE_DATA = {
    "strength": 4,
    "n_records": 5,
    "n_sources": 4,
-   "n_streams": 2,
+   "n_documents": 4,
+   "n_streams": 3,
    "streams": [
     "sdr",
-    "transcript"
+    "transcript",
+    "workshop"
    ],
    "countries": [
     "ETH",
@@ -1195,10 +1207,12 @@ window.SITE_DATA = {
    "strength": 5,
    "n_records": 15,
    "n_sources": 10,
-   "n_streams": 2,
+   "n_documents": 10,
+   "n_streams": 3,
    "streams": [
     "sdr",
-    "transcript"
+    "transcript",
+    "workshop"
    ],
    "countries": [
     "BGD",
@@ -1261,6 +1275,7 @@ window.SITE_DATA = {
    "strength": 2,
    "n_records": 2,
    "n_sources": 2,
+   "n_documents": 2,
    "n_streams": 1,
    "streams": [
     "transcript"
@@ -1296,6 +1311,7 @@ window.SITE_DATA = {
    "strength": 3,
    "n_records": 3,
    "n_sources": 3,
+   "n_documents": 3,
    "n_streams": 1,
    "streams": [
     "transcript"
@@ -1341,6 +1357,7 @@ window.SITE_DATA = {
    "strength": 1,
    "n_records": 2,
    "n_sources": 1,
+   "n_documents": 1,
    "n_streams": 1,
    "streams": [
     "transcript"
@@ -1375,6 +1392,7 @@ window.SITE_DATA = {
    "strength": 3,
    "n_records": 4,
    "n_sources": 3,
+   "n_documents": 3,
    "n_streams": 1,
    "streams": [
     "transcript"
@@ -1419,6 +1437,7 @@ window.SITE_DATA = {
    "strength": 2,
    "n_records": 2,
    "n_sources": 2,
+   "n_documents": 2,
    "n_streams": 1,
    "streams": [
     "transcript"
@@ -1453,6 +1472,7 @@ window.SITE_DATA = {
    "strength": 2,
    "n_records": 2,
    "n_sources": 2,
+   "n_documents": 2,
    "n_streams": 1,
    "streams": [
     "transcript"
@@ -1485,6 +1505,7 @@ window.SITE_DATA = {
    "strength": 2,
    "n_records": 5,
    "n_sources": 2,
+   "n_documents": 2,
    "n_streams": 1,
    "streams": [
     "transcript"
@@ -1522,6 +1543,7 @@ window.SITE_DATA = {
    "strength": 2,
    "n_records": 3,
    "n_sources": 2,
+   "n_documents": 2,
    "n_streams": 1,
    "streams": [
     "transcript"
@@ -1561,6 +1583,7 @@ window.SITE_DATA = {
    "strength": 2,
    "n_records": 2,
    "n_sources": 2,
+   "n_documents": 2,
    "n_streams": 1,
    "streams": [
     "transcript"
@@ -1596,6 +1619,7 @@ window.SITE_DATA = {
    "strength": 3,
    "n_records": 6,
    "n_sources": 3,
+   "n_documents": 3,
    "n_streams": 1,
    "streams": [
     "transcript"
@@ -1650,12 +1674,14 @@ window.SITE_DATA = {
    ],
    "example": "",
    "type": "recommendation",
-   "strength": 3,
+   "strength": 4,
    "n_records": 10,
    "n_sources": 3,
-   "n_streams": 1,
+   "n_documents": 3,
+   "n_streams": 2,
    "streams": [
-    "sdr"
+    "sdr",
+    "workshop"
    ],
    "countries": [],
    "tags": [
@@ -1703,9 +1729,9 @@ window.SITE_DATA = {
    "strength": 5,
    "n_records": 11,
    "n_sources": 6,
-   "n_streams": 3,
+   "n_documents": 7,
+   "n_streams": 2,
    "streams": [
-    "sdr",
     "transcript",
     "workshop"
    ],
@@ -1766,12 +1792,14 @@ window.SITE_DATA = {
    ],
    "example": "",
    "type": "recommendation",
-   "strength": 3,
+   "strength": 4,
    "n_records": 4,
    "n_sources": 3,
-   "n_streams": 1,
+   "n_documents": 3,
+   "n_streams": 2,
    "streams": [
-    "sdr"
+    "sdr",
+    "workshop"
    ],
    "countries": [],
    "tags": [
@@ -1814,6 +1842,7 @@ window.SITE_DATA = {
    "strength": 2,
    "n_records": 3,
    "n_sources": 2,
+   "n_documents": 2,
    "n_streams": 1,
    "streams": [
     "transcript"
@@ -1851,9 +1880,10 @@ window.SITE_DATA = {
    "strength": 1,
    "n_records": 4,
    "n_sources": 1,
+   "n_documents": 3,
    "n_streams": 1,
    "streams": [
-    "sdr"
+    "workshop"
    ],
    "countries": [],
    "tags": [
@@ -1885,6 +1915,7 @@ window.SITE_DATA = {
    "strength": 2,
    "n_records": 2,
    "n_sources": 2,
+   "n_documents": 2,
    "n_streams": 1,
    "streams": [
     "transcript"
@@ -1920,6 +1951,7 @@ window.SITE_DATA = {
    "strength": 1,
    "n_records": 1,
    "n_sources": 1,
+   "n_documents": 1,
    "n_streams": 1,
    "streams": [
     "transcript"
@@ -1950,12 +1982,14 @@ window.SITE_DATA = {
    ],
    "example": "",
    "type": "recommendation",
-   "strength": 3,
+   "strength": 4,
    "n_records": 7,
    "n_sources": 5,
-   "n_streams": 1,
+   "n_documents": 7,
+   "n_streams": 2,
    "streams": [
-    "sdr"
+    "sdr",
+    "workshop"
    ],
    "countries": [],
    "tags": [
@@ -1995,9 +2029,10 @@ window.SITE_DATA = {
    "strength": 1,
    "n_records": 2,
    "n_sources": 1,
+   "n_documents": 2,
    "n_streams": 1,
    "streams": [
-    "sdr"
+    "workshop"
    ],
    "countries": [],
    "tags": [
@@ -2026,9 +2061,9 @@ window.SITE_DATA = {
    "strength": 1,
    "n_records": 9,
    "n_sources": 1,
-   "n_streams": 2,
+   "n_documents": 2,
+   "n_streams": 1,
    "streams": [
-    "sdr",
     "workshop"
    ],
    "countries": [],
@@ -2070,6 +2105,7 @@ window.SITE_DATA = {
    "strength": 3,
    "n_records": 4,
    "n_sources": 4,
+   "n_documents": 4,
    "n_streams": 1,
    "streams": [
     "transcript"
@@ -2116,6 +2152,7 @@ window.SITE_DATA = {
    "strength": 4,
    "n_records": 5,
    "n_sources": 4,
+   "n_documents": 4,
    "n_streams": 2,
    "streams": [
     "sdr",
@@ -2166,10 +2203,11 @@ window.SITE_DATA = {
    "strength": 5,
    "n_records": 8,
    "n_sources": 7,
+   "n_documents": 7,
    "n_streams": 2,
    "streams": [
-    "sdr",
-    "transcript"
+    "transcript",
+    "workshop"
    ],
    "countries": [
     "BFA",
@@ -2224,6 +2262,7 @@ window.SITE_DATA = {
    "strength": 1,
    "n_records": 2,
    "n_sources": 1,
+   "n_documents": 1,
    "n_streams": 1,
    "streams": [
     "transcript"
@@ -2257,9 +2296,9 @@ window.SITE_DATA = {
    "strength": 1,
    "n_records": 5,
    "n_sources": 1,
-   "n_streams": 2,
+   "n_documents": 2,
+   "n_streams": 1,
    "streams": [
-    "sdr",
     "workshop"
    ],
    "countries": [
@@ -2301,6 +2340,7 @@ window.SITE_DATA = {
    "strength": 4,
    "n_records": 4,
    "n_sources": 4,
+   "n_documents": 4,
    "n_streams": 3,
    "streams": [
     "sdr",
@@ -2347,6 +2387,7 @@ window.SITE_DATA = {
    "strength": 4,
    "n_records": 4,
    "n_sources": 4,
+   "n_documents": 4,
    "n_streams": 3,
    "streams": [
     "sdr",
@@ -2397,6 +2438,7 @@ window.SITE_DATA = {
    "strength": 1,
    "n_records": 1,
    "n_sources": 1,
+   "n_documents": 1,
    "n_streams": 1,
    "streams": [
     "transcript"
@@ -2428,6 +2470,7 @@ window.SITE_DATA = {
    "strength": 1,
    "n_records": 2,
    "n_sources": 1,
+   "n_documents": 1,
    "n_streams": 1,
    "streams": [
     "transcript"
@@ -2461,6 +2504,7 @@ window.SITE_DATA = {
    "strength": 1,
    "n_records": 1,
    "n_sources": 1,
+   "n_documents": 1,
    "n_streams": 1,
    "streams": [
     "transcript"
@@ -2492,6 +2536,7 @@ window.SITE_DATA = {
    "strength": 1,
    "n_records": 1,
    "n_sources": 1,
+   "n_documents": 1,
    "n_streams": 1,
    "streams": [
     "sdr"
@@ -2521,6 +2566,7 @@ window.SITE_DATA = {
    "strength": 2,
    "n_records": 2,
    "n_sources": 2,
+   "n_documents": 2,
    "n_streams": 1,
    "streams": [
     "sdr"
@@ -2551,6 +2597,7 @@ window.SITE_DATA = {
    "strength": 1,
    "n_records": 1,
    "n_sources": 1,
+   "n_documents": 1,
    "n_streams": 1,
    "streams": [
     "sdr"
@@ -2581,6 +2628,7 @@ window.SITE_DATA = {
    "strength": 1,
    "n_records": 1,
    "n_sources": 1,
+   "n_documents": 1,
    "n_streams": 1,
    "streams": [
     "sdr"
@@ -2611,6 +2659,7 @@ window.SITE_DATA = {
    "strength": 1,
    "n_records": 2,
    "n_sources": 1,
+   "n_documents": 1,
    "n_streams": 1,
    "streams": [
     "transcript"
@@ -2644,6 +2693,7 @@ window.SITE_DATA = {
    "strength": 1,
    "n_records": 1,
    "n_sources": 1,
+   "n_documents": 1,
    "n_streams": 1,
    "streams": [
     "transcript"
@@ -2675,6 +2725,7 @@ window.SITE_DATA = {
    "strength": 1,
    "n_records": 1,
    "n_sources": 1,
+   "n_documents": 1,
    "n_streams": 1,
    "streams": [
     "transcript"
@@ -2706,6 +2757,7 @@ window.SITE_DATA = {
    "strength": 1,
    "n_records": 1,
    "n_sources": 1,
+   "n_documents": 1,
    "n_streams": 1,
    "streams": [
     "transcript"
@@ -2738,6 +2790,7 @@ window.SITE_DATA = {
    "strength": 1,
    "n_records": 1,
    "n_sources": 1,
+   "n_documents": 1,
    "n_streams": 1,
    "streams": [
     "transcript"
@@ -2768,6 +2821,7 @@ window.SITE_DATA = {
    "strength": 1,
    "n_records": 1,
    "n_sources": 1,
+   "n_documents": 1,
    "n_streams": 1,
    "streams": [
     "transcript"
@@ -2798,6 +2852,7 @@ window.SITE_DATA = {
    "strength": 1,
    "n_records": 1,
    "n_sources": 1,
+   "n_documents": 1,
    "n_streams": 1,
    "streams": [
     "transcript"
@@ -2830,6 +2885,7 @@ window.SITE_DATA = {
    "strength": 1,
    "n_records": 1,
    "n_sources": 1,
+   "n_documents": 1,
    "n_streams": 1,
    "streams": [
     "transcript"
@@ -2861,6 +2917,7 @@ window.SITE_DATA = {
    "strength": 1,
    "n_records": 1,
    "n_sources": 1,
+   "n_documents": 1,
    "n_streams": 1,
    "streams": [
     "transcript"
@@ -2892,6 +2949,7 @@ window.SITE_DATA = {
    "strength": 1,
    "n_records": 1,
    "n_sources": 1,
+   "n_documents": 1,
    "n_streams": 1,
    "streams": [
     "transcript"
@@ -2924,6 +2982,7 @@ window.SITE_DATA = {
    "strength": 1,
    "n_records": 1,
    "n_sources": 1,
+   "n_documents": 1,
    "n_streams": 1,
    "streams": [
     "transcript"
@@ -2956,6 +3015,7 @@ window.SITE_DATA = {
    "strength": 1,
    "n_records": 2,
    "n_sources": 1,
+   "n_documents": 1,
    "n_streams": 1,
    "streams": [
     "transcript"
@@ -2988,6 +3048,7 @@ window.SITE_DATA = {
    "strength": 1,
    "n_records": 1,
    "n_sources": 1,
+   "n_documents": 1,
    "n_streams": 1,
    "streams": [
     "transcript"
@@ -3018,6 +3079,7 @@ window.SITE_DATA = {
    "strength": 1,
    "n_records": 1,
    "n_sources": 1,
+   "n_documents": 1,
    "n_streams": 1,
    "streams": [
     "transcript"
@@ -3046,6 +3108,7 @@ window.SITE_DATA = {
    "strength": 1,
    "n_records": 1,
    "n_sources": 1,
+   "n_documents": 1,
    "n_streams": 1,
    "streams": [
     "transcript"
@@ -3076,6 +3139,7 @@ window.SITE_DATA = {
    "strength": 1,
    "n_records": 2,
    "n_sources": 1,
+   "n_documents": 1,
    "n_streams": 1,
    "streams": [
     "transcript"
@@ -3111,6 +3175,7 @@ window.SITE_DATA = {
    "strength": 1,
    "n_records": 2,
    "n_sources": 1,
+   "n_documents": 1,
    "n_streams": 1,
    "streams": [
     "transcript"
@@ -3143,6 +3208,7 @@ window.SITE_DATA = {
    "strength": 1,
    "n_records": 1,
    "n_sources": 1,
+   "n_documents": 1,
    "n_streams": 1,
    "streams": [
     "transcript"
@@ -3173,6 +3239,7 @@ window.SITE_DATA = {
    "strength": 1,
    "n_records": 1,
    "n_sources": 1,
+   "n_documents": 1,
    "n_streams": 1,
    "streams": [
     "transcript"
@@ -3205,6 +3272,7 @@ window.SITE_DATA = {
    "strength": 1,
    "n_records": 2,
    "n_sources": 1,
+   "n_documents": 1,
    "n_streams": 1,
    "streams": [
     "transcript"
@@ -3237,6 +3305,7 @@ window.SITE_DATA = {
    "strength": 1,
    "n_records": 1,
    "n_sources": 1,
+   "n_documents": 1,
    "n_streams": 1,
    "streams": [
     "transcript"
@@ -3268,6 +3337,7 @@ window.SITE_DATA = {
    "strength": 1,
    "n_records": 1,
    "n_sources": 1,
+   "n_documents": 1,
    "n_streams": 1,
    "streams": [
     "transcript"
@@ -3300,6 +3370,7 @@ window.SITE_DATA = {
    "strength": 1,
    "n_records": 1,
    "n_sources": 1,
+   "n_documents": 1,
    "n_streams": 1,
    "streams": [
     "transcript"
@@ -3332,6 +3403,7 @@ window.SITE_DATA = {
    "strength": 1,
    "n_records": 1,
    "n_sources": 1,
+   "n_documents": 1,
    "n_streams": 1,
    "streams": [
     "sdr"
@@ -3363,6 +3435,7 @@ window.SITE_DATA = {
    "strength": 5,
    "n_records": 6,
    "n_sources": 6,
+   "n_documents": 6,
    "n_streams": 2,
    "streams": [
     "sdr",
@@ -3413,10 +3486,12 @@ window.SITE_DATA = {
    "strength": 5,
    "n_records": 19,
    "n_sources": 13,
-   "n_streams": 2,
+   "n_documents": 13,
+   "n_streams": 3,
    "streams": [
     "sdr",
-    "transcript"
+    "transcript",
+    "workshop"
    ],
    "countries": [
     "CMR",
@@ -3491,11 +3566,13 @@ window.SITE_DATA = {
    "strength": 4,
    "n_records": 5,
    "n_sources": 4,
-   "n_streams": 3,
+   "n_documents": 4,
+   "n_streams": 4,
    "streams": [
     "sdr",
     "search",
-    "transcript"
+    "transcript",
+    "workshop"
    ],
    "countries": [
     "CMR",
@@ -3539,6 +3616,7 @@ window.SITE_DATA = {
    "strength": 5,
    "n_records": 11,
    "n_sources": 10,
+   "n_documents": 10,
    "n_streams": 2,
    "streams": [
     "sdr",
@@ -3605,10 +3683,11 @@ window.SITE_DATA = {
    "strength": 5,
    "n_records": 9,
    "n_sources": 7,
+   "n_documents": 7,
    "n_streams": 2,
    "streams": [
-    "sdr",
-    "transcript"
+    "transcript",
+    "workshop"
    ],
    "countries": [
     "BFA",
@@ -3660,9 +3739,10 @@ window.SITE_DATA = {
    "strength": 1,
    "n_records": 3,
    "n_sources": 1,
+   "n_documents": 3,
    "n_streams": 1,
    "streams": [
-    "sdr"
+    "workshop"
    ],
    "countries": [],
    "tags": [
@@ -3691,9 +3771,10 @@ window.SITE_DATA = {
    "strength": 1,
    "n_records": 3,
    "n_sources": 1,
+   "n_documents": 3,
    "n_streams": 1,
    "streams": [
-    "sdr"
+    "workshop"
    ],
    "countries": [],
    "tags": [
@@ -3722,6 +3803,7 @@ window.SITE_DATA = {
    "strength": 3,
    "n_records": 3,
    "n_sources": 3,
+   "n_documents": 3,
    "n_streams": 1,
    "streams": [
     "sdr"
@@ -3761,10 +3843,12 @@ window.SITE_DATA = {
    "strength": 4,
    "n_records": 22,
    "n_sources": 8,
-   "n_streams": 2,
+   "n_documents": 10,
+   "n_streams": 3,
    "streams": [
     "sdr",
-    "transcript"
+    "transcript",
+    "workshop"
    ],
    "countries": [
     "MMR"
@@ -3828,10 +3912,12 @@ window.SITE_DATA = {
    "strength": 4,
    "n_records": 3,
    "n_sources": 3,
-   "n_streams": 2,
+   "n_documents": 3,
+   "n_streams": 3,
    "streams": [
     "sdr",
-    "transcript"
+    "transcript",
+    "workshop"
    ],
    "countries": [
     "VEN"
@@ -3870,10 +3956,11 @@ window.SITE_DATA = {
    "strength": 5,
    "n_records": 26,
    "n_sources": 13,
+   "n_documents": 14,
    "n_streams": 2,
    "streams": [
-    "sdr",
-    "transcript"
+    "transcript",
+    "workshop"
    ],
    "countries": [
     "BGD",
@@ -3959,6 +4046,7 @@ window.SITE_DATA = {
    "strength": 4,
    "n_records": 10,
    "n_sources": 5,
+   "n_documents": 5,
    "n_streams": 3,
    "streams": [
     "sdr",
@@ -4017,10 +4105,11 @@ window.SITE_DATA = {
    "strength": 3,
    "n_records": 2,
    "n_sources": 2,
+   "n_documents": 2,
    "n_streams": 2,
    "streams": [
-    "sdr",
-    "transcript"
+    "transcript",
+    "workshop"
    ],
    "countries": [
     "LBN"
@@ -4060,9 +4149,10 @@ window.SITE_DATA = {
    "strength": 1,
    "n_records": 1,
    "n_sources": 1,
+   "n_documents": 1,
    "n_streams": 1,
    "streams": [
-    "sdr"
+    "workshop"
    ],
    "countries": [
     "UKR"
@@ -4091,10 +4181,12 @@ window.SITE_DATA = {
    "strength": 4,
    "n_records": 7,
    "n_sources": 7,
-   "n_streams": 2,
+   "n_documents": 7,
+   "n_streams": 3,
    "streams": [
     "sdr",
-    "transcript"
+    "transcript",
+    "workshop"
    ],
    "countries": [
     "BGD"
@@ -4141,9 +4233,10 @@ window.SITE_DATA = {
    "strength": 2,
    "n_records": 2,
    "n_sources": 2,
+   "n_documents": 2,
    "n_streams": 1,
    "streams": [
-    "sdr"
+    "workshop"
    ],
    "countries": [
     "SDN"
@@ -4176,10 +4269,11 @@ window.SITE_DATA = {
    "strength": 3,
    "n_records": 2,
    "n_sources": 2,
+   "n_documents": 2,
    "n_streams": 2,
    "streams": [
-    "sdr",
-    "transcript"
+    "transcript",
+    "workshop"
    ],
    "countries": [
     "NGA"
@@ -4215,12 +4309,14 @@ window.SITE_DATA = {
    ],
    "example": "",
    "type": "barrier",
-   "strength": 3,
+   "strength": 4,
    "n_records": 5,
    "n_sources": 5,
-   "n_streams": 1,
+   "n_documents": 5,
+   "n_streams": 2,
    "streams": [
-    "sdr"
+    "sdr",
+    "workshop"
    ],
    "countries": [
     "AFG",
@@ -4266,9 +4362,10 @@ window.SITE_DATA = {
    "strength": 1,
    "n_records": 2,
    "n_sources": 1,
+   "n_documents": 2,
    "n_streams": 1,
    "streams": [
-    "sdr"
+    "workshop"
    ],
    "countries": [],
    "tags": [
@@ -4296,10 +4393,12 @@ window.SITE_DATA = {
    "strength": 4,
    "n_records": 5,
    "n_sources": 5,
-   "n_streams": 2,
+   "n_documents": 5,
+   "n_streams": 3,
    "streams": [
     "sdr",
-    "transcript"
+    "transcript",
+    "workshop"
    ],
    "countries": [
     "SDN",
@@ -4343,9 +4442,10 @@ window.SITE_DATA = {
    "strength": 1,
    "n_records": 2,
    "n_sources": 1,
+   "n_documents": 2,
    "n_streams": 1,
    "streams": [
-    "sdr"
+    "workshop"
    ],
    "countries": [],
    "tags": [
@@ -4374,10 +4474,12 @@ window.SITE_DATA = {
    "strength": 5,
    "n_records": 6,
    "n_sources": 6,
-   "n_streams": 2,
+   "n_documents": 6,
+   "n_streams": 3,
    "streams": [
     "sdr",
-    "transcript"
+    "transcript",
+    "workshop"
    ],
    "countries": [
     "IRQ",
@@ -4429,11 +4531,13 @@ window.SITE_DATA = {
    "strength": 5,
    "n_records": 10,
    "n_sources": 8,
-   "n_streams": 3,
+   "n_documents": 9,
+   "n_streams": 4,
    "streams": [
     "sdr",
     "search",
-    "transcript"
+    "transcript",
+    "workshop"
    ],
    "countries": [
     "BGD",
@@ -4489,11 +4593,13 @@ window.SITE_DATA = {
    "strength": 5,
    "n_records": 9,
    "n_sources": 8,
-   "n_streams": 3,
+   "n_documents": 8,
+   "n_streams": 4,
    "streams": [
     "sdr",
     "search",
-    "transcript"
+    "transcript",
+    "workshop"
    ],
    "countries": [
     "CMR",
@@ -4544,12 +4650,14 @@ window.SITE_DATA = {
    ],
    "example": "",
    "type": "enabler",
-   "strength": 2,
+   "strength": 3,
    "n_records": 2,
    "n_sources": 2,
-   "n_streams": 1,
+   "n_documents": 2,
+   "n_streams": 2,
    "streams": [
-    "sdr"
+    "sdr",
+    "workshop"
    ],
    "countries": [
     "MMR",
@@ -4581,6 +4689,7 @@ window.SITE_DATA = {
    "strength": 4,
    "n_records": 3,
    "n_sources": 3,
+   "n_documents": 3,
    "n_streams": 2,
    "streams": [
     "sdr",
@@ -4622,9 +4731,10 @@ window.SITE_DATA = {
    "strength": 2,
    "n_records": 2,
    "n_sources": 2,
+   "n_documents": 2,
    "n_streams": 1,
    "streams": [
-    "sdr"
+    "workshop"
    ],
    "countries": [],
    "tags": [
@@ -4649,12 +4759,14 @@ window.SITE_DATA = {
    ],
    "example": "",
    "type": "enabler",
-   "strength": 2,
+   "strength": 3,
    "n_records": 2,
    "n_sources": 2,
-   "n_streams": 1,
+   "n_documents": 2,
+   "n_streams": 2,
    "streams": [
-    "sdr"
+    "sdr",
+    "workshop"
    ],
    "countries": [
     "PSE"
@@ -4684,6 +4796,7 @@ window.SITE_DATA = {
    "strength": 1,
    "n_records": 1,
    "n_sources": 1,
+   "n_documents": 1,
    "n_streams": 1,
    "streams": [
     "sdr"
@@ -4714,6 +4827,7 @@ window.SITE_DATA = {
    "strength": 3,
    "n_records": 6,
    "n_sources": 6,
+   "n_documents": 6,
    "n_streams": 1,
    "streams": [
     "sdr"
@@ -4764,6 +4878,7 @@ window.SITE_DATA = {
    "strength": 5,
    "n_records": 11,
    "n_sources": 9,
+   "n_documents": 9,
    "n_streams": 2,
    "streams": [
     "sdr",
@@ -4823,6 +4938,7 @@ window.SITE_DATA = {
    "strength": 5,
    "n_records": 7,
    "n_sources": 7,
+   "n_documents": 7,
    "n_streams": 2,
    "streams": [
     "sdr",
@@ -4878,10 +4994,11 @@ window.SITE_DATA = {
    "strength": 3,
    "n_records": 5,
    "n_sources": 2,
+   "n_documents": 4,
    "n_streams": 2,
    "streams": [
-    "sdr",
-    "transcript"
+    "transcript",
+    "workshop"
    ],
    "countries": [
     "ETH",
@@ -4924,10 +5041,12 @@ window.SITE_DATA = {
    "strength": 4,
    "n_records": 3,
    "n_sources": 3,
-   "n_streams": 2,
+   "n_documents": 3,
+   "n_streams": 3,
    "streams": [
     "sdr",
-    "transcript"
+    "transcript",
+    "workshop"
    ],
    "countries": [
     "BFA",
@@ -4972,10 +5091,11 @@ window.SITE_DATA = {
    "strength": 3,
    "n_records": 2,
    "n_sources": 2,
+   "n_documents": 2,
    "n_streams": 2,
    "streams": [
-    "sdr",
-    "transcript"
+    "transcript",
+    "workshop"
    ],
    "countries": [
     "NGA"
@@ -5013,10 +5133,11 @@ window.SITE_DATA = {
    "strength": 3,
    "n_records": 3,
    "n_sources": 2,
+   "n_documents": 3,
    "n_streams": 2,
    "streams": [
-    "sdr",
-    "transcript"
+    "transcript",
+    "workshop"
    ],
    "countries": [
     "ETH",
@@ -5057,10 +5178,11 @@ window.SITE_DATA = {
    "strength": 4,
    "n_records": 3,
    "n_sources": 3,
+   "n_documents": 3,
    "n_streams": 2,
    "streams": [
-    "sdr",
-    "transcript"
+    "transcript",
+    "workshop"
    ],
    "countries": [
     "MOZ",
@@ -5099,6 +5221,7 @@ window.SITE_DATA = {
    "strength": 4,
    "n_records": 8,
    "n_sources": 3,
+   "n_documents": 5,
    "n_streams": 3,
    "streams": [
     "sdr",
@@ -5148,9 +5271,10 @@ window.SITE_DATA = {
    "strength": 1,
    "n_records": 2,
    "n_sources": 1,
+   "n_documents": 2,
    "n_streams": 1,
    "streams": [
-    "sdr"
+    "workshop"
    ],
    "countries": [],
    "tags": [
@@ -5178,6 +5302,7 @@ window.SITE_DATA = {
    "strength": 5,
    "n_records": 9,
    "n_sources": 7,
+   "n_documents": 7,
    "n_streams": 2,
    "streams": [
     "sdr",
@@ -5236,6 +5361,7 @@ window.SITE_DATA = {
    "strength": 3,
    "n_records": 4,
    "n_sources": 2,
+   "n_documents": 2,
    "n_streams": 2,
    "streams": [
     "sdr",
@@ -5280,11 +5406,13 @@ window.SITE_DATA = {
    "strength": 5,
    "n_records": 20,
    "n_sources": 12,
-   "n_streams": 3,
+   "n_documents": 13,
+   "n_streams": 4,
    "streams": [
     "sdr",
     "search",
-    "transcript"
+    "transcript",
+    "workshop"
    ],
    "countries": [
     "CMR",
@@ -5354,6 +5482,7 @@ window.SITE_DATA = {
    "strength": 5,
    "n_records": 14,
    "n_sources": 8,
+   "n_documents": 10,
    "n_streams": 4,
    "streams": [
     "sdr",
@@ -5423,11 +5552,12 @@ window.SITE_DATA = {
    "strength": 4,
    "n_records": 8,
    "n_sources": 4,
+   "n_documents": 5,
    "n_streams": 3,
    "streams": [
-    "sdr",
     "search",
-    "transcript"
+    "transcript",
+    "workshop"
    ],
    "countries": [
     "CMR",
@@ -5479,6 +5609,7 @@ window.SITE_DATA = {
    "strength": 3,
    "n_records": 3,
    "n_sources": 3,
+   "n_documents": 3,
    "n_streams": 1,
    "streams": [
     "sdr"
@@ -5515,10 +5646,11 @@ window.SITE_DATA = {
    "strength": 4,
    "n_records": 3,
    "n_sources": 3,
+   "n_documents": 3,
    "n_streams": 2,
    "streams": [
-    "sdr",
-    "transcript"
+    "transcript",
+    "workshop"
    ],
    "countries": [
     "LBN",
@@ -5558,6 +5690,7 @@ window.SITE_DATA = {
    "strength": 3,
    "n_records": 2,
    "n_sources": 2,
+   "n_documents": 2,
    "n_streams": 2,
    "streams": [
     "sdr",
@@ -5601,6 +5734,7 @@ window.SITE_DATA = {
    "strength": 5,
    "n_records": 10,
    "n_sources": 7,
+   "n_documents": 9,
    "n_streams": 3,
    "streams": [
     "sdr",
@@ -5661,10 +5795,11 @@ window.SITE_DATA = {
    "strength": 4,
    "n_records": 4,
    "n_sources": 3,
+   "n_documents": 4,
    "n_streams": 2,
    "streams": [
-    "sdr",
-    "transcript"
+    "transcript",
+    "workshop"
    ],
    "countries": [
     "BFA",
@@ -5707,6 +5842,7 @@ window.SITE_DATA = {
    "strength": 5,
    "n_records": 8,
    "n_sources": 7,
+   "n_documents": 7,
    "n_streams": 3,
    "streams": [
     "sdr",
@@ -5763,9 +5899,10 @@ window.SITE_DATA = {
    "strength": 1,
    "n_records": 2,
    "n_sources": 1,
+   "n_documents": 1,
    "n_streams": 1,
    "streams": [
-    "sdr"
+    "workshop"
    ],
    "countries": [
     "IRQ"
@@ -5797,6 +5934,7 @@ window.SITE_DATA = {
    "strength": 2,
    "n_records": 2,
    "n_sources": 2,
+   "n_documents": 2,
    "n_streams": 1,
    "streams": [
     "sdr"
@@ -5829,6 +5967,7 @@ window.SITE_DATA = {
    "strength": 3,
    "n_records": 6,
    "n_sources": 2,
+   "n_documents": 3,
    "n_streams": 2,
    "streams": [
     "sdr",
@@ -5880,10 +6019,12 @@ window.SITE_DATA = {
    "strength": 4,
    "n_records": 9,
    "n_sources": 5,
-   "n_streams": 2,
+   "n_documents": 7,
+   "n_streams": 3,
    "streams": [
     "sdr",
-    "transcript"
+    "transcript",
+    "workshop"
    ],
    "countries": [
     "BFA",
@@ -5938,10 +6079,12 @@ window.SITE_DATA = {
    "strength": 4,
    "n_records": 6,
    "n_sources": 5,
-   "n_streams": 2,
+   "n_documents": 6,
+   "n_streams": 3,
    "streams": [
     "sdr",
-    "transcript"
+    "transcript",
+    "workshop"
    ],
    "countries": [
     "COL",
@@ -5990,10 +6133,12 @@ window.SITE_DATA = {
    "strength": 5,
    "n_records": 8,
    "n_sources": 6,
-   "n_streams": 2,
+   "n_documents": 6,
+   "n_streams": 3,
    "streams": [
     "sdr",
-    "transcript"
+    "transcript",
+    "workshop"
    ],
    "countries": [
     "ETH",
@@ -6045,6 +6190,7 @@ window.SITE_DATA = {
    "strength": 5,
    "n_records": 10,
    "n_sources": 6,
+   "n_documents": 8,
    "n_streams": 3,
    "streams": [
     "sdr",
@@ -6105,10 +6251,12 @@ window.SITE_DATA = {
    "strength": 4,
    "n_records": 5,
    "n_sources": 4,
-   "n_streams": 2,
+   "n_documents": 5,
+   "n_streams": 3,
    "streams": [
     "sdr",
-    "transcript"
+    "transcript",
+    "workshop"
    ],
    "countries": [
     "ETH",
@@ -6149,10 +6297,12 @@ window.SITE_DATA = {
    "strength": 4,
    "n_records": 5,
    "n_sources": 5,
-   "n_streams": 2,
+   "n_documents": 5,
+   "n_streams": 3,
    "streams": [
     "sdr",
-    "search"
+    "search",
+    "workshop"
    ],
    "countries": [
     "CMR",
@@ -6198,6 +6348,7 @@ window.SITE_DATA = {
    "strength": 4,
    "n_records": 3,
    "n_sources": 3,
+   "n_documents": 3,
    "n_streams": 2,
    "streams": [
     "sdr",
@@ -6245,6 +6396,7 @@ window.SITE_DATA = {
    "strength": 2,
    "n_records": 2,
    "n_sources": 2,
+   "n_documents": 2,
    "n_streams": 1,
    "streams": [
     "sdr"
@@ -6277,9 +6429,10 @@ window.SITE_DATA = {
    "strength": 1,
    "n_records": 2,
    "n_sources": 1,
+   "n_documents": 2,
    "n_streams": 1,
    "streams": [
-    "sdr"
+    "workshop"
    ],
    "countries": [
     "BGD"
@@ -6310,10 +6463,12 @@ window.SITE_DATA = {
    "strength": 4,
    "n_records": 6,
    "n_sources": 6,
-   "n_streams": 2,
+   "n_documents": 6,
+   "n_streams": 3,
    "streams": [
     "sdr",
-    "transcript"
+    "transcript",
+    "workshop"
    ],
    "countries": [
     "ETH"
@@ -6355,11 +6510,13 @@ window.SITE_DATA = {
    "strength": 5,
    "n_records": 11,
    "n_sources": 7,
-   "n_streams": 3,
+   "n_documents": 8,
+   "n_streams": 4,
    "streams": [
     "sdr",
     "search",
-    "transcript"
+    "transcript",
+    "workshop"
    ],
    "countries": [
     "CMR",
@@ -6414,10 +6571,12 @@ window.SITE_DATA = {
    "strength": 4,
    "n_records": 8,
    "n_sources": 5,
-   "n_streams": 2,
+   "n_documents": 7,
+   "n_streams": 3,
    "streams": [
     "sdr",
-    "transcript"
+    "transcript",
+    "workshop"
    ],
    "countries": [
     "CAF",
@@ -6466,6 +6625,7 @@ window.SITE_DATA = {
    "strength": 1,
    "n_records": 1,
    "n_sources": 1,
+   "n_documents": 1,
    "n_streams": 1,
    "streams": [
     "sdr"
@@ -6494,6 +6654,7 @@ window.SITE_DATA = {
    "strength": 1,
    "n_records": 1,
    "n_sources": 1,
+   "n_documents": 1,
    "n_streams": 1,
    "streams": [
     "transcript"
@@ -6527,6 +6688,7 @@ window.SITE_DATA = {
    "strength": 3,
    "n_records": 3,
    "n_sources": 3,
+   "n_documents": 3,
    "n_streams": 1,
    "streams": [
     "transcript"
@@ -6572,6 +6734,7 @@ window.SITE_DATA = {
    "strength": 3,
    "n_records": 11,
    "n_sources": 6,
+   "n_documents": 6,
    "n_streams": 1,
    "streams": [
     "transcript"
@@ -6634,6 +6797,7 @@ window.SITE_DATA = {
    "strength": 3,
    "n_records": 4,
    "n_sources": 3,
+   "n_documents": 3,
    "n_streams": 1,
    "streams": [
     "transcript"
@@ -6684,6 +6848,7 @@ window.SITE_DATA = {
    "strength": 3,
    "n_records": 6,
    "n_sources": 5,
+   "n_documents": 5,
    "n_streams": 1,
    "streams": [
     "transcript"
@@ -6735,6 +6900,7 @@ window.SITE_DATA = {
    "strength": 3,
    "n_records": 3,
    "n_sources": 3,
+   "n_documents": 3,
    "n_streams": 1,
    "streams": [
     "transcript"
@@ -6777,6 +6943,7 @@ window.SITE_DATA = {
    "strength": 3,
    "n_records": 3,
    "n_sources": 3,
+   "n_documents": 3,
    "n_streams": 1,
    "streams": [
     "transcript"
@@ -6821,6 +6988,7 @@ window.SITE_DATA = {
    "strength": 3,
    "n_records": 10,
    "n_sources": 7,
+   "n_documents": 7,
    "n_streams": 1,
    "streams": [
     "transcript"
@@ -6881,6 +7049,7 @@ window.SITE_DATA = {
    "strength": 1,
    "n_records": 1,
    "n_sources": 1,
+   "n_documents": 1,
    "n_streams": 1,
    "streams": [
     "transcript"
@@ -6913,6 +7082,7 @@ window.SITE_DATA = {
    "strength": 3,
    "n_records": 6,
    "n_sources": 3,
+   "n_documents": 3,
    "n_streams": 1,
    "streams": [
     "transcript"
@@ -6966,6 +7136,7 @@ window.SITE_DATA = {
    "strength": 2,
    "n_records": 2,
    "n_sources": 2,
+   "n_documents": 2,
    "n_streams": 1,
    "streams": [
     "transcript"
@@ -7003,6 +7174,7 @@ window.SITE_DATA = {
    "strength": 1,
    "n_records": 2,
    "n_sources": 1,
+   "n_documents": 1,
    "n_streams": 1,
    "streams": [
     "transcript"
@@ -7035,6 +7207,7 @@ window.SITE_DATA = {
    "strength": 1,
    "n_records": 1,
    "n_sources": 1,
+   "n_documents": 1,
    "n_streams": 1,
    "streams": [
     "transcript"
@@ -7065,6 +7238,7 @@ window.SITE_DATA = {
    "strength": 3,
    "n_records": 5,
    "n_sources": 5,
+   "n_documents": 5,
    "n_streams": 1,
    "streams": [
     "transcript"
@@ -7117,6 +7291,7 @@ window.SITE_DATA = {
    "strength": 3,
    "n_records": 3,
    "n_sources": 3,
+   "n_documents": 3,
    "n_streams": 1,
    "streams": [
     "transcript"
@@ -7159,6 +7334,7 @@ window.SITE_DATA = {
    "strength": 3,
    "n_records": 9,
    "n_sources": 6,
+   "n_documents": 6,
    "n_streams": 1,
    "streams": [
     "transcript"
@@ -7217,6 +7393,7 @@ window.SITE_DATA = {
    "strength": 1,
    "n_records": 1,
    "n_sources": 1,
+   "n_documents": 1,
    "n_streams": 1,
    "streams": [
     "transcript"
@@ -7250,6 +7427,7 @@ window.SITE_DATA = {
    "strength": 2,
    "n_records": 2,
    "n_sources": 2,
+   "n_documents": 2,
    "n_streams": 1,
    "streams": [
     "transcript"
@@ -7285,6 +7463,7 @@ window.SITE_DATA = {
    "strength": 2,
    "n_records": 2,
    "n_sources": 2,
+   "n_documents": 2,
    "n_streams": 1,
    "streams": [
     "transcript"
@@ -7319,6 +7498,7 @@ window.SITE_DATA = {
    "strength": 1,
    "n_records": 1,
    "n_sources": 1,
+   "n_documents": 1,
    "n_streams": 1,
    "streams": [
     "transcript"
@@ -7351,6 +7531,7 @@ window.SITE_DATA = {
    "strength": 1,
    "n_records": 1,
    "n_sources": 1,
+   "n_documents": 1,
    "n_streams": 1,
    "streams": [
     "transcript"
@@ -7384,6 +7565,7 @@ window.SITE_DATA = {
    "strength": 1,
    "n_records": 1,
    "n_sources": 1,
+   "n_documents": 1,
    "n_streams": 1,
    "streams": [
     "transcript"
@@ -7414,6 +7596,7 @@ window.SITE_DATA = {
    "strength": 2,
    "n_records": 2,
    "n_sources": 2,
+   "n_documents": 2,
    "n_streams": 1,
    "streams": [
     "transcript"
@@ -7449,6 +7632,7 @@ window.SITE_DATA = {
    "strength": 5,
    "n_records": 13,
    "n_sources": 10,
+   "n_documents": 10,
    "n_streams": 2,
    "streams": [
     "sdr",
@@ -9060,7 +9244,7 @@ window.SITE_DATA = {
     "coordination-architecture",
     "guidance"
    ],
-   "stream": "sdr",
+   "stream": "workshop",
    "source_id": "S045",
    "date_collected": "2026-07-17",
    "confidence": "medium",
@@ -9083,7 +9267,7 @@ window.SITE_DATA = {
     "information-management",
     "hpc"
    ],
-   "stream": "sdr",
+   "stream": "workshop",
    "source_id": "S045",
    "date_collected": "2026-07-17",
    "confidence": "medium",
@@ -9108,7 +9292,7 @@ window.SITE_DATA = {
     "performance",
     "advocacy"
    ],
-   "stream": "sdr",
+   "stream": "workshop",
    "source_id": "S045",
    "date_collected": "2026-07-17",
    "confidence": "medium",
@@ -9158,7 +9342,7 @@ window.SITE_DATA = {
     "performance",
     "advocacy"
    ],
-   "stream": "sdr",
+   "stream": "workshop",
    "source_id": "S045",
    "date_collected": "2026-07-17",
    "confidence": "medium",
@@ -9181,7 +9365,7 @@ window.SITE_DATA = {
     "information-management",
     "coordination-architecture"
    ],
-   "stream": "sdr",
+   "stream": "workshop",
    "source_id": "S045",
    "date_collected": "2026-07-17",
    "confidence": "medium",
@@ -9205,7 +9389,7 @@ window.SITE_DATA = {
     "coordination-architecture",
     "guidance"
    ],
-   "stream": "sdr",
+   "stream": "workshop",
    "source_id": "S045",
    "date_collected": "2026-07-17",
    "confidence": "medium",
@@ -9229,7 +9413,7 @@ window.SITE_DATA = {
     "coordination-architecture",
     "advocacy"
    ],
-   "stream": "sdr",
+   "stream": "workshop",
    "source_id": "S045",
    "date_collected": "2026-07-17",
    "confidence": "medium",
@@ -9253,7 +9437,7 @@ window.SITE_DATA = {
     "government-engagement",
     "partnerships"
    ],
-   "stream": "sdr",
+   "stream": "workshop",
    "source_id": "S045",
    "date_collected": "2026-07-17",
    "confidence": "medium",
@@ -9278,7 +9462,7 @@ window.SITE_DATA = {
     "performance",
     "advocacy"
    ],
-   "stream": "sdr",
+   "stream": "workshop",
    "source_id": "S083",
    "date_collected": "2026-07-17",
    "confidence": "medium",
@@ -9303,7 +9487,7 @@ window.SITE_DATA = {
     "funding",
     "transition-handover"
    ],
-   "stream": "sdr",
+   "stream": "workshop",
    "source_id": "S083",
    "date_collected": "2026-07-17",
    "confidence": "medium",
@@ -9327,7 +9511,7 @@ window.SITE_DATA = {
     "transition-handover",
     "capacity"
    ],
-   "stream": "sdr",
+   "stream": "workshop",
    "source_id": "S083",
    "date_collected": "2026-07-17",
    "confidence": "medium",
@@ -9351,7 +9535,7 @@ window.SITE_DATA = {
     "transition-handover",
     "capacity"
    ],
-   "stream": "sdr",
+   "stream": "workshop",
    "source_id": "S084",
    "date_collected": "2026-07-17",
    "confidence": "medium",
@@ -9375,7 +9559,7 @@ window.SITE_DATA = {
     "transition-handover",
     "guidance"
    ],
-   "stream": "sdr",
+   "stream": "workshop",
    "source_id": "S083",
    "date_collected": "2026-07-17",
    "confidence": "medium",
@@ -9399,7 +9583,7 @@ window.SITE_DATA = {
     "transition-handover",
     "guidance"
    ],
-   "stream": "sdr",
+   "stream": "workshop",
    "source_id": "S084",
    "date_collected": "2026-07-17",
    "confidence": "medium",
@@ -9423,7 +9607,7 @@ window.SITE_DATA = {
     "transition-handover",
     "guidance"
    ],
-   "stream": "sdr",
+   "stream": "workshop",
    "source_id": "S085",
    "date_collected": "2026-07-17",
    "confidence": "medium",
@@ -9446,7 +9630,7 @@ window.SITE_DATA = {
     "transition-handover",
     "hpc"
    ],
-   "stream": "sdr",
+   "stream": "workshop",
    "source_id": "S084",
    "date_collected": "2026-07-17",
    "confidence": "medium",
@@ -9470,7 +9654,7 @@ window.SITE_DATA = {
     "transition-handover",
     "government-engagement"
    ],
-   "stream": "sdr",
+   "stream": "workshop",
    "source_id": "S084",
    "date_collected": "2026-07-17",
    "confidence": "medium",
@@ -9494,7 +9678,7 @@ window.SITE_DATA = {
     "transition-handover",
     "government-engagement"
    ],
-   "stream": "sdr",
+   "stream": "workshop",
    "source_id": "S085",
    "date_collected": "2026-07-17",
    "confidence": "medium",
@@ -9519,7 +9703,7 @@ window.SITE_DATA = {
     "transition-handover",
     "partnerships"
    ],
-   "stream": "sdr",
+   "stream": "workshop",
    "source_id": "S083",
    "date_collected": "2026-07-17",
    "confidence": "medium",
@@ -9544,7 +9728,7 @@ window.SITE_DATA = {
     "transition-handover",
     "partnerships"
    ],
-   "stream": "sdr",
+   "stream": "workshop",
    "source_id": "S084",
    "date_collected": "2026-07-17",
    "confidence": "medium",
@@ -9594,7 +9778,7 @@ window.SITE_DATA = {
     "transition-handover",
     "partnerships"
    ],
-   "stream": "sdr",
+   "stream": "workshop",
    "source_id": "S085",
    "date_collected": "2026-07-17",
    "confidence": "medium",
@@ -9695,7 +9879,7 @@ window.SITE_DATA = {
     "advocacy",
     "transition-handover"
    ],
-   "stream": "sdr",
+   "stream": "workshop",
    "source_id": "S084",
    "date_collected": "2026-07-17",
    "confidence": "medium",
@@ -9719,7 +9903,7 @@ window.SITE_DATA = {
     "information-management",
     "transition-handover"
    ],
-   "stream": "sdr",
+   "stream": "workshop",
    "source_id": "S083",
    "date_collected": "2026-07-17",
    "confidence": "medium",
@@ -9743,7 +9927,7 @@ window.SITE_DATA = {
     "information-management",
     "transition-handover"
    ],
-   "stream": "sdr",
+   "stream": "workshop",
    "source_id": "S084",
    "date_collected": "2026-07-17",
    "confidence": "medium",
@@ -9767,7 +9951,7 @@ window.SITE_DATA = {
     "information-management",
     "transition-handover"
    ],
-   "stream": "sdr",
+   "stream": "workshop",
    "source_id": "S085",
    "date_collected": "2026-07-17",
    "confidence": "medium",
@@ -9792,7 +9976,7 @@ window.SITE_DATA = {
     "transition-handover",
     "localisation"
    ],
-   "stream": "sdr",
+   "stream": "workshop",
    "source_id": "S083",
    "date_collected": "2026-07-17",
    "confidence": "medium",
@@ -9817,7 +10001,7 @@ window.SITE_DATA = {
     "transition-handover",
     "localisation"
    ],
-   "stream": "sdr",
+   "stream": "workshop",
    "source_id": "S084",
    "date_collected": "2026-07-17",
    "confidence": "medium",
@@ -9842,7 +10026,7 @@ window.SITE_DATA = {
     "sustainability",
     "transition-handover"
    ],
-   "stream": "sdr",
+   "stream": "workshop",
    "source_id": "S083",
    "date_collected": "2026-07-17",
    "confidence": "medium",
@@ -9867,7 +10051,7 @@ window.SITE_DATA = {
     "sustainability",
     "transition-handover"
    ],
-   "stream": "sdr",
+   "stream": "workshop",
    "source_id": "S084",
    "date_collected": "2026-07-17",
    "confidence": "medium",
@@ -9891,7 +10075,7 @@ window.SITE_DATA = {
     "transition-handover",
     "capacity"
    ],
-   "stream": "sdr",
+   "stream": "workshop",
    "source_id": "S083",
    "date_collected": "2026-07-17",
    "confidence": "medium",
@@ -9915,7 +10099,7 @@ window.SITE_DATA = {
     "transition-handover",
     "capacity"
    ],
-   "stream": "sdr",
+   "stream": "workshop",
    "source_id": "S084",
    "date_collected": "2026-07-17",
    "confidence": "medium",
@@ -10065,7 +10249,7 @@ window.SITE_DATA = {
     "coordination-architecture",
     "information-management"
    ],
-   "stream": "sdr",
+   "stream": "workshop",
    "source_id": "S039",
    "date_collected": "2026-07-17",
    "confidence": "high",
@@ -10089,7 +10273,7 @@ window.SITE_DATA = {
     "coordination-architecture",
     "information-management"
    ],
-   "stream": "sdr",
+   "stream": "workshop",
    "source_id": "S040",
    "date_collected": "2026-07-17",
    "confidence": "high",
@@ -10116,7 +10300,7 @@ window.SITE_DATA = {
     "coordination-architecture",
     "guidance"
    ],
-   "stream": "sdr",
+   "stream": "workshop",
    "source_id": "S045",
    "date_collected": "2026-07-17",
    "confidence": "medium",
@@ -10142,7 +10326,7 @@ window.SITE_DATA = {
    "tags": [
     "coordination-architecture"
    ],
-   "stream": "sdr",
+   "stream": "workshop",
    "source_id": "S045",
    "date_collected": "2026-07-17",
    "confidence": "medium",
@@ -10214,7 +10398,7 @@ window.SITE_DATA = {
     "coordination-architecture",
     "guidance"
    ],
-   "stream": "sdr",
+   "stream": "workshop",
    "source_id": "S045",
    "date_collected": "2026-07-17",
    "confidence": "medium",
@@ -10309,7 +10493,7 @@ window.SITE_DATA = {
     "information-management",
     "coordination-architecture"
    ],
-   "stream": "sdr",
+   "stream": "workshop",
    "source_id": "S039",
    "date_collected": "2026-07-17",
    "confidence": "high",
@@ -10333,7 +10517,7 @@ window.SITE_DATA = {
     "information-management",
     "coordination-architecture"
    ],
-   "stream": "sdr",
+   "stream": "workshop",
    "source_id": "S040",
    "date_collected": "2026-07-17",
    "confidence": "high",
@@ -10357,7 +10541,7 @@ window.SITE_DATA = {
     "information-management",
     "hpc"
    ],
-   "stream": "sdr",
+   "stream": "workshop",
    "source_id": "S042",
    "date_collected": "2026-07-17",
    "confidence": "medium",
@@ -10381,7 +10565,7 @@ window.SITE_DATA = {
     "information-management",
     "hpc"
    ],
-   "stream": "sdr",
+   "stream": "workshop",
    "source_id": "S043",
    "date_collected": "2026-07-17",
    "confidence": "medium",
@@ -10405,7 +10589,7 @@ window.SITE_DATA = {
     "information-management",
     "hpc"
    ],
-   "stream": "sdr",
+   "stream": "workshop",
    "source_id": "S044",
    "date_collected": "2026-07-17",
    "confidence": "medium",
@@ -10429,7 +10613,7 @@ window.SITE_DATA = {
     "information-management",
     "hpc"
    ],
-   "stream": "sdr",
+   "stream": "workshop",
    "source_id": "S042",
    "date_collected": "2026-07-17",
    "confidence": "medium",
@@ -10453,7 +10637,7 @@ window.SITE_DATA = {
     "information-management",
     "hpc"
    ],
-   "stream": "sdr",
+   "stream": "workshop",
    "source_id": "S043",
    "date_collected": "2026-07-17",
    "confidence": "medium",
@@ -10477,7 +10661,7 @@ window.SITE_DATA = {
     "information-management",
     "hpc"
    ],
-   "stream": "sdr",
+   "stream": "workshop",
    "source_id": "S044",
    "date_collected": "2026-07-17",
    "confidence": "medium",
@@ -10503,7 +10687,7 @@ window.SITE_DATA = {
     "information-management",
     "coordination-architecture"
    ],
-   "stream": "sdr",
+   "stream": "workshop",
    "source_id": "S045",
    "date_collected": "2026-07-17",
    "confidence": "medium",
@@ -10527,7 +10711,7 @@ window.SITE_DATA = {
     "information-management",
     "advocacy"
    ],
-   "stream": "sdr",
+   "stream": "workshop",
    "source_id": "S045",
    "date_collected": "2026-07-17",
    "confidence": "high",
@@ -10629,7 +10813,7 @@ window.SITE_DATA = {
     "coordination-architecture",
     "performance"
    ],
-   "stream": "sdr",
+   "stream": "workshop",
    "source_id": "S037",
    "date_collected": "2026-07-17",
    "confidence": "high",
@@ -10653,7 +10837,7 @@ window.SITE_DATA = {
     "coordination-architecture",
     "performance"
    ],
-   "stream": "sdr",
+   "stream": "workshop",
    "source_id": "S039",
    "date_collected": "2026-07-17",
    "confidence": "high",
@@ -10677,7 +10861,7 @@ window.SITE_DATA = {
     "coordination-architecture",
     "performance"
    ],
-   "stream": "sdr",
+   "stream": "workshop",
    "source_id": "S042",
    "date_collected": "2026-07-17",
    "confidence": "high",
@@ -10701,7 +10885,7 @@ window.SITE_DATA = {
     "coordination-architecture",
     "performance"
    ],
-   "stream": "sdr",
+   "stream": "workshop",
    "source_id": "S043",
    "date_collected": "2026-07-17",
    "confidence": "high",
@@ -10725,7 +10909,7 @@ window.SITE_DATA = {
     "coordination-architecture",
     "performance"
    ],
-   "stream": "sdr",
+   "stream": "workshop",
    "source_id": "S044",
    "date_collected": "2026-07-17",
    "confidence": "high",
@@ -10851,7 +11035,7 @@ window.SITE_DATA = {
     "funding",
     "partnerships"
    ],
-   "stream": "sdr",
+   "stream": "workshop",
    "source_id": "S037",
    "date_collected": "2026-07-17",
    "confidence": "medium",
@@ -10875,7 +11059,7 @@ window.SITE_DATA = {
     "capacity",
     "coordination-architecture"
    ],
-   "stream": "sdr",
+   "stream": "workshop",
    "source_id": "S042",
    "date_collected": "2026-07-17",
    "confidence": "medium",
@@ -10899,7 +11083,7 @@ window.SITE_DATA = {
     "capacity",
     "coordination-architecture"
    ],
-   "stream": "sdr",
+   "stream": "workshop",
    "source_id": "S043",
    "date_collected": "2026-07-17",
    "confidence": "medium",
@@ -10925,7 +11109,7 @@ window.SITE_DATA = {
     "capacity",
     "coordination-architecture"
    ],
-   "stream": "sdr",
+   "stream": "workshop",
    "source_id": "S045",
    "date_collected": "2026-07-17",
    "confidence": "medium",
@@ -10949,7 +11133,7 @@ window.SITE_DATA = {
     "coordination-architecture",
     "guidance"
    ],
-   "stream": "sdr",
+   "stream": "workshop",
    "source_id": "S045",
    "date_collected": "2026-07-17",
    "confidence": "high",
@@ -10974,7 +11158,7 @@ window.SITE_DATA = {
    "tags": [
     "coordination-architecture"
    ],
-   "stream": "sdr",
+   "stream": "workshop",
    "source_id": "S045",
    "date_collected": "2026-07-17",
    "confidence": "medium",
@@ -10998,7 +11182,7 @@ window.SITE_DATA = {
     "guidance",
     "capacity"
    ],
-   "stream": "sdr",
+   "stream": "workshop",
    "source_id": "S045",
    "date_collected": "2026-07-17",
    "confidence": "medium",
@@ -11022,7 +11206,7 @@ window.SITE_DATA = {
     "performance",
     "coordination-architecture"
    ],
-   "stream": "sdr",
+   "stream": "workshop",
    "source_id": "S045",
    "date_collected": "2026-07-17",
    "confidence": "high",
@@ -11071,7 +11255,7 @@ window.SITE_DATA = {
     "coordination-architecture",
     "advocacy"
    ],
-   "stream": "sdr",
+   "stream": "workshop",
    "source_id": "S045",
    "date_collected": "2026-07-17",
    "confidence": "medium",
@@ -11172,7 +11356,7 @@ window.SITE_DATA = {
     "funding",
     "capacity"
    ],
-   "stream": "sdr",
+   "stream": "workshop",
    "source_id": "S022",
    "date_collected": "2026-07-17",
    "confidence": "medium",
@@ -11197,7 +11381,7 @@ window.SITE_DATA = {
     "pooled-funds",
     "coordination-architecture"
    ],
-   "stream": "sdr",
+   "stream": "workshop",
    "source_id": "S040",
    "date_collected": "2026-07-17",
    "confidence": "medium",
@@ -11221,7 +11405,7 @@ window.SITE_DATA = {
     "funding",
     "capacity"
    ],
-   "stream": "sdr",
+   "stream": "workshop",
    "source_id": "S042",
    "date_collected": "2026-07-17",
    "confidence": "medium",
@@ -11245,7 +11429,7 @@ window.SITE_DATA = {
     "funding",
     "capacity"
    ],
-   "stream": "sdr",
+   "stream": "workshop",
    "source_id": "S043",
    "date_collected": "2026-07-17",
    "confidence": "medium",
@@ -11271,7 +11455,7 @@ window.SITE_DATA = {
     "funding",
     "advocacy"
    ],
-   "stream": "sdr",
+   "stream": "workshop",
    "source_id": "S045",
    "date_collected": "2026-07-17",
    "confidence": "medium",
@@ -11299,7 +11483,7 @@ window.SITE_DATA = {
     "pooled-funds",
     "coordination-architecture"
    ],
-   "stream": "sdr",
+   "stream": "workshop",
    "source_id": "S045",
    "date_collected": "2026-07-17",
    "confidence": "medium",
@@ -11324,7 +11508,7 @@ window.SITE_DATA = {
     "capacity",
     "localisation"
    ],
-   "stream": "sdr",
+   "stream": "workshop",
    "source_id": "S045",
    "date_collected": "2026-07-17",
    "confidence": "medium",
@@ -11372,7 +11556,7 @@ window.SITE_DATA = {
     "guidance",
     "funding"
    ],
-   "stream": "sdr",
+   "stream": "workshop",
    "source_id": "S045",
    "date_collected": "2026-07-17",
    "confidence": "medium",
@@ -11396,7 +11580,7 @@ window.SITE_DATA = {
     "performance",
     "coordination-architecture"
    ],
-   "stream": "sdr",
+   "stream": "workshop",
    "source_id": "S042",
    "date_collected": "2026-07-17",
    "confidence": "medium",
@@ -11420,7 +11604,7 @@ window.SITE_DATA = {
     "performance",
     "coordination-architecture"
    ],
-   "stream": "sdr",
+   "stream": "workshop",
    "source_id": "S043",
    "date_collected": "2026-07-17",
    "confidence": "medium",
@@ -11444,7 +11628,7 @@ window.SITE_DATA = {
     "performance",
     "information-management"
    ],
-   "stream": "sdr",
+   "stream": "workshop",
    "source_id": "S042",
    "date_collected": "2026-07-17",
    "confidence": "medium",
@@ -11468,7 +11652,7 @@ window.SITE_DATA = {
     "performance",
     "information-management"
    ],
-   "stream": "sdr",
+   "stream": "workshop",
    "source_id": "S043",
    "date_collected": "2026-07-17",
    "confidence": "medium",
@@ -11492,7 +11676,7 @@ window.SITE_DATA = {
     "performance",
     "coordination-architecture"
    ],
-   "stream": "sdr",
+   "stream": "workshop",
    "source_id": "S042",
    "date_collected": "2026-07-17",
    "confidence": "medium",
@@ -11516,7 +11700,7 @@ window.SITE_DATA = {
     "performance",
     "coordination-architecture"
    ],
-   "stream": "sdr",
+   "stream": "workshop",
    "source_id": "S043",
    "date_collected": "2026-07-17",
    "confidence": "medium",
@@ -11540,7 +11724,7 @@ window.SITE_DATA = {
     "performance",
     "coordination-architecture"
    ],
-   "stream": "sdr",
+   "stream": "workshop",
    "source_id": "S044",
    "date_collected": "2026-07-17",
    "confidence": "medium",
@@ -11564,7 +11748,7 @@ window.SITE_DATA = {
     "coordination-architecture",
     "capacity"
    ],
-   "stream": "sdr",
+   "stream": "workshop",
    "source_id": "S045",
    "date_collected": "2026-07-17",
    "confidence": "medium",
@@ -11662,7 +11846,7 @@ window.SITE_DATA = {
     "capacity",
     "coordination-architecture"
    ],
-   "stream": "sdr",
+   "stream": "workshop",
    "source_id": "S037",
    "date_collected": "2026-07-17",
    "confidence": "medium",
@@ -11711,7 +11895,7 @@ window.SITE_DATA = {
    "tags": [
     "localisation"
    ],
-   "stream": "sdr",
+   "stream": "workshop",
    "source_id": "S037",
    "date_collected": "2026-07-17",
    "confidence": "medium",
@@ -11735,7 +11919,7 @@ window.SITE_DATA = {
     "localisation",
     "performance"
    ],
-   "stream": "sdr",
+   "stream": "workshop",
    "source_id": "S042",
    "date_collected": "2026-07-17",
    "confidence": "medium",
@@ -11759,7 +11943,7 @@ window.SITE_DATA = {
     "localisation",
     "performance"
    ],
-   "stream": "sdr",
+   "stream": "workshop",
    "source_id": "S043",
    "date_collected": "2026-07-17",
    "confidence": "medium",
@@ -11908,7 +12092,7 @@ window.SITE_DATA = {
     "localisation",
     "coordination-architecture"
    ],
-   "stream": "sdr",
+   "stream": "workshop",
    "source_id": "S045",
    "date_collected": "2026-07-17",
    "confidence": "high",
@@ -11935,7 +12119,7 @@ window.SITE_DATA = {
     "localisation",
     "aap"
    ],
-   "stream": "sdr",
+   "stream": "workshop",
    "source_id": "S045",
    "date_collected": "2026-07-17",
    "confidence": "high",
@@ -12036,7 +12220,7 @@ window.SITE_DATA = {
     "information-management",
     "coordination-architecture"
    ],
-   "stream": "sdr",
+   "stream": "workshop",
    "source_id": "S045",
    "date_collected": "2026-07-17",
    "confidence": "high",
@@ -12061,7 +12245,7 @@ window.SITE_DATA = {
     "aap",
     "hpc"
    ],
-   "stream": "sdr",
+   "stream": "workshop",
    "source_id": "S045",
    "date_collected": "2026-07-17",
    "confidence": "medium",
@@ -12109,7 +12293,7 @@ window.SITE_DATA = {
     "multisector",
     "nexus"
    ],
-   "stream": "sdr",
+   "stream": "workshop",
    "source_id": "S038",
    "date_collected": "2026-07-17",
    "confidence": "high",
@@ -12133,7 +12317,7 @@ window.SITE_DATA = {
     "multisector",
     "nexus"
    ],
-   "stream": "sdr",
+   "stream": "workshop",
    "source_id": "S040",
    "date_collected": "2026-07-17",
    "confidence": "high",
@@ -12233,7 +12417,7 @@ window.SITE_DATA = {
     "aap",
     "information-management"
    ],
-   "stream": "sdr",
+   "stream": "workshop",
    "source_id": "S045",
    "date_collected": "2026-07-17",
    "confidence": "high",
@@ -12304,7 +12488,7 @@ window.SITE_DATA = {
     "aap",
     "localisation"
    ],
-   "stream": "sdr",
+   "stream": "workshop",
    "source_id": "S045",
    "date_collected": "2026-07-17",
    "confidence": "medium",
@@ -12328,7 +12512,7 @@ window.SITE_DATA = {
     "coordination-architecture",
     "capacity"
    ],
-   "stream": "sdr",
+   "stream": "workshop",
    "source_id": "S045",
    "date_collected": "2026-07-17",
    "confidence": "medium",
@@ -12378,7 +12562,7 @@ window.SITE_DATA = {
     "capacity",
     "coordination-architecture"
    ],
-   "stream": "sdr",
+   "stream": "workshop",
    "source_id": "S045",
    "date_collected": "2026-07-17",
    "confidence": "medium",
@@ -12644,7 +12828,7 @@ window.SITE_DATA = {
     "advocacy",
     "information-management"
    ],
-   "stream": "sdr",
+   "stream": "workshop",
    "source_id": "S045",
    "date_collected": "2026-07-17",
    "confidence": "medium",
@@ -13016,7 +13200,7 @@ window.SITE_DATA = {
     "government-engagement",
     "transition-handover"
    ],
-   "stream": "sdr",
+   "stream": "workshop",
    "source_id": "S083",
    "date_collected": "2026-07-17",
    "confidence": "high",
@@ -13040,7 +13224,7 @@ window.SITE_DATA = {
     "government-engagement",
     "transition-handover"
    ],
-   "stream": "sdr",
+   "stream": "workshop",
    "source_id": "S085",
    "date_collected": "2026-07-17",
    "confidence": "high",
@@ -13067,7 +13251,7 @@ window.SITE_DATA = {
     "transition-handover",
     "sustainability"
    ],
-   "stream": "sdr",
+   "stream": "workshop",
    "source_id": "S084",
    "date_collected": "2026-07-17",
    "confidence": "medium",
@@ -13094,7 +13278,7 @@ window.SITE_DATA = {
     "coordination-architecture",
     "transition-handover"
    ],
-   "stream": "sdr",
+   "stream": "workshop",
    "source_id": "S085",
    "date_collected": "2026-07-17",
    "confidence": "medium",
@@ -13120,7 +13304,7 @@ window.SITE_DATA = {
     "transition-handover",
     "coordination-architecture"
    ],
-   "stream": "sdr",
+   "stream": "workshop",
    "source_id": "S085",
    "date_collected": "2026-07-17",
    "confidence": "medium",
@@ -13220,7 +13404,7 @@ window.SITE_DATA = {
     "capacity",
     "transition-handover"
    ],
-   "stream": "sdr",
+   "stream": "workshop",
    "source_id": "S083",
    "date_collected": "2026-07-17",
    "confidence": "high",
@@ -13270,7 +13454,7 @@ window.SITE_DATA = {
     "capacity",
     "transition-handover"
    ],
-   "stream": "sdr",
+   "stream": "workshop",
    "source_id": "S083",
    "date_collected": "2026-07-17",
    "confidence": "medium",
@@ -13297,7 +13481,7 @@ window.SITE_DATA = {
     "transition-handover",
     "staff-turnover"
    ],
-   "stream": "sdr",
+   "stream": "workshop",
    "source_id": "S084",
    "date_collected": "2026-07-17",
    "confidence": "medium",
@@ -13324,7 +13508,7 @@ window.SITE_DATA = {
     "capacity",
     "government-engagement"
    ],
-   "stream": "sdr",
+   "stream": "workshop",
    "source_id": "S084",
    "date_collected": "2026-07-17",
    "confidence": "medium",
@@ -13351,7 +13535,7 @@ window.SITE_DATA = {
     "capacity",
     "government-engagement"
    ],
-   "stream": "sdr",
+   "stream": "workshop",
    "source_id": "S085",
    "date_collected": "2026-07-17",
    "confidence": "medium",
@@ -13376,7 +13560,7 @@ window.SITE_DATA = {
     "government-engagement",
     "advocacy"
    ],
-   "stream": "sdr",
+   "stream": "workshop",
    "source_id": "S083",
    "date_collected": "2026-07-17",
    "confidence": "high",
@@ -13400,7 +13584,7 @@ window.SITE_DATA = {
     "information-management",
     "transition-handover"
    ],
-   "stream": "sdr",
+   "stream": "workshop",
    "source_id": "S083",
    "date_collected": "2026-07-17",
    "confidence": "medium",
@@ -13424,7 +13608,7 @@ window.SITE_DATA = {
     "information-management",
     "government-engagement"
    ],
-   "stream": "sdr",
+   "stream": "workshop",
    "source_id": "S083",
    "date_collected": "2026-07-17",
    "confidence": "medium",
@@ -13448,7 +13632,7 @@ window.SITE_DATA = {
     "information-management",
     "government-engagement"
    ],
-   "stream": "sdr",
+   "stream": "workshop",
    "source_id": "S084",
    "date_collected": "2026-07-17",
    "confidence": "medium",
@@ -13575,7 +13759,7 @@ window.SITE_DATA = {
     "funding",
     "capacity"
    ],
-   "stream": "sdr",
+   "stream": "workshop",
    "source_id": "S084",
    "date_collected": "2026-07-17",
    "confidence": "high",
@@ -13602,7 +13786,7 @@ window.SITE_DATA = {
     "capacity",
     "transition-handover"
    ],
-   "stream": "sdr",
+   "stream": "workshop",
    "source_id": "S083",
    "date_collected": "2026-07-17",
    "confidence": "medium",
@@ -13629,7 +13813,7 @@ window.SITE_DATA = {
     "transition-handover",
     "performance"
    ],
-   "stream": "sdr",
+   "stream": "workshop",
    "source_id": "S083",
    "date_collected": "2026-07-17",
    "confidence": "medium",
@@ -13654,7 +13838,7 @@ window.SITE_DATA = {
     "transition-handover",
     "guidance"
    ],
-   "stream": "sdr",
+   "stream": "workshop",
    "source_id": "S083",
    "date_collected": "2026-07-17",
    "confidence": "high",
@@ -13679,7 +13863,7 @@ window.SITE_DATA = {
     "transition-handover",
     "guidance"
    ],
-   "stream": "sdr",
+   "stream": "workshop",
    "source_id": "S085",
    "date_collected": "2026-07-17",
    "confidence": "high",
@@ -13705,7 +13889,7 @@ window.SITE_DATA = {
     "funding",
     "transition-handover"
    ],
-   "stream": "sdr",
+   "stream": "workshop",
    "source_id": "S085",
    "date_collected": "2026-07-17",
    "confidence": "medium",
@@ -13732,7 +13916,7 @@ window.SITE_DATA = {
     "advocacy",
     "transition-handover"
    ],
-   "stream": "sdr",
+   "stream": "workshop",
    "source_id": "S084",
    "date_collected": "2026-07-17",
    "confidence": "medium",
@@ -13833,7 +14017,7 @@ window.SITE_DATA = {
     "transition-handover",
     "coordination-architecture"
    ],
-   "stream": "sdr",
+   "stream": "workshop",
    "source_id": "S083",
    "date_collected": "2026-07-17",
    "confidence": "high",
@@ -14009,7 +14193,7 @@ window.SITE_DATA = {
     "transition-handover",
     "guidance"
    ],
-   "stream": "sdr",
+   "stream": "workshop",
    "source_id": "S084",
    "date_collected": "2026-07-17",
    "confidence": "medium",
@@ -14035,7 +14219,7 @@ window.SITE_DATA = {
     "transition-handover",
     "government-engagement"
    ],
-   "stream": "sdr",
+   "stream": "workshop",
    "source_id": "S084",
    "date_collected": "2026-07-17",
    "confidence": "medium",
@@ -14061,7 +14245,7 @@ window.SITE_DATA = {
     "transition-handover",
     "government-engagement"
    ],
-   "stream": "sdr",
+   "stream": "workshop",
    "source_id": "S084",
    "date_collected": "2026-07-17",
    "confidence": "medium",
@@ -14087,7 +14271,7 @@ window.SITE_DATA = {
     "transition-handover",
     "government-engagement"
    ],
-   "stream": "sdr",
+   "stream": "workshop",
    "source_id": "S085",
    "date_collected": "2026-07-17",
    "confidence": "medium",
@@ -14111,7 +14295,7 @@ window.SITE_DATA = {
     "transition-handover",
     "guidance"
    ],
-   "stream": "sdr",
+   "stream": "workshop",
    "source_id": "S084",
    "date_collected": "2026-07-17",
    "confidence": "medium",
@@ -14161,7 +14345,7 @@ window.SITE_DATA = {
     "performance",
     "advocacy"
    ],
-   "stream": "sdr",
+   "stream": "workshop",
    "source_id": "S084",
    "date_collected": "2026-07-17",
    "confidence": "high",
@@ -14357,7 +14541,7 @@ window.SITE_DATA = {
     "funding",
     "pooled-funds"
    ],
-   "stream": "sdr",
+   "stream": "workshop",
    "source_id": "S085",
    "date_collected": "2026-07-17",
    "confidence": "medium",
@@ -14383,7 +14567,7 @@ window.SITE_DATA = {
     "localisation",
     "capacity"
    ],
-   "stream": "sdr",
+   "stream": "workshop",
    "source_id": "S085",
    "date_collected": "2026-07-17",
    "confidence": "medium",
@@ -14409,7 +14593,7 @@ window.SITE_DATA = {
     "localisation",
     "capacity"
    ],
-   "stream": "sdr",
+   "stream": "workshop",
    "source_id": "S085",
    "date_collected": "2026-07-17",
    "confidence": "medium",
@@ -14459,7 +14643,7 @@ window.SITE_DATA = {
     "localisation",
     "information-management"
    ],
-   "stream": "sdr",
+   "stream": "workshop",
    "source_id": "S084",
    "date_collected": "2026-07-17",
    "confidence": "medium",
@@ -14589,7 +14773,7 @@ window.SITE_DATA = {
     "capacity",
     "transition-handover"
    ],
-   "stream": "sdr",
+   "stream": "workshop",
    "source_id": "S084",
    "date_collected": "2026-07-17",
    "confidence": "medium",
@@ -14616,7 +14800,7 @@ window.SITE_DATA = {
     "capacity",
     "transition-handover"
    ],
-   "stream": "sdr",
+   "stream": "workshop",
    "source_id": "S085",
    "date_collected": "2026-07-17",
    "confidence": "medium",
@@ -14642,7 +14826,7 @@ window.SITE_DATA = {
     "government-engagement",
     "capacity"
    ],
-   "stream": "sdr",
+   "stream": "workshop",
    "source_id": "S085",
    "date_collected": "2026-07-17",
    "confidence": "medium",
@@ -14668,7 +14852,7 @@ window.SITE_DATA = {
     "government-engagement",
     "guidance"
    ],
-   "stream": "sdr",
+   "stream": "workshop",
    "source_id": "S085",
    "date_collected": "2026-07-17",
    "confidence": "medium",
@@ -14695,7 +14879,7 @@ window.SITE_DATA = {
     "staff-turnover",
     "capacity"
    ],
-   "stream": "sdr",
+   "stream": "workshop",
    "source_id": "S083",
    "date_collected": "2026-07-17",
    "confidence": "medium",
@@ -14747,7 +14931,7 @@ window.SITE_DATA = {
     "transition-handover",
     "inclusion"
    ],
-   "stream": "sdr",
+   "stream": "workshop",
    "source_id": "S084",
    "date_collected": "2026-07-17",
    "confidence": "high",
@@ -14774,7 +14958,7 @@ window.SITE_DATA = {
     "government-engagement",
     "transition-handover"
    ],
-   "stream": "sdr",
+   "stream": "workshop",
    "source_id": "S083",
    "date_collected": "2026-07-17",
    "confidence": "medium",
@@ -14800,7 +14984,7 @@ window.SITE_DATA = {
     "government-engagement",
     "transition-handover"
    ],
-   "stream": "sdr",
+   "stream": "workshop",
    "source_id": "S084",
    "date_collected": "2026-07-17",
    "confidence": "medium",
@@ -14827,7 +15011,7 @@ window.SITE_DATA = {
     "transition-handover",
     "data-protection"
    ],
-   "stream": "sdr",
+   "stream": "workshop",
    "source_id": "S085",
    "date_collected": "2026-07-17",
    "confidence": "medium",
@@ -14854,7 +15038,7 @@ window.SITE_DATA = {
     "advocacy",
     "transition-handover"
    ],
-   "stream": "sdr",
+   "stream": "workshop",
    "source_id": "S084",
    "date_collected": "2026-07-17",
    "confidence": "medium",
@@ -14957,7 +15141,7 @@ window.SITE_DATA = {
     "government-engagement",
     "nexus"
    ],
-   "stream": "sdr",
+   "stream": "workshop",
    "source_id": "S083",
    "date_collected": "2026-07-17",
    "confidence": "high",
@@ -14983,7 +15167,7 @@ window.SITE_DATA = {
     "transition-handover",
     "government-engagement"
    ],
-   "stream": "sdr",
+   "stream": "workshop",
    "source_id": "S083",
    "date_collected": "2026-07-17",
    "confidence": "medium",
@@ -15089,7 +15273,7 @@ window.SITE_DATA = {
     "coordination-architecture",
     "nexus"
    ],
-   "stream": "sdr",
+   "stream": "workshop",
    "source_id": "S084",
    "date_collected": "2026-07-17",
    "confidence": "high",
@@ -15115,7 +15299,7 @@ window.SITE_DATA = {
     "nexus",
     "transition-handover"
    ],
-   "stream": "sdr",
+   "stream": "workshop",
    "source_id": "S084",
    "date_collected": "2026-07-17",
    "confidence": "medium",
@@ -15142,7 +15326,7 @@ window.SITE_DATA = {
     "localisation",
     "capacity"
    ],
-   "stream": "sdr",
+   "stream": "workshop",
    "source_id": "S084",
    "date_collected": "2026-07-17",
    "confidence": "high",
@@ -15168,7 +15352,7 @@ window.SITE_DATA = {
     "transition-handover",
     "coordination-architecture"
    ],
-   "stream": "sdr",
+   "stream": "workshop",
    "source_id": "S085",
    "date_collected": "2026-07-17",
    "confidence": "medium",
@@ -15194,7 +15378,7 @@ window.SITE_DATA = {
     "transition-handover",
     "government-engagement"
    ],
-   "stream": "sdr",
+   "stream": "workshop",
    "source_id": "S085",
    "date_collected": "2026-07-17",
    "confidence": "high",
@@ -15298,7 +15482,7 @@ window.SITE_DATA = {
     "capacity",
     "transition-handover"
    ],
-   "stream": "sdr",
+   "stream": "workshop",
    "source_id": "S084",
    "date_collected": "2026-07-17",
    "confidence": "high",
@@ -15325,7 +15509,7 @@ window.SITE_DATA = {
     "capacity",
     "localisation"
    ],
-   "stream": "sdr",
+   "stream": "workshop",
    "source_id": "S083",
    "date_collected": "2026-07-17",
    "confidence": "high",
@@ -15401,7 +15585,7 @@ window.SITE_DATA = {
     "capacity",
     "performance"
    ],
-   "stream": "sdr",
+   "stream": "workshop",
    "source_id": "S084",
    "date_collected": "2026-07-17",
    "confidence": "medium",
@@ -15530,7 +15714,7 @@ window.SITE_DATA = {
     "government-engagement",
     "transition-handover"
    ],
-   "stream": "sdr",
+   "stream": "workshop",
    "source_id": "S083",
    "date_collected": "2026-07-17",
    "confidence": "high",
@@ -15556,7 +15740,7 @@ window.SITE_DATA = {
     "information-management",
     "transition-handover"
    ],
-   "stream": "sdr",
+   "stream": "workshop",
    "source_id": "S083",
    "date_collected": "2026-07-17",
    "confidence": "high",
@@ -15582,7 +15766,7 @@ window.SITE_DATA = {
     "information-management",
     "transition-handover"
    ],
-   "stream": "sdr",
+   "stream": "workshop",
    "source_id": "S084",
    "date_collected": "2026-07-17",
    "confidence": "high",
@@ -15684,7 +15868,7 @@ window.SITE_DATA = {
     "transition-handover",
     "capacity"
    ],
-   "stream": "sdr",
+   "stream": "workshop",
    "source_id": "S083",
    "date_collected": "2026-07-17",
    "confidence": "medium",
@@ -15711,7 +15895,7 @@ window.SITE_DATA = {
     "nexus",
     "funding"
    ],
-   "stream": "sdr",
+   "stream": "workshop",
    "source_id": "S083",
    "date_collected": "2026-07-17",
    "confidence": "high",
@@ -15736,7 +15920,7 @@ window.SITE_DATA = {
     "capacity",
     "peer-learning"
    ],
-   "stream": "sdr",
+   "stream": "workshop",
    "source_id": "S084",
    "date_collected": "2026-07-17",
    "confidence": "medium",
@@ -15784,7 +15968,7 @@ window.SITE_DATA = {
     "peer-learning",
     "transition-handover"
    ],
-   "stream": "sdr",
+   "stream": "workshop",
    "source_id": "S084",
    "date_collected": "2026-07-17",
    "confidence": "medium",
@@ -15812,7 +15996,7 @@ window.SITE_DATA = {
     "transition-handover",
     "capacity"
    ],
-   "stream": "sdr",
+   "stream": "workshop",
    "source_id": "S083",
    "date_collected": "2026-07-17",
    "confidence": "high",
@@ -15840,7 +16024,7 @@ window.SITE_DATA = {
     "transition-handover",
     "capacity"
    ],
-   "stream": "sdr",
+   "stream": "workshop",
    "source_id": "S084",
    "date_collected": "2026-07-17",
    "confidence": "high",
@@ -15865,7 +16049,7 @@ window.SITE_DATA = {
     "capacity",
     "information-management"
    ],
-   "stream": "sdr",
+   "stream": "workshop",
    "source_id": "S083",
    "date_collected": "2026-07-17",
    "confidence": "medium",
@@ -15890,7 +16074,7 @@ window.SITE_DATA = {
     "capacity",
     "peer-learning"
    ],
-   "stream": "sdr",
+   "stream": "workshop",
    "source_id": "S083",
    "date_collected": "2026-07-17",
    "confidence": "medium",
@@ -15913,7 +16097,7 @@ window.SITE_DATA = {
     "transition-handover",
     "performance"
    ],
-   "stream": "sdr",
+   "stream": "workshop",
    "source_id": "S083",
    "date_collected": "2026-07-17",
    "confidence": "medium",
@@ -15938,7 +16122,7 @@ window.SITE_DATA = {
     "capacity",
     "transition-handover"
    ],
-   "stream": "sdr",
+   "stream": "workshop",
    "source_id": "S084",
    "date_collected": "2026-07-17",
    "confidence": "medium",
@@ -15988,7 +16172,7 @@ window.SITE_DATA = {
     "government-engagement",
     "capacity"
    ],
-   "stream": "sdr",
+   "stream": "workshop",
    "source_id": "S085",
    "date_collected": "2026-07-17",
    "confidence": "high",
@@ -16012,7 +16196,7 @@ window.SITE_DATA = {
     "transition-handover",
     "capacity"
    ],
-   "stream": "sdr",
+   "stream": "workshop",
    "source_id": "S083",
    "date_collected": "2026-07-17",
    "confidence": "medium",
@@ -16115,7 +16299,7 @@ window.SITE_DATA = {
     "coordination-architecture",
     "performance"
    ],
-   "stream": "sdr",
+   "stream": "workshop",
    "source_id": "S083",
    "date_collected": "2026-07-17",
    "confidence": "high",
@@ -16192,7 +16376,7 @@ window.SITE_DATA = {
     "nexus",
     "funding"
    ],
-   "stream": "sdr",
+   "stream": "workshop",
    "source_id": "S084",
    "date_collected": "2026-07-17",
    "confidence": "medium",
@@ -16218,7 +16402,7 @@ window.SITE_DATA = {
     "nexus",
     "funding"
    ],
-   "stream": "sdr",
+   "stream": "workshop",
    "source_id": "S085",
    "date_collected": "2026-07-17",
    "confidence": "medium",
@@ -16268,7 +16452,7 @@ window.SITE_DATA = {
     "performance",
     "information-management"
    ],
-   "stream": "sdr",
+   "stream": "workshop",
    "source_id": "S083",
    "date_collected": "2026-07-17",
    "confidence": "high",
@@ -16293,7 +16477,7 @@ window.SITE_DATA = {
     "performance",
     "information-management"
    ],
-   "stream": "sdr",
+   "stream": "workshop",
    "source_id": "S084",
    "date_collected": "2026-07-17",
    "confidence": "high",
