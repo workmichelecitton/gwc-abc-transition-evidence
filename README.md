@@ -42,13 +42,13 @@ Strength of evidence is **computed**, never typed in:
 
 | Band | Condition | Findings |
 |---|---|---|
-| **5 · Very strong** | 6+ independent sources, across 2+ streams, in 2+ countries | 23 |
-| **4 · Strong** | 3+ independent sources across 2+ streams | 25 |
-| **3 · Moderate** | 3+ independent sources, or 2 across 2 streams | 33 |
+| **5 · Very strong** | 6+ independent sources, across 2+ streams, in 2+ countries | 24 |
+| **4 · Strong** | 3+ independent sources across 2+ streams | 26 |
+| **3 · Moderate** | 3+ independent sources, or 2 across 2 streams | 32 |
 | **2 · Limited** | 2 independent sources | 22 |
-| **1 · Single source** | 1 source — not corroborated, not therefore wrong | 34 |
+| **1 · Single source** | 1 source — not corroborated, not therefore wrong | 56 |
 
-Five bands, not three. The earlier three-band scale put 81 of 137 findings in `high`, which is a majority rather than a filter: a claim with three sources ranked identically to one with thirteen across four streams.
+Counts move as evidence is added; re-read them from `data/site.json` rather than trusting this table. Five bands, not three: the earlier three-band scale put 81 of 137 findings in `high`, which is a majority rather than a filter: a claim with three sources ranked identically to one with thirteen across four streams.
 
 **Band 1 is not a failing grade.** Several of the most interesting things in this base are single-source — one coordinator saying something nobody else has said yet. The band records how much corroboration exists, not how much the claim is worth.
 
@@ -113,7 +113,7 @@ backfill, and grouped the Findings list.
 | Field | Published? |
 |---|---|
 | `statement` | Yes — neutral summary |
-| `quote` | **Not on the site** — stripped at build time. But `evidence.csv` is committed to a public repository, so quotes are readable on GitHub. Treat them as public: anonymise personal names to a role in square brackets, exactly as for statements. |
+| `quote` | **Not on the site** — stripped at build time. But `evidence.csv` is committed to a public repository, so quotes are readable on GitHub. Treat them as public: strip personal names, and anything that identifies the individual who spoke. Organisations may be named — see `prompts/00-shared-rules.md`. |
 | `notes` | **No.** Never leaves the CSV. |
 | records marked `visibility: internal` | **No.** Dropped entirely. |
 | `follow-ups.csv` | Validated, never published to the site |

@@ -52,18 +52,37 @@ A useful test: could someone read this statement and say "no, that's not our exp
 
 ---
 
-## Anonymisation — non-negotiable
+## Protecting people — non-negotiable
 
 This repository is public and git history is permanent. A bad commit cannot be cleanly withdrawn.
 
-- No personal names, ever.
-- No role titles specific enough to identify one person ("the WASH Cluster Coordinator in X" identifies an individual).
-- **No organisation named in the `statement` or `quote`.** Use functional descriptors: "a major bilateral donor", "the cluster lead agency", "an intermediary operational cell".
-- **The `actors` column is the exception.** It is structural metadata, not narrative, and naming who a finding concerns is the whole point of the field. `ocha`, `un-agency`, `donor` are fine there even on a critical finding. The distinction: the actors column says *who this is about*; the statement must not say *who is at fault by name*.
-- Quotes: verbatim wording, identifying details removed. If a quote cannot survive anonymisation, drop the quote and keep the statement.
-- Where in doubt, set `visibility` to `internal`. Internal records are dropped at build time and never reach the published file.
+The thing being protected is **people, not institutions**. Data protection law regulates information about an identified or identifiable natural person; an organisation is not one. Naming an agency is therefore not a data-protection question. Identifying the individual who spoke is.
 
-Raw transcripts and restricted documents **never** enter this repository.
+**Never, in `statement` or `quote`:**
+
+- A personal name, including third parties the speaker mentions.
+- A role title tied to a place and time, because that combination usually names one person. "The WASH Cluster Coordinator in country X" is an identifier even with no name attached — there is only one.
+- A detail that singles someone out by their situation: a specific secondment, a contract ending on a stated date, an individual's move between two named posts.
+
+The test is not "did I remove the name" but **"could a colleague in that country work out who said this?"** Applied honestly, that rules out more than a name-stripping pass does.
+
+If a quote cannot survive that test, drop the quote and keep the statement. Where any doubt remains, set `visibility` to `internal` — internal records are dropped at build time and never reach the published file.
+
+## Naming organisations — allowed, with judgement
+
+Organisations **may** be named in `statement` and `quote`. Withholding the name usually made the claim vaguer without protecting anybody: "a UN agency reduced its coordination post" tells a reader almost nothing, and anyone in the country knows which agency it was anyway.
+
+Three conditions:
+
+1. **The organisation must be large enough that naming it does not name people.** A UN agency, a cluster lead agency, a large international NGO, a donor government: name them. A single local NGO working in one municipality, a two-person consultancy, a named consortium of three partners: do not — at that size the organisation *is* the individuals, and the identification test above applies to it.
+
+2. **The register rule still governs how you write it.** Naming an actor is not licence to assign blame. Describe the mechanism and its consequence: "the lead agency set a six-month handover deadline internally, tied to a funding cycle rather than to readiness" — not "the lead agency imposed an arbitrary deadline". A named organisation in a critical claim raises the standard of fairness, it does not lower it.
+
+3. **Watch the narrowing effect.** A named organisation, in one country, in a critical claim, in a sector with one coordinator, can make the *speaker* identifiable even though the speaker is not named. This is the real risk that naming introduces, and it is a risk to a person rather than to the organisation. Where a claim is both critical and country-specific, consider whether the organisation needs naming for the claim to be usable. Often it does not.
+
+The `actors` column remains structural metadata and is unaffected: it says who a finding concerns, using controlled values.
+
+Raw transcripts and restricted documents **never** enter this repository, whatever is in them.
 
 ---
 

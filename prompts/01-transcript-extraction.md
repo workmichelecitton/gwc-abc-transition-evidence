@@ -35,9 +35,10 @@ A single sentence often contains a barrier and a recommendation. Split it into t
 
 Interviews are where this repository is most likely to leak something. The speaker was candid because the conversation was not public.
 
-- Strip every name, including third parties they mention.
-- "The donor" not "USAID". "A UN agency" not the agency.
+- Strip every personal name, including third parties they mention.
+- **Organisations may be named** — see the shared rules. What must not survive is anything that identifies the individual speaking.
 - Quotes are the highest-risk field. A quote that identifies a speaker by their situation is not anonymous just because the name is removed.
+- The narrowing effect matters most here. In a country with one coordinator, a critical claim about a named agency can point straight back to the person who said it, even with every name removed. Ask whether the organisation needs naming for the claim to be usable.
 - If in any doubt: `visibility` = `internal`, and say so.
 
 ## Source registry
