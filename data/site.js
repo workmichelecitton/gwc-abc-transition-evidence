@@ -95,11 +95,11 @@ window.SITE_DATA = {
   "footer_note": "Every finding traces to a source ID in the Sources tab. If something looks wrong, it probably is — say so and it will be corrected."
  },
  "schema": 3,
- "generated": "2026-08-11",
+ "generated": "2026-08-13",
  "taxonomy_version": "0.8.0",
  "stats": {
-  "records": 720,
-  "findings": 160,
+  "records": 730,
+  "findings": 162,
   "sources": 107,
   "countries": 30,
   "withheld_internal": 2
@@ -2429,14 +2429,14 @@ window.SITE_DATA = {
   },
   {
    "finding_id": "F1720",
-   "statement": "Running one reporting platform for everything — activity reporting, budgeting, partner capacity and stocks, and a service mapping dashboard — has held 86 active partners on a single system since 2023.",
+   "statement": "A partner reporting platform has been running since 2023 with 86 active partners reporting directly, and it carries the sector's activity reporting, budgeting, partner capacity, stock data and a service-mapping dashboard rather than activity data alone.",
    "theme": [
     "Fundamentals"
    ],
    "example": "",
-   "type": "enabler",
+   "type": "practice",
    "strength": 1,
-   "n_records": 1,
+   "n_records": 2,
    "n_sources": 1,
    "n_documents": 1,
    "n_streams": 1,
@@ -2452,23 +2452,25 @@ window.SITE_DATA = {
    ],
    "actors": [
     "cluster",
-    "ingo"
+    "ingo",
+    "local-ngo"
    ],
    "record_ids": [
-    "E0655"
+    "E0655",
+    "E0737"
    ],
    "unmerged": false
   },
   {
    "finding_id": "F1723",
-   "statement": "Beneficiary counting is the constraint on reporting reach credibly: partners running small-budget interventions report reach figures that the budget cannot support, which inflates the sector total and leads the coordination team to cap the figures it publishes.",
+   "statement": "Reported reach cannot be taken at face value. Partners running small-budget interventions report figures far beyond what the budget could deliver, and coordination teams respond by capping the total — so published reach understates the response rather than overstating it.",
    "theme": [
     "Fundamentals"
    ],
-   "example": "",
+   "example": "Syria: a partner spending a fraction of a large agency's budget claimed the same reach, and the coordination team capped the reported figure. The same behaviour is reported from Yemen, where whole communities have been counted as reached.",
    "type": "barrier",
    "strength": 1,
-   "n_records": 2,
+   "n_records": 4,
    "n_sources": 1,
    "n_documents": 1,
    "n_streams": 1,
@@ -2476,10 +2478,12 @@ window.SITE_DATA = {
     "transcript"
    ],
    "countries": [
-    "SYR"
+    "SYR",
+    "YEM"
    ],
    "tags": [
     "guidance",
+    "hpc",
     "information-management",
     "performance"
    ],
@@ -2489,7 +2493,9 @@ window.SITE_DATA = {
    ],
    "record_ids": [
     "E0658",
-    "E0659"
+    "E0659",
+    "E0739",
+    "E0742"
    ],
    "unmerged": false
   },
@@ -3389,6 +3395,69 @@ window.SITE_DATA = {
    ],
    "record_ids": [
     "E0733"
+   ],
+   "unmerged": false
+  },
+  {
+   "finding_id": "F1930",
+   "statement": "Moving partner reporting off spreadsheets onto a shared platform improved reporting quality markedly and gave the coordination team control over data and reporting frequency that spreadsheets never allowed.",
+   "theme": [
+    "Fundamentals"
+   ],
+   "example": "Syria: 86 partners report directly, and the platform now carries activity reporting, budgeting, partner capacity, stock data and a service-mapping dashboard.",
+   "type": "enabler",
+   "strength": 1,
+   "n_records": 1,
+   "n_sources": 1,
+   "n_documents": 1,
+   "n_streams": 1,
+   "streams": [
+    "transcript"
+   ],
+   "countries": [
+    "SYR"
+   ],
+   "tags": [
+    "information-management",
+    "performance"
+   ],
+   "actors": [
+    "cluster",
+    "ingo"
+   ],
+   "record_ids": [
+    "E0738"
+   ],
+   "unmerged": false
+  },
+  {
+   "finding_id": "F1931",
+   "statement": "Pressure to reconcile reported reach against available budget is pushing the reporting debate toward a binary of direct and indirect beneficiaries. That distinction fits WASH poorly, because repairing a shared water system is a direct intervention serving a whole population.",
+   "theme": [
+    "Fundamentals"
+   ],
+   "example": "",
+   "type": "barrier",
+   "strength": 1,
+   "n_records": 1,
+   "n_sources": 1,
+   "n_documents": 1,
+   "n_streams": 1,
+   "streams": [
+    "transcript"
+   ],
+   "countries": [],
+   "tags": [
+    "advocacy",
+    "hpc",
+    "information-management"
+   ],
+   "actors": [
+    "cluster",
+    "ocha"
+   ],
+   "record_ids": [
+    "E0743"
    ],
    "unmerged": false
   },
@@ -6016,10 +6085,10 @@ window.SITE_DATA = {
    ],
    "example": "Lebanon — government was not willing to take over the response for certain population groups. Coordinators were explicit that this was distinct from a capacity constraint.",
    "type": "barrier",
-   "strength": 4,
-   "n_records": 9,
-   "n_sources": 5,
-   "n_documents": 7,
+   "strength": 5,
+   "n_records": 10,
+   "n_sources": 6,
+   "n_documents": 8,
    "n_streams": 3,
    "streams": [
     "sdr",
@@ -6058,7 +6127,8 @@ window.SITE_DATA = {
     "E0309",
     "E0383",
     "E0556",
-    "E0581"
+    "E0581",
+    "E0744"
    ],
    "unmerged": false,
    "highlight": {
@@ -6890,24 +6960,24 @@ window.SITE_DATA = {
   },
   {
    "finding_id": "F608",
-   "statement": "WASH beneficiary calculation is context-specific — a water yard serves a set number of people in one country and a different number elsewhere, and source types differ between contexts — so a single standardised reporting model risks misrepresenting what the sector delivered.",
+   "statement": "Beneficiary counting has no single basis in WASH, because the two kinds of intervention do not compare: rehabilitating a shared system serves a catchment, while distributing items reaches identifiable people. Without an agreed method the same activity can be counted several ways.",
    "theme": [
-    "ABC",
-    "Transition"
+    "Fundamentals"
    ],
-   "example": "",
+   "example": "One approach tried in more than one response derives a ceiling from the budget: a stated intervention cost implies a maximum plausible share of the catchment population.",
    "type": "barrier",
    "strength": 3,
-   "n_records": 3,
-   "n_sources": 3,
-   "n_documents": 3,
+   "n_records": 5,
+   "n_sources": 4,
+   "n_documents": 4,
    "n_streams": 1,
    "streams": [
     "transcript"
    ],
    "countries": [
     "BFA",
-    "SSD"
+    "SSD",
+    "SYR"
    ],
    "tags": [
     "hpc",
@@ -6921,7 +6991,9 @@ window.SITE_DATA = {
    "record_ids": [
     "E0417",
     "E0575",
-    "E0614"
+    "E0614",
+    "E0740",
+    "E0741"
    ],
    "unmerged": false,
    "highlight": {
@@ -7236,7 +7308,7 @@ window.SITE_DATA = {
    "example": "Nigeria — transition to government-led coordination began at the start of the year, with the line ministry taking the lead supported by an NGO co-coordinator, and a state advisory group to endorse the plan and provide continuing oversight.",
    "type": "practice",
    "strength": 3,
-   "n_records": 5,
+   "n_records": 6,
    "n_sources": 5,
    "n_documents": 5,
    "n_streams": 1,
@@ -7270,7 +7342,8 @@ window.SITE_DATA = {
     "E0503",
     "E0519",
     "E0661",
-    "E0666"
+    "E0666",
+    "E0735"
    ],
    "unmerged": false,
    "highlight": {
@@ -7332,9 +7405,9 @@ window.SITE_DATA = {
    "example": "Niger — a change to the pooled fund review process arrived with a day's notice, required the committee to meet across the week, and displaced the cluster meeting and other planned work.",
    "type": "barrier",
    "strength": 3,
-   "n_records": 9,
-   "n_sources": 6,
-   "n_documents": 6,
+   "n_records": 10,
+   "n_sources": 7,
+   "n_documents": 7,
    "n_streams": 1,
    "streams": [
     "transcript"
@@ -7345,6 +7418,7 @@ window.SITE_DATA = {
     "MLI",
     "MMR",
     "NER",
+    "TCD",
     "VEN"
    ],
    "tags": [
@@ -7354,14 +7428,16 @@ window.SITE_DATA = {
     "hpc",
     "partnerships",
     "performance",
-    "pooled-funds"
+    "pooled-funds",
+    "transition-handover"
    ],
    "actors": [
     "cluster",
     "gov-national",
     "ingo",
     "local-ngo",
-    "ocha"
+    "ocha",
+    "un-agency"
    ],
    "record_ids": [
     "E0067",
@@ -7372,7 +7448,8 @@ window.SITE_DATA = {
     "E0576",
     "E0601",
     "E0698",
-    "E0708"
+    "E0708",
+    "E0736"
    ],
    "unmerged": false,
    "highlight": {
@@ -26357,6 +26434,264 @@ window.SITE_DATA = {
    "source_id": "S119",
    "date_collected": "2026-08-10",
    "confidence": "low",
+   "status": "draft"
+  },
+  {
+   "id": "E0735",
+   "finding_id": "F700",
+   "theme": [
+    "Transition"
+   ],
+   "type": "practice",
+   "statement": "The transition roadmap has to be validated by the water ministry's Secretary General before workshops can begin, so a single signature sits between a drafted plan and any implementation.",
+   "level": "national",
+   "countries": [
+    "TCD"
+   ],
+   "actors": [
+    "gov-national",
+    "cluster"
+   ],
+   "tags": [
+    "transition-handover",
+    "government-engagement"
+   ],
+   "stream": "transcript",
+   "source_id": "S116",
+   "date_collected": "2026-07-21",
+   "confidence": "high",
+   "status": "draft"
+  },
+  {
+   "id": "E0736",
+   "finding_id": "F802",
+   "theme": [
+    "Transition"
+   ],
+   "type": "barrier",
+   "statement": "Transition planning stalled for want of someone to do it: the roadmap, the analysis and the supporting documents were all waiting on a request for a dedicated person from headquarters, because nobody in country had the time.",
+   "level": "national",
+   "countries": [
+    "TCD"
+   ],
+   "actors": [
+    "cluster",
+    "un-agency"
+   ],
+   "tags": [
+    "transition-handover",
+    "capacity"
+   ],
+   "stream": "transcript",
+   "source_id": "S116",
+   "date_collected": "2026-07-21",
+   "confidence": "high",
+   "status": "draft"
+  },
+  {
+   "id": "E0737",
+   "finding_id": "F1720",
+   "theme": [
+    "Fundamentals"
+   ],
+   "type": "practice",
+   "statement": "A partner reporting platform has been running since 2023 with 86 active partners reporting directly, and it carries the sector's activity reporting, budgeting, partner capacity, stock data and a service-mapping dashboard rather than activity data alone.",
+   "level": "national",
+   "countries": [
+    "SYR"
+   ],
+   "actors": [
+    "cluster",
+    "ingo",
+    "local-ngo"
+   ],
+   "tags": [
+    "information-management",
+    "partnerships"
+   ],
+   "stream": "transcript",
+   "source_id": "S115",
+   "date_collected": "2026-08-06",
+   "confidence": "high",
+   "status": "draft"
+  },
+  {
+   "id": "E0738",
+   "finding_id": "F1930",
+   "theme": [
+    "Fundamentals"
+   ],
+   "type": "enabler",
+   "statement": "Moving partner reporting off spreadsheets onto a shared platform produced a marked improvement in the quality of reporting and gave the coordination team control over data and reporting frequency that spreadsheets had not allowed.",
+   "level": "national",
+   "countries": [
+    "SYR"
+   ],
+   "actors": [
+    "cluster",
+    "ingo"
+   ],
+   "tags": [
+    "information-management",
+    "performance"
+   ],
+   "stream": "transcript",
+   "source_id": "S115",
+   "date_collected": "2026-08-06",
+   "confidence": "high",
+   "status": "draft"
+  },
+  {
+   "id": "E0739",
+   "finding_id": "F1723",
+   "theme": [
+    "Fundamentals"
+   ],
+   "type": "barrier",
+   "statement": "Partners running small-budget interventions report reach figures far beyond what the budget could plausibly deliver, and the coordination team caps the reported total in response — so the published reach understates the response rather than overstating it.",
+   "level": "national",
+   "countries": [
+    "SYR"
+   ],
+   "actors": [
+    "cluster",
+    "ingo"
+   ],
+   "tags": [
+    "information-management",
+    "performance",
+    "hpc"
+   ],
+   "stream": "transcript",
+   "source_id": "S115",
+   "date_collected": "2026-08-06",
+   "confidence": "high",
+   "status": "draft"
+  },
+  {
+   "id": "E0740",
+   "finding_id": "F608",
+   "theme": [
+    "Fundamentals"
+   ],
+   "type": "barrier",
+   "statement": "Beneficiary counting breaks differently for the two kinds of WASH intervention: large-scale rehabilitation serving a catchment, and item distribution reaching identifiable individuals, cannot be counted on the same basis.",
+   "level": "national",
+   "countries": [
+    "SYR"
+   ],
+   "actors": [
+    "cluster"
+   ],
+   "tags": [
+    "information-management",
+    "hpc"
+   ],
+   "stream": "transcript",
+   "source_id": "S115",
+   "date_collected": "2026-08-06",
+   "confidence": "high",
+   "status": "draft"
+  },
+  {
+   "id": "E0741",
+   "finding_id": "F608",
+   "theme": [
+    "Fundamentals"
+   ],
+   "type": "practice",
+   "statement": "One approach to constraining implausible reach claims is to derive a ceiling from the budget: a stated intervention cost implies a maximum plausible share of the catchment population, tested in two other responses.",
+   "level": "global",
+   "countries": [],
+   "actors": [
+    "cluster"
+   ],
+   "tags": [
+    "information-management",
+    "hpc",
+    "performance"
+   ],
+   "stream": "transcript",
+   "source_id": "S115",
+   "date_collected": "2026-08-06",
+   "confidence": "medium",
+   "status": "draft"
+  },
+  {
+   "id": "E0742",
+   "finding_id": "F1723",
+   "theme": [
+    "Fundamentals"
+   ],
+   "type": "context",
+   "statement": "The same reach-counting problem is reported from another country in the region, where partners have been observed counting an entire community as reached.",
+   "level": "national",
+   "countries": [
+    "YEM"
+   ],
+   "actors": [
+    "cluster",
+    "ingo"
+   ],
+   "tags": [
+    "information-management",
+    "performance"
+   ],
+   "stream": "transcript",
+   "source_id": "S115",
+   "date_collected": "2026-08-06",
+   "confidence": "medium",
+   "status": "draft"
+  },
+  {
+   "id": "E0743",
+   "finding_id": "F1931",
+   "theme": [
+    "Fundamentals"
+   ],
+   "type": "barrier",
+   "statement": "Pressure to reconcile reported reach with available budget is pushing the reporting debate toward a binary of direct and indirect beneficiaries, which fits poorly where the right intervention is to repair a shared water system.",
+   "level": "global",
+   "countries": [],
+   "actors": [
+    "ocha",
+    "cluster"
+   ],
+   "tags": [
+    "hpc",
+    "information-management",
+    "advocacy"
+   ],
+   "stream": "transcript",
+   "source_id": "S115",
+   "date_collected": "2026-08-06",
+   "confidence": "medium",
+   "status": "draft"
+  },
+  {
+   "id": "E0744",
+   "finding_id": "F374",
+   "theme": [
+    "Transition"
+   ],
+   "type": "context",
+   "statement": "The line ministry is described as actively interested in the sector coordination system and pushing for it, rather than merely tolerating it — an unusual starting position for a handover.",
+   "level": "national",
+   "countries": [
+    "SYR"
+   ],
+   "actors": [
+    "gov-national",
+    "cluster"
+   ],
+   "tags": [
+    "government-engagement",
+    "transition-handover"
+   ],
+   "stream": "transcript",
+   "source_id": "S115",
+   "date_collected": "2026-08-06",
+   "confidence": "high",
    "status": "draft"
   }
  ],
