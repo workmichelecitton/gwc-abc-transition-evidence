@@ -1,7 +1,7 @@
 {
  "_comment": "Controlled vocabularies. The build script rejects any value in evidence.csv that is not listed here. To add a value, add it here first, then use it. Keep this list short — every addition is a permanent filter option.",
- "version": "0.8.0",
- "updated": "2026-08-10",
+ "version": "0.9.0",
+ "updated": "2026-08-13",
  "theme": [
   {
    "value": "ABC",
@@ -142,14 +142,14 @@
  ],
  "status": [
   {
-   "value": "draft",
-   "label": "Draft",
-   "definition": "Extracted but not reviewed by a human."
+   "value": "validated",
+   "label": "Checked",
+   "definition": "Someone opened the source and confirmed the record against it. In practice this means the record carries a verbatim quote."
   },
   {
-   "value": "validated",
-   "label": "Validated",
-   "definition": "Checked against the source by a person."
+   "value": "draft",
+   "label": "Not yet checked",
+   "definition": "Extracted but not confirmed against the source. Not wrong — unverified. Most of this is material imported from the earlier explorer, which arrived without quotes."
   }
  ],
  "actors": [

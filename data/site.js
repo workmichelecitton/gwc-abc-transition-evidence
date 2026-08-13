@@ -50,6 +50,14 @@ window.SITE_DATA = {
      "This is deliberate rather than diplomatic. Area-based coordination is still being designed, in most countries by the same people trying to make it work. Evidence framed as an accusation gets argued with; evidence framed as a mechanism gets acted on.",
      "Everything is anonymised. Verbatim quotes are held for verification but never published — a quote plus a country plus a role identifies one person."
     ]
+   },
+   {
+    "heading": "What has been checked, and what has not",
+    "body": [
+     "A record is marked checked once someone has opened the source and confirmed the record against it. In practice that means it carries a verbatim quote, which is what makes it checkable by anyone else afterwards.",
+     "403 of 730 records are checked. The rest are not wrong — they are unverified. Almost all of them were imported from the earlier explorer and arrived without quotes, so there is nothing yet to check them against.",
+     "Every finding card shows this alongside its band, because the two are different questions. The band counts how many independent sources support a claim. The check status says whether anyone has confirmed those sources actually say it. A strongly-banded finding that nobody has verified is not the same object as one that has been, and the site should not present them identically."
+    ]
    }
   ],
   "strength_intro": "Strength is calculated, not asserted. Nobody types it in. It counts how many independent sources support a finding, across how many kinds of source, and in how many countries — not how confident anyone feels, and not how serious the problem is. A band 1 finding is not a weak one; it is one nobody else has said yet.",
@@ -96,7 +104,7 @@ window.SITE_DATA = {
  },
  "schema": 3,
  "generated": "2026-08-13",
- "taxonomy_version": "0.8.0",
+ "taxonomy_version": "0.9.0",
  "stats": {
   "records": 730,
   "findings": 162,
@@ -106,8 +114,8 @@ window.SITE_DATA = {
  },
  "taxonomy": {
   "_comment": "Controlled vocabularies. The build script rejects any value in evidence.csv that is not listed here. To add a value, add it here first, then use it. Keep this list short — every addition is a permanent filter option.",
-  "version": "0.8.0",
-  "updated": "2026-08-10",
+  "version": "0.9.0",
+  "updated": "2026-08-13",
   "theme": [
    {
     "value": "ABC",
@@ -248,14 +256,14 @@ window.SITE_DATA = {
   ],
   "status": [
    {
-    "value": "draft",
-    "label": "Draft",
-    "definition": "Extracted but not reviewed by a human."
+    "value": "validated",
+    "label": "Checked",
+    "definition": "Someone opened the source and confirmed the record against it. In practice this means the record carries a verbatim quote."
    },
    {
-    "value": "validated",
-    "label": "Validated",
-    "definition": "Checked against the source by a person."
+    "value": "draft",
+    "label": "Not yet checked",
+    "definition": "Extracted but not confirmed against the source. Not wrong — unverified. Most of this is material imported from the earlier explorer, which arrived without quotes."
    }
   ],
   "actors": [
@@ -686,9 +694,10 @@ window.SITE_DATA = {
    "type": "barrier",
    "strength": 4,
    "n_records": 9,
-   "n_sources": 5,
+   "n_sources": 4,
    "n_documents": 5,
    "n_streams": 2,
+   "n_checked": 6,
    "relations": [
     {
      "type": "qualifies",
@@ -757,6 +766,7 @@ window.SITE_DATA = {
    "n_sources": 2,
    "n_documents": 2,
    "n_streams": 1,
+   "n_checked": 3,
    "relations": [],
    "period": "Jul 2026 – Aug 2026",
    "period_from": "Jul 2026",
@@ -800,6 +810,7 @@ window.SITE_DATA = {
    "n_sources": 1,
    "n_documents": 1,
    "n_streams": 1,
+   "n_checked": 2,
    "relations": [],
    "period": "Aug 2026",
    "period_from": "Aug 2026",
@@ -830,17 +841,18 @@ window.SITE_DATA = {
   },
   {
    "finding_id": "F015",
-   "statement": "Allocation arbitration meetings are normally attended by the cluster coordinator and are where the significant decisions are taken; with the post vacant the sector is absent from them, and that shows in the final allocation strategy.",
+   "statement": "Where prioritisation moves to area-based or pooled-fund structures, the sector's role narrows to technical review of proposals — and where the coordinator post is vacant it is absent from the decisive meetings altogether.",
    "theme": [
     "ABC"
    ],
-   "example": "",
+   "example": "Mali: allocation arbitration meetings are where the significant decisions are taken; with the post vacant the sector was not in the room, and it showed in the final allocation strategy.",
    "type": "barrier",
    "strength": 3,
    "n_records": 3,
    "n_sources": 3,
    "n_documents": 3,
    "n_streams": 1,
+   "n_checked": 3,
    "relations": [],
    "period": "Jul 2026 – Aug 2026",
    "period_from": "Jul 2026",
@@ -882,17 +894,18 @@ window.SITE_DATA = {
   },
   {
    "finding_id": "F016",
-   "statement": "The final allocation was rebalanced between sectors by negotiation at the closing meeting rather than against evidence, reducing the sector envelope by around a third to level it against others.",
+   "statement": "Allocation decisions are settled by negotiation rather than against the evidence: priority areas come from a pre-approved list, and sector envelopes are rebalanced at closing meetings.",
    "theme": [
     "ABC"
    ],
-   "example": "",
+   "example": "South Sudan: the sector envelope was cut by around a third at the closing meeting.",
    "type": "barrier",
    "strength": 2,
    "n_records": 2,
    "n_sources": 2,
    "n_documents": 2,
    "n_streams": 1,
+   "n_checked": 2,
    "relations": [],
    "period": "Jul 2026 – Aug 2026",
    "period_from": "Jul 2026",
@@ -934,6 +947,7 @@ window.SITE_DATA = {
    "n_sources": 8,
    "n_documents": 11,
    "n_streams": 2,
+   "n_checked": 5,
    "relations": [],
    "period": "2024 – Aug 2026",
    "period_from": "2024",
@@ -988,17 +1002,18 @@ window.SITE_DATA = {
   },
   {
    "finding_id": "F022",
-   "statement": "A development-oriented WASH coordination platform carried a standing humanitarian agenda item, allowing humanitarian briefing to continue inside a development structure.",
+   "statement": "Humanitarian coordination is being placed inside development structures ahead of transition — channelling sector information into a ministry's development platform, or holding a standing humanitarian item on a development agenda.",
    "theme": [
     "Transition"
    ],
-   "example": "",
+   "example": "Libya: a development-oriented WASH platform carried a standing humanitarian agenda item, so humanitarian briefing continued inside a development structure.",
    "type": "practice",
    "strength": 3,
    "n_records": 2,
    "n_sources": 2,
    "n_documents": 2,
    "n_streams": 2,
+   "n_checked": 1,
    "relations": [],
    "period": "2026 – Aug 2026",
    "period_from": "2026",
@@ -1036,17 +1051,18 @@ window.SITE_DATA = {
   },
   {
    "finding_id": "F023",
-   "statement": "Ministry counterparts were initially hesitant about taking on coordination responsibility because they expected an imminent transfer; framing transition as a phased process rather than a handover date reduced that hesitancy.",
+   "statement": "Government counterparts engage more readily when transition is framed as a phased process with continued support than as a transfer date — and some prefer the arrangement not be written down at all.",
    "theme": [
     "Transition"
    ],
-   "example": "",
+   "example": "Somalia: ministry counterparts were hesitant while they expected an imminent transfer, and engaged once it was framed as phased.",
    "type": "enabler",
    "strength": 2,
    "n_records": 2,
    "n_sources": 2,
    "n_documents": 2,
    "n_streams": 1,
+   "n_checked": 2,
    "relations": [],
    "period": "Jun 2026 – Aug 2026",
    "period_from": "Jun 2026",
@@ -1076,17 +1092,18 @@ window.SITE_DATA = {
   },
   {
    "finding_id": "F024",
-   "statement": "Water establishment capacity varies markedly between regions: one has an information management focal point working closely with the sector, while in another the post is paid for by the lead agency until the end of the year.",
+   "statement": "Readiness to take on coordination varies sharply below national level, even where national arrangements are agreed. Some sub-national authorities convene and document coordination and others do not, so a single national handover date lands on very different starting points.",
    "theme": [
     "Transition"
    ],
-   "example": "",
+   "example": "Nigeria: national arrangements are agreed, but the local government link is not in place and departments need mentoring before they can carry coordination.",
    "type": "context",
    "strength": 4,
    "n_records": 4,
    "n_sources": 4,
    "n_documents": 4,
    "n_streams": 2,
+   "n_checked": 3,
    "relations": [],
    "period": "2026 – Aug 2026",
    "period_from": "2026",
@@ -1143,6 +1160,7 @@ window.SITE_DATA = {
    "n_sources": 8,
    "n_documents": 9,
    "n_streams": 2,
+   "n_checked": 9,
    "relations": [],
    "period": "2026 – Aug 2026",
    "period_from": "2026",
@@ -1213,6 +1231,7 @@ window.SITE_DATA = {
    "n_sources": 4,
    "n_documents": 4,
    "n_streams": 3,
+   "n_checked": 3,
    "relations": [],
    "period": "2023 – Aug 2026",
    "period_from": "2023",
@@ -1270,6 +1289,7 @@ window.SITE_DATA = {
    "n_sources": 10,
    "n_documents": 10,
    "n_streams": 3,
+   "n_checked": 11,
    "relations": [],
    "period": "2025 – Aug 2026",
    "period_from": "2025",
@@ -1332,17 +1352,18 @@ window.SITE_DATA = {
   },
   {
    "finding_id": "F030",
-   "statement": "Partners continued to report response data through the cluster 4W only, with area-based structures collecting assessment and prioritisation information but not response reporting, so the parallel structures did not create double reporting.",
+   "statement": "Partners keep reporting to the cluster even where area structures exist. Area structures collect assessment and prioritisation information; response reporting stays with the cluster.",
    "theme": [
     "ABC"
    ],
-   "example": "",
+   "example": "South Sudan: partners approach the area structures only when they have a gap to fill.",
    "type": "practice",
    "strength": 2,
    "n_records": 2,
    "n_sources": 2,
    "n_documents": 2,
    "n_streams": 1,
+   "n_checked": 2,
    "relations": [],
    "period": "Jul 2026 – Aug 2026",
    "period_from": "Jul 2026",
@@ -1372,18 +1393,19 @@ window.SITE_DATA = {
   },
   {
    "finding_id": "F031",
-   "statement": "A co-coordinating partner was selected through a published terms of reference, but a compliance concern paused the process, and the cluster is deciding whether to re-advertise or return to the original applicant list.",
+   "statement": "Co-coordination roles are being opened up competitively rather than renewed by default, using published terms of reference and expressions of interest — though the processes are proving harder to complete than to launch.",
    "theme": [
     "ABC",
     "Transition"
    ],
-   "example": "",
+   "example": "Somalia: after eight years with the same co-coordinating agency the cluster opened a competitive process, while considering keeping the outgoing agency in a roving support role.",
    "type": "practice",
    "strength": 3,
    "n_records": 3,
    "n_sources": 3,
    "n_documents": 3,
    "n_streams": 1,
+   "n_checked": 3,
    "relations": [],
    "period": "Jul 2026 – Aug 2026",
    "period_from": "Jul 2026",
@@ -1435,6 +1457,7 @@ window.SITE_DATA = {
    "n_sources": 1,
    "n_documents": 1,
    "n_streams": 1,
+   "n_checked": 2,
    "relations": [],
    "period": "Jul 2026",
    "period_from": "Jul 2026",
@@ -1464,17 +1487,18 @@ window.SITE_DATA = {
   },
   {
    "finding_id": "F040",
-   "statement": "Area coordination groups work in detail locally but there is no equivalent operational discussion at central level, so issues stay compartmentalised within each area rather than aggregating into a national picture.",
+   "statement": "The link between area structures and the cluster is undefined in both directions: no shared statement of who does what, no escalation route, and no forum where area-level issues aggregate into a national picture.",
    "theme": [
     "ABC"
    ],
-   "example": "",
+   "example": "Lebanon: area groups work in detail locally but there is no equivalent operational discussion centrally, so issues stay compartmentalised.",
    "type": "barrier",
    "strength": 3,
    "n_records": 4,
    "n_sources": 3,
    "n_documents": 3,
    "n_streams": 1,
+   "n_checked": 4,
    "relations": [],
    "period": "Jul 2026",
    "period_from": "Jul 2026",
@@ -1514,17 +1538,18 @@ window.SITE_DATA = {
   },
   {
    "finding_id": "F045",
-   "statement": "The cluster terms of reference were revised to cover current issues and a new thematic working group, but not area-based coordination, because the cluster was not approached about it.",
+   "statement": "Area-based arrangements are being introduced without the cluster being party to the design — presented as a permanent replacement in one context, and absent from revised cluster terms of reference in another because nobody asked.",
    "theme": [
     "ABC"
    ],
-   "example": "",
+   "example": "Myanmar: the architecture is presented as a permanent replacement rather than a transitional arrangement, which changes what is at stake in getting the design right.",
    "type": "context",
    "strength": 2,
    "n_records": 2,
    "n_sources": 2,
    "n_documents": 2,
    "n_streams": 1,
+   "n_checked": 2,
    "relations": [],
    "period": "Jul 2026 – Aug 2026",
    "period_from": "Jul 2026",
@@ -1565,6 +1590,7 @@ window.SITE_DATA = {
    "n_sources": 2,
    "n_documents": 2,
    "n_streams": 1,
+   "n_checked": 2,
    "relations": [],
    "period": "Jul 2026 – Aug 2026",
    "period_from": "Jul 2026",
@@ -1603,6 +1629,7 @@ window.SITE_DATA = {
    "n_sources": 2,
    "n_documents": 2,
    "n_streams": 1,
+   "n_checked": 5,
    "relations": [],
    "period": "Jul 2026 – Aug 2026",
    "period_from": "Jul 2026",
@@ -1646,6 +1673,7 @@ window.SITE_DATA = {
    "n_sources": 2,
    "n_documents": 2,
    "n_streams": 1,
+   "n_checked": 3,
    "relations": [],
    "period": "Jul 2026",
    "period_from": "Jul 2026",
@@ -1679,18 +1707,19 @@ window.SITE_DATA = {
   },
   {
    "finding_id": "F1005",
-   "statement": "The joint intersectoral assessment initially capped each sector at five indicators; the sector negotiated up to around ten, but the ceiling still constrains what the sector can analyse from the shared exercise.",
+   "statement": "Joint intersectoral assessments cap how many indicators each sector may include, so adding a WASH measure means removing another sector's question rather than extending the instrument.",
    "theme": [
     "ABC",
     "Transition"
    ],
-   "example": "",
+   "example": "Bangladesh: the sector negotiated its cap up from five indicators to about ten, and the ceiling still constrains what can be measured.",
    "type": "barrier",
    "strength": 2,
    "n_records": 2,
    "n_sources": 2,
    "n_documents": 2,
    "n_streams": 1,
+   "n_checked": 2,
    "relations": [],
    "period": "Jul 2026",
    "period_from": "Jul 2026",
@@ -1732,6 +1761,7 @@ window.SITE_DATA = {
    "n_sources": 3,
    "n_documents": 3,
    "n_streams": 1,
+   "n_checked": 6,
    "relations": [],
    "period": "Jul 2026",
    "period_from": "Jul 2026",
@@ -1790,11 +1820,12 @@ window.SITE_DATA = {
    ],
    "example": "",
    "type": "recommendation",
-   "strength": 4,
+   "strength": 3,
    "n_records": 10,
-   "n_sources": 3,
+   "n_sources": 2,
    "n_documents": 3,
    "n_streams": 2,
+   "n_checked": 0,
    "relations": [],
    "period": "2025 – 2026",
    "period_from": "2025",
@@ -1852,6 +1883,7 @@ window.SITE_DATA = {
    "n_sources": 6,
    "n_documents": 7,
    "n_streams": 2,
+   "n_checked": 9,
    "relations": [],
    "period": "2026 – Aug 2026",
    "period_from": "2026",
@@ -1923,6 +1955,7 @@ window.SITE_DATA = {
    "n_sources": 3,
    "n_documents": 3,
    "n_streams": 2,
+   "n_checked": 0,
    "relations": [],
    "period": "2026",
    "period_from": "2026",
@@ -1975,6 +2008,7 @@ window.SITE_DATA = {
    "n_sources": 2,
    "n_documents": 2,
    "n_streams": 1,
+   "n_checked": 3,
    "relations": [],
    "period": "Jul 2026",
    "period_from": "Jul 2026",
@@ -2018,6 +2052,7 @@ window.SITE_DATA = {
    "n_sources": 1,
    "n_documents": 3,
    "n_streams": 1,
+   "n_checked": 0,
    "relations": [],
    "period": "2026",
    "period_from": "2026",
@@ -2058,6 +2093,7 @@ window.SITE_DATA = {
    "n_sources": 2,
    "n_documents": 2,
    "n_streams": 1,
+   "n_checked": 2,
    "relations": [],
    "period": "Jul 2026",
    "period_from": "Jul 2026",
@@ -2099,6 +2135,7 @@ window.SITE_DATA = {
    "n_sources": 1,
    "n_documents": 1,
    "n_streams": 1,
+   "n_checked": 1,
    "relations": [],
    "period": "Jul 2026",
    "period_from": "Jul 2026",
@@ -2133,11 +2170,12 @@ window.SITE_DATA = {
    ],
    "example": "",
    "type": "recommendation",
-   "strength": 4,
+   "strength": 1,
    "n_records": 7,
-   "n_sources": 5,
+   "n_sources": 1,
    "n_documents": 7,
-   "n_streams": 2,
+   "n_streams": 1,
+   "n_checked": 0,
    "relations": [],
    "period": "2023 – 2026",
    "period_from": "2023",
@@ -2187,6 +2225,7 @@ window.SITE_DATA = {
    "n_sources": 1,
    "n_documents": 2,
    "n_streams": 1,
+   "n_checked": 0,
    "relations": [],
    "period": "2026",
    "period_from": "2026",
@@ -2224,6 +2263,7 @@ window.SITE_DATA = {
    "n_sources": 1,
    "n_documents": 2,
    "n_streams": 1,
+   "n_checked": 0,
    "relations": [],
    "period": "2026",
    "period_from": "2026",
@@ -2273,6 +2313,7 @@ window.SITE_DATA = {
    "n_sources": 4,
    "n_documents": 4,
    "n_streams": 1,
+   "n_checked": 4,
    "relations": [],
    "period": "Jun 2026 – Aug 2026",
    "period_from": "Jun 2026",
@@ -2325,6 +2366,7 @@ window.SITE_DATA = {
    "n_sources": 4,
    "n_documents": 4,
    "n_streams": 2,
+   "n_checked": 4,
    "relations": [],
    "period": "2020 – Aug 2026",
    "period_from": "2020",
@@ -2381,6 +2423,7 @@ window.SITE_DATA = {
    "n_sources": 7,
    "n_documents": 7,
    "n_streams": 2,
+   "n_checked": 7,
    "relations": [],
    "period": "2026 – Aug 2026",
    "period_from": "2026",
@@ -2445,6 +2488,7 @@ window.SITE_DATA = {
    "n_sources": 1,
    "n_documents": 1,
    "n_streams": 1,
+   "n_checked": 2,
    "relations": [],
    "period": "Jul 2026",
    "period_from": "Jul 2026",
@@ -2484,6 +2528,7 @@ window.SITE_DATA = {
    "n_sources": 1,
    "n_documents": 2,
    "n_streams": 1,
+   "n_checked": 0,
    "relations": [],
    "period": "2026",
    "period_from": "2026",
@@ -2533,6 +2578,7 @@ window.SITE_DATA = {
    "n_sources": 4,
    "n_documents": 4,
    "n_streams": 3,
+   "n_checked": 1,
    "relations": [],
    "period": "2020 – Aug 2026",
    "period_from": "2020",
@@ -2585,6 +2631,7 @@ window.SITE_DATA = {
    "n_sources": 4,
    "n_documents": 4,
    "n_streams": 3,
+   "n_checked": 1,
    "relations": [],
    "period": "2023 – Aug 2026",
    "period_from": "2023",
@@ -2641,6 +2688,7 @@ window.SITE_DATA = {
    "n_sources": 1,
    "n_documents": 1,
    "n_streams": 1,
+   "n_checked": 2,
    "relations": [],
    "period": "Aug 2026",
    "period_from": "Aug 2026",
@@ -2680,6 +2728,7 @@ window.SITE_DATA = {
    "n_sources": 1,
    "n_documents": 1,
    "n_streams": 1,
+   "n_checked": 4,
    "relations": [],
    "period": "Aug 2026",
    "period_from": "Aug 2026",
@@ -2723,6 +2772,7 @@ window.SITE_DATA = {
    "n_sources": 1,
    "n_documents": 1,
    "n_streams": 1,
+   "n_checked": 1,
    "relations": [],
    "period": "Aug 2026",
    "period_from": "Aug 2026",
@@ -2760,6 +2810,7 @@ window.SITE_DATA = {
    "n_sources": 1,
    "n_documents": 1,
    "n_streams": 1,
+   "n_checked": 1,
    "relations": [],
    "period": "2024",
    "period_from": "2024",
@@ -2795,6 +2846,7 @@ window.SITE_DATA = {
    "n_sources": 2,
    "n_documents": 2,
    "n_streams": 1,
+   "n_checked": 2,
    "relations": [],
    "period": "2007 – 2024",
    "period_from": "2007",
@@ -2831,6 +2883,7 @@ window.SITE_DATA = {
    "n_sources": 1,
    "n_documents": 1,
    "n_streams": 1,
+   "n_checked": 1,
    "relations": [],
    "period": "2007",
    "period_from": "2007",
@@ -2867,6 +2920,7 @@ window.SITE_DATA = {
    "n_sources": 1,
    "n_documents": 1,
    "n_streams": 1,
+   "n_checked": 1,
    "relations": [],
    "period": "2007",
    "period_from": "2007",
@@ -2903,6 +2957,7 @@ window.SITE_DATA = {
    "n_sources": 1,
    "n_documents": 1,
    "n_streams": 1,
+   "n_checked": 2,
    "relations": [],
    "period": "Aug 2026",
    "period_from": "Aug 2026",
@@ -2942,6 +2997,7 @@ window.SITE_DATA = {
    "n_sources": 1,
    "n_documents": 1,
    "n_streams": 1,
+   "n_checked": 1,
    "relations": [],
    "period": "Aug 2026",
    "period_from": "Aug 2026",
@@ -2979,6 +3035,7 @@ window.SITE_DATA = {
    "n_sources": 1,
    "n_documents": 1,
    "n_streams": 1,
+   "n_checked": 1,
    "relations": [],
    "period": "Aug 2026",
    "period_from": "Aug 2026",
@@ -3016,6 +3073,7 @@ window.SITE_DATA = {
    "n_sources": 1,
    "n_documents": 1,
    "n_streams": 1,
+   "n_checked": 1,
    "relations": [],
    "period": "Aug 2026",
    "period_from": "Aug 2026",
@@ -3054,6 +3112,7 @@ window.SITE_DATA = {
    "n_sources": 1,
    "n_documents": 1,
    "n_streams": 1,
+   "n_checked": 1,
    "relations": [],
    "period": "Aug 2026",
    "period_from": "Aug 2026",
@@ -3090,6 +3149,7 @@ window.SITE_DATA = {
    "n_sources": 1,
    "n_documents": 1,
    "n_streams": 1,
+   "n_checked": 1,
    "relations": [],
    "period": "Aug 2026",
    "period_from": "Aug 2026",
@@ -3126,6 +3186,7 @@ window.SITE_DATA = {
    "n_sources": 1,
    "n_documents": 1,
    "n_streams": 1,
+   "n_checked": 1,
    "relations": [],
    "period": "Aug 2026",
    "period_from": "Aug 2026",
@@ -3164,6 +3225,7 @@ window.SITE_DATA = {
    "n_sources": 1,
    "n_documents": 1,
    "n_streams": 1,
+   "n_checked": 1,
    "relations": [],
    "period": "Aug 2026",
    "period_from": "Aug 2026",
@@ -3201,6 +3263,7 @@ window.SITE_DATA = {
    "n_sources": 1,
    "n_documents": 1,
    "n_streams": 1,
+   "n_checked": 1,
    "relations": [],
    "period": "Aug 2026",
    "period_from": "Aug 2026",
@@ -3238,6 +3301,7 @@ window.SITE_DATA = {
    "n_sources": 1,
    "n_documents": 1,
    "n_streams": 1,
+   "n_checked": 1,
    "relations": [],
    "period": "Aug 2026",
    "period_from": "Aug 2026",
@@ -3276,6 +3340,7 @@ window.SITE_DATA = {
    "n_sources": 1,
    "n_documents": 1,
    "n_streams": 1,
+   "n_checked": 1,
    "relations": [],
    "period": "Aug 2026",
    "period_from": "Aug 2026",
@@ -3314,6 +3379,7 @@ window.SITE_DATA = {
    "n_sources": 1,
    "n_documents": 1,
    "n_streams": 1,
+   "n_checked": 2,
    "relations": [],
    "period": "Aug 2026",
    "period_from": "Aug 2026",
@@ -3352,6 +3418,7 @@ window.SITE_DATA = {
    "n_sources": 1,
    "n_documents": 1,
    "n_streams": 1,
+   "n_checked": 1,
    "relations": [],
    "period": "Aug 2026",
    "period_from": "Aug 2026",
@@ -3388,6 +3455,7 @@ window.SITE_DATA = {
    "n_sources": 1,
    "n_documents": 1,
    "n_streams": 1,
+   "n_checked": 1,
    "relations": [],
    "period": "Aug 2026",
    "period_from": "Aug 2026",
@@ -3422,6 +3490,7 @@ window.SITE_DATA = {
    "n_sources": 1,
    "n_documents": 1,
    "n_streams": 1,
+   "n_checked": 1,
    "relations": [],
    "period": "Aug 2026",
    "period_from": "Aug 2026",
@@ -3458,6 +3527,7 @@ window.SITE_DATA = {
    "n_sources": 1,
    "n_documents": 1,
    "n_streams": 1,
+   "n_checked": 2,
    "relations": [],
    "period": "Aug 2026",
    "period_from": "Aug 2026",
@@ -3499,6 +3569,7 @@ window.SITE_DATA = {
    "n_sources": 1,
    "n_documents": 1,
    "n_streams": 1,
+   "n_checked": 2,
    "relations": [],
    "period": "Aug 2026",
    "period_from": "Aug 2026",
@@ -3537,6 +3608,7 @@ window.SITE_DATA = {
    "n_sources": 1,
    "n_documents": 1,
    "n_streams": 1,
+   "n_checked": 1,
    "relations": [],
    "period": "Aug 2026",
    "period_from": "Aug 2026",
@@ -3573,6 +3645,7 @@ window.SITE_DATA = {
    "n_sources": 1,
    "n_documents": 1,
    "n_streams": 1,
+   "n_checked": 1,
    "relations": [],
    "period": "Aug 2026",
    "period_from": "Aug 2026",
@@ -3611,6 +3684,7 @@ window.SITE_DATA = {
    "n_sources": 1,
    "n_documents": 1,
    "n_streams": 1,
+   "n_checked": 2,
    "relations": [],
    "period": "Aug 2026",
    "period_from": "Aug 2026",
@@ -3649,6 +3723,7 @@ window.SITE_DATA = {
    "n_sources": 1,
    "n_documents": 1,
    "n_streams": 1,
+   "n_checked": 1,
    "relations": [],
    "period": "Aug 2026",
    "period_from": "Aug 2026",
@@ -3686,6 +3761,7 @@ window.SITE_DATA = {
    "n_sources": 1,
    "n_documents": 1,
    "n_streams": 1,
+   "n_checked": 1,
    "relations": [],
    "period": "Aug 2026",
    "period_from": "Aug 2026",
@@ -3724,6 +3800,7 @@ window.SITE_DATA = {
    "n_sources": 1,
    "n_documents": 1,
    "n_streams": 1,
+   "n_checked": 1,
    "relations": [],
    "period": "Aug 2026",
    "period_from": "Aug 2026",
@@ -3762,6 +3839,7 @@ window.SITE_DATA = {
    "n_sources": 1,
    "n_documents": 1,
    "n_streams": 1,
+   "n_checked": 1,
    "relations": [],
    "period": "Aug 2026",
    "period_from": "Aug 2026",
@@ -3799,6 +3877,7 @@ window.SITE_DATA = {
    "n_sources": 1,
    "n_documents": 1,
    "n_streams": 1,
+   "n_checked": 1,
    "relations": [],
    "period": "Aug 2026",
    "period_from": "Aug 2026",
@@ -3835,6 +3914,7 @@ window.SITE_DATA = {
    "n_sources": 1,
    "n_documents": 1,
    "n_streams": 1,
+   "n_checked": 0,
    "relations": [],
    "period": "",
    "period_from": "",
@@ -3872,6 +3952,7 @@ window.SITE_DATA = {
    "n_sources": 6,
    "n_documents": 6,
    "n_streams": 2,
+   "n_checked": 2,
    "relations": [],
    "period": "2007 – Aug 2026",
    "period_from": "2007",
@@ -3928,6 +4009,7 @@ window.SITE_DATA = {
    "n_sources": 13,
    "n_documents": 13,
    "n_streams": 3,
+   "n_checked": 7,
    "relations": [
     {
      "type": "qualifies",
@@ -4019,6 +4101,7 @@ window.SITE_DATA = {
    "n_sources": 4,
    "n_documents": 4,
    "n_streams": 4,
+   "n_checked": 4,
    "relations": [],
    "period": "2024 – Aug 2026",
    "period_from": "2024",
@@ -4074,6 +4157,7 @@ window.SITE_DATA = {
    "n_sources": 10,
    "n_documents": 10,
    "n_streams": 2,
+   "n_checked": 8,
    "relations": [],
    "period": "2023 – Aug 2026",
    "period_from": "2023",
@@ -4143,9 +4227,10 @@ window.SITE_DATA = {
    "type": "barrier",
    "strength": 5,
    "n_records": 9,
-   "n_sources": 7,
+   "n_sources": 6,
    "n_documents": 7,
    "n_streams": 2,
+   "n_checked": 6,
    "relations": [],
    "period": "2024 – Jul 2026",
    "period_from": "2024",
@@ -4207,6 +4292,7 @@ window.SITE_DATA = {
    "n_sources": 1,
    "n_documents": 3,
    "n_streams": 1,
+   "n_checked": 0,
    "relations": [],
    "period": "2024 – 2026",
    "period_from": "2024",
@@ -4244,6 +4330,7 @@ window.SITE_DATA = {
    "n_sources": 1,
    "n_documents": 3,
    "n_streams": 1,
+   "n_checked": 0,
    "relations": [],
    "period": "2024 – 2026",
    "period_from": "2024",
@@ -4276,11 +4363,12 @@ window.SITE_DATA = {
    ],
    "example": "",
    "type": "barrier",
-   "strength": 3,
+   "strength": 1,
    "n_records": 3,
-   "n_sources": 3,
+   "n_sources": 1,
    "n_documents": 3,
    "n_streams": 1,
+   "n_checked": 0,
    "relations": [],
    "period": "2019 – 2026",
    "period_from": "2019",
@@ -4323,9 +4411,10 @@ window.SITE_DATA = {
    "type": "barrier",
    "strength": 4,
    "n_records": 22,
-   "n_sources": 8,
+   "n_sources": 7,
    "n_documents": 10,
    "n_streams": 3,
+   "n_checked": 4,
    "relations": [],
    "period": "2024 – Aug 2026",
    "period_from": "2024",
@@ -4395,11 +4484,12 @@ window.SITE_DATA = {
    ],
    "example": "Venezuela: established national organisations reported feeling displaced after the earthquake, not only for funding but for access to affected areas.",
    "type": "barrier",
-   "strength": 4,
+   "strength": 3,
    "n_records": 3,
-   "n_sources": 3,
+   "n_sources": 2,
    "n_documents": 3,
-   "n_streams": 3,
+   "n_streams": 2,
+   "n_checked": 1,
    "relations": [],
    "period": "2023 – Aug 2026",
    "period_from": "2023",
@@ -4449,6 +4539,7 @@ window.SITE_DATA = {
    "n_sources": 13,
    "n_documents": 14,
    "n_streams": 2,
+   "n_checked": 22,
    "relations": [],
    "period": "2024 – Aug 2026",
    "period_from": "2024",
@@ -4544,6 +4635,7 @@ window.SITE_DATA = {
    "n_sources": 5,
    "n_documents": 5,
    "n_streams": 3,
+   "n_checked": 5,
    "relations": [],
    "period": "2024 – Jul 2026",
    "period_from": "2024",
@@ -4608,6 +4700,7 @@ window.SITE_DATA = {
    "n_sources": 2,
    "n_documents": 2,
    "n_streams": 2,
+   "n_checked": 1,
    "relations": [],
    "period": "2026 – Jul 2026",
    "period_from": "2026",
@@ -4657,6 +4750,7 @@ window.SITE_DATA = {
    "n_sources": 1,
    "n_documents": 1,
    "n_streams": 1,
+   "n_checked": 0,
    "relations": [],
    "period": "2026",
    "period_from": "2026",
@@ -4694,6 +4788,7 @@ window.SITE_DATA = {
    "n_sources": 7,
    "n_documents": 7,
    "n_streams": 3,
+   "n_checked": 2,
    "relations": [],
    "period": "2007 – Jul 2026",
    "period_from": "2007",
@@ -4751,6 +4846,7 @@ window.SITE_DATA = {
    "n_sources": 2,
    "n_documents": 2,
    "n_streams": 1,
+   "n_checked": 0,
    "relations": [],
    "period": "2024 – 2026",
    "period_from": "2024",
@@ -4792,6 +4888,7 @@ window.SITE_DATA = {
    "n_sources": 2,
    "n_documents": 2,
    "n_streams": 2,
+   "n_checked": 1,
    "relations": [],
    "period": "2026 – Jul 2026",
    "period_from": "2026",
@@ -4840,6 +4937,7 @@ window.SITE_DATA = {
    "n_sources": 5,
    "n_documents": 5,
    "n_streams": 2,
+   "n_checked": 0,
    "relations": [],
    "period": "2024 – 2026",
    "period_from": "2024",
@@ -4895,6 +4993,7 @@ window.SITE_DATA = {
    "n_sources": 1,
    "n_documents": 2,
    "n_streams": 1,
+   "n_checked": 0,
    "relations": [],
    "period": "2024 – 2026",
    "period_from": "2024",
@@ -4931,6 +5030,7 @@ window.SITE_DATA = {
    "n_sources": 5,
    "n_documents": 5,
    "n_streams": 3,
+   "n_checked": 3,
    "relations": [],
    "period": "2007 – Aug 2026",
    "period_from": "2007",
@@ -4985,6 +5085,7 @@ window.SITE_DATA = {
    "n_sources": 1,
    "n_documents": 2,
    "n_streams": 1,
+   "n_checked": 0,
    "relations": [],
    "period": "2024 – 2026",
    "period_from": "2024",
@@ -5022,6 +5123,7 @@ window.SITE_DATA = {
    "n_sources": 6,
    "n_documents": 6,
    "n_streams": 3,
+   "n_checked": 1,
    "relations": [],
    "period": "2020 – Jul 2026",
    "period_from": "2020",
@@ -5084,6 +5186,7 @@ window.SITE_DATA = {
    "n_sources": 8,
    "n_documents": 9,
    "n_streams": 4,
+   "n_checked": 5,
    "relations": [],
    "period": "2025 – Aug 2026",
    "period_from": "2025",
@@ -5151,6 +5254,7 @@ window.SITE_DATA = {
    "n_sources": 8,
    "n_documents": 8,
    "n_streams": 4,
+   "n_checked": 4,
    "relations": [],
    "period": "2007 – Aug 2026",
    "period_from": "2007",
@@ -5205,17 +5309,18 @@ window.SITE_DATA = {
   },
   {
    "finding_id": "F261",
-   "statement": "Conducting coordination in the local language transformed the quality of participation, allowing local actors to raise issues and flag priorities in ways national-level platforms in other languages did not permit.",
+   "statement": "Running coordination in the local language changed the quality of participation, letting local actors raise issues and set priorities in ways a national-language meeting did not.",
    "theme": [
     "ABC"
    ],
    "example": "",
    "type": "enabler",
-   "strength": 3,
+   "strength": 1,
    "n_records": 2,
-   "n_sources": 2,
+   "n_sources": 1,
    "n_documents": 2,
-   "n_streams": 2,
+   "n_streams": 1,
+   "n_checked": 0,
    "relations": [],
    "period": "2023 – 2026",
    "period_from": "2023",
@@ -5257,6 +5362,7 @@ window.SITE_DATA = {
    "n_sources": 3,
    "n_documents": 3,
    "n_streams": 2,
+   "n_checked": 0,
    "relations": [],
    "period": "2023 – 2026",
    "period_from": "2023",
@@ -5299,11 +5405,12 @@ window.SITE_DATA = {
    ],
    "example": "",
    "type": "enabler",
-   "strength": 2,
+   "strength": 1,
    "n_records": 2,
-   "n_sources": 2,
+   "n_sources": 1,
    "n_documents": 2,
    "n_streams": 1,
+   "n_checked": 0,
    "relations": [],
    "period": "2024",
    "period_from": "2024",
@@ -5335,11 +5442,12 @@ window.SITE_DATA = {
    ],
    "example": "",
    "type": "enabler",
-   "strength": 3,
+   "strength": 1,
    "n_records": 2,
-   "n_sources": 2,
+   "n_sources": 1,
    "n_documents": 2,
-   "n_streams": 2,
+   "n_streams": 1,
+   "n_checked": 0,
    "relations": [],
    "period": "2025 – 2026",
    "period_from": "2025",
@@ -5379,6 +5487,7 @@ window.SITE_DATA = {
    "n_sources": 1,
    "n_documents": 1,
    "n_streams": 1,
+   "n_checked": 0,
    "relations": [],
    "period": "2020",
    "period_from": "2020",
@@ -5412,9 +5521,10 @@ window.SITE_DATA = {
    "type": "barrier",
    "strength": 3,
    "n_records": 6,
-   "n_sources": 6,
+   "n_sources": 4,
    "n_documents": 6,
    "n_streams": 1,
+   "n_checked": 0,
    "relations": [],
    "period": "2018 – 2026",
    "period_from": "2018",
@@ -5468,9 +5578,10 @@ window.SITE_DATA = {
    "type": "barrier",
    "strength": 5,
    "n_records": 11,
-   "n_sources": 9,
+   "n_sources": 7,
    "n_documents": 9,
    "n_streams": 2,
+   "n_checked": 0,
    "relations": [],
    "period": "2019 – 2026",
    "period_from": "2019",
@@ -5536,6 +5647,7 @@ window.SITE_DATA = {
    "n_sources": 7,
    "n_documents": 7,
    "n_streams": 2,
+   "n_checked": 6,
    "relations": [],
    "period": "2007 – Aug 2026",
    "period_from": "2007",
@@ -5597,6 +5709,7 @@ window.SITE_DATA = {
    "n_sources": 2,
    "n_documents": 4,
    "n_streams": 2,
+   "n_checked": 1,
    "relations": [],
    "period": "2026 – Jun 2026",
    "period_from": "2026",
@@ -5649,6 +5762,7 @@ window.SITE_DATA = {
    "n_sources": 3,
    "n_documents": 3,
    "n_streams": 3,
+   "n_checked": 1,
    "relations": [],
    "period": "2025 – Jun 2026",
    "period_from": "2025",
@@ -5704,6 +5818,7 @@ window.SITE_DATA = {
    "n_sources": 2,
    "n_documents": 2,
    "n_streams": 2,
+   "n_checked": 1,
    "relations": [],
    "period": "2026 – Jul 2026",
    "period_from": "2026",
@@ -5740,17 +5855,18 @@ window.SITE_DATA = {
   },
   {
    "finding_id": "F318",
-   "statement": "The government co-lead has no information management function at all, and coordinators identified an embedded IM post plus capacity building as the minimum precondition for any transition.",
+   "statement": "Government counterparts expected to receive coordination have no information management function of their own, and rely on cluster information to know which partners are working where.",
    "theme": [
     "Transition"
    ],
-   "example": "",
+   "example": "Ethiopia: government has no mechanism to establish who is doing what and relies on the cluster for it; partners come to the cluster for the same reason.",
    "type": "barrier",
    "strength": 3,
    "n_records": 3,
    "n_sources": 2,
    "n_documents": 3,
    "n_streams": 2,
+   "n_checked": 1,
    "relations": [],
    "period": "2026 – Jun 2026",
    "period_from": "2026",
@@ -5790,17 +5906,18 @@ window.SITE_DATA = {
   },
   {
    "finding_id": "F319",
-   "statement": "Where the response plan is not the language of government, data often is: information management support that adds value to the government own reporting gains traction where coordination advocacy does not.",
+   "statement": "Where the response plan is not the language of government, data often is. Information management support that adds value to government's own reporting gains traction where coordination advocacy does not.",
    "theme": [
     "Transition"
    ],
-   "example": "",
+   "example": "Mozambique: the government asked for a per-partner report showing who is doing what and where, which the sector now produces from partner reporting.",
    "type": "enabler",
    "strength": 4,
    "n_records": 3,
    "n_sources": 3,
    "n_documents": 3,
    "n_streams": 2,
+   "n_checked": 2,
    "relations": [],
    "period": "2026 – Jul 2026",
    "period_from": "2026",
@@ -5849,6 +5966,7 @@ window.SITE_DATA = {
    "n_sources": 3,
    "n_documents": 5,
    "n_streams": 3,
+   "n_checked": 1,
    "relations": [],
    "period": "2026 – Aug 2026",
    "period_from": "2026",
@@ -5904,6 +6022,7 @@ window.SITE_DATA = {
    "n_sources": 1,
    "n_documents": 2,
    "n_streams": 1,
+   "n_checked": 0,
    "relations": [],
    "period": "2026",
    "period_from": "2026",
@@ -5940,6 +6059,7 @@ window.SITE_DATA = {
    "n_sources": 7,
    "n_documents": 7,
    "n_streams": 2,
+   "n_checked": 4,
    "relations": [],
    "period": "2023 – Aug 2026",
    "period_from": "2023",
@@ -6004,6 +6124,7 @@ window.SITE_DATA = {
    "n_sources": 2,
    "n_documents": 2,
    "n_streams": 2,
+   "n_checked": 0,
    "relations": [],
    "period": "2025 – 2026",
    "period_from": "2025",
@@ -6051,9 +6172,10 @@ window.SITE_DATA = {
    "type": "barrier",
    "strength": 5,
    "n_records": 20,
-   "n_sources": 12,
+   "n_sources": 11,
    "n_documents": 13,
    "n_streams": 4,
+   "n_checked": 8,
    "relations": [],
    "period": "2013 – Aug 2026",
    "period_from": "2013",
@@ -6135,6 +6257,7 @@ window.SITE_DATA = {
    "n_sources": 8,
    "n_documents": 10,
    "n_streams": 4,
+   "n_checked": 4,
    "relations": [],
    "period": "2023 – Aug 2026",
    "period_from": "2023",
@@ -6210,6 +6333,7 @@ window.SITE_DATA = {
    "n_sources": 4,
    "n_documents": 5,
    "n_streams": 3,
+   "n_checked": 4,
    "relations": [],
    "period": "2026 – Aug 2026",
    "period_from": "2026",
@@ -6267,11 +6391,12 @@ window.SITE_DATA = {
    ],
    "example": "",
    "type": "barrier",
-   "strength": 3,
+   "strength": 1,
    "n_records": 3,
-   "n_sources": 3,
+   "n_sources": 1,
    "n_documents": 3,
    "n_streams": 1,
+   "n_checked": 0,
    "relations": [],
    "period": "2025",
    "period_from": "2025",
@@ -6314,6 +6439,7 @@ window.SITE_DATA = {
    "n_sources": 3,
    "n_documents": 3,
    "n_streams": 2,
+   "n_checked": 2,
    "relations": [],
    "period": "2026 – Aug 2026",
    "period_from": "2026",
@@ -6363,6 +6489,7 @@ window.SITE_DATA = {
    "n_sources": 2,
    "n_documents": 2,
    "n_streams": 2,
+   "n_checked": 1,
    "relations": [],
    "period": "2020 – Jul 2026",
    "period_from": "2020",
@@ -6412,6 +6539,7 @@ window.SITE_DATA = {
    "n_sources": 7,
    "n_documents": 9,
    "n_streams": 3,
+   "n_checked": 5,
    "relations": [],
    "period": "2025 – Aug 2026",
    "period_from": "2025",
@@ -6478,6 +6606,7 @@ window.SITE_DATA = {
    "n_sources": 3,
    "n_documents": 4,
    "n_streams": 2,
+   "n_checked": 2,
    "relations": [],
    "period": "2026 – Jul 2026",
    "period_from": "2026",
@@ -6530,6 +6659,7 @@ window.SITE_DATA = {
    "n_sources": 7,
    "n_documents": 7,
    "n_streams": 3,
+   "n_checked": 4,
    "relations": [],
    "period": "2026 – Aug 2026",
    "period_from": "2026",
@@ -6592,6 +6722,7 @@ window.SITE_DATA = {
    "n_sources": 1,
    "n_documents": 1,
    "n_streams": 1,
+   "n_checked": 0,
    "relations": [],
    "period": "2026",
    "period_from": "2026",
@@ -6627,11 +6758,12 @@ window.SITE_DATA = {
    ],
    "example": "",
    "type": "barrier",
-   "strength": 2,
+   "strength": 1,
    "n_records": 2,
-   "n_sources": 2,
+   "n_sources": 1,
    "n_documents": 2,
    "n_streams": 1,
+   "n_checked": 0,
    "relations": [],
    "period": "2023 – 2024",
    "period_from": "2023",
@@ -6670,6 +6802,7 @@ window.SITE_DATA = {
    "n_sources": 2,
    "n_documents": 3,
    "n_streams": 2,
+   "n_checked": 0,
    "relations": [],
    "period": "2013 – 2026",
    "period_from": "2013",
@@ -6727,6 +6860,7 @@ window.SITE_DATA = {
    "n_sources": 6,
    "n_documents": 8,
    "n_streams": 3,
+   "n_checked": 4,
    "relations": [],
    "period": "2025 – Aug 2026",
    "period_from": "2025",
@@ -6793,6 +6927,7 @@ window.SITE_DATA = {
    "n_sources": 5,
    "n_documents": 6,
    "n_streams": 3,
+   "n_checked": 2,
    "relations": [],
    "period": "2020 – Aug 2026",
    "period_from": "2020",
@@ -6852,6 +6987,7 @@ window.SITE_DATA = {
    "n_sources": 6,
    "n_documents": 6,
    "n_streams": 3,
+   "n_checked": 5,
    "relations": [],
    "period": "2023 – Jul 2026",
    "period_from": "2023",
@@ -6914,6 +7050,7 @@ window.SITE_DATA = {
    "n_sources": 6,
    "n_documents": 8,
    "n_streams": 3,
+   "n_checked": 4,
    "relations": [],
    "period": "2025 – Aug 2026",
    "period_from": "2025",
@@ -6968,18 +7105,19 @@ window.SITE_DATA = {
   },
   {
    "finding_id": "F395",
-   "statement": "Cluster products should be backup-archived at global level, beyond the reach of a country-level deactivation, so technical decisions do not have to be reconstructed if coordination restarts.",
+   "statement": "Archive cluster products beyond the reach of a country-level closure. Tools, assessment instruments and technical decisions built over years are lost when a coordinator departs or a cluster deactivates, and reconstructing them later costs more than storing them now.",
    "theme": [
     "ABC",
     "Transition"
    ],
-   "example": "",
+   "example": "Iraq: files were archived with continuous online access maintained, so the record survived deactivation.",
    "type": "recommendation",
    "strength": 4,
    "n_records": 5,
-   "n_sources": 4,
+   "n_sources": 3,
    "n_documents": 5,
    "n_streams": 3,
+   "n_checked": 1,
    "relations": [],
    "period": "2022 – Jun 2026",
    "period_from": "2022",
@@ -7031,6 +7169,7 @@ window.SITE_DATA = {
    "n_sources": 5,
    "n_documents": 5,
    "n_streams": 3,
+   "n_checked": 1,
    "relations": [],
    "period": "2025 – Aug 2026",
    "period_from": "2025",
@@ -7075,18 +7214,19 @@ window.SITE_DATA = {
   },
   {
    "finding_id": "F408",
-   "statement": "Tools built during an earlier emergency — a site booking sheet for partners and a linked reporting database — were reusable from day one of the next one, so information management was ready even where the response was not.",
+   "statement": "Preparedness built before an emergency is reusable from day one of the next. Localised contingency planning, prepositioned stock and tools built during an earlier response were ready when the response itself was not.",
    "theme": [
     "ABC",
     "Transition"
    ],
-   "example": "",
+   "example": "Lebanon: a partner site booking sheet and linked reporting database from a previous emergency worked from day one of the following one.",
    "type": "enabler",
    "strength": 4,
    "n_records": 3,
    "n_sources": 3,
    "n_documents": 3,
    "n_streams": 2,
+   "n_checked": 2,
    "relations": [],
    "period": "2023 – Jul 2026",
    "period_from": "2023",
@@ -7140,6 +7280,7 @@ window.SITE_DATA = {
    "n_sources": 2,
    "n_documents": 2,
    "n_streams": 1,
+   "n_checked": 0,
    "relations": [],
    "period": "2024 – 2025",
    "period_from": "2024",
@@ -7178,6 +7319,7 @@ window.SITE_DATA = {
    "n_sources": 1,
    "n_documents": 2,
    "n_streams": 1,
+   "n_checked": 0,
    "relations": [],
    "period": "2026",
    "period_from": "2026",
@@ -7214,9 +7356,10 @@ window.SITE_DATA = {
    "type": "context",
    "strength": 4,
    "n_records": 6,
-   "n_sources": 6,
+   "n_sources": 3,
    "n_documents": 6,
    "n_streams": 3,
+   "n_checked": 1,
    "relations": [],
    "period": "2024 – Jun 2026",
    "period_from": "2024",
@@ -7264,11 +7407,12 @@ window.SITE_DATA = {
    ],
    "example": "",
    "type": "recommendation",
-   "strength": 5,
+   "strength": 4,
    "n_records": 11,
-   "n_sources": 7,
+   "n_sources": 5,
    "n_documents": 8,
-   "n_streams": 4,
+   "n_streams": 3,
+   "n_checked": 4,
    "relations": [],
    "period": "2026 – Aug 2026",
    "period_from": "2026",
@@ -7335,6 +7479,7 @@ window.SITE_DATA = {
    "n_sources": 5,
    "n_documents": 7,
    "n_streams": 3,
+   "n_checked": 3,
    "relations": [],
    "period": "2026 – Jul 2026",
    "period_from": "2026",
@@ -7394,6 +7539,7 @@ window.SITE_DATA = {
    "n_sources": 1,
    "n_documents": 1,
    "n_streams": 1,
+   "n_checked": 0,
    "relations": [],
    "period": "2026",
    "period_from": "2026",
@@ -7428,6 +7574,7 @@ window.SITE_DATA = {
    "n_sources": 1,
    "n_documents": 1,
    "n_streams": 1,
+   "n_checked": 1,
    "relations": [],
    "period": "Aug 2026",
    "period_from": "Aug 2026",
@@ -7455,18 +7602,19 @@ window.SITE_DATA = {
   },
   {
    "finding_id": "F506",
-   "statement": "A strict priority tier requires life-saving activities — operation and maintenance, waste collection and supplies — to be funded before infrastructure improvement or reconstruction, and the resulting inaction on the lower tiers has affected the durability and quality of facilities.",
+   "statement": "Short implementation windows and strict life-saving priority tiers push funding toward supplies and away from the infrastructure the same areas are identified as needing, so the durable work is deferred response after response.",
    "theme": [
     "ABC",
     "Transition"
    ],
-   "example": "",
+   "example": "Mali: what the pooled fund finances stops at emergency kits, while the need in the prioritised areas is boreholes and latrines.",
    "type": "barrier",
    "strength": 3,
    "n_records": 3,
    "n_sources": 3,
    "n_documents": 3,
    "n_streams": 1,
+   "n_checked": 3,
    "relations": [],
    "period": "Jul 2026 – Aug 2026",
    "period_from": "Jul 2026",
@@ -7518,6 +7666,7 @@ window.SITE_DATA = {
    "n_sources": 6,
    "n_documents": 6,
    "n_streams": 1,
+   "n_checked": 11,
    "relations": [],
    "period": "Jul 2026 – Aug 2026",
    "period_from": "Jul 2026",
@@ -7586,6 +7735,7 @@ window.SITE_DATA = {
    "n_sources": 3,
    "n_documents": 3,
    "n_streams": 1,
+   "n_checked": 4,
    "relations": [],
    "period": "Jul 2026 – Aug 2026",
    "period_from": "Jul 2026",
@@ -7642,6 +7792,7 @@ window.SITE_DATA = {
    "n_sources": 5,
    "n_documents": 5,
    "n_streams": 1,
+   "n_checked": 6,
    "relations": [],
    "period": "Jul 2026 – Aug 2026",
    "period_from": "Jul 2026",
@@ -7698,6 +7849,7 @@ window.SITE_DATA = {
    "n_sources": 4,
    "n_documents": 4,
    "n_streams": 1,
+   "n_checked": 5,
    "relations": [],
    "period": "Jun 2026 – Aug 2026",
    "period_from": "Jun 2026",
@@ -7737,18 +7889,19 @@ window.SITE_DATA = {
   },
   {
    "finding_id": "F609",
-   "statement": "On learning that an existing reporting system can be retained and bridged to the central platform, the sector chose to seek a derogation and migrate the data rather than abandon a platform invested in over years and shared with development actors.",
+   "statement": "A working sector reporting system can be bridged to a central platform rather than replaced. Where that option was known, teams kept the system they had invested in and migrated the data instead of abandoning it.",
    "theme": [
     "ABC",
     "Transition"
    ],
-   "example": "",
+   "example": "Haiti: on learning a derogation was possible, the sector migrated rather than abandon a platform built over years and shared with development actors.",
    "type": "enabler",
    "strength": 3,
    "n_records": 3,
    "n_sources": 3,
    "n_documents": 3,
    "n_streams": 1,
+   "n_checked": 3,
    "relations": [],
    "period": "Jul 2026",
    "period_from": "Jul 2026",
@@ -7799,6 +7952,7 @@ window.SITE_DATA = {
    "n_sources": 7,
    "n_documents": 7,
    "n_streams": 1,
+   "n_checked": 10,
    "relations": [],
    "period": "Jun 2026 – Aug 2026",
    "period_from": "Jun 2026",
@@ -7865,6 +8019,7 @@ window.SITE_DATA = {
    "n_sources": 1,
    "n_documents": 1,
    "n_streams": 1,
+   "n_checked": 1,
    "relations": [],
    "period": "Jul 2026",
    "period_from": "Jul 2026",
@@ -7903,6 +8058,7 @@ window.SITE_DATA = {
    "n_sources": 3,
    "n_documents": 3,
    "n_streams": 1,
+   "n_checked": 5,
    "relations": [],
    "period": "Jul 2026 – Aug 2026",
    "period_from": "Jul 2026",
@@ -7951,17 +8107,18 @@ window.SITE_DATA = {
   },
   {
    "finding_id": "F619",
-   "statement": "Applying geographic prioritisation to emergency supplies works against the objective where needs are dispersed: prepositioned stock needs to reach any pocket of need, and outbreaks are now occurring in localities that were not prioritised and cannot be supplied.",
+   "statement": "Geographic prioritisation works against the objective where need is dispersed or the trigger is an outbreak: prepositioned stock has to reach any pocket of need, and outbreak funding envelopes have excluded WASH while covering other sectors.",
    "theme": [
     "ABC"
    ],
-   "example": "",
+   "example": "South Sudan: one continuity-of-services envelope covered nutrition, health, protection and food security in cholera and hepatitis E areas without including WASH.",
    "type": "barrier",
    "strength": 2,
    "n_records": 2,
    "n_sources": 2,
    "n_documents": 2,
    "n_streams": 1,
+   "n_checked": 2,
    "relations": [],
    "period": "Jul 2026",
    "period_from": "Jul 2026",
@@ -8005,6 +8162,7 @@ window.SITE_DATA = {
    "n_sources": 1,
    "n_documents": 1,
    "n_streams": 1,
+   "n_checked": 2,
    "relations": [],
    "period": "Jul 2026",
    "period_from": "Jul 2026",
@@ -8043,6 +8201,7 @@ window.SITE_DATA = {
    "n_sources": 1,
    "n_documents": 1,
    "n_streams": 1,
+   "n_checked": 1,
    "relations": [],
    "period": "Jul 2026",
    "period_from": "Jul 2026",
@@ -8079,6 +8238,7 @@ window.SITE_DATA = {
    "n_sources": 5,
    "n_documents": 5,
    "n_streams": 1,
+   "n_checked": 6,
    "relations": [],
    "period": "Jul 2026 – Aug 2026",
    "period_from": "Jul 2026",
@@ -8138,6 +8298,7 @@ window.SITE_DATA = {
    "n_sources": 3,
    "n_documents": 3,
    "n_streams": 1,
+   "n_checked": 3,
    "relations": [],
    "period": "Jul 2026",
    "period_from": "Jul 2026",
@@ -8186,6 +8347,7 @@ window.SITE_DATA = {
    "n_sources": 7,
    "n_documents": 7,
    "n_streams": 1,
+   "n_checked": 10,
    "relations": [],
    "period": "Jun 2026 – Aug 2026",
    "period_from": "Jun 2026",
@@ -8254,6 +8416,7 @@ window.SITE_DATA = {
    "n_sources": 1,
    "n_documents": 1,
    "n_streams": 1,
+   "n_checked": 1,
    "relations": [],
    "period": "Jul 2026",
    "period_from": "Jul 2026",
@@ -8293,6 +8456,7 @@ window.SITE_DATA = {
    "n_sources": 2,
    "n_documents": 2,
    "n_streams": 1,
+   "n_checked": 2,
    "relations": [],
    "period": "Jul 2026",
    "period_from": "Jul 2026",
@@ -8323,17 +8487,18 @@ window.SITE_DATA = {
   },
   {
    "finding_id": "F807",
-   "statement": "The response to questions about which reporting system applies has been that the central module is a pilot and no answer is available yet, so partners have not begun reporting into it and the cluster continues extracting from its own platform alongside an interim spreadsheet.",
+   "statement": "Partners have not begun reporting to the central platform because no one can tell them whether it applies yet. Sectors have been told it is a pilot, or to continue with existing collection, so two systems run and neither is authoritative.",
    "theme": [
     "ABC"
    ],
-   "example": "",
+   "example": "Mali: training has taken place but sectors were told to continue existing collection.",
    "type": "barrier",
    "strength": 2,
    "n_records": 2,
    "n_sources": 2,
    "n_documents": 2,
    "n_streams": 1,
+   "n_checked": 2,
    "relations": [],
    "period": "Jul 2026",
    "period_from": "Jul 2026",
@@ -8374,6 +8539,7 @@ window.SITE_DATA = {
    "n_sources": 1,
    "n_documents": 1,
    "n_streams": 1,
+   "n_checked": 1,
    "relations": [],
    "period": "Jul 2026",
    "period_from": "Jul 2026",
@@ -8412,6 +8578,7 @@ window.SITE_DATA = {
    "n_sources": 1,
    "n_documents": 1,
    "n_streams": 1,
+   "n_checked": 1,
    "relations": [],
    "period": "Jul 2026",
    "period_from": "Jul 2026",
@@ -8451,6 +8618,7 @@ window.SITE_DATA = {
    "n_sources": 1,
    "n_documents": 1,
    "n_streams": 1,
+   "n_checked": 1,
    "relations": [],
    "period": "Jul 2026",
    "period_from": "Jul 2026",
@@ -8487,6 +8655,7 @@ window.SITE_DATA = {
    "n_sources": 2,
    "n_documents": 2,
    "n_streams": 1,
+   "n_checked": 2,
    "relations": [],
    "period": "Jul 2026 – Aug 2026",
    "period_from": "Jul 2026",
@@ -8528,6 +8697,7 @@ window.SITE_DATA = {
    "n_sources": 10,
    "n_documents": 10,
    "n_streams": 2,
+   "n_checked": 13,
    "relations": [],
    "period": "2007 – Aug 2026",
    "period_from": "2007",
@@ -8620,7 +8790,7 @@ window.SITE_DATA = {
    "source_id": "S011",
    "date_collected": "2026-08-03",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -8649,7 +8819,7 @@ window.SITE_DATA = {
    "source_id": "S011",
    "date_collected": "2026-08-03",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -8675,7 +8845,7 @@ window.SITE_DATA = {
    "source_id": "S011",
    "date_collected": "2026-08-03",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -8703,7 +8873,7 @@ window.SITE_DATA = {
    "source_id": "S011",
    "date_collected": "2026-08-03",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -8731,7 +8901,7 @@ window.SITE_DATA = {
    "source_id": "S011",
    "date_collected": "2026-08-03",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -8761,7 +8931,7 @@ window.SITE_DATA = {
    "source_id": "S011",
    "date_collected": "2026-08-03",
    "confidence": "medium",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -8789,7 +8959,7 @@ window.SITE_DATA = {
    "source_id": "S011",
    "date_collected": "2026-08-03",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -8818,7 +8988,7 @@ window.SITE_DATA = {
    "source_id": "S011",
    "date_collected": "2026-08-03",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -8847,7 +9017,7 @@ window.SITE_DATA = {
    "source_id": "S011",
    "date_collected": "2026-08-03",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -8876,7 +9046,7 @@ window.SITE_DATA = {
    "source_id": "S011",
    "date_collected": "2026-08-03",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -8904,7 +9074,7 @@ window.SITE_DATA = {
    "source_id": "S011",
    "date_collected": "2026-08-03",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -8931,7 +9101,7 @@ window.SITE_DATA = {
    "source_id": "S011",
    "date_collected": "2026-08-03",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -8961,7 +9131,7 @@ window.SITE_DATA = {
    "source_id": "S011",
    "date_collected": "2026-08-03",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -8989,7 +9159,7 @@ window.SITE_DATA = {
    "source_id": "S011",
    "date_collected": "2026-08-03",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -9017,7 +9187,7 @@ window.SITE_DATA = {
    "source_id": "S011",
    "date_collected": "2026-08-03",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -9046,7 +9216,7 @@ window.SITE_DATA = {
    "source_id": "S011",
    "date_collected": "2026-08-03",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -9073,7 +9243,7 @@ window.SITE_DATA = {
    "source_id": "S011",
    "date_collected": "2026-08-03",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -9100,7 +9270,7 @@ window.SITE_DATA = {
    "source_id": "S011",
    "date_collected": "2026-08-03",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -9128,7 +9298,7 @@ window.SITE_DATA = {
    "source_id": "S011",
    "date_collected": "2026-08-03",
    "confidence": "medium",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -9158,7 +9328,7 @@ window.SITE_DATA = {
    "source_id": "S011",
    "date_collected": "2026-08-03",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -9186,7 +9356,7 @@ window.SITE_DATA = {
    "source_id": "S011",
    "date_collected": "2026-08-03",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -9214,7 +9384,7 @@ window.SITE_DATA = {
    "source_id": "S011",
    "date_collected": "2026-08-03",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -9241,7 +9411,7 @@ window.SITE_DATA = {
    "source_id": "S011",
    "date_collected": "2026-08-03",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -9268,7 +9438,7 @@ window.SITE_DATA = {
    "source_id": "S011",
    "date_collected": "2026-08-03",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -9298,7 +9468,7 @@ window.SITE_DATA = {
    "source_id": "S011",
    "date_collected": "2026-08-03",
    "confidence": "medium",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -9327,7 +9497,7 @@ window.SITE_DATA = {
    "source_id": "S011",
    "date_collected": "2026-08-03",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -9354,7 +9524,7 @@ window.SITE_DATA = {
    "source_id": "S011",
    "date_collected": "2026-08-03",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -9381,7 +9551,7 @@ window.SITE_DATA = {
    "source_id": "S012",
    "date_collected": "2026-07-28",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -9407,7 +9577,7 @@ window.SITE_DATA = {
    "source_id": "S012",
    "date_collected": "2026-07-28",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -9434,7 +9604,7 @@ window.SITE_DATA = {
    "source_id": "S012",
    "date_collected": "2026-07-28",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -9462,7 +9632,7 @@ window.SITE_DATA = {
    "source_id": "S012",
    "date_collected": "2026-07-28",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -9491,7 +9661,7 @@ window.SITE_DATA = {
    "source_id": "S012",
    "date_collected": "2026-07-28",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -9518,7 +9688,7 @@ window.SITE_DATA = {
    "source_id": "S012",
    "date_collected": "2026-07-28",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -9544,7 +9714,7 @@ window.SITE_DATA = {
    "source_id": "S012",
    "date_collected": "2026-07-28",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -9572,7 +9742,7 @@ window.SITE_DATA = {
    "source_id": "S012",
    "date_collected": "2026-07-28",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -9599,7 +9769,7 @@ window.SITE_DATA = {
    "source_id": "S012",
    "date_collected": "2026-07-28",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -9626,7 +9796,7 @@ window.SITE_DATA = {
    "source_id": "S012",
    "date_collected": "2026-07-28",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -9654,7 +9824,7 @@ window.SITE_DATA = {
    "source_id": "S012",
    "date_collected": "2026-07-28",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -9682,7 +9852,7 @@ window.SITE_DATA = {
    "source_id": "S012",
    "date_collected": "2026-07-28",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -9709,7 +9879,7 @@ window.SITE_DATA = {
    "source_id": "S012",
    "date_collected": "2026-07-28",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -9735,7 +9905,7 @@ window.SITE_DATA = {
    "source_id": "S012",
    "date_collected": "2026-08-04",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -9764,7 +9934,7 @@ window.SITE_DATA = {
    "source_id": "S012",
    "date_collected": "2026-08-04",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -9791,7 +9961,7 @@ window.SITE_DATA = {
    "source_id": "S012",
    "date_collected": "2026-08-04",
    "confidence": "medium",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -9820,7 +9990,7 @@ window.SITE_DATA = {
    "source_id": "S012",
    "date_collected": "2026-08-04",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -9849,7 +10019,7 @@ window.SITE_DATA = {
    "source_id": "S012",
    "date_collected": "2026-08-04",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -9876,7 +10046,7 @@ window.SITE_DATA = {
    "source_id": "S012",
    "date_collected": "2026-08-04",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -9903,7 +10073,7 @@ window.SITE_DATA = {
    "source_id": "S012",
    "date_collected": "2026-08-04",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -9930,7 +10100,7 @@ window.SITE_DATA = {
    "source_id": "S012",
    "date_collected": "2026-08-04",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -9956,7 +10126,7 @@ window.SITE_DATA = {
    "source_id": "S012",
    "date_collected": "2026-08-04",
    "confidence": "medium",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -9985,7 +10155,7 @@ window.SITE_DATA = {
    "source_id": "S012",
    "date_collected": "2026-08-04",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -10012,7 +10182,7 @@ window.SITE_DATA = {
    "source_id": "S012",
    "date_collected": "2026-08-04",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -10040,7 +10210,7 @@ window.SITE_DATA = {
    "source_id": "S012",
    "date_collected": "2026-07-28",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -10067,7 +10237,7 @@ window.SITE_DATA = {
    "source_id": "S012",
    "date_collected": "2026-07-28",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -10095,7 +10265,7 @@ window.SITE_DATA = {
    "source_id": "S012",
    "date_collected": "2026-07-28",
    "confidence": "medium",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -10123,7 +10293,7 @@ window.SITE_DATA = {
    "source_id": "S012",
    "date_collected": "2026-07-28",
    "confidence": "medium",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -10152,7 +10322,7 @@ window.SITE_DATA = {
    "source_id": "S012",
    "date_collected": "2026-07-28",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -10179,7 +10349,7 @@ window.SITE_DATA = {
    "source_id": "S012",
    "date_collected": "2026-07-28",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -18107,7 +18277,7 @@ window.SITE_DATA = {
    "source_id": "S103",
    "date_collected": "2026-08-03",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -18164,7 +18334,7 @@ window.SITE_DATA = {
    "source_id": "S103",
    "date_collected": "2026-08-03",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -18191,7 +18361,7 @@ window.SITE_DATA = {
    "source_id": "S103",
    "date_collected": "2026-08-03",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -18218,7 +18388,7 @@ window.SITE_DATA = {
    "source_id": "S103",
    "date_collected": "2026-08-03",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -18246,7 +18416,7 @@ window.SITE_DATA = {
    "source_id": "S103",
    "date_collected": "2026-08-03",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -18273,7 +18443,7 @@ window.SITE_DATA = {
    "source_id": "S103",
    "date_collected": "2026-08-03",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -18301,7 +18471,7 @@ window.SITE_DATA = {
    "source_id": "S103",
    "date_collected": "2026-08-03",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -18328,7 +18498,7 @@ window.SITE_DATA = {
    "source_id": "S103",
    "date_collected": "2026-08-03",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -18356,7 +18526,7 @@ window.SITE_DATA = {
    "source_id": "S103",
    "date_collected": "2026-08-03",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -18384,7 +18554,7 @@ window.SITE_DATA = {
    "source_id": "S103",
    "date_collected": "2026-08-03",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -18413,7 +18583,7 @@ window.SITE_DATA = {
    "source_id": "S103",
    "date_collected": "2026-08-03",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -18440,7 +18610,7 @@ window.SITE_DATA = {
    "source_id": "S103",
    "date_collected": "2026-08-03",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -18467,7 +18637,7 @@ window.SITE_DATA = {
    "source_id": "S103",
    "date_collected": "2026-08-03",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -18496,7 +18666,7 @@ window.SITE_DATA = {
    "source_id": "S103",
    "date_collected": "2026-08-03",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -18523,7 +18693,7 @@ window.SITE_DATA = {
    "source_id": "S103",
    "date_collected": "2026-08-03",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -18551,7 +18721,7 @@ window.SITE_DATA = {
    "source_id": "S103",
    "date_collected": "2026-08-03",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -18578,7 +18748,7 @@ window.SITE_DATA = {
    "source_id": "S103",
    "date_collected": "2026-08-03",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -18605,7 +18775,7 @@ window.SITE_DATA = {
    "source_id": "S103",
    "date_collected": "2026-08-03",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -18631,7 +18801,7 @@ window.SITE_DATA = {
    "source_id": "S103",
    "date_collected": "2026-08-03",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -18658,7 +18828,7 @@ window.SITE_DATA = {
    "source_id": "S103",
    "date_collected": "2026-08-03",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -18686,7 +18856,7 @@ window.SITE_DATA = {
    "source_id": "S103",
    "date_collected": "2026-08-03",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -18713,7 +18883,7 @@ window.SITE_DATA = {
    "source_id": "S103",
    "date_collected": "2026-08-03",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -18740,7 +18910,7 @@ window.SITE_DATA = {
    "source_id": "S103",
    "date_collected": "2026-08-03",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -18767,7 +18937,7 @@ window.SITE_DATA = {
    "source_id": "S103",
    "date_collected": "2026-08-03",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -18794,7 +18964,7 @@ window.SITE_DATA = {
    "source_id": "S103",
    "date_collected": "2026-08-03",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -18821,7 +18991,7 @@ window.SITE_DATA = {
    "source_id": "S103",
    "date_collected": "2026-08-03",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -18849,7 +19019,7 @@ window.SITE_DATA = {
    "source_id": "S103",
    "date_collected": "2026-08-03",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -18877,7 +19047,7 @@ window.SITE_DATA = {
    "source_id": "S103",
    "date_collected": "2026-08-03",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -18904,7 +19074,7 @@ window.SITE_DATA = {
    "source_id": "S104",
    "date_collected": "2026-07-27",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -18932,7 +19102,7 @@ window.SITE_DATA = {
    "source_id": "S104",
    "date_collected": "2026-07-27",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -18960,7 +19130,7 @@ window.SITE_DATA = {
    "source_id": "S104",
    "date_collected": "2026-07-27",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -18988,7 +19158,7 @@ window.SITE_DATA = {
    "source_id": "S104",
    "date_collected": "2026-07-27",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -19017,7 +19187,7 @@ window.SITE_DATA = {
    "source_id": "S104",
    "date_collected": "2026-07-27",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -19046,7 +19216,7 @@ window.SITE_DATA = {
    "source_id": "S104",
    "date_collected": "2026-07-27",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -19074,7 +19244,7 @@ window.SITE_DATA = {
    "source_id": "S104",
    "date_collected": "2026-07-27",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -19103,7 +19273,7 @@ window.SITE_DATA = {
    "source_id": "S104",
    "date_collected": "2026-07-27",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -19132,7 +19302,7 @@ window.SITE_DATA = {
    "source_id": "S104",
    "date_collected": "2026-07-27",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -19159,7 +19329,7 @@ window.SITE_DATA = {
    "source_id": "S104",
    "date_collected": "2026-07-27",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -19187,7 +19357,7 @@ window.SITE_DATA = {
    "source_id": "S104",
    "date_collected": "2026-07-27",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -19215,7 +19385,7 @@ window.SITE_DATA = {
    "source_id": "S104",
    "date_collected": "2026-07-27",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -19243,7 +19413,7 @@ window.SITE_DATA = {
    "source_id": "S104",
    "date_collected": "2026-07-27",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -19269,7 +19439,7 @@ window.SITE_DATA = {
    "source_id": "S104",
    "date_collected": "2026-07-27",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -19295,7 +19465,7 @@ window.SITE_DATA = {
    "source_id": "S104",
    "date_collected": "2026-07-27",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -19321,7 +19491,7 @@ window.SITE_DATA = {
    "source_id": "S104",
    "date_collected": "2026-07-27",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -19348,7 +19518,7 @@ window.SITE_DATA = {
    "source_id": "S104",
    "date_collected": "2026-07-27",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -19377,7 +19547,7 @@ window.SITE_DATA = {
    "source_id": "S104",
    "date_collected": "2026-07-27",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -19405,7 +19575,7 @@ window.SITE_DATA = {
    "source_id": "S104",
    "date_collected": "2026-07-27",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -19434,7 +19604,7 @@ window.SITE_DATA = {
    "source_id": "S104",
    "date_collected": "2026-07-27",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -19462,7 +19632,7 @@ window.SITE_DATA = {
    "source_id": "S104",
    "date_collected": "2026-07-27",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -19490,7 +19660,7 @@ window.SITE_DATA = {
    "source_id": "S104",
    "date_collected": "2026-07-27",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -19517,7 +19687,7 @@ window.SITE_DATA = {
    "source_id": "S104",
    "date_collected": "2026-07-27",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -19545,7 +19715,7 @@ window.SITE_DATA = {
    "source_id": "S104",
    "date_collected": "2026-07-27",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -19572,7 +19742,7 @@ window.SITE_DATA = {
    "source_id": "S104",
    "date_collected": "2026-07-27",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -19627,7 +19797,7 @@ window.SITE_DATA = {
    "source_id": "S104",
    "date_collected": "2026-07-27",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -19654,7 +19824,7 @@ window.SITE_DATA = {
    "source_id": "S104",
    "date_collected": "2026-07-27",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -19680,7 +19850,7 @@ window.SITE_DATA = {
    "source_id": "S104",
    "date_collected": "2026-07-27",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -19708,7 +19878,7 @@ window.SITE_DATA = {
    "source_id": "S104",
    "date_collected": "2026-07-27",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -19739,7 +19909,7 @@ window.SITE_DATA = {
    "source_id": "S104",
    "date_collected": "2026-07-27",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -19766,7 +19936,7 @@ window.SITE_DATA = {
    "source_id": "S104",
    "date_collected": "2026-07-27",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -19796,7 +19966,7 @@ window.SITE_DATA = {
    "source_id": "S105",
    "date_collected": "2026-07-17",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -19824,7 +19994,7 @@ window.SITE_DATA = {
    "source_id": "S105",
    "date_collected": "2026-07-17",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -19852,7 +20022,7 @@ window.SITE_DATA = {
    "source_id": "S105",
    "date_collected": "2026-07-17",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -19880,7 +20050,7 @@ window.SITE_DATA = {
    "source_id": "S105",
    "date_collected": "2026-07-17",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -19905,7 +20075,7 @@ window.SITE_DATA = {
    "source_id": "S105",
    "date_collected": "2026-07-17",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -19932,7 +20102,7 @@ window.SITE_DATA = {
    "source_id": "S105",
    "date_collected": "2026-07-17",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -19961,7 +20131,7 @@ window.SITE_DATA = {
    "source_id": "S105",
    "date_collected": "2026-07-17",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -19988,7 +20158,7 @@ window.SITE_DATA = {
    "source_id": "S105",
    "date_collected": "2026-07-17",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -20016,7 +20186,7 @@ window.SITE_DATA = {
    "source_id": "S105",
    "date_collected": "2026-07-17",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -20044,7 +20214,7 @@ window.SITE_DATA = {
    "source_id": "S105",
    "date_collected": "2026-07-17",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -20072,7 +20242,7 @@ window.SITE_DATA = {
    "source_id": "S105",
    "date_collected": "2026-07-17",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -20101,7 +20271,7 @@ window.SITE_DATA = {
    "source_id": "S105",
    "date_collected": "2026-07-17",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -20129,7 +20299,7 @@ window.SITE_DATA = {
    "source_id": "S105",
    "date_collected": "2026-07-17",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -20156,7 +20326,7 @@ window.SITE_DATA = {
    "source_id": "S105",
    "date_collected": "2026-07-17",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -20182,7 +20352,7 @@ window.SITE_DATA = {
    "source_id": "S105",
    "date_collected": "2026-07-17",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -20212,7 +20382,7 @@ window.SITE_DATA = {
    "source_id": "S105",
    "date_collected": "2026-07-17",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -20240,7 +20410,7 @@ window.SITE_DATA = {
    "source_id": "S105",
    "date_collected": "2026-07-17",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -20268,7 +20438,7 @@ window.SITE_DATA = {
    "source_id": "S105",
    "date_collected": "2026-07-17",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -20296,7 +20466,7 @@ window.SITE_DATA = {
    "source_id": "S106",
    "date_collected": "2026-07-13",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -20323,7 +20493,7 @@ window.SITE_DATA = {
    "source_id": "S106",
    "date_collected": "2026-07-13",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -20352,7 +20522,7 @@ window.SITE_DATA = {
    "source_id": "S106",
    "date_collected": "2026-07-13",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -20379,7 +20549,7 @@ window.SITE_DATA = {
    "source_id": "S106",
    "date_collected": "2026-07-13",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -20406,7 +20576,7 @@ window.SITE_DATA = {
    "source_id": "S106",
    "date_collected": "2026-07-13",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -20433,7 +20603,7 @@ window.SITE_DATA = {
    "source_id": "S106",
    "date_collected": "2026-07-13",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -20460,7 +20630,7 @@ window.SITE_DATA = {
    "source_id": "S106",
    "date_collected": "2026-07-13",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -20487,7 +20657,7 @@ window.SITE_DATA = {
    "source_id": "S106",
    "date_collected": "2026-07-13",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -20514,7 +20684,7 @@ window.SITE_DATA = {
    "source_id": "S106",
    "date_collected": "2026-07-13",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -20543,7 +20713,7 @@ window.SITE_DATA = {
    "source_id": "S106",
    "date_collected": "2026-07-13",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -20569,7 +20739,7 @@ window.SITE_DATA = {
    "source_id": "S106",
    "date_collected": "2026-07-13",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -20595,7 +20765,7 @@ window.SITE_DATA = {
    "source_id": "S106",
    "date_collected": "2026-07-13",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -20623,7 +20793,7 @@ window.SITE_DATA = {
    "source_id": "S106",
    "date_collected": "2026-07-13",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -20652,7 +20822,7 @@ window.SITE_DATA = {
    "source_id": "S106",
    "date_collected": "2026-07-13",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -20682,7 +20852,7 @@ window.SITE_DATA = {
    "source_id": "S106",
    "date_collected": "2026-07-13",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -20710,7 +20880,7 @@ window.SITE_DATA = {
    "source_id": "S106",
    "date_collected": "2026-07-13",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -20737,7 +20907,7 @@ window.SITE_DATA = {
    "source_id": "S107",
    "date_collected": "2026-07-23",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -20765,7 +20935,7 @@ window.SITE_DATA = {
    "source_id": "S107",
    "date_collected": "2026-07-23",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -20795,7 +20965,7 @@ window.SITE_DATA = {
    "source_id": "S107",
    "date_collected": "2026-07-23",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -20823,7 +20993,7 @@ window.SITE_DATA = {
    "source_id": "S107",
    "date_collected": "2026-07-23",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -20851,7 +21021,7 @@ window.SITE_DATA = {
    "source_id": "S107",
    "date_collected": "2026-07-23",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -20880,7 +21050,7 @@ window.SITE_DATA = {
    "source_id": "S107",
    "date_collected": "2026-07-23",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -20908,7 +21078,7 @@ window.SITE_DATA = {
    "source_id": "S107",
    "date_collected": "2026-07-23",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -20937,7 +21107,7 @@ window.SITE_DATA = {
    "source_id": "S107",
    "date_collected": "2026-07-23",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -20965,7 +21135,7 @@ window.SITE_DATA = {
    "source_id": "S107",
    "date_collected": "2026-07-23",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -20994,7 +21164,7 @@ window.SITE_DATA = {
    "source_id": "S107",
    "date_collected": "2026-07-23",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -21023,7 +21193,7 @@ window.SITE_DATA = {
    "source_id": "S107",
    "date_collected": "2026-07-23",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -21049,7 +21219,7 @@ window.SITE_DATA = {
    "source_id": "S107",
    "date_collected": "2026-07-23",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -21076,7 +21246,7 @@ window.SITE_DATA = {
    "source_id": "S107",
    "date_collected": "2026-07-23",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -21104,7 +21274,7 @@ window.SITE_DATA = {
    "source_id": "S107",
    "date_collected": "2026-07-23",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -21132,7 +21302,7 @@ window.SITE_DATA = {
    "source_id": "S107",
    "date_collected": "2026-07-23",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -21160,7 +21330,7 @@ window.SITE_DATA = {
    "source_id": "S107",
    "date_collected": "2026-07-23",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -21188,7 +21358,7 @@ window.SITE_DATA = {
    "source_id": "S107",
    "date_collected": "2026-07-23",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -21216,7 +21386,7 @@ window.SITE_DATA = {
    "source_id": "S107",
    "date_collected": "2026-07-23",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -21244,7 +21414,7 @@ window.SITE_DATA = {
    "source_id": "S107",
    "date_collected": "2026-07-23",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -21272,7 +21442,7 @@ window.SITE_DATA = {
    "source_id": "S107",
    "date_collected": "2026-07-23",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -21300,7 +21470,7 @@ window.SITE_DATA = {
    "source_id": "S107",
    "date_collected": "2026-07-23",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -21329,7 +21499,7 @@ window.SITE_DATA = {
    "source_id": "S107",
    "date_collected": "2026-07-23",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -21355,7 +21525,7 @@ window.SITE_DATA = {
    "source_id": "S107",
    "date_collected": "2026-07-23",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -21382,7 +21552,7 @@ window.SITE_DATA = {
    "source_id": "S108",
    "date_collected": "2026-07-17",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -21409,7 +21579,7 @@ window.SITE_DATA = {
    "source_id": "S108",
    "date_collected": "2026-07-17",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -21438,7 +21608,7 @@ window.SITE_DATA = {
    "source_id": "S108",
    "date_collected": "2026-07-17",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -21465,7 +21635,7 @@ window.SITE_DATA = {
    "source_id": "S108",
    "date_collected": "2026-07-17",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -21493,7 +21663,7 @@ window.SITE_DATA = {
    "source_id": "S108",
    "date_collected": "2026-07-17",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -21522,7 +21692,7 @@ window.SITE_DATA = {
    "source_id": "S108",
    "date_collected": "2026-07-17",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -21550,7 +21720,7 @@ window.SITE_DATA = {
    "source_id": "S108",
    "date_collected": "2026-07-17",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -21579,7 +21749,7 @@ window.SITE_DATA = {
    "source_id": "S108",
    "date_collected": "2026-07-17",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -21608,7 +21778,7 @@ window.SITE_DATA = {
    "source_id": "S108",
    "date_collected": "2026-07-17",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -21637,7 +21807,7 @@ window.SITE_DATA = {
    "source_id": "S108",
    "date_collected": "2026-07-17",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -21666,7 +21836,7 @@ window.SITE_DATA = {
    "source_id": "S108",
    "date_collected": "2026-07-17",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -21695,7 +21865,7 @@ window.SITE_DATA = {
    "source_id": "S108",
    "date_collected": "2026-07-17",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -21725,7 +21895,7 @@ window.SITE_DATA = {
    "source_id": "S108",
    "date_collected": "2026-07-17",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -21752,7 +21922,7 @@ window.SITE_DATA = {
    "source_id": "S108",
    "date_collected": "2026-07-17",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -21780,7 +21950,7 @@ window.SITE_DATA = {
    "source_id": "S108",
    "date_collected": "2026-07-17",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -21808,7 +21978,7 @@ window.SITE_DATA = {
    "source_id": "S108",
    "date_collected": "2026-07-17",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -21836,7 +22006,7 @@ window.SITE_DATA = {
    "source_id": "S108",
    "date_collected": "2026-07-17",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -21865,7 +22035,7 @@ window.SITE_DATA = {
    "source_id": "S108",
    "date_collected": "2026-07-17",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -21893,7 +22063,7 @@ window.SITE_DATA = {
    "source_id": "S108",
    "date_collected": "2026-07-17",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -21922,7 +22092,7 @@ window.SITE_DATA = {
    "source_id": "S108",
    "date_collected": "2026-07-17",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -21952,7 +22122,7 @@ window.SITE_DATA = {
    "source_id": "S109",
    "date_collected": "2026-07-13",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -21979,7 +22149,7 @@ window.SITE_DATA = {
    "source_id": "S109",
    "date_collected": "2026-07-13",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -22006,7 +22176,7 @@ window.SITE_DATA = {
    "source_id": "S109",
    "date_collected": "2026-07-13",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -22034,7 +22204,7 @@ window.SITE_DATA = {
    "source_id": "S109",
    "date_collected": "2026-07-13",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -22061,7 +22231,7 @@ window.SITE_DATA = {
    "source_id": "S109",
    "date_collected": "2026-07-13",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -22090,7 +22260,7 @@ window.SITE_DATA = {
    "source_id": "S109",
    "date_collected": "2026-07-13",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -22117,7 +22287,7 @@ window.SITE_DATA = {
    "source_id": "S109",
    "date_collected": "2026-07-13",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -22145,7 +22315,7 @@ window.SITE_DATA = {
    "source_id": "S109",
    "date_collected": "2026-07-13",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -22173,7 +22343,7 @@ window.SITE_DATA = {
    "source_id": "S109",
    "date_collected": "2026-07-13",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -22200,7 +22370,7 @@ window.SITE_DATA = {
    "source_id": "S109",
    "date_collected": "2026-07-13",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -22227,7 +22397,7 @@ window.SITE_DATA = {
    "source_id": "S109",
    "date_collected": "2026-07-13",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -22254,7 +22424,7 @@ window.SITE_DATA = {
    "source_id": "S109",
    "date_collected": "2026-07-13",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -22282,7 +22452,7 @@ window.SITE_DATA = {
    "source_id": "S109",
    "date_collected": "2026-07-13",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -22311,7 +22481,7 @@ window.SITE_DATA = {
    "source_id": "S109",
    "date_collected": "2026-07-13",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -22338,7 +22508,7 @@ window.SITE_DATA = {
    "source_id": "S109",
    "date_collected": "2026-07-13",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -22366,7 +22536,7 @@ window.SITE_DATA = {
    "source_id": "S109",
    "date_collected": "2026-07-13",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -22395,7 +22565,7 @@ window.SITE_DATA = {
    "source_id": "S109",
    "date_collected": "2026-07-13",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -22423,7 +22593,7 @@ window.SITE_DATA = {
    "source_id": "S110",
    "date_collected": "2026-07-03",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -22450,7 +22620,7 @@ window.SITE_DATA = {
    "source_id": "S110",
    "date_collected": "2026-07-03",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -22477,7 +22647,7 @@ window.SITE_DATA = {
    "source_id": "S110",
    "date_collected": "2026-07-03",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -22506,7 +22676,7 @@ window.SITE_DATA = {
    "source_id": "S110",
    "date_collected": "2026-07-03",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -22534,7 +22704,7 @@ window.SITE_DATA = {
    "source_id": "S110",
    "date_collected": "2026-07-03",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -22564,7 +22734,7 @@ window.SITE_DATA = {
    "source_id": "S110",
    "date_collected": "2026-07-03",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -22620,7 +22790,7 @@ window.SITE_DATA = {
    "source_id": "S110",
    "date_collected": "2026-07-03",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -22647,7 +22817,7 @@ window.SITE_DATA = {
    "source_id": "S110",
    "date_collected": "2026-07-03",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -22674,7 +22844,7 @@ window.SITE_DATA = {
    "source_id": "S110",
    "date_collected": "2026-07-03",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -22702,7 +22872,7 @@ window.SITE_DATA = {
    "source_id": "S110",
    "date_collected": "2026-07-03",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -22729,7 +22899,7 @@ window.SITE_DATA = {
    "source_id": "S110",
    "date_collected": "2026-07-03",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -22757,7 +22927,7 @@ window.SITE_DATA = {
    "source_id": "S110",
    "date_collected": "2026-07-03",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -22785,7 +22955,7 @@ window.SITE_DATA = {
    "source_id": "S110",
    "date_collected": "2026-07-03",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -22814,7 +22984,7 @@ window.SITE_DATA = {
    "source_id": "S110",
    "date_collected": "2026-07-03",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -22840,7 +23010,7 @@ window.SITE_DATA = {
    "source_id": "S110",
    "date_collected": "2026-07-03",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -22868,7 +23038,7 @@ window.SITE_DATA = {
    "source_id": "S110",
    "date_collected": "2026-07-03",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -22923,7 +23093,7 @@ window.SITE_DATA = {
    "source_id": "S110",
    "date_collected": "2026-07-03",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -22951,7 +23121,7 @@ window.SITE_DATA = {
    "source_id": "S110",
    "date_collected": "2026-07-03",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -22979,7 +23149,7 @@ window.SITE_DATA = {
    "source_id": "S110",
    "date_collected": "2026-07-03",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -23008,7 +23178,7 @@ window.SITE_DATA = {
    "source_id": "S110",
    "date_collected": "2026-07-03",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -23036,7 +23206,7 @@ window.SITE_DATA = {
    "source_id": "S111",
    "date_collected": "2026-06-23",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -23064,7 +23234,7 @@ window.SITE_DATA = {
    "source_id": "S111",
    "date_collected": "2026-06-23",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -23092,7 +23262,7 @@ window.SITE_DATA = {
    "source_id": "S111",
    "date_collected": "2026-06-23",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -23119,7 +23289,7 @@ window.SITE_DATA = {
    "source_id": "S111",
    "date_collected": "2026-06-23",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -23148,7 +23318,7 @@ window.SITE_DATA = {
    "source_id": "S111",
    "date_collected": "2026-06-23",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -23176,7 +23346,7 @@ window.SITE_DATA = {
    "source_id": "S111",
    "date_collected": "2026-06-23",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -23204,7 +23374,7 @@ window.SITE_DATA = {
    "source_id": "S111",
    "date_collected": "2026-06-23",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -23232,7 +23402,7 @@ window.SITE_DATA = {
    "source_id": "S111",
    "date_collected": "2026-06-23",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -23260,7 +23430,7 @@ window.SITE_DATA = {
    "source_id": "S111",
    "date_collected": "2026-06-23",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -23288,7 +23458,7 @@ window.SITE_DATA = {
    "source_id": "S111",
    "date_collected": "2026-06-23",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -23316,7 +23486,7 @@ window.SITE_DATA = {
    "source_id": "S111",
    "date_collected": "2026-06-23",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -23344,7 +23514,7 @@ window.SITE_DATA = {
    "source_id": "S111",
    "date_collected": "2026-06-23",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -23372,7 +23542,7 @@ window.SITE_DATA = {
    "source_id": "S111",
    "date_collected": "2026-06-23",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -23400,7 +23570,7 @@ window.SITE_DATA = {
    "source_id": "S111",
    "date_collected": "2026-06-23",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -23428,7 +23598,7 @@ window.SITE_DATA = {
    "source_id": "S111",
    "date_collected": "2026-06-23",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -23456,7 +23626,7 @@ window.SITE_DATA = {
    "source_id": "S111",
    "date_collected": "2026-06-23",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -23485,7 +23655,7 @@ window.SITE_DATA = {
    "source_id": "S111",
    "date_collected": "2026-06-23",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -23513,7 +23683,7 @@ window.SITE_DATA = {
    "source_id": "S111",
    "date_collected": "2026-06-23",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -23542,7 +23712,7 @@ window.SITE_DATA = {
    "source_id": "S111",
    "date_collected": "2026-06-23",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -23569,7 +23739,7 @@ window.SITE_DATA = {
    "source_id": "S111",
    "date_collected": "2026-06-23",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -23596,7 +23766,7 @@ window.SITE_DATA = {
    "source_id": "S112",
    "date_collected": "2026-06-23",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -23624,7 +23794,7 @@ window.SITE_DATA = {
    "source_id": "S112",
    "date_collected": "2026-06-23",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -23653,7 +23823,7 @@ window.SITE_DATA = {
    "source_id": "S112",
    "date_collected": "2026-06-23",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -23681,7 +23851,7 @@ window.SITE_DATA = {
    "source_id": "S112",
    "date_collected": "2026-06-23",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -23711,7 +23881,7 @@ window.SITE_DATA = {
    "source_id": "S112",
    "date_collected": "2026-06-23",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -23740,7 +23910,7 @@ window.SITE_DATA = {
    "source_id": "S112",
    "date_collected": "2026-06-23",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -23769,7 +23939,7 @@ window.SITE_DATA = {
    "source_id": "S112",
    "date_collected": "2026-06-23",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -23798,7 +23968,7 @@ window.SITE_DATA = {
    "source_id": "S112",
    "date_collected": "2026-06-23",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -23824,7 +23994,7 @@ window.SITE_DATA = {
    "source_id": "S112",
    "date_collected": "2026-06-23",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -23852,7 +24022,7 @@ window.SITE_DATA = {
    "source_id": "S112",
    "date_collected": "2026-06-23",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -23880,7 +24050,7 @@ window.SITE_DATA = {
    "source_id": "S112",
    "date_collected": "2026-06-23",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -23909,7 +24079,7 @@ window.SITE_DATA = {
    "source_id": "S112",
    "date_collected": "2026-06-23",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -23938,7 +24108,7 @@ window.SITE_DATA = {
    "source_id": "S112",
    "date_collected": "2026-06-23",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -23967,7 +24137,7 @@ window.SITE_DATA = {
    "source_id": "S112",
    "date_collected": "2026-06-23",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -23994,7 +24164,7 @@ window.SITE_DATA = {
    "source_id": "S112",
    "date_collected": "2026-06-23",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -24022,7 +24192,7 @@ window.SITE_DATA = {
    "source_id": "S112",
    "date_collected": "2026-06-23",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -24051,7 +24221,7 @@ window.SITE_DATA = {
    "source_id": "S112",
    "date_collected": "2026-06-23",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -24081,7 +24251,7 @@ window.SITE_DATA = {
    "source_id": "S112",
    "date_collected": "2026-06-23",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -24109,7 +24279,7 @@ window.SITE_DATA = {
    "source_id": "S113",
    "date_collected": "2026-07-28",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -24137,7 +24307,7 @@ window.SITE_DATA = {
    "source_id": "S113",
    "date_collected": "2026-07-28",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -24165,7 +24335,7 @@ window.SITE_DATA = {
    "source_id": "S113",
    "date_collected": "2026-07-28",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -24192,7 +24362,7 @@ window.SITE_DATA = {
    "source_id": "S113",
    "date_collected": "2026-07-28",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -24221,7 +24391,7 @@ window.SITE_DATA = {
    "source_id": "S113",
    "date_collected": "2026-07-28",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -24249,7 +24419,7 @@ window.SITE_DATA = {
    "source_id": "S113",
    "date_collected": "2026-07-28",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -24276,7 +24446,7 @@ window.SITE_DATA = {
    "source_id": "S113",
    "date_collected": "2026-07-28",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -24303,7 +24473,7 @@ window.SITE_DATA = {
    "source_id": "S113",
    "date_collected": "2026-07-28",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -24330,7 +24500,7 @@ window.SITE_DATA = {
    "source_id": "S113",
    "date_collected": "2026-07-28",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -24358,7 +24528,7 @@ window.SITE_DATA = {
    "source_id": "S113",
    "date_collected": "2026-07-28",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -24385,7 +24555,7 @@ window.SITE_DATA = {
    "source_id": "S113",
    "date_collected": "2026-07-28",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -24415,7 +24585,7 @@ window.SITE_DATA = {
    "source_id": "S113",
    "date_collected": "2026-07-28",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -24445,7 +24615,7 @@ window.SITE_DATA = {
    "source_id": "S113",
    "date_collected": "2026-07-28",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -24473,7 +24643,7 @@ window.SITE_DATA = {
    "source_id": "S113",
    "date_collected": "2026-07-28",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -24501,7 +24671,7 @@ window.SITE_DATA = {
    "source_id": "S113",
    "date_collected": "2026-07-28",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -24530,7 +24700,7 @@ window.SITE_DATA = {
    "source_id": "S113",
    "date_collected": "2026-07-28",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -24559,7 +24729,7 @@ window.SITE_DATA = {
    "source_id": "S113",
    "date_collected": "2026-07-28",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -24586,7 +24756,7 @@ window.SITE_DATA = {
    "source_id": "S114",
    "date_collected": "2026-07-29",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -24614,7 +24784,7 @@ window.SITE_DATA = {
    "source_id": "S114",
    "date_collected": "2026-07-29",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -24642,7 +24812,7 @@ window.SITE_DATA = {
    "source_id": "S114",
    "date_collected": "2026-07-29",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -24670,7 +24840,7 @@ window.SITE_DATA = {
    "source_id": "S114",
    "date_collected": "2026-07-29",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -24697,7 +24867,7 @@ window.SITE_DATA = {
    "source_id": "S114",
    "date_collected": "2026-07-29",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -24726,7 +24896,7 @@ window.SITE_DATA = {
    "source_id": "S114",
    "date_collected": "2026-07-29",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -24754,7 +24924,7 @@ window.SITE_DATA = {
    "source_id": "S114",
    "date_collected": "2026-07-29",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -24782,7 +24952,7 @@ window.SITE_DATA = {
    "source_id": "S114",
    "date_collected": "2026-07-29",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -24809,7 +24979,7 @@ window.SITE_DATA = {
    "source_id": "S114",
    "date_collected": "2026-07-29",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -24837,7 +25007,7 @@ window.SITE_DATA = {
    "source_id": "S114",
    "date_collected": "2026-07-29",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -24864,7 +25034,7 @@ window.SITE_DATA = {
    "source_id": "S114",
    "date_collected": "2026-07-29",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -24892,7 +25062,7 @@ window.SITE_DATA = {
    "source_id": "S114",
    "date_collected": "2026-07-29",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -24920,7 +25090,7 @@ window.SITE_DATA = {
    "source_id": "S114",
    "date_collected": "2026-07-29",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -24949,7 +25119,7 @@ window.SITE_DATA = {
    "source_id": "S114",
    "date_collected": "2026-07-29",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -24977,7 +25147,7 @@ window.SITE_DATA = {
    "source_id": "S114",
    "date_collected": "2026-07-29",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -25006,7 +25176,7 @@ window.SITE_DATA = {
    "source_id": "S114",
    "date_collected": "2026-07-29",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -25034,7 +25204,7 @@ window.SITE_DATA = {
    "source_id": "S114",
    "date_collected": "2026-07-29",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -25061,7 +25231,7 @@ window.SITE_DATA = {
    "source_id": "S114",
    "date_collected": "2026-07-29",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -25087,7 +25257,7 @@ window.SITE_DATA = {
    "source_id": "S114",
    "date_collected": "2026-07-29",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -25116,7 +25286,7 @@ window.SITE_DATA = {
    "source_id": "S114",
    "date_collected": "2026-07-29",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -25145,7 +25315,7 @@ window.SITE_DATA = {
    "source_id": "S114",
    "date_collected": "2026-07-29",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -25172,7 +25342,7 @@ window.SITE_DATA = {
    "source_id": "S114",
    "date_collected": "2026-07-29",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -25706,7 +25876,7 @@ window.SITE_DATA = {
    "source_id": "S115",
    "date_collected": "2026-08-06",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -25731,7 +25901,7 @@ window.SITE_DATA = {
    "source_id": "S115",
    "date_collected": "2026-08-06",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -25757,7 +25927,7 @@ window.SITE_DATA = {
    "source_id": "S115",
    "date_collected": "2026-08-06",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -25783,7 +25953,7 @@ window.SITE_DATA = {
    "source_id": "S115",
    "date_collected": "2026-08-06",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -25812,7 +25982,7 @@ window.SITE_DATA = {
    "source_id": "S115",
    "date_collected": "2026-08-06",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -25839,7 +26009,7 @@ window.SITE_DATA = {
    "source_id": "S115",
    "date_collected": "2026-08-06",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -25866,7 +26036,7 @@ window.SITE_DATA = {
    "source_id": "S115",
    "date_collected": "2026-08-06",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -25892,7 +26062,7 @@ window.SITE_DATA = {
    "source_id": "S115",
    "date_collected": "2026-08-06",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -25918,7 +26088,7 @@ window.SITE_DATA = {
    "source_id": "S115",
    "date_collected": "2026-08-06",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -25945,7 +26115,7 @@ window.SITE_DATA = {
    "source_id": "S115",
    "date_collected": "2026-08-06",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -25972,7 +26142,7 @@ window.SITE_DATA = {
    "source_id": "S115",
    "date_collected": "2026-08-06",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -26000,7 +26170,7 @@ window.SITE_DATA = {
    "source_id": "S115",
    "date_collected": "2026-08-06",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -26028,7 +26198,7 @@ window.SITE_DATA = {
    "source_id": "S115",
    "date_collected": "2026-08-06",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -26055,7 +26225,7 @@ window.SITE_DATA = {
    "source_id": "S115",
    "date_collected": "2026-08-06",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -26081,7 +26251,7 @@ window.SITE_DATA = {
    "source_id": "S115",
    "date_collected": "2026-08-06",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -26109,7 +26279,7 @@ window.SITE_DATA = {
    "source_id": "S115",
    "date_collected": "2026-08-06",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -26136,7 +26306,7 @@ window.SITE_DATA = {
    "source_id": "S116",
    "date_collected": "2026-07-21",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -26163,7 +26333,7 @@ window.SITE_DATA = {
    "source_id": "S116",
    "date_collected": "2026-07-21",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -26190,7 +26360,7 @@ window.SITE_DATA = {
    "source_id": "S116",
    "date_collected": "2026-07-21",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -26216,7 +26386,7 @@ window.SITE_DATA = {
    "source_id": "S116",
    "date_collected": "2026-07-21",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -26243,7 +26413,7 @@ window.SITE_DATA = {
    "source_id": "S116",
    "date_collected": "2026-07-21",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -26269,7 +26439,7 @@ window.SITE_DATA = {
    "source_id": "S116",
    "date_collected": "2026-07-21",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -26294,7 +26464,7 @@ window.SITE_DATA = {
    "source_id": "S015",
    "date_collected": "2026-08-07",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2024
   },
   {
@@ -26319,7 +26489,7 @@ window.SITE_DATA = {
    "source_id": "S015",
    "date_collected": "2026-08-07",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2024
   },
   {
@@ -26344,7 +26514,7 @@ window.SITE_DATA = {
    "source_id": "S015",
    "date_collected": "2026-08-07",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2024
   },
   {
@@ -26368,7 +26538,7 @@ window.SITE_DATA = {
    "source_id": "S015",
    "date_collected": "2026-08-07",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2024
   },
   {
@@ -26393,7 +26563,7 @@ window.SITE_DATA = {
    "source_id": "S015",
    "date_collected": "2026-08-07",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2024
   },
   {
@@ -26417,7 +26587,7 @@ window.SITE_DATA = {
    "source_id": "S015",
    "date_collected": "2026-08-07",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2024
   },
   {
@@ -26441,7 +26611,7 @@ window.SITE_DATA = {
    "source_id": "S015",
    "date_collected": "2026-08-07",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2024
   },
   {
@@ -26469,7 +26639,7 @@ window.SITE_DATA = {
    "source_id": "S118",
    "date_collected": "2026-08-07",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -26496,7 +26666,7 @@ window.SITE_DATA = {
    "source_id": "S118",
    "date_collected": "2026-08-07",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -26523,7 +26693,7 @@ window.SITE_DATA = {
    "source_id": "S118",
    "date_collected": "2026-08-07",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -26552,7 +26722,7 @@ window.SITE_DATA = {
    "source_id": "S118",
    "date_collected": "2026-08-07",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -26581,7 +26751,7 @@ window.SITE_DATA = {
    "source_id": "S118",
    "date_collected": "2026-08-07",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -26609,7 +26779,7 @@ window.SITE_DATA = {
    "source_id": "S118",
    "date_collected": "2026-08-07",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -26637,7 +26807,7 @@ window.SITE_DATA = {
    "source_id": "S118",
    "date_collected": "2026-08-07",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -26665,7 +26835,7 @@ window.SITE_DATA = {
    "source_id": "S118",
    "date_collected": "2026-08-07",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -26693,7 +26863,7 @@ window.SITE_DATA = {
    "source_id": "S118",
    "date_collected": "2026-08-07",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -26718,7 +26888,7 @@ window.SITE_DATA = {
    "source_id": "S088",
    "date_collected": "2026-08-07",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2007
   },
   {
@@ -26744,7 +26914,7 @@ window.SITE_DATA = {
    "source_id": "S088",
    "date_collected": "2026-08-07",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2007
   },
   {
@@ -26770,7 +26940,7 @@ window.SITE_DATA = {
    "source_id": "S088",
    "date_collected": "2026-08-07",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2007
   },
   {
@@ -26797,7 +26967,7 @@ window.SITE_DATA = {
    "source_id": "S088",
    "date_collected": "2026-08-07",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2007
   },
   {
@@ -26822,7 +26992,7 @@ window.SITE_DATA = {
    "source_id": "S088",
    "date_collected": "2026-08-07",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2007
   },
   {
@@ -26848,7 +27018,7 @@ window.SITE_DATA = {
    "source_id": "S088",
    "date_collected": "2026-08-07",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2007
   },
   {
@@ -26874,7 +27044,7 @@ window.SITE_DATA = {
    "source_id": "S088",
    "date_collected": "2026-08-07",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2007
   },
   {
@@ -26900,7 +27070,7 @@ window.SITE_DATA = {
    "source_id": "S088",
    "date_collected": "2026-08-07",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2007
   },
   {
@@ -26926,7 +27096,7 @@ window.SITE_DATA = {
    "source_id": "S088",
    "date_collected": "2026-08-07",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2007
   },
   {
@@ -26952,7 +27122,7 @@ window.SITE_DATA = {
    "source_id": "S088",
    "date_collected": "2026-08-07",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2007
   },
   {
@@ -26979,7 +27149,7 @@ window.SITE_DATA = {
    "source_id": "S119",
    "date_collected": "2026-08-10",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -27005,7 +27175,7 @@ window.SITE_DATA = {
    "source_id": "S119",
    "date_collected": "2026-08-10",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -27032,7 +27202,7 @@ window.SITE_DATA = {
    "source_id": "S119",
    "date_collected": "2026-08-10",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -27059,7 +27229,7 @@ window.SITE_DATA = {
    "source_id": "S119",
    "date_collected": "2026-08-10",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -27087,7 +27257,7 @@ window.SITE_DATA = {
    "source_id": "S119",
    "date_collected": "2026-08-10",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -27113,7 +27283,7 @@ window.SITE_DATA = {
    "source_id": "S119",
    "date_collected": "2026-08-10",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -27139,7 +27309,7 @@ window.SITE_DATA = {
    "source_id": "S119",
    "date_collected": "2026-08-10",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -27166,7 +27336,7 @@ window.SITE_DATA = {
    "source_id": "S119",
    "date_collected": "2026-08-10",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -27194,7 +27364,7 @@ window.SITE_DATA = {
    "source_id": "S119",
    "date_collected": "2026-08-10",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -27221,7 +27391,7 @@ window.SITE_DATA = {
    "source_id": "S119",
    "date_collected": "2026-08-10",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -27248,7 +27418,7 @@ window.SITE_DATA = {
    "source_id": "S119",
    "date_collected": "2026-08-10",
    "confidence": "medium",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -27273,7 +27443,7 @@ window.SITE_DATA = {
    "source_id": "S119",
    "date_collected": "2026-08-10",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -27300,7 +27470,7 @@ window.SITE_DATA = {
    "source_id": "S119",
    "date_collected": "2026-08-10",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -27328,7 +27498,7 @@ window.SITE_DATA = {
    "source_id": "S119",
    "date_collected": "2026-08-10",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -27354,7 +27524,7 @@ window.SITE_DATA = {
    "source_id": "S119",
    "date_collected": "2026-08-10",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -27382,7 +27552,7 @@ window.SITE_DATA = {
    "source_id": "S119",
    "date_collected": "2026-08-10",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -27410,7 +27580,7 @@ window.SITE_DATA = {
    "source_id": "S119",
    "date_collected": "2026-08-10",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -27437,7 +27607,7 @@ window.SITE_DATA = {
    "source_id": "S119",
    "date_collected": "2026-08-10",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -27461,7 +27631,7 @@ window.SITE_DATA = {
    "source_id": "S119",
    "date_collected": "2026-08-10",
    "confidence": "medium",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -27488,7 +27658,7 @@ window.SITE_DATA = {
    "source_id": "S119",
    "date_collected": "2026-08-10",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -27514,7 +27684,7 @@ window.SITE_DATA = {
    "source_id": "S119",
    "date_collected": "2026-08-10",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -27538,7 +27708,7 @@ window.SITE_DATA = {
    "source_id": "S119",
    "date_collected": "2026-08-10",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -27564,7 +27734,7 @@ window.SITE_DATA = {
    "source_id": "S119",
    "date_collected": "2026-08-10",
    "confidence": "medium",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -27592,7 +27762,7 @@ window.SITE_DATA = {
    "source_id": "S119",
    "date_collected": "2026-08-10",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -27621,7 +27791,7 @@ window.SITE_DATA = {
    "source_id": "S119",
    "date_collected": "2026-08-10",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -27650,7 +27820,7 @@ window.SITE_DATA = {
    "source_id": "S119",
    "date_collected": "2026-08-10",
    "confidence": "medium",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -27677,7 +27847,7 @@ window.SITE_DATA = {
    "source_id": "S119",
    "date_collected": "2026-08-10",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -27704,7 +27874,7 @@ window.SITE_DATA = {
    "source_id": "S119",
    "date_collected": "2026-08-10",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -27730,7 +27900,7 @@ window.SITE_DATA = {
    "source_id": "S119",
    "date_collected": "2026-08-10",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -27758,7 +27928,7 @@ window.SITE_DATA = {
    "source_id": "S119",
    "date_collected": "2026-08-10",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -27785,7 +27955,7 @@ window.SITE_DATA = {
    "source_id": "S119",
    "date_collected": "2026-08-10",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -27810,7 +27980,7 @@ window.SITE_DATA = {
    "source_id": "S119",
    "date_collected": "2026-08-10",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -27837,7 +28007,7 @@ window.SITE_DATA = {
    "source_id": "S119",
    "date_collected": "2026-08-10",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -27865,7 +28035,7 @@ window.SITE_DATA = {
    "source_id": "S119",
    "date_collected": "2026-08-10",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -27894,7 +28064,7 @@ window.SITE_DATA = {
    "source_id": "S119",
    "date_collected": "2026-08-10",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -27922,7 +28092,7 @@ window.SITE_DATA = {
    "source_id": "S119",
    "date_collected": "2026-08-10",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -27950,7 +28120,7 @@ window.SITE_DATA = {
    "source_id": "S119",
    "date_collected": "2026-08-10",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -27975,7 +28145,7 @@ window.SITE_DATA = {
    "source_id": "S119",
    "date_collected": "2026-08-10",
    "confidence": "low",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -28002,7 +28172,7 @@ window.SITE_DATA = {
    "source_id": "S116",
    "date_collected": "2026-07-21",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -28029,7 +28199,7 @@ window.SITE_DATA = {
    "source_id": "S116",
    "date_collected": "2026-07-21",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -28057,7 +28227,7 @@ window.SITE_DATA = {
    "source_id": "S115",
    "date_collected": "2026-08-06",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -28084,7 +28254,7 @@ window.SITE_DATA = {
    "source_id": "S115",
    "date_collected": "2026-08-06",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -28112,7 +28282,7 @@ window.SITE_DATA = {
    "source_id": "S115",
    "date_collected": "2026-08-06",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -28138,7 +28308,7 @@ window.SITE_DATA = {
    "source_id": "S115",
    "date_collected": "2026-08-06",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -28163,7 +28333,7 @@ window.SITE_DATA = {
    "source_id": "S115",
    "date_collected": "2026-08-06",
    "confidence": "medium",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -28190,7 +28360,7 @@ window.SITE_DATA = {
    "source_id": "S115",
    "date_collected": "2026-08-06",
    "confidence": "medium",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -28216,7 +28386,7 @@ window.SITE_DATA = {
    "source_id": "S115",
    "date_collected": "2026-08-06",
    "confidence": "medium",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -28243,7 +28413,7 @@ window.SITE_DATA = {
    "source_id": "S115",
    "date_collected": "2026-08-06",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   }
  ],

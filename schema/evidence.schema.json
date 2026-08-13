@@ -58,7 +58,7 @@
       "description": "Set at record level as an initial judgement. Validated but not used. The band a reader sees is computed per finding_id from independent source groups, streams and countries (1-5, see data/taxonomy.json -> strength)."
     },
     "visibility": { "type": "string", "enum": ["public", "internal"] },
-    "status": { "type": "string", "enum": ["draft", "validated"] },
+    "status": { "type": "string", "enum": ["draft", "validated"], "description": "validated = someone opened the source and confirmed this record against it, which in practice means it carries a verbatim quote. draft = extracted but not confirmed. Not a quality judgement: an unchecked record may be perfectly accurate, it just cannot be verified by a reader." },
     "notes": { "type": "string", "description": "Internal working notes. Never published." }
   }
 }

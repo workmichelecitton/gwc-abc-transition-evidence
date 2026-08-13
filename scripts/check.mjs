@@ -345,6 +345,16 @@ async function exercise(label, url) {
   ok(missing.length === 0,
      `relation declared in one direction only: ${missing.map((r) => `${r.from}->${r.finding_id}`).join(", ")}`);
   if (rels.length) console.log(`    relations: ${rels.length / 2} declared between findings`);
+  // Check status must be derivable and consistent, or the badge lies.
+  ok(site.findings.every((f) => f.n_checked >= 0 && f.n_checked <= f.n_records),
+     "a finding reports more checked records than it has");
+  const checked = site.records.filter((r) => r.status === "validated").length;
+  ok(checked === site.findings.reduce((n, f) => n + f.n_checked, 0),
+     "checked counts on findings do not add up to the checked records");
+  const unverifiedStrong = site.findings.filter((f) => f.strength >= 4 && f.n_checked === 0);
+  console.log(`    checked: ${checked} of ${site.records.length} records · ` +
+              `${unverifiedStrong.length} findings at band 4+ with nothing verified` +
+              (unverifiedStrong.length ? ` (${unverifiedStrong.map((f) => f.finding_id).join(", ")})` : ""));
   const wide = site.findings.filter((f) => f.period_span >= 5).length;
   console.log(`    period: ${site.findings.length - noPeriod.length} findings dated, ` +
               `${wide} spanning 5+ years`);

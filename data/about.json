@@ -49,6 +49,14 @@
     "This is deliberate rather than diplomatic. Area-based coordination is still being designed, in most countries by the same people trying to make it work. Evidence framed as an accusation gets argued with; evidence framed as a mechanism gets acted on.",
     "Everything is anonymised. Verbatim quotes are held for verification but never published — a quote plus a country plus a role identifies one person."
    ]
+  },
+  {
+   "heading": "What has been checked, and what has not",
+   "body": [
+    "A record is marked checked once someone has opened the source and confirmed the record against it. In practice that means it carries a verbatim quote, which is what makes it checkable by anyone else afterwards.",
+    "403 of 730 records are checked. The rest are not wrong — they are unverified. Almost all of them were imported from the earlier explorer and arrived without quotes, so there is nothing yet to check them against.",
+    "Every finding card shows this alongside its band, because the two are different questions. The band counts how many independent sources support a claim. The check status says whether anyone has confirmed those sources actually say it. A strongly-banded finding that nobody has verified is not the same object as one that has been, and the site should not present them identically."
+   ]
   }
  ],
  "strength_intro": "Strength is calculated, not asserted. Nobody types it in. It counts how many independent sources support a finding, across how many kinds of source, and in how many countries — not how confident anyone feels, and not how serious the problem is. A band 1 finding is not a weak one; it is one nobody else has said yet.",

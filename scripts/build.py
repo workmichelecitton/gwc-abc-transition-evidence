@@ -397,9 +397,28 @@ def main():
 
     findings = []
     for fid, rows in sorted(groups.items()):
-        n_src = len({group_of.get(r["source_id"], r["source_id"]) for r in rows})
-        n_str = len({r["stream"] for r in rows})
-        n_cty = len({c for r in rows for c in r["countries"]})
+        # Records with identical wording count once. 19 findings carried
+        # byte-identical statements credited to sources counted as independent —
+        # all of them imports from the earlier explorer, none carrying a quote.
+        # That is the signature of one authored claim listed against the several
+        # documents its author believed supported it, which import then split
+        # into one record per source. Corroboration has to be demonstrable, and
+        # identical wording with nothing to check against demonstrates nothing.
+        #
+        # A quote distinguishes genuine repetition from propagation: if two
+        # sources really do say the same thing, the quotes differ.
+        seen_text, indep = set(), []
+        for r in rows:
+            key = (r.get("statement", "").strip().lower(), r.get("quote", "").strip().lower())
+            if key in seen_text:
+                continue
+            seen_text.add(key)
+            indep.append(r)
+        n_src = len({group_of.get(r["source_id"], r["source_id"]) for r in indep})
+        # Streams and countries counted on the same de-duplicated set, so a
+        # propagated statement cannot supply a second stream either.
+        n_str = len({r["stream"] for r in indep})
+        n_cty = len({c for r in indep for c in r["countries"]})
         # Five bands, counted — never assigned. The old three-band scale put 81
         # of 137 findings in 'high', which is not a filter, it is a majority: a
         # claim with three sources ranked identically to one with thirteen across
@@ -457,6 +476,12 @@ def main():
             # like a contradiction until the page says why.
             "n_documents": len({r["source_id"] for r in rows}),
             "n_streams": n_str,
+            # How much of this finding has been checked against its sources. The
+            # band says how many independent sources support a claim; this says
+            # whether anyone has confirmed they actually say it. A band 5 finding
+            # nobody has checked is a different object from a band 5 finding that
+            # has been, and the site should not present them identically.
+            "n_checked": sum(1 for r in rows if r.get("status") == "validated"),
             "relations": relations.get(fid, []),
             **period_of(rows),
             "streams": sorted({r["stream"] for r in rows}),
@@ -572,6 +597,16 @@ def main():
             errors.append(f"  evidence.csv row {i} ({r.get('id')}): stream '{rs}' but {sid} is "
                           f"registered as '{ss}'. Change one of them — a record cannot be in a "
                           f"different stream from the source it came from.")
+
+    # 'validated' means somebody confirmed the record against its source. In
+    # practice that shows up as a quote. A validated record with no quote is not
+    # forbidden — a document may resist quoting — but it has nothing a reader can
+    # check, so say why in notes rather than leaving it bare.
+    for i, r in enumerate(evidence_rows, start=2):
+        if r.get("status") == "validated" and not (r.get("quote") or "").strip() \
+                and not (r.get("notes") or "").strip():
+            warn(f"evidence.csv row {i} ({r.get('id')}): marked validated but carries no quote "
+                 f"and no note saying how it was checked.")
 
     NAMEY = re.compile(r"\b(?:Mr|Ms|Mrs|Dr)\.?\s+[A-Z][a-z]+", re.U)
     for i, r in enumerate(evidence_rows, start=2):

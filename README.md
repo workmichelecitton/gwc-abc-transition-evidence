@@ -43,10 +43,12 @@ Strength of evidence is **computed**, never typed in:
 | Band | Condition | Findings |
 |---|---|---|
 | **5 · Very strong** | 6+ independent sources, across 2+ streams, in 2+ countries | 24 |
-| **4 · Strong** | 3+ independent sources across 2+ streams | 26 |
-| **3 · Moderate** | 3+ independent sources, or 2 across 2 streams | 32 |
-| **2 · Limited** | 2 independent sources | 22 |
-| **1 · Single source** | 1 source — not corroborated, not therefore wrong | 56 |
+| **4 · Strong** | 3+ independent sources across 2+ streams | 27 |
+| **3 · Moderate** | 3+ independent sources, or 2 across 2 streams | 28 |
+| **2 · Limited** | 2 independent sources | 18 |
+| **1 · Single source** | 1 source — not corroborated, not therefore wrong | 65 |
+
+**Identical wording counts once.** Records with the same statement and no distinguishing quote count as a single source. Nineteen findings carried byte-identical statements credited to sources counted as independent — all imports from the earlier explorer, none with a quote. That is one authored claim listed against several documents, not several observations, and corroboration has to be demonstrable.
 
 Counts move as evidence is added; re-read them from `data/site.json` rather than trusting this table. Five bands, not three: the earlier three-band scale put 81 of 137 findings in `high`, which is a majority rather than a filter: a claim with three sources ranked identically to one with thirteen across four streams.
 
@@ -57,6 +59,20 @@ Counts move as evidence is added; re-read them from `data/site.json` rather than
 **Band 5 also requires two countries.** Three findings had six to eight sources concentrated in one country. That is depth in one place, not breadth, and it should not outrank a claim heard in eight.
 
 So a finding gets stronger on its own as evidence accumulates. A barrier reported in a country conversation *and* documented in an evaluation counts for more than the same point made twice in interviews — which is the whole reason evidence and findings are kept apart.
+
+
+## Checked, and not yet checked
+
+A record is **checked** once someone has opened the source and confirmed the record against it. In practice that means it carries a verbatim quote, which is what lets anyone else check it afterwards.
+
+**403 of 730 records are checked.** The rest are not wrong — they are unverified. Almost all came from the earlier explorer and arrived without quotes, so there is nothing yet to check them against.
+
+Every finding card shows this next to its band, because they answer different questions:
+
+- the **band** counts how many independent sources support a claim
+- **checked** says whether anyone has confirmed those sources actually say it
+
+A band 5 finding nobody has verified is not the same object as one that has been. Four findings at band 4 or above currently have nothing verified behind them: `F109`, `F243`, `F263`, `F283`.
 
 ## Four data streams
 
