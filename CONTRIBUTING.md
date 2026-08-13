@@ -137,3 +137,23 @@ Before committing a batch, sanity-check:
 - Would every quote still be safe if the person quoted read it on a public website?
 
 The site will happily publish weak evidence. It cannot tell the difference. Only you can.
+
+## Recording a contradiction
+
+Grouping only ever brings agreeing records together, so the base is naturally good at showing corroboration and silent about disagreement. Left alone, a band 5 finding reads as a universal rule when the honest reading is "true, under these conditions".
+
+Declare the relationship once, in `data/findings.csv`, in the `relations` column:
+
+| Value | Meaning |
+|---|---|
+| `contradicts:F123` | The two findings cannot both be generally true. Both stay; the reader sees the tension. |
+| `qualifies:F123` | This finding states the conditions under which the other holds or fails. |
+
+Semicolon-separated for more than one. The build shows it from **both** sides — declare it once, on whichever finding it is more natural to write it — and `check.mjs` fails if a relation is ever one-directional or points at a finding that does not exist.
+
+Two rules worth keeping:
+
+- **Never resolve a contradiction by deleting evidence.** If two countries genuinely report opposite things, that is a finding about context, not an error to tidy away.
+- **Prefer `qualifies` to `contradicts`.** Most apparent contradictions in this base are the same mechanism behaving differently under different conditions. Reach for `contradicts` only when the two really cannot both hold.
+
+To declare a relation on a finding that has no curated row yet, add a row with just the `finding_id` and `relations` filled in — the statement will keep falling back to the underlying record.

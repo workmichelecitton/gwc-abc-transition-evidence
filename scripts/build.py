@@ -314,7 +314,8 @@ def main():
             if ty and ty not in f_types:
                 errors.append(f"  findings.csv row {i} ({fid}): type '{ty}' not in taxonomy.type")
             curated[fid] = {"statement": st, "theme": th, "type": ty,
-                            "example": (r.get("example") or "").strip()}
+                            "example": (r.get("example") or "").strip(),
+                            "relations": (r.get("relations") or "").strip()}
         for fid in curated:
             if fid not in groups:
                 warn(f"findings.csv: '{fid}' has no evidence records — orphan row, delete it")
@@ -358,6 +359,41 @@ def main():
         span = int(hi[0][:4]) - int(lo[0][:4])
         return {"period": lo[1] if lo[1] == hi[1] else f"{lo[1]} – {hi[1]}",
                 "period_from": lo[1], "period_to": hi[1], "period_span": span}
+
+    # Year on every published record, so the filter bar can narrow by period.
+    # Same basis as the finding period: the source year, never the import stamp.
+    for r in published:
+        p = rec_period(r)
+        r["year"] = int(p[0][:4]) if p else None
+
+    # ---- relations between findings ----------------------------------------
+    # Grouping only ever brings agreeing records together, so the base is good at
+    # showing corroboration and silent about disagreement. A band 5 finding then
+    # reads as a universal rule when the honest reading is "true, under
+    # conditions". Two relation types, declared once in findings.csv as
+    # 'contradicts:F123' or 'qualifies:F456', and shown from both sides.
+    REL_TYPES = ("contradicts", "qualifies")
+    relations = defaultdict(list)
+    for fid, cur in curated.items():
+        for token in split(cur.get("relations", "")):
+            kind, _, other = token.partition(":")
+            kind, other = kind.strip().lower(), other.strip()
+            if kind not in REL_TYPES:
+                errors.append(f"  findings.csv ({fid}): relation '{token}' must start with "
+                              f"{' or '.join(REL_TYPES)}")
+                continue
+            if other not in groups:
+                errors.append(f"  findings.csv ({fid}): relation points at '{other}', "
+                              f"which is not a finding")
+                continue
+            if other == fid:
+                errors.append(f"  findings.csv ({fid}): a finding cannot relate to itself")
+                continue
+            relations[fid].append({"type": kind, "finding_id": other, "direction": "out"})
+            relations[other].append({"type": kind, "finding_id": fid, "direction": "in"})
+    if errors:
+        report()
+        return 1
 
     findings = []
     for fid, rows in sorted(groups.items()):
@@ -421,6 +457,7 @@ def main():
             # like a contradiction until the page says why.
             "n_documents": len({r["source_id"] for r in rows}),
             "n_streams": n_str,
+            "relations": relations.get(fid, []),
             **period_of(rows),
             "streams": sorted({r["stream"] for r in rows}),
             "countries": sorted({c for r in rows for c in r["countries"]}),

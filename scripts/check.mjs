@@ -334,6 +334,17 @@ async function exercise(label, url) {
      `${noPeriod.length} of ${site.findings.length} findings cannot be dated — the year column has stopped being filled in`);
   const spanBad = site.findings.filter((f) => f.period_span < 0 || f.period_span > 30);
   ok(spanBad.length === 0, `implausible period span: ${spanBad.map((f) => f.finding_id).join(", ")}`);
+  // Relations must be symmetric: declared once, shown from both sides. If one
+  // direction is missing the reader sees the caveat on one card and not the
+  // other, which is worse than not having it.
+  const fset = new Set(site.findings.map((f) => f.finding_id));
+  const rels = site.findings.flatMap((f) => (f.relations || []).map((r) => ({ from: f.finding_id, ...r })));
+  ok(rels.every((r) => fset.has(r.finding_id)), "a relation points at a finding that does not exist");
+  const missing = rels.filter((r) => !rels.some((o) =>
+    o.from === r.finding_id && o.finding_id === r.from && o.type === r.type));
+  ok(missing.length === 0,
+     `relation declared in one direction only: ${missing.map((r) => `${r.from}->${r.finding_id}`).join(", ")}`);
+  if (rels.length) console.log(`    relations: ${rels.length / 2} declared between findings`);
   const wide = site.findings.filter((f) => f.period_span >= 5).length;
   console.log(`    period: ${site.findings.length - noPeriod.length} findings dated, ` +
               `${wide} spanning 5+ years`);

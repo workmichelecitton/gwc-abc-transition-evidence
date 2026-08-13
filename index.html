@@ -128,6 +128,13 @@ h2.grp:first-child{margin-top:6px}
 .str.b3{background:var(--s3);color:#fff}     .str.b4{background:var(--s4);color:#fff}
 .str.b5{background:var(--s5);color:#fff}
 .str-n{opacity:.65;font-weight:700;margin-right:5px}
+.relbox{background:#F3F0FA;border:1px solid #D8CFEA;border-radius:7px;padding:11px 13px;margin-bottom:10px}
+.relbox>b{font-size:11px;text-transform:uppercase;letter-spacing:.06em;color:#5B4A86}
+.relrow{margin:7px 0 0;font-size:13px;line-height:1.5}
+.relkind{font-weight:600;color:#5B4A86}
+.tag.rel{background:#F3F0FA;border-color:#D8CFEA;color:#5B4A86}
+.ysep{color:var(--ink-3);font-size:12.5px;margin:0 4px}
+.ynote{font-size:11.5px;color:var(--ink-3);margin-left:12px;font-style:italic}
 .tag.per{font-variant-numeric:tabular-nums}
 .tag.per-wide{background:#FFF6E5;border-color:#E8CE9A;color:#6B4E12;font-weight:600}
 .detail{margin-top:13px;padding-top:13px;border-top:1px solid var(--line)}
@@ -251,6 +258,10 @@ text.ctyl.sel{fill:var(--transition);stroke:#FFF;stroke-width:2px}
       <div class="frow"><span class="flabel">Source</span><span id="f-stream"></span></div>
       <div class="frow"><span class="flabel">Strength</span><span id="f-strength"></span>
         <span class="flabel" style="margin-left:18px">Level</span><span id="f-level"></span></div>
+      <div class="frow"><span class="flabel">Evidence from</span>
+        <select id="yearfrom"></select><span class="ysep">to</span><select id="yearto"></select>
+        <span class="ynote">Narrows to evidence published in the period. A finding stays
+          visible if any of its records fall inside it.</span></div>
       <div class="frow"><span class="flabel">Group by</span>
         <select id="groupby">
           <option value="strength">Strength of evidence</option>
@@ -284,7 +295,7 @@ text.ctyl.sel{fill:var(--transition);stroke:#FFF;stroke-width:2px}
 
 var D = null;                       // the loaded dataset
 var TAB = "about";
-var F = { q:"", theme:[], type:[], stream:[], strength:[], level:[],
+var F = { q:"", yfrom:0, yto:0, theme:[], type:[], stream:[], strength:[], level:[],
           countries:[], tag:"", actor:"" };
 var OPEN = {};                      // which finding cards are expanded
 
@@ -302,6 +313,7 @@ var MAPON = true;                   // map shown above the findings list
 // the duplication. Strength first is the default because it puts what the base
 // is most confident about at the top.
 var GROUPBY = "strength";
+var YMIN = 0, YMAX = 0;
 var GROUPS = {
   strength: { order: [5,4,3,2,1],
               label: function(v){ return bandLabel(v); },
@@ -426,6 +438,16 @@ function init(){
   dropdown("actor","All actors",
     (D.taxonomy.actors||[]).map(function(t){ return [t.value, t.label]; }));
 
+  // Year range, built from the years actually present rather than a fixed span,
+  // so the control never offers a year with nothing behind it.
+  var years = uniq(D.records.map(function(r){ return r.year; })
+                            .filter(function(y){ return y != null; })).sort();
+  YMIN = years[0]; YMAX = years[years.length-1];
+  dropdown("yearfrom","Earliest", years.map(function(y){ return [y, String(y)]; }));
+  dropdown("yearto","Latest",    years.slice().reverse().map(function(y){ return [y, String(y)]; }));
+  el("yearfrom").onchange = function(){ F.yfrom = this.value ? +this.value : 0; render(); };
+  el("yearto").onchange   = function(){ F.yto   = this.value ? +this.value : 0; render(); };
+
   el("groupby").value = GROUPBY;
   el("groupby").onchange = function(){ GROUPBY = this.value; render(); };
 
@@ -439,8 +461,10 @@ function init(){
     this.value = "";
   };
   el("reset").onclick = function(){
-    F = { q:"", theme:[], type:[], stream:[], strength:[], level:[], countries:[], tag:"", actor:"" };
-    el("q").value = ""; ["country","tag","actor"].forEach(function(k){ el(k).value=""; });
+    F = { q:"", yfrom:0, yto:0, theme:[], type:[], stream:[], strength:[], level:[],
+          countries:[], tag:"", actor:"" };
+    el("q").value = "";
+    ["country","tag","actor","yearfrom","yearto"].forEach(function(k){ el(k).value=""; });
     document.querySelectorAll(".chip.on").forEach(function(c){ c.classList.remove("on"); });
     render();
   };
@@ -493,6 +517,10 @@ function matchRecord(r, skipCountry){
       !F.countries.some(function(c){ return r.countries.indexOf(c)>=0; })) return false;
   if (F.tag     && r.tags.indexOf(F.tag)<0) return false;
   if (F.actor   && r.actors.indexOf(F.actor)<0) return false;
+  // Undated records are kept rather than silently dropped: four of them exist
+  // because a source carries no year, and hiding them would misrepresent the
+  // base as better dated than it is.
+  if (r.year != null && ((F.yfrom && r.year < F.yfrom) || (F.yto && r.year > F.yto))) return false;
   if (F.q){
     var src = sourceOf(r.source_id);
     var hay = (r.statement+" "+(r.quote||"")+" "+r.id+" "+r.source_id+" "+
@@ -561,7 +589,7 @@ function render(){
 }
 function activeFilters(){
   return !!(F.q||F.countries.length||F.tag||F.actor||F.theme.length||F.type.length||
-            F.stream.length||F.strength.length||F.level.length);
+            F.stream.length||F.strength.length||F.level.length||F.yfrom||F.yto);
 }
 
 // One pill per theme. A finding covering both shows both, rather than a third
@@ -621,16 +649,41 @@ function viewFindings(d){
         (f.n_documents > f.n_sources ? ' of '+f.n_documents : '') +
         ' · '+f.n_streams+' stream'+(f.n_streams===1?"":"s")+'</span>' +
       periodTag(f) +
+      (f.relations && f.relations.length
+        ? '<span class="tag rel">' + f.relations.length + ' related</span>' : '') +
       (f.unmerged ? '<span class="tag" style="color:#B33A3A">not yet merged</span>' : '') +
       f.countries.map(function(c){ return '<span class="tag">'+esc(countryName(c))+'</span>'; }).join("") +
       f.tags.map(function(t){ return '<span class="tag">'+esc(label("tags",t))+'</span>'; }).join("") +
       '</div>';
-    var body = open ? '<div class="detail">' + evidenceBlocks(recs) + '</div>' : "";
+    var body = open ? '<div class="detail">' + relationBlock(f) + evidenceBlocks(recs) + '</div>' : "";
     return '<div class="card '+esc(f.type)+'" data-f="'+esc(f.finding_id)+'">'+head+body+'</div>';
   }
 }
 
 // Verbatim quotes are stripped at build time and are not available here.
+// Grouping only ever brings agreeing records together, so without this the base
+// shows corroboration and stays silent about disagreement — and a band 5 finding
+// reads as a universal rule when the honest reading is "true, under conditions".
+var RELWORD = {
+  "qualifies:out":   "Holds only under the conditions set out in",
+  "qualifies:in":    "Its conditions are set out by",
+  "contradicts:out": "Contradicts",
+  "contradicts:in":  "Is contradicted by"
+};
+function relationBlock(f){
+  if (!f.relations || !f.relations.length) return "";
+  var fmap = {};
+  D.findings.forEach(function(x){ fmap[x.finding_id] = x; });
+  return '<div class="relbox"><b>Read alongside</b>' + f.relations.map(function(rel){
+    var o = fmap[rel.finding_id];
+    if (!o) return '';
+    return '<p class="relrow"><span class="relkind">' +
+      esc(RELWORD[rel.type + ":" + rel.direction] || rel.type) + '</span> ' +
+      esc(o.statement) + ' <span class="tag">' + esc(o.finding_id) + '</span>' +
+      bandTag(o.strength) + '</p>';
+  }).join("") + '</div>';
+}
+
 function evLine(r){
   var s = sourceOf(r.source_id);
   return '<div class="evmeta">' + esc(r.id) + ' · ' + esc(label("stream", r.stream)) +
