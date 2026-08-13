@@ -319,6 +319,24 @@ async function exercise(label, url) {
      "a finding above band 1 rests on one source group");
   ok(!site.findings.some((f) => f.strength === 5 && f.countries.length < 2),
      "a band 5 finding sits in a single country — depth is passing for breadth");
+  // Every finding must say when its evidence is from, or the reader cannot tell
+  // a nineteen-year-old structural problem from something happening now.
+  // Undated findings depend on someone supplying a year, not on the code, so
+  // this reports rather than fails — the same reasoning as the source URL rule.
+  // It fails only if the gap grows past a fifth of the base, which would mean
+  // dating had stopped being maintained.
+  const noPeriod = site.findings.filter((f) => !f.period);
+  if (noPeriod.length) {
+    console.log(`    undated findings (source carries no year): ${
+       noPeriod.map((f) => f.finding_id).join(", ")}`);
+  }
+  ok(noPeriod.length <= site.findings.length * 0.2,
+     `${noPeriod.length} of ${site.findings.length} findings cannot be dated — the year column has stopped being filled in`);
+  const spanBad = site.findings.filter((f) => f.period_span < 0 || f.period_span > 30);
+  ok(spanBad.length === 0, `implausible period span: ${spanBad.map((f) => f.finding_id).join(", ")}`);
+  const wide = site.findings.filter((f) => f.period_span >= 5).length;
+  console.log(`    period: ${site.findings.length - noPeriod.length} findings dated, ` +
+              `${wide} spanning 5+ years`);
   const dist = [5, 4, 3, 2, 1].map((b) =>
     `${b}:${site.findings.filter((f) => f.strength === b).length}`).join(" · ");
   console.log(`    bands  ${dist}  of ${site.findings.length} findings`);

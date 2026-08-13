@@ -689,6 +689,10 @@ window.SITE_DATA = {
    "n_sources": 5,
    "n_documents": 5,
    "n_streams": 2,
+   "period": "2024 – Aug 2026",
+   "period_from": "2024",
+   "period_to": "Aug 2026",
+   "period_span": 2,
    "streams": [
     "transcript",
     "workshop"
@@ -746,6 +750,10 @@ window.SITE_DATA = {
    "n_sources": 2,
    "n_documents": 2,
    "n_streams": 1,
+   "period": "Jul 2026 – Aug 2026",
+   "period_from": "Jul 2026",
+   "period_to": "Aug 2026",
+   "period_span": 0,
    "streams": [
     "transcript"
    ],
@@ -784,6 +792,10 @@ window.SITE_DATA = {
    "n_sources": 1,
    "n_documents": 1,
    "n_streams": 1,
+   "period": "Aug 2026",
+   "period_from": "Aug 2026",
+   "period_to": "Aug 2026",
+   "period_span": 0,
    "streams": [
     "transcript"
    ],
@@ -820,6 +832,10 @@ window.SITE_DATA = {
    "n_sources": 3,
    "n_documents": 3,
    "n_streams": 1,
+   "period": "Jul 2026 – Aug 2026",
+   "period_from": "Jul 2026",
+   "period_to": "Aug 2026",
+   "period_span": 0,
    "streams": [
     "transcript"
    ],
@@ -867,6 +883,10 @@ window.SITE_DATA = {
    "n_sources": 2,
    "n_documents": 2,
    "n_streams": 1,
+   "period": "Jul 2026 – Aug 2026",
+   "period_from": "Jul 2026",
+   "period_to": "Aug 2026",
+   "period_span": 0,
    "streams": [
     "transcript"
    ],
@@ -903,6 +923,10 @@ window.SITE_DATA = {
    "n_sources": 8,
    "n_documents": 11,
    "n_streams": 2,
+   "period": "2024 – Aug 2026",
+   "period_from": "2024",
+   "period_to": "Aug 2026",
+   "period_span": 2,
    "streams": [
     "transcript",
     "workshop"
@@ -963,6 +987,10 @@ window.SITE_DATA = {
    "n_sources": 2,
    "n_documents": 2,
    "n_streams": 2,
+   "period": "2026 – Aug 2026",
+   "period_from": "2026",
+   "period_to": "Aug 2026",
+   "period_span": 0,
    "streams": [
     "transcript",
     "workshop"
@@ -1006,6 +1034,10 @@ window.SITE_DATA = {
    "n_sources": 2,
    "n_documents": 2,
    "n_streams": 1,
+   "period": "Jun 2026 – Aug 2026",
+   "period_from": "Jun 2026",
+   "period_to": "Aug 2026",
+   "period_span": 0,
    "streams": [
     "transcript"
    ],
@@ -1041,6 +1073,10 @@ window.SITE_DATA = {
    "n_sources": 4,
    "n_documents": 4,
    "n_streams": 2,
+   "period": "2026 – Aug 2026",
+   "period_from": "2026",
+   "period_to": "Aug 2026",
+   "period_span": 0,
    "streams": [
     "transcript",
     "workshop"
@@ -1092,6 +1128,10 @@ window.SITE_DATA = {
    "n_sources": 8,
    "n_documents": 9,
    "n_streams": 2,
+   "period": "2026 – Aug 2026",
+   "period_from": "2026",
+   "period_to": "Aug 2026",
+   "period_span": 0,
    "streams": [
     "transcript",
     "workshop"
@@ -1157,6 +1197,10 @@ window.SITE_DATA = {
    "n_sources": 4,
    "n_documents": 4,
    "n_streams": 3,
+   "period": "2023 – Aug 2026",
+   "period_from": "2023",
+   "period_to": "Aug 2026",
+   "period_span": 3,
    "streams": [
     "sdr",
     "transcript",
@@ -1209,6 +1253,10 @@ window.SITE_DATA = {
    "n_sources": 10,
    "n_documents": 10,
    "n_streams": 3,
+   "period": "2025 – Aug 2026",
+   "period_from": "2025",
+   "period_to": "Aug 2026",
+   "period_span": 1,
    "streams": [
     "sdr",
     "transcript",
@@ -1277,6 +1325,10 @@ window.SITE_DATA = {
    "n_sources": 2,
    "n_documents": 2,
    "n_streams": 1,
+   "period": "Jul 2026 – Aug 2026",
+   "period_from": "Jul 2026",
+   "period_to": "Aug 2026",
+   "period_span": 0,
    "streams": [
     "transcript"
    ],
@@ -1313,6 +1365,10 @@ window.SITE_DATA = {
    "n_sources": 3,
    "n_documents": 3,
    "n_streams": 1,
+   "period": "Jul 2026 – Aug 2026",
+   "period_from": "Jul 2026",
+   "period_to": "Aug 2026",
+   "period_span": 0,
    "streams": [
     "transcript"
    ],
@@ -1359,6 +1415,10 @@ window.SITE_DATA = {
    "n_sources": 1,
    "n_documents": 1,
    "n_streams": 1,
+   "period": "Jul 2026",
+   "period_from": "Jul 2026",
+   "period_to": "Jul 2026",
+   "period_span": 0,
    "streams": [
     "transcript"
    ],
@@ -1394,6 +1454,10 @@ window.SITE_DATA = {
    "n_sources": 3,
    "n_documents": 3,
    "n_streams": 1,
+   "period": "Jul 2026",
+   "period_from": "Jul 2026",
+   "period_to": "Jul 2026",
+   "period_span": 0,
    "streams": [
     "transcript"
    ],
@@ -1439,6 +1503,10 @@ window.SITE_DATA = {
    "n_sources": 2,
    "n_documents": 2,
    "n_streams": 1,
+   "period": "Jul 2026 – Aug 2026",
+   "period_from": "Jul 2026",
+   "period_to": "Aug 2026",
+   "period_span": 0,
    "streams": [
     "transcript"
    ],
@@ -1474,6 +1542,10 @@ window.SITE_DATA = {
    "n_sources": 2,
    "n_documents": 2,
    "n_streams": 1,
+   "period": "Jul 2026 – Aug 2026",
+   "period_from": "Jul 2026",
+   "period_to": "Aug 2026",
+   "period_span": 0,
    "streams": [
     "transcript"
    ],
@@ -1507,6 +1579,10 @@ window.SITE_DATA = {
    "n_sources": 2,
    "n_documents": 2,
    "n_streams": 1,
+   "period": "Jul 2026 – Aug 2026",
+   "period_from": "Jul 2026",
+   "period_to": "Aug 2026",
+   "period_span": 0,
    "streams": [
     "transcript"
    ],
@@ -1545,6 +1621,10 @@ window.SITE_DATA = {
    "n_sources": 2,
    "n_documents": 2,
    "n_streams": 1,
+   "period": "Jul 2026",
+   "period_from": "Jul 2026",
+   "period_to": "Jul 2026",
+   "period_span": 0,
    "streams": [
     "transcript"
    ],
@@ -1585,6 +1665,10 @@ window.SITE_DATA = {
    "n_sources": 2,
    "n_documents": 2,
    "n_streams": 1,
+   "period": "Jul 2026",
+   "period_from": "Jul 2026",
+   "period_to": "Jul 2026",
+   "period_span": 0,
    "streams": [
     "transcript"
    ],
@@ -1621,6 +1705,10 @@ window.SITE_DATA = {
    "n_sources": 3,
    "n_documents": 3,
    "n_streams": 1,
+   "period": "Jul 2026",
+   "period_from": "Jul 2026",
+   "period_to": "Jul 2026",
+   "period_span": 0,
    "streams": [
     "transcript"
    ],
@@ -1679,6 +1767,10 @@ window.SITE_DATA = {
    "n_sources": 3,
    "n_documents": 3,
    "n_streams": 2,
+   "period": "2025 – 2026",
+   "period_from": "2025",
+   "period_to": "2026",
+   "period_span": 1,
    "streams": [
     "sdr",
     "workshop"
@@ -1731,6 +1823,10 @@ window.SITE_DATA = {
    "n_sources": 6,
    "n_documents": 7,
    "n_streams": 2,
+   "period": "2026 – Aug 2026",
+   "period_from": "2026",
+   "period_to": "Aug 2026",
+   "period_span": 0,
    "streams": [
     "transcript",
     "workshop"
@@ -1797,6 +1893,10 @@ window.SITE_DATA = {
    "n_sources": 3,
    "n_documents": 3,
    "n_streams": 2,
+   "period": "2026",
+   "period_from": "2026",
+   "period_to": "2026",
+   "period_span": 0,
    "streams": [
     "sdr",
     "workshop"
@@ -1844,6 +1944,10 @@ window.SITE_DATA = {
    "n_sources": 2,
    "n_documents": 2,
    "n_streams": 1,
+   "period": "Jul 2026",
+   "period_from": "Jul 2026",
+   "period_to": "Jul 2026",
+   "period_span": 0,
    "streams": [
     "transcript"
    ],
@@ -1882,6 +1986,10 @@ window.SITE_DATA = {
    "n_sources": 1,
    "n_documents": 3,
    "n_streams": 1,
+   "period": "2026",
+   "period_from": "2026",
+   "period_to": "2026",
+   "period_span": 0,
    "streams": [
     "workshop"
    ],
@@ -1917,6 +2025,10 @@ window.SITE_DATA = {
    "n_sources": 2,
    "n_documents": 2,
    "n_streams": 1,
+   "period": "Jul 2026",
+   "period_from": "Jul 2026",
+   "period_to": "Jul 2026",
+   "period_span": 0,
    "streams": [
     "transcript"
    ],
@@ -1953,6 +2065,10 @@ window.SITE_DATA = {
    "n_sources": 1,
    "n_documents": 1,
    "n_streams": 1,
+   "period": "Jul 2026",
+   "period_from": "Jul 2026",
+   "period_to": "Jul 2026",
+   "period_span": 0,
    "streams": [
     "transcript"
    ],
@@ -1987,6 +2103,10 @@ window.SITE_DATA = {
    "n_sources": 5,
    "n_documents": 7,
    "n_streams": 2,
+   "period": "2023 – 2026",
+   "period_from": "2023",
+   "period_to": "2026",
+   "period_span": 3,
    "streams": [
     "sdr",
     "workshop"
@@ -2031,6 +2151,10 @@ window.SITE_DATA = {
    "n_sources": 1,
    "n_documents": 2,
    "n_streams": 1,
+   "period": "2026",
+   "period_from": "2026",
+   "period_to": "2026",
+   "period_span": 0,
    "streams": [
     "workshop"
    ],
@@ -2063,6 +2187,10 @@ window.SITE_DATA = {
    "n_sources": 1,
    "n_documents": 2,
    "n_streams": 1,
+   "period": "2026",
+   "period_from": "2026",
+   "period_to": "2026",
+   "period_span": 0,
    "streams": [
     "workshop"
    ],
@@ -2107,6 +2235,10 @@ window.SITE_DATA = {
    "n_sources": 4,
    "n_documents": 4,
    "n_streams": 1,
+   "period": "Jun 2026 – Aug 2026",
+   "period_from": "Jun 2026",
+   "period_to": "Aug 2026",
+   "period_span": 0,
    "streams": [
     "transcript"
    ],
@@ -2154,6 +2286,10 @@ window.SITE_DATA = {
    "n_sources": 4,
    "n_documents": 4,
    "n_streams": 2,
+   "period": "2020 – Aug 2026",
+   "period_from": "2020",
+   "period_to": "Aug 2026",
+   "period_span": 6,
    "streams": [
     "sdr",
     "transcript"
@@ -2205,6 +2341,10 @@ window.SITE_DATA = {
    "n_sources": 7,
    "n_documents": 7,
    "n_streams": 2,
+   "period": "2026 – Aug 2026",
+   "period_from": "2026",
+   "period_to": "Aug 2026",
+   "period_span": 0,
    "streams": [
     "transcript",
     "workshop"
@@ -2264,6 +2404,10 @@ window.SITE_DATA = {
    "n_sources": 1,
    "n_documents": 1,
    "n_streams": 1,
+   "period": "Jul 2026",
+   "period_from": "Jul 2026",
+   "period_to": "Jul 2026",
+   "period_span": 0,
    "streams": [
     "transcript"
    ],
@@ -2298,6 +2442,10 @@ window.SITE_DATA = {
    "n_sources": 1,
    "n_documents": 2,
    "n_streams": 1,
+   "period": "2026",
+   "period_from": "2026",
+   "period_to": "2026",
+   "period_span": 0,
    "streams": [
     "workshop"
    ],
@@ -2342,6 +2490,10 @@ window.SITE_DATA = {
    "n_sources": 4,
    "n_documents": 4,
    "n_streams": 3,
+   "period": "2020 – Aug 2026",
+   "period_from": "2020",
+   "period_to": "Aug 2026",
+   "period_span": 6,
    "streams": [
     "sdr",
     "search",
@@ -2389,6 +2541,10 @@ window.SITE_DATA = {
    "n_sources": 4,
    "n_documents": 4,
    "n_streams": 3,
+   "period": "2023 – Aug 2026",
+   "period_from": "2023",
+   "period_to": "Aug 2026",
+   "period_span": 3,
    "streams": [
     "sdr",
     "transcript",
@@ -2440,6 +2596,10 @@ window.SITE_DATA = {
    "n_sources": 1,
    "n_documents": 1,
    "n_streams": 1,
+   "period": "Aug 2026",
+   "period_from": "Aug 2026",
+   "period_to": "Aug 2026",
+   "period_span": 0,
    "streams": [
     "transcript"
    ],
@@ -2474,6 +2634,10 @@ window.SITE_DATA = {
    "n_sources": 1,
    "n_documents": 1,
    "n_streams": 1,
+   "period": "Aug 2026",
+   "period_from": "Aug 2026",
+   "period_to": "Aug 2026",
+   "period_span": 0,
    "streams": [
     "transcript"
    ],
@@ -2512,6 +2676,10 @@ window.SITE_DATA = {
    "n_sources": 1,
    "n_documents": 1,
    "n_streams": 1,
+   "period": "Aug 2026",
+   "period_from": "Aug 2026",
+   "period_to": "Aug 2026",
+   "period_span": 0,
    "streams": [
     "transcript"
    ],
@@ -2544,6 +2712,10 @@ window.SITE_DATA = {
    "n_sources": 1,
    "n_documents": 1,
    "n_streams": 1,
+   "period": "2024",
+   "period_from": "2024",
+   "period_to": "2024",
+   "period_span": 0,
    "streams": [
     "sdr"
    ],
@@ -2574,6 +2746,10 @@ window.SITE_DATA = {
    "n_sources": 2,
    "n_documents": 2,
    "n_streams": 1,
+   "period": "2007 – 2024",
+   "period_from": "2007",
+   "period_to": "2024",
+   "period_span": 17,
    "streams": [
     "sdr"
    ],
@@ -2605,6 +2781,10 @@ window.SITE_DATA = {
    "n_sources": 1,
    "n_documents": 1,
    "n_streams": 1,
+   "period": "2007",
+   "period_from": "2007",
+   "period_to": "2007",
+   "period_span": 0,
    "streams": [
     "sdr"
    ],
@@ -2636,6 +2816,10 @@ window.SITE_DATA = {
    "n_sources": 1,
    "n_documents": 1,
    "n_streams": 1,
+   "period": "2007",
+   "period_from": "2007",
+   "period_to": "2007",
+   "period_span": 0,
    "streams": [
     "sdr"
    ],
@@ -2667,6 +2851,10 @@ window.SITE_DATA = {
    "n_sources": 1,
    "n_documents": 1,
    "n_streams": 1,
+   "period": "Aug 2026",
+   "period_from": "Aug 2026",
+   "period_to": "Aug 2026",
+   "period_span": 0,
    "streams": [
     "transcript"
    ],
@@ -2701,6 +2889,10 @@ window.SITE_DATA = {
    "n_sources": 1,
    "n_documents": 1,
    "n_streams": 1,
+   "period": "Aug 2026",
+   "period_from": "Aug 2026",
+   "period_to": "Aug 2026",
+   "period_span": 0,
    "streams": [
     "transcript"
    ],
@@ -2733,6 +2925,10 @@ window.SITE_DATA = {
    "n_sources": 1,
    "n_documents": 1,
    "n_streams": 1,
+   "period": "Aug 2026",
+   "period_from": "Aug 2026",
+   "period_to": "Aug 2026",
+   "period_span": 0,
    "streams": [
     "transcript"
    ],
@@ -2765,6 +2961,10 @@ window.SITE_DATA = {
    "n_sources": 1,
    "n_documents": 1,
    "n_streams": 1,
+   "period": "Aug 2026",
+   "period_from": "Aug 2026",
+   "period_to": "Aug 2026",
+   "period_span": 0,
    "streams": [
     "transcript"
    ],
@@ -2798,6 +2998,10 @@ window.SITE_DATA = {
    "n_sources": 1,
    "n_documents": 1,
    "n_streams": 1,
+   "period": "Aug 2026",
+   "period_from": "Aug 2026",
+   "period_to": "Aug 2026",
+   "period_span": 0,
    "streams": [
     "transcript"
    ],
@@ -2829,6 +3033,10 @@ window.SITE_DATA = {
    "n_sources": 1,
    "n_documents": 1,
    "n_streams": 1,
+   "period": "Aug 2026",
+   "period_from": "Aug 2026",
+   "period_to": "Aug 2026",
+   "period_span": 0,
    "streams": [
     "transcript"
    ],
@@ -2860,6 +3068,10 @@ window.SITE_DATA = {
    "n_sources": 1,
    "n_documents": 1,
    "n_streams": 1,
+   "period": "Aug 2026",
+   "period_from": "Aug 2026",
+   "period_to": "Aug 2026",
+   "period_span": 0,
    "streams": [
     "transcript"
    ],
@@ -2893,6 +3105,10 @@ window.SITE_DATA = {
    "n_sources": 1,
    "n_documents": 1,
    "n_streams": 1,
+   "period": "Aug 2026",
+   "period_from": "Aug 2026",
+   "period_to": "Aug 2026",
+   "period_span": 0,
    "streams": [
     "transcript"
    ],
@@ -2925,6 +3141,10 @@ window.SITE_DATA = {
    "n_sources": 1,
    "n_documents": 1,
    "n_streams": 1,
+   "period": "Aug 2026",
+   "period_from": "Aug 2026",
+   "period_to": "Aug 2026",
+   "period_span": 0,
    "streams": [
     "transcript"
    ],
@@ -2957,6 +3177,10 @@ window.SITE_DATA = {
    "n_sources": 1,
    "n_documents": 1,
    "n_streams": 1,
+   "period": "Aug 2026",
+   "period_from": "Aug 2026",
+   "period_to": "Aug 2026",
+   "period_span": 0,
    "streams": [
     "transcript"
    ],
@@ -2990,6 +3214,10 @@ window.SITE_DATA = {
    "n_sources": 1,
    "n_documents": 1,
    "n_streams": 1,
+   "period": "Aug 2026",
+   "period_from": "Aug 2026",
+   "period_to": "Aug 2026",
+   "period_span": 0,
    "streams": [
     "transcript"
    ],
@@ -3023,6 +3251,10 @@ window.SITE_DATA = {
    "n_sources": 1,
    "n_documents": 1,
    "n_streams": 1,
+   "period": "Aug 2026",
+   "period_from": "Aug 2026",
+   "period_to": "Aug 2026",
+   "period_span": 0,
    "streams": [
     "transcript"
    ],
@@ -3056,6 +3288,10 @@ window.SITE_DATA = {
    "n_sources": 1,
    "n_documents": 1,
    "n_streams": 1,
+   "period": "Aug 2026",
+   "period_from": "Aug 2026",
+   "period_to": "Aug 2026",
+   "period_span": 0,
    "streams": [
     "transcript"
    ],
@@ -3087,6 +3323,10 @@ window.SITE_DATA = {
    "n_sources": 1,
    "n_documents": 1,
    "n_streams": 1,
+   "period": "Aug 2026",
+   "period_from": "Aug 2026",
+   "period_to": "Aug 2026",
+   "period_span": 0,
    "streams": [
     "transcript"
    ],
@@ -3116,6 +3356,10 @@ window.SITE_DATA = {
    "n_sources": 1,
    "n_documents": 1,
    "n_streams": 1,
+   "period": "Aug 2026",
+   "period_from": "Aug 2026",
+   "period_to": "Aug 2026",
+   "period_span": 0,
    "streams": [
     "transcript"
    ],
@@ -3147,6 +3391,10 @@ window.SITE_DATA = {
    "n_sources": 1,
    "n_documents": 1,
    "n_streams": 1,
+   "period": "Aug 2026",
+   "period_from": "Aug 2026",
+   "period_to": "Aug 2026",
+   "period_span": 0,
    "streams": [
     "transcript"
    ],
@@ -3183,6 +3431,10 @@ window.SITE_DATA = {
    "n_sources": 1,
    "n_documents": 1,
    "n_streams": 1,
+   "period": "Aug 2026",
+   "period_from": "Aug 2026",
+   "period_to": "Aug 2026",
+   "period_span": 0,
    "streams": [
     "transcript"
    ],
@@ -3216,6 +3468,10 @@ window.SITE_DATA = {
    "n_sources": 1,
    "n_documents": 1,
    "n_streams": 1,
+   "period": "Aug 2026",
+   "period_from": "Aug 2026",
+   "period_to": "Aug 2026",
+   "period_span": 0,
    "streams": [
     "transcript"
    ],
@@ -3247,6 +3503,10 @@ window.SITE_DATA = {
    "n_sources": 1,
    "n_documents": 1,
    "n_streams": 1,
+   "period": "Aug 2026",
+   "period_from": "Aug 2026",
+   "period_to": "Aug 2026",
+   "period_span": 0,
    "streams": [
     "transcript"
    ],
@@ -3280,6 +3540,10 @@ window.SITE_DATA = {
    "n_sources": 1,
    "n_documents": 1,
    "n_streams": 1,
+   "period": "Aug 2026",
+   "period_from": "Aug 2026",
+   "period_to": "Aug 2026",
+   "period_span": 0,
    "streams": [
     "transcript"
    ],
@@ -3313,6 +3577,10 @@ window.SITE_DATA = {
    "n_sources": 1,
    "n_documents": 1,
    "n_streams": 1,
+   "period": "Aug 2026",
+   "period_from": "Aug 2026",
+   "period_to": "Aug 2026",
+   "period_span": 0,
    "streams": [
     "transcript"
    ],
@@ -3345,6 +3613,10 @@ window.SITE_DATA = {
    "n_sources": 1,
    "n_documents": 1,
    "n_streams": 1,
+   "period": "Aug 2026",
+   "period_from": "Aug 2026",
+   "period_to": "Aug 2026",
+   "period_span": 0,
    "streams": [
     "transcript"
    ],
@@ -3378,6 +3650,10 @@ window.SITE_DATA = {
    "n_sources": 1,
    "n_documents": 1,
    "n_streams": 1,
+   "period": "Aug 2026",
+   "period_from": "Aug 2026",
+   "period_to": "Aug 2026",
+   "period_span": 0,
    "streams": [
     "transcript"
    ],
@@ -3411,6 +3687,10 @@ window.SITE_DATA = {
    "n_sources": 1,
    "n_documents": 1,
    "n_streams": 1,
+   "period": "Aug 2026",
+   "period_from": "Aug 2026",
+   "period_to": "Aug 2026",
+   "period_span": 0,
    "streams": [
     "transcript"
    ],
@@ -3443,6 +3723,10 @@ window.SITE_DATA = {
    "n_sources": 1,
    "n_documents": 1,
    "n_streams": 1,
+   "period": "Aug 2026",
+   "period_from": "Aug 2026",
+   "period_to": "Aug 2026",
+   "period_span": 0,
    "streams": [
     "transcript"
    ],
@@ -3474,6 +3758,10 @@ window.SITE_DATA = {
    "n_sources": 1,
    "n_documents": 1,
    "n_streams": 1,
+   "period": "",
+   "period_from": "",
+   "period_to": "",
+   "period_span": 0,
    "streams": [
     "sdr"
    ],
@@ -3506,6 +3794,10 @@ window.SITE_DATA = {
    "n_sources": 6,
    "n_documents": 6,
    "n_streams": 2,
+   "period": "2007 – Aug 2026",
+   "period_from": "2007",
+   "period_to": "Aug 2026",
+   "period_span": 19,
    "streams": [
     "sdr",
     "transcript"
@@ -3557,6 +3849,10 @@ window.SITE_DATA = {
    "n_sources": 13,
    "n_documents": 13,
    "n_streams": 3,
+   "period": "2007 – Aug 2026",
+   "period_from": "2007",
+   "period_to": "Aug 2026",
+   "period_span": 19,
    "streams": [
     "sdr",
     "transcript",
@@ -3637,6 +3933,10 @@ window.SITE_DATA = {
    "n_sources": 4,
    "n_documents": 4,
    "n_streams": 4,
+   "period": "2024 – Aug 2026",
+   "period_from": "2024",
+   "period_to": "Aug 2026",
+   "period_span": 2,
    "streams": [
     "sdr",
     "search",
@@ -3687,6 +3987,10 @@ window.SITE_DATA = {
    "n_sources": 10,
    "n_documents": 10,
    "n_streams": 2,
+   "period": "2023 – Aug 2026",
+   "period_from": "2023",
+   "period_to": "Aug 2026",
+   "period_span": 3,
    "streams": [
     "sdr",
     "transcript"
@@ -3754,6 +4058,10 @@ window.SITE_DATA = {
    "n_sources": 7,
    "n_documents": 7,
    "n_streams": 2,
+   "period": "2024 – Jul 2026",
+   "period_from": "2024",
+   "period_to": "Jul 2026",
+   "period_span": 2,
    "streams": [
     "transcript",
     "workshop"
@@ -3810,6 +4118,10 @@ window.SITE_DATA = {
    "n_sources": 1,
    "n_documents": 3,
    "n_streams": 1,
+   "period": "2024 – 2026",
+   "period_from": "2024",
+   "period_to": "2026",
+   "period_span": 2,
    "streams": [
     "workshop"
    ],
@@ -3842,6 +4154,10 @@ window.SITE_DATA = {
    "n_sources": 1,
    "n_documents": 3,
    "n_streams": 1,
+   "period": "2024 – 2026",
+   "period_from": "2024",
+   "period_to": "2026",
+   "period_span": 2,
    "streams": [
     "workshop"
    ],
@@ -3874,6 +4190,10 @@ window.SITE_DATA = {
    "n_sources": 3,
    "n_documents": 3,
    "n_streams": 1,
+   "period": "2019 – 2026",
+   "period_from": "2019",
+   "period_to": "2026",
+   "period_span": 7,
    "streams": [
     "sdr"
    ],
@@ -3914,6 +4234,10 @@ window.SITE_DATA = {
    "n_sources": 8,
    "n_documents": 10,
    "n_streams": 3,
+   "period": "2024 – Aug 2026",
+   "period_from": "2024",
+   "period_to": "Aug 2026",
+   "period_span": 2,
    "streams": [
     "sdr",
     "transcript",
@@ -3983,6 +4307,10 @@ window.SITE_DATA = {
    "n_sources": 3,
    "n_documents": 3,
    "n_streams": 3,
+   "period": "2023 – Aug 2026",
+   "period_from": "2023",
+   "period_to": "Aug 2026",
+   "period_span": 3,
    "streams": [
     "sdr",
     "transcript",
@@ -4027,6 +4355,10 @@ window.SITE_DATA = {
    "n_sources": 13,
    "n_documents": 14,
    "n_streams": 2,
+   "period": "2024 – Aug 2026",
+   "period_from": "2024",
+   "period_to": "Aug 2026",
+   "period_span": 2,
    "streams": [
     "transcript",
     "workshop"
@@ -4117,6 +4449,10 @@ window.SITE_DATA = {
    "n_sources": 5,
    "n_documents": 5,
    "n_streams": 3,
+   "period": "2024 – Jul 2026",
+   "period_from": "2024",
+   "period_to": "Jul 2026",
+   "period_span": 2,
    "streams": [
     "sdr",
     "transcript",
@@ -4176,6 +4512,10 @@ window.SITE_DATA = {
    "n_sources": 2,
    "n_documents": 2,
    "n_streams": 2,
+   "period": "2026 – Jul 2026",
+   "period_from": "2026",
+   "period_to": "Jul 2026",
+   "period_span": 0,
    "streams": [
     "transcript",
     "workshop"
@@ -4220,6 +4560,10 @@ window.SITE_DATA = {
    "n_sources": 1,
    "n_documents": 1,
    "n_streams": 1,
+   "period": "2026",
+   "period_from": "2026",
+   "period_to": "2026",
+   "period_span": 0,
    "streams": [
     "workshop"
    ],
@@ -4252,6 +4596,10 @@ window.SITE_DATA = {
    "n_sources": 7,
    "n_documents": 7,
    "n_streams": 3,
+   "period": "2007 – Jul 2026",
+   "period_from": "2007",
+   "period_to": "Jul 2026",
+   "period_span": 19,
    "streams": [
     "sdr",
     "transcript",
@@ -4304,6 +4652,10 @@ window.SITE_DATA = {
    "n_sources": 2,
    "n_documents": 2,
    "n_streams": 1,
+   "period": "2024 – 2026",
+   "period_from": "2024",
+   "period_to": "2026",
+   "period_span": 2,
    "streams": [
     "workshop"
    ],
@@ -4340,6 +4692,10 @@ window.SITE_DATA = {
    "n_sources": 2,
    "n_documents": 2,
    "n_streams": 2,
+   "period": "2026 – Jul 2026",
+   "period_from": "2026",
+   "period_to": "Jul 2026",
+   "period_span": 0,
    "streams": [
     "transcript",
     "workshop"
@@ -4383,6 +4739,10 @@ window.SITE_DATA = {
    "n_sources": 5,
    "n_documents": 5,
    "n_streams": 2,
+   "period": "2024 – 2026",
+   "period_from": "2024",
+   "period_to": "2026",
+   "period_span": 2,
    "streams": [
     "sdr",
     "workshop"
@@ -4433,6 +4793,10 @@ window.SITE_DATA = {
    "n_sources": 1,
    "n_documents": 2,
    "n_streams": 1,
+   "period": "2024 – 2026",
+   "period_from": "2024",
+   "period_to": "2026",
+   "period_span": 2,
    "streams": [
     "workshop"
    ],
@@ -4464,6 +4828,10 @@ window.SITE_DATA = {
    "n_sources": 5,
    "n_documents": 5,
    "n_streams": 3,
+   "period": "2007 – Aug 2026",
+   "period_from": "2007",
+   "period_to": "Aug 2026",
+   "period_span": 19,
    "streams": [
     "sdr",
     "transcript",
@@ -4513,6 +4881,10 @@ window.SITE_DATA = {
    "n_sources": 1,
    "n_documents": 2,
    "n_streams": 1,
+   "period": "2024 – 2026",
+   "period_from": "2024",
+   "period_to": "2026",
+   "period_span": 2,
    "streams": [
     "workshop"
    ],
@@ -4545,6 +4917,10 @@ window.SITE_DATA = {
    "n_sources": 6,
    "n_documents": 6,
    "n_streams": 3,
+   "period": "2020 – Jul 2026",
+   "period_from": "2020",
+   "period_to": "Jul 2026",
+   "period_span": 6,
    "streams": [
     "sdr",
     "transcript",
@@ -4602,6 +4978,10 @@ window.SITE_DATA = {
    "n_sources": 8,
    "n_documents": 9,
    "n_streams": 4,
+   "period": "2025 – Aug 2026",
+   "period_from": "2025",
+   "period_to": "Aug 2026",
+   "period_span": 1,
    "streams": [
     "sdr",
     "search",
@@ -4664,6 +5044,10 @@ window.SITE_DATA = {
    "n_sources": 8,
    "n_documents": 8,
    "n_streams": 4,
+   "period": "2007 – Aug 2026",
+   "period_from": "2007",
+   "period_to": "Aug 2026",
+   "period_span": 19,
    "streams": [
     "sdr",
     "search",
@@ -4724,6 +5108,10 @@ window.SITE_DATA = {
    "n_sources": 2,
    "n_documents": 2,
    "n_streams": 2,
+   "period": "2023 – 2026",
+   "period_from": "2023",
+   "period_to": "2026",
+   "period_span": 3,
    "streams": [
     "sdr",
     "workshop"
@@ -4760,6 +5148,10 @@ window.SITE_DATA = {
    "n_sources": 3,
    "n_documents": 3,
    "n_streams": 2,
+   "period": "2023 – 2026",
+   "period_from": "2023",
+   "period_to": "2026",
+   "period_span": 3,
    "streams": [
     "sdr",
     "workshop"
@@ -4802,6 +5194,10 @@ window.SITE_DATA = {
    "n_sources": 2,
    "n_documents": 2,
    "n_streams": 1,
+   "period": "2024",
+   "period_from": "2024",
+   "period_to": "2024",
+   "period_span": 0,
    "streams": [
     "workshop"
    ],
@@ -4833,6 +5229,10 @@ window.SITE_DATA = {
    "n_sources": 2,
    "n_documents": 2,
    "n_streams": 2,
+   "period": "2025 – 2026",
+   "period_from": "2025",
+   "period_to": "2026",
+   "period_span": 1,
    "streams": [
     "sdr",
     "workshop"
@@ -4867,6 +5267,10 @@ window.SITE_DATA = {
    "n_sources": 1,
    "n_documents": 1,
    "n_streams": 1,
+   "period": "2020",
+   "period_from": "2020",
+   "period_to": "2020",
+   "period_span": 0,
    "streams": [
     "sdr"
    ],
@@ -4898,6 +5302,10 @@ window.SITE_DATA = {
    "n_sources": 6,
    "n_documents": 6,
    "n_streams": 1,
+   "period": "2018 – 2026",
+   "period_from": "2018",
+   "period_to": "2026",
+   "period_span": 8,
    "streams": [
     "sdr"
    ],
@@ -4949,6 +5357,10 @@ window.SITE_DATA = {
    "n_sources": 9,
    "n_documents": 9,
    "n_streams": 2,
+   "period": "2019 – 2026",
+   "period_from": "2019",
+   "period_to": "2026",
+   "period_span": 7,
    "streams": [
     "sdr",
     "workshop"
@@ -5009,6 +5421,10 @@ window.SITE_DATA = {
    "n_sources": 7,
    "n_documents": 7,
    "n_streams": 2,
+   "period": "2007 – Aug 2026",
+   "period_from": "2007",
+   "period_to": "Aug 2026",
+   "period_span": 19,
    "streams": [
     "sdr",
     "transcript"
@@ -5065,6 +5481,10 @@ window.SITE_DATA = {
    "n_sources": 2,
    "n_documents": 4,
    "n_streams": 2,
+   "period": "2026 – Jun 2026",
+   "period_from": "2026",
+   "period_to": "Jun 2026",
+   "period_span": 0,
    "streams": [
     "transcript",
     "workshop"
@@ -5112,6 +5532,10 @@ window.SITE_DATA = {
    "n_sources": 3,
    "n_documents": 3,
    "n_streams": 3,
+   "period": "2025 – Jun 2026",
+   "period_from": "2025",
+   "period_to": "Jun 2026",
+   "period_span": 1,
    "streams": [
     "sdr",
     "transcript",
@@ -5162,6 +5586,10 @@ window.SITE_DATA = {
    "n_sources": 2,
    "n_documents": 2,
    "n_streams": 2,
+   "period": "2026 – Jul 2026",
+   "period_from": "2026",
+   "period_to": "Jul 2026",
+   "period_span": 0,
    "streams": [
     "transcript",
     "workshop"
@@ -5204,6 +5632,10 @@ window.SITE_DATA = {
    "n_sources": 2,
    "n_documents": 3,
    "n_streams": 2,
+   "period": "2026 – Jun 2026",
+   "period_from": "2026",
+   "period_to": "Jun 2026",
+   "period_span": 0,
    "streams": [
     "transcript",
     "workshop"
@@ -5249,6 +5681,10 @@ window.SITE_DATA = {
    "n_sources": 3,
    "n_documents": 3,
    "n_streams": 2,
+   "period": "2026 – Jul 2026",
+   "period_from": "2026",
+   "period_to": "Jul 2026",
+   "period_span": 0,
    "streams": [
     "transcript",
     "workshop"
@@ -5292,6 +5728,10 @@ window.SITE_DATA = {
    "n_sources": 3,
    "n_documents": 5,
    "n_streams": 3,
+   "period": "2026 – Aug 2026",
+   "period_from": "2026",
+   "period_to": "Aug 2026",
+   "period_span": 0,
    "streams": [
     "sdr",
     "transcript",
@@ -5342,6 +5782,10 @@ window.SITE_DATA = {
    "n_sources": 1,
    "n_documents": 2,
    "n_streams": 1,
+   "period": "2026",
+   "period_from": "2026",
+   "period_to": "2026",
+   "period_span": 0,
    "streams": [
     "workshop"
    ],
@@ -5373,6 +5817,10 @@ window.SITE_DATA = {
    "n_sources": 7,
    "n_documents": 7,
    "n_streams": 2,
+   "period": "2023 – Aug 2026",
+   "period_from": "2023",
+   "period_to": "Aug 2026",
+   "period_span": 3,
    "streams": [
     "sdr",
     "transcript"
@@ -5432,6 +5880,10 @@ window.SITE_DATA = {
    "n_sources": 2,
    "n_documents": 2,
    "n_streams": 2,
+   "period": "2025 – 2026",
+   "period_from": "2025",
+   "period_to": "2026",
+   "period_span": 1,
    "streams": [
     "sdr",
     "workshop"
@@ -5477,6 +5929,10 @@ window.SITE_DATA = {
    "n_sources": 12,
    "n_documents": 13,
    "n_streams": 4,
+   "period": "2013 – Aug 2026",
+   "period_from": "2013",
+   "period_to": "Aug 2026",
+   "period_span": 13,
    "streams": [
     "sdr",
     "search",
@@ -5553,6 +6009,10 @@ window.SITE_DATA = {
    "n_sources": 8,
    "n_documents": 10,
    "n_streams": 4,
+   "period": "2023 – Aug 2026",
+   "period_from": "2023",
+   "period_to": "Aug 2026",
+   "period_span": 3,
    "streams": [
     "sdr",
     "search",
@@ -5623,6 +6083,10 @@ window.SITE_DATA = {
    "n_sources": 4,
    "n_documents": 5,
    "n_streams": 3,
+   "period": "2026 – Aug 2026",
+   "period_from": "2026",
+   "period_to": "Aug 2026",
+   "period_span": 0,
    "streams": [
     "search",
     "transcript",
@@ -5680,6 +6144,10 @@ window.SITE_DATA = {
    "n_sources": 3,
    "n_documents": 3,
    "n_streams": 1,
+   "period": "2025",
+   "period_from": "2025",
+   "period_to": "2025",
+   "period_span": 0,
    "streams": [
     "sdr"
    ],
@@ -5717,6 +6185,10 @@ window.SITE_DATA = {
    "n_sources": 3,
    "n_documents": 3,
    "n_streams": 2,
+   "period": "2026 – Aug 2026",
+   "period_from": "2026",
+   "period_to": "Aug 2026",
+   "period_span": 0,
    "streams": [
     "transcript",
     "workshop"
@@ -5761,6 +6233,10 @@ window.SITE_DATA = {
    "n_sources": 2,
    "n_documents": 2,
    "n_streams": 2,
+   "period": "2020 – Jul 2026",
+   "period_from": "2020",
+   "period_to": "Jul 2026",
+   "period_span": 6,
    "streams": [
     "sdr",
     "transcript"
@@ -5805,6 +6281,10 @@ window.SITE_DATA = {
    "n_sources": 7,
    "n_documents": 9,
    "n_streams": 3,
+   "period": "2025 – Aug 2026",
+   "period_from": "2025",
+   "period_to": "Aug 2026",
+   "period_span": 1,
    "streams": [
     "sdr",
     "transcript",
@@ -5866,6 +6346,10 @@ window.SITE_DATA = {
    "n_sources": 3,
    "n_documents": 4,
    "n_streams": 2,
+   "period": "2026 – Jul 2026",
+   "period_from": "2026",
+   "period_to": "Jul 2026",
+   "period_span": 0,
    "streams": [
     "transcript",
     "workshop"
@@ -5913,6 +6397,10 @@ window.SITE_DATA = {
    "n_sources": 7,
    "n_documents": 7,
    "n_streams": 3,
+   "period": "2026 – Aug 2026",
+   "period_from": "2026",
+   "period_to": "Aug 2026",
+   "period_span": 0,
    "streams": [
     "sdr",
     "transcript",
@@ -5970,6 +6458,10 @@ window.SITE_DATA = {
    "n_sources": 1,
    "n_documents": 1,
    "n_streams": 1,
+   "period": "2026",
+   "period_from": "2026",
+   "period_to": "2026",
+   "period_span": 0,
    "streams": [
     "workshop"
    ],
@@ -6005,6 +6497,10 @@ window.SITE_DATA = {
    "n_sources": 2,
    "n_documents": 2,
    "n_streams": 1,
+   "period": "2023 – 2024",
+   "period_from": "2023",
+   "period_to": "2024",
+   "period_span": 1,
    "streams": [
     "sdr"
    ],
@@ -6038,6 +6534,10 @@ window.SITE_DATA = {
    "n_sources": 2,
    "n_documents": 3,
    "n_streams": 2,
+   "period": "2013 – 2026",
+   "period_from": "2013",
+   "period_to": "2026",
+   "period_span": 13,
    "streams": [
     "sdr",
     "workshop"
@@ -6090,6 +6590,10 @@ window.SITE_DATA = {
    "n_sources": 6,
    "n_documents": 8,
    "n_streams": 3,
+   "period": "2025 – Aug 2026",
+   "period_from": "2025",
+   "period_to": "Aug 2026",
+   "period_span": 1,
    "streams": [
     "sdr",
     "transcript",
@@ -6151,6 +6655,10 @@ window.SITE_DATA = {
    "n_sources": 5,
    "n_documents": 6,
    "n_streams": 3,
+   "period": "2020 – Aug 2026",
+   "period_from": "2020",
+   "period_to": "Aug 2026",
+   "period_span": 6,
    "streams": [
     "sdr",
     "transcript",
@@ -6205,6 +6713,10 @@ window.SITE_DATA = {
    "n_sources": 6,
    "n_documents": 6,
    "n_streams": 3,
+   "period": "2023 – Jul 2026",
+   "period_from": "2023",
+   "period_to": "Jul 2026",
+   "period_span": 3,
    "streams": [
     "sdr",
     "transcript",
@@ -6262,6 +6774,10 @@ window.SITE_DATA = {
    "n_sources": 6,
    "n_documents": 8,
    "n_streams": 3,
+   "period": "2025 – Aug 2026",
+   "period_from": "2025",
+   "period_to": "Aug 2026",
+   "period_span": 1,
    "streams": [
     "sdr",
     "transcript",
@@ -6323,6 +6839,10 @@ window.SITE_DATA = {
    "n_sources": 4,
    "n_documents": 5,
    "n_streams": 3,
+   "period": "2022 – Jun 2026",
+   "period_from": "2022",
+   "period_to": "Jun 2026",
+   "period_span": 4,
    "streams": [
     "sdr",
     "transcript",
@@ -6369,6 +6889,10 @@ window.SITE_DATA = {
    "n_sources": 5,
    "n_documents": 5,
    "n_streams": 3,
+   "period": "2025 – Aug 2026",
+   "period_from": "2025",
+   "period_to": "Aug 2026",
+   "period_span": 1,
    "streams": [
     "sdr",
     "search",
@@ -6420,6 +6944,10 @@ window.SITE_DATA = {
    "n_sources": 3,
    "n_documents": 3,
    "n_streams": 2,
+   "period": "2023 – Jul 2026",
+   "period_from": "2023",
+   "period_to": "Jul 2026",
+   "period_span": 3,
    "streams": [
     "sdr",
     "transcript"
@@ -6468,6 +6996,10 @@ window.SITE_DATA = {
    "n_sources": 2,
    "n_documents": 2,
    "n_streams": 1,
+   "period": "2024 – 2025",
+   "period_from": "2024",
+   "period_to": "2025",
+   "period_span": 1,
    "streams": [
     "sdr"
    ],
@@ -6501,6 +7033,10 @@ window.SITE_DATA = {
    "n_sources": 1,
    "n_documents": 2,
    "n_streams": 1,
+   "period": "2026",
+   "period_from": "2026",
+   "period_to": "2026",
+   "period_span": 0,
    "streams": [
     "workshop"
    ],
@@ -6535,6 +7071,10 @@ window.SITE_DATA = {
    "n_sources": 6,
    "n_documents": 6,
    "n_streams": 3,
+   "period": "2024 – Jun 2026",
+   "period_from": "2024",
+   "period_to": "Jun 2026",
+   "period_span": 2,
    "streams": [
     "sdr",
     "transcript",
@@ -6582,6 +7122,10 @@ window.SITE_DATA = {
    "n_sources": 7,
    "n_documents": 8,
    "n_streams": 4,
+   "period": "2026 – Aug 2026",
+   "period_from": "2026",
+   "period_to": "Aug 2026",
+   "period_span": 0,
    "streams": [
     "sdr",
     "search",
@@ -6643,6 +7187,10 @@ window.SITE_DATA = {
    "n_sources": 5,
    "n_documents": 7,
    "n_streams": 3,
+   "period": "2026 – Jul 2026",
+   "period_from": "2026",
+   "period_to": "Jul 2026",
+   "period_span": 0,
    "streams": [
     "sdr",
     "transcript",
@@ -6697,6 +7245,10 @@ window.SITE_DATA = {
    "n_sources": 1,
    "n_documents": 1,
    "n_streams": 1,
+   "period": "2026",
+   "period_from": "2026",
+   "period_to": "2026",
+   "period_span": 0,
    "streams": [
     "sdr"
    ],
@@ -6726,6 +7278,10 @@ window.SITE_DATA = {
    "n_sources": 1,
    "n_documents": 1,
    "n_streams": 1,
+   "period": "Aug 2026",
+   "period_from": "Aug 2026",
+   "period_to": "Aug 2026",
+   "period_span": 0,
    "streams": [
     "transcript"
    ],
@@ -6760,6 +7316,10 @@ window.SITE_DATA = {
    "n_sources": 3,
    "n_documents": 3,
    "n_streams": 1,
+   "period": "Jul 2026 – Aug 2026",
+   "period_from": "Jul 2026",
+   "period_to": "Aug 2026",
+   "period_span": 0,
    "streams": [
     "transcript"
    ],
@@ -6806,6 +7366,10 @@ window.SITE_DATA = {
    "n_sources": 6,
    "n_documents": 6,
    "n_streams": 1,
+   "period": "Jul 2026 – Aug 2026",
+   "period_from": "Jul 2026",
+   "period_to": "Aug 2026",
+   "period_span": 0,
    "streams": [
     "transcript"
    ],
@@ -6869,6 +7433,10 @@ window.SITE_DATA = {
    "n_sources": 3,
    "n_documents": 3,
    "n_streams": 1,
+   "period": "Jul 2026 – Aug 2026",
+   "period_from": "Jul 2026",
+   "period_to": "Aug 2026",
+   "period_span": 0,
    "streams": [
     "transcript"
    ],
@@ -6920,6 +7488,10 @@ window.SITE_DATA = {
    "n_sources": 5,
    "n_documents": 5,
    "n_streams": 1,
+   "period": "Jul 2026 – Aug 2026",
+   "period_from": "Jul 2026",
+   "period_to": "Aug 2026",
+   "period_span": 0,
    "streams": [
     "transcript"
    ],
@@ -6971,6 +7543,10 @@ window.SITE_DATA = {
    "n_sources": 4,
    "n_documents": 4,
    "n_streams": 1,
+   "period": "Jun 2026 – Aug 2026",
+   "period_from": "Jun 2026",
+   "period_to": "Aug 2026",
+   "period_span": 0,
    "streams": [
     "transcript"
    ],
@@ -7017,6 +7593,10 @@ window.SITE_DATA = {
    "n_sources": 3,
    "n_documents": 3,
    "n_streams": 1,
+   "period": "Jul 2026",
+   "period_from": "Jul 2026",
+   "period_to": "Jul 2026",
+   "period_span": 0,
    "streams": [
     "transcript"
    ],
@@ -7062,6 +7642,10 @@ window.SITE_DATA = {
    "n_sources": 7,
    "n_documents": 7,
    "n_streams": 1,
+   "period": "Jun 2026 – Aug 2026",
+   "period_from": "Jun 2026",
+   "period_to": "Aug 2026",
+   "period_span": 0,
    "streams": [
     "transcript"
    ],
@@ -7123,6 +7707,10 @@ window.SITE_DATA = {
    "n_sources": 1,
    "n_documents": 1,
    "n_streams": 1,
+   "period": "Jul 2026",
+   "period_from": "Jul 2026",
+   "period_to": "Jul 2026",
+   "period_span": 0,
    "streams": [
     "transcript"
    ],
@@ -7156,6 +7744,10 @@ window.SITE_DATA = {
    "n_sources": 3,
    "n_documents": 3,
    "n_streams": 1,
+   "period": "Jul 2026 – Aug 2026",
+   "period_from": "Jul 2026",
+   "period_to": "Aug 2026",
+   "period_span": 0,
    "streams": [
     "transcript"
    ],
@@ -7210,6 +7802,10 @@ window.SITE_DATA = {
    "n_sources": 2,
    "n_documents": 2,
    "n_streams": 1,
+   "period": "Jul 2026",
+   "period_from": "Jul 2026",
+   "period_to": "Jul 2026",
+   "period_span": 0,
    "streams": [
     "transcript"
    ],
@@ -7248,6 +7844,10 @@ window.SITE_DATA = {
    "n_sources": 1,
    "n_documents": 1,
    "n_streams": 1,
+   "period": "Jul 2026",
+   "period_from": "Jul 2026",
+   "period_to": "Jul 2026",
+   "period_span": 0,
    "streams": [
     "transcript"
    ],
@@ -7281,6 +7881,10 @@ window.SITE_DATA = {
    "n_sources": 1,
    "n_documents": 1,
    "n_streams": 1,
+   "period": "Jul 2026",
+   "period_from": "Jul 2026",
+   "period_to": "Jul 2026",
+   "period_span": 0,
    "streams": [
     "transcript"
    ],
@@ -7312,6 +7916,10 @@ window.SITE_DATA = {
    "n_sources": 5,
    "n_documents": 5,
    "n_streams": 1,
+   "period": "Jul 2026 – Aug 2026",
+   "period_from": "Jul 2026",
+   "period_to": "Aug 2026",
+   "period_span": 0,
    "streams": [
     "transcript"
    ],
@@ -7366,6 +7974,10 @@ window.SITE_DATA = {
    "n_sources": 3,
    "n_documents": 3,
    "n_streams": 1,
+   "period": "Jul 2026",
+   "period_from": "Jul 2026",
+   "period_to": "Jul 2026",
+   "period_span": 0,
    "streams": [
     "transcript"
    ],
@@ -7409,6 +8021,10 @@ window.SITE_DATA = {
    "n_sources": 7,
    "n_documents": 7,
    "n_streams": 1,
+   "period": "Jun 2026 – Aug 2026",
+   "period_from": "Jun 2026",
+   "period_to": "Aug 2026",
+   "period_span": 0,
    "streams": [
     "transcript"
    ],
@@ -7472,6 +8088,10 @@ window.SITE_DATA = {
    "n_sources": 1,
    "n_documents": 1,
    "n_streams": 1,
+   "period": "Jul 2026",
+   "period_from": "Jul 2026",
+   "period_to": "Jul 2026",
+   "period_span": 0,
    "streams": [
     "transcript"
    ],
@@ -7506,6 +8126,10 @@ window.SITE_DATA = {
    "n_sources": 2,
    "n_documents": 2,
    "n_streams": 1,
+   "period": "Jul 2026",
+   "period_from": "Jul 2026",
+   "period_to": "Jul 2026",
+   "period_span": 0,
    "streams": [
     "transcript"
    ],
@@ -7542,6 +8166,10 @@ window.SITE_DATA = {
    "n_sources": 2,
    "n_documents": 2,
    "n_streams": 1,
+   "period": "Jul 2026",
+   "period_from": "Jul 2026",
+   "period_to": "Jul 2026",
+   "period_span": 0,
    "streams": [
     "transcript"
    ],
@@ -7577,6 +8205,10 @@ window.SITE_DATA = {
    "n_sources": 1,
    "n_documents": 1,
    "n_streams": 1,
+   "period": "Jul 2026",
+   "period_from": "Jul 2026",
+   "period_to": "Jul 2026",
+   "period_span": 0,
    "streams": [
     "transcript"
    ],
@@ -7610,6 +8242,10 @@ window.SITE_DATA = {
    "n_sources": 1,
    "n_documents": 1,
    "n_streams": 1,
+   "period": "Jul 2026",
+   "period_from": "Jul 2026",
+   "period_to": "Jul 2026",
+   "period_span": 0,
    "streams": [
     "transcript"
    ],
@@ -7644,6 +8280,10 @@ window.SITE_DATA = {
    "n_sources": 1,
    "n_documents": 1,
    "n_streams": 1,
+   "period": "Jul 2026",
+   "period_from": "Jul 2026",
+   "period_to": "Jul 2026",
+   "period_span": 0,
    "streams": [
     "transcript"
    ],
@@ -7675,6 +8315,10 @@ window.SITE_DATA = {
    "n_sources": 2,
    "n_documents": 2,
    "n_streams": 1,
+   "period": "Jul 2026 – Aug 2026",
+   "period_from": "Jul 2026",
+   "period_to": "Aug 2026",
+   "period_span": 0,
    "streams": [
     "transcript"
    ],
@@ -7711,6 +8355,10 @@ window.SITE_DATA = {
    "n_sources": 10,
    "n_documents": 10,
    "n_streams": 2,
+   "period": "2007 – Aug 2026",
+   "period_from": "2007",
+   "period_to": "Aug 2026",
+   "period_span": 19,
    "streams": [
     "sdr",
     "transcript"
@@ -27274,7 +27922,7 @@ window.SITE_DATA = {
    "source_id": "S052",
    "title": "IASC. (2024.). 5\\_Annex E — Examples of cluster transition",
    "organisation": "",
-   "year": "",
+   "year": "2024",
    "type": "study",
    "url": "",
    "stream": "sdr",
@@ -27282,7 +27930,7 @@ window.SITE_DATA = {
    "access": "public",
    "legacy_id": "Transition-S1",
    "source_group": "",
-   "label": "IASC. (2024.). 5\\_Annex "
+   "label": "IASC. (2024.). 5\\_Annex  2024"
   },
   {
    "source_id": "S053",

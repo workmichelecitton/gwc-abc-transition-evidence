@@ -271,9 +271,14 @@ def main():
     # Sources sharing a source_group count ONCE. Three sessions of the same
     # workshop series, or two reports drawing on one dataset, are not three
     # independent sources — treating them as such manufactures corroboration.
-    group_of = {}
+    group_of, source_year = {}, {}
     for s in sources:
         group_of[s["source_id"]] = (s.get("source_group") or "").strip() or s["source_id"]
+        source_year[s["source_id"]] = (s.get("year") or "").strip()
+    undated = sorted(sid for sid, y in source_year.items() if not y[:4].isdigit())
+    if undated:
+        warn(f"{len(undated)} sources carry no year, so any finding resting on them cannot show "
+             f"when its evidence is from: {', '.join(undated)}")
 
     # ---- curated finding-level statements ----------------------------------
     # data/findings.csv holds the statement shown for a finding that groups
@@ -316,6 +321,43 @@ def main():
         if errors:
             report()
             return 1
+
+    # ---- when the evidence is from --------------------------------------
+    # A finding can group a 2007 evaluation with a 2026 country conversation and
+    # read, in the present tense, as though it were all current. 126 of 162
+    # findings mix years and eight span 2007 to 2026. "This has been true for
+    # nineteen years" and "this is happening now" are different claims.
+    #
+    # The source year is authoritative, not date_collected: 342 records carry a
+    # bulk-import stamp of 2026-07-17 while their sources range from 2013 to
+    # 2026. Month is shown only where date_collected really is the date the
+    # evidence was produced — a country conversation or a search hit — and only
+    # where it agrees with the source year.
+    MONTHS = ("", "Jan", "Feb", "Mar", "Apr", "May", "Jun",
+              "Jul", "Aug", "Sep", "Oct", "Nov", "Dec")
+
+    def rec_period(r):
+        """(sort key, display string) or None when the source carries no year."""
+        sy = (source_year.get(r["source_id"]) or "")[:4]
+        if not sy.isdigit():
+            return None
+        dc = (r.get("date_collected") or "")
+        trust_month = (r["stream"] in ("transcript", "search")
+                       and dc[:4] == sy and dc[5:7].isdigit()
+                       and 1 <= int(dc[5:7]) <= 12)
+        if trust_month:
+            m = int(dc[5:7])
+            return (sy + f"{m:02d}", f"{MONTHS[m]} {sy}")
+        return (sy + "00", sy)
+
+    def period_of(rows):
+        ps = sorted(p for p in (rec_period(r) for r in rows) if p)
+        if not ps:
+            return {"period": "", "period_from": "", "period_to": "", "period_span": 0}
+        lo, hi = ps[0], ps[-1]
+        span = int(hi[0][:4]) - int(lo[0][:4])
+        return {"period": lo[1] if lo[1] == hi[1] else f"{lo[1]} – {hi[1]}",
+                "period_from": lo[1], "period_to": hi[1], "period_span": span}
 
     findings = []
     for fid, rows in sorted(groups.items()):
@@ -379,6 +421,7 @@ def main():
             # like a contradiction until the page says why.
             "n_documents": len({r["source_id"] for r in rows}),
             "n_streams": n_str,
+            **period_of(rows),
             "streams": sorted({r["stream"] for r in rows}),
             "countries": sorted({c for r in rows for c in r["countries"]}),
             "tags": sorted({t for r in rows for t in r["tags"]}),
