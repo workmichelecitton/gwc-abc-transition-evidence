@@ -103,7 +103,7 @@
   "footer_note": "Every finding traces to a source ID in the Sources tab. If something looks wrong, it probably is — say so and it will be corrected."
  },
  "schema": 3,
- "generated": "2026-08-13",
+ "generated": "2026-08-17",
  "taxonomy_version": "0.9.0",
  "stats": {
   "records": 730,
@@ -5581,7 +5581,7 @@
    "n_sources": 7,
    "n_documents": 9,
    "n_streams": 2,
-   "n_checked": 0,
+   "n_checked": 1,
    "relations": [],
    "period": "2019 – 2026",
    "period_from": "2019",
@@ -6927,7 +6927,7 @@
    "n_sources": 5,
    "n_documents": 6,
    "n_streams": 3,
-   "n_checked": 2,
+   "n_checked": 3,
    "relations": [],
    "period": "2020 – Aug 2026",
    "period_from": "2020",
@@ -14359,7 +14359,7 @@
    "source_id": "S052",
    "date_collected": "2026-07-17",
    "confidence": "medium",
-   "status": "draft",
+   "status": "validated",
    "year": 2024
   },
   {
@@ -16562,7 +16562,7 @@
    "source_id": "S052",
    "date_collected": "2026-07-17",
    "confidence": "medium",
-   "status": "draft",
+   "status": "validated",
    "year": 2024
   },
   {
@@ -28998,7 +28998,7 @@
    "organisation": "",
    "year": "2024",
    "type": "study",
-   "url": "",
+   "url": "https://www.unicefintercluster.net/sites/default/files/2025-05/5_Annex%20E%20-%20Examples%20of%20cluster%20transition.pdf",
    "stream": "sdr",
    "date_added": "2026-07-17",
    "access": "public",
