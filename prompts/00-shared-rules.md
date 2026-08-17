@@ -154,3 +154,28 @@ State plainly:
 4. Where the source contradicts evidence already in `evidence.csv` — contradictions are findings in their own right and are more interesting than agreements.
 
 Do not report success if you had to guess at a controlled value. Say what you guessed.
+
+---
+
+## The v1 stratum, and why its sources cannot be trusted as attributions
+
+**43% of records in this base were imported from the earlier gwc-sdr-explorer.** They must be read differently from anything extracted since, and the reason is how they were produced.
+
+The first Secondary Data Review was built as a chain: a three-pass NotebookLM analysis over a corpus of documents, integrated by ChatGPT, then summarised by ChatGPT. Each pass moves further from the source text. What comes out is a set of claims that are fair summaries **of the corpus**, attached to the individual documents that were in it.
+
+That produces a specific and predictable failure. On a v1 record, `source_id` does not mean *"this document says this"*. It means *"this document was in the corpus"*. Those are different claims, and this base was treating them identically to a quoted transcript record.
+
+**The signatures, all visible in the data:**
+
+| Observation | What a synthesis chain produces |
+|---|---|
+| 5% of v1 records carry a quote, against 93% of records extracted directly | Nothing verbatim survives summarisation |
+| 19 findings held byte-identical statements across sources counted as independent | One synthesised sentence attributed to every document in the corpus |
+| Of five records attributed to Annex E of the IASC transition guidance, one was supported, one partly, and three were not in the document at all | Claims true of the corpus, filed against individual documents |
+
+**What follows for anyone working on this base:**
+
+- Do not treat an unchecked v1 record as evidence that its source says anything. Open the source first.
+- A v1 record may still be accurate about the world. A synthesis chain garbles attribution more reliably than it garbles substance. Wrong source is not the same as wrong claim, and the two need separating one record at a time.
+- The remedy is not deletion. It is re-extraction from the underlying documents, which is what `prompts/02` and the `/raw/` folder exist for. A record re-extracted with a quote becomes first-class and earns its band back honestly.
+- Never build a new stratum this way. Extract from one document at a time, capture a verbatim quote, and let corroboration be counted across records rather than asserted across a corpus.

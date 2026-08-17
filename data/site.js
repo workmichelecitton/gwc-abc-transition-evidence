@@ -58,6 +58,14 @@ window.SITE_DATA = {
      "403 of 730 records are checked. The rest are not wrong — they are unverified. Almost all of them were imported from the earlier explorer and arrived without quotes, so there is nothing yet to check them against.",
      "Every finding card shows this alongside its band, because the two are different questions. The band counts how many independent sources support a claim. The check status says whether anyone has confirmed those sources actually say it. A strongly-banded finding that nobody has verified is not the same object as one that has been, and the site should not present them identically."
     ]
+   },
+   {
+    "heading": "Where the older evidence came from",
+    "body": [
+     "Just over four in ten records were imported from an earlier version of this explorer. They were produced by a chain of AI syntheses over a corpus of documents rather than extracted from one document at a time, and they arrived without quotes.",
+     "That matters for how to read them. On those records, the source shown means the document was part of the corpus behind the claim — not that the document states it. Where this has been checked, that distinction has held up badly: of five records attributed to one IASC annex, one was supported by the text, one partly, and three could not be found in it at all.",
+     "They have not been removed. A claim can be right about the world and wrong about its source, and separating the two takes reading the original documents. Every finding shows how much of it has been checked, so the difference is visible rather than buried."
+    ]
    }
   ],
   "strength_intro": "Strength is calculated, not asserted. Nobody types it in. It counts how many independent sources support a finding, across how many kinds of source, and in how many countries — not how confident anyone feels, and not how serious the problem is. A band 1 finding is not a weak one; it is one nobody else has said yet.",
