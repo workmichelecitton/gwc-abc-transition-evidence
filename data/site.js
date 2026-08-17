@@ -114,9 +114,9 @@ window.SITE_DATA = {
  "generated": "2026-08-17",
  "taxonomy_version": "0.9.0",
  "stats": {
-  "records": 736,
-  "findings": 165,
-  "sources": 107,
+  "records": 742,
+  "findings": 166,
+  "sources": 108,
   "countries": 30,
   "withheld_internal": 2
  },
@@ -813,18 +813,19 @@ window.SITE_DATA = {
    ],
    "example": "Somalia — resistance reflected the way the model was introduced rather than the model itself.",
    "type": "context",
-   "strength": 1,
-   "n_records": 2,
-   "n_sources": 1,
-   "n_documents": 1,
-   "n_streams": 1,
-   "n_checked": 2,
+   "strength": 3,
+   "n_records": 3,
+   "n_sources": 2,
+   "n_documents": 2,
+   "n_streams": 2,
+   "n_checked": 3,
    "relations": [],
-   "period": "Aug 2026",
-   "period_from": "Aug 2026",
+   "period": "Oct 2020 – Aug 2026",
+   "period_from": "Oct 2020",
    "period_to": "Aug 2026",
-   "period_span": 0,
+   "period_span": 6,
    "streams": [
+    "search",
     "transcript"
    ],
    "countries": [
@@ -838,12 +839,14 @@ window.SITE_DATA = {
    "actors": [
     "cluster",
     "community",
+    "gov-national",
     "ingo",
     "local-ngo"
    ],
    "record_ids": [
     "E0018",
-    "E0038"
+    "E0038",
+    "E0755"
    ],
    "unmerged": false
   },
@@ -2635,18 +2638,19 @@ window.SITE_DATA = {
    "example": "Haiti — area-based coordination let agencies with established local presence lead joint access negotiations with armed groups and community members.",
    "type": "enabler",
    "strength": 4,
-   "n_records": 4,
-   "n_sources": 4,
-   "n_documents": 4,
-   "n_streams": 3,
-   "n_checked": 2,
+   "n_records": 5,
+   "n_sources": 5,
+   "n_documents": 5,
+   "n_streams": 4,
+   "n_checked": 3,
    "relations": [],
-   "period": "2023 – Aug 2026",
-   "period_from": "2023",
+   "period": "Oct 2020 – Aug 2026",
+   "period_from": "Oct 2020",
    "period_to": "Aug 2026",
-   "period_span": 3,
+   "period_span": 6,
    "streams": [
     "sdr",
+    "search",
     "transcript",
     "workshop"
    ],
@@ -2673,7 +2677,8 @@ window.SITE_DATA = {
     "E0175",
     "E0183",
     "E0646",
-    "E0709"
+    "E0709",
+    "E0753"
    ],
    "unmerged": false,
    "highlight": {
@@ -4019,6 +4024,42 @@ window.SITE_DATA = {
    "unmerged": false
   },
   {
+   "finding_id": "F1943",
+   "statement": "Coordination between sectors has remained the unresolved problem even where coordination within them improved: inter-cluster groups exist in most responses and are widely judged weak.",
+   "theme": [
+    "Fundamentals"
+   ],
+   "example": "",
+   "type": "context",
+   "strength": 1,
+   "n_records": 1,
+   "n_sources": 1,
+   "n_documents": 1,
+   "n_streams": 1,
+   "n_checked": 1,
+   "relations": [],
+   "period": "Oct 2020",
+   "period_from": "Oct 2020",
+   "period_to": "Oct 2020",
+   "period_span": 0,
+   "streams": [
+    "search"
+   ],
+   "countries": [],
+   "tags": [
+    "coordination-architecture",
+    "multisector"
+   ],
+   "actors": [
+    "cluster",
+    "ocha"
+   ],
+   "record_ids": [
+    "E0756"
+   ],
+   "unmerged": false
+  },
+  {
    "finding_id": "F201",
    "statement": "The need to create dedicated structures such as a drought strategic working group and community resource centres shows that existing coordination systems could not support integrated multi-sectoral assistance.",
    "theme": [
@@ -4654,17 +4695,18 @@ window.SITE_DATA = {
    "example": "Mali — coordination is carried by a co-facilitator whose post is programme-funded, with about thirty per cent of time notionally available. He can attend meetings; he cannot draft the indicators, objectives and strategy against planning deadlines.",
    "type": "context",
    "strength": 5,
-   "n_records": 26,
-   "n_sources": 13,
-   "n_documents": 14,
-   "n_streams": 2,
-   "n_checked": 23,
+   "n_records": 27,
+   "n_sources": 14,
+   "n_documents": 15,
+   "n_streams": 3,
+   "n_checked": 24,
    "relations": [],
-   "period": "2024 – Aug 2026",
-   "period_from": "2024",
+   "period": "Oct 2020 – Aug 2026",
+   "period_from": "Oct 2020",
    "period_to": "Aug 2026",
-   "period_span": 2,
+   "period_span": 6,
    "streams": [
+    "search",
     "transcript",
     "workshop"
    ],
@@ -4731,7 +4773,8 @@ window.SITE_DATA = {
     "E0618",
     "E0629",
     "E0668",
-    "E0669"
+    "E0669",
+    "E0752"
    ],
    "unmerged": false,
    "highlight": {
@@ -5370,11 +5413,11 @@ window.SITE_DATA = {
    "example": "Ukraine — local actors participated in coordination structures but had limited influence over decisions and over resources.",
    "type": "barrier",
    "strength": 5,
-   "n_records": 9,
-   "n_sources": 8,
-   "n_documents": 8,
+   "n_records": 10,
+   "n_sources": 9,
+   "n_documents": 9,
    "n_streams": 4,
-   "n_checked": 6,
+   "n_checked": 7,
    "relations": [],
    "period": "2007 – Aug 2026",
    "period_from": "2007",
@@ -5403,6 +5446,7 @@ window.SITE_DATA = {
    "actors": [
     "cluster",
     "community",
+    "gov-national",
     "ingo",
     "local-ngo",
     "ocha",
@@ -5417,7 +5461,8 @@ window.SITE_DATA = {
     "E0278",
     "E0673",
     "E0678",
-    "E0689"
+    "E0689",
+    "E0751"
    ],
    "unmerged": false,
    "highlight": {
@@ -5435,19 +5480,20 @@ window.SITE_DATA = {
    ],
    "example": "",
    "type": "enabler",
-   "strength": 1,
-   "n_records": 2,
-   "n_sources": 1,
-   "n_documents": 2,
-   "n_streams": 1,
-   "n_checked": 1,
+   "strength": 3,
+   "n_records": 3,
+   "n_sources": 2,
+   "n_documents": 3,
+   "n_streams": 2,
+   "n_checked": 2,
    "relations": [],
-   "period": "2023 – 2026",
-   "period_from": "2023",
+   "period": "Oct 2020 – 2026",
+   "period_from": "Oct 2020",
    "period_to": "2026",
-   "period_span": 3,
+   "period_span": 6,
    "streams": [
     "sdr",
+    "search",
     "workshop"
    ],
    "countries": [
@@ -5456,15 +5502,18 @@ window.SITE_DATA = {
    ],
    "tags": [
     "aap",
+    "inclusion",
     "localisation"
    ],
    "actors": [
+    "cluster",
     "community",
     "local-ngo"
    ],
    "record_ids": [
     "E0188",
-    "E0189"
+    "E0189",
+    "E0754"
    ],
    "unmerged": false
   },
@@ -28682,6 +28731,159 @@ window.SITE_DATA = {
    "confidence": "high",
    "status": "validated",
    "year": 2024
+  },
+  {
+   "id": "E0751",
+   "finding_id": "F260",
+   "theme": [
+    "ABC"
+   ],
+   "type": "barrier",
+   "statement": "Local actors attend coordination in numbers but hold almost none of the decision-making seats: national NGOs made up 7 per cent of humanitarian country team members globally, while accounting for 43 per cent of cluster participation — attendance and influence are different measures and only one of them is high.",
+   "level": "global",
+   "countries": [],
+   "actors": [
+    "local-ngo",
+    "cluster",
+    "gov-national"
+   ],
+   "tags": [
+    "localisation",
+    "coordination-architecture",
+    "performance"
+   ],
+   "stream": "search",
+   "source_id": "S120",
+   "date_collected": "2020-10-01",
+   "confidence": "high",
+   "status": "validated",
+   "year": 2020
+  },
+  {
+   "id": "E0752",
+   "finding_id": "F225",
+   "theme": [
+    "Fundamentals"
+   ],
+   "type": "barrier",
+   "statement": "Dedicated coordination capacity exists at capital level and almost nowhere below it: 59 per cent of country-level clusters had a dedicated coordinator and 34 per cent a dedicated information officer, while subnational structures had almost none and relied on double-hatting lead agency staff.",
+   "level": "global",
+   "countries": [],
+   "actors": [
+    "cluster",
+    "un-agency"
+   ],
+   "tags": [
+    "capacity",
+    "coordination-architecture",
+    "staff-turnover"
+   ],
+   "stream": "search",
+   "source_id": "S120",
+   "date_collected": "2020-10-01",
+   "confidence": "high",
+   "status": "validated",
+   "year": 2020
+  },
+  {
+   "id": "E0753",
+   "finding_id": "F1712",
+   "theme": [
+    "ABC"
+   ],
+   "type": "context",
+   "statement": "The coordination system is strongest at the centre and weakest at the level where most operations happen, and a sector-centric one-size-fits-all model is a poor fit for the holistic requirements of subnational coordination.",
+   "level": "global",
+   "countries": [],
+   "actors": [
+    "cluster"
+   ],
+   "tags": [
+    "coordination-architecture",
+    "geographic-targeting"
+   ],
+   "stream": "search",
+   "source_id": "S120",
+   "date_collected": "2020-10-01",
+   "confidence": "high",
+   "status": "validated",
+   "year": 2020
+  },
+  {
+   "id": "E0754",
+   "finding_id": "F261",
+   "theme": [
+    "ABC"
+   ],
+   "type": "barrier",
+   "statement": "Coordination meetings run in the languages international agencies prefer, and reported use of official or local languages overstates accessibility because a country's official language is often the humanitarian operating language too.",
+   "level": "global",
+   "countries": [],
+   "actors": [
+    "local-ngo",
+    "cluster"
+   ],
+   "tags": [
+    "localisation",
+    "inclusion"
+   ],
+   "stream": "search",
+   "source_id": "S120",
+   "date_collected": "2020-10-01",
+   "confidence": "high",
+   "status": "validated",
+   "year": 2020
+  },
+  {
+   "id": "E0755",
+   "finding_id": "F013",
+   "theme": [
+    "ABC"
+   ],
+   "type": "context",
+   "statement": "Area-based coordination was proposed as a corrective to an architecture judged too centralised and too oriented to international agencies: organised around technical sectors rather than how affected people define priorities, and with decision-making concentrated at capital level.",
+   "level": "global",
+   "countries": [],
+   "actors": [
+    "cluster",
+    "local-ngo",
+    "gov-national"
+   ],
+   "tags": [
+    "coordination-architecture",
+    "localisation"
+   ],
+   "stream": "search",
+   "source_id": "S120",
+   "date_collected": "2020-10-01",
+   "confidence": "high",
+   "status": "validated",
+   "year": 2020
+  },
+  {
+   "id": "E0756",
+   "finding_id": "F1943",
+   "theme": [
+    "Fundamentals"
+   ],
+   "type": "context",
+   "statement": "Inter-cluster coordination groups exist in most responses but are widely seen as weak, so coordination between sectors has remained the unresolved problem even where coordination within them improved.",
+   "level": "global",
+   "countries": [],
+   "actors": [
+    "cluster",
+    "ocha"
+   ],
+   "tags": [
+    "coordination-architecture",
+    "multisector"
+   ],
+   "stream": "search",
+   "source_id": "S120",
+   "date_collected": "2020-10-01",
+   "confidence": "high",
+   "status": "validated",
+   "year": 2020
   }
  ],
  "sources": [
@@ -30182,6 +30384,20 @@ window.SITE_DATA = {
    "legacy_id": "",
    "source_group": "",
    "label": "Global WASH Cluster 2026"
+  },
+  {
+   "source_id": "S120",
+   "title": "Inclusive Coordination: Building an Area-Based Humanitarian Coordination Model. CGD Policy Paper 184",
+   "organisation": "Center for Global Development",
+   "year": "2020",
+   "type": "study",
+   "url": "https://www.cgdev.org/sites/default/files/inclusive-coordination-konyndyk-saez-worden.pdf",
+   "stream": "search",
+   "date_added": "2026-08-17",
+   "access": "public",
+   "legacy_id": "",
+   "source_group": "",
+   "label": "Center for Global Development 2020"
   }
  ]
 };

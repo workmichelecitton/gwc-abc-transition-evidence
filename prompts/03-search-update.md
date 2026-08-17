@@ -2,7 +2,7 @@
 
 **Stream:** `search` · **Read `00-shared-rules.md` first.** Suggested cadence: quarterly.
 
-**Last run: 2026-08-07.** Net result: **one source, nine records.** Two were added
+**Last run: 2026-08-17.** Added S120 (CGD Policy Paper 184) — six records, all quoted. The run before it (2026-08-07) netted one source and nine records. Two were added
 (S117, S118) but S117 turned out to duplicate S015 — the run had skipped Step 1 —
 and was deleted. Next run due around November 2026 — search from `date_added`
 2026-08-07 forward.
@@ -39,7 +39,8 @@ Read `data/evidence.csv`, `data/sources.csv` and `data/site.json`. Note:
 - the full list of existing source titles — this is the duplicate check
 - which countries and tags are thin or absent
 - which findings sit in band 1 or 2 (one or two independent sources)
-- which streams are thin. At the last count: transcript 333 records, sdr 321, workshop 19, **search 9**
+- which streams are thin. At 2026-08-17: transcript 381, workshop 188, sdr 158, **search 15**
+- **and the gap that matters more than stream balance: how many findings rest only on GWC's own consultation.** At 2026-08-17 that was 103 of 166, or 62%. A finding corroborated only by the people who raised it is not corroborated. This is the standing critical gap and the reason this stream exists
 
 Then produce a gap table before you search, classifying each gap:
 
