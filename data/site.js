@@ -114,9 +114,9 @@ window.SITE_DATA = {
  "generated": "2026-08-17",
  "taxonomy_version": "0.9.0",
  "stats": {
-  "records": 742,
-  "findings": 166,
-  "sources": 108,
+  "records": 747,
+  "findings": 168,
+  "sources": 109,
   "countries": 30,
   "withheld_internal": 2
  },
@@ -1767,28 +1767,31 @@ window.SITE_DATA = {
    ],
    "example": "Bangladesh — a localisation capacity assessment was carried out with global support, scoring where the sector stands against the localisation commitments.",
    "type": "practice",
-   "strength": 3,
-   "n_records": 6,
-   "n_sources": 3,
-   "n_documents": 3,
-   "n_streams": 1,
-   "n_checked": 6,
+   "strength": 4,
+   "n_records": 7,
+   "n_sources": 4,
+   "n_documents": 4,
+   "n_streams": 2,
+   "n_checked": 7,
    "relations": [],
-   "period": "Jul 2026",
-   "period_from": "Jul 2026",
+   "period": "Sep 2025 – Jul 2026",
+   "period_from": "Sep 2025",
    "period_to": "Jul 2026",
-   "period_span": 0,
+   "period_span": 1,
    "streams": [
+    "search",
     "transcript"
    ],
    "countries": [
     "BGD",
     "MOZ",
-    "NGA"
+    "NGA",
+    "SDN"
    ],
    "tags": [
     "capacity",
     "coordination-architecture",
+    "funding",
     "guidance",
     "hpc",
     "information-management",
@@ -1799,6 +1802,7 @@ window.SITE_DATA = {
    ],
    "actors": [
     "cluster",
+    "donor",
     "gov-local",
     "gov-national",
     "ingo",
@@ -1813,7 +1817,8 @@ window.SITE_DATA = {
     "E0505",
     "E0510",
     "E0511",
-    "E0543"
+    "E0543",
+    "E0759"
    ],
    "unmerged": false,
    "highlight": {
@@ -4060,6 +4065,92 @@ window.SITE_DATA = {
    "unmerged": false
   },
   {
+   "finding_id": "F1944",
+   "statement": "Allocating pooled funds by area rather than by sector doubled the share reaching national NGOs, cut review times to a week, and replaced a hundred competing proposals with twenty-two jointly designed ones.",
+   "theme": [
+    "ABC"
+   ],
+   "example": "Sudan: area-based allocations reached 60 per cent of all fund disbursement within a year and became the dominant modality.",
+   "type": "enabler",
+   "strength": 1,
+   "n_records": 1,
+   "n_sources": 1,
+   "n_documents": 1,
+   "n_streams": 1,
+   "n_checked": 1,
+   "relations": [],
+   "period": "Sep 2025",
+   "period_from": "Sep 2025",
+   "period_to": "Sep 2025",
+   "period_span": 0,
+   "streams": [
+    "search"
+   ],
+   "countries": [
+    "SDN"
+   ],
+   "tags": [
+    "funding",
+    "geographic-targeting",
+    "localisation",
+    "pooled-funds"
+   ],
+   "actors": [
+    "donor",
+    "ingo",
+    "local-ngo",
+    "ocha"
+   ],
+   "record_ids": [
+    "E0757"
+   ],
+   "unmerged": false
+  },
+  {
+   "finding_id": "F1945",
+   "statement": "Where standard compliance would have stopped funding reaching local responders, funds have relaxed the requirements deliberately rather than waiving them: tiered micro-grants needing no clearance below a threshold, temporary capacity assessments, flexible reporting and alternative transfer routes.",
+   "theme": [
+    "Fundamentals"
+   ],
+   "example": "Sudan: community responders could draw up to $5,000 without clearance and $20,000 with light-touch approval, funding projects in days rather than months.",
+   "type": "practice",
+   "strength": 1,
+   "n_records": 2,
+   "n_sources": 1,
+   "n_documents": 1,
+   "n_streams": 1,
+   "n_checked": 2,
+   "relations": [],
+   "period": "Sep 2025",
+   "period_from": "Sep 2025",
+   "period_to": "Sep 2025",
+   "period_span": 0,
+   "streams": [
+    "search"
+   ],
+   "countries": [
+    "SDN"
+   ],
+   "tags": [
+    "funding",
+    "localisation",
+    "partnerships",
+    "pooled-funds"
+   ],
+   "actors": [
+    "community",
+    "donor",
+    "ingo",
+    "local-ngo",
+    "ocha"
+   ],
+   "record_ids": [
+    "E0760",
+    "E0761"
+   ],
+   "unmerged": false
+  },
+  {
    "finding_id": "F201",
    "statement": "The need to create dedicated structures such as a drought strategic working group and community resource centres shows that existing coordination systems could not support integrated multi-sectoral assistance.",
    "theme": [
@@ -4946,12 +5037,12 @@ window.SITE_DATA = {
    ],
    "example": "Bangladesh — around one eighth of the pooled fund allocation reaching the sector went to international NGOs, and the remainder to UN agencies.",
    "type": "barrier",
-   "strength": 4,
-   "n_records": 7,
-   "n_sources": 7,
-   "n_documents": 7,
-   "n_streams": 3,
-   "n_checked": 3,
+   "strength": 5,
+   "n_records": 8,
+   "n_sources": 8,
+   "n_documents": 8,
+   "n_streams": 4,
+   "n_checked": 4,
    "relations": [],
    "period": "2007 – Jul 2026",
    "period_from": "2007",
@@ -4959,11 +5050,13 @@ window.SITE_DATA = {
    "period_span": 19,
    "streams": [
     "sdr",
+    "search",
     "transcript",
     "workshop"
    ],
    "countries": [
-    "BGD"
+    "BGD",
+    "SDN"
    ],
    "tags": [
     "coordination-architecture",
@@ -4977,6 +5070,7 @@ window.SITE_DATA = {
     "donor",
     "ingo",
     "local-ngo",
+    "ocha",
     "un-agency"
    ],
    "record_ids": [
@@ -4986,7 +5080,8 @@ window.SITE_DATA = {
     "E0285",
     "E0370",
     "E0500",
-    "E0690"
+    "E0690",
+    "E0758"
    ],
    "unmerged": false,
    "highlight": {
@@ -28884,6 +28979,155 @@ window.SITE_DATA = {
    "confidence": "high",
    "status": "validated",
    "year": 2020
+  },
+  {
+   "id": "E0757",
+   "finding_id": "F1944",
+   "theme": [
+    "ABC"
+   ],
+   "type": "enabler",
+   "statement": "Allocating pooled funds by area rather than by sector doubled the share reaching national NGOs, cut review times to a week, and replaced a hundred competing proposals with twenty-two jointly designed ones — and became the fund's dominant modality within a year.",
+   "level": "national",
+   "countries": [
+    "SDN"
+   ],
+   "actors": [
+    "donor",
+    "local-ngo",
+    "ocha",
+    "ingo"
+   ],
+   "tags": [
+    "pooled-funds",
+    "funding",
+    "localisation",
+    "geographic-targeting"
+   ],
+   "stream": "search",
+   "source_id": "S121",
+   "date_collected": "2025-09-19",
+   "confidence": "high",
+   "status": "validated",
+   "year": 2025
+  },
+  {
+   "id": "E0758",
+   "finding_id": "F234",
+   "theme": [
+    "Fundamentals"
+   ],
+   "type": "barrier",
+   "statement": "Area-based allocation raised the national share of that funding stream while the fund overall remained the weakest performer on localisation of any country-based pooled fund: 1 per cent direct in 2024, falling to zero in the first eight months of 2025.",
+   "level": "national",
+   "countries": [
+    "SDN"
+   ],
+   "actors": [
+    "donor",
+    "local-ngo",
+    "ocha"
+   ],
+   "tags": [
+    "funding",
+    "localisation",
+    "pooled-funds"
+   ],
+   "stream": "search",
+   "source_id": "S121",
+   "date_collected": "2025-09-19",
+   "confidence": "high",
+   "status": "validated",
+   "year": 2025
+  },
+  {
+   "id": "E0759",
+   "finding_id": "F1015",
+   "theme": [
+    "Fundamentals"
+   ],
+   "type": "barrier",
+   "statement": "How localisation is counted understates it: funding routed to community response groups is recorded as reaching beneficiaries rather than as a pass-through to a national implementer, so several million dollars a year does not register as local funding at all.",
+   "level": "national",
+   "countries": [
+    "SDN"
+   ],
+   "actors": [
+    "donor",
+    "local-ngo",
+    "ocha"
+   ],
+   "tags": [
+    "localisation",
+    "funding",
+    "information-management",
+    "performance"
+   ],
+   "stream": "search",
+   "source_id": "S121",
+   "date_collected": "2025-09-19",
+   "confidence": "high",
+   "status": "validated",
+   "year": 2025
+  },
+  {
+   "id": "E0760",
+   "finding_id": "F1945",
+   "theme": [
+    "Fundamentals"
+   ],
+   "type": "practice",
+   "statement": "A tiered micro-grant route let community responders draw small sums with no clearance and larger ones with light-touch approval, funding community projects in days rather than months while keeping an accountability trail.",
+   "level": "national",
+   "countries": [
+    "SDN"
+   ],
+   "actors": [
+    "donor",
+    "community",
+    "local-ngo",
+    "ingo"
+   ],
+   "tags": [
+    "localisation",
+    "funding",
+    "pooled-funds"
+   ],
+   "stream": "search",
+   "source_id": "S121",
+   "date_collected": "2025-09-19",
+   "confidence": "high",
+   "status": "validated",
+   "year": 2025
+  },
+  {
+   "id": "E0761",
+   "finding_id": "F1945",
+   "theme": [
+    "Fundamentals"
+   ],
+   "type": "practice",
+   "statement": "Compliance requirements were relaxed deliberately rather than waived — temporary capacity assessments, flexible reporting and alternative transfer methods — so that funding could keep moving to local responders under conditions where standard systems would have stopped it.",
+   "level": "national",
+   "countries": [
+    "SDN"
+   ],
+   "actors": [
+    "donor",
+    "local-ngo",
+    "ocha"
+   ],
+   "tags": [
+    "localisation",
+    "funding",
+    "partnerships"
+   ],
+   "stream": "search",
+   "source_id": "S121",
+   "date_collected": "2025-09-19",
+   "confidence": "high",
+   "status": "validated",
+   "year": 2025
   }
  ],
  "sources": [
@@ -30398,6 +30642,20 @@ window.SITE_DATA = {
    "legacy_id": "",
    "source_group": "",
    "label": "Center for Global Development 2020"
+  },
+  {
+   "source_id": "S121",
+   "title": "Accelerating Localization: A Roadmap for the Sudan Humanitarian Fund",
+   "organisation": "Refugees International",
+   "year": "2025",
+   "type": "study",
+   "url": "https://www.refugeesinternational.org/reports-briefs/accelerating-localization-a-roadmap-for-the-sudan-humanitarian-fund/",
+   "stream": "search",
+   "date_added": "2026-08-17",
+   "access": "public",
+   "legacy_id": "",
+   "source_group": "",
+   "label": "Refugees International 2025"
   }
  ]
 };
