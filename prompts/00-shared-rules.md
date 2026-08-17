@@ -165,6 +165,18 @@ The first Secondary Data Review was built as a chain: a three-pass NotebookLM an
 
 That produces a specific and predictable failure. On a v1 record, `source_id` does not mean *"this document says this"*. It means *"this document was in the corpus"*. Those are different claims, and this base was treating them identically to a quoted transcript record.
 
+**The precise mechanism, established by reading the SDR itself.**
+
+The SDR uses its own internal source numbering, and attributes claims **collectively**. A typical line reads:
+
+> "Country-level operational inputs indicated that area-based structures may develop divergent approaches to needs assessment, including differences in survey methodologies, indicator selection, and analytical thresholds **(S29; S30; S31)**"
+
+`S29`, `S30` and `S31` are the SDR's IDs for the webinar transcript, the internal reflections and the survey. The author synthesised across all three; **no single one of those documents contains the claim.** Import then turned that one collective attribution into three separate records, one per source, with identical wording — and three sources looks like triple corroboration.
+
+That is the whole failure. The claims were not invented. The attribution was collective and the import made it look distributive.
+
+It follows that the fix is a counting rule, not a deletion: **records with identical wording and no distinguishing quote count as one source.** Two documents that genuinely say the same thing will yield different quotes. A collective attribution split three ways will not.
+
 **The signatures, all visible in the data:**
 
 | Observation | What a synthesis chain produces |
