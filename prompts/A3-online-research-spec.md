@@ -261,13 +261,36 @@ The evidence from this base is unambiguous on which route yields more:
 
 **The method is not the constraint.** The last two runs produced 11 quoted records and lifted four findings a band, including the first independent quantified evidence in the base — national NGOs at 43% of cluster participation and 7% of HCT membership; area-based pooled fund allocation doubling the national share to 40%.
 
+### The ReliefWeb API is probably the single highest-value addition
+
+ReliefWeb aggregates most of what the unreachable domains publish — OCHA, IASC, the global clusters, the major NGOs and evaluation offices. It has a **public, documented, no-authentication API** at `api.reliefweb.int/v1/reports`, supporting full-text search with filters on country, source, theme, date and format.
+
+Critically — and this needs confirming before anyone builds on it — **the API returns report body text, not just metadata.** If that holds, an agent using it would not need to download or parse PDFs at all for anything ReliefWeb has indexed. It would move from "find a document, resolve its URL, download it, extract its text" to a single query returning searchable text.
+
+No connector for it exists in the MCP registry today. Writing a thin wrapper is small work — a handful of endpoints, no auth, no credentials to manage.
+
+**Why this beats a browser:**
+
+| | Browser | ReliefWeb API |
+|---|---|---|
+| Solves JS-rendered landing pages | Yes | Not applicable — no pages involved |
+| Returns text directly | No, still needs PDF extraction | Yes, if body text is exposed |
+| Covers `interagencystandingcommittee.org`, the one confirmed hard block | No | Yes, where ReliefWeb has mirrored the document |
+| Structured filters by country, source, date | No | Yes — which is exactly what the country-by-country gap loop needs |
+| Credentials to manage | Session state, possible bot detection | None |
+
+The country and date filters matter as much as the access. Step A produces a gap table naming specific countries and a search floor date. An API query maps onto that directly; a browser search does not.
+
+**Confirmed hard block:** `interagencystandingcommittee.org` returns nothing even on direct PDF URLs. ReliefWeb mirrors much of the IASC's published output, so this is the route to it.
+
 An agent needs, in order:
 
-1. **A document intake path** — B1 made real. A watched folder the user drops files into, and the ability to read PDF, DOCX, XLSX and PPTX. This is the highest-value capability by a wide margin and it is the cheapest
+1. **A document intake path** — B1 made real. A watched folder the user drops files into, and the ability to read PDF, DOCX, XLSX and PPTX. Cheapest to build, and the only route to internal material that was never published
 2. Read access to the existing base, so Step A and B2 are run honestly rather than guessed
 3. The controlled vocabularies, so it fails loudly rather than inventing values
 4. **No write access to published data.** It proposes rows; a human validates at each step stop and commits
-5. *Then* a better fetch path — a headless browser — which raises the ceiling on the search route but is not what unblocks the base
+5. **A ReliefWeb API connector** — the highest-value addition for the search route specifically, for the reasons above
+6. *Then, if still needed,* a headless browser — which would close the remaining JS-rendered landing pages but is the most work for the least additional coverage
 
 The ordering is the point. An agent with (1) and without (5) is useful immediately. An agent with (5) and without (1) reproduces what happens now: it finds the right documents, cannot open several of them, and correctly reports a fetch failure. Honest, but not throughput.
 
