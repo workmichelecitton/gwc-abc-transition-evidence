@@ -42,11 +42,11 @@ Strength of evidence is **computed**, never typed in:
 
 | Band | Condition | Findings |
 |---|---|---|
-| **5 · Very strong** | 6+ independent sources, across 2+ streams, in 2+ countries | 24 |
-| **4 · Strong** | 3+ independent sources across 2+ streams | 27 |
-| **3 · Moderate** | 3+ independent sources, or 2 across 2 streams | 28 |
+| **5 · Very strong** | 6+ independent sources, across 2+ streams, in 2+ countries | 26 |
+| **4 · Strong** | 3+ independent sources across 2+ streams | 26 |
+| **3 · Moderate** | 3+ independent sources, or 2 across 2 streams | 29 |
 | **2 · Limited** | 2 independent sources | 18 |
-| **1 · Single source** | 1 source — not corroborated, not therefore wrong | 65 |
+| **1 · Single source** | 1 source — not corroborated, not therefore wrong | 69 |
 
 **Identical wording counts once.** Records with the same statement and no distinguishing quote count as a single source. Nineteen findings carried byte-identical statements credited to sources counted as independent — all imports from the earlier explorer, none with a quote. That is one authored claim listed against several documents, not several observations, and corroboration has to be demonstrable.
 
@@ -65,14 +65,14 @@ So a finding gets stronger on its own as evidence accumulates. A barrier reporte
 
 A record is **checked** once someone has opened the source and confirmed the record against it. In practice that means it carries a verbatim quote, which is what lets anyone else check it afterwards.
 
-**403 of 730 records are checked.** The rest are not wrong — they are unverified. Almost all came from the earlier explorer and arrived without quotes, so there is nothing yet to check them against.
+**540 of 747 records are checked.** The rest are not wrong — they are unverified. Almost all came from the earlier explorer and arrived without quotes, so there is nothing yet to check them against.
 
 Every finding card shows this next to its band, because they answer different questions:
 
 - the **band** counts how many independent sources support a claim
 - **checked** says whether anyone has confirmed those sources actually say it
 
-A band 5 finding nobody has verified is not the same object as one that has been. Four findings at band 4 or above currently have nothing verified behind them: `F109`, `F243`, `F263`, `F283`.
+A band 5 finding nobody has verified is not the same object as one that has been. No finding at band 4 or above now rests on nothing verified.
 
 ## Four data streams
 
@@ -96,9 +96,9 @@ Its most useful output is the last one: *what this section could not say*, class
 
 ## Tools
 
- — an MCP connector for ReliefWeb. Search and read humanitarian reports by country, source, theme, format and date, with full body text. Zero dependencies.
+`tools/reliefweb-mcp/` — an MCP connector for ReliefWeb. Search and read humanitarian reports by country, source, theme, format and date, with full body text. Zero dependencies, standard library only.
 
-Most of the literature this base needs sits on domains an automated fetch cannot read. ReliefWeb aggregates what those domains publish and exposes it through a public API with no authentication. Its filters map onto the gap table that  produces in Step A.
+Most of the literature this base needs sits on domains an automated fetch cannot read: `unocha.org`, `reliefweb.int`, `interagencystandingcommittee.org`, `unicefintercluster.net`, `washcluster.net`. ReliefWeb aggregates what those domains publish and exposes it through a public API with no authentication. Its filters map onto the gap table that `prompts/A3-online-research-spec.md` produces in Step A — the same countries and the same search floor date.
 
 Run `python3 tools/reliefweb-mcp/server.py --selftest` first — it checks the API is reachable and reports whether it returns report body text or metadata only.
 
