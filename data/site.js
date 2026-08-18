@@ -111,12 +111,12 @@ window.SITE_DATA = {
   "footer_note": "Every finding traces to a source ID in the Sources tab. If something looks wrong, it probably is — say so and it will be corrected."
  },
  "schema": 3,
- "generated": "2026-08-17",
+ "generated": "2026-08-18",
  "taxonomy_version": "0.9.0",
  "stats": {
-  "records": 747,
-  "findings": 168,
-  "sources": 109,
+  "records": 752,
+  "findings": 170,
+  "sources": 110,
   "countries": 30,
   "withheld_internal": 2
  },
@@ -1167,17 +1167,18 @@ window.SITE_DATA = {
    "example": "Burkina Faso — bi-monthly discussion meetings with all regional focal points to work through challenges and share solutions were well received, and participants asked for them to continue.",
    "type": "recommendation",
    "strength": 5,
-   "n_records": 11,
-   "n_sources": 8,
-   "n_documents": 9,
-   "n_streams": 2,
-   "n_checked": 11,
+   "n_records": 12,
+   "n_sources": 9,
+   "n_documents": 10,
+   "n_streams": 3,
+   "n_checked": 12,
    "relations": [],
-   "period": "2026 – Aug 2026",
-   "period_from": "2026",
+   "period": "Jun 2022 – Aug 2026",
+   "period_from": "Jun 2022",
    "period_to": "Aug 2026",
-   "period_span": 0,
+   "period_span": 4,
    "streams": [
+    "search",
     "transcript",
     "workshop"
    ],
@@ -1206,6 +1207,7 @@ window.SITE_DATA = {
     "gov-national",
     "ingo",
     "local-ngo",
+    "ocha",
     "un-agency"
    ],
    "record_ids": [
@@ -1219,7 +1221,8 @@ window.SITE_DATA = {
     "E0452",
     "E0475",
     "E0586",
-    "E0628"
+    "E0628",
+    "E0765"
    ],
    "unmerged": false,
    "highlight": {
@@ -4151,6 +4154,81 @@ window.SITE_DATA = {
    "unmerged": false
   },
   {
+   "finding_id": "F1950",
+   "statement": "What makes a successor structure last is recurring operational necessity, not its form. Bodies facing a predictable annual hazard cycle sustain a stable secretariat and survive changes of government; those attached to political arrangements rise and fall with the politics.",
+   "theme": [
+    "Transition"
+   ],
+   "example": "Latin America: sub-regional mechanisms in hurricane-exposed areas kept working through repeated changes of administration, while those tied to political integration bodies lapsed as member states left or priorities shifted.",
+   "type": "enabler",
+   "strength": 1,
+   "n_records": 2,
+   "n_sources": 1,
+   "n_documents": 1,
+   "n_streams": 1,
+   "n_checked": 2,
+   "relations": [],
+   "period": "Jun 2022",
+   "period_from": "Jun 2022",
+   "period_to": "Jun 2022",
+   "period_span": 0,
+   "streams": [
+    "search"
+   ],
+   "countries": [],
+   "tags": [
+    "coordination-architecture",
+    "sustainability",
+    "transition-handover"
+   ],
+   "actors": [
+    "cluster",
+    "gov-national"
+   ],
+   "record_ids": [
+    "E0762",
+    "E0763"
+   ],
+   "unmerged": false
+  },
+  {
+   "finding_id": "F1951",
+   "statement": "A coordination architecture can be asked to hold with very little funding behind it: one region received 2.64 per cent of global pooled humanitarian funding in a year while donors were reducing their presence there.",
+   "theme": [
+    "Fundamentals"
+   ],
+   "example": "",
+   "type": "context",
+   "strength": 1,
+   "n_records": 1,
+   "n_sources": 1,
+   "n_documents": 1,
+   "n_streams": 1,
+   "n_checked": 1,
+   "relations": [],
+   "period": "Jun 2022",
+   "period_from": "Jun 2022",
+   "period_to": "Jun 2022",
+   "period_span": 0,
+   "streams": [
+    "search"
+   ],
+   "countries": [],
+   "tags": [
+    "coordination-architecture",
+    "funding",
+    "pooled-funds"
+   ],
+   "actors": [
+    "donor",
+    "ocha"
+   ],
+   "record_ids": [
+    "E0766"
+   ],
+   "unmerged": false
+  },
+  {
    "finding_id": "F201",
    "statement": "The need to create dedicated structures such as a drought strategic working group and community resource centres shows that existing coordination systems could not support integrated multi-sectoral assistance.",
    "theme": [
@@ -5907,11 +5985,11 @@ window.SITE_DATA = {
    "example": "Burkina Faso — government moved to collect partner activity data itself on the basis that the data should be nationally held, alongside the cluster's own collection.",
    "type": "barrier",
    "strength": 5,
-   "n_records": 7,
-   "n_sources": 7,
-   "n_documents": 7,
-   "n_streams": 2,
-   "n_checked": 6,
+   "n_records": 8,
+   "n_sources": 8,
+   "n_documents": 8,
+   "n_streams": 3,
+   "n_checked": 7,
    "relations": [],
    "period": "2007 – Aug 2026",
    "period_from": "2007",
@@ -5919,6 +5997,7 @@ window.SITE_DATA = {
    "period_span": 19,
    "streams": [
     "sdr",
+    "search",
     "transcript"
    ],
    "countries": [
@@ -5950,7 +6029,8 @@ window.SITE_DATA = {
     "E0527",
     "E0564",
     "E0585",
-    "E0694"
+    "E0694",
+    "E0764"
    ],
    "unmerged": false,
    "highlight": {
@@ -29128,6 +29208,134 @@ window.SITE_DATA = {
    "confidence": "high",
    "status": "validated",
    "year": 2025
+  },
+  {
+   "id": "E0762",
+   "finding_id": "F1950",
+   "theme": [
+    "Transition"
+   ],
+   "type": "enabler",
+   "statement": "Coordination bodies facing a predictable annual hazard cycle sustain a stable secretariat and survive changes of government, because the recurring operational need keeps them in use between crises. Those without one lapse with each administration.",
+   "level": "regional",
+   "countries": [],
+   "actors": [
+    "gov-national",
+    "cluster"
+   ],
+   "tags": [
+    "transition-handover",
+    "sustainability",
+    "coordination-architecture"
+   ],
+   "stream": "search",
+   "source_id": "S122",
+   "date_collected": "2022-06-01",
+   "confidence": "high",
+   "status": "validated",
+   "year": 2022
+  },
+  {
+   "id": "E0763",
+   "finding_id": "F1950",
+   "theme": [
+    "Transition"
+   ],
+   "type": "barrier",
+   "statement": "Coordination mechanisms attached to political integration bodies rise and fall with the politics rather than with need: one lost most of its members within four years, another has met once since being created, and a third declined with the bloc that housed it.",
+   "level": "regional",
+   "countries": [],
+   "actors": [
+    "gov-national",
+    "cluster"
+   ],
+   "tags": [
+    "transition-handover",
+    "coordination-architecture",
+    "sustainability"
+   ],
+   "stream": "search",
+   "source_id": "S122",
+   "date_collected": "2022-06-01",
+   "confidence": "high",
+   "status": "validated",
+   "year": 2022
+  },
+  {
+   "id": "E0764",
+   "finding_id": "F304",
+   "theme": [
+    "Fundamentals"
+   ],
+   "type": "barrier",
+   "statement": "Where the humanitarian coordination office is perceived to have moved to the margins, national civil protection agencies lose interest in the mechanisms it convenes — the perception has operational consequences, not only reputational ones.",
+   "level": "regional",
+   "countries": [],
+   "actors": [
+    "ocha",
+    "gov-national"
+   ],
+   "tags": [
+    "coordination-architecture",
+    "government-engagement"
+   ],
+   "stream": "search",
+   "source_id": "S122",
+   "date_collected": "2022-06-01",
+   "confidence": "high",
+   "status": "validated",
+   "year": 2022
+  },
+  {
+   "id": "E0765",
+   "finding_id": "F026",
+   "theme": [
+    "Fundamentals"
+   ],
+   "type": "context",
+   "statement": "A regional coordination forum that met annually for a decade has not convened since 2019: participants valued it but judged it to have lost relevance, and few are taking concrete steps to revive it.",
+   "level": "regional",
+   "countries": [],
+   "actors": [
+    "ocha",
+    "cluster"
+   ],
+   "tags": [
+    "coordination-architecture",
+    "peer-learning"
+   ],
+   "stream": "search",
+   "source_id": "S122",
+   "date_collected": "2022-06-01",
+   "confidence": "high",
+   "status": "validated",
+   "year": 2022
+  },
+  {
+   "id": "E0766",
+   "finding_id": "F1951",
+   "theme": [
+    "Fundamentals"
+   ],
+   "type": "context",
+   "statement": "The region received 2.64 per cent of global pooled humanitarian funding in 2021, and some donors have been reducing their humanitarian presence there — the coordination architecture is being asked to hold with very little behind it.",
+   "level": "regional",
+   "countries": [],
+   "actors": [
+    "donor",
+    "ocha"
+   ],
+   "tags": [
+    "funding",
+    "pooled-funds",
+    "coordination-architecture"
+   ],
+   "stream": "search",
+   "source_id": "S122",
+   "date_collected": "2022-06-01",
+   "confidence": "high",
+   "status": "validated",
+   "year": 2022
   }
  ],
  "sources": [
@@ -30656,6 +30864,20 @@ window.SITE_DATA = {
    "legacy_id": "",
    "source_group": "",
    "label": "Refugees International 2025"
+  },
+  {
+   "source_id": "S122",
+   "title": "Realidad y perspectivas de los mecanismos de coordinación humanitaria en América Latina y el Caribe: recomendaciones para la Cooperación Española",
+   "organisation": "IECAH",
+   "year": "2022",
+   "type": "study",
+   "url": "https://iecah.org/wp-content/uploads/2022/06/InformeMecanismosLATAMCar.pdf",
+   "stream": "search",
+   "date_added": "2026-08-18",
+   "access": "public",
+   "legacy_id": "",
+   "source_group": "",
+   "label": "IECAH 2022"
   }
  ]
 };
