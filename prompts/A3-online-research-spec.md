@@ -1,114 +1,217 @@
 # A3 — Online research and extraction
 
-**A standalone specification.** Written to be readable by someone who has not seen the repository, for discussion on whether this should run as an agent.
+**Adapted from the GWC Secondary Data Review master prompt, Steps A–C.**
+
+Written to be read by someone who has not seen the repository. For discussion on whether this should run as an agent.
 
 ---
 
-## 1. What this does, and why it is separate
+## Where this sits in the SDR method
 
-The Global WASH Cluster maintains an evidence base on Area-Based Coordination and Transition. It has three intake streams:
+The GWC SDR prompt runs A → B → C → D → E. This adaptation covers **A, B and C only**, and the reason matters:
 
-| Stream | What it is | Volume |
-|---|---|---|
-| `transcript` | Country conversations with national coordination platforms | 381 records |
-| `workshop` | GWC workshops, clinics, key informant interviews | 188 records |
-| `sdr` | Documents already held or supplied | 158 records |
-| **`search`** | **Published literature found online** | **20 records** |
+| SDR step | Here |
+|---|---|
+| **A** Design and planning | **Kept.** The gap table is Step A. |
+| **B** Data collection and storage | **Kept.** Source registry with Document IDs, tiers and URLs. |
+| **C** Data exploration and preparation | **Kept.** Extraction table with Extract IDs and full traceability. |
+| **D** Analysis and sense-making | **Replaced by computation.** Findings and confidence are calculated from the extraction table, not written by an analyst. See §4. |
+| **E** Communication | **A separate prompt.** Report drafting happens in `prompts/09`, under an evidence lock. |
 
-**The search stream exists to solve one problem: 102 of 168 findings currently rest entirely on the GWC's own consultation.** A finding corroborated only by the people who raised it is not corroborated. Everything below is aimed at that.
+The locked rules from Section 0 of the master prompt carry over unchanged unless stated: step validation, the evidence rule, the evidence hierarchy, scope discipline, gap classification, the stop rule, the consolidated step-output rule, and the source and hyperlink rule.
 
-This is not a literature review. It is a targeted search for evidence that **confirms, challenges or dates** claims the base already holds.
+**Two are deliberately not carried over,** and both are permitted omissions under the master prompt's own terms:
 
----
-
-## 2. The unit of data
-
-One **record** = one claim, from one source, with a verbatim quote.
-
-Records that make the same point are grouped into a **finding**. A finding's strength is *computed* from how many independent sources sit under it — never asserted. Bands run 1 to 5; band 5 needs six independent sources across two streams in two countries.
-
-Two rules make this work, and an agent must respect both:
-
-- **Sources that share an origin count once.** Three sessions of one workshop series are one source. Two reports drawing on one dataset are one source.
-- **Records with identical wording and no distinguishing quote count once.** This exists because the base's first version was built by AI synthesis over a corpus, which attributed claims collectively to every document in it; import then split each collective attribution into separate records and manufactured corroboration that did not exist. Two documents that genuinely say the same thing produce *different* quotes.
+- **Population logic (0.6).** This base records coordination arrangements, not caseloads. The master prompt allows stating this explicitly rather than forcing an estimate. Stated.
+- **Assigned confidence (0.5).** Replaced by a computed band on the same five-point scale. See §4 — this is the one substantive departure and it is argued, not assumed.
 
 ---
 
-## 3. The method
+## 0. Locked execution rules
 
-### Step 1 — Establish the gap before searching
+**0.1 Step validation.** At the end of each step: **STOP.** Ask the user to validate, revise or add data. Do not proceed automatically.
 
-Read the existing base. Produce a gap table **before** running any search, classifying each gap:
+**0.2 Evidence rule.** Every record traces to extracted material, or is labelled Inference. No hidden assumptions. In this base an inference is not admissible as a record at all — it goes in `notes`.
 
-| Severity | Meaning | Action |
-|---|---|---|
-| **Critical** | Blocks a claim from being usable — a weight-bearing finding with no independent source, or a theme with no external evidence at all | Pass 1 aims here, and only here |
-| **Important** | Materially reduces confidence — thin geography, one stream carrying a theme | Pass 2 |
-| **Minor** | Worth noting, blocks nothing | Record, do not search |
+**0.3 Evidence hierarchy.** Direct > Proxy > Inferred. Recorded per record, and it does real work here:
 
-The current standing critical gap is the one named above: findings resting only on GWC consultation. The countries where that is worst are the search targets — currently Venezuela (26 findings), Sudan (14), Lebanon (14), Somalia (11), Colombia (11), Syria (11).
+| | Meaning in online research |
+|---|---|
+| **Direct** | An evaluation or study reporting what its authors observed or measured |
+| **Proxy** | A document reporting what others found, or a case description written by the actor concerned |
+| **Inferred** | The claim is a reasonable reading of the document but not something it states |
 
-**Do not skip this step.** The first run of this prompt did, and registered a paper that was already in the base — which then had to be deleted and its records reassigned.
+A guidance document saying an arrangement *should* work is **not** direct evidence that it does. This distinction is routinely collapsed in secondary reviews and it inflates the apparent evidence base.
 
-### Step 2 — Search, country by country and in the working language
+**0.4 Scope.** Only coordination *arrangements* for Area-Based Coordination and Transition. External factors admitted only where directly causal and labelled `External driver (out-of-scope but analytically necessary)`.
 
-Search lines, adapted to context:
+**0.7 Mandatory passes.** Three in Step A, three in Step B, two in Step C. Step C takes two rather than three: a third reading of the same document returns the same extracts, whereas a third search aimed at a different gap does not. Each pass has a stated purpose — Pass 1 initial output, Pass 2 targeted strengthening of weak areas, Pass 3 refinement of specificity, prioritisation and sourcing quality.
 
-- area-based coordination humanitarian evaluation
-- geographic / decentralised coordination model, local authorities
-- humanitarian transition, handover to national systems
-- cluster deactivation, exit strategy, service delivery handover
+**0.8 Gap-to-search improvement loop.** Every pass in B and C runs: identify gaps → classify by severity → aim additional search or refinement → update the output → reassess what remains. The loop must be explicit in the response.
 
-**In the language of the response, not only English.** Spanish for Venezuela and Colombia, French for Niger, Burkina Faso and Haiti, Arabic for Syria, Portuguese for Mozambique. Material in these languages is systematically under-represented in English-language reviews and that gap is visible in the base.
+**0.9 Gap classification.** Critical (blocks robust analysis) · Important (materially reduces confidence) · Minor (does not block, note it).
+
+**0.10 Stop rule.** After the final mandatory pass, stop even if gaps remain. State which were resolved, which remain, and how the remainder affects interpretation.
+
+**0.11 Consolidated step output.** At the end of each step's passes, reproduce the **full final output of that step** in one consolidated version — not a summary of what improved. It replaces weaker earlier formulations, integrates resolved gaps, and retains explicit mention of what is still open.
+
+**0.12 Source and hyperlink rule.** Every source in Step B carries a clickable URL. Every extract in Step C retains its Document ID and is therefore traceable to that URL. Source label format `ORG dd/mm/yyyy`, hyperlinked. **A source without a working link is rejected by the build** — an unlinkable source cannot be checked, and 71 legacy sources in this base are unread precisely because nobody can open them.
+
+---
+
+## STEP A — Design and planning
+
+### A1. Context definition — ask one at a time
+
+- Which themes are in scope this run: `ABC`, `Transition`, `Fundamentals`, or a combination
+- Which countries, and in which working languages
+- Timeframe — the search floor is the most recent `date_added` in the source registry
+- Which findings the run is trying to strengthen
+- Sources to prioritise, and sources to exclude
+
+If the user says to reuse parameters already agreed, do so without asking again.
+
+### A2. Scope summary
+
+| Theme | Tag | Countries | Languages | Problem area |
+|---|---|---|---|---|
+
+Then state: **these parameters define strict analytical boundaries.**
+
+### A3. Gap table — this is the analysis plan
+
+The SDR's A3 asks for Describe / Explain / Interpret / Anticipate / Prescribe per problem area. Here that is replaced by the gap table, because this step is not producing analysis — it is deciding where to look.
+
+| Gap | Severity | Why it blocks | What would close it | Where to look |
+|---|---|---|---|---|
+
+**The standing critical gap, at the last run:** 102 of 168 findings rest entirely on the GWC's own consultation — country conversations and GWC workshops. A finding corroborated only by the people who raised it is not corroborated. The countries where this is worst are the targets: Venezuela 26, Sudan 14, Lebanon 14, Somalia 11, Colombia 11, Syria 11.
+
+### A4. Information ecosystem
+
+Data-rich areas, data gaps, biases, blind spots — specifically:
+
+- Which themes have external evidence and which do not
+- Which languages are under-represented. French, Spanish, Portuguese and Arabic material is systematically thinner in English-language reviews, and that gap is visible in this base
+- Which document types dominate, and what that biases toward. Evaluations report problems more readily than routine practice that works, and the base currently runs 74 barriers to 27 enablers
+
+### A5. Methodology
+
+Inclusion criteria, exclusion criteria, recency rule, triangulation logic, evidence classification per 0.3.
+
+**Exclude:** news, press releases, project announcements, funding appeals, and anything that only restates existing guidance.
+
+### Passes
+
+- **Pass 1** — produce A2, A3, A4, A5
+- **Pass 2** — expand the gap table: distinguish gaps closable by search from gaps closable only by a country conversation. State what improved and what remains uncertain at design stage
+- **Pass 3** — prioritise. Which gaps are worth a pass, which are worth noting only. Sharpen the search lines against the specific findings they are meant to strengthen
+
+**Consolidated Step A output**, then: *"STEP A completed after three passes. Do you validate or want to revise before STEP B?"*
+
+---
+
+## STEP B — Data collection and storage
+
+### B1. Establish what is already held
+
+Read the existing source registry **before searching**. Note the search floor, and the full list of existing titles — this is the duplicate check.
+
+**Do not skip this.** The first run of this prompt did, and registered a paper already in the base, which then had to be deleted and its records reassigned.
+
+### B2. Source registry
+
+| Document ID | Title | Organisation | Date | Type | Geo | Theme | Tier | Strength | Limitation | URL |
+
+- Document IDs are sequential and reused consistently in Step C
+- **Tier** follows 0.3: what kind of claim this document can support
+- Sources sharing an origin — three sessions of one workshop series, two reports on one dataset — must be flagged as one source group. They count once
+
+### B3. Structured gap analysis
+
+For each theme and country in scope: missing evidence, missing geographic coverage, missing recent data, weak evidence, contradictory evidence. Each classified Critical / Important / Minor.
+
+### Passes
+
+- **Pass 1** — initial registry and gap analysis
+- **Pass 2** — critical gaps only. Targeted additional search. State which resolved, which remain
+- **Pass 3** — remaining critical gaps first, then important. Improve source diversity and independence
 
 **Prioritise sources independent of the cluster system**, or from another sector. A second WASH source written by cluster actors adds less than one evaluation written from outside.
 
-### Step 3 — Filter hard
-
-Include only material that is published or updated since the last run, is about coordination *arrangements* rather than technical programming, and is evidence-bearing — an evaluation, study or documented case.
-
-Exclude news, press releases, project announcements, funding appeals, and anything that only restates existing guidance.
-
-**Most runs will yield very few records. That is the correct result and should be reported as such rather than met by lowering the bar.**
-
-### Step 4 — Extract
-
-One record per claim. Every record needs a **verbatim quote** — that is what makes it checkable by the next person, and the absence of quotes is precisely what made the first version of this base unverifiable.
-
-**Never record a claim from a search-result summary.** If the document cannot be opened, it is a fetch failure, not a source. List it for a human to supply.
-
-### Step 5 — Pass 2, then stop
-
-Reassess the gap table, aim a second pass at what remains, then **stop even if gaps remain**. State which gaps closed, which remain and at what severity, and how the remainder affects what can be claimed.
-
-Do not run a third pass hoping something appears. A run that closes one critical gap and says so is worth more than one that reports activity.
+**Consolidated Step B output**, then: *"STEP B completed after three passes. Validate sources before STEP C?"*
 
 ---
 
-## 4. Output
+## STEP C — Data exploration and preparation
 
-1. Records, in the fixed schema below.
-2. New source rows, each with a **working URL** — the build rejects a source without one.
-3. **The gap table, before and after**, each gap marked resolved or open at its severity.
-4. **Fetch failures**, listed with URLs, for a human to supply.
-5. Anything found that **contradicts** the base. Contradictions are worth more than agreements and are currently under-represented.
+### C1. Extraction table
 
-### Record schema
+| Extract ID | Document ID | Theme | Type | Statement | Quote | Evidence type | Level | Countries | Actors | Tags | Source label | URL |
 
-| Field | Rule |
+**Rules**
+
+- One extract = one claim, from one document. Not one paragraph, not one topic
+- **A verbatim quote is mandatory in this stream.** It is what makes the record checkable by the next person
+- **Never extract from a search-result summary.** If the document cannot be opened it is a fetch failure, not a source — list it for a human to supply
+- `Statement`: one sentence, neutral, specific enough that someone could disagree with it. Not a topic label
+- `Evidence type`: Direct / Proxy / Inferred, per 0.3
+- `Countries`: only where the claim is genuinely about that country. **Blank for global-level claims**
+- Controlled vocabularies are enforced by the build. Inventing a value fails it. Propose additions rather than picking the nearest existing value
+
+### C2. Selection rules
+
+Keep only what is relevant, recent, decision-useful and non-duplicative. If a document yields three claims, extract three. **Padding destroys the value of the strength calculation, because a fabricated corroboration looks identical to a real one.**
+
+### C3. Data quality assessment
+
+Reliability, triangulation, consistency, recency, directness.
+
+### C4. Gap and bias analysis
+
+Missing evidence, weak causal support, bias risks, over-reliance on proxy evidence. Each classified Critical / Important / Minor.
+
+### Passes
+
+- **Pass 1** — extraction table, quality assessment, gap analysis
+- **Pass 2** — refine for analytical usefulness. Sharpen the distinction between direct evidence, proxy evidence and inferred absence. State what improved and what remains weak
+
+**Consolidated Step C output**, then: *"STEP C completed. Validate before the base is rebuilt?"*
+
+---
+
+## 4. Step D is computed, not written
+
+This is the substantive departure from the master prompt, and the reason for it.
+
+The SDR asks an analyst to assign confidence on a five-point scale from Very high to Very low. Here the scale is the same five points but the value is **calculated** from the extraction table:
+
+| Band | Rule |
 |---|---|
-| `statement` | One sentence. Neutral. Specific enough that someone could disagree with it. Not a topic label. |
-| `quote` | Verbatim from the source. Mandatory for this stream. |
-| `theme` | `ABC`, `Transition`, `Fundamentals`, or a combination. Test: would this still be true in a country with no area-based structure and no transition under way? If yes → `Fundamentals`. |
-| `type` | `barrier` · `enabler` · `recommendation` · `practice` · `context` |
-| `level` | `global` · `regional` · `national` · `subnational` |
-| `countries` | ISO3, only where the claim is genuinely about that country. **Blank for global-level claims** — which is why a country filter shows nothing for them. |
-| `tags` | Two to four from a controlled list. More than five means the statement is not specific enough. |
-| `source_id` | Points at a registered source with a URL. |
+| **5 Very strong** | 6+ independent sources, across 2+ streams, in 2+ countries |
+| **4 Strong** | 3+ independent sources across 2+ streams |
+| **3 Moderate** | 3+ independent sources, or 2 across 2 streams |
+| **2 Limited** | 2 independent sources |
+| **1 Single source** | 1 source — not corroborated, not therefore wrong |
 
-**Controlled vocabularies are enforced.** Inventing a value fails the build. If a genuinely new concept appears, propose it rather than picking the nearest existing value.
+Two counting rules prevent the number being gamed:
 
-### Register
+- **Sources sharing an origin count once.**
+- **Records with identical wording and no distinguishing quote count once.** This exists because the first version of this base was built by AI synthesis over a corpus — a three-pass NotebookLM analysis, integrated and summarised — which attributed claims **collectively** to every document in the corpus. Import then split each collective attribution into one record per source and manufactured corroboration that never existed. Two documents that genuinely say the same thing produce *different* quotes.
+
+**Why this replaces assigned confidence.** The base's defence is that nobody's judgement sets the strength. An assigned confidence would put judgement back into the one number that is defensible precisely because none went into it. Severity, anticipation and prescription are likewise not recorded: they turn evidence into argument, and belong in the product written *from* this base rather than in the data.
+
+---
+
+## 5. Output
+
+1. The extraction table, or an explicit statement that nothing met the bar
+2. New source rows, each with a working URL
+3. **The gap table, before and after**, each gap marked resolved or open at its severity
+4. **Fetch failures**, with URLs, for a human to supply
+5. Anything found that **contradicts** the base. Contradictions are worth more than agreements and are currently under-represented
+
+### Register — this matters as much as accuracy
 
 This base informs coordinators and supports constructive advocacy. Neither is served by writing that reads as an attack on any actor. Describe **the mechanism and its consequence**, not the culprit.
 
@@ -118,40 +221,36 @@ Organisations may be named. Individuals may not, and a role title tied to a plac
 
 ---
 
-## 5. The constraint that decides whether an agent is worth building
+## 6. The constraint that decides whether an agent is worth building
 
 **Search finds this literature easily. Fetching it usually fails.**
-
-Tested, repeatedly:
 
 | Returns nothing to an automated fetch | Readable |
 |---|---|
 | `unocha.org` · `reliefweb.int` · `interagencystandingcommittee.org` · `unicefintercluster.net` · `washcluster.net` · `icvanetwork.org` | `globalprotectioncluster.org` · `nutritioncluster.net` · `healthcluster.who.int` · `emergency.unhcr.org` · `cccmcluster.org` · `undp.org` · `cgdev.org` · `refugeesinternational.org` |
 
-The left column is where most humanitarian coordination literature lives. Two documents currently blocked are the highest-value outstanding items in the whole base:
+The left column is where most humanitarian coordination literature lives. The two highest-value outstanding documents in the whole base are both behind it:
 
-- **OCHA, *Pulse of Humanitarian Coordination 2024*** — reports area-based models falling from 71% of operations in 2023 to 52% in 2024. This would be the first hard evidence that ABC is contracting rather than spreading.
-- **OCHA/GCCG, *Area-based coordination and area-based programming: typology, lessons and implications*** — the reference study, four ABC cases and eight ABP cases across six countries.
+- **OCHA, *Pulse of Humanitarian Coordination 2024*** — reports area-based models falling from 71% of operations in 2023 to 52% in 2024. Would be the first hard evidence that ABC is contracting rather than spreading
+- **OCHA/GCCG, *Area-based coordination and area-based programming: typology, lessons and implications*** — the reference study; four ABC cases and eight ABP cases across six countries
 
-**This is the design question for Patrice.** The method above is proven — the last two runs produced 11 records with quotes, lifting four findings a band, including the first independent quantified evidence in the base. The bottleneck is not the method or the judgement. It is document access.
+**The method is not the constraint.** The last two runs produced 11 quoted records and lifted four findings a band, including the first independent quantified evidence in the base — national NGOs at 43% of cluster participation and 7% of HCT membership; area-based pooled fund allocation doubling the national share to 40%.
 
-An agent for this needs, in order of importance:
+An agent needs, in order:
 
-1. **A fetch path that works on the blocked domains** — a headless browser rather than a plain HTTP fetch, or a human-in-the-loop step that downloads and drops files into a folder.
-2. Read access to the existing base, to run Step 1 honestly.
-3. The controlled vocabularies, so it fails loudly instead of inventing values.
-4. No write access to the published data. It proposes rows; a human commits them.
+1. **A fetch path that works on the blocked domains** — a headless browser rather than a plain HTTP fetch, or a human-in-the-loop download step
+2. Read access to the existing base, to run Step A and B1 honestly
+3. The controlled vocabularies, so it fails loudly rather than inventing values
+4. **No write access to published data.** It proposes rows; a human validates at each step stop and commits
 
-Without (1), an agent will do what the current process does: find the right documents, be unable to read them, and correctly report a fetch failure. That is honest but it is not throughput.
+Without (1) an agent reproduces the current outcome: finds the right documents, cannot open them, correctly reports a fetch failure. Honest, but not throughput.
 
 ---
 
-## 6. How to test it
+## 7. How to test it
 
-Extraction quality is testable, and should be tested before this runs unattended.
+**Seeded run.** Five documents: three that meet the bar, two that do not — a press release and something that only restates guidance. Check it admits three and rejects two. This tests judgement, which is the part that matters.
 
-**Seeded run.** Put five documents in front of it: three that meet the bar, two that do not — a press release and something that only restates existing guidance. Check it admits the right three and rejects the right two. This tests judgement, which is the part that matters.
+**Hold-out recall.** Re-extract a document already in the base, blind, and compare. Done informally on a country transcript, the second pass found six legitimate records the first had missed — roughly a 27% miss rate. That is the baseline to beat.
 
-**Hold-out recall.** Re-extract a document already in the base, blind, and compare. When this was done informally on a country transcript, the second pass found six legitimate records the first had missed — roughly a 27% miss rate. That is the baseline to beat.
-
-**What to measure:** recall against the first pass; precision, meaning did it invent anything; and false corroboration, meaning did it produce a near-duplicate that would inflate a finding's band. The third is the one that damages the base, because it is invisible once committed.
+**Measure three things:** recall against the first pass; precision, meaning did it invent anything; and **false corroboration** — did it produce a near-duplicate that would inflate a band. The third is the one that damages the base, because it is invisible once committed and it is exactly what went wrong the first time.
