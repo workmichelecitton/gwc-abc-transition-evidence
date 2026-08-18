@@ -40,7 +40,10 @@ import sys
 import urllib.request
 import urllib.error
 
-API = "https://api.reliefweb.int/v1/reports"
+# v1 was decommissioned — it returns HTTP 410 telling you to use v2. Confirmed
+# against the live API on 2026-08-17. If v2 is ever retired the same way, the
+# error message says which version to move to, and this is the line to change.
+API = "https://api.reliefweb.int/v2/reports"
 
 # ReliefWeb asks callers to identify themselves. It is not authentication and
 # there is no key to obtain — it is courtesy, and it is how they contact you if
@@ -297,49 +300,72 @@ def serve():
 # --------------------------------------------------------------------------
 
 def selftest():
-    """Does the API actually return body text? The whole case for this connector
-    rests on it, and it was never verified. This answers it against the live API."""
-    print("ReliefWeb API self-test\n" + "=" * 60)
+    """Does the API return body text? The whole case for this connector rests on
+    it. Also dumps the response shape, so that if v2 differs from what this code
+    expects, one run tells us exactly how rather than requiring several."""
+    print("ReliefWeb API self-test — " + API + "\n" + "=" * 64)
+
     try:
         res = search_reports("area-based coordination", limit=3, include_body=True)
     except RuntimeError as e:
-        print(f"FAIL — {e}")
+        print(f"FAIL — {e}\n")
+        print("If the message names a newer API version, change API at the top")
+        print("of this file to match. That is the only edit needed.")
         return 1
 
-    total = res.get("totalCount", 0)
-    items = res.get("data", [])
-    print(f"reachable            : yes")
-    print(f"matches for 'area-based coordination': {total}")
-    print(f"returned             : {len(items)}\n")
+    print("reachable : yes\n")
 
+    # Print the raw shape before interpreting it. If v2 renamed anything, this
+    # is what shows it, and guessing from a failed run is what wastes time.
+    print("-- response shape " + "-" * 46)
+    print(f"top-level keys : {sorted(res.keys())}")
+    for k in ("totalCount", "count", "total"):
+        if k in res:
+            print(f"{k:15}: {res[k]}")
+    items = res.get("data") or res.get("results") or []
+    print(f"items returned : {len(items)}")
+    if items:
+        first = items[0]
+        print(f"item keys      : {sorted(first.keys())}")
+        f = first.get("fields", first)
+        print(f"field keys     : {sorted(f.keys())}")
+    else:
+        print("\nNo items came back. Either the query matched nothing, or v2 nests")
+        print("results under a different key than 'data'. The keys above say which.")
+        return 1
+
+    print("\n-- what came back " + "-" * 46)
     bodies = 0
     for it in items:
-        f = it.get("fields", {})
+        f = it.get("fields", it)
         body = f.get("body") or ""
         if body:
             bodies += 1
-        src = ", ".join(s.get("shortname", "") for s in f.get("source", []))
-        atts = len(f.get("file", []) or [])
-        print(f"  {f.get('title','')[:66]}")
+        src = ", ".join(s.get("shortname", "") or s.get("name", "")
+                        for s in (f.get("source") or []))
+        atts = len(f.get("file") or [])
+        print(f"  {str(f.get('title',''))[:64]}")
         print(f"    source {src or '?'} · body {len(body):>6} chars · {atts} attachment(s)")
 
-    print()
+    print("\n-- the answer " + "-" * 50)
     if bodies:
-        print(f"BODY TEXT: yes — {bodies} of {len(items)} carried full text.")
-        print("An agent using this does not need to download or parse PDFs for")
-        print("anything ReliefWeb has indexed. This was the open question.")
+        print(f"BODY TEXT: YES — {bodies} of {len(items)} carried full text.")
+        print("An agent using this never needs to download or parse a PDF for")
+        print("anything ReliefWeb has indexed.")
     else:
-        print("BODY TEXT: no — metadata only.")
-        print("Still useful: attachment URLs on a CDN are usually fetchable even")
-        print("where the landing page is not. But PDF parsing stays necessary.")
+        print("BODY TEXT: NO — metadata only.")
+        print("Still worth having: attachment URLs sit on a CDN that is usually")
+        print("fetchable even where the landing page is not. PDF parsing stays.")
 
-    print("\n" + "=" * 60)
-    print("Country and date filters (what the gap loop needs):")
+    print("\n-- filters the gap loop needs " + "-" * 34)
     try:
         r2 = search_reports("coordination", countries=["VEN"], date_from="2025-01-01", limit=3)
-        print(f"  Venezuela since 2025-01-01: {r2.get('totalCount',0)} reports")
-        for it in r2.get("data", [])[:3]:
-            print(f"    - {it['fields'].get('title','')[:70]}")
+        n = r2.get("totalCount", r2.get("count", "?"))
+        print(f"  Venezuela, since 2025-01-01 : {n} reports")
+        for it in (r2.get("data") or [])[:3]:
+            f = it.get("fields", it)
+            print(f"    - {str(f.get('title',''))[:66]}")
+        print("\n  Country and date filtering works.")
     except RuntimeError as e:
         print(f"  FAIL — {e}")
         return 1
