@@ -14,6 +14,14 @@ It also filters on country, source, theme and date, which is what the method nee
 
 The case for this connector rested on an unverified assumption — that the API returns report **body text**, not just metadata. If it does, an agent using it never needs to download or parse a PDF for anything ReliefWeb has indexed.
 
+**Windows.** Press <kbd>Win</kbd>, type `cmd`, press Enter. You want a prompt reading `C:\Users\you>`. If you see `>>>` you are inside Python — that is the wrong window, close it. Then:
+
+```
+python "C:\path\to\tools\reliefweb-mcp\server.py" --selftest
+```
+
+**macOS or Linux:**
+
 ```
 python3 server.py --selftest
 ```
