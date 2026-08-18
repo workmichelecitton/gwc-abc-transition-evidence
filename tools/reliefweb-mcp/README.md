@@ -64,20 +64,24 @@ Python 3.8 or later. Nothing else — standard library only, deliberately. This 
 
 ## Registering it
 
-Add to your MCP client configuration:
+**This repository already carries `.mcp.json` at its root**, so a client that opens this folder as a project should pick the server up with no configuration at all. That is the intended route — the connector travels with the repository, and the next person to work on this does not have to be told about it.
+
+If the tools do not appear, the likely cause is that the client resolved the relative path against a different working directory. Replace the `args` line in `.mcp.json` with an absolute path:
 
 ```json
 {
   "mcpServers": {
     "reliefweb": {
-      "command": "python3",
-      "args": ["/absolute/path/to/tools/reliefweb-mcp/server.py"]
+      "command": "python",
+      "args": ["C:\\Users\\you\\path\\to\\tools\\reliefweb-mcp\\server.py"]
     }
   }
 }
 ```
 
-On Windows use `python` and a Windows path.
+On macOS or Linux use `python3` and a POSIX path.
+
+**Two client types, two different config files.** A desktop assistant chat window normally reads a global config (`claude_desktop_config.json`); a project or agent session normally reads `.mcp.json` in the open folder. Putting the entry in one does not register it in the other. If the connector works in one place and not the other, that is the reason — and either way the client must be **fully quit and reopened**, not just the window closed.
 
 ## Tools
 

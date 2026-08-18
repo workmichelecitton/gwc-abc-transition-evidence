@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "reliefweb": {
+      "command": "python",
+      "args": ["tools/reliefweb-mcp/server.py"]
+    }
+  }
+}
