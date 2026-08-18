@@ -16,3 +16,8 @@ desktop.ini
 __pycache__/
 *.pyc
 .venv/
+
+# The approved ReliefWeb appname. An identifier rather than a credential, but
+# this repo is public and there is no reason to publish it — if someone else
+# used it heavily, it is this project's name that gets throttled.
+tools/reliefweb-mcp/appname.txt

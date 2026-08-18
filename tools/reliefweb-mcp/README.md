@@ -18,9 +18,9 @@ Since 1 November 2025 the ReliefWeb API requires a **pre-approved appname**. It 
 
 1. Request one at **<https://apidoc.reliefweb.int/parameters#appname>**. The form asks for organisation and purpose, and wants the name to combine organisation, purpose and some random characters — e.g. `gwc-abc-evidence-7f3a`.
 2. They review it and reply by email.
-3. Set it, either way round:
-   - environment variable `RELIEFWEB_APPNAME`, which keeps the approved name out of a public repository, or
-   - edit `APPNAME` near the top of `server.py`
+3. Put it in **`appname.txt`** beside `server.py` — one line, nothing else. That file is gitignored, so the name stays out of this public repository. An appname is an identifier rather than a credential, but if somebody else used it heavily it is this project's name that gets throttled.
+
+   The environment variable `RELIEFWEB_APPNAME` also works and takes precedence.
 
 Until then the self-test will say so and stop rather than failing obscurely.
 

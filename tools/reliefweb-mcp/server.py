@@ -57,9 +57,39 @@ API = "https://api.reliefweb.int/v2/reports"
 #   The form asks for organisation, purpose, and wants the name to combine
 #   organisation, purpose and some random characters. They reply by email.
 #
-# Set it here, or override with the RELIEFWEB_APPNAME environment variable so
-# the approved name does not have to live in a public repository.
-APPNAME = os.environ.get("RELIEFWEB_APPNAME", "REPLACE-ME-request-from-reliefweb")
+# Resolution order, first match wins:
+#
+#   1. RELIEFWEB_APPNAME in the environment
+#   2. appname.txt sitting beside this file
+#   3. a placeholder, which the self-test catches and explains
+#
+# appname.txt is gitignored. This repository is public, and while an appname is
+# an identifier rather than a credential, there is no reason to publish it — if
+# somebody else used it heavily, it is this project's name that gets throttled.
+# A text file is also less trouble than setting an environment variable on
+# Windows, which is the machine this actually runs on.
+def _appname():
+    env = os.environ.get("RELIEFWEB_APPNAME", "").strip()
+    if env:
+        return env
+    # __file__ is undefined when this module is loaded with exec(), which is how
+    # it gets run from a Python prompt on a machine without a convenient shell.
+    # Fall back to the working directory rather than raising NameError.
+    where = globals().get("__file__")
+    dirs = [os.path.dirname(os.path.abspath(where))] if where else []
+    dirs.append(os.getcwd())
+    for d in dirs:
+        try:
+            with open(os.path.join(d, "appname.txt"), encoding="utf-8") as fh:
+                name = fh.read().strip()
+                if name and not name.startswith("#"):
+                    return name
+        except OSError:
+            continue
+    return "REPLACE-ME-request-from-reliefweb"
+
+
+APPNAME = _appname()
 
 # Requested on every call. 'body' is the one that matters: it carries the report
 # text, which is what removes the need to download and parse a PDF.
