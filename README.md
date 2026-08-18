@@ -93,6 +93,15 @@ Its most useful output is the last one: *what this section could not say*, class
 
 `prompts/00-shared-rules.md` records which parts of the GWC SDR method were adopted here, which were refused, and why — so the question does not have to be reopened.
 
+
+## Tools
+
+ — an MCP connector for ReliefWeb. Search and read humanitarian reports by country, source, theme, format and date, with full body text. Zero dependencies.
+
+Most of the literature this base needs sits on domains an automated fetch cannot read. ReliefWeb aggregates what those domains publish and exposes it through a public API with no authentication. Its filters map onto the gap table that  produces in Step A.
+
+Run `python3 tools/reliefweb-mcp/server.py --selftest` first — it checks the API is reachable and reports whether it returns report body text or metadata only.
+
 ## The map
 
 `data/geo.js` holds simplified country outlines, generated once from Natural Earth 110m data and committed as data. No CDN, no map library, no network call — the map works offline and from a local file, and will still work in ten years.

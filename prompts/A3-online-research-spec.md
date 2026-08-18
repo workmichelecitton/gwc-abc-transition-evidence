@@ -267,7 +267,15 @@ ReliefWeb aggregates most of what the unreachable domains publish — OCHA, IASC
 
 Critically — and this needs confirming before anyone builds on it — **the API returns report body text, not just metadata.** If that holds, an agent using it would not need to download or parse PDFs at all for anything ReliefWeb has indexed. It would move from "find a document, resolve its URL, download it, extract its text" to a single query returning searchable text.
 
-No connector for it exists in the MCP registry today. Writing a thin wrapper is small work — a handful of endpoints, no auth, no credentials to manage.
+No connector for it existed in the MCP registry. **One is now written**: `tools/reliefweb-mcp/`. Zero dependencies, Python standard library only, about 300 lines including comments. Two tools — `reliefweb_search` with country, source, theme, format and date filters, and `reliefweb_get` for full text by id.
+
+It carries a self-test that answers the open question against the live API:
+
+```
+python3 tools/reliefweb-mcp/server.py --selftest
+```
+
+Run that before building on it. It reports whether body text is returned and whether the country and date filters behave.
 
 **Why this beats a browser:**
 
