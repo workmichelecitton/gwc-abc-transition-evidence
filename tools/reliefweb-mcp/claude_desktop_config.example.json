@@ -1,0 +1,10 @@
+{
+  "mcpServers": {
+    "reliefweb": {
+      "command": "python",
+      "args": [
+        "C:\\Users\\victus\\Documents\\GitHub\\gwc-abc-transition-evidence\\tools\\reliefweb-mcp\\server.py"
+      ]
+    }
+  }
+}
