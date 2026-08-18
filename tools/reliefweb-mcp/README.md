@@ -40,7 +40,23 @@ python "C:\path\to\tools\reliefweb-mcp\server.py" --selftest
 python3 server.py --selftest
 ```
 
-It hits the live API and tells you plainly which it is, plus whether the country and date filters behave. **Run this before building anything on top.** If body text is not returned, the connector is still worth having — attachment URLs sit on a CDN that is usually fetchable even where the landing page is not — but PDF parsing stays in the picture.
+**Confirmed against the live API, 17 August 2026:**
+
+- **Body text: yes.** Three of three reports returned full text, 1,700 to 30,700 characters. Nothing needs downloading or parsing.
+- Country and date filters work — 175 Venezuela reports since January 2025.
+- Response shape is as this code expects: `totalCount`, `data[]`, `fields{}` with `body`, `file`, `source`, `country`, `format`.
+
+## The one thing that will waste your time if you skip it
+
+A bare query is far too loose. `"area-based coordination"` returns **15,540** matches, because ReliefWeb indexes situation reports that merely contain those words. The three the self-test returned were a Pakistan information-sharing protocol, a WHO preparedness story and an oPt situation report — none of them about area-based coordination at all.
+
+**Always narrow with `formats`.** The useful values are:
+
+```
+["Analysis", "Evaluation and Lessons Learned", "Manual and Guideline", "Assessment"]
+```
+
+That drops situation reports, news and appeals, which is most of the noise. `themes: ["Coordination"]` narrows further. Method rule A5 says to exclude news and announcements, and the format facet does that work before anything reaches a human — this is where it happens in practice.
 
 ## Requirements
 

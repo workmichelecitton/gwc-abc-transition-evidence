@@ -265,7 +265,9 @@ The evidence from this base is unambiguous on which route yields more:
 
 ReliefWeb aggregates most of what the unreachable domains publish — OCHA, IASC, the global clusters, the major NGOs and evaluation offices. It has a **public, documented, no-authentication API** at `api.reliefweb.int/v1/reports`, supporting full-text search with filters on country, source, theme, date and format.
 
-Critically — and this needs confirming before anyone builds on it — **the API returns report body text, not just metadata.** If that holds, an agent using it would not need to download or parse PDFs at all for anything ReliefWeb has indexed. It would move from "find a document, resolve its URL, download it, extract its text" to a single query returning searchable text.
+**Confirmed against the live API on 17 August 2026: the API returns report body text, not just metadata.** Three of three test reports came back with full text, up to 30,700 characters. An agent using it does not need to download or parse PDFs at all for anything ReliefWeb has indexed — it goes from "find a document, resolve its URL, download it, extract its text" to a single query returning searchable text.
+
+**One practical caveat, also confirmed.** A bare query is far too loose: `"area-based coordination"` matches 15,540 documents, because situation reports mention the words. Narrowing by `formats` to `Analysis`, `Evaluation and Lessons Learned`, `Manual and Guideline` and `Assessment` is what makes the results usable, and it is where the A5 exclusion of news and announcements actually happens.
 
 No connector for it existed in the MCP registry. **One is now written**: `tools/reliefweb-mcp/`. Zero dependencies, Python standard library only, about 300 lines including comments. Two tools — `reliefweb_search` with country, source, theme, format and date filters, and `reliefweb_get` for full text by id.
 
