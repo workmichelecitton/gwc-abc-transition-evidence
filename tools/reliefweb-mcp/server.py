@@ -36,6 +36,7 @@ See README.md for how to register it with a client.
 """
 
 import json
+import os
 import sys
 import urllib.request
 import urllib.error
@@ -45,10 +46,20 @@ import urllib.error
 # error message says which version to move to, and this is the line to change.
 API = "https://api.reliefweb.int/v2/reports"
 
-# ReliefWeb asks callers to identify themselves. It is not authentication and
-# there is no key to obtain — it is courtesy, and it is how they contact you if
-# a query pattern causes them trouble.
-APPNAME = "gwc-abc-transition-evidence"
+# SET THIS BEFORE THE CONNECTOR WILL WORK.
+#
+# From 1 November 2025, ReliefWeb v2 requires a *pre-approved* appname. v1 took
+# anything; v2 returns HTTP 403 for an unregistered one. It is free and it is
+# not a secret — closer to a courtesy identifier than a key — but somebody has
+# to request it once.
+#
+#   Request one at: https://apidoc.reliefweb.int/parameters#appname
+#   The form asks for organisation, purpose, and wants the name to combine
+#   organisation, purpose and some random characters. They reply by email.
+#
+# Set it here, or override with the RELIEFWEB_APPNAME environment variable so
+# the approved name does not have to live in a public repository.
+APPNAME = os.environ.get("RELIEFWEB_APPNAME", "REPLACE-ME-request-from-reliefweb")
 
 # Requested on every call. 'body' is the one that matters: it carries the report
 # text, which is what removes the need to download and parse a PDF.
@@ -304,6 +315,20 @@ def selftest():
     it. Also dumps the response shape, so that if v2 differs from what this code
     expects, one run tells us exactly how rather than requiring several."""
     print("ReliefWeb API self-test — " + API + "\n" + "=" * 64)
+    print(f"appname : {APPNAME}")
+    if APPNAME.startswith("REPLACE-ME"):
+        print("""
+NOT SET. ReliefWeb v2 needs a pre-approved appname — since 1 November 2025 an
+unregistered one is refused with HTTP 403.
+
+  Request one, free, at: https://apidoc.reliefweb.int/parameters#appname
+  They ask for organisation and purpose, want the name to combine both plus
+  some random characters, and reply by email.
+
+Then either set RELIEFWEB_APPNAME in your environment, or edit APPNAME near
+the top of this file. Nothing else needs changing.""")
+        return 1
+    print()
 
     try:
         res = search_reports("area-based coordination", limit=3, include_body=True)

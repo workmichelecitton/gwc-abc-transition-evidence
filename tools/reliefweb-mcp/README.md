@@ -10,7 +10,21 @@ ReliefWeb aggregates most of what those domains publish — OCHA, IASC, the glob
 
 It also filters on country, source, theme and date, which is what the method needs. Step A of `prompts/A3-online-research-spec.md` produces a gap table naming specific countries and a search floor date; those map straight onto API parameters. A browser search does not.
 
-## First: run the self-test
+## Before anything else: request an appname
+
+**This is the only step that needs a human, and it is one-time.**
+
+Since 1 November 2025 the ReliefWeb API requires a **pre-approved appname**. It is free and it is not a secret — closer to a courtesy identifier than a key — but an unregistered one is refused with HTTP 403.
+
+1. Request one at **<https://apidoc.reliefweb.int/parameters#appname>**. The form asks for organisation and purpose, and wants the name to combine organisation, purpose and some random characters — e.g. `gwc-abc-evidence-7f3a`.
+2. They review it and reply by email.
+3. Set it, either way round:
+   - environment variable `RELIEFWEB_APPNAME`, which keeps the approved name out of a public repository, or
+   - edit `APPNAME` near the top of `server.py`
+
+Until then the self-test will say so and stop rather than failing obscurely.
+
+## Then: run the self-test
 
 The case for this connector rested on an unverified assumption — that the API returns report **body text**, not just metadata. If it does, an agent using it never needs to download or parse a PDF for anything ReliefWeb has indexed.
 

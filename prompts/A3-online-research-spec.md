@@ -269,6 +269,8 @@ Critically — and this needs confirming before anyone builds on it — **the AP
 
 No connector for it existed in the MCP registry. **One is now written**: `tools/reliefweb-mcp/`. Zero dependencies, Python standard library only, about 300 lines including comments. Two tools — `reliefweb_search` with country, source, theme, format and date filters, and `reliefweb_get` for full text by id.
 
+**One human step, once:** since 1 November 2025 the API needs a pre-approved appname. Free, not a secret, requested at <https://apidoc.reliefweb.int/parameters#appname>, answered by email. Confirmed against the live API — an unregistered appname is refused with HTTP 403.
+
 It carries a self-test that answers the open question against the live API:
 
 ```
