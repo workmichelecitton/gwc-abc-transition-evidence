@@ -113,13 +113,29 @@ Inclusion criteria, exclusion criteria, recency rule, triangulation logic, evide
 
 ## STEP B — Data collection and storage
 
-### B1. Establish what is already held
+### B1. Document upload — ask first
+
+**Ask the user which mode this run uses:**
+
+- **uploaded documents only**
+- **web search only**
+- **both**
+
+**If documents are available, use them.** If web search is selected, search only within the scope agreed in Step A.
+
+This is not a fallback. It is the primary route, and in this base it is the one that works. The blocked-domain problem in §6 is not a gap in the method — it is the situation B1 exists for. A run that identifies the right documents and asks for them is a successful run.
+
+Evidence from this base: one upload round of eight documents took 147 records from unverifiable to 118 quoted, and recovered six records of real evidence that no search had surfaced. No search round has come close to that yield.
+
+**Where a document cannot be fetched, name it precisely** — title, organisation, year, URL — so the user can supply it in the next round. A named fetch failure is an output, not an error.
+
+### B2. Establish what is already held
 
 Read the existing source registry **before searching**. Note the search floor, and the full list of existing titles — this is the duplicate check.
 
 **Do not skip this.** The first run of this prompt did, and registered a paper already in the base, which then had to be deleted and its records reassigned.
 
-### B2. Source registry
+### B3. Source registry
 
 | Document ID | Title | Organisation | Date | Type | Geo | Theme | Tier | Strength | Limitation | URL |
 
@@ -127,14 +143,14 @@ Read the existing source registry **before searching**. Note the search floor, a
 - **Tier** follows 0.3: what kind of claim this document can support
 - Sources sharing an origin — three sessions of one workshop series, two reports on one dataset — must be flagged as one source group. They count once
 
-### B3. Structured gap analysis
+### B4. Structured gap analysis
 
 For each theme and country in scope: missing evidence, missing geographic coverage, missing recent data, weak evidence, contradictory evidence. Each classified Critical / Important / Minor.
 
 ### Passes
 
-- **Pass 1** — initial registry and gap analysis
-- **Pass 2** — critical gaps only. Targeted additional search. State which resolved, which remain
+- **Pass 1** — initial registry and gap analysis, from uploaded documents first where any exist
+- **Pass 2** — critical gaps only. Targeted additional search, **and a named list of documents to request** where the gap needs a document that cannot be fetched. State which resolved, which remain
 - **Pass 3** — remaining critical gaps first, then important. Improve source diversity and independence
 
 **Prioritise sources independent of the cluster system**, or from another sector. A second WASH source written by cluster actors adds less than one evaluation written from outside.
@@ -221,7 +237,7 @@ Organisations may be named. Individuals may not, and a role title tied to a plac
 
 ---
 
-## 6. The constraint that decides whether an agent is worth building
+## 6. What an agent would need — and why the fetch wall is not the blocker it looks like
 
 **Search finds this literature easily. Fetching it usually fails.**
 
@@ -234,16 +250,26 @@ The left column is where most humanitarian coordination literature lives. The tw
 - **OCHA, *Pulse of Humanitarian Coordination 2024*** — reports area-based models falling from 71% of operations in 2023 to 52% in 2024. Would be the first hard evidence that ABC is contracting rather than spreading
 - **OCHA/GCCG, *Area-based coordination and area-based programming: typology, lessons and implications*** — the reference study; four ABC cases and eight ABP cases across six countries
 
+**But B1 already handles this, and that changes the agent question.** The master prompt does not assume the analyst can reach every document — it asks the user which mode the run uses and takes uploads first. A run that identifies the right documents and names them for supply has done its job.
+
+The evidence from this base is unambiguous on which route yields more:
+
+| Route | Yield |
+|---|---|
+| Two search rounds | 11 quoted records, 4 findings lifted a band |
+| One upload round, 8 documents | 118 of 147 records verified, plus 6 records of evidence no search had surfaced |
+
 **The method is not the constraint.** The last two runs produced 11 quoted records and lifted four findings a band, including the first independent quantified evidence in the base — national NGOs at 43% of cluster participation and 7% of HCT membership; area-based pooled fund allocation doubling the national share to 40%.
 
 An agent needs, in order:
 
-1. **A fetch path that works on the blocked domains** — a headless browser rather than a plain HTTP fetch, or a human-in-the-loop download step
-2. Read access to the existing base, to run Step A and B1 honestly
+1. **A document intake path** — B1 made real. A watched folder the user drops files into, and the ability to read PDF, DOCX, XLSX and PPTX. This is the highest-value capability by a wide margin and it is the cheapest
+2. Read access to the existing base, so Step A and B2 are run honestly rather than guessed
 3. The controlled vocabularies, so it fails loudly rather than inventing values
 4. **No write access to published data.** It proposes rows; a human validates at each step stop and commits
+5. *Then* a better fetch path — a headless browser — which raises the ceiling on the search route but is not what unblocks the base
 
-Without (1) an agent reproduces the current outcome: finds the right documents, cannot open them, correctly reports a fetch failure. Honest, but not throughput.
+The ordering is the point. An agent with (1) and without (5) is useful immediately. An agent with (5) and without (1) reproduces what happens now: it finds the right documents, cannot open several of them, and correctly reports a fetch failure. Honest, but not throughput.
 
 ---
 
