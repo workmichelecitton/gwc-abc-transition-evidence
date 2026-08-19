@@ -66,6 +66,8 @@ A guidance document saying an arrangement *should* work is **not** direct eviden
 - Which themes are in scope this run: `ABC`, `Transition`, `Fundamentals`, or a combination
 - Which countries, and in which working languages
 - Timeframe — the search floor is the most recent `date_added` in the source registry
+
+**The floor is a default, not a rule.** It exists to stop a run re-treading ground an earlier run already covered. It is not a claim that older material is worthless, and for structural claims — what makes a coordination body last, why mechanisms tied to political arrangements lapse — age is an asset. Two sources predating the floor have been admitted deliberately. Where that happens, record the departure and the reason in the source note, so the next person can disagree with the judgement rather than discover it.
 - Which findings the run is trying to strengthen
 - Sources to prioritise, and sources to exclude
 
@@ -261,9 +263,25 @@ The evidence from this base is unambiguous on which route yields more:
 
 **The method is not the constraint.** The last two runs produced 11 quoted records and lifted four findings a band, including the first independent quantified evidence in the base — national NGOs at 43% of cluster participation and 7% of HCT membership; area-based pooled fund allocation doubling the national share to 40%.
 
-### The ReliefWeb API is probably the single highest-value addition
+### The ReliefWeb connector — built, in use, and what it actually does
 
-ReliefWeb aggregates most of what the unreachable domains publish — OCHA, IASC, the global clusters, the major NGOs and evaluation offices. It has a **public, documented, no-authentication API** at `api.reliefweb.int/v1/reports`, supporting full-text search with filters on country, source, theme, date and format.
+**Status at 19 August 2026: built, approved and working.** `tools/reliefweb-mcp/`, zero dependencies, Python standard library only. Registered through `.mcp.json` at the repository root, so it travels with the repo — clone it, open it, the tools are there. The approved appname lives in `appname.txt`, which is gitignored.
+
+Three tools: `reliefweb_search`, `reliefweb_get`, `reliefweb_download`.
+
+**What it proved on first real use.** It found the OCHA area-based coordination typology study — a document listed below as one of the two highest-value outstanding sources in the base, unreachable on `unocha.org` for weeks. Search with `formats` and `date_from` filters returned it third.
+
+**And what it disproved.** The connector was built on the finding that the API returns body text, so nothing would need downloading. That held for three of three reports in the self-test and then failed on the first one that mattered: the typology study returned its **executive summary only**, with the evidence in the attachment. ReliefWeb extracts text from what publishers submit, and for many reports that extraction is partial.
+
+So the order is: search → read the body → download **only** where the body is thin. `reliefweb_download` saves attachments into `sources/pdf/` (gitignored) for direct reading. It deliberately does not parse anything — the reader has native PDF support, and a parser would be a dependency to maintain and a worse reader.
+
+**A second wall behind the first.** The attachment host answers a plain programmatic request with HTTP 404 — not 403, which is what made it look like a missing file rather than a refused client. Three unrelated reports failed identically while the same URLs served fine to a browser. Where that happens, the URL is handed back for someone to save by hand. **This is B1, not a defeat**: a run that names the document precisely has done its job.
+
+**The lesson worth keeping.** Two claims in this spec were confidently wrong before they were tested — that body text removes the need for PDFs, and that a connector would make the stream unattended. Both were corrected by use, not by review. Anything asserted here about a tool that has not been run should be read as a hypothesis.
+
+### Why ReliefWeb was the right addition
+
+ReliefWeb aggregates most of what the unreachable domains publish — OCHA, IASC, the global clusters, the major NGOs and evaluation offices. It has a **public, documented, no-authentication API** at `api.reliefweb.int/v2/reports`, supporting full-text search with filters on country, source, theme, date and format.
 
 **Confirmed against the live API on 17 August 2026: the API returns report body text, not just metadata.** Three of three test reports came back with full text, up to 30,700 characters. An agent using it does not need to download or parse PDFs at all for anything ReliefWeb has indexed — it goes from "find a document, resolve its URL, download it, extract its text" to a single query returning searchable text.
 
