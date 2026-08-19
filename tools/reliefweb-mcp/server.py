@@ -255,9 +255,19 @@ def download_attachment(url, filename=None, subdir=None, overwrite=False):
         return {"path": path, "rel": rel, "bytes": os.path.getsize(path),
                 "status": "already present", "kind": _sniff(path)}
 
+    # The attachment host is not the API. It sat behind a rule that answered a
+    # plain urllib request with 404 — not 403, which is what made it look like a
+    # missing file rather than a refused client. Three unrelated reports failed
+    # identically while the same URLs served fine to a browser, which is what
+    # identified it. These headers are what a normal client sends; none of them
+    # claim to be a browser.
     req = urllib.request.Request(url, headers={
-        "User-Agent": f"{APPNAME} (ReliefWeb MCP connector)",
-        "Accept": "*/*",
+        "User-Agent": f"{APPNAME} (ReliefWeb MCP connector; +https://reliefweb.int/help)",
+        "Accept": "application/pdf,application/octet-stream,*/*",
+        "Accept-Language": "en",
+        "Accept-Encoding": "identity",
+        "Referer": "https://reliefweb.int/",
+        "Connection": "close",
     })
     try:
         with urllib.request.urlopen(req, timeout=120) as r:
@@ -268,7 +278,15 @@ def download_attachment(url, filename=None, subdir=None, overwrite=False):
                     "Download it by hand if it is genuinely needed.")
             data = r.read(MAX_BYTES + 1)
     except urllib.error.HTTPError as e:
-        raise RuntimeError(f"ReliefWeb returned HTTP {e.code} for that attachment.") from None
+        hint = ""
+        if e.code in (403, 404, 406, 429):
+            hint = (
+                "\n\nThe API works, so this is the attachment host refusing the request "
+                "rather than a missing file. Do not spend time on it: open the URL in a "
+                "browser and save the file into sources/pdf/. It reads exactly the same "
+                "way from there.\n" + url)
+        raise RuntimeError(
+            f"ReliefWeb returned HTTP {e.code} for that attachment.{hint}") from None
     except urllib.error.URLError as e:
         raise RuntimeError(f"Could not reach ReliefWeb: {e.reason}") from None
 
