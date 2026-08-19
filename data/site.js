@@ -4279,7 +4279,7 @@ window.SITE_DATA = {
    "n_sources": 7,
    "n_documents": 7,
    "n_streams": 3,
-   "n_checked": 3,
+   "n_checked": 4,
    "relations": [],
    "period": "2007 – Aug 2026",
    "period_from": "2007",
@@ -4338,7 +4338,7 @@ window.SITE_DATA = {
    "n_sources": 13,
    "n_documents": 13,
    "n_streams": 3,
-   "n_checked": 10,
+   "n_checked": 12,
    "relations": [
     {
      "type": "qualifies",
@@ -5120,7 +5120,7 @@ window.SITE_DATA = {
    "n_sources": 8,
    "n_documents": 8,
    "n_streams": 4,
-   "n_checked": 4,
+   "n_checked": 5,
    "relations": [],
    "period": "2007 – Jul 2026",
    "period_from": "2007",
@@ -5273,7 +5273,7 @@ window.SITE_DATA = {
    "n_sources": 5,
    "n_documents": 5,
    "n_streams": 2,
-   "n_checked": 1,
+   "n_checked": 2,
    "relations": [],
    "period": "2024 – 2026",
    "period_from": "2024",
@@ -5459,7 +5459,7 @@ window.SITE_DATA = {
    "n_sources": 6,
    "n_documents": 6,
    "n_streams": 3,
-   "n_checked": 2,
+   "n_checked": 3,
    "relations": [],
    "period": "2020 – Jul 2026",
    "period_from": "2020",
@@ -5522,7 +5522,7 @@ window.SITE_DATA = {
    "n_sources": 8,
    "n_documents": 9,
    "n_streams": 4,
-   "n_checked": 5,
+   "n_checked": 6,
    "relations": [],
    "period": "2025 – Aug 2026",
    "period_from": "2025",
@@ -5590,7 +5590,7 @@ window.SITE_DATA = {
    "n_sources": 9,
    "n_documents": 9,
    "n_streams": 4,
-   "n_checked": 7,
+   "n_checked": 8,
    "relations": [],
    "period": "2007 – Aug 2026",
    "period_from": "2007",
@@ -7394,7 +7394,7 @@ window.SITE_DATA = {
    "n_sources": 6,
    "n_documents": 8,
    "n_streams": 3,
-   "n_checked": 7,
+   "n_checked": 8,
    "relations": [],
    "period": "2025 – Aug 2026",
    "period_from": "2025",
@@ -7410,8 +7410,7 @@ window.SITE_DATA = {
     "KEN",
     "MOZ",
     "SDN",
-    "SOM",
-    "SSD"
+    "SOM"
    ],
    "tags": [
     "capacity",
@@ -11854,7 +11853,7 @@ window.SITE_DATA = {
     "ABC"
    ],
    "type": "barrier",
-   "statement": "Introducing area-based coordination added complexity in countries that already had a humanitarian country team, and where parallel processes emerged, accountability for the response became harder to maintain.",
+   "statement": "Introducing area-based coordination and programming added complexity to coordination in countries with an HCT, and where parallel processes and structures appeared they weakened accountability for the response — though the study judges the overall balance not necessarily negative.",
    "level": "global",
    "countries": [],
    "actors": [
@@ -11869,7 +11868,7 @@ window.SITE_DATA = {
    "source_id": "S041",
    "date_collected": "2026-07-17",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2025
   },
   {
@@ -11894,7 +11893,7 @@ window.SITE_DATA = {
    "source_id": "S041",
    "date_collected": "2026-07-17",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2025
   },
   {
@@ -13084,7 +13083,7 @@ window.SITE_DATA = {
     "ABC"
    ],
    "type": "barrier",
-   "statement": "Material costs are a structural barrier limiting national and local NGO participation and leadership in area-based coordination, rather than an incidental detail.",
+   "statement": "Overcoming the material cost of taking part is one of the conditions for area-based coordination to work, alongside formal terms of reference and dedicated chair capacity — the barrier is structural for local and national NGOs and subnational state actors, not incidental.",
    "level": "global",
    "countries": [],
    "actors": [
@@ -13099,7 +13098,7 @@ window.SITE_DATA = {
    "source_id": "S041",
    "date_collected": "2026-07-17",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2025
   },
   {
@@ -13349,7 +13348,7 @@ window.SITE_DATA = {
    "source_id": "S041",
    "date_collected": "2026-07-17",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2025
   },
   {
@@ -13633,7 +13632,7 @@ window.SITE_DATA = {
    "source_id": "S041",
    "date_collected": "2026-07-17",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2025
   },
   {
@@ -13643,7 +13642,7 @@ window.SITE_DATA = {
     "ABC"
    ],
    "type": "enabler",
-   "statement": "Local ownership was achieved only where international actors supported local decision-making processes rather than running their own.",
+   "statement": "Local government ownership over the response was not achieved in any case except area-based development. The study's reading is that achieving it requires international actors to shift from strengthening their own decision-making processes to supporting those of local and national actors.",
    "level": "global",
    "countries": [],
    "actors": [
@@ -13657,7 +13656,7 @@ window.SITE_DATA = {
    "source_id": "S041",
    "date_collected": "2026-07-17",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2025
   },
   {
@@ -13941,7 +13940,7 @@ window.SITE_DATA = {
    "source_id": "S041",
    "date_collected": "2026-07-17",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2025
   },
   {
@@ -14069,7 +14068,7 @@ window.SITE_DATA = {
    "source_id": "S041",
    "date_collected": "2026-07-17",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2025
   },
   {
@@ -14131,9 +14130,7 @@ window.SITE_DATA = {
    "type": "practice",
    "statement": "Area-based structures addressed contingency planning among their inter-agency functions, and in one context supported government-led flood preparedness with structured capacity building for local authorities.",
    "level": "subnational",
-   "countries": [
-    "SSD"
-   ],
+   "countries": [],
    "actors": [
     "gov-local",
     "operational-cell"
@@ -14146,7 +14143,7 @@ window.SITE_DATA = {
    "source_id": "S041",
    "date_collected": "2026-07-17",
    "confidence": "medium",
-   "status": "draft",
+   "status": "validated",
    "year": 2025
   },
   {
