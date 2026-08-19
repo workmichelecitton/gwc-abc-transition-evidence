@@ -1839,12 +1839,12 @@
    ],
    "example": "",
    "type": "recommendation",
-   "strength": 3,
+   "strength": 4,
    "n_records": 10,
-   "n_sources": 2,
+   "n_sources": 3,
    "n_documents": 3,
    "n_streams": 2,
-   "n_checked": 7,
+   "n_checked": 8,
    "relations": [],
    "period": "2025 – 2026",
    "period_from": "2025",
@@ -10777,7 +10777,7 @@
     "ABC"
    ],
    "type": "recommendation",
-   "statement": "Propose a minimum terms of reference and performance framework for area structures — A standard requiring a designated WASH focal point with defined technical escalation rights, and a performance framework equivalent to cluster coordination performance monitoring, would give both sides a shared reference.",
+   "statement": "The study recommends that the IASC and donors establish standard terms of reference for area-based coordination — roles, responsibilities, reporting lines and mutual accountabilities between key actors — and promote performance monitoring alongside annual reviews of the coordination architecture.",
    "level": "global",
    "countries": [],
    "actors": [
@@ -10793,7 +10793,7 @@
    "source_id": "S041",
    "date_collected": "2026-07-17",
    "confidence": "medium",
-   "status": "draft",
+   "status": "validated",
    "year": 2025
   },
   {
