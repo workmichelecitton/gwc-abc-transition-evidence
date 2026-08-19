@@ -101,6 +101,22 @@ On macOS or Linux use `python3` and a POSIX path.
 
 One report by id, with full body text and attachment URLs.
 
+### `reliefweb_download`
+
+Saves an attachment into `sources/pdf/` and returns the path. Takes a report `id` or an attachment `url`.
+
+**This exists because the original claim was too strong.** The connector was built on the finding that ReliefWeb returns body text, so nothing would need downloading. That held for three of three reports in the self-test and then failed on the first one that mattered: the OCHA area-based coordination typology study returned its executive summary and nothing else, with the evidence in the PDF. ReliefWeb extracts text from what publishers submit, and for many reports that extraction is partial.
+
+So the order is: search, read the body, and download **only** when the body is thin. Downloading everything wastes time and disk for no gain.
+
+It does not parse anything. It writes the file and stops — the assistant reading it has native PDF support, and a parser would be a dependency to maintain and a worse reader than the model. It also:
+
+- refuses any host other than `reliefweb.int`, because it writes to disk from a URL that may have come from a search result rather than from a person
+- caps downloads at 80 MB
+- strips attachment filenames to a safe basename
+- skips files already present unless `overwrite` is set, so re-running a pass is cheap
+- reports what actually landed — an HTML error page saved under a `.pdf` name is the failure that otherwise shows up much later as "the reader cannot open it"
+
 ## How it fits the A3 method
 
 - **Step A** produces the gap table: which countries, which findings need independent corroboration, what the search floor is

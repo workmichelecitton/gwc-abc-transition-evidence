@@ -185,6 +185,146 @@ def get_report(report_id):
 
 
 # --------------------------------------------------------------------------
+# Downloading attachments
+# --------------------------------------------------------------------------
+#
+# The original design said an agent using this would never need to touch a PDF.
+# That held until the OCHA area-based coordination typology study, where
+# ReliefWeb returned only the executive summary as body text and the report
+# itself — the part carrying the evidence — stayed in the attachment.
+#
+# ReliefWeb extracts body text from what publishers submit, and for many
+# documents that extraction is partial. So: search and read first, and fall back
+# to the attachment only when the body is thin. This tool exists for that case.
+#
+# Deliberately *not* a PDF parser. It downloads the file and stops there. The
+# assistant reading it has native PDF support, and a parser would be a
+# dependency, a maintenance burden and a worse reader than the model.
+
+DOWNLOAD_SUBDIR = os.path.join("sources", "pdf")
+MAX_BYTES = 80 * 1024 * 1024
+
+# Only ReliefWeb. This tool writes to disk from a URL, and the URL can arrive
+# from search results rather than from a person. Restricting the host means a
+# manipulated result cannot turn it into a general-purpose downloader.
+ALLOWED_HOSTS = ("reliefweb.int", "reliefweb-attachments.s3.amazonaws.com")
+
+
+def _repo_root():
+    """<repo>/tools/reliefweb-mcp/server.py -> <repo>. Falls back to the working
+    directory, for the same exec() case that _appname handles."""
+    where = globals().get("__file__")
+    if where:
+        here = os.path.dirname(os.path.abspath(where))
+        root = os.path.abspath(os.path.join(here, os.pardir, os.pardir))
+        if os.path.isdir(os.path.join(root, "data")):
+            return root
+    return os.getcwd()
+
+
+def _safe_name(name, fallback="download.pdf"):
+    """Attachment filenames come from publishers and are not to be trusted with
+    a path. Keep the basename, keep it boring, keep it short."""
+    name = os.path.basename((name or "").replace("\\", "/")).strip()
+    keep = "-_.() "
+    name = "".join(c for c in name if c.isalnum() or c in keep).strip(" .")
+    name = "_".join(name.split())
+    return name[:120] or fallback
+
+
+def download_attachment(url, filename=None, subdir=None, overwrite=False):
+    """Download one attachment into <repo>/sources/pdf/. Returns a dict."""
+    from urllib.parse import urlparse, unquote
+
+    host = (urlparse(url).hostname or "").lower()
+    if not (host in ALLOWED_HOSTS or host.endswith(".reliefweb.int")):
+        raise ValueError(
+            f"Refusing to download from '{host or url}'. This tool only fetches "
+            "ReliefWeb attachments. Pass a reliefweb.int URL, or fetch it yourself."
+        )
+
+    root = _repo_root()
+    target_dir = os.path.join(root, subdir or DOWNLOAD_SUBDIR)
+    os.makedirs(target_dir, exist_ok=True)
+
+    name = _safe_name(filename or unquote(os.path.basename(urlparse(url).path)))
+    path = os.path.join(target_dir, name)
+    rel = os.path.relpath(path, root).replace("\\", "/")
+
+    if os.path.exists(path) and not overwrite:
+        return {"path": path, "rel": rel, "bytes": os.path.getsize(path),
+                "status": "already present", "kind": _sniff(path)}
+
+    req = urllib.request.Request(url, headers={
+        "User-Agent": f"{APPNAME} (ReliefWeb MCP connector)",
+        "Accept": "*/*",
+    })
+    try:
+        with urllib.request.urlopen(req, timeout=120) as r:
+            declared = int(r.headers.get("Content-Length") or 0)
+            if declared > MAX_BYTES:
+                raise RuntimeError(
+                    f"File is {declared/1048576:.0f} MB, over the {MAX_BYTES//1048576} MB cap. "
+                    "Download it by hand if it is genuinely needed.")
+            data = r.read(MAX_BYTES + 1)
+    except urllib.error.HTTPError as e:
+        raise RuntimeError(f"ReliefWeb returned HTTP {e.code} for that attachment.") from None
+    except urllib.error.URLError as e:
+        raise RuntimeError(f"Could not reach ReliefWeb: {e.reason}") from None
+
+    if len(data) > MAX_BYTES:
+        raise RuntimeError(f"File exceeds the {MAX_BYTES//1048576} MB cap.")
+    if not data:
+        raise RuntimeError("Empty response — nothing was written.")
+
+    with open(path, "wb") as fh:
+        fh.write(data)
+    return {"path": path, "rel": rel, "bytes": len(data),
+            "status": "downloaded", "kind": _sniff(path)}
+
+
+def _sniff(path):
+    """What actually landed. A truncated download or an HTML error page saved
+    with a .pdf name is the failure worth catching early, because the symptom
+    otherwise appears much later as 'the reader cannot open it'."""
+    try:
+        with open(path, "rb") as fh:
+            head = fh.read(5)
+    except OSError:
+        return "unreadable"
+    if head.startswith(b"%PDF"):
+        return "PDF"
+    if head[:1] == b"<":
+        return "HTML — probably an error page, not the document"
+    if head.startswith(b"PK"):
+        return "ZIP or Office file"
+    return "unknown format"
+
+
+def download_report_files(report_id, index=None):
+    """Resolve a report id to its attachments and download them."""
+    res = get_report(report_id)
+    items = res.get("data") or []
+    if not items:
+        raise RuntimeError(f"No report with id {report_id}.")
+    f = items[0].get("fields", {})
+    files = [a for a in (f.get("file") or []) if a.get("url")]
+    if not files:
+        raise RuntimeError(
+            f"'{f.get('title','that report')}' has no attachment on ReliefWeb. "
+            "The body text is all there is.")
+    if index is not None:
+        if not 0 <= int(index) < len(files):
+            raise RuntimeError(f"index {index} out of range — {len(files)} attachment(s).")
+        files = [files[int(index)]]
+    out = []
+    for a in files:
+        out.append(download_attachment(a["url"], a.get("filename")))
+        out[-1]["title"] = f.get("title", "")
+    return out
+
+
+# --------------------------------------------------------------------------
 # Shaping results for a reader
 # --------------------------------------------------------------------------
 
@@ -268,6 +408,31 @@ TOOLS = [
             "required": ["id"],
         },
     },
+    {
+        "name": "reliefweb_download",
+        "description": (
+            "Download a report's attachment into sources/pdf/ in this repository, "
+            "then read the saved file directly. Use this only when reliefweb_get "
+            "returned thin body text — often just an executive summary — and the "
+            "evidence is in the PDF. Give a report id, or an attachment URL from "
+            "a search result. Returns the saved path. It does not parse the file; "
+            "open it with your own reader."
+        ),
+        "inputSchema": {
+            "type": "object",
+            "properties": {
+                "id": {"type": ["string", "integer"],
+                       "description": "ReliefWeb report id. Downloads its attachments."},
+                "url": {"type": "string",
+                        "description": "Attachment URL, as printed by search. Must be on reliefweb.int."},
+                "index": {"type": "integer",
+                          "description": "With id, and several attachments: which one, from 0. Omit for all."},
+                "filename": {"type": "string", "description": "Override the saved name."},
+                "overwrite": {"type": "boolean",
+                              "description": "Re-download a file already present. Default false."},
+            },
+        },
+    },
 ]
 
 
@@ -284,6 +449,26 @@ def _call(name, args):
         return _fmt(res, bool(args.get("include_body")))
     if name == "reliefweb_get":
         return _fmt(get_report(args["id"]), True)
+    if name == "reliefweb_download":
+        if args.get("url"):
+            saved = [download_attachment(args["url"], args.get("filename"),
+                                         overwrite=bool(args.get("overwrite")))]
+        elif args.get("id") is not None:
+            saved = download_report_files(args["id"], args.get("index"))
+        else:
+            raise ValueError("Give either 'id' or 'url'.")
+        lines = []
+        for s in saved:
+            lines.append(f"{s['status']}: {s['rel']}")
+            if s.get("title"):
+                lines.append(f"  {s['title']}")
+            lines.append(f"  {s['bytes']:,} bytes · {s['kind']}")
+            if s["kind"].startswith("HTML"):
+                lines.append("  This is not the document. Check the URL before reading it.")
+        lines.append("")
+        lines.append("Saved inside the repository. Open it with your file reader — "
+                     "this tool does not extract text.")
+        return "\n".join(lines)
     raise ValueError(f"Unknown tool: {name}")
 
 
