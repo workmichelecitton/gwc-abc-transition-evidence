@@ -27,3 +27,10 @@ sources/pdf/*
 # this repo is public and there is no reason to publish it — if someone else
 # used it heavily, it is this project's name that gets throttled.
 tools/reliefweb-mcp/appname.txt
+
+# Local test dependency (jsdom, for scripts/check.mjs). Installed on demand,
+# never committed — it is thousands of files that have nothing to do with the
+# evidence base.
+node_modules/
+package.json
+package-lock.json

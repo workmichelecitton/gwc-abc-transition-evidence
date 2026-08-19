@@ -179,13 +179,13 @@ async function exercise(label, url) {
     ok(new Set(heads).size === heads.length,
        `${label}: a highlight appears in more than one column — ` +
        heads.filter((h, i) => heads.indexOf(h) !== i).join(" | "));
-    // No cap any more: the bands decide what appears, so every band 4+ finding
-    // must be on the page. A cap would hide evidence for a reason the reader
-    // cannot see, which is what the old top-ten did.
+    // No cap any more: the band decides what appears, so every band 5 finding
+    // must be on the page and nothing else may be. A cap would hide evidence for
+    // a reason the reader cannot see, which is what the old top-ten did.
     const shown = $$("#view .hlcol .hl").length;
-    const expect = site.findings.filter((f) => f.strength >= 4).length;
+    const expect = site.findings.filter((f) => f.strength === 5).length;
     ok(shown === expect,
-       `${label}: Highlights shows ${shown} cards for ${expect} findings at band 4+`);
+       `${label}: Highlights shows ${shown} cards for ${expect} findings at band 5`);
   }
 
   // ---- every filter, on every tab ----------------------------------------
@@ -288,10 +288,10 @@ async function exercise(label, url) {
      `${label}: reset did not clear the search box`);
 
   // Highlights must carry curated plain-language text, not the analytic statement.
-  const hi = site.findings.filter((f) => f.strength >= 4);
+  const hi = site.findings.filter((f) => f.strength === 5);
   const noHl = hi.filter((f) => !f.highlight || !f.highlight.plain);
   ok(noHl.length === 0,
-     `${label}: band 4+ findings with no plain-language text — ${noHl.map((f) => f.finding_id).join(", ")}`);
+     `${label}: band 5 findings with no plain-language text — ${noHl.map((f) => f.finding_id).join(", ")}`);
 
   dom.window.close();
 }

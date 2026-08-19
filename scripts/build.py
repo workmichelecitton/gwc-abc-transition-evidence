@@ -548,10 +548,16 @@ def main():
     for f in findings:
         if f["finding_id"] in hl:
             f["highlight"] = hl[f["finding_id"]]
+    # The Highlights tab shows band 5 and nothing else, and it selects by band
+    # rather than by this file — a finding appears there because the evidence
+    # puts it there. What highlights.csv still does is supply the plain-language
+    # headline for those cards, so the warning tracks band 5 only. Warning about
+    # band 4 produced a list nobody could act on, since those findings are no
+    # longer displayed here.
     missing = [f["finding_id"] for f in findings
-               if f["strength"] >= 4 and f["finding_id"] not in hl]
+               if f["strength"] >= 5 and f["finding_id"] not in hl]
     if missing:
-        warn("band 4+ findings with no plain-language highlight yet: " + ", ".join(missing))
+        warn("band 5 findings with no plain-language headline yet: " + ", ".join(missing))
 
     # ---- unmined sources ----------------------------------------------------
     # A source in the registry with no evidence record against it has been

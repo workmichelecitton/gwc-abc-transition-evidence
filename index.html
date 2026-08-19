@@ -650,9 +650,15 @@ function viewFindings(d){
   function card(f){
     var recs = byF[f.finding_id] || [];
     var open = !!OPEN[f.finding_id];
+    // The curated example used to sit here, on the face of the card. Two
+    // reasons it does not any more. Only 99 of 170 findings have one, so the
+    // cards read as ragged — some with a paragraph, some without, for no reason
+    // visible to a reader. And it put a written illustration above the actual
+    // records, so the first thing seen was the least evidential thing on the
+    // card. The example is still in findings.csv; it is simply not rendered.
+    // Click a card and you get the records themselves.
     var head =
       '<h3>'+esc(f.statement)+'</h3>' +
-      (f.example ? '<p class="eg">'+esc(f.example)+'</p>' : '') +
       '<div class="meta">' + themePills(f.theme) +
       '<span class="pill '+esc(f.type)+'">'+esc(label("type",f.type))+'</span>' +
       bandTag(f.strength) +
@@ -864,15 +870,21 @@ function viewGuidance(){
 }
 
 function viewHighlights(d){
-  // Band 5 and 4 only. Under the old three-band scale this tab had to take the
-  // top ten per column, because 81 of 137 findings counted as "high" and showing
-  // them all was useless. The cap was arbitrary — it hid findings for no reason
-  // a reader could see. The bands now do that job by counting, so the cut is
-  // explicable: everything here rests on at least three independent sources
-  // across at least two kinds of source.
-  var hi = d.findings.filter(function(f){ return f.strength >= 4; });
+  // Band 5 only.
+  //
+  // This started as a top-ten-per-column cap, which was arbitrary and hid
+  // findings for no reason a reader could see. It then became band 4 and above,
+  // which was explicable but still showed 82 findings — too many for a tab whose
+  // job is to say "if you read nothing else, read these".
+  //
+  // Band 5 is the honest cut: six or more independent sources, across two kinds
+  // of source, in two or more countries. Nothing here is curated. A finding
+  // appears when the evidence puts it here and leaves if the evidence changes,
+  // which means this tab cannot drift from the data the way a hand-picked list
+  // does.
+  var hi = d.findings.filter(function(f){ return f.strength === 5; });
   if (!hi.length) return empty(
-    "Nothing at band 4 or above matches these filters. A finding reaches band 4 once three independent sources across two different kinds of source support it.");
+    "Nothing at band 5 matches these filters. A finding reaches band 5 only with six or more independent sources, across two kinds of source, in two or more countries — so an empty result here is common once filters narrow.");
 
   // A finding carrying more than one theme goes in the first column only —
   // previously it appeared under every theme it touched, so the area-based
@@ -901,11 +913,10 @@ function viewHighlights(d){
   hi.forEach(function(f){ buckets[column(f)].push(f); });
   buckets.forEach(function(b){ b.sort(weight); });
 
-  var n5 = hi.filter(function(f){ return f.strength === 5; }).length;
   var intro = '<p class="count">' + hi.length + ' finding' + (hi.length===1?"":"s") +
-    ' at band 4 or above, of which ' + n5 + ' reach band 5 — six or more independent ' +
-    'sources, across two kinds of source, in two or more countries. Nothing is capped or ' +
-    'hidden here: everything below band 4 is in the Findings tab with its band shown.</p>';
+    ' at band 5 — six or more independent sources, across two kinds of source, in two or ' +
+    'more countries. This list is computed, not chosen. Nothing is capped or hidden: ' +
+    'everything below band 5 is in the Findings tab with its band shown.</p>';
 
   var grid = '<div class="hlgrid">' + COLS.map(function(c, ix){
     var items = buckets[ix];
@@ -913,7 +924,7 @@ function viewHighlights(d){
       '<span class="grp-n">' + items.length + '</span></h2>' +
       '<p class="hlnote">' + esc(c.note) + '</p>' +
       (items.length ? items.map(hlCard).join("")
-                    : '<p class="hlnote">Nothing at band 4 or above here yet.</p>') +
+                    : '<p class="hlnote">Nothing at band 5 here yet.</p>') +
       '</section>';
   }).join("") + '</div>';
 
