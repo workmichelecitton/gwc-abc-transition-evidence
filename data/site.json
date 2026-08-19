@@ -111,7 +111,7 @@
   "footer_note": "Every finding traces to a source ID in the Sources tab. If something looks wrong, it probably is — say so and it will be corrected."
  },
  "schema": 3,
- "generated": "2026-08-18",
+ "generated": "2026-08-19",
  "taxonomy_version": "0.9.0",
  "stats": {
   "records": 752,
@@ -4966,7 +4966,7 @@
    "n_sources": 6,
    "n_documents": 6,
    "n_streams": 3,
-   "n_checked": 10,
+   "n_checked": 11,
    "relations": [],
    "period": "2024 – Jul 2026",
    "period_from": "2024",
@@ -12770,7 +12770,7 @@
     "ABC"
    ],
    "type": "barrier",
-   "statement": "There is no agreed inter-agency definition or guidance for area-based coordination, and without structured learning across operations, country teams repeat work already done elsewhere.",
+   "statement": "Area-based coordination and area-based programming have been used for years without a commonly agreed definition or IASC guidance on their use.",
    "level": "global",
    "countries": [],
    "actors": [
@@ -12784,7 +12784,7 @@
    "source_id": "S041",
    "date_collected": "2026-07-17",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2025
   },
   {
