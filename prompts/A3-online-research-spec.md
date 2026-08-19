@@ -66,12 +66,12 @@ A guidance document saying an arrangement *should* work is **not** direct eviden
 - Which themes are in scope this run: `ABC`, `Transition`, `Fundamentals`, or a combination
 - Which countries, and in which working languages
 - Timeframe — the search floor is the most recent `date_added` in the source registry
-
-**The floor is a default, not a rule.** It exists to stop a run re-treading ground an earlier run already covered. It is not a claim that older material is worthless, and for structural claims — what makes a coordination body last, why mechanisms tied to political arrangements lapse — age is an asset. Two sources predating the floor have been admitted deliberately. Where that happens, record the departure and the reason in the source note, so the next person can disagree with the judgement rather than discover it.
 - Which findings the run is trying to strengthen
 - Sources to prioritise, and sources to exclude
 
 If the user says to reuse parameters already agreed, do so without asking again.
+
+**The floor is a default, not a rule.** It exists to stop a run re-treading ground an earlier run already covered. It is not a claim that older material is worthless, and for structural claims — what makes a coordination body last, why mechanisms tied to political arrangements lapse — age is an asset. Two sources predating the floor have been admitted deliberately. Where that happens, record the departure and the reason in the source note, so the next person can disagree with the judgement rather than discover it.
 
 ### A2. Scope summary
 
