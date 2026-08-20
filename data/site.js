@@ -115,9 +115,9 @@ window.SITE_DATA = {
  "generated": "2026-08-20",
  "taxonomy_version": "0.9.0",
  "stats": {
-  "records": 734,
-  "findings": 173,
-  "sources": 111,
+  "records": 746,
+  "findings": 178,
+  "sources": 112,
   "countries": 30,
   "withheld_internal": 2
  },
@@ -1300,11 +1300,11 @@ window.SITE_DATA = {
    "example": "Somalia — IM recruitment was cancelled and the post reissued as a volunteer role. Partner reporting continued to arrive while the public dashboard and contact lists went unupdated for months.",
    "type": "barrier",
    "strength": 5,
-   "n_records": 15,
-   "n_sources": 10,
-   "n_documents": 10,
-   "n_streams": 3,
-   "n_checked": 12,
+   "n_records": 16,
+   "n_sources": 11,
+   "n_documents": 11,
+   "n_streams": 4,
+   "n_checked": 13,
    "relations": [],
    "period": "2025 – Aug 2026",
    "period_from": "2025",
@@ -1312,6 +1312,7 @@ window.SITE_DATA = {
    "period_span": 1,
    "streams": [
     "sdr",
+    "search",
     "transcript",
     "workshop"
    ],
@@ -1355,7 +1356,8 @@ window.SITE_DATA = {
     "E0522",
     "E0523",
     "E0524",
-    "E0663"
+    "E0663",
+    "E0783"
    ],
    "unmerged": false,
    "highlight": {
@@ -2817,12 +2819,12 @@ window.SITE_DATA = {
    ],
    "example": "",
    "type": "barrier",
-   "strength": 3,
-   "n_records": 2,
-   "n_sources": 2,
-   "n_documents": 2,
-   "n_streams": 2,
-   "n_checked": 2,
+   "strength": 4,
+   "n_records": 3,
+   "n_sources": 3,
+   "n_documents": 3,
+   "n_streams": 3,
+   "n_checked": 3,
    "relations": [],
    "period": "2024 – Aug 2026",
    "period_from": "2024",
@@ -2830,6 +2832,7 @@ window.SITE_DATA = {
    "period_span": 2,
    "streams": [
     "sdr",
+    "search",
     "transcript"
    ],
    "countries": [
@@ -2846,7 +2849,8 @@ window.SITE_DATA = {
    ],
    "record_ids": [
     "E0671",
-    "E0768"
+    "E0768",
+    "E0781"
    ],
    "unmerged": false
   },
@@ -4384,6 +4388,205 @@ window.SITE_DATA = {
    "unmerged": false
   },
   {
+   "finding_id": "F1956",
+   "statement": "Where partners join an area structure expecting access to funding, attendance collapses once they learn it is not a funding route — so reported participation is not evidence that the coordination itself was wanted.",
+   "theme": [
+    "ABC"
+   ],
+   "example": "Iraq: participation in area-based coordination groups declined sharply once it was clear they were not a direct resource mobilisation source.",
+   "type": "barrier",
+   "strength": 1,
+   "n_records": 1,
+   "n_sources": 1,
+   "n_documents": 1,
+   "n_streams": 1,
+   "n_checked": 1,
+   "relations": [],
+   "period": "2025",
+   "period_from": "2025",
+   "period_to": "2025",
+   "period_span": 0,
+   "streams": [
+    "sdr"
+   ],
+   "countries": [
+    "IRQ"
+   ],
+   "tags": [
+    "coordination-architecture",
+    "funding",
+    "localisation"
+   ],
+   "actors": [
+    "ingo",
+    "local-ngo",
+    "operational-cell"
+   ],
+   "record_ids": [
+    "E0777"
+   ],
+   "unmerged": false
+  },
+  {
+   "finding_id": "F1957",
+   "statement": "An area-based structure can be handed to government rather than closed: replaced by forums chaired by the governor's office, with secretariat support transferring from a UN mission to a government body.",
+   "theme": [
+    "ABC",
+    "Transition"
+   ],
+   "example": "Iraq: most area-based coordination groups abolished in 2024 in favour of Joint Coordination Forums chaired by governors, secretariat handed to a government body in 2025.",
+   "type": "practice",
+   "strength": 1,
+   "n_records": 1,
+   "n_sources": 1,
+   "n_documents": 1,
+   "n_streams": 1,
+   "n_checked": 1,
+   "relations": [],
+   "period": "2025",
+   "period_from": "2025",
+   "period_to": "2025",
+   "period_span": 0,
+   "streams": [
+    "sdr"
+   ],
+   "countries": [
+    "IRQ"
+   ],
+   "tags": [
+    "coordination-architecture",
+    "government-engagement",
+    "transition-handover"
+   ],
+   "actors": [
+    "gov-local",
+    "local-ngo",
+    "un-agency"
+   ],
+   "record_ids": [
+    "E0778"
+   ],
+   "unmerged": false
+  },
+  {
+   "finding_id": "F1958",
+   "statement": "Transitions built incrementally over years produce arrangements that hold; those completed to a deadline fragment. The same study found national leadership sustained after a decade-long shift and coordination scattered two and a half years after a one-year deactivation.",
+   "theme": [
+    "Transition"
+   ],
+   "example": "Indonesia and Iraq, compared directly in one study.",
+   "type": "enabler",
+   "strength": 1,
+   "n_records": 1,
+   "n_sources": 1,
+   "n_documents": 1,
+   "n_streams": 1,
+   "n_checked": 1,
+   "relations": [
+    {
+     "type": "qualifies",
+     "finding_id": "F333",
+     "direction": "out"
+    }
+   ],
+   "period": "2025",
+   "period_from": "2025",
+   "period_to": "2025",
+   "period_span": 0,
+   "streams": [
+    "sdr"
+   ],
+   "countries": [
+    "IDN"
+   ],
+   "tags": [
+    "localisation",
+    "sustainability",
+    "transition-handover"
+   ],
+   "actors": [
+    "gov-national",
+    "local-ngo",
+    "un-agency"
+   ],
+   "record_ids": [
+    "E0779"
+   ],
+   "unmerged": false
+  },
+  {
+   "finding_id": "F1959",
+   "statement": "Area-based coordination is contracting and concentrating at once: reported by 52 per cent of operations in 2024 against 71 per cent the year before, while the locations it covers rose from 175 to 216.",
+   "theme": [
+    "ABC"
+   ],
+   "example": "Several operations including Burkina Faso, Chad and Niger stopped reporting area-based coordination altogether.",
+   "type": "context",
+   "strength": 1,
+   "n_records": 1,
+   "n_sources": 1,
+   "n_documents": 1,
+   "n_streams": 1,
+   "n_checked": 1,
+   "relations": [],
+   "period": "2025",
+   "period_from": "2025",
+   "period_to": "2025",
+   "period_span": 0,
+   "streams": [
+    "search"
+   ],
+   "countries": [],
+   "tags": [
+    "coordination-architecture",
+    "geographic-targeting"
+   ],
+   "actors": [
+    "cluster",
+    "ocha"
+   ],
+   "record_ids": [
+    "E0780"
+   ],
+   "unmerged": false
+  },
+  {
+   "finding_id": "F1960",
+   "statement": "Local and national NGO leadership of coordination is measurable rather than aspirational — cluster leadership roles in fifteen operations, and parity with donors in humanitarian country team seats.",
+   "theme": [
+    "Fundamentals"
+   ],
+   "example": "Twelve per cent of HCT seats, and national NGO participation in 56 per cent of inter-cluster groups.",
+   "type": "enabler",
+   "strength": 1,
+   "n_records": 1,
+   "n_sources": 1,
+   "n_documents": 1,
+   "n_streams": 1,
+   "n_checked": 1,
+   "relations": [],
+   "period": "2025",
+   "period_from": "2025",
+   "period_to": "2025",
+   "period_span": 0,
+   "streams": [
+    "search"
+   ],
+   "countries": [],
+   "tags": [
+    "coordination-architecture",
+    "localisation"
+   ],
+   "actors": [
+    "cluster",
+    "local-ngo"
+   ],
+   "record_ids": [
+    "E0784"
+   ],
+   "unmerged": false
+  },
+  {
    "finding_id": "F201",
    "statement": "The need to create dedicated structures such as a drought strategic working group and community resource centres shows that existing coordination systems could not support integrated multi-sectoral assistance.",
    "theme": [
@@ -5731,11 +5934,11 @@ window.SITE_DATA = {
    "example": "Ukraine — local actors participated in coordination structures but had limited influence over decisions and over resources.",
    "type": "barrier",
    "strength": 5,
-   "n_records": 10,
-   "n_sources": 9,
-   "n_documents": 9,
+   "n_records": 11,
+   "n_sources": 10,
+   "n_documents": 10,
    "n_streams": 4,
-   "n_checked": 8,
+   "n_checked": 9,
    "relations": [],
    "period": "2007 – Aug 2026",
    "period_from": "2007",
@@ -5749,6 +5952,7 @@ window.SITE_DATA = {
    ],
    "countries": [
     "CMR",
+    "IRQ",
     "MMR",
     "UKR"
    ],
@@ -5768,7 +5972,8 @@ window.SITE_DATA = {
     "ingo",
     "local-ngo",
     "ocha",
-    "operational-cell"
+    "operational-cell",
+    "un-agency"
    ],
    "record_ids": [
     "E0044",
@@ -5780,7 +5985,8 @@ window.SITE_DATA = {
     "E0673",
     "E0678",
     "E0689",
-    "E0751"
+    "E0751",
+    "E0776"
    ],
    "unmerged": false,
    "highlight": {
@@ -6664,12 +6870,18 @@ window.SITE_DATA = {
    "example": "Ethiopia — a six-month handover deadline was set internally and tied to the coordinator's contract ending. The humanitarian coordination office agreed six months was not enough; the timetable did not change.",
    "type": "barrier",
    "strength": 5,
-   "n_records": 19,
+   "n_records": 20,
    "n_sources": 11,
-   "n_documents": 13,
+   "n_documents": 14,
    "n_streams": 4,
-   "n_checked": 12,
-   "relations": [],
+   "n_checked": 13,
+   "relations": [
+    {
+     "type": "qualifies",
+     "finding_id": "F1958",
+     "direction": "in"
+    }
+   ],
    "period": "2013 – Aug 2026",
    "period_from": "2013",
    "period_to": "Aug 2026",
@@ -6726,7 +6938,8 @@ window.SITE_DATA = {
     "E0665",
     "E0667",
     "E0686",
-    "E0767"
+    "E0767",
+    "E0773"
    ],
    "unmerged": false,
    "highlight": {
@@ -6745,11 +6958,11 @@ window.SITE_DATA = {
    "example": "Iraq — international humanitarian funding fell from around 1.8 billion to 265 million US dollars, which forced an accelerated transition.",
    "type": "context",
    "strength": 5,
-   "n_records": 13,
-   "n_sources": 7,
-   "n_documents": 9,
+   "n_records": 14,
+   "n_sources": 8,
+   "n_documents": 10,
    "n_streams": 4,
-   "n_checked": 8,
+   "n_checked": 9,
    "relations": [],
    "period": "2023 – Aug 2026",
    "period_from": "2023",
@@ -6763,8 +6976,10 @@ window.SITE_DATA = {
    ],
    "countries": [
     "CMR",
+    "COL",
     "ETH",
     "IRQ",
+    "NGA",
     "SOM"
    ],
    "tags": [
@@ -6800,7 +7015,8 @@ window.SITE_DATA = {
     "E0568",
     "E0571",
     "E0642",
-    "E0679"
+    "E0679",
+    "E0782"
    ],
    "unmerged": false,
    "highlight": {
@@ -7145,23 +7361,25 @@ window.SITE_DATA = {
    "example": "Mali — the government counterpart changed three times in one year: the official was promoted, the replacement took extended sick leave, and a third arrived without the background.",
    "type": "barrier",
    "strength": 5,
-   "n_records": 7,
-   "n_sources": 6,
-   "n_documents": 6,
-   "n_streams": 2,
-   "n_checked": 6,
+   "n_records": 8,
+   "n_sources": 7,
+   "n_documents": 7,
+   "n_streams": 3,
+   "n_checked": 7,
    "relations": [],
-   "period": "2026 – Aug 2026",
-   "period_from": "2026",
+   "period": "2025 – Aug 2026",
+   "period_from": "2025",
    "period_to": "Aug 2026",
-   "period_span": 0,
+   "period_span": 1,
    "streams": [
+    "sdr",
     "transcript",
     "workshop"
    ],
    "countries": [
     "BFA",
     "COL",
+    "IRQ",
     "KEN",
     "MLI",
     "MOZ",
@@ -7178,7 +7396,9 @@ window.SITE_DATA = {
    "actors": [
     "cluster",
     "gov-local",
-    "gov-national"
+    "gov-national",
+    "ingo",
+    "ocha"
    ],
    "record_ids": [
     "E0298",
@@ -7187,7 +7407,8 @@ window.SITE_DATA = {
     "E0537",
     "E0574",
     "E0594",
-    "E0639"
+    "E0639",
+    "E0774"
    ],
    "unmerged": false,
    "highlight": {
@@ -7285,12 +7506,12 @@ window.SITE_DATA = {
    ],
    "example": "Ukraine — the transition endpoint was scoped as a national institution with durable funding and a formal civil protection mandate, rather than defaulting to a line ministry.",
    "type": "enabler",
-   "strength": 3,
-   "n_records": 6,
-   "n_sources": 2,
-   "n_documents": 3,
+   "strength": 4,
+   "n_records": 7,
+   "n_sources": 3,
+   "n_documents": 4,
    "n_streams": 2,
-   "n_checked": 4,
+   "n_checked": 5,
    "relations": [],
    "period": "2013 – 2026",
    "period_from": "2013",
@@ -7325,7 +7546,8 @@ window.SITE_DATA = {
     "E0317",
     "E0634",
     "E0635",
-    "E0636"
+    "E0636",
+    "E0775"
    ],
    "unmerged": false,
    "highlight": {
@@ -12386,9 +12608,7 @@ window.SITE_DATA = {
    "type": "barrier",
    "statement": "Inconsistencies between national strategies and subnational implementation frameworks limit coherence and inclusiveness.",
    "level": "subnational",
-   "countries": [
-    "PSE"
-   ],
+   "countries": [],
    "actors": [
     "gov-national",
     "cluster"
@@ -28999,6 +29219,338 @@ window.SITE_DATA = {
    "confidence": "high",
    "status": "validated",
    "year": 2026
+  },
+  {
+   "id": "E0773",
+   "finding_id": "F333",
+   "theme": [
+    "Transition"
+   ],
+   "type": "barrier",
+   "statement": "Clusters were told to write individual transition plans while no overarching strategy existed for either coordination or the response, so each cluster solved its own handover and nobody owned the whole.",
+   "level": "national",
+   "countries": [
+    "IRQ"
+   ],
+   "actors": [
+    "cluster",
+    "ocha",
+    "un-agency"
+   ],
+   "tags": [
+    "transition-handover",
+    "coordination-architecture"
+   ],
+   "stream": "sdr",
+   "source_id": "S033",
+   "date_collected": "2026-08-20",
+   "confidence": "high",
+   "status": "validated",
+   "year": 2025
+  },
+  {
+   "id": "E0774",
+   "finding_id": "F364",
+   "theme": [
+    "Transition"
+   ],
+   "type": "barrier",
+   "statement": "A transition process that began well lost coherence as the people running it left: international staff departed, the humanitarian coordinator changed mid-year and the NGO forum director went, and the process fragmented.",
+   "level": "national",
+   "countries": [
+    "IRQ"
+   ],
+   "actors": [
+    "cluster",
+    "ocha",
+    "ingo"
+   ],
+   "tags": [
+    "capacity",
+    "transition-handover"
+   ],
+   "stream": "sdr",
+   "source_id": "S033",
+   "date_collected": "2026-08-20",
+   "confidence": "high",
+   "status": "validated",
+   "year": 2025
+  },
+  {
+   "id": "E0775",
+   "finding_id": "F373",
+   "theme": [
+    "Transition"
+   ],
+   "type": "barrier",
+   "statement": "Handover was aimed at government without government wanting it. Ministries were absorbing service delivery at the same time, so their attention went to operations rather than to taking on coordination.",
+   "level": "national",
+   "countries": [
+    "IRQ"
+   ],
+   "actors": [
+    "gov-national",
+    "cluster",
+    "un-agency"
+   ],
+   "tags": [
+    "transition-handover",
+    "government-engagement"
+   ],
+   "stream": "sdr",
+   "source_id": "S033",
+   "date_collected": "2026-08-20",
+   "confidence": "high",
+   "status": "validated",
+   "year": 2025
+  },
+  {
+   "id": "E0776",
+   "finding_id": "F260",
+   "theme": [
+    "Fundamentals"
+   ],
+   "type": "barrier",
+   "statement": "Consultation happened at every level and did not amount to influence: partners reported that decisions were taken without them, and the disagreement itself was read as not being heard.",
+   "level": "national",
+   "countries": [
+    "IRQ"
+   ],
+   "actors": [
+    "ingo",
+    "local-ngo",
+    "un-agency"
+   ],
+   "tags": [
+    "aap",
+    "partnerships",
+    "coordination-architecture"
+   ],
+   "stream": "sdr",
+   "source_id": "S033",
+   "date_collected": "2026-08-20",
+   "confidence": "high",
+   "status": "validated",
+   "year": 2025
+  },
+  {
+   "id": "E0777",
+   "finding_id": "F1956",
+   "theme": [
+    "ABC"
+   ],
+   "type": "barrier",
+   "statement": "Attendance at area-based groups collapsed once members understood they were not a route to funding, which suggests the participation they reported was never about coordination.",
+   "level": "subnational",
+   "countries": [
+    "IRQ"
+   ],
+   "actors": [
+    "ingo",
+    "local-ngo",
+    "operational-cell"
+   ],
+   "tags": [
+    "funding",
+    "coordination-architecture",
+    "localisation"
+   ],
+   "stream": "sdr",
+   "source_id": "S033",
+   "date_collected": "2026-08-20",
+   "confidence": "high",
+   "status": "validated",
+   "year": 2025
+  },
+  {
+   "id": "E0778",
+   "finding_id": "F1957",
+   "theme": [
+    "ABC",
+    "Transition"
+   ],
+   "type": "practice",
+   "statement": "Area-based groups were abolished and replaced by forums chaired by the governor's office, with the secretariat handed from a UN mission to a government body two years later — a documented case of an area structure being handed over rather than closed.",
+   "level": "subnational",
+   "countries": [
+    "IRQ"
+   ],
+   "actors": [
+    "gov-local",
+    "un-agency",
+    "local-ngo"
+   ],
+   "tags": [
+    "transition-handover",
+    "government-engagement",
+    "coordination-architecture"
+   ],
+   "stream": "sdr",
+   "source_id": "S033",
+   "date_collected": "2026-08-20",
+   "confidence": "high",
+   "status": "validated",
+   "year": 2025
+  },
+  {
+   "id": "E0779",
+   "finding_id": "F1958",
+   "theme": [
+    "Transition"
+   ],
+   "type": "enabler",
+   "statement": "A transition built incrementally over a decade produced nationally led arrangements that held, in contrast to one completed inside a year.",
+   "level": "national",
+   "countries": [
+    "IDN"
+   ],
+   "actors": [
+    "gov-national",
+    "local-ngo",
+    "un-agency"
+   ],
+   "tags": [
+    "transition-handover",
+    "sustainability",
+    "localisation"
+   ],
+   "stream": "sdr",
+   "source_id": "S033",
+   "date_collected": "2026-08-20",
+   "confidence": "high",
+   "status": "validated",
+   "year": 2025
+  },
+  {
+   "id": "E0780",
+   "finding_id": "F1959",
+   "theme": [
+    "ABC"
+   ],
+   "type": "context",
+   "statement": "Area-based coordination is being reported by fewer operations while covering more places: 52 per cent of operations in 2024 against 71 per cent in 2023, but 216 locations against 175. It is contracting and concentrating at the same time.",
+   "level": "global",
+   "countries": [],
+   "actors": [
+    "cluster",
+    "ocha"
+   ],
+   "tags": [
+    "coordination-architecture",
+    "geographic-targeting"
+   ],
+   "stream": "search",
+   "source_id": "S124",
+   "date_collected": "2026-08-20",
+   "confidence": "high",
+   "status": "validated",
+   "year": 2025
+  },
+  {
+   "id": "E0781",
+   "finding_id": "F1727",
+   "theme": [
+    "Fundamentals"
+   ],
+   "type": "barrier",
+   "statement": "Dedicated coordination capacity at subnational level fell to a quarter of posts, and three in five subnational cluster coordinators hold the role alongside another job.",
+   "level": "subnational",
+   "countries": [],
+   "actors": [
+    "cluster",
+    "un-agency"
+   ],
+   "tags": [
+    "capacity",
+    "coordination-architecture"
+   ],
+   "stream": "search",
+   "source_id": "S124",
+   "date_collected": "2026-08-20",
+   "confidence": "high",
+   "status": "validated",
+   "year": 2025
+  },
+  {
+   "id": "E0782",
+   "finding_id": "F335",
+   "theme": [
+    "Transition"
+   ],
+   "type": "barrier",
+   "statement": "Operations already transitioning are projected to lose almost all dedicated coordination capacity, with one left without any fully dedicated national coordinator or information management post.",
+   "level": "national",
+   "countries": [
+    "CMR",
+    "COL",
+    "NGA"
+   ],
+   "actors": [
+    "cluster",
+    "ocha",
+    "donor"
+   ],
+   "tags": [
+    "capacity",
+    "funding",
+    "transition-handover"
+   ],
+   "stream": "search",
+   "source_id": "S124",
+   "date_collected": "2026-08-20",
+   "confidence": "high",
+   "status": "validated",
+   "year": 2025
+  },
+  {
+   "id": "E0783",
+   "finding_id": "F028",
+   "theme": [
+    "Fundamentals"
+   ],
+   "type": "barrier",
+   "statement": "Information management capacity is projected to fall further and faster than coordinator capacity — to a fifth of posts against a third — continuing a pattern in which IM is cut first.",
+   "level": "global",
+   "countries": [],
+   "actors": [
+    "cluster",
+    "un-agency"
+   ],
+   "tags": [
+    "information-management",
+    "capacity"
+   ],
+   "stream": "search",
+   "source_id": "S124",
+   "date_collected": "2026-08-20",
+   "confidence": "high",
+   "status": "validated",
+   "year": 2025
+  },
+  {
+   "id": "E0784",
+   "finding_id": "F1960",
+   "theme": [
+    "Fundamentals"
+   ],
+   "type": "enabler",
+   "statement": "Local and national NGOs held cluster leadership roles in fifteen operations and reached parity with donors in humanitarian country team seats, so local leadership of coordination is measurable rather than aspirational.",
+   "level": "global",
+   "countries": [],
+   "actors": [
+    "local-ngo",
+    "cluster"
+   ],
+   "tags": [
+    "localisation",
+    "coordination-architecture"
+   ],
+   "stream": "search",
+   "source_id": "S124",
+   "date_collected": "2026-08-20",
+   "confidence": "high",
+   "status": "validated",
+   "year": 2025
   }
  ],
  "sources": [
@@ -29312,11 +29864,11 @@ window.SITE_DATA = {
   },
   {
    "source_id": "S033",
-   "title": "Coordination in Transition",
+   "title": "Coordination in Transition: How NGOs are Navigating and Adapting beyond the IASC — Lessons from Iraq & Indonesia",
    "organisation": "ICVA",
    "year": "2025",
    "type": "report",
-   "url": "https://www.icvanetwork.org/resource/coordination-for-ngos-after-transition-of-iasc-coordination-structures/",
+   "url": "https://www.icvanetwork.org/uploads/2025/10/Coordination-in-Transition-How-NGOs-are-Navigating-and-Adapting-beyond-the-IASC_Final_EN.pdf",
    "stream": "sdr",
    "date_added": "2026-07-17",
    "access": "public",
@@ -30555,6 +31107,20 @@ window.SITE_DATA = {
    "legacy_id": "",
    "source_group": "",
    "label": "Global WASH Cluster 2026"
+  },
+  {
+   "source_id": "S124",
+   "title": "The Pulse of Humanitarian Coordination 2024: Overview of IASC Structures at the Country Level",
+   "organisation": "OCHA",
+   "year": "2025",
+   "type": "report",
+   "url": "https://reliefweb.int/node/4207612",
+   "stream": "search",
+   "date_added": "2026-08-20",
+   "access": "public",
+   "legacy_id": "",
+   "source_group": "",
+   "label": "OCHA 2025"
   }
  ]
 };
