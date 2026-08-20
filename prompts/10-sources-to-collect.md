@@ -10,7 +10,7 @@ Drop files into `/raw/` (gitignored, never published) named `S083 - short title.
 
 ## Block A — GWC's own material. Only you have these.
 
-**15 sources · 208 records.** The largest single block in the base, and the fastest to close.
+**13 sources · 184 records.** The largest single block in the base, and the fastest to close.
 
 | Source | Records | Year | Organisation | Title |
 |---|---|---|---|---|
@@ -18,8 +18,6 @@ Drop files into `/raw/` (gitignored, never published) named `S083 - short title.
 | `S084` | **38** | 2026 | GWC | Operational Support Clinic — Transition. Facilitated peer-exchange transcript, |
 | `S045` | **36** | 2026 | GWC | GWC NCP Validation Workshop — Briefing Note: Area-Based Coordination and Trans |
 | `S085` | **22** | 2026 | GWC | Transition Rapid Key Informant Interviews with selected NCPs |
-| `S102` | **13** | 2026 | Global WASH Cluster | Secondary Data Review — Transition in Humanitarian Settings |
-| `S101` | **11** | 2026 | Global WASH Cluster | Secondary Data Review — Area-Based Coordination (V17) |
 | `S042` | **9** | 2026 | GWC | ABC & WASH: Theory, Challenges and Experiences — Webinar |
 | `S043` | **9** | 2024 | GWC | Area-Based Humanitarian Coordination — Internal Reflections |
 | `S037` | **4** | 2025 | Global Health Cluster | Partner Meeting Note, 19–20 June 2025 |
@@ -30,7 +28,7 @@ Drop files into `/raw/` (gitignored, never published) named `S083 - short title.
 | `S022` | **1** | ? | Health Cluster | Session 2 Area Based Coordination |
 | `S038` | **1** | 2024 | Global Shelter Cluster | Messages from SC coordinators on ABC |
 
-> `S101` and `S102` are the v1 Secondary Data Reviews themselves. Worth separating: are they *sources of evidence*, or the synthesis layer whose attributions we now know are unreliable? If the latter, their 24 records should point at the underlying documents instead.
+> **`S101` and `S102` are settled — do not collect them.** They were the v1 Secondary Data Reviews, the synthesis layer rather than sources of evidence. Their 24 records were withdrawn on 20/08/2026 because extracting from a summary of the GWC's own consultation made that consultation count twice. Both stay in the registry marked as a deliberate decision.
 
 ---
 
@@ -86,11 +84,34 @@ Drop files into `/raw/` (gitignored, never published) named `S083 - short title.
 
 1. **`S083`, `S084`, `S045`, `S085`** — 147 records between them, all yours, none quoted. Closing these settles whether the v1 problem extends to the workshop material.
 
-2. **`S101`, `S102`** — the SDRs. A decision, not a download.
+2. **`S055`, `S060`, `S061`, `S013`, `S020`, `S029`** — highest-record published sources.
 
-3. **`S055`, `S060`, `S061`, `S013`, `S020`, `S029`** — highest-record published sources.
-
+3. **Block C** — six direct links, all confirmed live. Ten minutes of clicking.
 4. Everything else, as it turns up.
+
+---
+
+## Block C — found by search, blocked at the download. Direct links.
+
+**Found during the A3 Transition run, 20/08/2026.** These are not registry gaps — they are documents identified as worth having where the fetch failed. Every link below was confirmed live. Save to `sources/pdf/` and say so; nothing needs renaming.
+
+| Why it matters | Link |
+|---|---|
+| **Flagship Initiative Final Report** (IDS/OCHA, Mar 2026). The independent evaluation of the initiative whose three pillars were community engagement, **area-based coordination** and localised financing, across Niger, South Sudan, Philippines, Colombia and Somalia. ReliefWeb returns the introduction only. Probably the single highest-value outstanding document for the ABC theme. | <https://reliefweb.int/attachments/59caeb29-4cab-4bbe-96f9-98cd53223c61/Flagship%20Initiative%20Final%20Report.pdf> |
+| **Flagship Initiative evaluation launch and roundtable note** (OCHA, Apr 2026). The discussion around the evaluation — often where the disagreements are recorded. | <https://reliefweb.int/attachments/2de2c6f9-b644-4a81-b2f9-7c5d8794c20f/20260217%20Final%20evaluation%20launch%20and%20roundtable%20note.pdf> |
+| **Resultados de la Iniciativa Flagship en Colombia** (OCHA Colombia, Mar 2026). Spanish and English versions. Colombia is one of the countries where GWC-only evidence is worst. | <https://reliefweb.int/attachments/45a55cf0-08b0-48e9-b572-5437de5d83aa/ENG_FS-Colombia_Resultados_2025%20Pub%202026%20ENG_VF.pdf> |
+| **IASC Guidance on Cluster Transition and Deactivation** (2025). Guidance, so proxy evidence at best — but it is the reference document every transition is measured against, and the base does not hold it. | <https://reliefweb.int/attachments/cb2fb5de-4415-4ab0-bb7b-c60f718573bb/IASC%20Guidance%20on%20Cluster%20Transition%20and%20Deactivation%202025.pdf> |
+| **CCCM Cluster Transition Strategy — Ukraine** (CCCM/IOM/UNHCR, Nov 2025). A live partial handover: functions split between government, local actors, and merger with Protection and Shelter. | <https://reliefweb.int/attachments/5878b2b6-c9db-5763-b82b-7b541b8503b4/CCCM%20Cluster%20Transition%20Strategy.pdf> |
+| **OCHA ABC typology study** (Derzsi-Horváth, 2025) — `S041`. Already saved and fully extracted, listed here so nobody hunts for it again. | <https://reliefweb.int/attachments/1c0535ae-fc60-4a7b-af64-a38059a8d3ce/FINAL_ABC%20Lessons%20and%20Implications_30June2025.pdf> |
+
+**Why these need a person.** The ReliefWeb API returns body text for many reports but the extraction is often partial — for several of the above it stops at the executive summary. The attachment host then refuses programmatic requests with HTTP 404, which reads as a missing file rather than a refused client. A browser gets them in seconds. This is the situation rule B1 exists for, not a failure of the method.
+
+### Still not found
+
+- **French-language material on transition.** Nothing usable surfaced for Haiti, Burkina Faso, Niger or CAR, which between them account for a large share of the Transition findings. The one candidate, a 2014 academic article on Haitian clusters, sits behind `cairn.info` and returns nothing. Worth asking regional colleagues rather than searching again.
+- **Anything on successor reporting systems.** `F214` and `F356` remain GWC-only.
+
+---
 
 ## Already resolved this round
 
