@@ -111,12 +111,12 @@ window.SITE_DATA = {
   "footer_note": "Every finding traces to a source ID in the Sources tab. If something looks wrong, it probably is — say so and it will be corrected."
  },
  "schema": 3,
- "generated": "2026-08-19",
+ "generated": "2026-08-20",
  "taxonomy_version": "0.9.0",
  "stats": {
-  "records": 752,
-  "findings": 170,
-  "sources": 110,
+  "records": 758,
+  "findings": 174,
+  "sources": 111,
   "countries": 30,
   "withheld_internal": 2
  },
@@ -2822,26 +2822,31 @@ window.SITE_DATA = {
    "finding_id": "F1727",
    "statement": "A cluster lead holding both funding or operational responsibility inside its own agency and the mandate to coordinate that agency's work carries a structural conflict of interest, which is separate from the workload question usually raised about double-hatting.",
    "theme": [
-    "ABC"
+    "ABC",
+    "Fundamentals"
    ],
    "example": "",
    "type": "barrier",
-   "strength": 1,
-   "n_records": 1,
-   "n_sources": 1,
-   "n_documents": 1,
-   "n_streams": 1,
-   "n_checked": 1,
+   "strength": 3,
+   "n_records": 2,
+   "n_sources": 2,
+   "n_documents": 2,
+   "n_streams": 2,
+   "n_checked": 2,
    "relations": [],
-   "period": "2024",
+   "period": "2024 – Aug 2026",
    "period_from": "2024",
-   "period_to": "2024",
-   "period_span": 0,
+   "period_to": "Aug 2026",
+   "period_span": 2,
    "streams": [
-    "sdr"
+    "sdr",
+    "transcript"
    ],
-   "countries": [],
+   "countries": [
+    "HND"
+   ],
    "tags": [
+    "capacity",
     "coordination-architecture",
     "performance"
    ],
@@ -2850,7 +2855,8 @@ window.SITE_DATA = {
     "un-agency"
    ],
    "record_ids": [
-    "E0671"
+    "E0671",
+    "E0768"
    ],
    "unmerged": false
   },
@@ -4225,6 +4231,165 @@ window.SITE_DATA = {
    ],
    "record_ids": [
     "E0766"
+   ],
+   "unmerged": false
+  },
+  {
+   "finding_id": "F1952",
+   "statement": "Partners concentrate where access is easiest and compete for the same reachable locations, leaving remote communities uncovered. Geographic targeting fails through the accumulation of individually rational choices rather than through a bad plan.",
+   "theme": [
+    "ABC"
+   ],
+   "example": "Honduras: partners working along the roadside rather than moving into more distant communities, and competing for the accessible ground.",
+   "type": "barrier",
+   "strength": 1,
+   "n_records": 1,
+   "n_sources": 1,
+   "n_documents": 1,
+   "n_streams": 1,
+   "n_checked": 1,
+   "relations": [],
+   "period": "Aug 2026",
+   "period_from": "Aug 2026",
+   "period_to": "Aug 2026",
+   "period_span": 0,
+   "streams": [
+    "transcript"
+   ],
+   "countries": [
+    "HND"
+   ],
+   "tags": [
+    "coordination-architecture",
+    "geographic-targeting"
+   ],
+   "actors": [
+    "cluster",
+    "ingo"
+   ],
+   "record_ids": [
+    "E0769"
+   ],
+   "unmerged": false
+  },
+  {
+   "finding_id": "F1953",
+   "statement": "Independent geographic mapping by two agencies produces overlap that surfaces only at implementation, and resolving it costs coverage as well as time — one agency withdraws from facilities it had already committed to.",
+   "theme": [
+    "ABC"
+   ],
+   "example": "Honduras: two UN agencies mapped the same municipalities; the WASH response withdrew from several health facilities, delaying implementation.",
+   "type": "barrier",
+   "strength": 1,
+   "n_records": 1,
+   "n_sources": 1,
+   "n_documents": 1,
+   "n_streams": 1,
+   "n_checked": 1,
+   "relations": [],
+   "period": "Aug 2026",
+   "period_from": "Aug 2026",
+   "period_to": "Aug 2026",
+   "period_span": 0,
+   "streams": [
+    "transcript"
+   ],
+   "countries": [
+    "HND"
+   ],
+   "tags": [
+    "geographic-targeting",
+    "multisector"
+   ],
+   "actors": [
+    "cluster",
+    "un-agency"
+   ],
+   "record_ids": [
+    "E0770"
+   ],
+   "unmerged": false
+  },
+  {
+   "finding_id": "F1954",
+   "statement": "Where a government emergency system has already convened a platform and mapped the caseload, the response can attach to that mapping as a complement instead of running its own targeting.",
+   "theme": [
+    "Transition"
+   ],
+   "example": "Honduras: a drought platform convened inside the national emergency system, with the WASH response inserting itself against the government's own mapping of affected producers.",
+   "type": "practice",
+   "strength": 1,
+   "n_records": 1,
+   "n_sources": 1,
+   "n_documents": 1,
+   "n_streams": 1,
+   "n_checked": 1,
+   "relations": [
+    {
+     "type": "qualifies",
+     "finding_id": "F304",
+     "direction": "out"
+    }
+   ],
+   "period": "Aug 2026",
+   "period_from": "Aug 2026",
+   "period_to": "Aug 2026",
+   "period_span": 0,
+   "streams": [
+    "transcript"
+   ],
+   "countries": [
+    "HND"
+   ],
+   "tags": [
+    "coordination-architecture",
+    "geographic-targeting",
+    "government-engagement"
+   ],
+   "actors": [
+    "cluster",
+    "gov-national",
+    "un-agency"
+   ],
+   "record_ids": [
+    "E0771"
+   ],
+   "unmerged": false
+  },
+  {
+   "finding_id": "F1955",
+   "statement": "A general messaging group used as the platform's only information channel collapses every audience and every purpose into one stream, so nothing can be aimed and nothing can be prioritised.",
+   "theme": [
+    "Fundamentals"
+   ],
+   "example": "Honduras: a WhatsApp group carrying anything sector-related, identified by the coordination lead as the thing to replace.",
+   "type": "barrier",
+   "strength": 1,
+   "n_records": 1,
+   "n_sources": 1,
+   "n_documents": 1,
+   "n_streams": 1,
+   "n_checked": 1,
+   "relations": [],
+   "period": "Aug 2026",
+   "period_from": "Aug 2026",
+   "period_to": "Aug 2026",
+   "period_span": 0,
+   "streams": [
+    "transcript"
+   ],
+   "countries": [
+    "HND"
+   ],
+   "tags": [
+    "coordination-architecture",
+    "information-management"
+   ],
+   "actors": [
+    "cluster"
+   ],
+   "record_ids": [
+    "E0772"
    ],
    "unmerged": false
   },
@@ -5990,7 +6155,13 @@ window.SITE_DATA = {
    "n_documents": 8,
    "n_streams": 3,
    "n_checked": 7,
-   "relations": [],
+   "relations": [
+    {
+     "type": "qualifies",
+     "finding_id": "F1954",
+     "direction": "in"
+    }
+   ],
    "period": "2007 – Aug 2026",
    "period_from": "2007",
    "period_to": "Aug 2026",
@@ -6515,11 +6686,11 @@ window.SITE_DATA = {
    "example": "Ethiopia — a six-month handover deadline was set internally and tied to the coordinator's contract ending. The humanitarian coordination office agreed six months was not enough; the timetable did not change.",
    "type": "barrier",
    "strength": 5,
-   "n_records": 20,
-   "n_sources": 11,
-   "n_documents": 13,
+   "n_records": 21,
+   "n_sources": 12,
+   "n_documents": 14,
    "n_streams": 4,
-   "n_checked": 11,
+   "n_checked": 12,
    "relations": [],
    "period": "2013 – Aug 2026",
    "period_from": "2013",
@@ -6578,7 +6749,8 @@ window.SITE_DATA = {
     "E0649",
     "E0665",
     "E0667",
-    "E0686"
+    "E0686",
+    "E0767"
    ],
    "unmerged": false,
    "highlight": {
@@ -29333,6 +29505,169 @@ window.SITE_DATA = {
    "confidence": "high",
    "status": "validated",
    "year": 2022
+  },
+  {
+   "id": "E0767",
+   "finding_id": "F333",
+   "theme": [
+    "Transition"
+   ],
+   "type": "barrier",
+   "statement": "Reactivating a dormant coordination platform is being run to a project deadline rather than to a readiness assessment: terms of reference, contingency plan and partner re-engagement are all due by the month a funded project ends.",
+   "level": "national",
+   "countries": [
+    "HND"
+   ],
+   "actors": [
+    "cluster",
+    "un-agency"
+   ],
+   "tags": [
+    "transition-handover",
+    "coordination-architecture"
+   ],
+   "stream": "transcript",
+   "source_id": "S123",
+   "date_collected": "2026-08-18",
+   "confidence": "high",
+   "status": "validated",
+   "year": 2026
+  },
+  {
+   "id": "E0768",
+   "finding_id": "F1727",
+   "theme": [
+    "Fundamentals"
+   ],
+   "type": "barrier",
+   "statement": "The coordination function is held by someone simultaneously running a multi-partner implementation project for their own agency, so platform tasks compete directly with delivery deadlines.",
+   "level": "national",
+   "countries": [
+    "HND"
+   ],
+   "actors": [
+    "cluster",
+    "un-agency"
+   ],
+   "tags": [
+    "capacity",
+    "coordination-architecture"
+   ],
+   "stream": "transcript",
+   "source_id": "S123",
+   "date_collected": "2026-08-18",
+   "confidence": "high",
+   "status": "validated",
+   "year": 2026
+  },
+  {
+   "id": "E0769",
+   "finding_id": "F1952",
+   "theme": [
+    "ABC"
+   ],
+   "type": "barrier",
+   "statement": "Partners concentrate where access is easiest and compete for the same reachable locations, so remote communities go uncovered. The targeting failure is the accumulation of individually rational choices, not a bad plan.",
+   "level": "national",
+   "countries": [
+    "HND"
+   ],
+   "actors": [
+    "cluster",
+    "ingo"
+   ],
+   "tags": [
+    "geographic-targeting",
+    "coordination-architecture"
+   ],
+   "stream": "transcript",
+   "source_id": "S123",
+   "date_collected": "2026-08-18",
+   "confidence": "high",
+   "status": "validated",
+   "year": 2026
+  },
+  {
+   "id": "E0770",
+   "finding_id": "F1953",
+   "theme": [
+    "ABC"
+   ],
+   "type": "barrier",
+   "statement": "Two UN agencies mapped the same municipalities independently and the overlap surfaced only at implementation. It was resolved by one withdrawing from health facilities it had already committed to, and the deconfliction itself delayed the response.",
+   "level": "national",
+   "countries": [
+    "HND"
+   ],
+   "actors": [
+    "un-agency",
+    "cluster"
+   ],
+   "tags": [
+    "geographic-targeting",
+    "multisector"
+   ],
+   "stream": "transcript",
+   "source_id": "S123",
+   "date_collected": "2026-08-18",
+   "confidence": "high",
+   "status": "validated",
+   "year": 2026
+  },
+  {
+   "id": "E0771",
+   "finding_id": "F1954",
+   "theme": [
+    "Transition"
+   ],
+   "type": "practice",
+   "statement": "Where a government emergency system had already convened a platform and mapped the affected caseload, the WASH response attached itself to that mapping as a complement rather than running a parallel targeting exercise.",
+   "level": "national",
+   "countries": [
+    "HND"
+   ],
+   "actors": [
+    "gov-national",
+    "cluster",
+    "un-agency"
+   ],
+   "tags": [
+    "government-engagement",
+    "geographic-targeting",
+    "coordination-architecture"
+   ],
+   "stream": "transcript",
+   "source_id": "S123",
+   "date_collected": "2026-08-18",
+   "confidence": "medium",
+   "status": "validated",
+   "year": 2026
+  },
+  {
+   "id": "E0772",
+   "finding_id": "F1955",
+   "theme": [
+    "Fundamentals"
+   ],
+   "type": "barrier",
+   "statement": "The platform's only information channel is a general messaging group where anything sector-related is posted, with no separation between audiences and no distinction between information to note and information to act on.",
+   "level": "national",
+   "countries": [
+    "HND"
+   ],
+   "actors": [
+    "cluster"
+   ],
+   "tags": [
+    "information-management",
+    "coordination-architecture"
+   ],
+   "stream": "transcript",
+   "source_id": "S123",
+   "date_collected": "2026-08-18",
+   "confidence": "high",
+   "status": "validated",
+   "year": 2026
   }
  ],
  "sources": [
@@ -30875,6 +31210,20 @@ window.SITE_DATA = {
    "legacy_id": "",
    "source_group": "",
    "label": "IECAH 2022"
+  },
+  {
+   "source_id": "S123",
+   "title": "Country consultation — Honduras (platform reactivation, terms of reference and contingency planning)",
+   "organisation": "Global WASH Cluster",
+   "year": "2026",
+   "type": "interview",
+   "url": "",
+   "stream": "transcript",
+   "date_added": "2026-08-20",
+   "access": "restricted",
+   "legacy_id": "",
+   "source_group": "",
+   "label": "Global WASH Cluster 2026"
   }
  ]
 };
