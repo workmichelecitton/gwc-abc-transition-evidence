@@ -2,7 +2,7 @@
 
 Generated from `sources.csv`. Every source below carries evidence records and has no link, so nobody can check what it says — including you, in a year.
 
-**54 sources · 283 records resting on them.**
+**52 sources · 259 records resting on them**, plus a block of direct links at the end for documents found by search but blocked at the download.
 
 Drop files into `/raw/` (gitignored, never published) named `S083 - short title.pdf`. The filename is the manifest.
 
@@ -80,17 +80,6 @@ Drop files into `/raw/` (gitignored, never published) named `S083 - short title.
 
 ---
 
-## Priority order
-
-1. **`S083`, `S084`, `S045`, `S085`** — 147 records between them, all yours, none quoted. Closing these settles whether the v1 problem extends to the workshop material.
-
-2. **`S055`, `S060`, `S061`, `S013`, `S020`, `S029`** — highest-record published sources.
-
-3. **Block C** — six direct links, all confirmed live. Ten minutes of clicking.
-4. Everything else, as it turns up.
-
----
-
 ## Block C — found by search, blocked at the download. Direct links.
 
 **Found during the A3 Transition run, 20/08/2026.** These are not registry gaps — they are documents identified as worth having where the fetch failed. Every link below was confirmed live. Save to `sources/pdf/` and say so; nothing needs renaming.
@@ -113,6 +102,14 @@ Drop files into `/raw/` (gitignored, never published) named `S083 - short title.
 
 ---
 
+## Priority order
+
+1. **`S083`, `S084`, `S045`, `S085`** — 147 records between them, all yours, none quoted. Closing these settles whether the v1 problem extends to the workshop material.
+
+2. **`S055`, `S060`, `S061`, `S013`, `S020`, `S029`** — highest-record published sources.
+
+3. **Block C** — six direct links, all confirmed live. Ten minutes of clicking.
+4. Everything else, as it turns up.
 ## Already resolved this round
 
 - `S052` IASC Annex E — found, fetched, read, and its five records checked. One held up, three were not in the document.
