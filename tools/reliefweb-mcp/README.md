@@ -62,6 +62,16 @@ That drops situation reports, news and appeals, which is most of the noise. `the
 
 Python 3.8 or later. Nothing else — standard library only, deliberately. This has to keep working after whoever wrote it has moved on, on whatever machine it lands on, without a package manager.
 
+## If you have just cloned this repository
+
+**The connector will appear to work and will not work.** Three things are true of a fresh clone, found by actually cloning it and calling a tool:
+
+1. **There is no `appname.txt`.** It is gitignored, because an appname identifies whoever is calling and should not be shared. You need your own — see the section above. The server now says so plainly on the first call and labels its tools `[NOT CONFIGURED]`, rather than failing with a bare HTTP 403.
+2. **`.mcp.json` uses a relative path**, `tools/reliefweb-mcp/server.py`. That resolves only if the client launches the server from the repository root. If the tools never appear at all, this is why: replace it with an absolute path.
+3. **`.mcp.json` says `python`.** Correct on Windows. On macOS and most Linux there is no `python` on the PATH, only `python3` — change the `command` field.
+
+None of the three is a defect in the server. All three are things that will cost somebody an afternoon if they are not written down.
+
 ## Registering it
 
 **This repository already carries `.mcp.json` at its root**, so a client that opens this folder as a project should pick the server up with no configuration at all. That is the intended route — the connector travels with the repository, and the next person to work on this does not have to be told about it.

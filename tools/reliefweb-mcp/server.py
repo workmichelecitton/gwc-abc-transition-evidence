@@ -454,7 +454,32 @@ TOOLS = [
 ]
 
 
+SETUP_HELP = """This connector has no ReliefWeb appname, so every request will be refused.
+
+That is expected on a fresh clone: appname.txt is gitignored, because an
+appname identifies whoever is calling and should not be shared. You need your
+own. It is free and takes a minute:
+
+  1. Request one at https://apidoc.reliefweb.int/parameters#appname
+     They ask for organisation and purpose, and want the name to combine both
+     plus a few random characters, e.g. gwc-abc-evidence-7f3a. They reply by
+     email, usually within a day.
+  2. Save it in tools/reliefweb-mcp/appname.txt — one line, nothing else.
+     Or set RELIEFWEB_APPNAME in your environment, which takes precedence.
+  3. Restart your client so the server reloads.
+
+Until then this connector cannot fetch anything. Nothing else is wrong with it."""
+
+
 def _call(name, args):
+    # Checked before any request rather than after. Without this the tools are
+    # advertised, look installed, and fail on first use with a bare HTTP 403 —
+    # which reads as a broken connector rather than a missing one-line file.
+    # Found by cloning the repo fresh and calling a tool, which is what anyone
+    # inheriting this will do.
+    if APPNAME.startswith("REPLACE-ME"):
+        raise RuntimeError(SETUP_HELP)
+
     if name == "reliefweb_search":
         res = search_reports(
             query=args.get("query", ""),
@@ -523,7 +548,14 @@ def serve():
                 "serverInfo": {"name": "reliefweb", "version": "1.0.0"},
             })
         elif method == "tools/list":
-            _reply(rid, {"tools": TOOLS})
+            # Say it in the description too. A client that lists tools without
+            # calling them should still show that setup is outstanding.
+            tools = TOOLS
+            if APPNAME.startswith("REPLACE-ME"):
+                tools = [dict(t, description="[NOT CONFIGURED — needs a ReliefWeb "
+                                             "appname, see tools/reliefweb-mcp/README.md] "
+                                             + t["description"]) for t in TOOLS]
+            _reply(rid, {"tools": tools})
         elif method == "tools/call":
             try:
                 text = _call(params.get("name"), params.get("arguments") or {})
