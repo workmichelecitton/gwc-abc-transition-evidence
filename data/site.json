@@ -106,7 +106,8 @@
    "Coverage is uneven. Countries with a recent check-in are heavily represented; others are absent. An absence here means nobody has been asked, not that nothing is happening.",
    "Low strength does not mean untrue. It means one source said it and nobody else has been asked.",
    "The strength count measures corroboration, not severity. A widely reported problem is not necessarily the most serious one.",
-   "Findings are a snapshot of what has been collected so far, not a systematic review."
+   "Findings are a snapshot of what has been collected so far, not a systematic review.",
+   "Failure is better documented than success. Transitions that went badly get written up; ones that worked quietly do not, and evaluations report problems more readily than routine practice. This base runs roughly three barriers to every enabler, which says as much about what gets published as about what happens."
   ],
   "footer_note": "Every finding traces to a source ID in the Sources tab. If something looks wrong, it probably is — say so and it will be corrected."
  },
@@ -114,8 +115,8 @@
  "generated": "2026-08-20",
  "taxonomy_version": "0.9.0",
  "stats": {
-  "records": 758,
-  "findings": 174,
+  "records": 734,
+  "findings": 173,
   "sources": 111,
   "countries": 30,
   "withheld_internal": 2
@@ -1839,10 +1840,10 @@
    ],
    "example": "",
    "type": "recommendation",
-   "strength": 4,
-   "n_records": 10,
-   "n_sources": 3,
-   "n_documents": 3,
+   "strength": 3,
+   "n_records": 8,
+   "n_sources": 2,
+   "n_documents": 2,
    "n_streams": 2,
    "n_checked": 8,
    "relations": [],
@@ -1877,9 +1878,7 @@
     "E0075",
     "E0076",
     "E0077",
-    "E0078",
-    "E0207",
-    "E0221"
+    "E0078"
    ],
    "unmerged": false,
    "highlight": {
@@ -1969,11 +1968,11 @@
    ],
    "example": "",
    "type": "recommendation",
-   "strength": 4,
-   "n_records": 4,
-   "n_sources": 3,
-   "n_documents": 3,
-   "n_streams": 2,
+   "strength": 1,
+   "n_records": 1,
+   "n_sources": 1,
+   "n_documents": 1,
+   "n_streams": 1,
    "n_checked": 1,
    "relations": [],
    "period": "2026",
@@ -1981,29 +1980,20 @@
    "period_to": "2026",
    "period_span": 0,
    "streams": [
-    "sdr",
     "workshop"
    ],
    "countries": [],
    "tags": [
     "capacity",
     "funding",
-    "information-management",
-    "nexus",
     "transition-handover"
    ],
    "actors": [
     "cluster",
-    "development",
-    "donor",
-    "ocha",
     "un-agency"
    ],
    "record_ids": [
-    "E0081",
-    "E0220",
-    "E0368",
-    "E0369"
+    "E0081"
    ],
    "unmerged": false,
    "highlight": {
@@ -4499,9 +4489,9 @@
    "example": "Palestine — a working division of labour has the cluster providing the analytical framework, area structures collecting data within it, and the cluster retaining the analysis.",
    "type": "enabler",
    "strength": 5,
-   "n_records": 19,
-   "n_sources": 13,
-   "n_documents": 13,
+   "n_records": 17,
+   "n_sources": 12,
+   "n_documents": 12,
    "n_streams": 3,
    "n_checked": 12,
    "relations": [
@@ -4567,8 +4557,6 @@
     "E0194",
     "E0198",
     "E0204",
-    "E0208",
-    "E0216",
     "E0312",
     "E0480",
     "E0677",
@@ -4647,9 +4635,9 @@
    "example": "Mali — three separate channels collect needs data, including a government framework running twice a year on a cycle that does not align with planning.",
    "type": "barrier",
    "strength": 5,
-   "n_records": 11,
-   "n_sources": 10,
-   "n_documents": 10,
+   "n_records": 10,
+   "n_sources": 9,
+   "n_documents": 9,
    "n_streams": 2,
    "n_checked": 8,
    "relations": [],
@@ -4686,14 +4674,12 @@
     "gov-national",
     "ingo",
     "local-ngo",
-    "ocha",
-    "operational-cell"
+    "ocha"
    ],
    "record_ids": [
     "E0062",
     "E0119",
     "E0120",
-    "E0218",
     "E0415",
     "E0421",
     "E0528",
@@ -4904,9 +4890,9 @@
    "example": "Myanmar — subnational clusters were redefined as technical advisers and stopped holding standing meetings. During a sudden emergency no forum held the question of who was working where.",
    "type": "barrier",
    "strength": 4,
-   "n_records": 22,
-   "n_sources": 7,
-   "n_documents": 10,
+   "n_records": 20,
+   "n_sources": 6,
+   "n_documents": 9,
    "n_streams": 3,
    "n_checked": 9,
    "relations": [],
@@ -4958,8 +4944,6 @@
     "E0173",
     "E0206",
     "E0217",
-    "E0222",
-    "E0223",
     "E0675"
    ],
    "unmerged": false,
@@ -5281,9 +5265,9 @@
    "example": "Bangladesh — around one eighth of the pooled fund allocation reaching the sector went to international NGOs, and the remainder to UN agencies.",
    "type": "barrier",
    "strength": 5,
-   "n_records": 8,
-   "n_sources": 8,
-   "n_documents": 8,
+   "n_records": 6,
+   "n_sources": 6,
+   "n_documents": 6,
    "n_streams": 4,
    "n_checked": 5,
    "relations": [],
@@ -5302,7 +5286,6 @@
     "SDN"
    ],
    "tags": [
-    "coordination-architecture",
     "funding",
     "localisation",
     "partnerships",
@@ -5319,9 +5302,7 @@
    "record_ids": [
     "E0155",
     "E0164",
-    "E0215",
     "E0285",
-    "E0370",
     "E0500",
     "E0690",
     "E0758"
@@ -5434,9 +5415,9 @@
    "example": "",
    "type": "barrier",
    "strength": 4,
-   "n_records": 5,
-   "n_sources": 5,
-   "n_documents": 5,
+   "n_records": 4,
+   "n_sources": 4,
+   "n_documents": 4,
    "n_streams": 2,
    "n_checked": 2,
    "relations": [],
@@ -5470,8 +5451,7 @@
     "E0154",
     "E0156",
     "E0165",
-    "E0197",
-    "E0224"
+    "E0197"
    ],
    "unmerged": false,
    "highlight": {
@@ -6084,9 +6064,9 @@
    "example": "Iraq — coordination functions were redistributed across several successor arrangements without the links between them being set out, and newly established area structures were later found to cover only part of the displaced population.",
    "type": "barrier",
    "strength": 5,
-   "n_records": 11,
-   "n_sources": 7,
-   "n_documents": 9,
+   "n_records": 10,
+   "n_sources": 6,
+   "n_documents": 8,
    "n_streams": 2,
    "n_checked": 2,
    "relations": [],
@@ -6124,7 +6104,6 @@
     "E0212",
     "E0213",
     "E0214",
-    "E0225",
     "E0226",
     "E0227",
     "E0228",
@@ -6570,9 +6549,9 @@
    "example": "Lebanon — water establishments could not fund basic operations after currency collapse, even where repairs had been financed internationally.",
    "type": "barrier",
    "strength": 5,
-   "n_records": 9,
-   "n_sources": 7,
-   "n_documents": 7,
+   "n_records": 8,
+   "n_sources": 6,
+   "n_documents": 6,
    "n_streams": 2,
    "n_checked": 4,
    "relations": [],
@@ -6609,7 +6588,6 @@
    ],
    "record_ids": [
     "E0251",
-    "E0350",
     "E0351",
     "E0352",
     "E0355",
@@ -6686,9 +6664,9 @@
    "example": "Ethiopia — a six-month handover deadline was set internally and tied to the coordinator's contract ending. The humanitarian coordination office agreed six months was not enough; the timetable did not change.",
    "type": "barrier",
    "strength": 5,
-   "n_records": 21,
-   "n_sources": 12,
-   "n_documents": 14,
+   "n_records": 19,
+   "n_sources": 11,
+   "n_documents": 13,
    "n_streams": 4,
    "n_checked": 12,
    "relations": [],
@@ -6740,8 +6718,6 @@
     "E0273",
     "E0274",
     "E0275",
-    "E0367",
-    "E0373",
     "E0384",
     "E0553",
     "E0562",
@@ -6769,9 +6745,9 @@
    "example": "Iraq — international humanitarian funding fell from around 1.8 billion to 265 million US dollars, which forced an accelerated transition.",
    "type": "context",
    "strength": 5,
-   "n_records": 14,
-   "n_sources": 8,
-   "n_documents": 10,
+   "n_records": 13,
+   "n_sources": 7,
+   "n_documents": 9,
    "n_streams": 4,
    "n_checked": 8,
    "relations": [],
@@ -6798,7 +6774,6 @@
     "funding",
     "geographic-targeting",
     "guidance",
-    "hpc",
     "localisation",
     "performance",
     "pooled-funds",
@@ -6822,7 +6797,6 @@
     "E0261",
     "E0263",
     "E0264",
-    "E0365",
     "E0568",
     "E0571",
     "E0642",
@@ -7171,10 +7145,10 @@
    "example": "Mali — the government counterpart changed three times in one year: the official was promoted, the replacement took extended sick leave, and a third arrived without the background.",
    "type": "barrier",
    "strength": 5,
-   "n_records": 8,
-   "n_sources": 7,
-   "n_documents": 7,
-   "n_streams": 3,
+   "n_records": 7,
+   "n_sources": 6,
+   "n_documents": 6,
+   "n_streams": 2,
    "n_checked": 6,
    "relations": [],
    "period": "2026 – Aug 2026",
@@ -7182,7 +7156,6 @@
    "period_to": "Aug 2026",
    "period_span": 0,
    "streams": [
-    "sdr",
     "transcript",
     "workshop"
    ],
@@ -7209,7 +7182,6 @@
    ],
    "record_ids": [
     "E0298",
-    "E0299",
     "E0375",
     "E0454",
     "E0537",
@@ -7923,9 +7895,9 @@
    "example": "",
    "type": "recommendation",
    "strength": 4,
-   "n_records": 11,
-   "n_sources": 5,
-   "n_documents": 8,
+   "n_records": 9,
+   "n_sources": 4,
+   "n_documents": 7,
    "n_streams": 3,
    "n_checked": 5,
    "relations": [],
@@ -7966,8 +7938,6 @@
     "E0358",
     "E0359",
     "E0360",
-    "E0366",
-    "E0372",
     "E0542",
     "E0616",
     "E0627",
@@ -7990,10 +7960,10 @@
    "example": "Nigeria — rather than assuming what the ministry's gaps were, the cluster commissioned a capacity gap analysis first, on the basis that describing capacity as weak does not tell you what to fund.",
    "type": "recommendation",
    "strength": 4,
-   "n_records": 8,
-   "n_sources": 5,
-   "n_documents": 7,
-   "n_streams": 3,
+   "n_records": 6,
+   "n_sources": 3,
+   "n_documents": 5,
+   "n_streams": 2,
    "n_checked": 6,
    "relations": [],
    "period": "2026 – Jul 2026",
@@ -8001,7 +7971,6 @@
    "period_to": "Jul 2026",
    "period_span": 0,
    "streams": [
-    "sdr",
     "transcript",
     "workshop"
    ],
@@ -8018,7 +7987,6 @@
    ],
    "actors": [
     "cluster",
-    "gov-local",
     "gov-national",
     "local-ngo",
     "un-agency"
@@ -8026,9 +7994,7 @@
    "record_ids": [
     "E0101",
     "E0102",
-    "E0219",
     "E0287",
-    "E0371",
     "E0439",
     "E0446",
     "E0526"
@@ -8040,41 +8006,6 @@
     "so_what": "Run the gap analysis first and let it define the package. An incoming organisation needs a structured induction, not an assumption that it can absorb the role.",
     "rank": null
    }
-  },
-  {
-   "finding_id": "F429",
-   "statement": "Successful WASH transition cases remain far less documented than failures, which biases the available evidence base toward what goes wrong.",
-   "theme": [
-    "Transition"
-   ],
-   "example": "",
-   "type": "context",
-   "strength": 1,
-   "n_records": 1,
-   "n_sources": 1,
-   "n_documents": 1,
-   "n_streams": 1,
-   "n_checked": 0,
-   "relations": [],
-   "period": "2026",
-   "period_from": "2026",
-   "period_to": "2026",
-   "period_span": 0,
-   "streams": [
-    "sdr"
-   ],
-   "countries": [],
-   "tags": [
-    "performance",
-    "transition-handover"
-   ],
-   "actors": [
-    "cluster"
-   ],
-   "record_ids": [
-    "E0374"
-   ],
-   "unmerged": false
   },
   {
    "finding_id": "F505",
@@ -14344,55 +14275,6 @@
    "year": 2026
   },
   {
-   "id": "E0207",
-   "finding_id": "F102",
-   "theme": [
-    "ABC"
-   ],
-   "type": "barrier",
-   "statement": "Coordination often remains procedural rather than operational, which limits its ability to support integrated service delivery.",
-   "level": "global",
-   "countries": [],
-   "actors": [
-    "cluster",
-    "operational-cell"
-   ],
-   "tags": [
-    "coordination-architecture"
-   ],
-   "stream": "sdr",
-   "source_id": "S101",
-   "date_collected": "2026-07-17",
-   "confidence": "medium",
-   "status": "draft",
-   "year": 2026
-  },
-  {
-   "id": "E0208",
-   "finding_id": "F209",
-   "theme": [
-    "ABC"
-   ],
-   "type": "context",
-   "statement": "Effectiveness depends less on whether an area-based structure exists than on how it is configured: where mandates are clear, the information architecture is sound and technical accountability for WASH is preserved, it works.",
-   "level": "global",
-   "countries": [],
-   "actors": [
-    "cluster",
-    "operational-cell"
-   ],
-   "tags": [
-    "coordination-architecture",
-    "guidance"
-   ],
-   "stream": "sdr",
-   "source_id": "S101",
-   "date_collected": "2026-07-17",
-   "confidence": "medium",
-   "status": "draft",
-   "year": 2026
-  },
-  {
    "id": "E0209",
    "finding_id": "F282",
    "theme": [
@@ -14546,56 +14428,6 @@
    "year": 2019
   },
   {
-   "id": "E0215",
-   "finding_id": "F234",
-   "theme": [
-    "ABC"
-   ],
-   "type": "barrier",
-   "statement": "Financial flows remain largely centralised, sector-specific or project-based, which limits their ability to support cross-sector coordination, subnational planning and sustained local engagement.",
-   "level": "global",
-   "countries": [],
-   "actors": [
-    "donor",
-    "cluster"
-   ],
-   "tags": [
-    "funding",
-    "coordination-architecture"
-   ],
-   "stream": "sdr",
-   "source_id": "S101",
-   "date_collected": "2026-07-17",
-   "confidence": "medium",
-   "status": "draft",
-   "year": 2026
-  },
-  {
-   "id": "E0216",
-   "finding_id": "F209",
-   "theme": [
-    "ABC"
-   ],
-   "type": "enabler",
-   "statement": "Integration across sectors does not follow automatically from the presence of coordination structures; it requires deliberate alignment of sectoral priorities, joint planning processes and operational collaboration.",
-   "level": "global",
-   "countries": [],
-   "actors": [
-    "cluster",
-    "operational-cell"
-   ],
-   "tags": [
-    "multisector",
-    "coordination-architecture"
-   ],
-   "stream": "sdr",
-   "source_id": "S101",
-   "date_collected": "2026-07-17",
-   "confidence": "medium",
-   "status": "draft",
-   "year": 2026
-  },
-  {
    "id": "E0217",
    "finding_id": "F220",
    "theme": [
@@ -14618,207 +14450,6 @@
    "date_collected": "2026-07-17",
    "confidence": "medium",
    "status": "validated",
-   "year": 2026
-  },
-  {
-   "id": "E0218",
-   "finding_id": "F211",
-   "theme": [
-    "ABC"
-   ],
-   "type": "recommendation",
-   "statement": "Improve interoperability between coordination mechanisms, information systems and implementation pathways so that joint planning and delivery become possible.",
-   "level": "global",
-   "countries": [],
-   "actors": [
-    "cluster",
-    "operational-cell"
-   ],
-   "tags": [
-    "coordination-architecture",
-    "information-management"
-   ],
-   "stream": "sdr",
-   "source_id": "S101",
-   "date_collected": "2026-07-17",
-   "confidence": "medium",
-   "status": "draft",
-   "year": 2026
-  },
-  {
-   "id": "E0219",
-   "finding_id": "F426",
-   "theme": [
-    "Transition"
-   ],
-   "type": "recommendation",
-   "statement": "Invest in technical, institutional and operational capacity at local level through realistic staffing models, reducing reliance on double-hatting and temporary arrangements.",
-   "level": "global",
-   "countries": [],
-   "actors": [
-    "cluster",
-    "un-agency"
-   ],
-   "tags": [
-    "capacity",
-    "localisation"
-   ],
-   "stream": "sdr",
-   "source_id": "S101",
-   "date_collected": "2026-07-17",
-   "confidence": "medium",
-   "status": "draft",
-   "year": 2026
-  },
-  {
-   "id": "E0220",
-   "finding_id": "F109",
-   "theme": [
-    "Fundamentals"
-   ],
-   "type": "recommendation",
-   "statement": "Treat information management as core coordination infrastructure: harmonise data systems, improve interoperability, establish common technical validation, and enable joint analysis.",
-   "level": "global",
-   "countries": [],
-   "actors": [
-    "cluster"
-   ],
-   "tags": [
-    "information-management",
-    "capacity"
-   ],
-   "stream": "sdr",
-   "source_id": "S101",
-   "date_collected": "2026-07-17",
-   "confidence": "medium",
-   "status": "draft",
-   "year": 2026
-  },
-  {
-   "id": "E0221",
-   "finding_id": "F102",
-   "theme": [
-    "ABC"
-   ],
-   "type": "recommendation",
-   "statement": "Simplify and clarify terms of reference and governance frameworks so that roles, accountability and alignment between national, subnational and area levels are explicit.",
-   "level": "global",
-   "countries": [],
-   "actors": [
-    "cluster",
-    "ocha",
-    "operational-cell"
-   ],
-   "tags": [
-    "guidance",
-    "coordination-architecture"
-   ],
-   "stream": "sdr",
-   "source_id": "S101",
-   "date_collected": "2026-07-17",
-   "confidence": "medium",
-   "status": "draft",
-   "year": 2026
-  },
-  {
-   "id": "E0222",
-   "finding_id": "F220",
-   "theme": [
-    "ABC"
-   ],
-   "type": "recommendation",
-   "statement": "Preserve residual technical governance functions within sectors even under area-based models, with clear escalation pathways.",
-   "level": "global",
-   "countries": [],
-   "actors": [
-    "cluster",
-    "operational-cell"
-   ],
-   "tags": [
-    "coordination-architecture",
-    "performance"
-   ],
-   "stream": "sdr",
-   "source_id": "S101",
-   "date_collected": "2026-07-17",
-   "confidence": "medium",
-   "status": "draft",
-   "year": 2026
-  },
-  {
-   "id": "E0223",
-   "finding_id": "F220",
-   "theme": [
-    "ABC"
-   ],
-   "type": "recommendation",
-   "statement": "Establish minimum sectoral standards, technical review mechanisms and quality assurance processes within area-based coordination frameworks.",
-   "level": "global",
-   "countries": [],
-   "actors": [
-    "cluster",
-    "operational-cell"
-   ],
-   "tags": [
-    "performance",
-    "guidance"
-   ],
-   "stream": "sdr",
-   "source_id": "S101",
-   "date_collected": "2026-07-17",
-   "confidence": "medium",
-   "status": "draft",
-   "year": 2026
-  },
-  {
-   "id": "E0224",
-   "finding_id": "F243",
-   "theme": [
-    "ABC"
-   ],
-   "type": "recommendation",
-   "statement": "Align funding mechanisms with area-based approaches: support integrated programming, ensure resources reach subnational actors, and fund both operational and technical coordination functions.",
-   "level": "global",
-   "countries": [],
-   "actors": [
-    "donor",
-    "ocha",
-    "cluster"
-   ],
-   "tags": [
-    "funding",
-    "pooled-funds"
-   ],
-   "stream": "sdr",
-   "source_id": "S101",
-   "date_collected": "2026-07-17",
-   "confidence": "medium",
-   "status": "draft",
-   "year": 2026
-  },
-  {
-   "id": "E0225",
-   "finding_id": "F283",
-   "theme": [
-    "Transition"
-   ],
-   "type": "barrier",
-   "statement": "Transitions weaken coordination where successor structures are not defined and the links between local, national and sectoral platforms are not established before responsibilities move.",
-   "level": "global",
-   "countries": [],
-   "actors": [
-    "cluster",
-    "gov-national"
-   ],
-   "tags": [
-    "transition-handover",
-    "coordination-architecture"
-   ],
-   "stream": "sdr",
-   "source_id": "S102",
-   "date_collected": "2026-07-17",
-   "confidence": "medium",
-   "status": "draft",
    "year": 2026
   },
   {
@@ -16753,32 +16384,6 @@
    "year": 2026
   },
   {
-   "id": "E0299",
-   "finding_id": "F364",
-   "theme": [
-    "Fundamentals"
-   ],
-   "type": "context",
-   "statement": "Capacity is not a stock that transition builds once but a flow that staff rotation continuously drains, which is why institutional anchoring matters more than training individuals.",
-   "level": "global",
-   "countries": [],
-   "actors": [
-    "gov-national",
-    "cluster"
-   ],
-   "tags": [
-    "capacity",
-    "staff-turnover",
-    "government-engagement"
-   ],
-   "stream": "sdr",
-   "source_id": "S102",
-   "date_collected": "2026-07-17",
-   "confidence": "medium",
-   "status": "draft",
-   "year": 2026
-  },
-  {
    "id": "E0300",
    "finding_id": "F374",
    "theme": [
@@ -18121,31 +17726,6 @@
    "year": 2026
   },
   {
-   "id": "E0350",
-   "finding_id": "F323",
-   "theme": [
-    "Transition"
-   ],
-   "type": "context",
-   "statement": "Transition creates WASH-specific risks distinct from general coordination fragmentation: maintaining water systems where technical capacity sits with cluster-supported partners, supply chain continuity for treatment and hygiene items, and the provider of last resort function for cholera response.",
-   "level": "global",
-   "countries": [],
-   "actors": [
-    "cluster",
-    "un-agency"
-   ],
-   "tags": [
-    "transition-handover",
-    "sustainability"
-   ],
-   "stream": "sdr",
-   "source_id": "S102",
-   "date_collected": "2026-07-17",
-   "confidence": "medium",
-   "status": "draft",
-   "year": 2026
-  },
-  {
    "id": "E0351",
    "finding_id": "F323",
    "theme": [
@@ -18513,255 +18093,6 @@
    "source_id": "S061",
    "date_collected": "2026-07-17",
    "confidence": "high",
-   "status": "draft",
-   "year": 2026
-  },
-  {
-   "id": "E0365",
-   "finding_id": "F335",
-   "theme": [
-    "Transition"
-   ],
-   "type": "barrier",
-   "statement": "Deactivating clusters while response plan objectives remain active creates operational gaps unless funding, partner presence and successor arrangements are adjusted at the same time.",
-   "level": "global",
-   "countries": [],
-   "actors": [
-    "cluster",
-    "ocha"
-   ],
-   "tags": [
-    "transition-handover",
-    "hpc"
-   ],
-   "stream": "sdr",
-   "source_id": "S102",
-   "date_collected": "2026-07-17",
-   "confidence": "medium",
-   "status": "draft",
-   "year": 2026
-  },
-  {
-   "id": "E0366",
-   "finding_id": "F421",
-   "theme": [
-    "Transition"
-   ],
-   "type": "recommendation",
-   "statement": "Design successor architectures with written mandates, named participants and formalised links to national and development frameworks before deactivation.",
-   "level": "global",
-   "countries": [],
-   "actors": [
-    "cluster",
-    "gov-national"
-   ],
-   "tags": [
-    "transition-handover",
-    "coordination-architecture"
-   ],
-   "stream": "sdr",
-   "source_id": "S102",
-   "date_collected": "2026-07-17",
-   "confidence": "medium",
-   "status": "draft",
-   "year": 2026
-  },
-  {
-   "id": "E0367",
-   "finding_id": "F333",
-   "theme": [
-    "Transition"
-   ],
-   "type": "recommendation",
-   "statement": "Begin transition planning at response onset, with criteria agreed before plans are drafted and timelines that assume slippage.",
-   "level": "global",
-   "countries": [],
-   "actors": [
-    "cluster",
-    "ocha"
-   ],
-   "tags": [
-    "transition-handover",
-    "guidance"
-   ],
-   "stream": "sdr",
-   "source_id": "S102",
-   "date_collected": "2026-07-17",
-   "confidence": "medium",
-   "status": "draft",
-   "year": 2026
-  },
-  {
-   "id": "E0368",
-   "finding_id": "F109",
-   "theme": [
-    "Transition"
-   ],
-   "type": "recommendation",
-   "statement": "Decouple deactivation decisions from funding exhaustion and secure development financing for coordination continuity.",
-   "level": "global",
-   "countries": [],
-   "actors": [
-    "donor",
-    "development",
-    "ocha"
-   ],
-   "tags": [
-    "transition-handover",
-    "funding",
-    "nexus"
-   ],
-   "stream": "sdr",
-   "source_id": "S102",
-   "date_collected": "2026-07-17",
-   "confidence": "medium",
-   "status": "draft",
-   "year": 2026
-  },
-  {
-   "id": "E0369",
-   "finding_id": "F109",
-   "theme": [
-    "Transition"
-   ],
-   "type": "recommendation",
-   "statement": "Treat information management as core infrastructure with its own transition strategy, named custodians and archives.",
-   "level": "global",
-   "countries": [],
-   "actors": [
-    "cluster"
-   ],
-   "tags": [
-    "information-management",
-    "transition-handover"
-   ],
-   "stream": "sdr",
-   "source_id": "S102",
-   "date_collected": "2026-07-17",
-   "confidence": "medium",
-   "status": "draft",
-   "year": 2026
-  },
-  {
-   "id": "E0370",
-   "finding_id": "F234",
-   "theme": [
-    "Transition"
-   ],
-   "type": "recommendation",
-   "statement": "Convert localisation commitments into authority, funding access and usable tools for local actors.",
-   "level": "global",
-   "countries": [],
-   "actors": [
-    "local-ngo",
-    "donor"
-   ],
-   "tags": [
-    "localisation",
-    "funding"
-   ],
-   "stream": "sdr",
-   "source_id": "S102",
-   "date_collected": "2026-07-17",
-   "confidence": "medium",
-   "status": "draft",
-   "year": 2026
-  },
-  {
-   "id": "E0371",
-   "finding_id": "F426",
-   "theme": [
-    "Transition"
-   ],
-   "type": "recommendation",
-   "statement": "Assess and build capacity at national and subnational level before handover, anchored institutionally rather than in individuals.",
-   "level": "global",
-   "countries": [],
-   "actors": [
-    "gov-national",
-    "gov-local"
-   ],
-   "tags": [
-    "capacity",
-    "government-engagement"
-   ],
-   "stream": "sdr",
-   "source_id": "S102",
-   "date_collected": "2026-07-17",
-   "confidence": "medium",
-   "status": "draft",
-   "year": 2026
-  },
-  {
-   "id": "E0372",
-   "finding_id": "F421",
-   "theme": [
-    "Transition"
-   ],
-   "type": "recommendation",
-   "statement": "Retain technical standards custody, analysis, partner mapping, risk analysis and provider of last resort in explicit successor arrangements.",
-   "level": "global",
-   "countries": [],
-   "actors": [
-    "cluster",
-    "gov-national"
-   ],
-   "tags": [
-    "transition-handover",
-    "performance"
-   ],
-   "stream": "sdr",
-   "source_id": "S102",
-   "date_collected": "2026-07-17",
-   "confidence": "medium",
-   "status": "draft",
-   "year": 2026
-  },
-  {
-   "id": "E0373",
-   "finding_id": "F333",
-   "theme": [
-    "Transition"
-   ],
-   "type": "context",
-   "statement": "The gap between the pace of formal deactivation and the pace of operational readiness is the core driver of transition difficulty across contexts.",
-   "level": "global",
-   "countries": [],
-   "actors": [
-    "cluster",
-    "ocha"
-   ],
-   "tags": [
-    "transition-handover"
-   ],
-   "stream": "sdr",
-   "source_id": "S102",
-   "date_collected": "2026-07-17",
-   "confidence": "medium",
-   "status": "draft",
-   "year": 2026
-  },
-  {
-   "id": "E0374",
-   "finding_id": "F429",
-   "theme": [
-    "Transition"
-   ],
-   "type": "context",
-   "statement": "Successful WASH transition cases remain far less documented than failures, which biases the available evidence base toward what goes wrong.",
-   "level": "global",
-   "countries": [],
-   "actors": [
-    "cluster"
-   ],
-   "tags": [
-    "transition-handover",
-    "performance"
-   ],
-   "stream": "sdr",
-   "source_id": "S102",
-   "date_collected": "2026-07-17",
-   "confidence": "medium",
    "status": "draft",
    "year": 2026
   },

@@ -1,111 +1,112 @@
 {
- "_comment": "Edit this file to change the About tab. Never edit index.html for content.",
- "title": "What this is",
- "intro": "A live map of the evidence on Area-Based Coordination and Transition in humanitarian WASH coordination. It brings together what national clusters say in country conversations, what the published literature and evaluations say, and what comes out of workshops — and shows where those sources agree, where they disagree, and where there is simply not enough to say yet.",
- "sections": [
-  {
-   "heading": "What it is for",
-   "body": [
-    "Two things. To answer the questions country teams keep asking each other, where the answers already exist but are scattered across conversations and reports. And to give coordinators something to negotiate with — an evidence base they can take into a discussion with OCHA, a humanitarian country team or their own agency.",
-    "It is not guidance. It is the evidence guidance would have to be built on."
-   ]
-  },
-  {
-   "heading": "How to read a finding",
-   "body": [
-    "The unit of data is an evidence record: one claim, from one source. Records making the same point are grouped into a finding. So a finding is not one person's view — it is a claim, plus everything supporting it, plus a count of how many independent sources it rests on.",
-    "Open any card to see the records underneath it, each traceable to a source in the Sources tab."
-   ]
-  },
-  {
-   "heading": "Guidance is kept separate",
-   "body": [
-    "The Guidance tab holds the normative documents — what the rules say should happen. Everything else here records what did happen. They are held in different files and shown on different tabs deliberately.",
-    "A guidance note is not a source of evidence. It never counts toward a finding's strength, and nothing in it can raise or lower a strength rating. Mixing the two would let a statement of intent look like a corroborated observation.",
-    "Where a guidance entry has something to say about a finding in this base, the connection is shown on the Guidance tab. Sometimes the guidance answers a documented gap — the standard terms of reference for area-based coordination, issued in March 2026, addresses exactly the absence this base recorded. Sometimes the two diverge, and that is worth knowing before walking into a discussion."
-   ]
-  },
-  {
-   "heading": "Where the evidence comes from",
-   "body": [
-    "Four streams, kept distinct so you can see which kind of source is carrying a finding.",
-    "Country conversations are check-ins with national coordination teams. Secondary data reviews cover published evaluations, reviews and guidance. Workshops are the 2026 consultation sessions. Search updates are periodic scans for new material.",
-    "A finding supported by two different kinds of source is stronger than the same point made twice in two interviews."
-   ]
-  },
-  {
-   "heading": "The three themes",
-   "body": [
-    "Area-Based Coordination and Transition are configurations — particular ways of arranging coordination. Much of what coordinators actually raise is neither: staffing, funding, information management, institutional memory, counterpart turnover. These determine whether any arrangement works.",
-    "The test: would this claim still be true in a country with no area-based structure and no transition under way? If yes, it sits under Coordination fundamentals.",
-    "This departs from how the secondary data reviews framed the material, deliberately. Filing a staffing constraint under Transition makes it look like a consequence of transition, when it is a standing condition that transition then runs into.",
-    "A theme says what a finding is about. Tags say what it bears on — so a fundamentals finding that matters for handover still carries the transition-handover tag and can be found that way."
-   ]
-  },
-  {
-   "heading": "How entries are written",
-   "body": [
-    "Entries describe what happened and what followed from it, not who is at fault. Where a barrier has an obvious remedy, the entry points toward it.",
-    "This is deliberate rather than diplomatic. Area-based coordination is still being designed, in most countries by the same people trying to make it work. Evidence framed as an accusation gets argued with; evidence framed as a mechanism gets acted on.",
-    "Everything is anonymised. Verbatim quotes are held for verification but never published — a quote plus a country plus a role identifies one person."
-   ]
-  },
-  {
-   "heading": "What has been checked, and what has not",
-   "body": [
-    "A record is marked checked once someone has opened the source and confirmed the record against it. In practice that means it carries a verbatim quote, which is what makes it checkable by anyone else afterwards.",
-    "403 of 730 records are checked. The rest are not wrong — they are unverified. Almost all of them were imported from the earlier explorer and arrived without quotes, so there is nothing yet to check them against.",
-    "Every finding card shows this alongside its band, because the two are different questions. The band counts how many independent sources support a claim. The check status says whether anyone has confirmed those sources actually say it. A strongly-banded finding that nobody has verified is not the same object as one that has been, and the site should not present them identically."
-   ]
-  },
-  {
-   "heading": "Where the older evidence came from",
-   "body": [
-    "Just over four in ten records were imported from an earlier version of this explorer. They were produced by a chain of AI syntheses over a corpus of documents rather than extracted from one document at a time, and they arrived without quotes.",
-    "That matters for how to read them. On those records, the source shown means the document was part of the corpus behind the claim — not that the document states it. Where this has been checked, that distinction has held up badly: of five records attributed to one IASC annex, one was supported by the text, one partly, and three could not be found in it at all.",
-    "They have not been removed. A claim can be right about the world and wrong about its source, and separating the two takes reading the original documents. Every finding shows how much of it has been checked, so the difference is visible rather than buried."
-   ]
-  }
- ],
- "strength_intro": "Strength is calculated, not asserted. Nobody types it in. It counts how many independent sources support a finding, across how many kinds of source, and in how many countries — not how confident anyone feels, and not how serious the problem is. A band 1 finding is not a weak one; it is one nobody else has said yet.",
- "strength": [
-  {
-   "level": 5,
-   "label": "Very strong",
-   "rule": "Six or more independent sources, across two kinds of source, in two or more countries",
-   "meaning": "Seen widely and from more than one direction. This is the evidence to lead with."
-  },
-  {
-   "level": 4,
-   "label": "Strong",
-   "rule": "Three or more independent sources across two kinds of source",
-   "meaning": "Corroborated from different directions. Safe to act on."
-  },
-  {
-   "level": 3,
-   "label": "Moderate",
-   "rule": "Three or more independent sources, or two across two kinds of source",
-   "meaning": "More than a one-off. Worth carrying into a discussion."
-  },
-  {
-   "level": 2,
-   "label": "Limited",
-   "rule": "Two independent sources",
-   "meaning": "Corroborated, but narrowly. Worth testing further."
-  },
-  {
-   "level": 1,
-   "label": "Single source",
-   "rule": "One source",
-   "meaning": "Recorded, not yet corroborated. Treat as a lead — several of these are the most interesting things here."
-  }
- ],
- "strength_note": "Sources sharing an origin count once. Three sessions of the same workshop series are one source, not three — otherwise the count manufactures corroboration that does not exist. Band 5 also requires two countries, so depth in one place cannot pass for breadth.",
- "caveats": [
-  "Coverage is uneven. Countries with a recent check-in are heavily represented; others are absent. An absence here means nobody has been asked, not that nothing is happening.",
-  "Low strength does not mean untrue. It means one source said it and nobody else has been asked.",
-  "The strength count measures corroboration, not severity. A widely reported problem is not necessarily the most serious one.",
-  "Findings are a snapshot of what has been collected so far, not a systematic review."
- ],
- "footer_note": "Every finding traces to a source ID in the Sources tab. If something looks wrong, it probably is — say so and it will be corrected."
+  "_comment": "Edit this file to change the About tab. Never edit index.html for content.",
+  "title": "What this is",
+  "intro": "A live map of the evidence on Area-Based Coordination and Transition in humanitarian WASH coordination. It brings together what national clusters say in country conversations, what the published literature and evaluations say, and what comes out of workshops — and shows where those sources agree, where they disagree, and where there is simply not enough to say yet.",
+  "sections": [
+    {
+      "heading": "What it is for",
+      "body": [
+        "Two things. To answer the questions country teams keep asking each other, where the answers already exist but are scattered across conversations and reports. And to give coordinators something to negotiate with — an evidence base they can take into a discussion with OCHA, a humanitarian country team or their own agency.",
+        "It is not guidance. It is the evidence guidance would have to be built on."
+      ]
+    },
+    {
+      "heading": "How to read a finding",
+      "body": [
+        "The unit of data is an evidence record: one claim, from one source. Records making the same point are grouped into a finding. So a finding is not one person's view — it is a claim, plus everything supporting it, plus a count of how many independent sources it rests on.",
+        "Open any card to see the records underneath it, each traceable to a source in the Sources tab."
+      ]
+    },
+    {
+      "heading": "Guidance is kept separate",
+      "body": [
+        "The Guidance tab holds the normative documents — what the rules say should happen. Everything else here records what did happen. They are held in different files and shown on different tabs deliberately.",
+        "A guidance note is not a source of evidence. It never counts toward a finding's strength, and nothing in it can raise or lower a strength rating. Mixing the two would let a statement of intent look like a corroborated observation.",
+        "Where a guidance entry has something to say about a finding in this base, the connection is shown on the Guidance tab. Sometimes the guidance answers a documented gap — the standard terms of reference for area-based coordination, issued in March 2026, addresses exactly the absence this base recorded. Sometimes the two diverge, and that is worth knowing before walking into a discussion."
+      ]
+    },
+    {
+      "heading": "Where the evidence comes from",
+      "body": [
+        "Four streams, kept distinct so you can see which kind of source is carrying a finding.",
+        "Country conversations are check-ins with national coordination teams. Secondary data reviews cover published evaluations, reviews and guidance. Workshops are the 2026 consultation sessions. Search updates are periodic scans for new material.",
+        "A finding supported by two different kinds of source is stronger than the same point made twice in two interviews."
+      ]
+    },
+    {
+      "heading": "The three themes",
+      "body": [
+        "Area-Based Coordination and Transition are configurations — particular ways of arranging coordination. Much of what coordinators actually raise is neither: staffing, funding, information management, institutional memory, counterpart turnover. These determine whether any arrangement works.",
+        "The test: would this claim still be true in a country with no area-based structure and no transition under way? If yes, it sits under Coordination fundamentals.",
+        "This departs from how the secondary data reviews framed the material, deliberately. Filing a staffing constraint under Transition makes it look like a consequence of transition, when it is a standing condition that transition then runs into.",
+        "A theme says what a finding is about. Tags say what it bears on — so a fundamentals finding that matters for handover still carries the transition-handover tag and can be found that way."
+      ]
+    },
+    {
+      "heading": "How entries are written",
+      "body": [
+        "Entries describe what happened and what followed from it, not who is at fault. Where a barrier has an obvious remedy, the entry points toward it.",
+        "This is deliberate rather than diplomatic. Area-based coordination is still being designed, in most countries by the same people trying to make it work. Evidence framed as an accusation gets argued with; evidence framed as a mechanism gets acted on.",
+        "Everything is anonymised. Verbatim quotes are held for verification but never published — a quote plus a country plus a role identifies one person."
+      ]
+    },
+    {
+      "heading": "What has been checked, and what has not",
+      "body": [
+        "A record is marked checked once someone has opened the source and confirmed the record against it. In practice that means it carries a verbatim quote, which is what makes it checkable by anyone else afterwards.",
+        "403 of 730 records are checked. The rest are not wrong — they are unverified. Almost all of them were imported from the earlier explorer and arrived without quotes, so there is nothing yet to check them against.",
+        "Every finding card shows this alongside its band, because the two are different questions. The band counts how many independent sources support a claim. The check status says whether anyone has confirmed those sources actually say it. A strongly-banded finding that nobody has verified is not the same object as one that has been, and the site should not present them identically."
+      ]
+    },
+    {
+      "heading": "Where the older evidence came from",
+      "body": [
+        "Just over four in ten records were imported from an earlier version of this explorer. They were produced by a chain of AI syntheses over a corpus of documents rather than extracted from one document at a time, and they arrived without quotes.",
+        "That matters for how to read them. On those records, the source shown means the document was part of the corpus behind the claim — not that the document states it. Where this has been checked, that distinction has held up badly: of five records attributed to one IASC annex, one was supported by the text, one partly, and three could not be found in it at all.",
+        "They have not been removed. A claim can be right about the world and wrong about its source, and separating the two takes reading the original documents. Every finding shows how much of it has been checked, so the difference is visible rather than buried."
+      ]
+    }
+  ],
+  "strength_intro": "Strength is calculated, not asserted. Nobody types it in. It counts how many independent sources support a finding, across how many kinds of source, and in how many countries — not how confident anyone feels, and not how serious the problem is. A band 1 finding is not a weak one; it is one nobody else has said yet.",
+  "strength": [
+    {
+      "level": 5,
+      "label": "Very strong",
+      "rule": "Six or more independent sources, across two kinds of source, in two or more countries",
+      "meaning": "Seen widely and from more than one direction. This is the evidence to lead with."
+    },
+    {
+      "level": 4,
+      "label": "Strong",
+      "rule": "Three or more independent sources across two kinds of source",
+      "meaning": "Corroborated from different directions. Safe to act on."
+    },
+    {
+      "level": 3,
+      "label": "Moderate",
+      "rule": "Three or more independent sources, or two across two kinds of source",
+      "meaning": "More than a one-off. Worth carrying into a discussion."
+    },
+    {
+      "level": 2,
+      "label": "Limited",
+      "rule": "Two independent sources",
+      "meaning": "Corroborated, but narrowly. Worth testing further."
+    },
+    {
+      "level": 1,
+      "label": "Single source",
+      "rule": "One source",
+      "meaning": "Recorded, not yet corroborated. Treat as a lead — several of these are the most interesting things here."
+    }
+  ],
+  "strength_note": "Sources sharing an origin count once. Three sessions of the same workshop series are one source, not three — otherwise the count manufactures corroboration that does not exist. Band 5 also requires two countries, so depth in one place cannot pass for breadth.",
+  "caveats": [
+    "Coverage is uneven. Countries with a recent check-in are heavily represented; others are absent. An absence here means nobody has been asked, not that nothing is happening.",
+    "Low strength does not mean untrue. It means one source said it and nobody else has been asked.",
+    "The strength count measures corroboration, not severity. A widely reported problem is not necessarily the most serious one.",
+    "Findings are a snapshot of what has been collected so far, not a systematic review.",
+    "Failure is better documented than success. Transitions that went badly get written up; ones that worked quietly do not, and evaluations report problems more readily than routine practice. This base runs roughly three barriers to every enabler, which says as much about what gets published as about what happens."
+  ],
+  "footer_note": "Every finding traces to a source ID in the Sources tab. If something looks wrong, it probably is — say so and it will be corrected."
 }
