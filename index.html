@@ -22,6 +22,7 @@
   /* Five bands, one ramp. Darker means more independent corroboration, never
      "more true" — a band-1 finding is often the most interesting thing here. */
   --s1:#DCE7EF; --s2:#B0CBDE; --s3:#7BA8C8; --s4:#3F7BA6; --s5:#1B4F79;
+  --an-pad:18px;
 }
 *{box-sizing:border-box}
 body{margin:0;font:15px/1.55 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
@@ -116,6 +117,23 @@ h2.grp:first-child{margin-top:6px}
 .gd-meta .pill:not(.primary){opacity:.55}
 @media (max-width:1100px){ .hlgrid{grid-template-columns:1fr} }
 .grp-n{font-size:12px;color:#8A94A2;font-weight:400;letter-spacing:0}
+.anote{background:var(--card);border:1px solid var(--line);border-left:3px solid var(--s4);
+  border-radius:0 8px 8px 0;padding:12px 16px;margin-bottom:18px;font-size:13px;color:var(--ink-2)}
+.anbox{background:var(--card);border:1px solid var(--line);border-radius:8px;
+  padding:var(--an-pad);margin-bottom:18px}
+.anbox h2.grp{margin:0 0 8px}
+.anhelp{font-size:13px;line-height:1.55;color:var(--ink-2);margin:0 0 14px;max-width:78ch}
+.ansvg{width:100%;height:auto;display:block;overflow:visible}
+.anlab{font-size:10.5px;fill:var(--ink-2)}
+table.cover{border-collapse:collapse;font-size:13px}
+table.cover th{font-weight:600;color:var(--ink-2);text-align:left;padding:5px 10px;
+  border-bottom:1px solid var(--line);font-size:12px}
+table.cover thead th{text-align:center}
+table.cover tbody th{white-space:nowrap;font-weight:400;color:var(--ink)}
+td.cmat{text-align:center;padding:5px 12px;border:1px solid var(--card);
+  min-width:66px;font-variant-numeric:tabular-nums}
+td.cmat0{color:var(--ink-3);background:var(--bg)}
+.cmark{opacity:.75;font-weight:700;margin-left:2px}
 /* One illustrative case, marked as such. The statement above it is the claim;
    this is one instance of it, and the records below are the full range. */
 .eg{margin:6px 0 0;padding:7px 11px;border-left:3px solid var(--fundamentals);background:#F4F6F9;
@@ -307,7 +325,7 @@ var OPEN = {};                      // which finding cards are expanded
 // done, it told a reader nothing the Findings filters do not. viewMatrix() went
 // with it — recover from git if a coverage view is ever wanted again.
 var TABS = [["about","About"],["guidance","Guidance"],["highlights","Highlights"],
-            ["findings","Findings"],["sources","Sources"]];
+            ["findings","Findings"],["analysis","Analysis"],["sources","Sources"]];
 var NOFILTER = { about:1, guidance:1 };   // views the filter bar does not apply to
 var MAPON = true;                   // map shown above the findings list
 // Grouping the findings list. Deliberately NOT by tag: findings carry 3.3 tags
@@ -603,6 +621,7 @@ function render(){
   if (TAB==="guidance")   v.innerHTML = b + viewGuidance();
   if (TAB==="highlights") v.innerHTML = b + viewHighlights(d);
   if (TAB==="findings")   v.innerHTML = b + viewMap() + viewFindings(d);
+  if (TAB==="analysis")   v.innerHTML = b + viewAnalysis(d);
   if (TAB==="sources")    v.innerHTML = b + viewSources(d);
   wire();
 }
@@ -1090,6 +1109,303 @@ function viewSources(d){
         '<td>'+esc(label("stream", s.stream))+'</td><td>'+esc(s.access||"")+'</td>' +
         '<td>'+(c.length ? esc(c.join(", ")) : '<span style="color:#B33A3A">not cited</span>')+'</td></tr>';
     }).join("") + '</tbody></table>';
+}
+
+// ---------------------------------------------------------------------------
+// Analysis — an internal working view, not a showcase
+//
+// Three questions, one visual each. The point is to find what to fix next, so
+// where the base is weak the view says so rather than smoothing it over.
+//
+// No libraries. The site has to render from file:// with no network — check.mjs
+// tests that — so everything here is hand-drawn SVG. It is more code than a
+// charting library would be and it is the reason this still works in five years.
+// ---------------------------------------------------------------------------
+
+function viewAnalysis(d){
+  if (!d.findings.length) return empty("Nothing matches these filters.");
+  return '<div class="anote">These three views answer different questions and are meant for us, ' +
+         'not for an audience. They are computed from whatever passes the filters above, so ' +
+         'narrowing the filters re-computes them.</div>' +
+         anTags(d) + anProvenance(d) + anCoverage(d);
+}
+
+// --- 1. what travels with what --------------------------------------------
+// Edges are lift, not co-occurrence. Raw counts just rank tags by frequency:
+// coordination-architecture is on half the findings, so it connects to
+// everything and the picture says nothing. Lift asks whether two tags appear
+// together more than their individual frequencies would predict, which is the
+// only version of this that can surprise anyone.
+function anTags(d){
+  var N = d.findings.length, occ = {}, pair = {};
+  d.findings.forEach(function(f){
+    var ts = uniq(f.tags).sort();
+    ts.forEach(function(t){ occ[t] = (occ[t]||0)+1; });
+    for (var i=0;i<ts.length;i++) for (var j=i+1;j<ts.length;j++){
+      var k = ts[i]+"|"+ts[j]; pair[k] = (pair[k]||0)+1;
+    }
+  });
+  var MINF = 4, MINP = 3;
+  var edges = [];
+  Object.keys(pair).forEach(function(k){
+    var n = pair[k], p = k.split("|");
+    if (n < MINP || occ[p[0]] < MINF || occ[p[1]] < MINF) return;
+    var lift = (n/N) / ((occ[p[0]]/N) * (occ[p[1]]/N));
+    edges.push({ a:p[0], b:p[1], n:n, lift:lift });
+  });
+  if (!edges.length) return anBox("What travels with what",
+    "Not enough co-occurring tags in this selection to compute lift.", "");
+  edges.sort(function(x,y){ return y.lift - x.lift; });
+  edges = edges.slice(0, 26);
+
+  var names = {};
+  edges.forEach(function(e){ names[e.a]=1; names[e.b]=1; });
+  var nodes = Object.keys(names).map(function(t){ return { id:t, n:occ[t] }; });
+  var pos = layout(nodes, edges, 760, 430);
+
+  var maxL = edges[0].lift, maxN = Math.max.apply(null, nodes.map(function(n){ return n.n; }));
+  var svg = ['<svg viewBox="0 0 760 430" class="ansvg" role="img" aria-label="Tag network weighted by lift">'];
+  edges.forEach(function(e){
+    var p1 = pos[e.a], p2 = pos[e.b];
+    var w = 0.6 + 3.4 * ((e.lift - 1) / Math.max(0.001, maxL - 1));
+    svg.push('<line x1="'+p1.x.toFixed(1)+'" y1="'+p1.y.toFixed(1)+'" x2="'+p2.x.toFixed(1)+
+      '" y2="'+p2.y.toFixed(1)+'" stroke="var(--s3)" stroke-opacity="0.55" stroke-width="'+
+      w.toFixed(2)+'"><title>'+esc(label("tags",e.a)||e.a)+' + '+esc(label("tags",e.b)||e.b)+
+      ' — '+e.n+' findings, lift '+e.lift.toFixed(2)+'</title></line>');
+  });
+  nodes.forEach(function(nd){
+    var p = pos[nd.id], r = 5 + 13 * Math.sqrt(nd.n / maxN);
+    svg.push('<circle cx="'+p.x.toFixed(1)+'" cy="'+p.y.toFixed(1)+'" r="'+r.toFixed(1)+
+      '" fill="var(--s4)" fill-opacity="0.85"><title>'+esc(label("tags",nd.id)||nd.id)+
+      ' — '+nd.n+' findings</title></circle>');
+    svg.push('<text x="'+p.x.toFixed(1)+'" y="'+(p.y+r+11).toFixed(1)+
+      '" text-anchor="middle" class="anlab">'+esc(label("tags",nd.id)||nd.id)+'</text>');
+  });
+  svg.push('</svg>');
+
+  var top = edges.slice(0,3).map(function(e){
+    return (label("tags",e.a)||e.a)+" + "+(label("tags",e.b)||e.b)+
+           " (&times;"+e.lift.toFixed(1)+", "+e.n+" findings)"; }).join(" &middot; ");
+  return anBox("What travels with what",
+    "Lines are lift, not counts — how much more often two tags appear together than their " +
+    "separate frequencies predict. Raw co-occurrence would only rank tags by how common they " +
+    "are. Circle size is how many findings carry the tag. Strongest: " + top + ".",
+    svg.join(""));
+}
+
+// Deterministic spring layout. Fixed seed and a fixed iteration count, because a
+// view that redraws differently each time is one nobody trusts.
+function layout(nodes, edges, W, H){
+  var pos = {}, seed = 20260820;
+  function rnd(){ seed = (seed*1103515245 + 12345) & 0x7fffffff; return seed/0x7fffffff; }
+  nodes.forEach(function(n, i){
+    var a = (i/nodes.length) * Math.PI*2 + rnd()*0.3;
+    pos[n.id] = { x: W/2 + Math.cos(a)*180, y: H/2 + Math.sin(a)*140, vx:0, vy:0 };
+  });
+  var adj = edges.map(function(e){ return [e.a, e.b]; });
+  for (var it=0; it<420; it++){
+    var k = 1 - it/420;
+    nodes.forEach(function(a){
+      nodes.forEach(function(b){
+        if (a.id === b.id) return;
+        var pa = pos[a.id], pb = pos[b.id];
+        var dx = pa.x-pb.x, dy = pa.y-pb.y, d2 = dx*dx+dy*dy || 0.01;
+        var f = 5200 / d2;
+        pa.vx += dx*f*0.01; pa.vy += dy*f*0.01;
+      });
+    });
+    adj.forEach(function(e){
+      var pa = pos[e[0]], pb = pos[e[1]];
+      var dx = pb.x-pa.x, dy = pb.y-pa.y, dist = Math.sqrt(dx*dx+dy*dy)||0.01;
+      var f = (dist-118) * 0.012;
+      pa.vx += dx/dist*f; pa.vy += dy/dist*f;
+      pb.vx -= dx/dist*f; pb.vy -= dy/dist*f;
+    });
+    nodes.forEach(function(n){
+      var p = pos[n.id];
+      p.vx += (W/2 - p.x)*0.004; p.vy += (H/2 - p.y)*0.004;
+      p.x += p.vx*k; p.y += p.vy*k; p.vx *= 0.82; p.vy *= 0.82;
+      p.x = Math.max(58, Math.min(W-58, p.x));
+      p.y = Math.max(26, Math.min(H-26, p.y));
+    });
+  }
+  return pos;
+}
+
+// --- 2. where the evidence comes from -------------------------------------
+// The question this exists to answer is uncomfortable and that is the point:
+// how much of what the base claims rests on the GWC asking itself.
+function anProvenance(d){
+  var STREAM = ["transcript","workshop","sdr","search"];
+  var THEME = ["ABC","Transition","Fundamentals"];
+  var byF = {}; d.records.forEach(function(r){ (byF[r.finding_id]=byF[r.finding_id]||[]).push(r); });
+
+  var l1 = {}, l2 = {}, sTot = {}, tTot = {}, bTot = {};
+  d.findings.forEach(function(f){
+    var recs = byF[f.finding_id] || [];
+    var streams = uniq(recs.map(function(r){ return r.stream; }));
+    streams.forEach(function(s){
+      f.theme.forEach(function(t){
+        l1[s+"|"+t] = (l1[s+"|"+t]||0) + 1/streams.length/f.theme.length;
+        sTot[s] = (sTot[s]||0) + 1/streams.length/f.theme.length;
+      });
+    });
+    f.theme.forEach(function(t){
+      l2[t+"|"+f.strength] = (l2[t+"|"+f.strength]||0) + 1/f.theme.length;
+      tTot[t] = (tTot[t]||0) + 1/f.theme.length;
+      bTot[f.strength] = (bTot[f.strength]||0) + 1/f.theme.length;
+    });
+  });
+
+  var W = 760, H = 340, CW = 26, total = d.findings.length;
+  var cols = [
+    { keys: STREAM.filter(function(s){ return sTot[s]; }), tot: sTot, x: 0,
+      lab: function(k){ return label("stream",k)||k; } },
+    { keys: THEME.filter(function(t){ return tTot[t]; }), tot: tTot, x: (W-CW)/2,
+      lab: function(k){ return label("theme",k)||k; } },
+    { keys: [5,4,3,2,1].filter(function(b){ return bTot[b]; }), tot: bTot, x: W-CW,
+      lab: function(k){ return "Band "+k; } }
+  ];
+  var box = {};
+  cols.forEach(function(c, ci){
+    var sum = c.keys.reduce(function(a,k){ return a + c.tot[k]; }, 0) || 1;
+    var gap = 9, avail = H - gap*(c.keys.length-1), y = 0;
+    c.keys.forEach(function(k){
+      var h = Math.max(3, avail * c.tot[k]/sum);
+      box[ci+"|"+k] = { x:c.x, y:y, h:h, v:c.tot[k] };
+      y += h + gap;
+    });
+  });
+
+  var svg = ['<svg viewBox="0 0 '+W+' '+(H+24)+'" class="ansvg" role="img" ' +
+             'aria-label="Flow from evidence stream to theme to strength band">'];
+  var off1 = {}, off2 = {}, off2b = {}, off3 = {};
+  function ribbon(a, b, h, key, tip){
+    var x1 = a.x+CW, x2 = b.x, mx = (x1+x2)/2;
+    var ya = a.y + (off1[key.a]=off1[key.a]||0), yb = b.y + (off2[key.b]=off2[key.b]||0);
+    off1[key.a] += h; off2[key.b] += h;
+    svg.push('<path d="M'+x1+','+ya+' C'+mx+','+ya+' '+mx+','+yb+' '+x2+','+yb+
+      ' L'+x2+','+(yb+h)+' C'+mx+','+(yb+h)+' '+mx+','+(ya+h)+' '+x1+','+(ya+h)+' Z" ' +
+      'fill="var(--s3)" fill-opacity="0.34"><title>'+esc(tip)+'</title></path>');
+  }
+  cols[0].keys.forEach(function(s){
+    cols[1].keys.forEach(function(t){
+      var v = l1[s+"|"+t]; if (!v) return;
+      var a = box["0|"+s], b = box["1|"+t];
+      ribbon(a, b, a.h * v/a.v, {a:"0|"+s, b:"1|"+t},
+        (label("stream",s)||s)+" → "+(label("theme",t)||t)+": "+v.toFixed(1)+" findings");
+    });
+  });
+  off1 = off2b; off2 = off3;
+  cols[1].keys.forEach(function(t){
+    cols[2].keys.forEach(function(bd){
+      var v = l2[t+"|"+bd]; if (!v) return;
+      var a = box["1|"+t], b = box["2|"+bd];
+      ribbon(a, b, a.h * v/a.v, {a:"1|"+t, b:"2|"+bd},
+        (label("theme",t)||t)+" → band "+bd+": "+v.toFixed(1)+" findings");
+    });
+  });
+  cols.forEach(function(c, ci){
+    c.keys.forEach(function(k){
+      var bx = box[ci+"|"+k];
+      svg.push('<rect x="'+bx.x+'" y="'+bx.y+'" width="'+CW+'" height="'+bx.h.toFixed(1)+
+        '" rx="3" fill="var(--s4)"><title>'+esc(c.lab(k))+' — '+bx.v.toFixed(1)+
+        ' findings</title></rect>');
+      var tx = ci===2 ? bx.x-6 : bx.x+CW+6, anc = ci===2 ? "end" : "start";
+      svg.push('<text x="'+tx+'" y="'+(bx.y+bx.h/2+3.5).toFixed(1)+'" text-anchor="'+anc+
+        '" class="anlab">'+esc(c.lab(k))+' '+Math.round(bx.v)+'</text>');
+    });
+  });
+  svg.push('</svg>');
+
+  var own = (sTot.transcript||0) + (sTot.workshop||0);
+  var pct = Math.round(100 * own / Math.max(1, own + (sTot.sdr||0) + (sTot.search||0)));
+  return anBox("Where the evidence comes from",
+    "Findings flow left to right: which streams support them, which theme they sit in, what " +
+    "band they reach. A finding supported by two streams is split between them, so the " +
+    "columns total findings rather than records. <b>" + pct + "% of that flow is the GWC's own " +
+    "consultation</b> — country calls and workshops. That is the number this page exists to " +
+    "move: a finding corroborated only by the people who raised it is not corroborated.",
+    svg.join(""));
+}
+
+// --- 3. where the gaps are ------------------------------------------------
+// A coverage matrix was removed in August because it duplicated the findings
+// filters. This one is not that: it is shaded by the best band reached, so the
+// pale cells are places where we have evidence we cannot lean on, which the
+// filters do not show at a glance.
+function anCoverage(d){
+  var THEME = ["ABC","Transition","Fundamentals"];
+  // Shaded by volume, not by band. Band shading was tried first and cannot work
+  // here: band 5 requires two or more countries by definition, so a strong
+  // finding lights up every country it touches and the column shows nothing but
+  // "this finding is cross-country". Volume at least answers where we have been
+  // asking. Checked separately that no country is tagged on a finding without
+  // records of its own, so nothing here is borrowed strength.
+  var cell = {}, cTot = {}, unver = {};
+  var byF = {}; d.records.forEach(function(r){ (byF[r.finding_id]=byF[r.finding_id]||[]).push(r); });
+  d.findings.forEach(function(f){
+    f.countries.forEach(function(c){
+      cTot[c] = (cTot[c]||0)+1;
+      f.theme.forEach(function(t){
+        var k = c+"|"+t, e = cell[k] = cell[k] || { n:0, best:0, ck:0 };
+        e.n++; if (f.strength > e.best) e.best = f.strength;
+        var mine = (byF[f.finding_id]||[]).filter(function(r){
+          return (r.countries||[]).indexOf(c) >= 0; });
+        if (mine.some(function(r){ return r.status === "validated"; })) e.ck++;
+      });
+    });
+  });
+  var countries = Object.keys(cTot).sort(function(a,b){
+    return cTot[b]-cTot[a] || countryName(a).localeCompare(countryName(b)); });
+  if (!countries.length) return anBox("Where the gaps are",
+    "No country-tagged findings in this selection.", "");
+
+  var mx = Math.max.apply(null, Object.keys(cell).map(function(k){ return cell[k].n; }));
+  var rows = countries.map(function(c){
+    var tds = THEME.map(function(t){
+      var e = cell[c+"|"+t];
+      if (!e) return '<td class="cmat cmat0" title="nobody asked">·</td>';
+      var sh = Math.min(5, 1 + Math.floor(4.99 * e.n / mx));
+      var mark = e.ck === 0 ? '<span class="cmark" title="no verified record">*</span>' : '';
+      return '<td class="cmat" style="background:var(--s'+sh+');color:'+
+             (sh>=3?'#fff':'var(--ink)')+'" title="'+e.n+' findings, best band '+e.best+
+             ', '+e.ck+' with a verified record from this country">'+e.n+mark+'</td>';
+    }).join("");
+    return '<tr><th>'+esc(countryName(c))+'</th>'+tds+'</tr>';
+  }).join("");
+
+  var blanks = 0, starred = [];
+  countries.forEach(function(c){
+    THEME.forEach(function(t){
+      var e = cell[c+"|"+t];
+      if (!e) blanks++;
+      else if (!e.ck && starred.indexOf(c) < 0) starred.push(c);
+    });
+  });
+  var note = "<b>" + blanks + " of " + (countries.length*THEME.length) +
+    " cells are empty</b> — nobody has been asked, which is not the same as nothing happening." +
+    (starred.length ? " Cells marked * hold findings with no verified record from that country: " +
+      esc(starred.slice(0,6).map(countryName).join(", ")) +
+      (starred.length>6 ? " and " + (starred.length-6) + " more" : "") + "." : "");
+
+  return anBox("Where the gaps are",
+    "Countries by theme, shaded by how many findings. Band shading was tried and abandoned — " +
+    "band 5 requires two or more countries, so it lights up every country a strong finding " +
+    "touches and discriminates between none of them. " + note,
+    '<table class="cover"><thead><tr><th></th>' +
+    THEME.map(function(t){ return '<th>'+esc(label("theme",t)||t)+'</th>'; }).join("") +
+    '</tr></thead><tbody>' + rows + '</tbody></table>');
+}
+
+function anBox(title, note, body){
+  return '<section class="anbox"><h2 class="grp">'+esc(title)+'</h2>' +
+         '<p class="anhelp">'+note+'</p>' + body + '</section>';
+}
+function uniq(a){
+  var s = {}, o = [];
+  (a||[]).forEach(function(x){ if (!s[x]) { s[x]=1; o.push(x); } });
+  return o;
 }
 
 function empty(msg){
