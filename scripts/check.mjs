@@ -68,7 +68,12 @@ async function exercise(label, url) {
   ok(errs.length === 0, `${label}: script errors — ${errs.join(" | ")}`);
 
   const tabs = $$("[data-tab]");
-  ok(tabs.length === 5, `${label}: expected 5 tabs (About, Guidance, Highlights, Findings, Sources), found ${tabs.length}`);
+  const TABS = ["About", "Guidance", "Highlights", "Findings", "Analysis", "Sources"];
+  ok(tabs.length === TABS.length,
+     `${label}: expected ${TABS.length} tabs (${TABS.join(", ")}), found ${tabs.length}`);
+  const labels = tabs.map((t) => t.textContent.trim());
+  ok(TABS.every((t, i) => labels[i] === t),
+     `${label}: tab order changed — expected ${TABS.join(", ")}, found ${labels.join(", ")}`);
 
   for (const t of tabs) {
     t.dispatchEvent(new dom.window.Event("click", { bubbles: true }));
