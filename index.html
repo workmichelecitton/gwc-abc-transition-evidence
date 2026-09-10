@@ -330,7 +330,12 @@ var OPEN = {};                      // which finding cards are expanded
 // with it — recover from git if a coverage view is ever wanted again.
 var TABS = [["about","About"],["guidance","Guidance"],["highlights","Highlights"],
             ["findings","Findings"],["analysis","Analysis"],["sources","Sources"]];
-var NOFILTER = { about:1, guidance:1 };   // views the filter bar does not apply to
+// Views the evidence filter bar does not apply to. Highlights joined them:
+// it shows band 5 and only band 5, which is a fixed claim about what the base
+// is most confident of. Letting a filter cut into it produced a page that said
+// "the strongest findings" while showing three of them, and a reader had no way
+// to tell whether that was the evidence or a leftover chip from another tab.
+var NOFILTER = { about:1, guidance:1, highlights:1 };
 var MAPON = true;                   // map shown above the findings list
 // Grouping the findings list. Deliberately NOT by tag: findings carry 3.3 tags
 // on average, so a tag grouping would list most cards three times over. The tag
@@ -633,7 +638,7 @@ function render(){
   var b = staleBanner();
   if (TAB==="about")      v.innerHTML = b + viewAbout();
   if (TAB==="guidance")   v.innerHTML = b + viewGuidance();
-  if (TAB==="highlights") v.innerHTML = b + viewHighlights(d);
+  if (TAB==="highlights") v.innerHTML = b + viewHighlights(D);
   if (TAB==="findings")   v.innerHTML = b + viewMap() + viewFindings(d);
   if (TAB==="analysis")   v.innerHTML = b + viewAnalysis(d);
   if (TAB==="sources")    v.innerHTML = b + viewSources(d);
@@ -945,9 +950,11 @@ function viewHighlights(d){
   // appears when the evidence puts it here and leaves if the evidence changes,
   // which means this tab cannot drift from the data the way a hand-picked list
   // does.
+  // Always the whole set. The filter bar is hidden on this tab, so `d` is the
+  // full base and this line is a statement of what the tab is rather than a
+  // filter over it.
   var hi = d.findings.filter(function(f){ return f.strength === 5; });
-  if (!hi.length) return empty(
-    "Nothing at band 5 matches these filters. A finding reaches band 5 only with six or more independent sources, across two kinds of source, in two or more countries — so an empty result here is common once filters narrow.");
+  if (!hi.length) return empty("Nothing has reached band 5 yet.");
 
   // A finding carrying more than one theme goes in the first column only —
   // previously it appeared under every theme it touched, so the area-based
@@ -976,10 +983,10 @@ function viewHighlights(d){
   hi.forEach(function(f){ buckets[column(f)].push(f); });
   buckets.forEach(function(b){ b.sort(weight); });
 
-  var intro = '<p class="count">' + hi.length + ' finding' + (hi.length===1?"":"s") +
-    ' at band 5 — six or more independent sources, across two kinds of source, in two or ' +
-    'more countries. This list is computed, not chosen. Nothing is capped or hidden: ' +
-    'everything below band 5 is in the Findings tab with its band shown.</p>';
+  var intro = '<p class="anote">These are the ' + hi.length + ' things the evidence supports ' +
+    'most strongly — each one seen by six or more separate sources, in at least two kinds of ' +
+    'source and two different countries. Nothing here was chosen by hand; a finding appears ' +
+    'when the evidence puts it here. Everything else is under Findings, with its rating shown.</p>';
 
   var grid = '<div class="hlgrid">' + COLS.map(function(c, ix){
     var items = buckets[ix];
