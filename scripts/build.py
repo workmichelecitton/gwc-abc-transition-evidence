@@ -414,7 +414,10 @@ def main():
                 continue
             seen_text.add(key)
             indep.append(r)
-        n_src = len({group_of.get(r["source_id"], r["source_id"]) for r in indep})
+        counted = {}
+        for r in indep:
+            counted.setdefault(group_of.get(r["source_id"], r["source_id"]), set()).add(r["source_id"])
+        n_src = len(counted)
         # Streams and countries counted on the same de-duplicated set, so a
         # propagated statement cannot supply a second stream either.
         n_str = len({r["stream"] for r in indep})
@@ -475,6 +478,16 @@ def main():
             # origin — a card reading "1 source" beside five country chips looks
             # like a contradiction until the page says why.
             "n_documents": len({r["source_id"] for r in rows}),
+            # The source groups that actually counted, with the documents in
+            # each. The page needs this to name the sources behind a finding and
+            # have the list agree with n_sources — it cannot re-derive it,
+            # because de-duplication compares quotes and quotes are stripped
+            # before site.json is written. Three highlight cards listed one more
+            # source than they claimed until this was emitted here.
+            "counted_sources": [
+                {"group": g, "source_ids": sorted(ids)}
+                for g, ids in sorted(counted.items())
+            ],
             "n_streams": n_str,
             # How much of this finding has been checked against its sources. The
             # band says how many independent sources support a claim; this says

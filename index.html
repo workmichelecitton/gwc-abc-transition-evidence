@@ -87,6 +87,13 @@ h2.grp:first-child{margin-top:6px}
 .hlcol .hl-so{font-size:12.5px;padding:7px 10px}
 .hlcol .meta{font-size:11px}
 .hlnote{margin:-4px 0 10px;font-size:12px;color:var(--ink-3);font-style:italic}
+.hl-src{display:flex;flex-wrap:wrap;gap:4px;margin-top:8px;padding-top:8px;
+  border-top:1px dashed var(--line)}
+.schip{font-size:10.5px;line-height:1.5;padding:2px 7px;border-radius:11px;
+  border:1px solid var(--line);background:#fff;color:var(--accent);text-decoration:none;
+  white-space:nowrap;max-width:100%;overflow:hidden;text-overflow:ellipsis}
+.schip:hover{border-color:var(--accent)}
+.schip.nolink{color:var(--ink-3);background:var(--bg);border-style:dashed}
 .gd{background:var(--card);border:1px solid var(--line);border-left:3px solid var(--s3);
   border-radius:6px;padding:11px 13px;display:flex;flex-direction:column}
 .gd h3{margin:0 0 4px;font-size:14px;line-height:1.32}
@@ -1011,8 +1018,65 @@ function viewHighlights(d){
         '<span class="pill '+esc(f.type)+'">'+esc(label("type",f.type))+'</span>' +
         '<span class="tag">' + f.n_sources + ' sources · ' + f.countries.length +
           ' countr' + (f.countries.length===1?'y':'ies') + '</span>' +
-      '</div></div>';
+      '</div>' + srcChips(f) + '</div>';
   }
+}
+
+// The sources behind a highlight, named and linked where a link exists.
+//
+// Until now the card said "6 sources" and stopped, which asks the reader to
+// take the number on trust — on the tab where the claims are strongest and the
+// wording is plainest, so exactly where trust is least warranted. Naming them
+// also makes the composition visible: six sources that are all GWC workshops
+// read very differently from six that include two published studies.
+//
+// Restricted sources carry no URL by design — the transcripts are anonymised and
+// held outside the repository. They appear unlinked rather than being hidden,
+// because "unlinkable" is information about the evidence, not a gap to paper over.
+function srcChips(f){
+  // Collapsed by source group, because that is what the count beside it means.
+  // Listing documents instead put three chips reading "GWC · 2026" on one card —
+  // which looks like a bug, and quietly contradicts the "6 sources" tag next to
+  // it. One chip per independent source; where a source is several documents,
+  // the chip says so.
+  // counted_sources comes from the build, which is the only place that can
+  // compute it: de-duplication compares quotes, and quotes are stripped before
+  // site.json is written. Deriving it here from records gave three cards one
+  // more source than they claimed.
+  var out = (f.counted_sources || []).map(function(g){
+    var docs = g.source_ids.map(sourceOf).filter(Boolean);
+    if (!docs.length) return null;
+    // Prefer a document that can actually be opened as the group's face.
+    var lead = docs.filter(function(s){ return /^https?:/.test(s.url||""); })[0] || docs[0];
+    return { s: lead, n: docs.length };
+  }).filter(Boolean);
+  if (!out.length) return '';
+  // Linked first: a reader scanning for something to open should not have to
+  // read past four things they cannot.
+  out.sort(function(a, b){
+    var la = /^https?:/.test(a.s.url||"") ? 0 : 1, lb = /^https?:/.test(b.s.url||"") ? 0 : 1;
+    return la - lb || String(a.s.year).localeCompare(String(b.s.year));
+  });
+  return '<div class="hl-src">' + out.map(function(o){
+    var s = o.s;
+    var text = srcShort(s) + (o.n > 1 ? " (" + o.n + " docs)" : "");
+    var tip = esc(s.title || "") + (s.year ? " · " + esc(String(s.year)) : "") +
+      (o.n > 1 ? " — one of " + o.n + " documents from the same source, counted once" : "");
+    return /^https?:/.test(s.url||"")
+      ? '<a class="schip" href="'+esc(s.url)+'" target="_blank" rel="noopener" title="'+tip+'">' +
+        esc(text) + '</a>'
+      : '<span class="schip nolink" title="'+tip+' — held outside this repository, no public link">' +
+        esc(text) + '</span>';
+  }).join("") + '</div>';
+}
+
+// "Global WASH Cluster · 2026" twice over tells a reader nothing — two country
+// consultations look identical. Use the country where the title carries one.
+function srcShort(s){
+  var m = /^Country consultation\s*[—–-]\s*([^(]+)/.exec(s.title || "");
+  if (m) return "Consultation: " + m[1].trim();
+  var org = s.organisation || s.source_id;
+  return org + (s.year ? " · " + String(s.year).slice(0, 4) : "");
 }
 
 // --- map -------------------------------------------------------------------

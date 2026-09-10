@@ -747,6 +747,32 @@ window.SITE_DATA = {
    "n_records": 9,
    "n_sources": 4,
    "n_documents": 5,
+   "counted_sources": [
+    {
+     "group": "S011",
+     "source_ids": [
+      "S011"
+     ]
+    },
+    {
+     "group": "S039",
+     "source_ids": [
+      "S039"
+     ]
+    },
+    {
+     "group": "S119",
+     "source_ids": [
+      "S119"
+     ]
+    },
+    {
+     "group": "gwc-consult-2026",
+     "source_ids": [
+      "S045"
+     ]
+    }
+   ],
    "n_streams": 2,
    "n_checked": 7,
    "relations": [
@@ -816,6 +842,20 @@ window.SITE_DATA = {
    "n_records": 3,
    "n_sources": 2,
    "n_documents": 2,
+   "counted_sources": [
+    {
+     "group": "S110",
+     "source_ids": [
+      "S110"
+     ]
+    },
+    {
+     "group": "S119",
+     "source_ids": [
+      "S119"
+     ]
+    }
+   ],
    "n_streams": 1,
    "n_checked": 3,
    "relations": [],
@@ -860,6 +900,20 @@ window.SITE_DATA = {
    "n_records": 3,
    "n_sources": 2,
    "n_documents": 2,
+   "counted_sources": [
+    {
+     "group": "S011",
+     "source_ids": [
+      "S011"
+     ]
+    },
+    {
+     "group": "S120",
+     "source_ids": [
+      "S120"
+     ]
+    }
+   ],
    "n_streams": 2,
    "n_checked": 3,
    "relations": [],
@@ -905,6 +959,26 @@ window.SITE_DATA = {
    "n_records": 3,
    "n_sources": 3,
    "n_documents": 3,
+   "counted_sources": [
+    {
+     "group": "S011",
+     "source_ids": [
+      "S011"
+     ]
+    },
+    {
+     "group": "S103",
+     "source_ids": [
+      "S103"
+     ]
+    },
+    {
+     "group": "S113",
+     "source_ids": [
+      "S113"
+     ]
+    }
+   ],
    "n_streams": 1,
    "n_checked": 3,
    "relations": [],
@@ -958,6 +1032,20 @@ window.SITE_DATA = {
    "n_records": 2,
    "n_sources": 2,
    "n_documents": 2,
+   "counted_sources": [
+    {
+     "group": "S011",
+     "source_ids": [
+      "S011"
+     ]
+    },
+    {
+     "group": "S114",
+     "source_ids": [
+      "S114"
+     ]
+    }
+   ],
    "n_streams": 1,
    "n_checked": 2,
    "relations": [],
@@ -1000,6 +1088,58 @@ window.SITE_DATA = {
    "n_records": 11,
    "n_sources": 8,
    "n_documents": 11,
+   "counted_sources": [
+    {
+     "group": "S011",
+     "source_ids": [
+      "S011"
+     ]
+    },
+    {
+     "group": "S022",
+     "source_ids": [
+      "S022"
+     ]
+    },
+    {
+     "group": "S104",
+     "source_ids": [
+      "S104"
+     ]
+    },
+    {
+     "group": "S111",
+     "source_ids": [
+      "S111"
+     ]
+    },
+    {
+     "group": "S113",
+     "source_ids": [
+      "S113"
+     ]
+    },
+    {
+     "group": "S114",
+     "source_ids": [
+      "S114"
+     ]
+    },
+    {
+     "group": "gwc-consult-2025",
+     "source_ids": [
+      "S042"
+     ]
+    },
+    {
+     "group": "gwc-consult-2026",
+     "source_ids": [
+      "S083",
+      "S084",
+      "S085"
+     ]
+    }
+   ],
    "n_streams": 2,
    "n_checked": 6,
    "relations": [],
@@ -1066,6 +1206,20 @@ window.SITE_DATA = {
    "n_records": 2,
    "n_sources": 2,
    "n_documents": 2,
+   "counted_sources": [
+    {
+     "group": "S011",
+     "source_ids": [
+      "S011"
+     ]
+    },
+    {
+     "group": "gwc-consult-2026",
+     "source_ids": [
+      "S084"
+     ]
+    }
+   ],
    "n_streams": 2,
    "n_checked": 2,
    "relations": [],
@@ -1115,6 +1269,20 @@ window.SITE_DATA = {
    "n_records": 2,
    "n_sources": 2,
    "n_documents": 2,
+   "counted_sources": [
+    {
+     "group": "S011",
+     "source_ids": [
+      "S011"
+     ]
+    },
+    {
+     "group": "S111",
+     "source_ids": [
+      "S111"
+     ]
+    }
+   ],
    "n_streams": 1,
    "n_checked": 2,
    "relations": [],
@@ -1156,6 +1324,32 @@ window.SITE_DATA = {
    "n_records": 4,
    "n_sources": 4,
    "n_documents": 4,
+   "counted_sources": [
+    {
+     "group": "S011",
+     "source_ids": [
+      "S011"
+     ]
+    },
+    {
+     "group": "S105",
+     "source_ids": [
+      "S105"
+     ]
+    },
+    {
+     "group": "S107",
+     "source_ids": [
+      "S107"
+     ]
+    },
+    {
+     "group": "gwc-consult-2026",
+     "source_ids": [
+      "S085"
+     ]
+    }
+   ],
    "n_streams": 2,
    "n_checked": 4,
    "relations": [],
@@ -1213,6 +1407,63 @@ window.SITE_DATA = {
    "n_records": 12,
    "n_sources": 9,
    "n_documents": 10,
+   "counted_sources": [
+    {
+     "group": "S011",
+     "source_ids": [
+      "S011"
+     ]
+    },
+    {
+     "group": "S012",
+     "source_ids": [
+      "S012"
+     ]
+    },
+    {
+     "group": "S104",
+     "source_ids": [
+      "S104"
+     ]
+    },
+    {
+     "group": "S105",
+     "source_ids": [
+      "S105"
+     ]
+    },
+    {
+     "group": "S107",
+     "source_ids": [
+      "S107"
+     ]
+    },
+    {
+     "group": "S112",
+     "source_ids": [
+      "S112"
+     ]
+    },
+    {
+     "group": "S114",
+     "source_ids": [
+      "S114"
+     ]
+    },
+    {
+     "group": "S122",
+     "source_ids": [
+      "S122"
+     ]
+    },
+    {
+     "group": "gwc-consult-2026",
+     "source_ids": [
+      "S083",
+      "S084"
+     ]
+    }
+   ],
    "n_streams": 3,
    "n_checked": 12,
    "relations": [],
@@ -1287,6 +1538,32 @@ window.SITE_DATA = {
    "n_records": 5,
    "n_sources": 4,
    "n_documents": 4,
+   "counted_sources": [
+    {
+     "group": "S011",
+     "source_ids": [
+      "S011"
+     ]
+    },
+    {
+     "group": "S078",
+     "source_ids": [
+      "S078"
+     ]
+    },
+    {
+     "group": "S111",
+     "source_ids": [
+      "S111"
+     ]
+    },
+    {
+     "group": "gwc-consult-2026",
+     "source_ids": [
+      "S084"
+     ]
+    }
+   ],
    "n_streams": 3,
    "n_checked": 4,
    "relations": [],
@@ -1345,6 +1622,74 @@ window.SITE_DATA = {
    "n_records": 16,
    "n_sources": 11,
    "n_documents": 11,
+   "counted_sources": [
+    {
+     "group": "S011",
+     "source_ids": [
+      "S011"
+     ]
+    },
+    {
+     "group": "S017",
+     "source_ids": [
+      "S017"
+     ]
+    },
+    {
+     "group": "S059",
+     "source_ids": [
+      "S059"
+     ]
+    },
+    {
+     "group": "S103",
+     "source_ids": [
+      "S103"
+     ]
+    },
+    {
+     "group": "S104",
+     "source_ids": [
+      "S104"
+     ]
+    },
+    {
+     "group": "S106",
+     "source_ids": [
+      "S106"
+     ]
+    },
+    {
+     "group": "S108",
+     "source_ids": [
+      "S108"
+     ]
+    },
+    {
+     "group": "S109",
+     "source_ids": [
+      "S109"
+     ]
+    },
+    {
+     "group": "S115",
+     "source_ids": [
+      "S115"
+     ]
+    },
+    {
+     "group": "S124",
+     "source_ids": [
+      "S124"
+     ]
+    },
+    {
+     "group": "gwc-consult-2026",
+     "source_ids": [
+      "S083"
+     ]
+    }
+   ],
    "n_streams": 4,
    "n_checked": 13,
    "relations": [],
@@ -1421,6 +1766,20 @@ window.SITE_DATA = {
    "n_records": 2,
    "n_sources": 2,
    "n_documents": 2,
+   "counted_sources": [
+    {
+     "group": "S011",
+     "source_ids": [
+      "S011"
+     ]
+    },
+    {
+     "group": "S114",
+     "source_ids": [
+      "S114"
+     ]
+    }
+   ],
    "n_streams": 1,
    "n_checked": 2,
    "relations": [],
@@ -1463,6 +1822,26 @@ window.SITE_DATA = {
    "n_records": 3,
    "n_sources": 3,
    "n_documents": 3,
+   "counted_sources": [
+    {
+     "group": "S011",
+     "source_ids": [
+      "S011"
+     ]
+    },
+    {
+     "group": "S012",
+     "source_ids": [
+      "S012"
+     ]
+    },
+    {
+     "group": "S105",
+     "source_ids": [
+      "S105"
+     ]
+    }
+   ],
    "n_streams": 1,
    "n_checked": 3,
    "relations": [],
@@ -1515,6 +1894,14 @@ window.SITE_DATA = {
    "n_records": 2,
    "n_sources": 1,
    "n_documents": 1,
+   "counted_sources": [
+    {
+     "group": "S012",
+     "source_ids": [
+      "S012"
+     ]
+    }
+   ],
    "n_streams": 1,
    "n_checked": 2,
    "relations": [],
@@ -1556,6 +1943,26 @@ window.SITE_DATA = {
    "n_records": 4,
    "n_sources": 3,
    "n_documents": 3,
+   "counted_sources": [
+    {
+     "group": "S012",
+     "source_ids": [
+      "S012"
+     ]
+    },
+    {
+     "group": "S107",
+     "source_ids": [
+      "S107"
+     ]
+    },
+    {
+     "group": "S114",
+     "source_ids": [
+      "S114"
+     ]
+    }
+   ],
    "n_streams": 1,
    "n_checked": 4,
    "relations": [],
@@ -1607,6 +2014,20 @@ window.SITE_DATA = {
    "n_records": 2,
    "n_sources": 2,
    "n_documents": 2,
+   "counted_sources": [
+    {
+     "group": "S012",
+     "source_ids": [
+      "S012"
+     ]
+    },
+    {
+     "group": "S106",
+     "source_ids": [
+      "S106"
+     ]
+    }
+   ],
    "n_streams": 1,
    "n_checked": 2,
    "relations": [],
@@ -1648,6 +2069,20 @@ window.SITE_DATA = {
    "n_records": 2,
    "n_sources": 2,
    "n_documents": 2,
+   "counted_sources": [
+    {
+     "group": "S012",
+     "source_ids": [
+      "S012"
+     ]
+    },
+    {
+     "group": "S104",
+     "source_ids": [
+      "S104"
+     ]
+    }
+   ],
    "n_streams": 1,
    "n_checked": 2,
    "relations": [],
@@ -1687,6 +2122,20 @@ window.SITE_DATA = {
    "n_records": 5,
    "n_sources": 2,
    "n_documents": 2,
+   "counted_sources": [
+    {
+     "group": "S012",
+     "source_ids": [
+      "S012"
+     ]
+    },
+    {
+     "group": "S104",
+     "source_ids": [
+      "S104"
+     ]
+    }
+   ],
    "n_streams": 1,
    "n_checked": 5,
    "relations": [],
@@ -1731,6 +2180,20 @@ window.SITE_DATA = {
    "n_records": 3,
    "n_sources": 2,
    "n_documents": 2,
+   "counted_sources": [
+    {
+     "group": "S108",
+     "source_ids": [
+      "S108"
+     ]
+    },
+    {
+     "group": "S109",
+     "source_ids": [
+      "S109"
+     ]
+    }
+   ],
    "n_streams": 1,
    "n_checked": 3,
    "relations": [],
@@ -1777,6 +2240,20 @@ window.SITE_DATA = {
    "n_records": 2,
    "n_sources": 2,
    "n_documents": 2,
+   "counted_sources": [
+    {
+     "group": "S108",
+     "source_ids": [
+      "S108"
+     ]
+    },
+    {
+     "group": "S114",
+     "source_ids": [
+      "S114"
+     ]
+    }
+   ],
    "n_streams": 1,
    "n_checked": 2,
    "relations": [],
@@ -1819,6 +2296,32 @@ window.SITE_DATA = {
    "n_records": 7,
    "n_sources": 4,
    "n_documents": 4,
+   "counted_sources": [
+    {
+     "group": "S105",
+     "source_ids": [
+      "S105"
+     ]
+    },
+    {
+     "group": "S108",
+     "source_ids": [
+      "S108"
+     ]
+    },
+    {
+     "group": "S110",
+     "source_ids": [
+      "S110"
+     ]
+    },
+    {
+     "group": "S121",
+     "source_ids": [
+      "S121"
+     ]
+    }
+   ],
    "n_streams": 2,
    "n_checked": 7,
    "relations": [],
@@ -1888,6 +2391,20 @@ window.SITE_DATA = {
    "n_records": 8,
    "n_sources": 2,
    "n_documents": 2,
+   "counted_sources": [
+    {
+     "group": "S041",
+     "source_ids": [
+      "S041"
+     ]
+    },
+    {
+     "group": "gwc-consult-2026",
+     "source_ids": [
+      "S045"
+     ]
+    }
+   ],
    "n_streams": 2,
    "n_checked": 8,
    "relations": [],
@@ -1944,6 +2461,45 @@ window.SITE_DATA = {
    "n_records": 11,
    "n_sources": 6,
    "n_documents": 7,
+   "counted_sources": [
+    {
+     "group": "S011",
+     "source_ids": [
+      "S011"
+     ]
+    },
+    {
+     "group": "S103",
+     "source_ids": [
+      "S103"
+     ]
+    },
+    {
+     "group": "S109",
+     "source_ids": [
+      "S109"
+     ]
+    },
+    {
+     "group": "S110",
+     "source_ids": [
+      "S110"
+     ]
+    },
+    {
+     "group": "S112",
+     "source_ids": [
+      "S112"
+     ]
+    },
+    {
+     "group": "gwc-consult-2026",
+     "source_ids": [
+      "S045",
+      "S083"
+     ]
+    }
+   ],
    "n_streams": 2,
    "n_checked": 11,
    "relations": [],
@@ -2016,6 +2572,14 @@ window.SITE_DATA = {
    "n_records": 1,
    "n_sources": 1,
    "n_documents": 1,
+   "counted_sources": [
+    {
+     "group": "gwc-consult-2026",
+     "source_ids": [
+      "S083"
+     ]
+    }
+   ],
    "n_streams": 1,
    "n_checked": 1,
    "relations": [],
@@ -2060,6 +2624,20 @@ window.SITE_DATA = {
    "n_records": 3,
    "n_sources": 2,
    "n_documents": 2,
+   "counted_sources": [
+    {
+     "group": "S108",
+     "source_ids": [
+      "S108"
+     ]
+    },
+    {
+     "group": "S109",
+     "source_ids": [
+      "S109"
+     ]
+    }
+   ],
    "n_streams": 1,
    "n_checked": 3,
    "relations": [],
@@ -2104,6 +2682,14 @@ window.SITE_DATA = {
    "n_records": 4,
    "n_sources": 1,
    "n_documents": 3,
+   "counted_sources": [
+    {
+     "group": "gwc-consult-2026",
+     "source_ids": [
+      "S083"
+     ]
+    }
+   ],
    "n_streams": 1,
    "n_checked": 2,
    "relations": [],
@@ -2145,6 +2731,20 @@ window.SITE_DATA = {
    "n_records": 2,
    "n_sources": 2,
    "n_documents": 2,
+   "counted_sources": [
+    {
+     "group": "S108",
+     "source_ids": [
+      "S108"
+     ]
+    },
+    {
+     "group": "S109",
+     "source_ids": [
+      "S109"
+     ]
+    }
+   ],
    "n_streams": 1,
    "n_checked": 2,
    "relations": [],
@@ -2187,6 +2787,14 @@ window.SITE_DATA = {
    "n_records": 1,
    "n_sources": 1,
    "n_documents": 1,
+   "counted_sources": [
+    {
+     "group": "S109",
+     "source_ids": [
+      "S109"
+     ]
+    }
+   ],
    "n_streams": 1,
    "n_checked": 1,
    "relations": [],
@@ -2227,6 +2835,14 @@ window.SITE_DATA = {
    "n_records": 7,
    "n_sources": 1,
    "n_documents": 7,
+   "counted_sources": [
+    {
+     "group": "gwc-consult-2026",
+     "source_ids": [
+      "S083"
+     ]
+    }
+   ],
    "n_streams": 1,
    "n_checked": 3,
    "relations": [],
@@ -2277,6 +2893,14 @@ window.SITE_DATA = {
    "n_records": 2,
    "n_sources": 1,
    "n_documents": 2,
+   "counted_sources": [
+    {
+     "group": "gwc-consult-2026",
+     "source_ids": [
+      "S083"
+     ]
+    }
+   ],
    "n_streams": 1,
    "n_checked": 2,
    "relations": [],
@@ -2315,6 +2939,15 @@ window.SITE_DATA = {
    "n_records": 9,
    "n_sources": 1,
    "n_documents": 2,
+   "counted_sources": [
+    {
+     "group": "gwc-consult-2026",
+     "source_ids": [
+      "S083",
+      "S084"
+     ]
+    }
+   ],
    "n_streams": 1,
    "n_checked": 2,
    "relations": [],
@@ -2365,6 +2998,32 @@ window.SITE_DATA = {
    "n_records": 4,
    "n_sources": 4,
    "n_documents": 4,
+   "counted_sources": [
+    {
+     "group": "S103",
+     "source_ids": [
+      "S103"
+     ]
+    },
+    {
+     "group": "S107",
+     "source_ids": [
+      "S107"
+     ]
+    },
+    {
+     "group": "S111",
+     "source_ids": [
+      "S111"
+     ]
+    },
+    {
+     "group": "S115",
+     "source_ids": [
+      "S115"
+     ]
+    }
+   ],
    "n_streams": 1,
    "n_checked": 4,
    "relations": [],
@@ -2418,6 +3077,32 @@ window.SITE_DATA = {
    "n_records": 5,
    "n_sources": 4,
    "n_documents": 4,
+   "counted_sources": [
+    {
+     "group": "S060",
+     "source_ids": [
+      "S060"
+     ]
+    },
+    {
+     "group": "S104",
+     "source_ids": [
+      "S104"
+     ]
+    },
+    {
+     "group": "S111",
+     "source_ids": [
+      "S111"
+     ]
+    },
+    {
+     "group": "S115",
+     "source_ids": [
+      "S115"
+     ]
+    }
+   ],
    "n_streams": 2,
    "n_checked": 4,
    "relations": [],
@@ -2475,6 +3160,50 @@ window.SITE_DATA = {
    "n_records": 8,
    "n_sources": 7,
    "n_documents": 7,
+   "counted_sources": [
+    {
+     "group": "S012",
+     "source_ids": [
+      "S012"
+     ]
+    },
+    {
+     "group": "S103",
+     "source_ids": [
+      "S103"
+     ]
+    },
+    {
+     "group": "S104",
+     "source_ids": [
+      "S104"
+     ]
+    },
+    {
+     "group": "S108",
+     "source_ids": [
+      "S108"
+     ]
+    },
+    {
+     "group": "S109",
+     "source_ids": [
+      "S109"
+     ]
+    },
+    {
+     "group": "S112",
+     "source_ids": [
+      "S112"
+     ]
+    },
+    {
+     "group": "gwc-consult-2026",
+     "source_ids": [
+      "S045"
+     ]
+    }
+   ],
    "n_streams": 2,
    "n_checked": 8,
    "relations": [],
@@ -2540,6 +3269,14 @@ window.SITE_DATA = {
    "n_records": 2,
    "n_sources": 1,
    "n_documents": 1,
+   "counted_sources": [
+    {
+     "group": "S114",
+     "source_ids": [
+      "S114"
+     ]
+    }
+   ],
    "n_streams": 1,
    "n_checked": 2,
    "relations": [],
@@ -2580,6 +3317,14 @@ window.SITE_DATA = {
    "n_records": 5,
    "n_sources": 1,
    "n_documents": 2,
+   "counted_sources": [
+    {
+     "group": "gwc-consult-2026",
+     "source_ids": [
+      "S083"
+     ]
+    }
+   ],
    "n_streams": 1,
    "n_checked": 3,
    "relations": [],
@@ -2630,6 +3375,32 @@ window.SITE_DATA = {
    "n_records": 4,
    "n_sources": 4,
    "n_documents": 4,
+   "counted_sources": [
+    {
+     "group": "S060",
+     "source_ids": [
+      "S060"
+     ]
+    },
+    {
+     "group": "S067",
+     "source_ids": [
+      "S067"
+     ]
+    },
+    {
+     "group": "cameroon-health-transition-2026",
+     "source_ids": [
+      "S118"
+     ]
+    },
+    {
+     "group": "gwc-consult-2026",
+     "source_ids": [
+      "S083"
+     ]
+    }
+   ],
    "n_streams": 3,
    "n_checked": 2,
    "relations": [],
@@ -2683,6 +3454,38 @@ window.SITE_DATA = {
    "n_records": 5,
    "n_sources": 5,
    "n_documents": 5,
+   "counted_sources": [
+    {
+     "group": "S013",
+     "source_ids": [
+      "S013"
+     ]
+    },
+    {
+     "group": "S028",
+     "source_ids": [
+      "S028"
+     ]
+    },
+    {
+     "group": "S119",
+     "source_ids": [
+      "S119"
+     ]
+    },
+    {
+     "group": "S120",
+     "source_ids": [
+      "S120"
+     ]
+    },
+    {
+     "group": "gwc-consult-2026",
+     "source_ids": [
+      "S045"
+     ]
+    }
+   ],
    "n_streams": 4,
    "n_checked": 3,
    "relations": [],
@@ -2742,6 +3545,14 @@ window.SITE_DATA = {
    "n_records": 2,
    "n_sources": 1,
    "n_documents": 1,
+   "counted_sources": [
+    {
+     "group": "S115",
+     "source_ids": [
+      "S115"
+     ]
+    }
+   ],
    "n_streams": 1,
    "n_checked": 2,
    "relations": [],
@@ -2782,6 +3593,14 @@ window.SITE_DATA = {
    "n_records": 4,
    "n_sources": 1,
    "n_documents": 1,
+   "counted_sources": [
+    {
+     "group": "S115",
+     "source_ids": [
+      "S115"
+     ]
+    }
+   ],
    "n_streams": 1,
    "n_checked": 4,
    "relations": [],
@@ -2826,6 +3645,14 @@ window.SITE_DATA = {
    "n_records": 1,
    "n_sources": 1,
    "n_documents": 1,
+   "counted_sources": [
+    {
+     "group": "S115",
+     "source_ids": [
+      "S115"
+     ]
+    }
+   ],
    "n_streams": 1,
    "n_checked": 1,
    "relations": [],
@@ -2865,6 +3692,26 @@ window.SITE_DATA = {
    "n_records": 3,
    "n_sources": 3,
    "n_documents": 3,
+   "counted_sources": [
+    {
+     "group": "S015",
+     "source_ids": [
+      "S015"
+     ]
+    },
+    {
+     "group": "S123",
+     "source_ids": [
+      "S123"
+     ]
+    },
+    {
+     "group": "S124",
+     "source_ids": [
+      "S124"
+     ]
+    }
+   ],
    "n_streams": 3,
    "n_checked": 3,
    "relations": [],
@@ -2908,6 +3755,20 @@ window.SITE_DATA = {
    "n_records": 2,
    "n_sources": 2,
    "n_documents": 2,
+   "counted_sources": [
+    {
+     "group": "S015",
+     "source_ids": [
+      "S015"
+     ]
+    },
+    {
+     "group": "S088",
+     "source_ids": [
+      "S088"
+     ]
+    }
+   ],
    "n_streams": 1,
    "n_checked": 2,
    "relations": [],
@@ -2945,6 +3806,14 @@ window.SITE_DATA = {
    "n_records": 1,
    "n_sources": 1,
    "n_documents": 1,
+   "counted_sources": [
+    {
+     "group": "S088",
+     "source_ids": [
+      "S088"
+     ]
+    }
+   ],
    "n_streams": 1,
    "n_checked": 1,
    "relations": [],
@@ -2982,6 +3851,14 @@ window.SITE_DATA = {
    "n_records": 1,
    "n_sources": 1,
    "n_documents": 1,
+   "counted_sources": [
+    {
+     "group": "S088",
+     "source_ids": [
+      "S088"
+     ]
+    }
+   ],
    "n_streams": 1,
    "n_checked": 1,
    "relations": [],
@@ -3019,6 +3896,14 @@ window.SITE_DATA = {
    "n_records": 2,
    "n_sources": 1,
    "n_documents": 1,
+   "counted_sources": [
+    {
+     "group": "S119",
+     "source_ids": [
+      "S119"
+     ]
+    }
+   ],
    "n_streams": 1,
    "n_checked": 2,
    "relations": [],
@@ -3059,6 +3944,14 @@ window.SITE_DATA = {
    "n_records": 1,
    "n_sources": 1,
    "n_documents": 1,
+   "counted_sources": [
+    {
+     "group": "S119",
+     "source_ids": [
+      "S119"
+     ]
+    }
+   ],
    "n_streams": 1,
    "n_checked": 1,
    "relations": [],
@@ -3097,6 +3990,14 @@ window.SITE_DATA = {
    "n_records": 1,
    "n_sources": 1,
    "n_documents": 1,
+   "counted_sources": [
+    {
+     "group": "S119",
+     "source_ids": [
+      "S119"
+     ]
+    }
+   ],
    "n_streams": 1,
    "n_checked": 1,
    "relations": [],
@@ -3135,6 +4036,14 @@ window.SITE_DATA = {
    "n_records": 1,
    "n_sources": 1,
    "n_documents": 1,
+   "counted_sources": [
+    {
+     "group": "S119",
+     "source_ids": [
+      "S119"
+     ]
+    }
+   ],
    "n_streams": 1,
    "n_checked": 1,
    "relations": [],
@@ -3174,6 +4083,14 @@ window.SITE_DATA = {
    "n_records": 1,
    "n_sources": 1,
    "n_documents": 1,
+   "counted_sources": [
+    {
+     "group": "S119",
+     "source_ids": [
+      "S119"
+     ]
+    }
+   ],
    "n_streams": 1,
    "n_checked": 1,
    "relations": [],
@@ -3211,6 +4128,14 @@ window.SITE_DATA = {
    "n_records": 1,
    "n_sources": 1,
    "n_documents": 1,
+   "counted_sources": [
+    {
+     "group": "S119",
+     "source_ids": [
+      "S119"
+     ]
+    }
+   ],
    "n_streams": 1,
    "n_checked": 1,
    "relations": [],
@@ -3248,6 +4173,14 @@ window.SITE_DATA = {
    "n_records": 1,
    "n_sources": 1,
    "n_documents": 1,
+   "counted_sources": [
+    {
+     "group": "S119",
+     "source_ids": [
+      "S119"
+     ]
+    }
+   ],
    "n_streams": 1,
    "n_checked": 1,
    "relations": [],
@@ -3287,6 +4220,14 @@ window.SITE_DATA = {
    "n_records": 1,
    "n_sources": 1,
    "n_documents": 1,
+   "counted_sources": [
+    {
+     "group": "S119",
+     "source_ids": [
+      "S119"
+     ]
+    }
+   ],
    "n_streams": 1,
    "n_checked": 1,
    "relations": [],
@@ -3325,6 +4266,14 @@ window.SITE_DATA = {
    "n_records": 1,
    "n_sources": 1,
    "n_documents": 1,
+   "counted_sources": [
+    {
+     "group": "S119",
+     "source_ids": [
+      "S119"
+     ]
+    }
+   ],
    "n_streams": 1,
    "n_checked": 1,
    "relations": [],
@@ -3363,6 +4312,14 @@ window.SITE_DATA = {
    "n_records": 1,
    "n_sources": 1,
    "n_documents": 1,
+   "counted_sources": [
+    {
+     "group": "S119",
+     "source_ids": [
+      "S119"
+     ]
+    }
+   ],
    "n_streams": 1,
    "n_checked": 1,
    "relations": [],
@@ -3402,6 +4359,14 @@ window.SITE_DATA = {
    "n_records": 1,
    "n_sources": 1,
    "n_documents": 1,
+   "counted_sources": [
+    {
+     "group": "S119",
+     "source_ids": [
+      "S119"
+     ]
+    }
+   ],
    "n_streams": 1,
    "n_checked": 1,
    "relations": [],
@@ -3441,6 +4406,14 @@ window.SITE_DATA = {
    "n_records": 2,
    "n_sources": 1,
    "n_documents": 1,
+   "counted_sources": [
+    {
+     "group": "S119",
+     "source_ids": [
+      "S119"
+     ]
+    }
+   ],
    "n_streams": 1,
    "n_checked": 2,
    "relations": [],
@@ -3480,6 +4453,14 @@ window.SITE_DATA = {
    "n_records": 1,
    "n_sources": 1,
    "n_documents": 1,
+   "counted_sources": [
+    {
+     "group": "S119",
+     "source_ids": [
+      "S119"
+     ]
+    }
+   ],
    "n_streams": 1,
    "n_checked": 1,
    "relations": [],
@@ -3517,6 +4498,14 @@ window.SITE_DATA = {
    "n_records": 1,
    "n_sources": 1,
    "n_documents": 1,
+   "counted_sources": [
+    {
+     "group": "S119",
+     "source_ids": [
+      "S119"
+     ]
+    }
+   ],
    "n_streams": 1,
    "n_checked": 1,
    "relations": [],
@@ -3552,6 +4541,14 @@ window.SITE_DATA = {
    "n_records": 1,
    "n_sources": 1,
    "n_documents": 1,
+   "counted_sources": [
+    {
+     "group": "S119",
+     "source_ids": [
+      "S119"
+     ]
+    }
+   ],
    "n_streams": 1,
    "n_checked": 1,
    "relations": [],
@@ -3589,6 +4586,14 @@ window.SITE_DATA = {
    "n_records": 2,
    "n_sources": 1,
    "n_documents": 1,
+   "counted_sources": [
+    {
+     "group": "S119",
+     "source_ids": [
+      "S119"
+     ]
+    }
+   ],
    "n_streams": 1,
    "n_checked": 2,
    "relations": [],
@@ -3631,6 +4636,14 @@ window.SITE_DATA = {
    "n_records": 2,
    "n_sources": 1,
    "n_documents": 1,
+   "counted_sources": [
+    {
+     "group": "S119",
+     "source_ids": [
+      "S119"
+     ]
+    }
+   ],
    "n_streams": 1,
    "n_checked": 2,
    "relations": [],
@@ -3670,6 +4683,14 @@ window.SITE_DATA = {
    "n_records": 1,
    "n_sources": 1,
    "n_documents": 1,
+   "counted_sources": [
+    {
+     "group": "S119",
+     "source_ids": [
+      "S119"
+     ]
+    }
+   ],
    "n_streams": 1,
    "n_checked": 1,
    "relations": [],
@@ -3707,6 +4728,14 @@ window.SITE_DATA = {
    "n_records": 1,
    "n_sources": 1,
    "n_documents": 1,
+   "counted_sources": [
+    {
+     "group": "S119",
+     "source_ids": [
+      "S119"
+     ]
+    }
+   ],
    "n_streams": 1,
    "n_checked": 1,
    "relations": [],
@@ -3746,6 +4775,14 @@ window.SITE_DATA = {
    "n_records": 2,
    "n_sources": 1,
    "n_documents": 1,
+   "counted_sources": [
+    {
+     "group": "S119",
+     "source_ids": [
+      "S119"
+     ]
+    }
+   ],
    "n_streams": 1,
    "n_checked": 2,
    "relations": [],
@@ -3785,6 +4822,14 @@ window.SITE_DATA = {
    "n_records": 1,
    "n_sources": 1,
    "n_documents": 1,
+   "counted_sources": [
+    {
+     "group": "S119",
+     "source_ids": [
+      "S119"
+     ]
+    }
+   ],
    "n_streams": 1,
    "n_checked": 1,
    "relations": [],
@@ -3823,6 +4868,14 @@ window.SITE_DATA = {
    "n_records": 1,
    "n_sources": 1,
    "n_documents": 1,
+   "counted_sources": [
+    {
+     "group": "S119",
+     "source_ids": [
+      "S119"
+     ]
+    }
+   ],
    "n_streams": 1,
    "n_checked": 1,
    "relations": [],
@@ -3862,6 +4915,14 @@ window.SITE_DATA = {
    "n_records": 1,
    "n_sources": 1,
    "n_documents": 1,
+   "counted_sources": [
+    {
+     "group": "S119",
+     "source_ids": [
+      "S119"
+     ]
+    }
+   ],
    "n_streams": 1,
    "n_checked": 1,
    "relations": [],
@@ -3901,6 +4962,14 @@ window.SITE_DATA = {
    "n_records": 1,
    "n_sources": 1,
    "n_documents": 1,
+   "counted_sources": [
+    {
+     "group": "S115",
+     "source_ids": [
+      "S115"
+     ]
+    }
+   ],
    "n_streams": 1,
    "n_checked": 1,
    "relations": [],
@@ -3939,6 +5008,14 @@ window.SITE_DATA = {
    "n_records": 1,
    "n_sources": 1,
    "n_documents": 1,
+   "counted_sources": [
+    {
+     "group": "S115",
+     "source_ids": [
+      "S115"
+     ]
+    }
+   ],
    "n_streams": 1,
    "n_checked": 1,
    "relations": [],
@@ -3976,6 +5053,14 @@ window.SITE_DATA = {
    "n_records": 2,
    "n_sources": 1,
    "n_documents": 1,
+   "counted_sources": [
+    {
+     "group": "gwc-consult-2025",
+     "source_ids": [
+      "S044"
+     ]
+    }
+   ],
    "n_streams": 1,
    "n_checked": 2,
    "relations": [],
@@ -4015,6 +5100,14 @@ window.SITE_DATA = {
    "n_records": 1,
    "n_sources": 1,
    "n_documents": 1,
+   "counted_sources": [
+    {
+     "group": "gwc-consult-2025",
+     "source_ids": [
+      "S044"
+     ]
+    }
+   ],
    "n_streams": 1,
    "n_checked": 1,
    "relations": [],
@@ -4051,6 +5144,14 @@ window.SITE_DATA = {
    "n_records": 1,
    "n_sources": 1,
    "n_documents": 1,
+   "counted_sources": [
+    {
+     "group": "gwc-consult-2025",
+     "source_ids": [
+      "S044"
+     ]
+    }
+   ],
    "n_streams": 1,
    "n_checked": 1,
    "relations": [],
@@ -4085,6 +5186,14 @@ window.SITE_DATA = {
    "n_records": 1,
    "n_sources": 1,
    "n_documents": 1,
+   "counted_sources": [
+    {
+     "group": "S120",
+     "source_ids": [
+      "S120"
+     ]
+    }
+   ],
    "n_streams": 1,
    "n_checked": 1,
    "relations": [],
@@ -4121,6 +5230,14 @@ window.SITE_DATA = {
    "n_records": 1,
    "n_sources": 1,
    "n_documents": 1,
+   "counted_sources": [
+    {
+     "group": "S121",
+     "source_ids": [
+      "S121"
+     ]
+    }
+   ],
    "n_streams": 1,
    "n_checked": 1,
    "relations": [],
@@ -4163,6 +5280,14 @@ window.SITE_DATA = {
    "n_records": 2,
    "n_sources": 1,
    "n_documents": 1,
+   "counted_sources": [
+    {
+     "group": "S121",
+     "source_ids": [
+      "S121"
+     ]
+    }
+   ],
    "n_streams": 1,
    "n_checked": 2,
    "relations": [],
@@ -4207,6 +5332,14 @@ window.SITE_DATA = {
    "n_records": 2,
    "n_sources": 1,
    "n_documents": 1,
+   "counted_sources": [
+    {
+     "group": "S122",
+     "source_ids": [
+      "S122"
+     ]
+    }
+   ],
    "n_streams": 1,
    "n_checked": 2,
    "relations": [],
@@ -4245,6 +5378,14 @@ window.SITE_DATA = {
    "n_records": 1,
    "n_sources": 1,
    "n_documents": 1,
+   "counted_sources": [
+    {
+     "group": "S122",
+     "source_ids": [
+      "S122"
+     ]
+    }
+   ],
    "n_streams": 1,
    "n_checked": 1,
    "relations": [],
@@ -4282,6 +5423,14 @@ window.SITE_DATA = {
    "n_records": 1,
    "n_sources": 1,
    "n_documents": 1,
+   "counted_sources": [
+    {
+     "group": "S123",
+     "source_ids": [
+      "S123"
+     ]
+    }
+   ],
    "n_streams": 1,
    "n_checked": 1,
    "relations": [],
@@ -4320,6 +5469,14 @@ window.SITE_DATA = {
    "n_records": 1,
    "n_sources": 1,
    "n_documents": 1,
+   "counted_sources": [
+    {
+     "group": "S123",
+     "source_ids": [
+      "S123"
+     ]
+    }
+   ],
    "n_streams": 1,
    "n_checked": 1,
    "relations": [],
@@ -4358,6 +5515,14 @@ window.SITE_DATA = {
    "n_records": 1,
    "n_sources": 1,
    "n_documents": 1,
+   "counted_sources": [
+    {
+     "group": "S123",
+     "source_ids": [
+      "S123"
+     ]
+    }
+   ],
    "n_streams": 1,
    "n_checked": 1,
    "relations": [
@@ -4404,6 +5569,14 @@ window.SITE_DATA = {
    "n_records": 1,
    "n_sources": 1,
    "n_documents": 1,
+   "counted_sources": [
+    {
+     "group": "S123",
+     "source_ids": [
+      "S123"
+     ]
+    }
+   ],
    "n_streams": 1,
    "n_checked": 1,
    "relations": [],
@@ -4441,6 +5614,14 @@ window.SITE_DATA = {
    "n_records": 1,
    "n_sources": 1,
    "n_documents": 1,
+   "counted_sources": [
+    {
+     "group": "icva-coordination-in-transition",
+     "source_ids": [
+      "S033"
+     ]
+    }
+   ],
    "n_streams": 1,
    "n_checked": 1,
    "relations": [],
@@ -4482,6 +5663,14 @@ window.SITE_DATA = {
    "n_records": 1,
    "n_sources": 1,
    "n_documents": 1,
+   "counted_sources": [
+    {
+     "group": "icva-coordination-in-transition",
+     "source_ids": [
+      "S033"
+     ]
+    }
+   ],
    "n_streams": 1,
    "n_checked": 1,
    "relations": [],
@@ -4522,6 +5711,14 @@ window.SITE_DATA = {
    "n_records": 1,
    "n_sources": 1,
    "n_documents": 1,
+   "counted_sources": [
+    {
+     "group": "icva-coordination-in-transition",
+     "source_ids": [
+      "S033"
+     ]
+    }
+   ],
    "n_streams": 1,
    "n_checked": 1,
    "relations": [
@@ -4568,6 +5765,14 @@ window.SITE_DATA = {
    "n_records": 1,
    "n_sources": 1,
    "n_documents": 1,
+   "counted_sources": [
+    {
+     "group": "S124",
+     "source_ids": [
+      "S124"
+     ]
+    }
+   ],
    "n_streams": 1,
    "n_checked": 1,
    "relations": [],
@@ -4604,6 +5809,14 @@ window.SITE_DATA = {
    "n_records": 1,
    "n_sources": 1,
    "n_documents": 1,
+   "counted_sources": [
+    {
+     "group": "S124",
+     "source_ids": [
+      "S124"
+     ]
+    }
+   ],
    "n_streams": 1,
    "n_checked": 1,
    "relations": [],
@@ -4640,6 +5853,14 @@ window.SITE_DATA = {
    "n_records": 1,
    "n_sources": 1,
    "n_documents": 1,
+   "counted_sources": [
+    {
+     "group": "S013",
+     "source_ids": [
+      "S013"
+     ]
+    }
+   ],
    "n_streams": 1,
    "n_checked": 0,
    "relations": [],
@@ -4678,6 +5899,50 @@ window.SITE_DATA = {
    "n_records": 7,
    "n_sources": 7,
    "n_documents": 7,
+   "counted_sources": [
+    {
+     "group": "S015",
+     "source_ids": [
+      "S015"
+     ]
+    },
+    {
+     "group": "S023",
+     "source_ids": [
+      "S023"
+     ]
+    },
+    {
+     "group": "S025",
+     "source_ids": [
+      "S025"
+     ]
+    },
+    {
+     "group": "S041",
+     "source_ids": [
+      "S041"
+     ]
+    },
+    {
+     "group": "S088",
+     "source_ids": [
+      "S088"
+     ]
+    },
+    {
+     "group": "S119",
+     "source_ids": [
+      "S119"
+     ]
+    },
+    {
+     "group": "gwc-consult-2025",
+     "source_ids": [
+      "S044"
+     ]
+    }
+   ],
    "n_streams": 3,
    "n_checked": 4,
    "relations": [],
@@ -4737,6 +6002,80 @@ window.SITE_DATA = {
    "n_records": 17,
    "n_sources": 12,
    "n_documents": 12,
+   "counted_sources": [
+    {
+     "group": "S011",
+     "source_ids": [
+      "S011"
+     ]
+    },
+    {
+     "group": "S012",
+     "source_ids": [
+      "S012"
+     ]
+    },
+    {
+     "group": "S015",
+     "source_ids": [
+      "S015"
+     ]
+    },
+    {
+     "group": "S018",
+     "source_ids": [
+      "S018"
+     ]
+    },
+    {
+     "group": "S021",
+     "source_ids": [
+      "S021"
+     ]
+    },
+    {
+     "group": "S024",
+     "source_ids": [
+      "S024"
+     ]
+    },
+    {
+     "group": "S041",
+     "source_ids": [
+      "S041"
+     ]
+    },
+    {
+     "group": "S088",
+     "source_ids": [
+      "S088"
+     ]
+    },
+    {
+     "group": "S107",
+     "source_ids": [
+      "S107"
+     ]
+    },
+    {
+     "group": "cameroon-health-transition-2026",
+     "source_ids": [
+      "S061"
+     ]
+    },
+    {
+     "group": "gwc-consult-2026",
+     "source_ids": [
+      "S045"
+     ]
+    },
+    {
+     "group": "undp-abd-practice-note",
+     "source_ids": [
+      "S034"
+     ]
+    }
+   ],
    "n_streams": 3,
    "n_checked": 12,
    "relations": [
@@ -4827,6 +6166,32 @@ window.SITE_DATA = {
    "n_records": 5,
    "n_sources": 4,
    "n_documents": 4,
+   "counted_sources": [
+    {
+     "group": "S015",
+     "source_ids": [
+      "S015"
+     ]
+    },
+    {
+     "group": "S114",
+     "source_ids": [
+      "S114"
+     ]
+    },
+    {
+     "group": "cameroon-health-transition-2026",
+     "source_ids": [
+      "S118"
+     ]
+    },
+    {
+     "group": "gwc-consult-2026",
+     "source_ids": [
+      "S045"
+     ]
+    }
+   ],
    "n_streams": 4,
    "n_checked": 5,
    "relations": [],
@@ -4883,6 +6248,62 @@ window.SITE_DATA = {
    "n_records": 10,
    "n_sources": 9,
    "n_documents": 9,
+   "counted_sources": [
+    {
+     "group": "S012",
+     "source_ids": [
+      "S012"
+     ]
+    },
+    {
+     "group": "S014",
+     "source_ids": [
+      "S014"
+     ]
+    },
+    {
+     "group": "S029",
+     "source_ids": [
+      "S029"
+     ]
+    },
+    {
+     "group": "S104",
+     "source_ids": [
+      "S104"
+     ]
+    },
+    {
+     "group": "S109",
+     "source_ids": [
+      "S109"
+     ]
+    },
+    {
+     "group": "S110",
+     "source_ids": [
+      "S110"
+     ]
+    },
+    {
+     "group": "S112",
+     "source_ids": [
+      "S112"
+     ]
+    },
+    {
+     "group": "S113",
+     "source_ids": [
+      "S113"
+     ]
+    },
+    {
+     "group": "S115",
+     "source_ids": [
+      "S115"
+     ]
+    }
+   ],
    "n_streams": 2,
    "n_checked": 8,
    "relations": [],
@@ -4954,6 +6375,44 @@ window.SITE_DATA = {
    "n_records": 9,
    "n_sources": 6,
    "n_documents": 7,
+   "counted_sources": [
+    {
+     "group": "S039",
+     "source_ids": [
+      "S039"
+     ]
+    },
+    {
+     "group": "S104",
+     "source_ids": [
+      "S104"
+     ]
+    },
+    {
+     "group": "S106",
+     "source_ids": [
+      "S106"
+     ]
+    },
+    {
+     "group": "S110",
+     "source_ids": [
+      "S110"
+     ]
+    },
+    {
+     "group": "S112",
+     "source_ids": [
+      "S112"
+     ]
+    },
+    {
+     "group": "gwc-consult-2026",
+     "source_ids": [
+      "S045"
+     ]
+    }
+   ],
    "n_streams": 2,
    "n_checked": 7,
    "relations": [],
@@ -5016,6 +6475,14 @@ window.SITE_DATA = {
    "n_records": 3,
    "n_sources": 1,
    "n_documents": 3,
+   "counted_sources": [
+    {
+     "group": "gwc-consult-2025",
+     "source_ids": [
+      "S042"
+     ]
+    }
+   ],
    "n_streams": 1,
    "n_checked": 0,
    "relations": [],
@@ -5054,6 +6521,14 @@ window.SITE_DATA = {
    "n_records": 3,
    "n_sources": 1,
    "n_documents": 3,
+   "counted_sources": [
+    {
+     "group": "gwc-consult-2025",
+     "source_ids": [
+      "S042"
+     ]
+    }
+   ],
    "n_streams": 1,
    "n_checked": 0,
    "relations": [],
@@ -5092,6 +6567,14 @@ window.SITE_DATA = {
    "n_records": 3,
    "n_sources": 1,
    "n_documents": 3,
+   "counted_sources": [
+    {
+     "group": "S020",
+     "source_ids": [
+      "S020"
+     ]
+    }
+   ],
    "n_streams": 1,
    "n_checked": 0,
    "relations": [],
@@ -5138,6 +6621,44 @@ window.SITE_DATA = {
    "n_records": 20,
    "n_sources": 6,
    "n_documents": 9,
+   "counted_sources": [
+    {
+     "group": "S012",
+     "source_ids": [
+      "S012"
+     ]
+    },
+    {
+     "group": "S015",
+     "source_ids": [
+      "S015"
+     ]
+    },
+    {
+     "group": "S021",
+     "source_ids": [
+      "S021"
+     ]
+    },
+    {
+     "group": "S037",
+     "source_ids": [
+      "S037"
+     ]
+    },
+    {
+     "group": "gwc-consult-2025",
+     "source_ids": [
+      "S042"
+     ]
+    },
+    {
+     "group": "gwc-consult-2026",
+     "source_ids": [
+      "S045"
+     ]
+    }
+   ],
    "n_streams": 3,
    "n_checked": 9,
    "relations": [],
@@ -5211,6 +6732,20 @@ window.SITE_DATA = {
    "n_records": 3,
    "n_sources": 2,
    "n_documents": 3,
+   "counted_sources": [
+    {
+     "group": "S026",
+     "source_ids": [
+      "S026"
+     ]
+    },
+    {
+     "group": "S119",
+     "source_ids": [
+      "S119"
+     ]
+    }
+   ],
    "n_streams": 2,
    "n_checked": 1,
    "relations": [],
@@ -5261,6 +6796,92 @@ window.SITE_DATA = {
    "n_records": 27,
    "n_sources": 14,
    "n_documents": 15,
+   "counted_sources": [
+    {
+     "group": "S011",
+     "source_ids": [
+      "S011"
+     ]
+    },
+    {
+     "group": "S012",
+     "source_ids": [
+      "S012"
+     ]
+    },
+    {
+     "group": "S103",
+     "source_ids": [
+      "S103"
+     ]
+    },
+    {
+     "group": "S104",
+     "source_ids": [
+      "S104"
+     ]
+    },
+    {
+     "group": "S105",
+     "source_ids": [
+      "S105"
+     ]
+    },
+    {
+     "group": "S107",
+     "source_ids": [
+      "S107"
+     ]
+    },
+    {
+     "group": "S108",
+     "source_ids": [
+      "S108"
+     ]
+    },
+    {
+     "group": "S110",
+     "source_ids": [
+      "S110"
+     ]
+    },
+    {
+     "group": "S113",
+     "source_ids": [
+      "S113"
+     ]
+    },
+    {
+     "group": "S114",
+     "source_ids": [
+      "S114"
+     ]
+    },
+    {
+     "group": "S116",
+     "source_ids": [
+      "S116"
+     ]
+    },
+    {
+     "group": "S120",
+     "source_ids": [
+      "S120"
+     ]
+    },
+    {
+     "group": "gwc-consult-2025",
+     "source_ids": [
+      "S042"
+     ]
+    },
+    {
+     "group": "gwc-consult-2026",
+     "source_ids": [
+      "S045"
+     ]
+    }
+   ],
    "n_streams": 3,
    "n_checked": 24,
    "relations": [],
@@ -5359,6 +6980,44 @@ window.SITE_DATA = {
    "n_records": 11,
    "n_sources": 6,
    "n_documents": 6,
+   "counted_sources": [
+    {
+     "group": "S012",
+     "source_ids": [
+      "S012"
+     ]
+    },
+    {
+     "group": "S015",
+     "source_ids": [
+      "S015"
+     ]
+    },
+    {
+     "group": "S041",
+     "source_ids": [
+      "S041"
+     ]
+    },
+    {
+     "group": "S106",
+     "source_ids": [
+      "S106"
+     ]
+    },
+    {
+     "group": "gwc-consult-2025",
+     "source_ids": [
+      "S044"
+     ]
+    },
+    {
+     "group": "gwc-consult-2026",
+     "source_ids": [
+      "S045"
+     ]
+    }
+   ],
    "n_streams": 3,
    "n_checked": 11,
    "relations": [],
@@ -5406,8 +7065,8 @@ window.SITE_DATA = {
    ],
    "unmerged": false,
    "highlight": {
-    "headline": "Whoever speaks loudest sets the agenda",
-    "plain": "Area structures often run without agreed rules on who takes part, who decides, and how priorities are set. Influence then follows volume and money rather than mandate. Bringing in local actors does not fix this on its own, because they bring their own hierarchies too.",
+    "headline": "Area structures are set up without agreed rules",
+    "plain": "Area structures are often stood up with no agreed mandate and no rules on who takes part, who decides, or how priorities are set. Units have been activated across a country and then asked clusters what they were supposed to do. Where the rules are missing, influence follows whoever speaks most and whoever brings money. Bringing in local actors does not fix that on its own, because they bring their own hierarchies too.",
     "so_what": "Write the rules — who takes part, who decides, how priorities are set — before the platform starts work.",
     "rank": null
    }
@@ -5425,6 +7084,20 @@ window.SITE_DATA = {
    "n_records": 2,
    "n_sources": 2,
    "n_documents": 2,
+   "counted_sources": [
+    {
+     "group": "S107",
+     "source_ids": [
+      "S107"
+     ]
+    },
+    {
+     "group": "gwc-consult-2026",
+     "source_ids": [
+      "S045"
+     ]
+    }
+   ],
    "n_streams": 2,
    "n_checked": 2,
    "relations": [],
@@ -5475,6 +7148,14 @@ window.SITE_DATA = {
    "n_records": 1,
    "n_sources": 1,
    "n_documents": 1,
+   "counted_sources": [
+    {
+     "group": "gwc-consult-2026",
+     "source_ids": [
+      "S045"
+     ]
+    }
+   ],
    "n_streams": 1,
    "n_checked": 1,
    "relations": [],
@@ -5513,6 +7194,44 @@ window.SITE_DATA = {
    "n_records": 6,
    "n_sources": 6,
    "n_documents": 6,
+   "counted_sources": [
+    {
+     "group": "S021",
+     "source_ids": [
+      "S021"
+     ]
+    },
+    {
+     "group": "S041",
+     "source_ids": [
+      "S041"
+     ]
+    },
+    {
+     "group": "S088",
+     "source_ids": [
+      "S088"
+     ]
+    },
+    {
+     "group": "S108",
+     "source_ids": [
+      "S108"
+     ]
+    },
+    {
+     "group": "S121",
+     "source_ids": [
+      "S121"
+     ]
+    },
+    {
+     "group": "gwc-consult-2026",
+     "source_ids": [
+      "S085"
+     ]
+    }
+   ],
    "n_streams": 4,
    "n_checked": 5,
    "relations": [],
@@ -5572,6 +7291,20 @@ window.SITE_DATA = {
    "n_records": 2,
    "n_sources": 2,
    "n_documents": 2,
+   "counted_sources": [
+    {
+     "group": "S040",
+     "source_ids": [
+      "S040"
+     ]
+    },
+    {
+     "group": "gwc-consult-2026",
+     "source_ids": [
+      "S045"
+     ]
+    }
+   ],
    "n_streams": 1,
    "n_checked": 1,
    "relations": [],
@@ -5614,6 +7347,20 @@ window.SITE_DATA = {
    "n_records": 2,
    "n_sources": 2,
    "n_documents": 2,
+   "counted_sources": [
+    {
+     "group": "S105",
+     "source_ids": [
+      "S105"
+     ]
+    },
+    {
+     "group": "gwc-consult-2026",
+     "source_ids": [
+      "S045"
+     ]
+    }
+   ],
    "n_streams": 2,
    "n_checked": 2,
    "relations": [],
@@ -5663,6 +7410,32 @@ window.SITE_DATA = {
    "n_records": 4,
    "n_sources": 4,
    "n_documents": 4,
+   "counted_sources": [
+    {
+     "group": "S013",
+     "source_ids": [
+      "S013"
+     ]
+    },
+    {
+     "group": "S031",
+     "source_ids": [
+      "S031"
+     ]
+    },
+    {
+     "group": "S041",
+     "source_ids": [
+      "S041"
+     ]
+    },
+    {
+     "group": "gwc-consult-2026",
+     "source_ids": [
+      "S045"
+     ]
+    }
+   ],
    "n_streams": 2,
    "n_checked": 2,
    "relations": [],
@@ -5718,6 +7491,14 @@ window.SITE_DATA = {
    "n_records": 2,
    "n_sources": 1,
    "n_documents": 2,
+   "counted_sources": [
+    {
+     "group": "gwc-consult-2025",
+     "source_ids": [
+      "S042"
+     ]
+    }
+   ],
    "n_streams": 1,
    "n_checked": 0,
    "relations": [],
@@ -5755,6 +7536,38 @@ window.SITE_DATA = {
    "n_records": 5,
    "n_sources": 5,
    "n_documents": 5,
+   "counted_sources": [
+    {
+     "group": "S027",
+     "source_ids": [
+      "S027"
+     ]
+    },
+    {
+     "group": "S037",
+     "source_ids": [
+      "S037"
+     ]
+    },
+    {
+     "group": "S088",
+     "source_ids": [
+      "S088"
+     ]
+    },
+    {
+     "group": "S104",
+     "source_ids": [
+      "S104"
+     ]
+    },
+    {
+     "group": "S119",
+     "source_ids": [
+      "S119"
+     ]
+    }
+   ],
    "n_streams": 3,
    "n_checked": 3,
    "relations": [],
@@ -5810,6 +7623,14 @@ window.SITE_DATA = {
    "n_records": 2,
    "n_sources": 1,
    "n_documents": 2,
+   "counted_sources": [
+    {
+     "group": "gwc-consult-2025",
+     "source_ids": [
+      "S042"
+     ]
+    }
+   ],
    "n_streams": 1,
    "n_checked": 0,
    "relations": [],
@@ -5848,6 +7669,44 @@ window.SITE_DATA = {
    "n_records": 6,
    "n_sources": 6,
    "n_documents": 6,
+   "counted_sources": [
+    {
+     "group": "S012",
+     "source_ids": [
+      "S012"
+     ]
+    },
+    {
+     "group": "S041",
+     "source_ids": [
+      "S041"
+     ]
+    },
+    {
+     "group": "S060",
+     "source_ids": [
+      "S060"
+     ]
+    },
+    {
+     "group": "S073",
+     "source_ids": [
+      "S073"
+     ]
+    },
+    {
+     "group": "gwc-consult-2026",
+     "source_ids": [
+      "S085"
+     ]
+    },
+    {
+     "group": "icva-coordination-in-transition",
+     "source_ids": [
+      "S056"
+     ]
+    }
+   ],
    "n_streams": 3,
    "n_checked": 3,
    "relations": [],
@@ -5911,6 +7770,57 @@ window.SITE_DATA = {
    "n_records": 10,
    "n_sources": 8,
    "n_documents": 9,
+   "counted_sources": [
+    {
+     "group": "S012",
+     "source_ids": [
+      "S012"
+     ]
+    },
+    {
+     "group": "S037",
+     "source_ids": [
+      "S037"
+     ]
+    },
+    {
+     "group": "S041",
+     "source_ids": [
+      "S041"
+     ]
+    },
+    {
+     "group": "S073",
+     "source_ids": [
+      "S073"
+     ]
+    },
+    {
+     "group": "S108",
+     "source_ids": [
+      "S108"
+     ]
+    },
+    {
+     "group": "S109",
+     "source_ids": [
+      "S109"
+     ]
+    },
+    {
+     "group": "cameroon-health-transition-2026",
+     "source_ids": [
+      "S061",
+      "S118"
+     ]
+    },
+    {
+     "group": "icva-coordination-in-transition",
+     "source_ids": [
+      "S056"
+     ]
+    }
+   ],
    "n_streams": 4,
    "n_checked": 6,
    "relations": [],
@@ -5979,6 +7889,68 @@ window.SITE_DATA = {
    "n_records": 11,
    "n_sources": 10,
    "n_documents": 10,
+   "counted_sources": [
+    {
+     "group": "S012",
+     "source_ids": [
+      "S012"
+     ]
+    },
+    {
+     "group": "S015",
+     "source_ids": [
+      "S015"
+     ]
+    },
+    {
+     "group": "S016",
+     "source_ids": [
+      "S016"
+     ]
+    },
+    {
+     "group": "S041",
+     "source_ids": [
+      "S041"
+     ]
+    },
+    {
+     "group": "S062",
+     "source_ids": [
+      "S062"
+     ]
+    },
+    {
+     "group": "S088",
+     "source_ids": [
+      "S088"
+     ]
+    },
+    {
+     "group": "S120",
+     "source_ids": [
+      "S120"
+     ]
+    },
+    {
+     "group": "cameroon-health-transition-2026",
+     "source_ids": [
+      "S118"
+     ]
+    },
+    {
+     "group": "gwc-consult-2026",
+     "source_ids": [
+      "S045"
+     ]
+    },
+    {
+     "group": "icva-coordination-in-transition",
+     "source_ids": [
+      "S033"
+     ]
+    }
+   ],
    "n_streams": 4,
    "n_checked": 9,
    "relations": [],
@@ -6050,6 +8022,20 @@ window.SITE_DATA = {
    "n_records": 3,
    "n_sources": 2,
    "n_documents": 3,
+   "counted_sources": [
+    {
+     "group": "S120",
+     "source_ids": [
+      "S120"
+     ]
+    },
+    {
+     "group": "gwc-consult-2026",
+     "source_ids": [
+      "S045"
+     ]
+    }
+   ],
    "n_streams": 2,
    "n_checked": 2,
    "relations": [],
@@ -6096,6 +8082,26 @@ window.SITE_DATA = {
    "n_records": 3,
    "n_sources": 3,
    "n_documents": 3,
+   "counted_sources": [
+    {
+     "group": "S014",
+     "source_ids": [
+      "S014"
+     ]
+    },
+    {
+     "group": "S029",
+     "source_ids": [
+      "S029"
+     ]
+    },
+    {
+     "group": "gwc-consult-2026",
+     "source_ids": [
+      "S045"
+     ]
+    }
+   ],
    "n_streams": 2,
    "n_checked": 1,
    "relations": [],
@@ -6144,6 +8150,14 @@ window.SITE_DATA = {
    "n_records": 2,
    "n_sources": 1,
    "n_documents": 2,
+   "counted_sources": [
+    {
+     "group": "S038",
+     "source_ids": [
+      "S038"
+     ]
+    }
+   ],
    "n_streams": 1,
    "n_checked": 0,
    "relations": [],
@@ -6181,6 +8195,14 @@ window.SITE_DATA = {
    "n_records": 2,
    "n_sources": 1,
    "n_documents": 2,
+   "counted_sources": [
+    {
+     "group": "S029",
+     "source_ids": [
+      "S029"
+     ]
+    }
+   ],
    "n_streams": 1,
    "n_checked": 1,
    "relations": [],
@@ -6221,6 +8243,14 @@ window.SITE_DATA = {
    "n_records": 1,
    "n_sources": 1,
    "n_documents": 1,
+   "counted_sources": [
+    {
+     "group": "S018",
+     "source_ids": [
+      "S018"
+     ]
+    }
+   ],
    "n_streams": 1,
    "n_checked": 0,
    "relations": [],
@@ -6258,6 +8288,32 @@ window.SITE_DATA = {
    "n_records": 6,
    "n_sources": 4,
    "n_documents": 6,
+   "counted_sources": [
+    {
+     "group": "S019",
+     "source_ids": [
+      "S019"
+     ]
+    },
+    {
+     "group": "S035",
+     "source_ids": [
+      "S035"
+     ]
+    },
+    {
+     "group": "S065",
+     "source_ids": [
+      "S065"
+     ]
+    },
+    {
+     "group": "icva-coordination-in-transition",
+     "source_ids": [
+      "S033"
+     ]
+    }
+   ],
    "n_streams": 1,
    "n_checked": 0,
    "relations": [],
@@ -6315,6 +8371,44 @@ window.SITE_DATA = {
    "n_records": 10,
    "n_sources": 6,
    "n_documents": 8,
+   "counted_sources": [
+    {
+     "group": "S020",
+     "source_ids": [
+      "S020"
+     ]
+    },
+    {
+     "group": "S052",
+     "source_ids": [
+      "S052"
+     ]
+    },
+    {
+     "group": "S054",
+     "source_ids": [
+      "S054"
+     ]
+    },
+    {
+     "group": "S055",
+     "source_ids": [
+      "S055"
+     ]
+    },
+    {
+     "group": "S060",
+     "source_ids": [
+      "S060"
+     ]
+    },
+    {
+     "group": "gwc-consult-2026",
+     "source_ids": [
+      "S083"
+     ]
+    }
+   ],
    "n_streams": 2,
    "n_checked": 2,
    "relations": [],
@@ -6380,6 +8474,56 @@ window.SITE_DATA = {
    "n_records": 8,
    "n_sources": 8,
    "n_documents": 8,
+   "counted_sources": [
+    {
+     "group": "S088",
+     "source_ids": [
+      "S088"
+     ]
+    },
+    {
+     "group": "S103",
+     "source_ids": [
+      "S103"
+     ]
+    },
+    {
+     "group": "S106",
+     "source_ids": [
+      "S106"
+     ]
+    },
+    {
+     "group": "S109",
+     "source_ids": [
+      "S109"
+     ]
+    },
+    {
+     "group": "S111",
+     "source_ids": [
+      "S111"
+     ]
+    },
+    {
+     "group": "S112",
+     "source_ids": [
+      "S112"
+     ]
+    },
+    {
+     "group": "S122",
+     "source_ids": [
+      "S122"
+     ]
+    },
+    {
+     "group": "icva-coordination-in-transition",
+     "source_ids": [
+      "S056"
+     ]
+    }
+   ],
    "n_streams": 3,
    "n_checked": 7,
    "relations": [
@@ -6450,6 +8594,22 @@ window.SITE_DATA = {
    "n_records": 5,
    "n_sources": 2,
    "n_documents": 4,
+   "counted_sources": [
+    {
+     "group": "S111",
+     "source_ids": [
+      "S111"
+     ]
+    },
+    {
+     "group": "gwc-consult-2026",
+     "source_ids": [
+      "S083",
+      "S084",
+      "S085"
+     ]
+    }
+   ],
    "n_streams": 2,
    "n_checked": 5,
    "relations": [],
@@ -6503,6 +8663,26 @@ window.SITE_DATA = {
    "n_records": 3,
    "n_sources": 3,
    "n_documents": 3,
+   "counted_sources": [
+    {
+     "group": "S112",
+     "source_ids": [
+      "S112"
+     ]
+    },
+    {
+     "group": "gwc-consult-2026",
+     "source_ids": [
+      "S085"
+     ]
+    },
+    {
+     "group": "icva-coordination-in-transition",
+     "source_ids": [
+      "S056"
+     ]
+    }
+   ],
    "n_streams": 3,
    "n_checked": 2,
    "relations": [],
@@ -6559,6 +8739,20 @@ window.SITE_DATA = {
    "n_records": 2,
    "n_sources": 2,
    "n_documents": 2,
+   "counted_sources": [
+    {
+     "group": "S105",
+     "source_ids": [
+      "S105"
+     ]
+    },
+    {
+     "group": "gwc-consult-2026",
+     "source_ids": [
+      "S083"
+     ]
+    }
+   ],
    "n_streams": 2,
    "n_checked": 1,
    "relations": [],
@@ -6607,6 +8801,20 @@ window.SITE_DATA = {
    "n_records": 3,
    "n_sources": 2,
    "n_documents": 3,
+   "counted_sources": [
+    {
+     "group": "S111",
+     "source_ids": [
+      "S111"
+     ]
+    },
+    {
+     "group": "gwc-consult-2026",
+     "source_ids": [
+      "S084"
+     ]
+    }
+   ],
    "n_streams": 2,
    "n_checked": 2,
    "relations": [],
@@ -6658,6 +8866,26 @@ window.SITE_DATA = {
    "n_records": 3,
    "n_sources": 3,
    "n_documents": 3,
+   "counted_sources": [
+    {
+     "group": "S106",
+     "source_ids": [
+      "S106"
+     ]
+    },
+    {
+     "group": "S110",
+     "source_ids": [
+      "S110"
+     ]
+    },
+    {
+     "group": "gwc-consult-2026",
+     "source_ids": [
+      "S083"
+     ]
+    }
+   ],
    "n_streams": 2,
    "n_checked": 3,
    "relations": [],
@@ -6707,6 +8935,26 @@ window.SITE_DATA = {
    "n_records": 8,
    "n_sources": 3,
    "n_documents": 5,
+   "counted_sources": [
+    {
+     "group": "S103",
+     "source_ids": [
+      "S103"
+     ]
+    },
+    {
+     "group": "cameroon-health-transition-2026",
+     "source_ids": [
+      "S061"
+     ]
+    },
+    {
+     "group": "gwc-consult-2026",
+     "source_ids": [
+      "S083"
+     ]
+    }
+   ],
    "n_streams": 3,
    "n_checked": 5,
    "relations": [],
@@ -6763,6 +9011,14 @@ window.SITE_DATA = {
    "n_records": 2,
    "n_sources": 1,
    "n_documents": 2,
+   "counted_sources": [
+    {
+     "group": "gwc-consult-2026",
+     "source_ids": [
+      "S083"
+     ]
+    }
+   ],
    "n_streams": 1,
    "n_checked": 2,
    "relations": [],
@@ -6800,6 +9056,44 @@ window.SITE_DATA = {
    "n_records": 8,
    "n_sources": 6,
    "n_documents": 6,
+   "counted_sources": [
+    {
+     "group": "S063",
+     "source_ids": [
+      "S063"
+     ]
+    },
+    {
+     "group": "S064",
+     "source_ids": [
+      "S064"
+     ]
+    },
+    {
+     "group": "S074",
+     "source_ids": [
+      "S074"
+     ]
+    },
+    {
+     "group": "S075",
+     "source_ids": [
+      "S075"
+     ]
+    },
+    {
+     "group": "S103",
+     "source_ids": [
+      "S103"
+     ]
+    },
+    {
+     "group": "S104",
+     "source_ids": [
+      "S104"
+     ]
+    }
+   ],
    "n_streams": 2,
    "n_checked": 4,
    "relations": [],
@@ -6864,6 +9158,20 @@ window.SITE_DATA = {
    "n_records": 4,
    "n_sources": 2,
    "n_documents": 2,
+   "counted_sources": [
+    {
+     "group": "S065",
+     "source_ids": [
+      "S065"
+     ]
+    },
+    {
+     "group": "gwc-consult-2026",
+     "source_ids": [
+      "S083"
+     ]
+    }
+   ],
    "n_streams": 2,
    "n_checked": 2,
    "relations": [],
@@ -6915,6 +9223,75 @@ window.SITE_DATA = {
    "n_records": 20,
    "n_sources": 11,
    "n_documents": 14,
+   "counted_sources": [
+    {
+     "group": "S055",
+     "source_ids": [
+      "S055"
+     ]
+    },
+    {
+     "group": "S059",
+     "source_ids": [
+      "S059"
+     ]
+    },
+    {
+     "group": "S073",
+     "source_ids": [
+      "S073"
+     ]
+    },
+    {
+     "group": "S103",
+     "source_ids": [
+      "S103"
+     ]
+    },
+    {
+     "group": "S111",
+     "source_ids": [
+      "S111"
+     ]
+    },
+    {
+     "group": "S115",
+     "source_ids": [
+      "S115"
+     ]
+    },
+    {
+     "group": "S116",
+     "source_ids": [
+      "S116"
+     ]
+    },
+    {
+     "group": "S123",
+     "source_ids": [
+      "S123"
+     ]
+    },
+    {
+     "group": "cameroon-health-transition-2026",
+     "source_ids": [
+      "S118"
+     ]
+    },
+    {
+     "group": "gwc-consult-2026",
+     "source_ids": [
+      "S084"
+     ]
+    },
+    {
+     "group": "icva-coordination-in-transition",
+     "source_ids": [
+      "S033",
+      "S056"
+     ]
+    }
+   ],
    "n_streams": 4,
    "n_checked": 13,
    "relations": [
@@ -7003,6 +9380,57 @@ window.SITE_DATA = {
    "n_records": 14,
    "n_sources": 8,
    "n_documents": 10,
+   "counted_sources": [
+    {
+     "group": "S011",
+     "source_ids": [
+      "S011"
+     ]
+    },
+    {
+     "group": "S068",
+     "source_ids": [
+      "S068"
+     ]
+    },
+    {
+     "group": "S072",
+     "source_ids": [
+      "S072"
+     ]
+    },
+    {
+     "group": "S079",
+     "source_ids": [
+      "S079"
+     ]
+    },
+    {
+     "group": "S111",
+     "source_ids": [
+      "S111"
+     ]
+    },
+    {
+     "group": "S124",
+     "source_ids": [
+      "S124"
+     ]
+    },
+    {
+     "group": "cameroon-health-transition-2026",
+     "source_ids": [
+      "S118"
+     ]
+    },
+    {
+     "group": "gwc-consult-2026",
+     "source_ids": [
+      "S083",
+      "S084"
+     ]
+    }
+   ],
    "n_streams": 4,
    "n_checked": 9,
    "relations": [],
@@ -7080,6 +9508,32 @@ window.SITE_DATA = {
    "n_records": 8,
    "n_sources": 4,
    "n_documents": 5,
+   "counted_sources": [
+    {
+     "group": "S103",
+     "source_ids": [
+      "S103"
+     ]
+    },
+    {
+     "group": "S110",
+     "source_ids": [
+      "S110"
+     ]
+    },
+    {
+     "group": "cameroon-health-transition-2026",
+     "source_ids": [
+      "S118"
+     ]
+    },
+    {
+     "group": "gwc-consult-2026",
+     "source_ids": [
+      "S084"
+     ]
+    }
+   ],
    "n_streams": 3,
    "n_checked": 8,
    "relations": [],
@@ -7143,6 +9597,14 @@ window.SITE_DATA = {
    "n_records": 3,
    "n_sources": 1,
    "n_documents": 3,
+   "counted_sources": [
+    {
+     "group": "S076",
+     "source_ids": [
+      "S076"
+     ]
+    }
+   ],
    "n_streams": 1,
    "n_checked": 0,
    "relations": [],
@@ -7186,6 +9648,26 @@ window.SITE_DATA = {
    "n_records": 3,
    "n_sources": 3,
    "n_documents": 3,
+   "counted_sources": [
+    {
+     "group": "S107",
+     "source_ids": [
+      "S107"
+     ]
+    },
+    {
+     "group": "S115",
+     "source_ids": [
+      "S115"
+     ]
+    },
+    {
+     "group": "gwc-consult-2026",
+     "source_ids": [
+      "S084"
+     ]
+    }
+   ],
    "n_streams": 2,
    "n_checked": 3,
    "relations": [],
@@ -7236,6 +9718,20 @@ window.SITE_DATA = {
    "n_records": 2,
    "n_sources": 2,
    "n_documents": 2,
+   "counted_sources": [
+    {
+     "group": "S060",
+     "source_ids": [
+      "S060"
+     ]
+    },
+    {
+     "group": "S113",
+     "source_ids": [
+      "S113"
+     ]
+    }
+   ],
    "n_streams": 2,
    "n_checked": 1,
    "relations": [],
@@ -7286,6 +9782,51 @@ window.SITE_DATA = {
    "n_records": 10,
    "n_sources": 7,
    "n_documents": 9,
+   "counted_sources": [
+    {
+     "group": "S055",
+     "source_ids": [
+      "S055"
+     ]
+    },
+    {
+     "group": "S105",
+     "source_ids": [
+      "S105"
+     ]
+    },
+    {
+     "group": "S107",
+     "source_ids": [
+      "S107"
+     ]
+    },
+    {
+     "group": "S111",
+     "source_ids": [
+      "S111"
+     ]
+    },
+    {
+     "group": "S115",
+     "source_ids": [
+      "S115"
+     ]
+    },
+    {
+     "group": "gwc-consult-2026",
+     "source_ids": [
+      "S083",
+      "S084"
+     ]
+    },
+    {
+     "group": "icva-coordination-in-transition",
+     "source_ids": [
+      "S056"
+     ]
+    }
+   ],
    "n_streams": 3,
    "n_checked": 7,
    "relations": [],
@@ -7353,6 +9894,27 @@ window.SITE_DATA = {
    "n_records": 4,
    "n_sources": 3,
    "n_documents": 4,
+   "counted_sources": [
+    {
+     "group": "S107",
+     "source_ids": [
+      "S107"
+     ]
+    },
+    {
+     "group": "S111",
+     "source_ids": [
+      "S111"
+     ]
+    },
+    {
+     "group": "gwc-consult-2026",
+     "source_ids": [
+      "S084",
+      "S085"
+     ]
+    }
+   ],
    "n_streams": 2,
    "n_checked": 3,
    "relations": [],
@@ -7406,6 +9968,50 @@ window.SITE_DATA = {
    "n_records": 8,
    "n_sources": 7,
    "n_documents": 7,
+   "counted_sources": [
+    {
+     "group": "S103",
+     "source_ids": [
+      "S103"
+     ]
+    },
+    {
+     "group": "S106",
+     "source_ids": [
+      "S106"
+     ]
+    },
+    {
+     "group": "S110",
+     "source_ids": [
+      "S110"
+     ]
+    },
+    {
+     "group": "S112",
+     "source_ids": [
+      "S112"
+     ]
+    },
+    {
+     "group": "S113",
+     "source_ids": [
+      "S113"
+     ]
+    },
+    {
+     "group": "gwc-consult-2026",
+     "source_ids": [
+      "S083"
+     ]
+    },
+    {
+     "group": "icva-coordination-in-transition",
+     "source_ids": [
+      "S033"
+     ]
+    }
+   ],
    "n_streams": 3,
    "n_checked": 7,
    "relations": [],
@@ -7472,6 +10078,14 @@ window.SITE_DATA = {
    "n_records": 2,
    "n_sources": 1,
    "n_documents": 1,
+   "counted_sources": [
+    {
+     "group": "gwc-consult-2026",
+     "source_ids": [
+      "S084"
+     ]
+    }
+   ],
    "n_streams": 1,
    "n_checked": 2,
    "relations": [],
@@ -7513,6 +10127,14 @@ window.SITE_DATA = {
    "n_records": 2,
    "n_sources": 1,
    "n_documents": 2,
+   "counted_sources": [
+    {
+     "group": "S071",
+     "source_ids": [
+      "S071"
+     ]
+    }
+   ],
    "n_streams": 1,
    "n_checked": 0,
    "relations": [],
@@ -7552,6 +10174,27 @@ window.SITE_DATA = {
    "n_records": 7,
    "n_sources": 3,
    "n_documents": 4,
+   "counted_sources": [
+    {
+     "group": "S069",
+     "source_ids": [
+      "S069"
+     ]
+    },
+    {
+     "group": "gwc-consult-2026",
+     "source_ids": [
+      "S083",
+      "S085"
+     ]
+    },
+    {
+     "group": "icva-coordination-in-transition",
+     "source_ids": [
+      "S033"
+     ]
+    }
+   ],
    "n_streams": 2,
    "n_checked": 5,
    "relations": [],
@@ -7611,6 +10254,46 @@ window.SITE_DATA = {
    "n_records": 10,
    "n_sources": 6,
    "n_documents": 8,
+   "counted_sources": [
+    {
+     "group": "S070",
+     "source_ids": [
+      "S070"
+     ]
+    },
+    {
+     "group": "S103",
+     "source_ids": [
+      "S103"
+     ]
+    },
+    {
+     "group": "S111",
+     "source_ids": [
+      "S111"
+     ]
+    },
+    {
+     "group": "S112",
+     "source_ids": [
+      "S112"
+     ]
+    },
+    {
+     "group": "S115",
+     "source_ids": [
+      "S115"
+     ]
+    },
+    {
+     "group": "gwc-consult-2026",
+     "source_ids": [
+      "S083",
+      "S084",
+      "S085"
+     ]
+    }
+   ],
    "n_streams": 3,
    "n_checked": 7,
    "relations": [],
@@ -7678,6 +10361,39 @@ window.SITE_DATA = {
    "n_records": 6,
    "n_sources": 5,
    "n_documents": 6,
+   "counted_sources": [
+    {
+     "group": "S052",
+     "source_ids": [
+      "S052"
+     ]
+    },
+    {
+     "group": "S060",
+     "source_ids": [
+      "S060"
+     ]
+    },
+    {
+     "group": "S103",
+     "source_ids": [
+      "S103"
+     ]
+    },
+    {
+     "group": "S105",
+     "source_ids": [
+      "S105"
+     ]
+    },
+    {
+     "group": "gwc-consult-2026",
+     "source_ids": [
+      "S084",
+      "S085"
+     ]
+    }
+   ],
    "n_streams": 3,
    "n_checked": 5,
    "relations": [],
@@ -7738,6 +10454,44 @@ window.SITE_DATA = {
    "n_records": 8,
    "n_sources": 6,
    "n_documents": 6,
+   "counted_sources": [
+    {
+     "group": "S030",
+     "source_ids": [
+      "S030"
+     ]
+    },
+    {
+     "group": "S104",
+     "source_ids": [
+      "S104"
+     ]
+    },
+    {
+     "group": "S109",
+     "source_ids": [
+      "S109"
+     ]
+    },
+    {
+     "group": "S111",
+     "source_ids": [
+      "S111"
+     ]
+    },
+    {
+     "group": "S113",
+     "source_ids": [
+      "S113"
+     ]
+    },
+    {
+     "group": "gwc-consult-2026",
+     "source_ids": [
+      "S084"
+     ]
+    }
+   ],
    "n_streams": 3,
    "n_checked": 7,
    "relations": [],
@@ -7801,6 +10555,46 @@ window.SITE_DATA = {
    "n_records": 10,
    "n_sources": 6,
    "n_documents": 8,
+   "counted_sources": [
+    {
+     "group": "S011",
+     "source_ids": [
+      "S011"
+     ]
+    },
+    {
+     "group": "S041",
+     "source_ids": [
+      "S041"
+     ]
+    },
+    {
+     "group": "S110",
+     "source_ids": [
+      "S110"
+     ]
+    },
+    {
+     "group": "S112",
+     "source_ids": [
+      "S112"
+     ]
+    },
+    {
+     "group": "gwc-consult-2026",
+     "source_ids": [
+      "S083",
+      "S084",
+      "S085"
+     ]
+    },
+    {
+     "group": "undp-abd-practice-note",
+     "source_ids": [
+      "S077"
+     ]
+    }
+   ],
    "n_streams": 3,
    "n_checked": 8,
    "relations": [],
@@ -7867,6 +10661,26 @@ window.SITE_DATA = {
    "n_records": 5,
    "n_sources": 3,
    "n_documents": 5,
+   "counted_sources": [
+    {
+     "group": "S052",
+     "source_ids": [
+      "S052"
+     ]
+    },
+    {
+     "group": "S111",
+     "source_ids": [
+      "S111"
+     ]
+    },
+    {
+     "group": "gwc-consult-2026",
+     "source_ids": [
+      "S083"
+     ]
+    }
+   ],
    "n_streams": 3,
    "n_checked": 3,
    "relations": [],
@@ -7919,6 +10733,38 @@ window.SITE_DATA = {
    "n_records": 5,
    "n_sources": 5,
    "n_documents": 5,
+   "counted_sources": [
+    {
+     "group": "S066",
+     "source_ids": [
+      "S066"
+     ]
+    },
+    {
+     "group": "S079",
+     "source_ids": [
+      "S079"
+     ]
+    },
+    {
+     "group": "cameroon-health-transition-2026",
+     "source_ids": [
+      "S118"
+     ]
+    },
+    {
+     "group": "gwc-consult-2026",
+     "source_ids": [
+      "S083"
+     ]
+    },
+    {
+     "group": "icva-coordination-in-transition",
+     "source_ids": [
+      "S056"
+     ]
+    }
+   ],
    "n_streams": 3,
    "n_checked": 2,
    "relations": [],
@@ -7976,6 +10822,26 @@ window.SITE_DATA = {
    "n_records": 3,
    "n_sources": 3,
    "n_documents": 3,
+   "counted_sources": [
+    {
+     "group": "S078",
+     "source_ids": [
+      "S078"
+     ]
+    },
+    {
+     "group": "S107",
+     "source_ids": [
+      "S107"
+     ]
+    },
+    {
+     "group": "S110",
+     "source_ids": [
+      "S110"
+     ]
+    }
+   ],
    "n_streams": 2,
    "n_checked": 2,
    "relations": [],
@@ -8030,6 +10896,20 @@ window.SITE_DATA = {
    "n_records": 2,
    "n_sources": 2,
    "n_documents": 2,
+   "counted_sources": [
+    {
+     "group": "S080",
+     "source_ids": [
+      "S080"
+     ]
+    },
+    {
+     "group": "icva-coordination-in-transition",
+     "source_ids": [
+      "S056"
+     ]
+    }
+   ],
    "n_streams": 1,
    "n_checked": 0,
    "relations": [],
@@ -8069,6 +10949,14 @@ window.SITE_DATA = {
    "n_records": 2,
    "n_sources": 1,
    "n_documents": 2,
+   "counted_sources": [
+    {
+     "group": "gwc-consult-2026",
+     "source_ids": [
+      "S084"
+     ]
+    }
+   ],
    "n_streams": 1,
    "n_checked": 2,
    "relations": [],
@@ -8109,6 +10997,26 @@ window.SITE_DATA = {
    "n_records": 6,
    "n_sources": 3,
    "n_documents": 6,
+   "counted_sources": [
+    {
+     "group": "S052",
+     "source_ids": [
+      "S052"
+     ]
+    },
+    {
+     "group": "S111",
+     "source_ids": [
+      "S111"
+     ]
+    },
+    {
+     "group": "gwc-consult-2026",
+     "source_ids": [
+      "S083"
+     ]
+    }
+   ],
    "n_streams": 3,
    "n_checked": 1,
    "relations": [],
@@ -8162,6 +11070,32 @@ window.SITE_DATA = {
    "n_records": 9,
    "n_sources": 4,
    "n_documents": 7,
+   "counted_sources": [
+    {
+     "group": "S055",
+     "source_ids": [
+      "S055"
+     ]
+    },
+    {
+     "group": "S110",
+     "source_ids": [
+      "S110"
+     ]
+    },
+    {
+     "group": "S114",
+     "source_ids": [
+      "S114"
+     ]
+    },
+    {
+     "group": "cameroon-health-transition-2026",
+     "source_ids": [
+      "S118"
+     ]
+    }
+   ],
    "n_streams": 3,
    "n_checked": 5,
    "relations": [],
@@ -8227,6 +11161,27 @@ window.SITE_DATA = {
    "n_records": 6,
    "n_sources": 3,
    "n_documents": 5,
+   "counted_sources": [
+    {
+     "group": "S105",
+     "source_ids": [
+      "S105"
+     ]
+    },
+    {
+     "group": "S109",
+     "source_ids": [
+      "S109"
+     ]
+    },
+    {
+     "group": "gwc-consult-2026",
+     "source_ids": [
+      "S083",
+      "S085"
+     ]
+    }
+   ],
    "n_streams": 2,
    "n_checked": 6,
    "relations": [],
@@ -8283,6 +11238,14 @@ window.SITE_DATA = {
    "n_records": 1,
    "n_sources": 1,
    "n_documents": 1,
+   "counted_sources": [
+    {
+     "group": "S103",
+     "source_ids": [
+      "S103"
+     ]
+    }
+   ],
    "n_streams": 1,
    "n_checked": 1,
    "relations": [],
@@ -8323,6 +11286,26 @@ window.SITE_DATA = {
    "n_records": 3,
    "n_sources": 3,
    "n_documents": 3,
+   "counted_sources": [
+    {
+     "group": "S103",
+     "source_ids": [
+      "S103"
+     ]
+    },
+    {
+     "group": "S108",
+     "source_ids": [
+      "S108"
+     ]
+    },
+    {
+     "group": "S113",
+     "source_ids": [
+      "S113"
+     ]
+    }
+   ],
    "n_streams": 1,
    "n_checked": 3,
    "relations": [],
@@ -8375,6 +11358,44 @@ window.SITE_DATA = {
    "n_records": 11,
    "n_sources": 6,
    "n_documents": 6,
+   "counted_sources": [
+    {
+     "group": "S012",
+     "source_ids": [
+      "S012"
+     ]
+    },
+    {
+     "group": "S103",
+     "source_ids": [
+      "S103"
+     ]
+    },
+    {
+     "group": "S107",
+     "source_ids": [
+      "S107"
+     ]
+    },
+    {
+     "group": "S113",
+     "source_ids": [
+      "S113"
+     ]
+    },
+    {
+     "group": "S114",
+     "source_ids": [
+      "S114"
+     ]
+    },
+    {
+     "group": "S119",
+     "source_ids": [
+      "S119"
+     ]
+    }
+   ],
    "n_streams": 1,
    "n_checked": 11,
    "relations": [],
@@ -8444,6 +11465,26 @@ window.SITE_DATA = {
    "n_records": 4,
    "n_sources": 3,
    "n_documents": 3,
+   "counted_sources": [
+    {
+     "group": "S103",
+     "source_ids": [
+      "S103"
+     ]
+    },
+    {
+     "group": "S105",
+     "source_ids": [
+      "S105"
+     ]
+    },
+    {
+     "group": "S110",
+     "source_ids": [
+      "S110"
+     ]
+    }
+   ],
    "n_streams": 1,
    "n_checked": 4,
    "relations": [],
@@ -8501,6 +11542,38 @@ window.SITE_DATA = {
    "n_records": 6,
    "n_sources": 5,
    "n_documents": 5,
+   "counted_sources": [
+    {
+     "group": "S103",
+     "source_ids": [
+      "S103"
+     ]
+    },
+    {
+     "group": "S104",
+     "source_ids": [
+      "S104"
+     ]
+    },
+    {
+     "group": "S107",
+     "source_ids": [
+      "S107"
+     ]
+    },
+    {
+     "group": "S110",
+     "source_ids": [
+      "S110"
+     ]
+    },
+    {
+     "group": "S115",
+     "source_ids": [
+      "S115"
+     ]
+    }
+   ],
    "n_streams": 1,
    "n_checked": 6,
    "relations": [],
@@ -8558,6 +11631,32 @@ window.SITE_DATA = {
    "n_records": 5,
    "n_sources": 4,
    "n_documents": 4,
+   "counted_sources": [
+    {
+     "group": "S104",
+     "source_ids": [
+      "S104"
+     ]
+    },
+    {
+     "group": "S112",
+     "source_ids": [
+      "S112"
+     ]
+    },
+    {
+     "group": "S114",
+     "source_ids": [
+      "S114"
+     ]
+    },
+    {
+     "group": "S115",
+     "source_ids": [
+      "S115"
+     ]
+    }
+   ],
    "n_streams": 1,
    "n_checked": 5,
    "relations": [],
@@ -8610,6 +11709,26 @@ window.SITE_DATA = {
    "n_records": 3,
    "n_sources": 3,
    "n_documents": 3,
+   "counted_sources": [
+    {
+     "group": "S104",
+     "source_ids": [
+      "S104"
+     ]
+    },
+    {
+     "group": "S109",
+     "source_ids": [
+      "S109"
+     ]
+    },
+    {
+     "group": "S110",
+     "source_ids": [
+      "S110"
+     ]
+    }
+   ],
    "n_streams": 1,
    "n_checked": 3,
    "relations": [],
@@ -8661,6 +11780,50 @@ window.SITE_DATA = {
    "n_records": 10,
    "n_sources": 7,
    "n_documents": 7,
+   "counted_sources": [
+    {
+     "group": "S103",
+     "source_ids": [
+      "S103"
+     ]
+    },
+    {
+     "group": "S104",
+     "source_ids": [
+      "S104"
+     ]
+    },
+    {
+     "group": "S105",
+     "source_ids": [
+      "S105"
+     ]
+    },
+    {
+     "group": "S106",
+     "source_ids": [
+      "S106"
+     ]
+    },
+    {
+     "group": "S108",
+     "source_ids": [
+      "S108"
+     ]
+    },
+    {
+     "group": "S112",
+     "source_ids": [
+      "S112"
+     ]
+    },
+    {
+     "group": "S113",
+     "source_ids": [
+      "S113"
+     ]
+    }
+   ],
    "n_streams": 1,
    "n_checked": 10,
    "relations": [],
@@ -8728,6 +11891,14 @@ window.SITE_DATA = {
    "n_records": 1,
    "n_sources": 1,
    "n_documents": 1,
+   "counted_sources": [
+    {
+     "group": "S104",
+     "source_ids": [
+      "S104"
+     ]
+    }
+   ],
    "n_streams": 1,
    "n_checked": 1,
    "relations": [],
@@ -8767,6 +11938,26 @@ window.SITE_DATA = {
    "n_records": 6,
    "n_sources": 3,
    "n_documents": 3,
+   "counted_sources": [
+    {
+     "group": "S103",
+     "source_ids": [
+      "S103"
+     ]
+    },
+    {
+     "group": "S104",
+     "source_ids": [
+      "S104"
+     ]
+    },
+    {
+     "group": "S114",
+     "source_ids": [
+      "S114"
+     ]
+    }
+   ],
    "n_streams": 1,
    "n_checked": 5,
    "relations": [],
@@ -8827,6 +12018,20 @@ window.SITE_DATA = {
    "n_records": 2,
    "n_sources": 2,
    "n_documents": 2,
+   "counted_sources": [
+    {
+     "group": "S104",
+     "source_ids": [
+      "S104"
+     ]
+    },
+    {
+     "group": "S114",
+     "source_ids": [
+      "S114"
+     ]
+    }
+   ],
    "n_streams": 1,
    "n_checked": 2,
    "relations": [],
@@ -8871,6 +12076,14 @@ window.SITE_DATA = {
    "n_records": 2,
    "n_sources": 1,
    "n_documents": 1,
+   "counted_sources": [
+    {
+     "group": "S104",
+     "source_ids": [
+      "S104"
+     ]
+    }
+   ],
    "n_streams": 1,
    "n_checked": 2,
    "relations": [],
@@ -8910,6 +12123,14 @@ window.SITE_DATA = {
    "n_records": 1,
    "n_sources": 1,
    "n_documents": 1,
+   "counted_sources": [
+    {
+     "group": "S104",
+     "source_ids": [
+      "S104"
+     ]
+    }
+   ],
    "n_streams": 1,
    "n_checked": 1,
    "relations": [],
@@ -8947,6 +12168,38 @@ window.SITE_DATA = {
    "n_records": 6,
    "n_sources": 5,
    "n_documents": 5,
+   "counted_sources": [
+    {
+     "group": "S105",
+     "source_ids": [
+      "S105"
+     ]
+    },
+    {
+     "group": "S108",
+     "source_ids": [
+      "S108"
+     ]
+    },
+    {
+     "group": "S109",
+     "source_ids": [
+      "S109"
+     ]
+    },
+    {
+     "group": "S115",
+     "source_ids": [
+      "S115"
+     ]
+    },
+    {
+     "group": "S116",
+     "source_ids": [
+      "S116"
+     ]
+    }
+   ],
    "n_streams": 1,
    "n_checked": 6,
    "relations": [],
@@ -9007,6 +12260,26 @@ window.SITE_DATA = {
    "n_records": 3,
    "n_sources": 3,
    "n_documents": 3,
+   "counted_sources": [
+    {
+     "group": "S105",
+     "source_ids": [
+      "S105"
+     ]
+    },
+    {
+     "group": "S106",
+     "source_ids": [
+      "S106"
+     ]
+    },
+    {
+     "group": "S116",
+     "source_ids": [
+      "S116"
+     ]
+    }
+   ],
    "n_streams": 1,
    "n_checked": 3,
    "relations": [],
@@ -9056,6 +12329,50 @@ window.SITE_DATA = {
    "n_records": 10,
    "n_sources": 7,
    "n_documents": 7,
+   "counted_sources": [
+    {
+     "group": "S012",
+     "source_ids": [
+      "S012"
+     ]
+    },
+    {
+     "group": "S106",
+     "source_ids": [
+      "S106"
+     ]
+    },
+    {
+     "group": "S107",
+     "source_ids": [
+      "S107"
+     ]
+    },
+    {
+     "group": "S112",
+     "source_ids": [
+      "S112"
+     ]
+    },
+    {
+     "group": "S113",
+     "source_ids": [
+      "S113"
+     ]
+    },
+    {
+     "group": "S116",
+     "source_ids": [
+      "S116"
+     ]
+    },
+    {
+     "group": "S119",
+     "source_ids": [
+      "S119"
+     ]
+    }
+   ],
    "n_streams": 1,
    "n_checked": 10,
    "relations": [],
@@ -9125,6 +12442,14 @@ window.SITE_DATA = {
    "n_records": 1,
    "n_sources": 1,
    "n_documents": 1,
+   "counted_sources": [
+    {
+     "group": "S106",
+     "source_ids": [
+      "S106"
+     ]
+    }
+   ],
    "n_streams": 1,
    "n_checked": 1,
    "relations": [],
@@ -9165,6 +12490,20 @@ window.SITE_DATA = {
    "n_records": 2,
    "n_sources": 2,
    "n_documents": 2,
+   "counted_sources": [
+    {
+     "group": "S106",
+     "source_ids": [
+      "S106"
+     ]
+    },
+    {
+     "group": "S110",
+     "source_ids": [
+      "S110"
+     ]
+    }
+   ],
    "n_streams": 1,
    "n_checked": 2,
    "relations": [],
@@ -9207,6 +12546,20 @@ window.SITE_DATA = {
    "n_records": 2,
    "n_sources": 2,
    "n_documents": 2,
+   "counted_sources": [
+    {
+     "group": "S106",
+     "source_ids": [
+      "S106"
+     ]
+    },
+    {
+     "group": "S113",
+     "source_ids": [
+      "S113"
+     ]
+    }
+   ],
    "n_streams": 1,
    "n_checked": 2,
    "relations": [],
@@ -9248,6 +12601,14 @@ window.SITE_DATA = {
    "n_records": 1,
    "n_sources": 1,
    "n_documents": 1,
+   "counted_sources": [
+    {
+     "group": "S107",
+     "source_ids": [
+      "S107"
+     ]
+    }
+   ],
    "n_streams": 1,
    "n_checked": 1,
    "relations": [],
@@ -9287,6 +12648,14 @@ window.SITE_DATA = {
    "n_records": 1,
    "n_sources": 1,
    "n_documents": 1,
+   "counted_sources": [
+    {
+     "group": "S107",
+     "source_ids": [
+      "S107"
+     ]
+    }
+   ],
    "n_streams": 1,
    "n_checked": 1,
    "relations": [],
@@ -9327,6 +12696,14 @@ window.SITE_DATA = {
    "n_records": 1,
    "n_sources": 1,
    "n_documents": 1,
+   "counted_sources": [
+    {
+     "group": "S107",
+     "source_ids": [
+      "S107"
+     ]
+    }
+   ],
    "n_streams": 1,
    "n_checked": 1,
    "relations": [],
@@ -9364,6 +12741,20 @@ window.SITE_DATA = {
    "n_records": 2,
    "n_sources": 2,
    "n_documents": 2,
+   "counted_sources": [
+    {
+     "group": "S107",
+     "source_ids": [
+      "S107"
+     ]
+    },
+    {
+     "group": "S115",
+     "source_ids": [
+      "S115"
+     ]
+    }
+   ],
    "n_streams": 1,
    "n_checked": 2,
    "relations": [],
@@ -9406,6 +12797,68 @@ window.SITE_DATA = {
    "n_records": 13,
    "n_sources": 10,
    "n_documents": 10,
+   "counted_sources": [
+    {
+     "group": "S012",
+     "source_ids": [
+      "S012"
+     ]
+    },
+    {
+     "group": "S088",
+     "source_ids": [
+      "S088"
+     ]
+    },
+    {
+     "group": "S103",
+     "source_ids": [
+      "S103"
+     ]
+    },
+    {
+     "group": "S106",
+     "source_ids": [
+      "S106"
+     ]
+    },
+    {
+     "group": "S107",
+     "source_ids": [
+      "S107"
+     ]
+    },
+    {
+     "group": "S108",
+     "source_ids": [
+      "S108"
+     ]
+    },
+    {
+     "group": "S110",
+     "source_ids": [
+      "S110"
+     ]
+    },
+    {
+     "group": "S112",
+     "source_ids": [
+      "S112"
+     ]
+    },
+    {
+     "group": "S114",
+     "source_ids": [
+      "S114"
+     ]
+    },
+    {
+     "group": "S115",
+     "source_ids": [
+      "S115"
+     ]
+    }
+   ],
    "n_streams": 2,
    "n_checked": 13,
    "relations": [],
