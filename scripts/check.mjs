@@ -216,34 +216,42 @@ async function exercise(label, url) {
   };
 
   // What the data says a filter should produce, computed independently of the page.
-  const expect = (pred) => {
-    const recs = site.records.filter(pred);
+  //
+  // Two kinds of filter, and the distinction is the point. Stream, level and
+  // country describe a *record*, so they select findings that have matching
+  // evidence. Theme and type describe the *finding*, and are what its card
+  // displays — filtering those at record level returned findings that
+  // contradicted their own cards, which is the bug this oracle now guards.
+  const expect = (recPred, findPred) => {
+    const recs = site.records.filter(recPred || (() => true));
     const fids = new Set(recs.map((r) => r.finding_id));
-    const finds = site.findings.filter((f) => fids.has(f.finding_id));
+    const finds = site.findings.filter((f) =>
+      fids.has(f.finding_id) && (!findPred || findPred(f)));
     const kept = new Set(finds.map((f) => f.finding_id));
     const recs2 = recs.filter((r) => kept.has(r.finding_id));
     return { findings: finds.length, sources: new Set(recs2.map((r) => r.source_id)).size };
   };
 
+  // [key, value, record predicate, finding predicate]
   const CASES = [
-    ["stream", "search",       (r) => r.stream === "search"],
-    ["stream", "transcript",   (r) => r.stream === "transcript"],
-    ["stream", "workshop",     (r) => r.stream === "workshop"],
-    ["theme",  "ABC",          (r) => r.theme.includes("ABC")],
-    ["theme",  "Fundamentals", (r) => r.theme.includes("Fundamentals")],
-    ["type",   "barrier",      (r) => r.type === "barrier"],
-    ["type",   "recommendation", (r) => r.type === "recommendation"],
-    ["level",  "global",       (r) => r.level === "global"],
+    ["stream", "search",         (r) => r.stream === "search",     null],
+    ["stream", "transcript",     (r) => r.stream === "transcript", null],
+    ["stream", "workshop",       (r) => r.stream === "workshop",   null],
+    ["level",  "global",         (r) => r.level === "global",      null],
+    ["theme",  "ABC",            null, (f) => f.theme.includes("ABC")],
+    ["theme",  "Fundamentals",   null, (f) => f.theme.includes("Fundamentals")],
+    ["type",   "barrier",        null, (f) => f.type === "barrier"],
+    ["type",   "recommendation", null, (f) => f.type === "recommendation"],
   ];
 
-  for (const [k, v, pred] of CASES) {
+  for (const [k, v, pred, fpred] of CASES) {
     await reset();
     await goTab("sources");
     const before = $$("#view tbody tr").length;
     const hit = await click(`.chip[data-k="${k}"][data-v="${v}"]`);
     ok(hit, `${label}: no filter chip for ${k}=${v}`);
     const rows = $$("#view tbody tr").length;
-    const exp = expect(pred);
+    const exp = expect(pred, fpred);
     ok(rows === exp.sources,
        `${label}: Sources tab with ${k}=${v} shows ${rows} rows, expected ${exp.sources}`);
     ok(rows < before,
