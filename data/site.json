@@ -112,7 +112,7 @@
   "footer_note": "Every finding traces to a source ID in the Sources tab. If something looks wrong, it probably is — say so and it will be corrected."
  },
  "schema": 3,
- "generated": "2026-08-20",
+ "generated": "2026-09-10",
  "taxonomy_version": "0.9.0",
  "stats": {
   "records": 746,
@@ -515,11 +515,11 @@
     "transition"
    ],
    "doctype": "guideline",
-   "title": "Guidance Note on Cluster Simplification and Adapting In-Country Coordination",
+   "title": "Cluster Simplification and Adapting In-Country Coordination",
    "organisation": "IASC Humanitarian Working Group",
-   "year": "2026-03",
-   "url": "https://interagencystandingcommittee.org/sites/default/files/2026-03/IASC%20Guidance%20Note%20on%20Cluster%20Simplification%20and%20Adapting%20In-Country%20Coordination%20to%20Context_March%202026.pdf",
-   "summary": "The reference point for the current reshaping of coordination. Reduces the system to eight clusters — nutrition, protection, shelter/land/site coordination, WASH, education, food security, health, and logistics with telecommunications — and carries an annex on lead and accountability arrangements for consolidated clusters. WASH remains standalone. The adapting-to-context half is where area-based arrangements are addressed at inter-agency level.",
+   "year": "2026-04",
+   "url": "https://interagencystandingcommittee.org/sites/default/files/2026-04/Cluster%20Simplification%20and%20Adapting%20In-Country%20Coordination%20to%20Context_22%20April_8.pdf",
+   "summary": "Endorsed by IASC Principals in March 2026. Recommends how to adapt in-country coordination, clarifies lead and accountability arrangements for consolidated clusters, supports area-based coordination where appropriate, and links transition planning to national systems.",
    "evidence": [
     "F421",
     "F209"
@@ -690,6 +690,48 @@
    "evidence": [
     "F373"
    ]
+  },
+  {
+   "id": "G24",
+   "topics": [
+    "abc",
+    "coordination"
+   ],
+   "doctype": "faq",
+   "title": "Frequently Asked Questions on Area-Based Coordination",
+   "organisation": "IASC",
+   "year": "2026-04",
+   "url": "https://interagencystandingcommittee.org/sites/default/files/2026-04/FAQ%20on%20Area-Based%20Coordination__April%202026_2.pdf",
+   "summary": "Companion to the standard terms of reference. Answers what area-based coordination is and is not, when to set it up, and how it relates to clusters and the inter-cluster group.",
+   "evidence": []
+  },
+  {
+   "id": "G25",
+   "topics": [
+    "coordination",
+    "abc",
+    "transition"
+   ],
+   "doctype": "guideline",
+   "title": "Country-level Cluster Terms and Definitions",
+   "organisation": "IASC",
+   "year": "2026-03",
+   "url": "https://interagencystandingcommittee.org/sites/default/files/2026-03/Country-level%20Cluster%20Terms%20and%20Definitions.pdf",
+   "summary": "Glossary of key coordination terms. Useful where a discussion turns out to be about wording rather than substance, which is often.",
+   "evidence": []
+  },
+  {
+   "id": "G26",
+   "topics": [
+    "coordination"
+   ],
+   "doctype": "guideline",
+   "title": "Lead and accountability arrangements for consolidated clusters",
+   "organisation": "IASC",
+   "year": "2026",
+   "url": "https://interagencystandingcommittee.org/lead-and-accountability-arrangements-consolidated-clusters",
+   "summary": "Who leads what under the simplified architecture — Protection; Shelter, Land and Site Coordination; Logistics and Telecommunications; and the transformation of Early Recovery.",
+   "evidence": []
   }
  ],
  "findings": [

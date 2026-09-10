@@ -87,17 +87,24 @@ h2.grp:first-child{margin-top:6px}
 .hlcol .hl-so{font-size:12.5px;padding:7px 10px}
 .hlcol .meta{font-size:11px}
 .hlnote{margin:-4px 0 10px;font-size:12px;color:var(--ink-3);font-style:italic}
-.gd{background:var(--card);border:1px solid var(--line);border-left:4px solid var(--ink-3);
-  border-radius:8px;padding:14px 16px;margin-bottom:9px}
-.gd h3{margin:0 0 3px;font-size:15px;line-height:1.3}
+.gd{background:var(--card);border:1px solid var(--line);border-left:3px solid var(--s3);
+  border-radius:6px;padding:11px 13px;display:flex;flex-direction:column}
+.gd h3{margin:0 0 4px;font-size:14px;line-height:1.32}
 .gd h3 a{color:var(--accent);text-decoration:none}
 .gd h3 a:hover{text-decoration:underline}
-.gd-meta{margin:0 0 8px;font-size:12px;color:var(--ink-3)}
-.gd-sum{margin:0 0 9px;font-size:13.5px;line-height:1.5}
-.gd-ev{margin:0;padding:9px 11px;background:var(--bg);border-radius:5px;
-  font-size:12.5px;line-height:1.5;color:var(--ink-2)}
+.gd-meta{margin:0 0 6px;font-size:11.5px;color:var(--ink-3);display:flex;
+  flex-wrap:wrap;align-items:center;gap:5px}
+.gd-type{background:var(--bg);border:1px solid var(--line);border-radius:3px;
+  padding:1px 6px;font-size:10.5px;text-transform:uppercase;letter-spacing:.05em;color:var(--ink-2)}
+.gd-sum{margin:0 0 7px;font-size:12.5px;line-height:1.45;color:var(--ink-2)}
+.gd-ev{margin:auto 0 0;padding:7px 9px;background:var(--bg);border-radius:4px;
+  font-size:11.5px;line-height:1.45;color:var(--ink-2)}
 .gd-ev b{color:var(--accent)}
-.gdlist{max-width:840px}
+.gdgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(310px,1fr));
+  gap:9px;align-items:start}
+.gsec{margin:0 0 22px}
+.gsec h2.grp{margin:0 0 2px}
+.gsec-note{margin:0 0 10px;font-size:12px;color:var(--ink-3);font-style:italic}
 .gfbar{display:flex;flex-wrap:wrap;align-items:center;gap:7px;margin:0 0 14px;
   padding:11px 13px;background:var(--card);border:1px solid var(--line);border-radius:8px}
 .gfl{font-size:11px;text-transform:uppercase;letter-spacing:.06em;color:var(--ink-3);
@@ -857,6 +864,58 @@ function viewGuidance(){
     }).join("");
   }
 
+  // Grouped by primary topic rather than listed flat. Twelve documents in one
+  // column ran well past a screen and made a reader scan titles to work out
+  // which of the three subjects each belonged to. The grouping does that work
+  // once. Cards sit in a grid across the full page width, so the whole set is
+  // two scrolls rather than five.
+  var SECTIONS = [
+    ["coordination", "Coordination", "The architecture both of the others sit inside"],
+    ["abc",          "Area-Based Coordination", "Setting up and running coordination by area"],
+    ["transition",   "Transition", "Handing over, winding down, and what comes after"]
+  ];
+
+  function card(g){
+    var ev = (g.evidence||[]).map(function(fid){
+      var f = fmap[fid];
+      if (!f) return '';
+      return '<p class="gd-ev"><b>In this base</b> · ' + esc(f.statement) +
+             ' ' + bandTag(f.strength) + '</p>';
+    }).join("");
+    // Only the secondary topics are shown. The primary one is the section
+    // heading, so repeating it on every card is noise.
+    var also = (g.topics||[]).slice(1).map(function(t){
+      return '<span class="pill ' + esc(t === "abc" ? "ABC" : t === "transition" ? "Transition" : "Fundamentals") +
+        '">' + esc(GTOPIC[t] || t) + '</span>';
+    }).join("");
+    return '<div class="gd">' +
+      '<h3><a href="'+esc(g.url)+'" target="_blank" rel="noopener">' + esc(g.title) + '</a></h3>' +
+      '<p class="gd-meta"><span class="tag gd-type">' +
+        esc((GTYPE[g.doctype]||g.doctype).replace(/s$/,"")) + '</span> ' +
+        esc(g.organisation) + (g.year ? ' · ' + esc(g.year) : '') + ' ' + also + '</p>' +
+      (g.summary ? '<p class="gd-sum">' + esc(g.summary) + '</p>' : '') + ev +
+      '</div>';
+  }
+
+  var body = SECTIONS.map(function(s){
+    var inSec = items.filter(function(g){ return (g.topics||[])[0] === s[0]; });
+    if (!inSec.length) return '';
+    return '<section class="gsec"><h2 class="grp">' + esc(s[1]) +
+      '<span class="grp-n">' + inSec.length + '</span></h2>' +
+      '<p class="gsec-note">' + esc(s[2]) + '</p>' +
+      '<div class="gdgrid">' + inSec.map(card).join("") + '</div></section>';
+  }).join("");
+
+  // A document whose primary topic is not one of the three would vanish
+  // silently. Catch it rather than lose it.
+  var placed = SECTIONS.map(function(s){ return s[0]; });
+  var orphan = items.filter(function(g){ return placed.indexOf((g.topics||[])[0]) < 0; });
+  if (orphan.length) {
+    body += '<section class="gsec"><h2 class="grp">Other<span class="grp-n">' +
+      orphan.length + '</span></h2><div class="gdgrid">' +
+      orphan.map(card).join("") + '</div></section>';
+  }
+
   return '<p class="count">Guidance sets out what should happen. The rest of this site ' +
     'records what did. Where the two diverge, both are worth having in the room.</p>' +
     '<div class="gfbar"><span class="gfl">Topic</span>' + bar("topic", GTOPIC, TORDER) +
@@ -865,25 +924,7 @@ function viewGuidance(){
     '</div>' +
     '<p class="count">' + items.length + ' document' + (items.length===1?"":"s") +
       (GF.topic || GF.doctype ? ' (filtered)' : '') + '</p>' +
-    (items.length ? '<div class="gdlist">' + items.map(function(g){
-      var ev = (g.evidence||[]).map(function(fid){
-        var f = fmap[fid];
-        if (!f) return '';
-        return '<p class="gd-ev"><b>In this base</b> · ' + esc(f.statement) +
-               ' ' + bandTag(f.strength) + '</p>';
-      }).join("");
-      var labels = (g.topics||[]).map(function(t, i){
-        return '<span class="pill ' + esc(t === "abc" ? "ABC" : t === "transition" ? "Transition" : "Fundamentals") +
-          (i === 0 ? ' primary' : '') + '">' + esc(GTOPIC[t] || t) + '</span>';
-      }).join("");
-      return '<div class="gd">' +
-        '<h3><a href="'+esc(g.url)+'" target="_blank" rel="noopener">' + esc(g.title) + '</a></h3>' +
-        '<p class="gd-meta">' + esc(g.organisation) + (g.year ? ' · ' + esc(g.year) : '') +
-          ' · <span class="tag">' + esc((GTYPE[g.doctype]||g.doctype).replace(/s$/,"")) + '</span> ' +
-          labels + '</p>' +
-        (g.summary ? '<p class="gd-sum">' + esc(g.summary) + '</p>' : '') + ev +
-        '</div>';
-    }).join("") + '</div>'
+    (items.length ? body
      : '<p class="empty">Nothing published that is both. That combination is a real gap, ' +
        'not a missing entry.</p>');
 }
