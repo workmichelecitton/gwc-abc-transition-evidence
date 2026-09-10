@@ -115,8 +115,8 @@
  "generated": "2026-09-10",
  "taxonomy_version": "0.9.0",
  "stats": {
-  "records": 746,
-  "findings": 178,
+  "records": 736,
+  "findings": 176,
   "sources": 112,
   "countries": 30,
   "withheld_internal": 2
@@ -3751,31 +3751,25 @@
    ],
    "example": "Recorded in the 2007 evaluation of the cluster approach and again in a 2025 INGO position paper. Eighteen years apart, independently, the same conclusion.",
    "type": "barrier",
-   "strength": 2,
-   "n_records": 2,
-   "n_sources": 2,
-   "n_documents": 2,
+   "strength": 1,
+   "n_records": 1,
+   "n_sources": 1,
+   "n_documents": 1,
    "counted_sources": [
     {
      "group": "S015",
      "source_ids": [
       "S015"
      ]
-    },
-    {
-     "group": "S088",
-     "source_ids": [
-      "S088"
-     ]
     }
    ],
    "n_streams": 1,
-   "n_checked": 2,
+   "n_checked": 1,
    "relations": [],
-   "period": "2007 – 2024",
-   "period_from": "2007",
+   "period": "2024",
+   "period_from": "2024",
    "period_to": "2024",
-   "period_span": 17,
+   "period_span": 0,
    "streams": [
     "sdr"
    ],
@@ -3789,98 +3783,7 @@
     "un-agency"
    ],
    "record_ids": [
-    "E0672",
-    "E0687"
-   ],
-   "unmerged": false
-  },
-  {
-   "finding_id": "F1729",
-   "statement": "Stronger and more predictable sectoral leadership did not produce a matching increase in accountability. A poorly performing lead agency relinquishing its role at the humanitarian coordinator's request had not been demonstrated in any setting examined.",
-   "theme": [
-    "ABC"
-   ],
-   "example": "",
-   "type": "barrier",
-   "strength": 1,
-   "n_records": 1,
-   "n_sources": 1,
-   "n_documents": 1,
-   "counted_sources": [
-    {
-     "group": "S088",
-     "source_ids": [
-      "S088"
-     ]
-    }
-   ],
-   "n_streams": 1,
-   "n_checked": 1,
-   "relations": [],
-   "period": "2007",
-   "period_from": "2007",
-   "period_to": "2007",
-   "period_span": 0,
-   "streams": [
-    "sdr"
-   ],
-   "countries": [],
-   "tags": [
-    "coordination-architecture",
-    "performance"
-   ],
-   "actors": [
-    "cluster",
-    "ocha",
-    "un-agency"
-   ],
-   "record_ids": [
-    "E0688"
-   ],
-   "unmerged": false
-  },
-  {
-   "finding_id": "F1730",
-   "statement": "Activating a large number of coordination structures without considering whether each was needed weakened the ability to prioritise interventions and allocate resources.",
-   "theme": [
-    "ABC"
-   ],
-   "example": "",
-   "type": "barrier",
-   "strength": 1,
-   "n_records": 1,
-   "n_sources": 1,
-   "n_documents": 1,
-   "counted_sources": [
-    {
-     "group": "S088",
-     "source_ids": [
-      "S088"
-     ]
-    }
-   ],
-   "n_streams": 1,
-   "n_checked": 1,
-   "relations": [],
-   "period": "2007",
-   "period_from": "2007",
-   "period_to": "2007",
-   "period_span": 0,
-   "streams": [
-    "sdr"
-   ],
-   "countries": [],
-   "tags": [
-    "coordination-architecture",
-    "geographic-targeting",
-    "hpc"
-   ],
-   "actors": [
-    "cluster",
-    "ocha"
-   ],
-   "record_ids": [
-    "E0692"
+    "E0672"
    ],
    "unmerged": false
   },
@@ -5896,9 +5799,9 @@
    "example": "Somalia — the drought response revealed uneven sectoral delivery, with actors operating in the same areas without a shared planning framework.",
    "type": "barrier",
    "strength": 5,
-   "n_records": 7,
-   "n_sources": 7,
-   "n_documents": 7,
+   "n_records": 6,
+   "n_sources": 6,
+   "n_documents": 6,
    "counted_sources": [
     {
      "group": "S015",
@@ -5925,12 +5828,6 @@
      ]
     },
     {
-     "group": "S088",
-     "source_ids": [
-      "S088"
-     ]
-    },
-    {
      "group": "S119",
      "source_ids": [
       "S119"
@@ -5944,12 +5841,12 @@
     }
    ],
    "n_streams": 3,
-   "n_checked": 4,
+   "n_checked": 3,
    "relations": [],
-   "period": "2007 – Aug 2026",
-   "period_from": "2007",
+   "period": "2022 – Aug 2026",
+   "period_from": "2022",
    "period_to": "Aug 2026",
-   "period_span": 19,
+   "period_span": 4,
    "streams": [
     "sdr",
     "transcript",
@@ -5978,7 +5875,6 @@
     "E0109",
     "E0110",
     "E0116",
-    "E0691",
     "E0716",
     "E0750"
    ],
@@ -5999,9 +5895,9 @@
    "example": "Palestine — a working division of labour has the cluster providing the analytical framework, area structures collecting data within it, and the cluster retaining the analysis.",
    "type": "enabler",
    "strength": 5,
-   "n_records": 17,
-   "n_sources": 12,
-   "n_documents": 12,
+   "n_records": 16,
+   "n_sources": 11,
+   "n_documents": 11,
    "counted_sources": [
     {
      "group": "S011",
@@ -6046,12 +5942,6 @@
      ]
     },
     {
-     "group": "S088",
-     "source_ids": [
-      "S088"
-     ]
-    },
-    {
      "group": "S107",
      "source_ids": [
       "S107"
@@ -6077,7 +5967,7 @@
     }
    ],
    "n_streams": 3,
-   "n_checked": 12,
+   "n_checked": 11,
    "relations": [
     {
      "type": "qualifies",
@@ -6085,10 +5975,10 @@
      "direction": "out"
     }
    ],
-   "period": "2007 – Aug 2026",
-   "period_from": "2007",
+   "period": "2020 – Aug 2026",
+   "period_from": "2020",
    "period_to": "Aug 2026",
-   "period_span": 19,
+   "period_span": 6,
    "streams": [
     "sdr",
     "transcript",
@@ -6124,8 +6014,7 @@
     "gov-local",
     "ingo",
     "ocha",
-    "operational-cell",
-    "un-agency"
+    "operational-cell"
    ],
    "record_ids": [
     "E0016",
@@ -6143,8 +6032,7 @@
     "E0204",
     "E0312",
     "E0480",
-    "E0677",
-    "E0695"
+    "E0677"
    ],
    "unmerged": false,
    "highlight": {
@@ -7190,10 +7078,10 @@
    ],
    "example": "Bangladesh — around one eighth of the pooled fund allocation reaching the sector went to international NGOs, and the remainder to UN agencies.",
    "type": "barrier",
-   "strength": 5,
-   "n_records": 6,
-   "n_sources": 6,
-   "n_documents": 6,
+   "strength": 4,
+   "n_records": 5,
+   "n_sources": 5,
+   "n_documents": 5,
    "counted_sources": [
     {
      "group": "S021",
@@ -7205,12 +7093,6 @@
      "group": "S041",
      "source_ids": [
       "S041"
-     ]
-    },
-    {
-     "group": "S088",
-     "source_ids": [
-      "S088"
      ]
     },
     {
@@ -7233,12 +7115,12 @@
     }
    ],
    "n_streams": 4,
-   "n_checked": 5,
+   "n_checked": 4,
    "relations": [],
-   "period": "2007 – Jul 2026",
-   "period_from": "2007",
+   "period": "2025 – Jul 2026",
+   "period_from": "2025",
    "period_to": "Jul 2026",
-   "period_span": 19,
+   "period_span": 1,
    "streams": [
     "sdr",
     "search",
@@ -7252,11 +7134,9 @@
    "tags": [
     "funding",
     "localisation",
-    "partnerships",
     "pooled-funds"
    ],
    "actors": [
-    "cluster",
     "donor",
     "ingo",
     "local-ngo",
@@ -7268,7 +7148,6 @@
     "E0164",
     "E0285",
     "E0500",
-    "E0690",
     "E0758"
    ],
    "unmerged": false,
@@ -7533,9 +7412,9 @@
    "example": "Somalia — a major drought scale-up was anchored by five operational coordination hubs with dedicated subnational capacity and district-level area coordination groups.",
    "type": "enabler",
    "strength": 4,
-   "n_records": 5,
-   "n_sources": 5,
-   "n_documents": 5,
+   "n_records": 4,
+   "n_sources": 4,
+   "n_documents": 4,
    "counted_sources": [
     {
      "group": "S027",
@@ -7547,12 +7426,6 @@
      "group": "S037",
      "source_ids": [
       "S037"
-     ]
-    },
-    {
-     "group": "S088",
-     "source_ids": [
-      "S088"
      ]
     },
     {
@@ -7569,12 +7442,12 @@
     }
    ],
    "n_streams": 3,
-   "n_checked": 3,
+   "n_checked": 2,
    "relations": [],
-   "period": "2007 – Aug 2026",
-   "period_from": "2007",
+   "period": "2024 – Aug 2026",
+   "period_from": "2024",
    "period_to": "Aug 2026",
-   "period_span": 19,
+   "period_span": 2,
    "streams": [
     "sdr",
     "transcript",
@@ -7588,19 +7461,16 @@
    "tags": [
     "capacity",
     "coordination-architecture",
-    "geographic-targeting",
-    "information-management"
+    "geographic-targeting"
    ],
    "actors": [
     "cluster",
-    "gov-local",
-    "un-agency"
+    "gov-local"
    ],
    "record_ids": [
     "E0177",
     "E0182",
     "E0419",
-    "E0696",
     "E0711"
    ],
    "unmerged": false,
@@ -7886,9 +7756,9 @@
    "example": "Ukraine — local actors participated in coordination structures but had limited influence over decisions and over resources.",
    "type": "barrier",
    "strength": 5,
-   "n_records": 11,
-   "n_sources": 10,
-   "n_documents": 10,
+   "n_records": 10,
+   "n_sources": 9,
+   "n_documents": 9,
    "counted_sources": [
     {
      "group": "S012",
@@ -7921,12 +7791,6 @@
      ]
     },
     {
-     "group": "S088",
-     "source_ids": [
-      "S088"
-     ]
-    },
-    {
      "group": "S120",
      "source_ids": [
       "S120"
@@ -7952,12 +7816,12 @@
     }
    ],
    "n_streams": 4,
-   "n_checked": 9,
+   "n_checked": 8,
    "relations": [],
-   "period": "2007 – Aug 2026",
-   "period_from": "2007",
+   "period": "Oct 2020 – Aug 2026",
+   "period_from": "Oct 2020",
    "period_to": "Aug 2026",
-   "period_span": 19,
+   "period_span": 6,
    "streams": [
     "sdr",
     "search",
@@ -7998,7 +7862,6 @@
     "E0278",
     "E0673",
     "E0678",
-    "E0689",
     "E0751",
     "E0776"
    ],
@@ -8471,16 +8334,10 @@
    "example": "Burkina Faso — government moved to collect partner activity data itself on the basis that the data should be nationally held, alongside the cluster's own collection.",
    "type": "barrier",
    "strength": 5,
-   "n_records": 8,
-   "n_sources": 8,
-   "n_documents": 8,
+   "n_records": 7,
+   "n_sources": 7,
+   "n_documents": 7,
    "counted_sources": [
-    {
-     "group": "S088",
-     "source_ids": [
-      "S088"
-     ]
-    },
     {
      "group": "S103",
      "source_ids": [
@@ -8525,7 +8382,7 @@
     }
    ],
    "n_streams": 3,
-   "n_checked": 7,
+   "n_checked": 6,
    "relations": [
     {
      "type": "qualifies",
@@ -8533,10 +8390,10 @@
      "direction": "in"
     }
    ],
-   "period": "2007 – Aug 2026",
-   "period_from": "2007",
+   "period": "Jun 2022 – Aug 2026",
+   "period_from": "Jun 2022",
    "period_to": "Aug 2026",
-   "period_span": 19,
+   "period_span": 4,
    "streams": [
     "sdr",
     "search",
@@ -8571,7 +8428,6 @@
     "E0527",
     "E0564",
     "E0585",
-    "E0694",
     "E0764"
    ],
    "unmerged": false,
@@ -12793,21 +12649,15 @@
    ],
    "example": "South Sudan — only four of the twelve water insecurity questions could be accommodated in the joint tool, so the severity scale had to be reinterpreted around them.",
    "type": "barrier",
-   "strength": 5,
-   "n_records": 13,
-   "n_sources": 10,
-   "n_documents": 10,
+   "strength": 3,
+   "n_records": 12,
+   "n_sources": 9,
+   "n_documents": 9,
    "counted_sources": [
     {
      "group": "S012",
      "source_ids": [
       "S012"
-     ]
-    },
-    {
-     "group": "S088",
-     "source_ids": [
-      "S088"
      ]
     },
     {
@@ -12859,15 +12709,14 @@
      ]
     }
    ],
-   "n_streams": 2,
-   "n_checked": 13,
+   "n_streams": 1,
+   "n_checked": 12,
    "relations": [],
-   "period": "2007 – Aug 2026",
-   "period_from": "2007",
+   "period": "Jun 2026 – Aug 2026",
+   "period_from": "Jun 2026",
    "period_to": "Aug 2026",
-   "period_span": 19,
+   "period_span": 0,
    "streams": [
-    "sdr",
     "transcript"
    ],
    "countries": [
@@ -12914,8 +12763,7 @@
     "E0590",
     "E0620",
     "E0650",
-    "E0651",
-    "E0693"
+    "E0651"
    ],
    "unmerged": false,
    "highlight": {
@@ -30424,265 +30272,6 @@
    "confidence": "high",
    "status": "validated",
    "year": 2026
-  },
-  {
-   "id": "E0687",
-   "finding_id": "F1728",
-   "theme": [
-    "ABC"
-   ],
-   "type": "barrier",
-   "statement": "The provider-of-last-resort commitment was found not to be practically relevant to how lead agencies work, with large gaps continuing to go unfilled — a finding first recorded in 2007 and still being made.",
-   "level": "global",
-   "countries": [],
-   "actors": [
-    "cluster",
-    "un-agency"
-   ],
-   "tags": [
-    "coordination-architecture",
-    "performance"
-   ],
-   "stream": "sdr",
-   "source_id": "S088",
-   "date_collected": "2026-08-07",
-   "confidence": "high",
-   "status": "validated",
-   "year": 2007
-  },
-  {
-   "id": "E0688",
-   "finding_id": "F1729",
-   "theme": [
-    "ABC"
-   ],
-   "type": "barrier",
-   "statement": "Stronger and more predictable sectoral leadership did not produce a matching increase in accountability. A poorly performing lead agency relinquishing its role at the humanitarian coordinator's request had not been demonstrated in any setting examined.",
-   "level": "global",
-   "countries": [],
-   "actors": [
-    "cluster",
-    "un-agency",
-    "ocha"
-   ],
-   "tags": [
-    "coordination-architecture",
-    "performance"
-   ],
-   "stream": "sdr",
-   "source_id": "S088",
-   "date_collected": "2026-08-07",
-   "confidence": "high",
-   "status": "validated",
-   "year": 2007
-  },
-  {
-   "id": "E0689",
-   "finding_id": "F260",
-   "theme": [
-    "ABC"
-   ],
-   "type": "barrier",
-   "statement": "Local and national organisations saw no significant increase in participation, funding or partnership opportunities through the cluster approach — recorded in 2007 and still the position reported today.",
-   "level": "global",
-   "countries": [],
-   "actors": [
-    "local-ngo",
-    "cluster"
-   ],
-   "tags": [
-    "localisation",
-    "coordination-architecture",
-    "partnerships"
-   ],
-   "stream": "sdr",
-   "source_id": "S088",
-   "date_collected": "2026-08-07",
-   "confidence": "high",
-   "status": "validated",
-   "year": 2007
-  },
-  {
-   "id": "E0690",
-   "finding_id": "F234",
-   "theme": [
-    "ABC"
-   ],
-   "type": "barrier",
-   "statement": "International NGOs were already receiving a greater share of their funding through cluster lead agencies, which apply slow and burdensome grant-making procedures.",
-   "level": "global",
-   "countries": [],
-   "actors": [
-    "ingo",
-    "cluster",
-    "un-agency"
-   ],
-   "tags": [
-    "funding",
-    "localisation",
-    "partnerships"
-   ],
-   "stream": "sdr",
-   "source_id": "S088",
-   "date_collected": "2026-08-07",
-   "confidence": "high",
-   "status": "validated",
-   "year": 2007
-  },
-  {
-   "id": "E0691",
-   "finding_id": "F203",
-   "theme": [
-    "ABC"
-   ],
-   "type": "barrier",
-   "statement": "Coordination introduced in a way that duplicates rather than replaces or strengthens what already exists is labour-intensive and adds burden on staff and partners.",
-   "level": "global",
-   "countries": [],
-   "actors": [
-    "cluster",
-    "ingo"
-   ],
-   "tags": [
-    "coordination-architecture",
-    "performance"
-   ],
-   "stream": "sdr",
-   "source_id": "S088",
-   "date_collected": "2026-08-07",
-   "confidence": "high",
-   "status": "validated",
-   "year": 2007
-  },
-  {
-   "id": "E0692",
-   "finding_id": "F1730",
-   "theme": [
-    "ABC"
-   ],
-   "type": "barrier",
-   "statement": "Activating a large number of coordination structures without considering whether each was needed weakened the ability to prioritise interventions and allocate resources.",
-   "level": "global",
-   "countries": [],
-   "actors": [
-    "cluster",
-    "ocha"
-   ],
-   "tags": [
-    "coordination-architecture",
-    "hpc",
-    "geographic-targeting"
-   ],
-   "stream": "sdr",
-   "source_id": "S088",
-   "date_collected": "2026-08-07",
-   "confidence": "high",
-   "status": "validated",
-   "year": 2007
-  },
-  {
-   "id": "E0693",
-   "finding_id": "F910",
-   "theme": [
-    "Fundamentals"
-   ],
-   "type": "barrier",
-   "statement": "Joint needs assessments increased in number but their quality and usefulness remained short of what was needed, with the harmonisation of tools unresolved — a position recorded in 2007 and still described by country teams.",
-   "level": "global",
-   "countries": [],
-   "actors": [
-    "cluster",
-    "ocha"
-   ],
-   "tags": [
-    "hpc",
-    "information-management",
-    "performance"
-   ],
-   "stream": "sdr",
-   "source_id": "S088",
-   "date_collected": "2026-08-07",
-   "confidence": "high",
-   "status": "validated",
-   "year": 2007
-  },
-  {
-   "id": "E0694",
-   "finding_id": "F304",
-   "theme": [
-    "Transition"
-   ],
-   "type": "barrier",
-   "statement": "Engagement with host states was mixed and lacked strategic guidance, with no clear differentiation between natural disaster and conflict settings, or between contexts with strong national authorities and those without.",
-   "level": "global",
-   "countries": [],
-   "actors": [
-    "cluster",
-    "gov-national"
-   ],
-   "tags": [
-    "government-engagement",
-    "guidance",
-    "transition-handover"
-   ],
-   "stream": "sdr",
-   "source_id": "S088",
-   "date_collected": "2026-08-07",
-   "confidence": "high",
-   "status": "validated",
-   "year": 2007
-  },
-  {
-   "id": "E0695",
-   "finding_id": "F209",
-   "theme": [
-    "ABC"
-   ],
-   "type": "context",
-   "statement": "Where a cluster performed poorly or failed to add value, it was generally attributed to weak leadership — low operational capacity in the lead agency, or weak coordination skills in the people placed in coordinating roles.",
-   "level": "global",
-   "countries": [],
-   "actors": [
-    "cluster",
-    "un-agency"
-   ],
-   "tags": [
-    "coordination-architecture",
-    "capacity",
-    "performance"
-   ],
-   "stream": "sdr",
-   "source_id": "S088",
-   "date_collected": "2026-08-07",
-   "confidence": "high",
-   "status": "validated",
-   "year": 2007
-  },
-  {
-   "id": "E0696",
-   "finding_id": "F251",
-   "theme": [
-    "ABC"
-   ],
-   "type": "enabler",
-   "statement": "In protracted emergencies, sector coordination proved better able to gather information on response capacity and gaps and to redirect partners to fill them, and drove capacity increases and the extension of coordination to deeper field levels.",
-   "level": "global",
-   "countries": [],
-   "actors": [
-    "cluster",
-    "un-agency"
-   ],
-   "tags": [
-    "coordination-architecture",
-    "information-management",
-    "capacity"
-   ],
-   "stream": "sdr",
-   "source_id": "S088",
-   "date_collected": "2026-08-07",
-   "confidence": "high",
-   "status": "validated",
-   "year": 2007
   },
   {
    "id": "E0697",
