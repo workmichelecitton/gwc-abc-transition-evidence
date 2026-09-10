@@ -546,11 +546,16 @@ function dropdown(id, blank, pairs){
 // survive — so a country filter shows the finding AND which evidence backs it
 // in that country, rather than dropping a global finding that has local proof.
 function matchRecord(r, skipCountry){
-  // Theme is multi-value. A record marked ABC;Transition matches a filter on
-  // either — which is the point of the change: cross-cutting evidence used to
-  // be invisible to both single-theme filters.
-  if (F.theme.length && !F.theme.some(function(t){ return r.theme.indexOf(t)>=0; })) return false;
-  if (F.type.length   && F.type.indexOf(r.type)<0) return false;
+  // Theme and type are NOT filtered here. They are attributes the finding
+  // carries and the card displays, and filtering them at record level produced
+  // results that contradicted the cards: selecting "enabler" returned 16
+  // findings that were not enablers, because each held one enabler record among
+  // its evidence, and selecting "ABC" returned 25 findings with no ABC theme at
+  // all. Both are applied to the finding instead, in filtered().
+  //
+  // Everything below stays at record level on purpose. "Findings with evidence
+  // from Sudan" is a different and useful question from "findings about Sudan",
+  // and the card does not claim otherwise.
   if (F.stream.length && F.stream.indexOf(r.stream)<0) return false;
   if (F.level.length  && F.level.indexOf(r.level)<0) return false;
   // Country selection is OR: pick three countries, see evidence from any of them.
@@ -581,6 +586,11 @@ function filtered(skipCountry){
   recs.forEach(function(r){ keep[r.finding_id || ("_solo_"+r.id)] = true; });
   var finds = D.findings.filter(function(f){
     if (!keep[f.finding_id]) return false;
+    // Theme is multi-value, so a finding marked ABC + Transition answers a
+    // filter on either. That was the original intent; it was just being applied
+    // to the wrong object.
+    if (F.theme.length && !F.theme.some(function(t){ return f.theme.indexOf(t)>=0; })) return false;
+    if (F.type.length && F.type.indexOf(f.type)<0) return false;
     // dataset.v is always a string, f.strength is a number. Compare as strings
     // or every band filter silently matches nothing.
     if (F.strength.length && F.strength.indexOf(String(f.strength))<0) return false;
