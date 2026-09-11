@@ -5967,15 +5967,21 @@
    ],
    "example": "Iraq: most area-based coordination groups abolished in 2024 in favour of Joint Coordination Forums chaired by governors, secretariat handed to a government body in 2025.",
    "type": "practice",
-   "strength": 2,
-   "n_records": 2,
-   "n_sources": 2,
-   "n_documents": 2,
+   "strength": 3,
+   "n_records": 3,
+   "n_sources": 3,
+   "n_documents": 3,
    "counted_sources": [
     {
      "group": "S071",
      "source_ids": [
       "S071"
+     ]
+    },
+    {
+     "group": "S073",
+     "source_ids": [
+      "S073"
      ]
     },
     {
@@ -5986,7 +5992,7 @@
     }
    ],
    "n_streams": 1,
-   "n_checked": 2,
+   "n_checked": 3,
    "relations": [],
    "period": "2024 – 2025",
    "period_from": "2024",
@@ -6011,6 +6017,7 @@
     "un-agency"
    ],
    "record_ids": [
+    "E0323",
     "E0778",
     "E0794"
    ],
@@ -8085,7 +8092,7 @@
     }
    ],
    "n_streams": 3,
-   "n_checked": 3,
+   "n_checked": 4,
    "relations": [],
    "period": "2020 – Jul 2026",
    "period_from": "2020",
@@ -8144,9 +8151,9 @@
    "example": "Indonesia — international organisations shifted to supporting existing local leadership instead of maintaining parallel systems.",
    "type": "enabler",
    "strength": 5,
-   "n_records": 10,
-   "n_sources": 8,
-   "n_documents": 9,
+   "n_records": 9,
+   "n_sources": 7,
+   "n_documents": 8,
    "counted_sources": [
     {
      "group": "S012",
@@ -8164,12 +8171,6 @@
      "group": "S041",
      "source_ids": [
       "S041"
-     ]
-    },
-    {
-     "group": "S073",
-     "source_ids": [
-      "S073"
      ]
     },
     {
@@ -8240,7 +8241,6 @@
     "E0186",
     "E0318",
     "E0319",
-    "E0323",
     "E0498",
     "E0499",
     "E0520",
@@ -9701,7 +9701,7 @@
     }
    ],
    "n_streams": 4,
-   "n_checked": 14,
+   "n_checked": 15,
    "relations": [
     {
      "type": "qualifies",
@@ -9841,7 +9841,7 @@
     }
    ],
    "n_streams": 4,
-   "n_checked": 9,
+   "n_checked": 10,
    "relations": [],
    "period": "2023 – Aug 2026",
    "period_from": "2023",
@@ -10557,7 +10557,7 @@
     }
    ],
    "n_streams": 1,
-   "n_checked": 1,
+   "n_checked": 2,
    "relations": [],
    "period": "2023 – 2024",
    "period_from": "2023",
@@ -10571,7 +10571,8 @@
    ],
    "tags": [
     "government-engagement",
-    "inclusion"
+    "inclusion",
+    "transition-handover"
    ],
    "actors": [
     "community",
@@ -19423,7 +19424,7 @@
     "Transition"
    ],
    "type": "context",
-   "statement": "International humanitarian funding fell from around 1.8 billion to 265 million US dollars, which forced an accelerated transition.",
+   "statement": "Humanitarian funding for the country fell from roughly 1.8 billion dollars at its height to 265 million, a level the document itself says cannot maintain core services in the camps or fill gaps in public services.",
    "level": "national",
    "countries": [
     "IRQ"
@@ -19439,7 +19440,7 @@
    "source_id": "S072",
    "date_collected": "2026-07-17",
    "confidence": "medium",
-   "status": "draft",
+   "status": "validated",
    "year": 2023
   },
   {
@@ -19449,7 +19450,7 @@
     "Transition"
    ],
    "type": "barrier",
-   "statement": "Deactivation was triggered by funding shortage rather than by the operational readiness of national systems.",
+   "statement": "The transition was driven by funding limitations rather than by the readiness of national systems, despite strategic planning, stakeholder consultation and a roadmap.",
    "level": "national",
    "countries": [
     "IRQ"
@@ -19466,7 +19467,7 @@
    "source_id": "S073",
    "date_collected": "2026-07-17",
    "confidence": "medium",
-   "status": "draft",
+   "status": "validated",
    "year": 2025
   },
   {
@@ -20127,7 +20128,7 @@
     "Transition"
    ],
    "type": "barrier",
-   "statement": "Structural power imbalances and language barriers, including the absence of translated materials, prevent local actors from participating in or leading coordination.",
+   "statement": "A top-down approach marginalises local voices and casts local actors as implementers rather than partners, and language barriers, untranslated material and unfamiliarity with international systems exclude them further.",
    "level": "national",
    "countries": [
     "IRQ"
@@ -20144,7 +20145,7 @@
    "source_id": "S073",
    "date_collected": "2026-07-17",
    "confidence": "medium",
-   "status": "draft",
+   "status": "validated",
    "year": 2025
   },
   {
@@ -20616,7 +20617,7 @@
     "Transition"
    ],
    "type": "barrier",
-   "statement": "Government directives on camp closure forced premature returns, and state documentation and assistance frameworks excluded families with perceived affiliations.",
+   "statement": "Families with real or perceived affiliation to extremist groups face barriers to civil documentation and to return, so the frameworks that govern access to services and to durable solutions exclude the households least able to manage without them.",
    "level": "national",
    "countries": [
     "IRQ"
@@ -20627,13 +20628,13 @@
    ],
    "tags": [
     "government-engagement",
-    "inclusion"
+    "transition-handover"
    ],
    "stream": "sdr",
    "source_id": "S072",
    "date_collected": "2026-07-17",
    "confidence": "medium",
-   "status": "draft",
+   "status": "validated",
    "year": 2023
   },
   {
@@ -21047,27 +21048,32 @@
   },
   {
    "id": "E0323",
-   "finding_id": "F259",
+   "finding_id": "F1957",
    "theme": [
+    "ABC",
     "Transition"
    ],
-   "type": "enabler",
-   "statement": "Formally appointing local NGOs as co-chairs of coordination forums measurably increases wider local participation.",
-   "level": "global",
-   "countries": [],
+   "type": "practice",
+   "statement": "Eight area-based structures carried area-level durable solutions planning until 2023 and have largely been replaced since 2024 by seven joint coordination forums across named governorates.",
+   "level": "subnational",
+   "countries": [
+    "IRQ"
+   ],
    "actors": [
-    "local-ngo",
-    "cluster"
+    "gov-local",
+    "un-agency",
+    "local-ngo"
    ],
    "tags": [
-    "localisation",
-    "partnerships"
+    "transition-handover",
+    "government-engagement",
+    "coordination-architecture"
    ],
    "stream": "sdr",
    "source_id": "S073",
    "date_collected": "2026-07-17",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2025
   },
   {
@@ -34331,9 +34337,9 @@
   },
   {
    "source_id": "S072",
-   "title": "Humanitarian Transition Overview 2023 Iraq",
+   "title": "Iraq Humanitarian Transition Overview 2023",
    "organisation": "OCHA",
-   "year": "2023",
+   "year": "2023-02",
    "type": "report",
    "url": "https://iraq.un.org/sites/default/files/2023-02/Iraq%20Humanitarian%20Transition%20Overview%202023.pdf",
    "stream": "sdr",
@@ -34342,13 +34348,13 @@
    "legacy_id": "Transition-S21",
    "source_group": "",
    "label": "OCHA 2023",
-   "reference": "OCHA. (2023). Humanitarian Transition Overview 2023 Iraq. https://iraq.un.org/sites/default/files/2023-02/Iraq%20Humanitarian%20Transition%20Overview%202023.pdf"
+   "reference": "OCHA. (2023). Iraq Humanitarian Transition Overview 2023. https://iraq.un.org/sites/default/files/2023-02/Iraq%20Humanitarian%20Transition%20Overview%202023.pdf"
   },
   {
    "source_id": "S073",
-   "title": "Iraq Cash Forum. CALP Network",
-   "organisation": "Palacios & Tonea",
-   "year": "2025",
+   "title": "Iraq Cash Forum: From Humanitarian Response to Sustainable Solutions",
+   "organisation": "Palacios, R., & Tonea, A.",
+   "year": "2025-10",
    "type": "report",
    "url": "https://www.calpnetwork.org/wp-content/uploads/2025/10/Iraq-Cash-Forum-From-Humanitarian-Response-to-Sustainable-Solutions.pdf",
    "stream": "sdr",
@@ -34356,8 +34362,8 @@
    "access": "public",
    "legacy_id": "Transition-S22",
    "source_group": "",
-   "label": "Palacios & Tonea 2025",
-   "reference": "Palacios & Tonea. (2025). Iraq Cash Forum. CALP Network. https://www.calpnetwork.org/wp-content/uploads/2025/10/Iraq-Cash-Forum-From-Humanitarian-Response-to-Sustainable-Solutions.pdf"
+   "label": "Palacios, R., & Tonea, A. 2025",
+   "reference": "Palacios, R., & Tonea, A.. (2025). Iraq Cash Forum: From Humanitarian Response to Sustainable Solutions. https://www.calpnetwork.org/wp-content/uploads/2025/10/Iraq-Cash-Forum-From-Humanitarian-Response-to-Sustainable-Solutions.pdf"
   },
   {
    "source_id": "S074",
