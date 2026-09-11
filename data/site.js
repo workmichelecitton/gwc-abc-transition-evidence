@@ -832,7 +832,7 @@ window.SITE_DATA = {
   },
   {
    "finding_id": "F002",
-   "statement": "Where the coordination structure mirrors the government's own structure, provincial authorities can take decisions without referring upward, and operational questions and partner-level discussion are handled better than a national platform can manage.",
+   "statement": "Where the coordination structure mirrors the government's own, provincial authorities can take decisions without referring them upward. Operational questions and partner-level discussion are handled better than a national platform can manage.",
    "theme": [
     "ABC"
    ],
@@ -886,7 +886,13 @@ window.SITE_DATA = {
     "E0539",
     "E0712"
    ],
-   "unmerged": false
+   "unmerged": false,
+   "highlight": {
+    "headline": "Mirror the government's structure and decisions get taken locally",
+    "plain": "",
+    "so_what": "",
+    "rank": null
+   }
   },
   {
    "finding_id": "F013",
@@ -1028,7 +1034,7 @@ window.SITE_DATA = {
   },
   {
    "finding_id": "F016",
-   "statement": "Allocation decisions are settled by negotiation rather than against the evidence: priority areas come from a pre-approved list, and sector envelopes are rebalanced at closing meetings.",
+   "statement": "Allocation decisions are settled by negotiation rather than against the evidence. Priority areas come from a pre-approved list, and sector envelopes are rebalanced at closing meetings.",
    "theme": [
     "ABC"
    ],
@@ -1080,7 +1086,13 @@ window.SITE_DATA = {
     "E0021",
     "E0615"
    ],
-   "unmerged": false
+   "unmerged": false,
+   "highlight": {
+    "headline": "Allocations are negotiated, not evidenced",
+    "plain": "",
+    "so_what": "",
+    "rank": null
+   }
   },
   {
    "finding_id": "F019",
@@ -1265,7 +1277,7 @@ window.SITE_DATA = {
   },
   {
    "finding_id": "F023",
-   "statement": "Government counterparts engage more readily when transition is framed as a phased process with continued support than as a transfer date — and some prefer the arrangement not be written down at all.",
+   "statement": "Government counterparts engage more readily when transition is presented as a phased process with continued support than as a transfer date. Some prefer the arrangement not be written down at all.",
    "theme": [
     "Transition"
    ],
@@ -1316,7 +1328,13 @@ window.SITE_DATA = {
     "E0029",
     "E0563"
    ],
-   "unmerged": false
+   "unmerged": false,
+   "highlight": {
+    "headline": "Frame it as a process, not a date",
+    "plain": "",
+    "so_what": "",
+    "rank": null
+   }
   },
   {
    "finding_id": "F024",
@@ -1813,7 +1831,13 @@ window.SITE_DATA = {
     "E0036",
     "E0610"
    ],
-   "unmerged": false
+   "unmerged": false,
+   "highlight": {
+    "headline": "Partners keep reporting to the cluster anyway",
+    "plain": "",
+    "so_what": "",
+    "rank": null
+   }
   },
   {
    "finding_id": "F031",
@@ -2010,7 +2034,7 @@ window.SITE_DATA = {
   },
   {
    "finding_id": "F045",
-   "statement": "Area-based arrangements are being introduced without the cluster being party to the design — presented as a permanent replacement in one context, and absent from revised cluster terms of reference in another because nobody asked.",
+   "statement": "Area-based arrangements are being introduced without the cluster taking part in the design. In one context it was presented as a permanent replacement. In another it was missing from revised cluster terms of reference because nobody asked.",
    "theme": [
     "ABC"
    ],
@@ -2060,11 +2084,17 @@ window.SITE_DATA = {
     "E0053",
     "E0457"
    ],
-   "unmerged": false
+   "unmerged": false,
+   "highlight": {
+    "headline": "The cluster finds out after the design is done",
+    "plain": "",
+    "so_what": "",
+    "rank": null
+   }
   },
   {
    "finding_id": "F053",
-   "statement": "Vulnerability analysis presented previously was not taken up by partners: the framework was not widely understood, and what it prioritised did not always match what partners observed in the field.",
+   "statement": "Vulnerability analysis presented previously was not taken up by partners. The framework was not widely understood, and what it prioritised did not always match what partners saw in the field.",
    "theme": [
     "ABC",
     "Transition"
@@ -2114,11 +2144,17 @@ window.SITE_DATA = {
     "E0061",
     "E0407"
    ],
-   "unmerged": false
+   "unmerged": false,
+   "highlight": {
+    "headline": "An analysis nobody recognised did not get used",
+    "plain": "",
+    "so_what": "",
+    "rank": null
+   }
   },
   {
    "finding_id": "F057",
-   "statement": "WASH data carries risks that other sectors' data does not. Infrastructure locations and chemical stocks have dual-use sensitivity, so sensitivity classification is harder than for sectors whose products are not operationally exploitable. Rules on collecting location data differ between areas of the same country, and subnational data on violations is published openly on platforms outside any cluster control.",
+   "statement": "WASH data carries risks other sectors' data does not. Infrastructure locations and chemical stocks have dual-use sensitivity, which makes classifying them harder than for sectors whose products cannot be exploited operationally. Rules on collecting location data differ between areas of the same country, and subnational data on violations is published openly on platforms no cluster controls.",
    "theme": [
     "Fundamentals"
    ],
@@ -2172,11 +2208,17 @@ window.SITE_DATA = {
     "E0066",
     "E0425"
    ],
-   "unmerged": false
+   "unmerged": false,
+   "highlight": {
+    "headline": "WASH data can be used against the people it describes",
+    "plain": "",
+    "so_what": "",
+    "rank": null
+   }
   },
   {
    "finding_id": "F1001",
-   "statement": "Where a dedicated sector information management post ended, capacity has been rebuilt as a shared resource across sectors and agencies rather than replaced one for one.",
+   "statement": "Where a dedicated sector information management post ended, capacity was rebuilt as a shared resource across sectors and agencies rather than replaced one for one.",
    "theme": [
     "Fundamentals"
    ],
@@ -2231,11 +2273,17 @@ window.SITE_DATA = {
     "E0512",
     "E0525"
    ],
-   "unmerged": false
+   "unmerged": false,
+   "highlight": {
+    "headline": "One shared post instead of one post per sector",
+    "plain": "",
+    "so_what": "",
+    "rank": null
+   }
   },
   {
    "finding_id": "F1005",
-   "statement": "Joint intersectoral assessments cap how many indicators each sector may include, so adding a WASH measure means removing another sector's question rather than extending the instrument.",
+   "statement": "Joint intersectoral assessments cap how many indicators each sector may include. Adding a WASH measure means removing another sector's question rather than making the survey longer.",
    "theme": [
     "ABC",
     "Transition"
@@ -2287,7 +2335,13 @@ window.SITE_DATA = {
     "E0501",
     "E0613"
    ],
-   "unmerged": false
+   "unmerged": false,
+   "highlight": {
+    "headline": "Adding a WASH question means dropping someone else's",
+    "plain": "",
+    "so_what": "",
+    "rank": null
+   }
   },
   {
    "finding_id": "F1015",
@@ -2674,7 +2728,13 @@ window.SITE_DATA = {
     "E0517",
     "E0518"
    ],
-   "unmerged": false
+   "unmerged": false,
+   "highlight": {
+    "headline": "A sector, not a cluster, because government said so",
+    "plain": "",
+    "so_what": "",
+    "rank": null
+   }
   },
   {
    "finding_id": "F111",
@@ -2727,7 +2787,7 @@ window.SITE_DATA = {
   },
   {
    "finding_id": "F1114",
-   "statement": "Where the joint assessment is capped or absent, sectors run their own complementary exercises alongside it — an annual water network performance review, thematic response packs each containing its own assessment tools — rather than accepting the gap.",
+   "statement": "Where the joint assessment is capped or absent, sectors run their own exercises alongside it rather than accepting the gap. Examples include an annual water network performance review and thematic response packs each carrying its own assessment tools.",
    "theme": [
     "Fundamentals"
    ],
@@ -2779,7 +2839,13 @@ window.SITE_DATA = {
     "E0502",
     "E0529"
    ],
-   "unmerged": false
+   "unmerged": false,
+   "highlight": {
+    "headline": "Sectors fill the assessment gap themselves",
+    "plain": "",
+    "so_what": "",
+    "rank": null
+   }
   },
   {
    "finding_id": "F1115",
@@ -7172,7 +7238,7 @@ window.SITE_DATA = {
   },
   {
    "finding_id": "F240",
-   "statement": "Partners engage with whichever platform the money sits behind. As prioritisation moves to area structures, participation follows it — and where funding mechanisms sit outside the established coordination structures altogether, collective prioritisation weakens.",
+   "statement": "Partners engage with whichever platform the money sits behind. As prioritisation moves to area structures, participation follows it. Where funding mechanisms sit outside the established coordination structures altogether, collective prioritisation weakens.",
    "theme": [
     "ABC"
    ],
@@ -7224,7 +7290,13 @@ window.SITE_DATA = {
     "E0158",
     "E0162"
    ],
-   "unmerged": false
+   "unmerged": false,
+   "highlight": {
+    "headline": "Partners follow the money, not the mandate",
+    "plain": "",
+    "so_what": "",
+    "rank": null
+   }
   },
   {
    "finding_id": "F241",
@@ -10760,7 +10832,7 @@ window.SITE_DATA = {
   },
   {
    "finding_id": "F415",
-   "statement": "Humanitarian actors remain within short-term funding cycles while development actors hold the long-term funding, which is the structural mismatch behind most failed handovers.",
+   "statement": "Humanitarian actors work in short funding cycles while development actors hold the long-term money. That mismatch sits behind most failed handovers.",
    "theme": [
     "Transition"
    ],
@@ -10809,7 +10881,13 @@ window.SITE_DATA = {
     "E0250",
     "E0354"
    ],
-   "unmerged": false
+   "unmerged": false,
+   "highlight": {
+    "headline": "Short humanitarian money, long development money",
+    "plain": "",
+    "so_what": "",
+    "rank": null
+   }
   },
   {
    "finding_id": "F417",
@@ -11882,7 +11960,7 @@ window.SITE_DATA = {
   },
   {
    "finding_id": "F619",
-   "statement": "Geographic prioritisation works against the objective where need is dispersed or the trigger is an outbreak: prepositioned stock has to reach any pocket of need, and outbreak funding envelopes have excluded WASH while covering other sectors.",
+   "statement": "Geographic prioritisation works against the objective where need is dispersed or the trigger is an outbreak. Prepositioned stock has to reach any pocket of need, and outbreak funding envelopes have excluded WASH while covering other sectors.",
    "theme": [
     "ABC"
    ],
@@ -11935,7 +12013,13 @@ window.SITE_DATA = {
     "E0428",
     "E0623"
    ],
-   "unmerged": false
+   "unmerged": false,
+   "highlight": {
+    "headline": "Targeting by area fails when need is scattered",
+    "plain": "",
+    "so_what": "",
+    "rank": null
+   }
   },
   {
    "finding_id": "F622",
@@ -12354,7 +12438,7 @@ window.SITE_DATA = {
   },
   {
    "finding_id": "F805",
-   "statement": "Lightweight tools built on common office software have measurably reduced the information management workload, without procurement or a new platform.",
+   "statement": "Lightweight tools built on ordinary office software have measurably reduced the information management workload, with no procurement and no new platform.",
    "theme": [
     "Fundamentals"
    ],
@@ -12406,11 +12490,17 @@ window.SITE_DATA = {
     "E0464",
     "E0545"
    ],
-   "unmerged": false
+   "unmerged": false,
+   "highlight": {
+    "headline": "A spreadsheet solved what a platform was going to",
+    "plain": "",
+    "so_what": "",
+    "rank": null
+   }
   },
   {
    "finding_id": "F807",
-   "statement": "Partners have not begun reporting to the central platform because no one can tell them whether it applies yet. Sectors have been told it is a pilot, or to continue with existing collection, so two systems run and neither is authoritative.",
+   "statement": "Partners have not started reporting to the central platform because no one can tell them whether it applies yet. Sectors have been told it is a pilot, or to carry on with existing collection, so two systems run and neither is authoritative.",
    "theme": [
     "ABC"
    ],
@@ -12461,7 +12551,13 @@ window.SITE_DATA = {
     "E0466",
     "E0597"
    ],
-   "unmerged": false
+   "unmerged": false,
+   "highlight": {
+    "headline": "Nobody told partners which system counts",
+    "plain": "",
+    "so_what": "",
+    "rank": null
+   }
   },
   {
    "finding_id": "F901",
@@ -12605,7 +12701,7 @@ window.SITE_DATA = {
   },
   {
    "finding_id": "F907",
-   "statement": "Where the formal process did not fit, coordination teams built around it rather than waiting. A rapid needs assessment requiring an approval that took months was reframed as a rapid technical assessment and proceeded; with the central planning module suspended, the sector built its own reporting form covering activities, locations and costing and estimated its appeal from partner inputs.",
+   "statement": "Where the formal process did not fit, coordination teams worked around it rather than waiting. A rapid needs assessment needing an approval that took months was reframed as a rapid technical assessment and went ahead. With the central planning module suspended, the sector built its own reporting form covering activities, locations and costing, and estimated its appeal from partner inputs.",
    "theme": [
     "Fundamentals"
    ],
@@ -12657,7 +12753,13 @@ window.SITE_DATA = {
     "E0484",
     "E0654"
    ],
-   "unmerged": false
+   "unmerged": false,
+   "highlight": {
+    "headline": "When the process did not fit, teams built around it",
+    "plain": "",
+    "so_what": "",
+    "rank": null
+   }
   },
   {
    "finding_id": "F910",
