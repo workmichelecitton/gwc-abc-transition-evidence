@@ -142,6 +142,9 @@ td.cite{font-size:12px;line-height:1.45;color:var(--ink-2);max-width:30em}
 .solobox>summary b{color:var(--ink)}
 .solobody{margin-top:16px}
 h3.grp.grp-sub{font-size:12px;margin-top:18px}
+.srcsec{margin:0 0 26px}
+.srcsec h2.grp{margin:0 0 2px}
+.srcnote{margin:0 0 10px;font-size:12px;color:var(--ink-3);font-style:italic;max-width:86ch}
 .anote{background:var(--card);border:1px solid var(--line);border-left:3px solid var(--s4);
   border-radius:0 8px 8px 0;padding:12px 16px;margin-bottom:18px;font-size:13px;color:var(--ink-2)}
 .anbox{background:var(--card);border:1px solid var(--line);border-radius:8px;
@@ -1293,9 +1296,43 @@ function viewSources(d){
     (cited[r.source_id] = cited[r.source_id] || []).push(r.finding_id||r.id);
   });
   if (!d.sources.length) return empty("No sources match these filters.");
-  return '<table><thead><tr><th>ID</th><th>Title</th><th>Cite as</th><th>Type</th>' +
+
+  // Grouped by what kind of document it is, because that is what tells a reader
+  // how much weight it can carry. A flat list of 112 rows sorted by ID put an
+  // independent evaluation next to a position paper next to a checklist, and
+  // the only way to tell them apart was to recognise the title.
+  var ORDER = ["research-evaluation","operational-documentation","consultation",
+               "workshop","strategic-plan","guidance"];
+  var WEIGHT = {
+    "research-evaluation": "Someone examined the thing and reported what they found. Direct evidence under rule 0.3.",
+    "operational-documentation": "An actor describing its own work. Reports what was done or intended, not an independent finding about whether it worked.",
+    "consultation": "Direct testimony from country conversations. Restricted — the raw material is held outside this repository.",
+    "workshop": "Several voices in one room. Sessions of one series count as a single source.",
+    "strategic-plan": "Evidence for the arrangements it establishes, not for their results.",
+    "guidance": "Normative. Says what should happen. A guidance document saying an arrangement should work is never evidence that it does."
+  };
+  var buckets = {}, order = [];
+  d.sources.forEach(function(s){
+    var k = s.type || "other";
+    if (!buckets[k]) { buckets[k] = []; order.push(k); }
+    buckets[k].push(s);
+  });
+  var keys = ORDER.filter(function(k){ return buckets[k]; })
+    .concat(order.filter(function(k){ return ORDER.indexOf(k) < 0; }).sort());
+  return keys.map(function(k){
+    var items = buckets[k];
+    var uncited = items.filter(function(s){ return !(cited[s.source_id]||[]).length; }).length;
+    return '<section class="srcsec"><h2 class="grp">' +
+      esc(label("source_type", k) || k) + '<span class="grp-n">' + items.length +
+      (uncited ? ' · ' + uncited + ' not cited' : '') + '</span></h2>' +
+      '<p class="srcnote">' + esc(WEIGHT[k] || "") + '</p>' +
+      srcTable(items) + '</section>';
+  }).join("");
+
+  function srcTable(list){
+    return '<table><thead><tr><th>ID</th><th>Title</th><th>Cite as</th>' +
     '<th>Stream</th><th>Access</th><th>Cited in</th></tr></thead><tbody>' +
-    d.sources.map(function(s){
+    list.map(function(s){
       var c = uniq(cited[s.source_id]||[]);
       return '<tr><td>'+esc(s.source_id)+'</td>' +
         '<td>'+(s.url ? '<a href="'+esc(s.url)+'" target="_blank" rel="noopener">'+esc(s.title)+'</a>'
@@ -1304,10 +1341,10 @@ function viewSources(d){
         // base cites a source the same way every time — and always with a year,
         // because 2007 practice and 2025 practice are not interchangeable.
         '<td class="cite">'+esc(s.reference||s.label||"")+'</td>' +
-        '<td>'+esc(label("source_type", s.type))+'</td>' +
         '<td>'+esc(label("stream", s.stream))+'</td><td>'+esc(s.access||"")+'</td>' +
         '<td>'+(c.length ? esc(c.join(", ")) : '<span style="color:#B33A3A">not cited</span>')+'</td></tr>';
     }).join("") + '</tbody></table>';
+  }
 }
 
 // ---------------------------------------------------------------------------

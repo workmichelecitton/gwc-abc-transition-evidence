@@ -1,385 +1,383 @@
 {
- "_comment": "Controlled vocabularies. The build script rejects any value in evidence.csv that is not listed here. To add a value, add it here first, then use it. Keep this list short — every addition is a permanent filter option.",
- "version": "0.9.0",
- "updated": "2026-08-13",
- "theme": [
-  {
-   "value": "ABC",
-   "label": "Area-Based Coordination"
+  "_comment": "Controlled vocabularies. The build script rejects any value in evidence.csv that is not listed here. To add a value, add it here first, then use it. Keep this list short — every addition is a permanent filter option.",
+  "version": "0.9.0",
+  "updated": "2026-09-11",
+  "theme": [
+    {
+      "value": "ABC",
+      "label": "Area-Based Coordination"
+    },
+    {
+      "value": "Transition",
+      "label": "Transition"
+    },
+    {
+      "value": "Fundamentals",
+      "label": "Coordination fundamentals"
+    }
+  ],
+  "type": [
+    {
+      "value": "barrier",
+      "label": "Barrier",
+      "definition": "Something that prevents, slows or undermines."
+    },
+    {
+      "value": "enabler",
+      "label": "Enabler",
+      "definition": "Something that makes it work or makes it easier."
+    },
+    {
+      "value": "recommendation",
+      "label": "Recommendation",
+      "definition": "A proposed action. Must be actionable by someone identifiable."
+    },
+    {
+      "value": "practice",
+      "label": "Practice",
+      "definition": "Something actually done in a specific place. Descriptive, not evaluative."
+    },
+    {
+      "value": "context",
+      "label": "Context",
+      "definition": "Background condition or trend. Use sparingly."
+    }
+  ],
+  "level": [
+    {
+      "value": "global",
+      "label": "Global"
+    },
+    {
+      "value": "regional",
+      "label": "Regional"
+    },
+    {
+      "value": "national",
+      "label": "National"
+    },
+    {
+      "value": "subnational",
+      "label": "Subnational"
+    }
+  ],
+  "stream": [
+    {
+      "value": "transcript",
+      "label": "Country conversation",
+      "definition": "Interview or consultation with a national cluster or partner."
+    },
+    {
+      "value": "sdr",
+      "label": "Secondary data review",
+      "definition": "Published document, report or evaluation."
+    },
+    {
+      "value": "search",
+      "label": "Search update",
+      "definition": "Periodic horizon scan, per prompts/03."
+    },
+    {
+      "value": "workshop",
+      "label": "Workshop",
+      "definition": "Group discussion, validation session, regional meeting."
+    }
+  ],
+  "confidence": [
+    {
+      "value": "high",
+      "label": "High",
+      "definition": "Three or more independent sources, or two independent streams."
+    },
+    {
+      "value": "medium",
+      "label": "Medium",
+      "definition": "Two independent sources."
+    },
+    {
+      "value": "low",
+      "label": "Low",
+      "definition": "Single source. Not wrong — just not yet corroborated."
+    }
+  ],
+  "_strength_comment": "Strength of a FINDING. Computed by scripts/build.py from independent source groups, streams and countries — never assigned by hand. Sources sharing a source_group count once. Distinct from the per-record 'confidence' column above, which the build validates but does not use.",
+  "strength": [
+    {
+      "value": 5,
+      "label": "Very strong",
+      "definition": "Six or more independent sources, across two or more streams, in two or more countries. Breadth as well as depth."
+    },
+    {
+      "value": 4,
+      "label": "Strong",
+      "definition": "Three or more independent sources across two or more streams."
+    },
+    {
+      "value": 3,
+      "label": "Moderate",
+      "definition": "Three or more independent sources, or two independent sources across two streams."
+    },
+    {
+      "value": 2,
+      "label": "Limited",
+      "definition": "Two independent sources. Corroborated, but narrowly."
+    },
+    {
+      "value": 1,
+      "label": "Single source",
+      "definition": "One voice. Not wrong, and often the most interesting thing here — just not yet corroborated."
+    }
+  ],
+  "visibility": [
+    {
+      "value": "public",
+      "label": "Public",
+      "definition": "Published to the site."
+    },
+    {
+      "value": "internal",
+      "label": "Internal",
+      "definition": "Excluded at build time. Never reaches the published JSON."
+    }
+  ],
+  "status": [
+    {
+      "value": "validated",
+      "label": "Checked",
+      "definition": "Someone opened the source and confirmed the record against it. In practice this means the record carries a verbatim quote."
+    },
+    {
+      "value": "draft",
+      "label": "Not yet checked",
+      "definition": "Extracted but not confirmed against the source. Not wrong — unverified. Most of this is material imported from the earlier explorer, which arrived without quotes."
+    }
+  ],
+  "actors": [
+    {
+      "value": "cluster",
+      "label": "Cluster / sector coordination"
+    },
+    {
+      "value": "gov-national",
+      "label": "National government"
+    },
+    {
+      "value": "gov-local",
+      "label": "Local government / authorities"
+    },
+    {
+      "value": "donor",
+      "label": "Donor"
+    },
+    {
+      "value": "un-agency",
+      "label": "UN agency"
+    },
+    {
+      "value": "ingo",
+      "label": "INGO"
+    },
+    {
+      "value": "local-ngo",
+      "label": "National / local NGO"
+    },
+    {
+      "value": "community",
+      "label": "Community / affected people"
+    },
+    {
+      "value": "private-sector",
+      "label": "Private sector / service provider"
+    },
+    {
+      "value": "development",
+      "label": "Development actor / IFI"
+    },
+    {
+      "value": "ocha",
+      "label": "OCHA / ICCG"
+    },
+    {
+      "value": "operational-cell",
+      "label": "Operational cell / intermediary body",
+      "definition": "A coordination body sitting between area-based structures and the HC, distinct from clusters and from OCHA."
+    }
+  ],
+  "tags": [
+    {
+      "value": "funding",
+      "label": "Funding & financing"
+    },
+    {
+      "value": "localisation",
+      "label": "Localisation"
+    },
+    {
+      "value": "government-engagement",
+      "label": "Government engagement"
+    },
+    {
+      "value": "coordination-architecture",
+      "label": "Coordination architecture"
+    },
+    {
+      "value": "information-management",
+      "label": "Information management & data"
+    },
+    {
+      "value": "capacity",
+      "label": "Capacity & staffing"
+    },
+    {
+      "value": "partnerships",
+      "label": "Partnerships"
+    },
+    {
+      "value": "aap",
+      "label": "Accountability to affected people"
+    },
+    {
+      "value": "nexus",
+      "label": "Nexus & development linkages"
+    },
+    {
+      "value": "sustainability",
+      "label": "Service sustainability"
+    },
+    {
+      "value": "advocacy",
+      "label": "Advocacy"
+    },
+    {
+      "value": "hpc",
+      "label": "HPC & planning processes"
+    },
+    {
+      "value": "performance",
+      "label": "Performance monitoring"
+    },
+    {
+      "value": "inclusion",
+      "label": "Inclusion & vulnerable groups"
+    },
+    {
+      "value": "transition-handover",
+      "label": "Transition & handover to government",
+      "definition": "Handing coordination or services to national or local systems."
+    },
+    {
+      "value": "staff-turnover",
+      "label": "Staff turnover & continuity",
+      "definition": "Loss of institutional memory when posts change hands. Not transition to government."
+    },
+    {
+      "value": "geographic-targeting",
+      "label": "Geographic targeting"
+    },
+    {
+      "value": "multisector",
+      "label": "Multi-sector / intersectoral"
+    },
+    {
+      "value": "pooled-funds",
+      "label": "Pooled funds & allocation",
+      "definition": "CBPF/country-based pooled fund processes: prioritisation, allocation, cluster role."
+    },
+    {
+      "value": "peer-learning",
+      "label": "Peer learning & country exchange",
+      "definition": "Country-to-country exchange, lesson visits, structured peer support."
+    },
+    {
+      "value": "data-protection",
+      "label": "Data protection & information sensitivity",
+      "definition": "Classification of products, sensitive data exposure, dual-use risk, constraints on sharing or processing data."
+    },
+    {
+      "value": "guidance",
+      "label": "Guidance clarity & interpretation",
+      "definition": "Availability, version control and contested interpretation of coordination guidance."
+    }
+  ],
+  "_countries_comment": "ISO3. Unlisted codes produce a build warning, not an error — add them here to name them properly in the interface.",
+  "countries": {
+    "AFG": "Afghanistan",
+    "BFA": "Burkina Faso",
+    "BDI": "Burundi",
+    "CMR": "Cameroon",
+    "CAF": "Central African Republic",
+    "TCD": "Chad",
+    "COL": "Colombia",
+    "COD": "Democratic Republic of the Congo",
+    "SLV": "El Salvador",
+    "ETH": "Ethiopia",
+    "GTM": "Guatemala",
+    "HTI": "Haiti",
+    "HND": "Honduras",
+    "IRQ": "Iraq",
+    "JOR": "Jordan",
+    "KEN": "Kenya",
+    "LBN": "Lebanon",
+    "LBY": "Libya",
+    "MLI": "Mali",
+    "MOZ": "Mozambique",
+    "MMR": "Myanmar",
+    "NER": "Niger",
+    "NGA": "Nigeria",
+    "PSE": "occupied Palestinian territory",
+    "PAK": "Pakistan",
+    "PHL": "Philippines",
+    "SOM": "Somalia",
+    "SSD": "South Sudan",
+    "SDN": "Sudan",
+    "SYR": "Syrian Arab Republic",
+    "TUR": "Türkiye",
+    "UKR": "Ukraine",
+    "VEN": "Venezuela",
+    "YEM": "Yemen",
+    "ZWE": "Zimbabwe",
+    "BGD": "Bangladesh",
+    "AGO": "Angola",
+    "MDG": "Madagascar",
+    "MWI": "Malawi",
+    "ECU": "Ecuador",
+    "PER": "Peru",
+    "AFR": "Africa (regional)",
+    "MENA": "Middle East (regional)",
+    "LAC": "Latin America & Caribbean (regional)",
+    "ASIA": "Asia (regional)",
+    "IDN": "Indonesia"
   },
-  {
-   "value": "Transition",
-   "label": "Transition"
-  },
-  {
-   "value": "Fundamentals",
-   "label": "Coordination fundamentals"
-  }
- ],
- "type": [
-  {
-   "value": "barrier",
-   "label": "Barrier",
-   "definition": "Something that prevents, slows or undermines."
-  },
-  {
-   "value": "enabler",
-   "label": "Enabler",
-   "definition": "Something that makes it work or makes it easier."
-  },
-  {
-   "value": "recommendation",
-   "label": "Recommendation",
-   "definition": "A proposed action. Must be actionable by someone identifiable."
-  },
-  {
-   "value": "practice",
-   "label": "Practice",
-   "definition": "Something actually done in a specific place. Descriptive, not evaluative."
-  },
-  {
-   "value": "context",
-   "label": "Context",
-   "definition": "Background condition or trend. Use sparingly."
-  }
- ],
- "level": [
-  {
-   "value": "global",
-   "label": "Global"
-  },
-  {
-   "value": "regional",
-   "label": "Regional"
-  },
-  {
-   "value": "national",
-   "label": "National"
-  },
-  {
-   "value": "subnational",
-   "label": "Subnational"
-  }
- ],
- "stream": [
-  {
-   "value": "transcript",
-   "label": "Country conversation",
-   "definition": "Interview or consultation with a national cluster or partner."
-  },
-  {
-   "value": "sdr",
-   "label": "Secondary data review",
-   "definition": "Published document, report or evaluation."
-  },
-  {
-   "value": "search",
-   "label": "Search update",
-   "definition": "Periodic horizon scan, per prompts/03."
-  },
-  {
-   "value": "workshop",
-   "label": "Workshop",
-   "definition": "Group discussion, validation session, regional meeting."
-  }
- ],
- "confidence": [
-  {
-   "value": "high",
-   "label": "High",
-   "definition": "Three or more independent sources, or two independent streams."
-  },
-  {
-   "value": "medium",
-   "label": "Medium",
-   "definition": "Two independent sources."
-  },
-  {
-   "value": "low",
-   "label": "Low",
-   "definition": "Single source. Not wrong — just not yet corroborated."
-  }
- ],
- "_strength_comment": "Strength of a FINDING. Computed by scripts/build.py from independent source groups, streams and countries — never assigned by hand. Sources sharing a source_group count once. Distinct from the per-record 'confidence' column above, which the build validates but does not use.",
- "strength": [
-  {
-   "value": 5,
-   "label": "Very strong",
-   "definition": "Six or more independent sources, across two or more streams, in two or more countries. Breadth as well as depth."
-  },
-  {
-   "value": 4,
-   "label": "Strong",
-   "definition": "Three or more independent sources across two or more streams."
-  },
-  {
-   "value": 3,
-   "label": "Moderate",
-   "definition": "Three or more independent sources, or two independent sources across two streams."
-  },
-  {
-   "value": 2,
-   "label": "Limited",
-   "definition": "Two independent sources. Corroborated, but narrowly."
-  },
-  {
-   "value": 1,
-   "label": "Single source",
-   "definition": "One voice. Not wrong, and often the most interesting thing here — just not yet corroborated."
-  }
- ],
- "visibility": [
-  {
-   "value": "public",
-   "label": "Public",
-   "definition": "Published to the site."
-  },
-  {
-   "value": "internal",
-   "label": "Internal",
-   "definition": "Excluded at build time. Never reaches the published JSON."
-  }
- ],
- "status": [
-  {
-   "value": "validated",
-   "label": "Checked",
-   "definition": "Someone opened the source and confirmed the record against it. In practice this means the record carries a verbatim quote."
-  },
-  {
-   "value": "draft",
-   "label": "Not yet checked",
-   "definition": "Extracted but not confirmed against the source. Not wrong — unverified. Most of this is material imported from the earlier explorer, which arrived without quotes."
-  }
- ],
- "actors": [
-  {
-   "value": "cluster",
-   "label": "Cluster / sector coordination"
-  },
-  {
-   "value": "gov-national",
-   "label": "National government"
-  },
-  {
-   "value": "gov-local",
-   "label": "Local government / authorities"
-  },
-  {
-   "value": "donor",
-   "label": "Donor"
-  },
-  {
-   "value": "un-agency",
-   "label": "UN agency"
-  },
-  {
-   "value": "ingo",
-   "label": "INGO"
-  },
-  {
-   "value": "local-ngo",
-   "label": "National / local NGO"
-  },
-  {
-   "value": "community",
-   "label": "Community / affected people"
-  },
-  {
-   "value": "private-sector",
-   "label": "Private sector / service provider"
-  },
-  {
-   "value": "development",
-   "label": "Development actor / IFI"
-  },
-  {
-   "value": "ocha",
-   "label": "OCHA / ICCG"
-  },
-  {
-   "value": "operational-cell",
-   "label": "Operational cell / intermediary body",
-   "definition": "A coordination body sitting between area-based structures and the HC, distinct from clusters and from OCHA."
-  }
- ],
- "tags": [
-  {
-   "value": "funding",
-   "label": "Funding & financing"
-  },
-  {
-   "value": "localisation",
-   "label": "Localisation"
-  },
-  {
-   "value": "government-engagement",
-   "label": "Government engagement"
-  },
-  {
-   "value": "coordination-architecture",
-   "label": "Coordination architecture"
-  },
-  {
-   "value": "information-management",
-   "label": "Information management & data"
-  },
-  {
-   "value": "capacity",
-   "label": "Capacity & staffing"
-  },
-  {
-   "value": "partnerships",
-   "label": "Partnerships"
-  },
-  {
-   "value": "aap",
-   "label": "Accountability to affected people"
-  },
-  {
-   "value": "nexus",
-   "label": "Nexus & development linkages"
-  },
-  {
-   "value": "sustainability",
-   "label": "Service sustainability"
-  },
-  {
-   "value": "advocacy",
-   "label": "Advocacy"
-  },
-  {
-   "value": "hpc",
-   "label": "HPC & planning processes"
-  },
-  {
-   "value": "performance",
-   "label": "Performance monitoring"
-  },
-  {
-   "value": "inclusion",
-   "label": "Inclusion & vulnerable groups"
-  },
-  {
-   "value": "transition-handover",
-   "label": "Transition & handover to government",
-   "definition": "Handing coordination or services to national or local systems."
-  },
-  {
-   "value": "staff-turnover",
-   "label": "Staff turnover & continuity",
-   "definition": "Loss of institutional memory when posts change hands. Not transition to government."
-  },
-  {
-   "value": "geographic-targeting",
-   "label": "Geographic targeting"
-  },
-  {
-   "value": "multisector",
-   "label": "Multi-sector / intersectoral"
-  },
-  {
-   "value": "pooled-funds",
-   "label": "Pooled funds & allocation",
-   "definition": "CBPF/country-based pooled fund processes: prioritisation, allocation, cluster role."
-  },
-  {
-   "value": "peer-learning",
-   "label": "Peer learning & country exchange",
-   "definition": "Country-to-country exchange, lesson visits, structured peer support."
-  },
-  {
-   "value": "data-protection",
-   "label": "Data protection & information sensitivity",
-   "definition": "Classification of products, sensitive data exposure, dual-use risk, constraints on sharing or processing data."
-  },
-  {
-   "value": "guidance",
-   "label": "Guidance clarity & interpretation",
-   "definition": "Availability, version control and contested interpretation of coordination guidance."
-  }
- ],
- "_countries_comment": "ISO3. Unlisted codes produce a build warning, not an error — add them here to name them properly in the interface.",
- "countries": {
-  "AFG": "Afghanistan",
-  "BFA": "Burkina Faso",
-  "BDI": "Burundi",
-  "CMR": "Cameroon",
-  "CAF": "Central African Republic",
-  "TCD": "Chad",
-  "COL": "Colombia",
-  "COD": "Democratic Republic of the Congo",
-  "SLV": "El Salvador",
-  "ETH": "Ethiopia",
-  "GTM": "Guatemala",
-  "HTI": "Haiti",
-  "HND": "Honduras",
-  "IRQ": "Iraq",
-  "JOR": "Jordan",
-  "KEN": "Kenya",
-  "LBN": "Lebanon",
-  "LBY": "Libya",
-  "MLI": "Mali",
-  "MOZ": "Mozambique",
-  "MMR": "Myanmar",
-  "NER": "Niger",
-  "NGA": "Nigeria",
-  "PSE": "occupied Palestinian territory",
-  "PAK": "Pakistan",
-  "PHL": "Philippines",
-  "SOM": "Somalia",
-  "SSD": "South Sudan",
-  "SDN": "Sudan",
-  "SYR": "Syrian Arab Republic",
-  "TUR": "Türkiye",
-  "UKR": "Ukraine",
-  "VEN": "Venezuela",
-  "YEM": "Yemen",
-  "ZWE": "Zimbabwe",
-  "BGD": "Bangladesh",
-  "AGO": "Angola",
-  "MDG": "Madagascar",
-  "MWI": "Malawi",
-  "ECU": "Ecuador",
-  "PER": "Peru",
-  "AFR": "Africa (regional)",
-  "MENA": "Middle East (regional)",
-  "LAC": "Latin America & Caribbean (regional)",
-  "ASIA": "Asia (regional)",
-  "IDN": "Indonesia"
- },
- "source_type": [
-  {
-   "value": "evaluation",
-   "label": "Evaluation"
-  },
-  {
-   "value": "guidance",
-   "label": "Guidance / framework"
-  },
-  {
-   "value": "study",
-   "label": "Study / research"
-  },
-  {
-   "value": "report",
-   "label": "Operational report"
-  },
-  {
-   "value": "interview",
-   "label": "Interview / consultation"
-  },
-  {
-   "value": "workshop-notes",
-   "label": "Workshop notes"
-  },
-  {
-   "value": "strategy",
-   "label": "Strategy / plan"
-  },
-  {
-   "value": "article",
-   "label": "Article / blog"
-  }
- ]
+  "source_type": [
+    {
+      "value": "consultation",
+      "label": "Consultations",
+      "note": "Country conversations and key informant interviews run by the GWC. Direct testimony, restricted, held outside this repository."
+    },
+    {
+      "value": "workshop",
+      "label": "Workshops",
+      "note": "Facilitated group records — validation workshops, clinics, webinars. Several voices in one room, which is why sessions of one series count as a single source."
+    },
+    {
+      "value": "research-evaluation",
+      "label": "Research and evaluation",
+      "note": "Independent or commissioned assessment, academic work, and recurring measurement series. Direct evidence under rule 0.3: someone examined the thing and reported what they found."
+    },
+    {
+      "value": "operational-documentation",
+      "label": "Operational documentation",
+      "note": "An actor describing its own work — case studies, annual reports, position papers, programme summaries. Proxy evidence: it reports what was done or intended, not an independent finding about whether it worked."
+    },
+    {
+      "value": "guidance",
+      "label": "Guidance documents",
+      "note": "Normative. Says what should happen, not what did. A guidance document saying an arrangement should work is never evidence that it does."
+    },
+    {
+      "value": "strategic-plan",
+      "label": "Strategic plans",
+      "note": "An actor's or a government's plan for itself — transition strategies, national policy, organisational strategy. Evidence for the arrangements it establishes, not for their results."
+    }
+  ]
 }
