@@ -115,7 +115,7 @@
  "generated": "2026-09-11",
  "taxonomy_version": "0.9.0",
  "stats": {
-  "records": 741,
+  "records": 736,
   "findings": 176,
   "sources": 112,
   "countries": 30,
@@ -903,9 +903,9 @@
    "example": "Somalia — resistance reflected the way the model was introduced rather than the model itself.",
    "type": "context",
    "strength": 4,
-   "n_records": 6,
-   "n_sources": 5,
-   "n_documents": 5,
+   "n_records": 5,
+   "n_sources": 4,
+   "n_documents": 4,
    "counted_sources": [
     {
      "group": "S011",
@@ -917,12 +917,6 @@
      "group": "S013",
      "source_ids": [
       "S013"
-     ]
-    },
-    {
-     "group": "S023",
-     "source_ids": [
-      "S023"
      ]
     },
     {
@@ -939,7 +933,7 @@
     }
    ],
    "n_streams": 3,
-   "n_checked": 6,
+   "n_checked": 5,
    "relations": [],
    "period": "Oct 2020 – Aug 2026",
    "period_from": "Oct 2020",
@@ -958,7 +952,6 @@
     "aap",
     "advocacy",
     "coordination-architecture",
-    "geographic-targeting",
     "localisation"
    ],
    "actors": [
@@ -973,7 +966,6 @@
    "record_ids": [
     "E0018",
     "E0038",
-    "E0109",
     "E0755",
     "E0785",
     "E0788"
@@ -6464,27 +6456,15 @@
    ],
    "example": "South Sudan — the country is divided into zones led permanently by UN organisations, which the coordination team distinguished from area-based coordination as described in global guidance.",
    "type": "context",
-   "strength": 5,
-   "n_records": 7,
-   "n_sources": 6,
-   "n_documents": 6,
+   "strength": 4,
+   "n_records": 5,
+   "n_sources": 4,
+   "n_documents": 4,
    "counted_sources": [
     {
      "group": "S015",
      "source_ids": [
       "S015"
-     ]
-    },
-    {
-     "group": "S030",
-     "source_ids": [
-      "S030"
-     ]
-    },
-    {
-     "group": "S031",
-     "source_ids": [
-      "S031"
      ]
     },
     {
@@ -6507,12 +6487,12 @@
     }
    ],
    "n_streams": 4,
-   "n_checked": 7,
+   "n_checked": 5,
    "relations": [],
-   "period": "2023 – Aug 2026",
-   "period_from": "2023",
+   "period": "2024 – Aug 2026",
+   "period_from": "2024",
    "period_to": "Aug 2026",
-   "period_span": 3,
+   "period_span": 2,
    "streams": [
     "sdr",
     "search",
@@ -6521,34 +6501,26 @@
    ],
    "countries": [
     "CMR",
-    "MMR",
-    "SSD",
-    "SYR"
+    "SSD"
    ],
    "tags": [
     "coordination-architecture",
-    "funding",
-    "geographic-targeting",
     "guidance",
     "transition-handover"
    ],
    "actors": [
     "cluster",
     "gov-national",
-    "ingo",
-    "local-ngo",
     "ocha",
     "operational-cell",
     "un-agency"
    ],
    "record_ids": [
     "E0118",
-    "E0154",
     "E0608",
     "E0617",
     "E0674",
-    "E0683",
-    "E0792"
+    "E0683"
    ],
    "unmerged": false,
    "highlight": {
@@ -8373,20 +8345,14 @@
    "example": "",
    "type": "enabler",
    "strength": 4,
-   "n_records": 4,
-   "n_sources": 4,
-   "n_documents": 4,
+   "n_records": 3,
+   "n_sources": 3,
+   "n_documents": 3,
    "counted_sources": [
     {
      "group": "S029",
      "source_ids": [
       "S029"
-     ]
-    },
-    {
-     "group": "S030",
-     "source_ids": [
-      "S030"
      ]
     },
     {
@@ -8403,7 +8369,7 @@
     }
    ],
    "n_streams": 3,
-   "n_checked": 4,
+   "n_checked": 3,
    "relations": [],
    "period": "Oct 2020 – 2026",
    "period_from": "Oct 2020",
@@ -8432,7 +8398,6 @@
    ],
    "record_ids": [
     "E0188",
-    "E0189",
     "E0190",
     "E0754"
    ],
@@ -10856,17 +10821,11 @@
    ],
    "example": "Iraq — a bilingual national co-coordinator, institutionally anchored in the NGO co-lead, carried the process for a year after the international coordinator left.",
    "type": "enabler",
-   "strength": 5,
-   "n_records": 8,
-   "n_sources": 6,
-   "n_documents": 6,
+   "strength": 4,
+   "n_records": 7,
+   "n_sources": 5,
+   "n_documents": 5,
    "counted_sources": [
-    {
-     "group": "S030",
-     "source_ids": [
-      "S030"
-     ]
-    },
     {
      "group": "S104",
      "source_ids": [
@@ -10898,15 +10857,14 @@
      ]
     }
    ],
-   "n_streams": 3,
-   "n_checked": 8,
+   "n_streams": 2,
+   "n_checked": 7,
    "relations": [],
-   "period": "2023 – Jul 2026",
-   "period_from": "2023",
+   "period": "2026 – Jul 2026",
+   "period_from": "2026",
    "period_to": "Jul 2026",
-   "period_span": 3,
+   "period_span": 0,
    "streams": [
-    "sdr",
     "transcript",
     "workshop"
    ],
@@ -10915,7 +10873,6 @@
     "HTI",
     "IRQ",
     "MLI",
-    "MMR",
     "SDN"
    ],
    "tags": [
@@ -10932,7 +10889,6 @@
     "un-agency"
    ],
    "record_ids": [
-    "E0184",
     "E0315",
     "E0321",
     "E0406",
@@ -15937,33 +15893,6 @@
    "year": 2024
   },
   {
-   "id": "E0109",
-   "finding_id": "F013",
-   "theme": [
-    "ABC"
-   ],
-   "type": "practice",
-   "statement": "Area-based coordination was rolled out at district scale into the areas where operational coordination was weakest — over thirty forums covering the highest-priority drought districts, chosen because partners were present but coordination, information and unmet needs were not being handled.",
-   "level": "subnational",
-   "countries": [
-    "SOM"
-   ],
-   "actors": [
-    "cluster",
-    "ingo"
-   ],
-   "tags": [
-    "coordination-architecture",
-    "geographic-targeting"
-   ],
-   "stream": "sdr",
-   "source_id": "S023",
-   "date_collected": "2026-07-17",
-   "confidence": "medium",
-   "status": "validated",
-   "year": 2022
-  },
-  {
    "id": "E0110",
    "finding_id": "F1943",
    "theme": [
@@ -17092,35 +17021,6 @@
    "year": 2026
   },
   {
-   "id": "E0154",
-   "finding_id": "F210",
-   "theme": [
-    "ABC"
-   ],
-   "type": "context",
-   "statement": "Where control of territory is divided, area-based platforms were created to carry the clusters' work into every area of control and to connect it to community feedback mechanisms — presented as a way to make a shrinking response go further.",
-   "level": "subnational",
-   "countries": [
-    "SYR"
-   ],
-   "actors": [
-    "cluster",
-    "ocha",
-    "local-ngo"
-   ],
-   "tags": [
-    "coordination-architecture",
-    "geographic-targeting",
-    "funding"
-   ],
-   "stream": "sdr",
-   "source_id": "S031",
-   "date_collected": "2026-07-17",
-   "confidence": "medium",
-   "status": "validated",
-   "year": 2024
-  },
-  {
    "id": "E0155",
    "finding_id": "F234",
    "theme": [
@@ -17839,33 +17739,6 @@
    "year": 2023
   },
   {
-   "id": "E0184",
-   "finding_id": "F386",
-   "theme": [
-    "Transition"
-   ],
-   "type": "enabler",
-   "statement": "Recruiting and training local subnational cluster coordinators so that coordination could run in Myanmar language was judged very constructive — and the same passage says it did not by itself deliver local ownership.",
-   "level": "subnational",
-   "countries": [
-    "MMR"
-   ],
-   "actors": [
-    "cluster",
-    "local-ngo"
-   ],
-   "tags": [
-    "capacity",
-    "localisation"
-   ],
-   "stream": "sdr",
-   "source_id": "S030",
-   "date_collected": "2026-07-17",
-   "confidence": "medium",
-   "status": "validated",
-   "year": 2023
-  },
-  {
    "id": "E0185",
    "finding_id": "F258",
    "theme": [
@@ -17966,33 +17839,6 @@
    "confidence": "high",
    "status": "validated",
    "year": 2026
-  },
-  {
-   "id": "E0189",
-   "finding_id": "F261",
-   "theme": [
-    "ABC"
-   ],
-   "type": "enabler",
-   "statement": "Language is named as a critical barrier to local organisations taking part, with interpretation in meetings and translation of key documents treated as what makes inclusion in coordination structures possible at all.",
-   "level": "subnational",
-   "countries": [
-    "MMR"
-   ],
-   "actors": [
-    "local-ngo",
-    "community"
-   ],
-   "tags": [
-    "localisation",
-    "aap"
-   ],
-   "stream": "sdr",
-   "source_id": "S030",
-   "date_collected": "2026-07-17",
-   "confidence": "high",
-   "status": "validated",
-   "year": 2023
   },
   {
    "id": "E0190",
@@ -33388,35 +33234,6 @@
    "confidence": "high",
    "status": "validated",
    "year": 2025
-  },
-  {
-   "id": "E0792",
-   "finding_id": "F210",
-   "theme": [
-    "ABC"
-   ],
-   "type": "context",
-   "statement": "One country runs several different area-based arrangements at once: general coordination meetings and an area humanitarian coordination team in one region, and in another a small secretariat staffed jointly by the NGO forum, the coordination office and a UN agency.",
-   "level": "subnational",
-   "countries": [
-    "MMR"
-   ],
-   "actors": [
-    "ocha",
-    "ingo",
-    "un-agency",
-    "cluster"
-   ],
-   "tags": [
-    "coordination-architecture",
-    "geographic-targeting"
-   ],
-   "stream": "sdr",
-   "source_id": "S030",
-   "date_collected": "2026-09-11",
-   "confidence": "high",
-   "status": "validated",
-   "year": 2023
   }
  ],
  "sources": [

@@ -20,6 +20,23 @@ If a document yields three records, extract three. Padding the count destroys th
 
 ---
 
+## Documents that expire — excluded as a class
+
+**Response plans, humanitarian needs overviews, allocation strategies, appeals and situation reports are not evidence for this base.** Decided 11/09/2026, after reading three of them.
+
+A plan describes a funding round or a moment in a response. Its amounts, envelopes, targets and dates expire with the cycle, and a record built on them says only what was intended in one round that has since closed. Citing one dates the base to the cycle rather than to the practice.
+
+The test is on the claim, not the document: **would this record still be true if the document were superseded tomorrow?**
+
+- "The 2024 first allocation made $30.5 million available under three envelopes" — dies with the round.
+- "Area-based platforms were created to carry the clusters' work into every area of control" — survives, and is the kind of thing worth recording.
+
+Where a plan does carry a structural claim, it is almost always stated better in a study or an evaluation. Look there instead.
+
+**Not in this class:** transition strategies, deactivation plans and national policy documents. Those describe coordination arrangements, which is the subject of this base, and several of them are among its better sources.
+
+Excluding the class cost five records across four findings. None disappeared; two moved from band 5 to band 4. That was the price of having a rule instead of a judgement call each time.
+
 ## Register — this matters as much as accuracy
 
 This evidence base has two purposes: informing WASH cluster coordinators, and supporting constructive advocacy. Neither is served by writing that reads as an attack on OCHA, on area-based structures, or on any other actor.
