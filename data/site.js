@@ -903,9 +903,9 @@ window.SITE_DATA = {
    "example": "Somalia — resistance reflected the way the model was introduced rather than the model itself.",
    "type": "context",
    "strength": 4,
-   "n_records": 4,
-   "n_sources": 3,
-   "n_documents": 3,
+   "n_records": 5,
+   "n_sources": 4,
+   "n_documents": 4,
    "counted_sources": [
     {
      "group": "S011",
@@ -920,6 +920,12 @@ window.SITE_DATA = {
      ]
     },
     {
+     "group": "S023",
+     "source_ids": [
+      "S023"
+     ]
+    },
+    {
      "group": "S120",
      "source_ids": [
       "S120"
@@ -927,7 +933,7 @@ window.SITE_DATA = {
     }
    ],
    "n_streams": 3,
-   "n_checked": 4,
+   "n_checked": 5,
    "relations": [],
    "period": "Oct 2020 – Aug 2026",
    "period_from": "Oct 2020",
@@ -944,6 +950,7 @@ window.SITE_DATA = {
    "tags": [
     "aap",
     "coordination-architecture",
+    "geographic-targeting",
     "localisation"
    ],
    "actors": [
@@ -957,6 +964,7 @@ window.SITE_DATA = {
    "record_ids": [
     "E0018",
     "E0038",
+    "E0109",
     "E0755",
     "E0785"
    ],
@@ -1663,12 +1671,6 @@ window.SITE_DATA = {
      ]
     },
     {
-     "group": "S017",
-     "source_ids": [
-      "S017"
-     ]
-    },
-    {
      "group": "S059",
      "source_ids": [
       "S059"
@@ -1720,6 +1722,12 @@ window.SITE_DATA = {
      "group": "gwc-consult-2026",
      "source_ids": [
       "S083"
+     ]
+    },
+    {
+     "group": "ocha-pulse-2023",
+     "source_ids": [
+      "S017"
      ]
     }
    ],
@@ -6200,21 +6208,15 @@ window.SITE_DATA = {
    ],
    "example": "Somalia — the drought response revealed uneven sectoral delivery, with actors operating in the same areas without a shared planning framework.",
    "type": "barrier",
-   "strength": 5,
-   "n_records": 6,
-   "n_sources": 6,
-   "n_documents": 6,
+   "strength": 4,
+   "n_records": 5,
+   "n_sources": 5,
+   "n_documents": 5,
    "counted_sources": [
     {
      "group": "S015",
      "source_ids": [
       "S015"
-     ]
-    },
-    {
-     "group": "S023",
-     "source_ids": [
-      "S023"
      ]
     },
     {
@@ -6255,26 +6257,22 @@ window.SITE_DATA = {
     "workshop"
    ],
    "countries": [
-    "SOM",
     "VEN",
     "YEM"
    ],
    "tags": [
     "coordination-architecture",
     "information-management",
-    "multisector",
     "performance"
    ],
    "actors": [
     "cluster",
-    "ingo",
     "ocha",
     "operational-cell",
     "un-agency"
    ],
    "record_ids": [
     "E0107",
-    "E0109",
     "E0110",
     "E0116",
     "E0716",
@@ -6332,12 +6330,6 @@ window.SITE_DATA = {
      ]
     },
     {
-     "group": "S024",
-     "source_ids": [
-      "S024"
-     ]
-    },
-    {
      "group": "S041",
      "source_ids": [
       "S041"
@@ -6359,6 +6351,12 @@ window.SITE_DATA = {
      "group": "gwc-consult-2026",
      "source_ids": [
       "S045"
+     ]
+    },
+    {
+     "group": "ocha-pulse-2023",
+     "source_ids": [
+      "S024"
      ]
     },
     {
@@ -15868,12 +15866,12 @@ window.SITE_DATA = {
   },
   {
    "id": "E0109",
-   "finding_id": "F203",
+   "finding_id": "F013",
    "theme": [
     "ABC"
    ],
-   "type": "barrier",
-   "statement": "Drought response revealed uneven sectoral delivery, with actors operating in the same areas without harmonised planning frameworks.",
+   "type": "practice",
+   "statement": "Area-based coordination was rolled out at district scale into the areas where operational coordination was weakest — over thirty forums covering the highest-priority drought districts, chosen because partners were present but coordination, information and unmet needs were not being handled.",
    "level": "subnational",
    "countries": [
     "SOM"
@@ -15884,13 +15882,13 @@ window.SITE_DATA = {
    ],
    "tags": [
     "coordination-architecture",
-    "multisector"
+    "geographic-targeting"
    ],
    "stream": "sdr",
    "source_id": "S023",
    "date_collected": "2026-07-17",
    "confidence": "medium",
-   "status": "draft",
+   "status": "validated",
    "year": 2022
   },
   {
@@ -33300,7 +33298,7 @@ window.SITE_DATA = {
    "date_added": "2026-07-17",
    "access": "public",
    "legacy_id": "ABC-S5",
-   "source_group": "",
+   "source_group": "ocha-pulse-2023",
    "label": "OCHA 2025",
    "reference": "OCHA. (2025). Pulse of Humanitarian Coordination 2023. https://www.unocha.org/publications/report/world/pulse-humanitarian-coordination-2023-overview-iasc-structures-country-level-december-2024"
   },
@@ -33381,33 +33379,33 @@ window.SITE_DATA = {
   },
   {
    "source_id": "S023",
-   "title": "Somalia: Drought Situation Report No. 7",
+   "title": "Somalia: Drought Situation Report No.7 (As of 20 May 2022)",
    "organisation": "OCHA",
-   "year": "2022",
+   "year": "2022-05",
    "type": "report",
-   "url": "",
+   "url": "https://www.unocha.org/publications/report/somalia/somalia-drought-situation-report-no7-20-may-2022",
    "stream": "sdr",
    "date_added": "2026-07-17",
    "access": "public",
    "legacy_id": "ABC-S11",
    "source_group": "",
    "label": "OCHA 2022",
-   "reference": "OCHA. (2022). Somalia: Drought Situation Report No. 7."
+   "reference": "OCHA. (2022). Somalia: Drought Situation Report No.7 (As of 20 May 2022). https://www.unocha.org/publications/report/somalia/somalia-drought-situation-report-no7-20-may-2022"
   },
   {
    "source_id": "S024",
    "title": "Subnational HCTs and ICCGs",
    "organisation": "OCHA",
-   "year": "2025",
+   "year": "2025-01",
    "type": "report",
-   "url": "",
+   "url": "https://humanitarianaction.info/article/subnational-hcts-and-iccgs",
    "stream": "sdr",
    "date_added": "2026-07-17",
    "access": "public",
    "legacy_id": "ABC-S12",
-   "source_group": "",
+   "source_group": "ocha-pulse-2023",
    "label": "OCHA 2025",
-   "reference": "OCHA. (2025). Subnational HCTs and ICCGs."
+   "reference": "OCHA. (2025). Subnational HCTs and ICCGs. https://humanitarianaction.info/article/subnational-hcts-and-iccgs"
   },
   {
    "source_id": "S025",
