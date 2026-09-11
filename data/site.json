@@ -6464,10 +6464,10 @@
    ],
    "example": "South Sudan — the country is divided into zones led permanently by UN organisations, which the coordination team distinguished from area-based coordination as described in global guidance.",
    "type": "context",
-   "strength": 4,
-   "n_records": 6,
-   "n_sources": 5,
-   "n_documents": 5,
+   "strength": 5,
+   "n_records": 7,
+   "n_sources": 6,
+   "n_documents": 6,
    "counted_sources": [
     {
      "group": "S015",
@@ -6479,6 +6479,12 @@
      "group": "S030",
      "source_ids": [
       "S030"
+     ]
+    },
+    {
+     "group": "S031",
+     "source_ids": [
+      "S031"
      ]
     },
     {
@@ -6501,7 +6507,7 @@
     }
    ],
    "n_streams": 4,
-   "n_checked": 6,
+   "n_checked": 7,
    "relations": [],
    "period": "2023 – Aug 2026",
    "period_from": "2023",
@@ -6516,10 +6522,12 @@
    "countries": [
     "CMR",
     "MMR",
-    "SSD"
+    "SSD",
+    "SYR"
    ],
    "tags": [
     "coordination-architecture",
+    "funding",
     "geographic-targeting",
     "guidance",
     "transition-handover"
@@ -6528,12 +6536,14 @@
     "cluster",
     "gov-national",
     "ingo",
+    "local-ngo",
     "ocha",
     "operational-cell",
     "un-agency"
    ],
    "record_ids": [
     "E0118",
+    "E0154",
     "E0608",
     "E0617",
     "E0674",
@@ -7756,20 +7766,14 @@
    "example": "",
    "type": "barrier",
    "strength": 4,
-   "n_records": 4,
-   "n_sources": 4,
-   "n_documents": 4,
+   "n_records": 3,
+   "n_sources": 3,
+   "n_documents": 3,
    "counted_sources": [
     {
      "group": "S013",
      "source_ids": [
       "S013"
-     ]
-    },
-    {
-     "group": "S031",
-     "source_ids": [
-      "S031"
      ]
     },
     {
@@ -7797,16 +7801,13 @@
     "workshop"
    ],
    "countries": [
-    "AFG",
-    "SYR"
+    "AFG"
    ],
    "tags": [
     "coordination-architecture",
     "funding",
-    "geographic-targeting",
     "guidance",
-    "multisector",
-    "pooled-funds"
+    "multisector"
    ],
    "actors": [
     "cluster",
@@ -7815,7 +7816,6 @@
     "operational-cell"
    ],
    "record_ids": [
-    "E0154",
     "E0156",
     "E0165",
     "E0197"
@@ -17093,30 +17093,31 @@
   },
   {
    "id": "E0154",
-   "finding_id": "F243",
+   "finding_id": "F210",
    "theme": [
     "ABC"
    ],
-   "type": "barrier",
-   "statement": "Funding allocation strategies show the difficulty of aligning financial flows with area-based targeting and priorities.",
+   "type": "context",
+   "statement": "Where control of territory is divided, area-based platforms were created to carry the clusters' work into every area of control and to connect it to community feedback mechanisms — presented as a way to make a shrinking response go further.",
    "level": "subnational",
    "countries": [
     "SYR"
    ],
    "actors": [
-    "donor",
-    "ocha"
+    "cluster",
+    "ocha",
+    "local-ngo"
    ],
    "tags": [
-    "funding",
-    "pooled-funds",
-    "geographic-targeting"
+    "coordination-architecture",
+    "geographic-targeting",
+    "funding"
    ],
    "stream": "sdr",
    "source_id": "S031",
    "date_collected": "2026-07-17",
    "confidence": "medium",
-   "status": "draft",
+   "status": "validated",
    "year": 2024
   },
   {
@@ -33721,18 +33722,18 @@
   },
   {
    "source_id": "S031",
-   "title": "Syria Cross-border Humanitarian Fund Strategy",
+   "title": "Syria Cross-border Humanitarian Fund: 2024 First Standard Allocation Strategy",
    "organisation": "OCHA",
-   "year": "2024",
+   "year": "2024-07",
    "type": "strategy",
-   "url": "",
+   "url": "https://www.unocha.org/publications/report/syrian-arab-republic/syria-cross-border-humanitarian-fund-2024-first-standard-allocation-strategy",
    "stream": "sdr",
    "date_added": "2026-07-17",
    "access": "public",
    "legacy_id": "ABC-S19",
    "source_group": "",
    "label": "OCHA 2024",
-   "reference": "OCHA. (2024). Syria Cross-border Humanitarian Fund Strategy."
+   "reference": "OCHA. (2024). Syria Cross-border Humanitarian Fund: 2024 First Standard Allocation Strategy. https://www.unocha.org/publications/report/syrian-arab-republic/syria-cross-border-humanitarian-fund-2024-first-standard-allocation-strategy"
   },
   {
    "source_id": "S032",
