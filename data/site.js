@@ -17119,7 +17119,7 @@ window.SITE_DATA = {
    "date_collected": "2026-07-17",
    "confidence": "medium",
    "status": "draft",
-   "year": null
+   "year": 2025
   },
   {
    "id": "E0158",
@@ -33211,7 +33211,8 @@ window.SITE_DATA = {
    "access": "restricted",
    "legacy_id": "",
    "source_group": "",
-   "label": "Global WASH Cluster 2026"
+   "label": "Global WASH Cluster 2026",
+   "reference": "Global WASH Cluster. (2026). Country consultation — Somalia [Unpublished transcript]."
   },
   {
    "source_id": "S012",
@@ -33225,7 +33226,8 @@ window.SITE_DATA = {
    "access": "restricted",
    "legacy_id": "",
    "source_group": "",
-   "label": "Global WASH Cluster 2026"
+   "label": "Global WASH Cluster 2026",
+   "reference": "Global WASH Cluster. (2026). Country consultation — Myanmar (two sessions) [Unpublished transcript]."
   },
   {
    "source_id": "S013",
@@ -33239,7 +33241,8 @@ window.SITE_DATA = {
    "access": "public",
    "legacy_id": "ABC-S1",
    "source_group": "",
-   "label": "OCHA 2024-07"
+   "label": "OCHA 2024",
+   "reference": "OCHA. (2024). The Evolving Flagship Initiative Approach. https://www.unocha.org/publications/report/world/evolving-flagship-initiative-approach"
   },
   {
    "source_id": "S014",
@@ -33253,7 +33256,8 @@ window.SITE_DATA = {
    "access": "public",
    "legacy_id": "ABC-S2",
    "source_group": "",
-   "label": "Food Security Cluster 2023"
+   "label": "Food Security Cluster 2023",
+   "reference": "Food Security Cluster. (2023). Decentralised Coordination Models. https://handbook.fscluster.org/docs/1042-other-models-of-decentralised-coordination-area-based-coordination"
   },
   {
    "source_id": "S015",
@@ -33267,7 +33271,8 @@ window.SITE_DATA = {
    "access": "public",
    "legacy_id": "ABC-S3",
    "source_group": "",
-   "label": "ACTED 2024"
+   "label": "ACTED 2024",
+   "reference": "ACTED. (2024). Reflections on Area-Based Coordination. https://reliefweb.int/report/world/acted-reflections-area-based-coordination"
   },
   {
    "source_id": "S016",
@@ -33281,7 +33286,8 @@ window.SITE_DATA = {
    "access": "public",
    "legacy_id": "ABC-S4",
    "source_group": "",
-   "label": "Refugees International 2024"
+   "label": "Refugees International 2024",
+   "reference": "Refugees International. (2024). Ukraine Localization Survey 2024. https://www.refugeesinternational.org/reports-briefs/annual-ukraine-localization-survey-2024/"
   },
   {
    "source_id": "S017",
@@ -33295,7 +33301,8 @@ window.SITE_DATA = {
    "access": "public",
    "legacy_id": "ABC-S5",
    "source_group": "",
-   "label": "OCHA 2025"
+   "label": "OCHA 2025",
+   "reference": "OCHA. (2025). Pulse of Humanitarian Coordination 2023. https://www.unocha.org/publications/report/world/pulse-humanitarian-coordination-2023-overview-iasc-structures-country-level-december-2024"
   },
   {
    "source_id": "S018",
@@ -33309,7 +33316,8 @@ window.SITE_DATA = {
    "access": "public",
    "legacy_id": "ABC-S6",
    "source_group": "",
-   "label": "CCCM Cluster 2020"
+   "label": "CCCM Cluster 2020",
+   "reference": "CCCM Cluster. (2020). CCCM Paper on Area-based Approaches. https://reliefweb.int/report/world/cccm-paper-area-based-approaches-position-paper"
   },
   {
    "source_id": "S019",
@@ -33323,7 +33331,8 @@ window.SITE_DATA = {
    "access": "public",
    "legacy_id": "ABC-S7",
    "source_group": "",
-   "label": "IASC HWG 2026"
+   "label": "IASC HWG 2026",
+   "reference": "IASC HWG. (2026). Guidance: Cluster Simplification and Adapting Coordination. https://interagencystandingcommittee.org/sites/default/files/2026-03/IASC%20Guidance%20Note%20on%20Cluster%20Simplification%20and%20Adapting%20In-Country%20Coordination%20to%20Context_March%202026.pdf"
   },
   {
    "source_id": "S020",
@@ -33337,7 +33346,8 @@ window.SITE_DATA = {
    "access": "public",
    "legacy_id": "ABC-S8",
    "source_group": "",
-   "label": "UN Women 2026"
+   "label": "UN Women 2026",
+   "reference": "UN Women. (2026). Leading in times of crisis. https://reliefweb.int/report/occupied-palestinian-territory/gender-matters-bulletin-no3-leading-times-crisis-role-womens-organizations-humanitarian-response-palestine-august-2025"
   },
   {
    "source_id": "S021",
@@ -33351,21 +33361,23 @@ window.SITE_DATA = {
    "access": "public",
    "legacy_id": "ABC-S9",
    "source_group": "",
-   "label": "OCHA 2025"
+   "label": "OCHA 2025",
+   "reference": "OCHA. (2025). Flagship Initiative Second Year Learning Report, April 2025. https://www.unocha.org/publications/report/world/flagship-initiative-second-year-learning-report-april-2025"
   },
   {
    "source_id": "S022",
-   "title": "Session 2 Area Based Coordination",
-   "organisation": "Health Cluster",
-   "year": "",
+   "title": "Session 2: Area based coordination",
+   "organisation": "Global Health Cluster",
+   "year": "2025-08",
    "type": "workshop-notes",
-   "url": "",
+   "url": "https://www.youtube.com/watch?v=PQrLpeesB54",
    "stream": "workshop",
    "date_added": "2026-07-17",
    "access": "public",
    "legacy_id": "ABC-S10",
    "source_group": "",
-   "label": "Health Cluster"
+   "label": "Global Health Cluster 2025",
+   "reference": "Global Health Cluster. (2025). Session 2: Area based coordination [Video]. https://www.youtube.com/watch?v=PQrLpeesB54"
   },
   {
    "source_id": "S023",
@@ -33379,7 +33391,8 @@ window.SITE_DATA = {
    "access": "public",
    "legacy_id": "ABC-S11",
    "source_group": "",
-   "label": "OCHA 2022"
+   "label": "OCHA 2022",
+   "reference": "OCHA. (2022). Somalia: Drought Situation Report No. 7."
   },
   {
    "source_id": "S024",
@@ -33393,7 +33406,8 @@ window.SITE_DATA = {
    "access": "public",
    "legacy_id": "ABC-S12",
    "source_group": "",
-   "label": "OCHA 2025"
+   "label": "OCHA 2025",
+   "reference": "OCHA. (2025). Subnational HCTs and ICCGs."
   },
   {
    "source_id": "S025",
@@ -33407,7 +33421,8 @@ window.SITE_DATA = {
    "access": "public",
    "legacy_id": "ABC-S13",
    "source_group": "",
-   "label": "ADE 2022"
+   "label": "ADE 2022",
+   "reference": "ADE. (2022). Evaluation of EU humanitarian interventions."
   },
   {
    "source_id": "S026",
@@ -33421,7 +33436,8 @@ window.SITE_DATA = {
    "access": "public",
    "legacy_id": "ABC-S14",
    "source_group": "",
-   "label": "DG ECHO 2023"
+   "label": "DG ECHO 2023",
+   "reference": "DG ECHO. (2023). Promoting Equitable Partnerships with Local Responders."
   },
   {
    "source_id": "S027",
@@ -33435,7 +33451,8 @@ window.SITE_DATA = {
    "access": "public",
    "legacy_id": "ABC-S15",
    "source_group": "",
-   "label": "IAHE 2024"
+   "label": "IAHE 2024",
+   "reference": "IAHE. (2024). IAHE Response to Somalia Crisis. https://www.unhcr.org/sites/default/files/2025-03/inter-agency-humanitarian-evaluation-of-the-response-to-the-humanitarian-crisis-in-somalia.pdf"
   },
   {
    "source_id": "S028",
@@ -33449,7 +33466,8 @@ window.SITE_DATA = {
    "access": "public",
    "legacy_id": "ABC-S16",
    "source_group": "",
-   "label": "Stoddard et al 2023"
+   "label": "Stoddard et al 2023",
+   "reference": "Stoddard et al. (2023). Humanitarian Access SCORE Report: Haiti."
   },
   {
    "source_id": "S029",
@@ -33463,7 +33481,8 @@ window.SITE_DATA = {
    "access": "public",
    "legacy_id": "ABC-S17",
    "source_group": "",
-   "label": "Coalition for Accountability and Integrity 2025"
+   "label": "Coalition for Accountability and Integrity 2025",
+   "reference": "Coalition for Accountability and Integrity. (2025). Data Flow in Humanitarian Aid."
   },
   {
    "source_id": "S030",
@@ -33477,7 +33496,8 @@ window.SITE_DATA = {
    "access": "public",
    "legacy_id": "ABC-S18",
    "source_group": "",
-   "label": "OCHA 2023"
+   "label": "OCHA 2023",
+   "reference": "OCHA. (2023). Humanitarian Response Plan Myanmar 2023."
   },
   {
    "source_id": "S031",
@@ -33491,7 +33511,8 @@ window.SITE_DATA = {
    "access": "public",
    "legacy_id": "ABC-S19",
    "source_group": "",
-   "label": "OCHA 2024"
+   "label": "OCHA 2024",
+   "reference": "OCHA. (2024). Syria Cross-border Humanitarian Fund Strategy."
   },
   {
    "source_id": "S032",
@@ -33505,7 +33526,8 @@ window.SITE_DATA = {
    "access": "public",
    "legacy_id": "ABC-S20",
    "source_group": "",
-   "label": "Global Shelter Cluster 2018"
+   "label": "Global Shelter Cluster 2018",
+   "reference": "Global Shelter Cluster. (2018). Urban Compendium."
   },
   {
    "source_id": "S033",
@@ -33519,7 +33541,8 @@ window.SITE_DATA = {
    "access": "public",
    "legacy_id": "ABC-S21",
    "source_group": "icva-coordination-in-transition",
-   "label": "ICVA 2025"
+   "label": "ICVA 2025",
+   "reference": "ICVA. (2025). Coordination in Transition: How NGOs are Navigating and Adapting beyond the IASC — Lessons from Iraq & Indonesia. https://www.icvanetwork.org/uploads/2025/10/Coordination-in-Transition-How-NGOs-are-Navigating-and-Adapting-beyond-the-IASC_Final_EN.pdf"
   },
   {
    "source_id": "S034",
@@ -33533,7 +33556,8 @@ window.SITE_DATA = {
    "access": "public",
    "legacy_id": "ABC-S22",
    "source_group": "undp-abd-practice-note",
-   "label": "UNDP 2025"
+   "label": "UNDP 2025",
+   "reference": "UNDP. (2025). Area-Based Development Practice Note. https://www.undp.org/sites/g/files/zskgke326/files/2025-03/undp-area-based-development-practice-note.pdf"
   },
   {
    "source_id": "S035",
@@ -33547,7 +33571,8 @@ window.SITE_DATA = {
    "access": "public",
    "legacy_id": "ABC-S23",
    "source_group": "",
-   "label": "UNDP 2026"
+   "label": "UNDP 2026",
+   "reference": "UNDP. (2026). Operationalizing the HDP Nexus."
   },
   {
    "source_id": "S036",
@@ -33561,7 +33586,8 @@ window.SITE_DATA = {
    "access": "public",
    "legacy_id": "ABC-S24",
    "source_group": "",
-   "label": "Collinson & Schenkenberg 2019"
+   "label": "Collinson & Schenkenberg 2019",
+   "reference": "Collinson & Schenkenberg. (2019). UNHCR Leadership and Coordination Role."
   },
   {
    "source_id": "S037",
@@ -33575,7 +33601,8 @@ window.SITE_DATA = {
    "access": "public",
    "legacy_id": "ABC-S25",
    "source_group": "",
-   "label": "Global Health Cluster 2025"
+   "label": "Global Health Cluster 2025",
+   "reference": "Global Health Cluster. (2025). Partner Meeting Note, 19–20 June 2025."
   },
   {
    "source_id": "S038",
@@ -33589,7 +33616,8 @@ window.SITE_DATA = {
    "access": "public",
    "legacy_id": "ABC-S26",
    "source_group": "",
-   "label": "Global Shelter Cluster 2024"
+   "label": "Global Shelter Cluster 2024",
+   "reference": "Global Shelter Cluster. (2024). Messages from SC coordinators on ABC."
   },
   {
    "source_id": "S039",
@@ -33603,7 +33631,8 @@ window.SITE_DATA = {
    "access": "public",
    "legacy_id": "ABC-S27",
    "source_group": "",
-   "label": "Global Shelter Cluster 2024"
+   "label": "Global Shelter Cluster 2024",
+   "reference": "Global Shelter Cluster. (2024). ABC – Findings from consultation with countries."
   },
   {
    "source_id": "S040",
@@ -33617,7 +33646,8 @@ window.SITE_DATA = {
    "access": "public",
    "legacy_id": "ABC-S28",
    "source_group": "",
-   "label": "Global Education Cluster 2024"
+   "label": "Global Education Cluster 2024",
+   "reference": "Global Education Cluster. (2024). ABC: Responses from Cluster Coordinators."
   },
   {
    "source_id": "S041",
@@ -33631,7 +33661,8 @@ window.SITE_DATA = {
    "access": "public",
    "legacy_id": "ABC-S29",
    "source_group": "",
-   "label": "Derzsi-Horváth, A 2025"
+   "label": "Derzsi-Horváth, A 2025",
+   "reference": "Derzsi-Horváth, A. (2025). Area-Based Coordination and Area-Based Programming: Typology, Lessons and Implications. Study commissioned by the Global Cluster Coordination Group, supported by OCHA and UNICEF. https://reliefweb.int/report/central-african-republic/area-based-coordination-and-area-based-programming-typology-lessons-and-implications-final-report"
   },
   {
    "source_id": "S042",
@@ -33645,7 +33676,8 @@ window.SITE_DATA = {
    "access": "public",
    "legacy_id": "ABC-S30",
    "source_group": "gwc-consult-2025",
-   "label": "GWC 2026"
+   "label": "GWC 2026",
+   "reference": "GWC. (2026). ABC & WASH: Theory, Challenges and Experiences — Webinar."
   },
   {
    "source_id": "S043",
@@ -33659,7 +33691,8 @@ window.SITE_DATA = {
    "access": "public",
    "legacy_id": "ABC-S31",
    "source_group": "gwc-consult-2025",
-   "label": "GWC 2024"
+   "label": "GWC 2024",
+   "reference": "GWC. (2024). Area-Based Humanitarian Coordination — Internal Reflections."
   },
   {
    "source_id": "S044",
@@ -33673,7 +33706,8 @@ window.SITE_DATA = {
    "access": "public",
    "legacy_id": "ABC-S32",
    "source_group": "gwc-consult-2025",
-   "label": "GWC 2024"
+   "label": "GWC 2024",
+   "reference": "GWC. (2024). Area-Based Coordination Survey."
   },
   {
    "source_id": "S045",
@@ -33687,7 +33721,8 @@ window.SITE_DATA = {
    "access": "public",
    "legacy_id": "ABC-S33",
    "source_group": "gwc-consult-2026",
-   "label": "GWC 2026"
+   "label": "GWC 2026",
+   "reference": "GWC. (2026). GWC NCP Validation Workshop — Briefing Note: Area-Based Coordination and Transition in Humanitarian Settings. May/June 2026."
   },
   {
    "source_id": "S046",
@@ -33701,7 +33736,8 @@ window.SITE_DATA = {
    "access": "public",
    "legacy_id": "ABC-A1",
    "source_group": "",
-   "label": "HERE-Geneva 2021"
+   "label": "HERE-Geneva 2021",
+   "reference": "HERE-Geneva. (2021). The Future of Humanitarian Coordination."
   },
   {
    "source_id": "S047",
@@ -33715,7 +33751,8 @@ window.SITE_DATA = {
    "access": "public",
    "legacy_id": "ABC-A2",
    "source_group": "",
-   "label": "OCHA 2025"
+   "label": "OCHA 2025",
+   "reference": "OCHA. (2025). AAP Evaluation."
   },
   {
    "source_id": "S048",
@@ -33729,7 +33766,8 @@ window.SITE_DATA = {
    "access": "public",
    "legacy_id": "ABC-A3",
    "source_group": "",
-   "label": "ICVA 2024"
+   "label": "ICVA 2024",
+   "reference": "ICVA. (2024). Localisation in Humanitarian Leadership — Venezuela. https://www.icvanetwork.org/uploads/2024/11/Localisation-in-Humanitarian-Leadership-Report.pdf"
   },
   {
    "source_id": "S049",
@@ -33743,7 +33781,8 @@ window.SITE_DATA = {
    "access": "public",
    "legacy_id": "ABC-A4",
    "source_group": "",
-   "label": "Global Shelter Cluster 2018"
+   "label": "Global Shelter Cluster 2018",
+   "reference": "Global Shelter Cluster. (2018). ABC in Urban Areas."
   },
   {
    "source_id": "S050",
@@ -33757,7 +33796,8 @@ window.SITE_DATA = {
    "access": "public",
    "legacy_id": "ABC-A5",
    "source_group": "",
-   "label": "UNICEF 2024"
+   "label": "UNICEF 2024",
+   "reference": "UNICEF. (2024). Bangladesh Humanitarian Situation Report No. 70."
   },
   {
    "source_id": "S051",
@@ -33771,7 +33811,8 @@ window.SITE_DATA = {
    "access": "public",
    "legacy_id": "ABC-A6",
    "source_group": "",
-   "label": "IOM 2024"
+   "label": "IOM 2024",
+   "reference": "IOM. (2024). IOM Afghanistan Summary Appeal 2024."
   },
   {
    "source_id": "S052",
@@ -33785,7 +33826,8 @@ window.SITE_DATA = {
    "access": "public",
    "legacy_id": "Transition-S1",
    "source_group": "",
-   "label": "IASC. (2024.). 5\\_Annex  2024"
+   "label": "IASC. (2024.). 5\\_Annex  2024",
+   "reference": "IASC. (2024.). 5\\_Annex . (2024). IASC. (2024.). 5\\_Annex E — Examples of cluster transition. https://www.unicefintercluster.net/sites/default/files/2025-05/5_Annex%20E%20-%20Examples%20of%20cluster%20transition.pdf"
   },
   {
    "source_id": "S053",
@@ -33799,7 +33841,8 @@ window.SITE_DATA = {
    "access": "public",
    "legacy_id": "Transition-S2",
    "source_group": "iasc-transition-deactivation-guidance",
-   "label": "IASC 2024"
+   "label": "IASC 2024",
+   "reference": "IASC. (2024). 6\\_Summary Guidance on Cluster Transition and Deactivation. https://healthcluster.who.int/docs/librariesprovider16/meeting-reports/iasc-guidance-on-cluster-transition-and-deactivation.pdf"
   },
   {
    "source_id": "S054",
@@ -33813,7 +33856,8 @@ window.SITE_DATA = {
    "access": "public",
    "legacy_id": "Transition-S3",
    "source_group": "",
-   "label": "CCCM Cluster Iraq 2022"
+   "label": "CCCM Cluster Iraq 2022",
+   "reference": "CCCM Cluster Iraq. (2022). CCCM Cluster Iraq Transition Strategy. NOTE: Replaces \"Source 36, Iraq\"."
   },
   {
    "source_id": "S055",
@@ -33827,7 +33871,8 @@ window.SITE_DATA = {
    "access": "public",
    "legacy_id": "Transition-S4",
    "source_group": "",
-   "label": "UNICEF 2026"
+   "label": "UNICEF 2026",
+   "reference": "UNICEF. (2026). Humanitarian transition context — Joint EMOPS, CoE and Regional Office support mission to Cameroon."
   },
   {
    "source_id": "S056",
@@ -33841,7 +33886,8 @@ window.SITE_DATA = {
    "access": "public",
    "legacy_id": "Transition-S5",
    "source_group": "icva-coordination-in-transition",
-   "label": "Holland, K 2025"
+   "label": "Holland, K 2025",
+   "reference": "Holland, K. (2025). Coordination in Transition. ICVA. https://www.icvanetwork.org/uploads/2025/10/Coordination-in-Transition-How-NGOs-are-Navigating-and-Adapting-beyond-the-IASC.pdf"
   },
   {
    "source_id": "S057",
@@ -33855,7 +33901,8 @@ window.SITE_DATA = {
    "access": "public",
    "legacy_id": "Transition-S6",
    "source_group": "iasc-transition-deactivation-guidance",
-   "label": "IASC 2024"
+   "label": "IASC 2024",
+   "reference": "IASC. (2024). IASC Guidance on Cluster Transition and Deactivation. https://healthcluster.who.int/docs/librariesprovider16/meeting-reports/iasc-guidance-on-cluster-transition-and-deactivation.pdf"
   },
   {
    "source_id": "S058",
@@ -33869,7 +33916,8 @@ window.SITE_DATA = {
    "access": "public",
    "legacy_id": "Transition-S7",
    "source_group": "",
-   "label": "UNICEF GCCS 2026"
+   "label": "UNICEF GCCS 2026",
+   "reference": "UNICEF GCCS. (2026). Linking Cluster Coordination Deactivation to ABC in Cameroon."
   },
   {
    "source_id": "S059",
@@ -33883,7 +33931,8 @@ window.SITE_DATA = {
    "access": "public",
    "legacy_id": "Transition-S8",
    "source_group": "",
-   "label": "IASC 2025"
+   "label": "IASC 2025",
+   "reference": "IASC. (2025). The Pulse of Humanitarian Coordination 2024. https://www.unocha.org/publications/report/world/pulse-humanitarian-coordination-2024-overview-iasc-structures-country-level-december-2025"
   },
   {
    "source_id": "S060",
@@ -33897,7 +33946,8 @@ window.SITE_DATA = {
    "access": "public",
    "legacy_id": "Transition-S9",
    "source_group": "",
-   "label": "Federal Government of Somalia 2020"
+   "label": "Federal Government of Somalia 2020",
+   "reference": "Federal Government of Somalia. (2020). National Durable Solutions Strategy 2020–2024."
   },
   {
    "source_id": "S061",
@@ -33911,7 +33961,8 @@ window.SITE_DATA = {
    "access": "public",
    "legacy_id": "Transition-S10",
    "source_group": "cameroon-health-transition-2026",
-   "label": "WHO 2026"
+   "label": "WHO 2026",
+   "reference": "WHO. (2026). Transition of the Health Cluster in Cameroon."
   },
   {
    "source_id": "S062",
@@ -33925,7 +33976,8 @@ window.SITE_DATA = {
    "access": "public",
    "legacy_id": "Transition-S11",
    "source_group": "",
-   "label": "GCCG — Localisation Working Group 2026"
+   "label": "GCCG — Localisation Working Group 2026",
+   "reference": "GCCG — Localisation Working Group. (2026). Sustaining Coordination Beyond Cluster Deactivation."
   },
   {
    "source_id": "S063",
@@ -33939,7 +33991,8 @@ window.SITE_DATA = {
    "access": "public",
    "legacy_id": "Transition-S12",
    "source_group": "",
-   "label": "UNICEF 2025"
+   "label": "UNICEF 2025",
+   "reference": "UNICEF. (2025). Sustainable Water Access in Gambella."
   },
   {
    "source_id": "S064",
@@ -33953,7 +34006,8 @@ window.SITE_DATA = {
    "access": "public",
    "legacy_id": "Transition-S13",
    "source_group": "",
-   "label": "UNICEF 2023"
+   "label": "UNICEF 2023",
+   "reference": "UNICEF. (2023). Sector Financing Review: WASH sector in Iraq."
   },
   {
    "source_id": "S065",
@@ -33967,7 +34021,8 @@ window.SITE_DATA = {
    "access": "public",
    "legacy_id": "Transition-S14",
    "source_group": "",
-   "label": "Kalden & Rymarenko 2025"
+   "label": "Kalden & Rymarenko 2025",
+   "reference": "Kalden & Rymarenko. (2025). Ukraine Education Cluster Transition Plan 2025–2026. NOTE: Replaces \"Source 23, Ukraine\"."
   },
   {
    "source_id": "S066",
@@ -33981,7 +34036,8 @@ window.SITE_DATA = {
    "access": "public",
    "legacy_id": "Transition-S15",
    "source_group": "",
-   "label": "Task Force Transition 2026"
+   "label": "Task Force Transition 2026",
+   "reference": "Task Force Transition. (2026). Transition synthesis — Cameroon. NOTE: Replaces \"Source 24, Cameroon\"."
   },
   {
    "source_id": "S067",
@@ -33995,7 +34051,8 @@ window.SITE_DATA = {
    "access": "public",
    "legacy_id": "Transition-S16",
    "source_group": "",
-   "label": "Termes, M 2022"
+   "label": "Termes, M 2022",
+   "reference": "Termes, M. (2022). CWG Transition Strategy — Iraq."
   },
   {
    "source_id": "S068",
@@ -34009,7 +34066,8 @@ window.SITE_DATA = {
    "access": "public",
    "legacy_id": "Transition-S17",
    "source_group": "",
-   "label": "Termes, M 2023"
+   "label": "Termes, M 2023",
+   "reference": "Termes, M. (2023). CWG deactivation in Iraq (full report)."
   },
   {
    "source_id": "S069",
@@ -34023,7 +34081,8 @@ window.SITE_DATA = {
    "access": "public",
    "legacy_id": "Transition-S18",
    "source_group": "",
-   "label": "UNICEF Evaluation Office 2013"
+   "label": "UNICEF Evaluation Office 2013",
+   "reference": "UNICEF Evaluation Office. (2013). Evaluation of UNICEF CLA Role. NOTE: Pre-2015; restored to active registry — provides systemic evidence on mission creep and government resistance to deactivation cited in Section 3.4."
   },
   {
    "source_id": "S070",
@@ -34037,7 +34096,8 @@ window.SITE_DATA = {
    "access": "public",
    "legacy_id": "Transition-S19",
    "source_group": "",
-   "label": "Global Protection Cluster & NRC 2025"
+   "label": "Global Protection Cluster & NRC 2025",
+   "reference": "Global Protection Cluster & NRC. (2025). Practice Note: Continuity of Protection in Transitions. https://globalprotectioncluster.org/sites/default/files/2025-06/08._cluster_transition_deactivation_and_reform_designed.pdf"
   },
   {
    "source_id": "S071",
@@ -34051,7 +34111,8 @@ window.SITE_DATA = {
    "access": "public",
    "legacy_id": "Transition-S20",
    "source_group": "",
-   "label": "OCHA 2024"
+   "label": "OCHA 2024",
+   "reference": "OCHA. (2024). Humanitarian Transition Overview 2024 Iraq."
   },
   {
    "source_id": "S072",
@@ -34065,7 +34126,8 @@ window.SITE_DATA = {
    "access": "public",
    "legacy_id": "Transition-S21",
    "source_group": "",
-   "label": "OCHA 2023"
+   "label": "OCHA 2023",
+   "reference": "OCHA. (2023). Humanitarian Transition Overview 2023 Iraq."
   },
   {
    "source_id": "S073",
@@ -34079,7 +34141,8 @@ window.SITE_DATA = {
    "access": "public",
    "legacy_id": "Transition-S22",
    "source_group": "",
-   "label": "Palacios & Tonea 2025"
+   "label": "Palacios & Tonea 2025",
+   "reference": "Palacios & Tonea. (2025). Iraq Cash Forum. CALP Network."
   },
   {
    "source_id": "S074",
@@ -34093,7 +34156,8 @@ window.SITE_DATA = {
    "access": "public",
    "legacy_id": "Transition-S23",
    "source_group": "",
-   "label": "Triangle Consulting 2023"
+   "label": "Triangle Consulting 2023",
+   "reference": "Triangle Consulting. (2023). Evaluation of UNICEF Support to Water Establishments — Lebanon."
   },
   {
    "source_id": "S075",
@@ -34107,7 +34171,8 @@ window.SITE_DATA = {
    "access": "public",
    "legacy_id": "Transition-S24",
    "source_group": "",
-   "label": "UNDP Lebanon 2025"
+   "label": "UNDP Lebanon 2025",
+   "reference": "UNDP Lebanon. (2025). From Crisis to Recovery — Rapid Impact Assessment."
   },
   {
    "source_id": "S076",
@@ -34121,7 +34186,8 @@ window.SITE_DATA = {
    "access": "public",
    "legacy_id": "Transition-S25",
    "source_group": "",
-   "label": "IEO/UNDP 2025"
+   "label": "IEO/UNDP 2025",
+   "reference": "IEO/UNDP. (2025). Reflections: HDP Nexus Approaches."
   },
   {
    "source_id": "S077",
@@ -34135,7 +34201,8 @@ window.SITE_DATA = {
    "access": "public",
    "legacy_id": "Transition-S26",
    "source_group": "undp-abd-practice-note",
-   "label": "UNDP 2025"
+   "label": "UNDP 2025",
+   "reference": "UNDP. (2025). Area-Based Development Practice Note. https://www.undp.org/sites/g/files/zskgke326/files/2025-03/undp-area-based-development-practice-note.pdf"
   },
   {
    "source_id": "S078",
@@ -34149,7 +34216,8 @@ window.SITE_DATA = {
    "access": "public",
    "legacy_id": "Transition-S27",
    "source_group": "",
-   "label": "Heylen et al 2023"
+   "label": "Heylen et al 2023",
+   "reference": "Heylen et al. (2023). Effectiveness of coordination in humanitarian WASH. GWC/Tufts."
   },
   {
    "source_id": "S079",
@@ -34163,7 +34231,8 @@ window.SITE_DATA = {
    "access": "public",
    "legacy_id": "Transition-S28",
    "source_group": "",
-   "label": "ACF & GWC 2025"
+   "label": "ACF & GWC 2025",
+   "reference": "ACF & GWC. (2025). Field Support Team Consortium Annual Report 2024."
   },
   {
    "source_id": "S080",
@@ -34177,7 +34246,8 @@ window.SITE_DATA = {
    "access": "public",
    "legacy_id": "Transition-S29",
    "source_group": "",
-   "label": "GWN 2024"
+   "label": "GWN 2024",
+   "reference": "GWN. (2024). WASH Resilience, Conflict Sensitivity and Peacebuilding."
   },
   {
    "source_id": "S081",
@@ -34191,7 +34261,8 @@ window.SITE_DATA = {
    "access": "public",
    "legacy_id": "Transition-S30",
    "source_group": "",
-   "label": "NRC 2025"
+   "label": "NRC 2025",
+   "reference": "NRC. (2025). Accelerated Transitions: Key takeaways."
   },
   {
    "source_id": "S082",
@@ -34205,7 +34276,8 @@ window.SITE_DATA = {
    "access": "public",
    "legacy_id": "Transition-S31",
    "source_group": "",
-   "label": "NRC 2025"
+   "label": "NRC 2025",
+   "reference": "NRC. (2025). Post-transition planning Part 2."
   },
   {
    "source_id": "S083",
@@ -34219,7 +34291,8 @@ window.SITE_DATA = {
    "access": "public",
    "legacy_id": "Transition-S32",
    "source_group": "gwc-consult-2026",
-   "label": "GWC 2026"
+   "label": "GWC 2026",
+   "reference": "GWC. (2026). GWC NCP Validation Workshop — Day 2: Transition in Humanitarian Settings. Transcript and briefing materials, May/June 2026."
   },
   {
    "source_id": "S084",
@@ -34233,7 +34306,8 @@ window.SITE_DATA = {
    "access": "public",
    "legacy_id": "Transition-S33",
    "source_group": "gwc-consult-2026",
-   "label": "GWC 2026"
+   "label": "GWC 2026",
+   "reference": "GWC. (2026). Operational Support Clinic — Transition. Facilitated peer-exchange transcript, 12 June 2026."
   },
   {
    "source_id": "S085",
@@ -34247,7 +34321,8 @@ window.SITE_DATA = {
    "access": "public",
    "legacy_id": "Transition-S34",
    "source_group": "gwc-consult-2026",
-   "label": "GWC 2026"
+   "label": "GWC 2026",
+   "reference": "GWC. (2026). Transition Rapid Key Informant Interviews with selected NCPs."
   },
   {
    "source_id": "S086",
@@ -34261,7 +34336,8 @@ window.SITE_DATA = {
    "access": "public",
    "legacy_id": "Transition-A1",
    "source_group": "",
-   "label": "IASC 2024"
+   "label": "IASC 2024",
+   "reference": "IASC. (2024). 2\\_Annex B — Example template for a Transition Strategy."
   },
   {
    "source_id": "S087",
@@ -34275,7 +34351,8 @@ window.SITE_DATA = {
    "access": "public",
    "legacy_id": "Transition-A2",
    "source_group": "",
-   "label": "IASC 2024"
+   "label": "IASC 2024",
+   "reference": "IASC. (2024). HC-HCT Transition and Deactivation Checklist. https://www.unicefintercluster.net/sites/default/files/2025-05/8_HC-HCT%20Transition%20and%20Deactivation%20Checklist.pdf"
   },
   {
    "source_id": "S088",
@@ -34289,7 +34366,8 @@ window.SITE_DATA = {
    "access": "public",
    "legacy_id": "Transition-A3",
    "source_group": "",
-   "label": "Stoddard et al 2007"
+   "label": "Stoddard et al 2007",
+   "reference": "Stoddard et al. (2007). Cluster Approach Evaluation Final Draft. HPG/ODI. https://humanitarianoutcomes.org/sites/default/files/publications/cluster_evaluation_report.pdf"
   },
   {
    "source_id": "S090",
@@ -34303,7 +34381,8 @@ window.SITE_DATA = {
    "access": "public",
    "legacy_id": "Transition-A5",
    "source_group": "",
-   "label": "UNICEF 2019"
+   "label": "UNICEF 2019",
+   "reference": "UNICEF. (2019). Investment case for sustainable water systems in Somalia."
   },
   {
    "source_id": "S091",
@@ -34317,7 +34396,8 @@ window.SITE_DATA = {
    "access": "public",
    "legacy_id": "Transition-A6",
    "source_group": "",
-   "label": "WASH Cluster Iraq & Mercy Corps 2021"
+   "label": "WASH Cluster Iraq & Mercy Corps 2021",
+   "reference": "WASH Cluster Iraq & Mercy Corps. (2021). COVID-19 Lessons Learned."
   },
   {
    "source_id": "S092",
@@ -34331,7 +34411,8 @@ window.SITE_DATA = {
    "access": "public",
    "legacy_id": "Transition-A7",
    "source_group": "",
-   "label": "Murray et al 2018"
+   "label": "Murray et al 2018",
+   "reference": "Murray et al. (2018). Evaluation of the Global Cluster for Early Recovery. UNDP."
   },
   {
    "source_id": "S093",
@@ -34345,7 +34426,8 @@ window.SITE_DATA = {
    "access": "public",
    "legacy_id": "Transition-A8",
    "source_group": "",
-   "label": "Itad 2020"
+   "label": "Itad 2020",
+   "reference": "Itad. (2020). UNICEF WASH in Protracted Crisis (Annexes)."
   },
   {
    "source_id": "S094",
@@ -34359,7 +34441,8 @@ window.SITE_DATA = {
    "access": "public",
    "legacy_id": "Transition-A9",
    "source_group": "",
-   "label": "Itad 2020"
+   "label": "Itad 2020",
+   "reference": "Itad. (2020). UNICEF WASH in Protracted Crises: Cameroon Case Study."
   },
   {
    "source_id": "S095",
@@ -34373,7 +34456,8 @@ window.SITE_DATA = {
    "access": "public",
    "legacy_id": "Transition-A10",
    "source_group": "",
-   "label": "Global Protection Cluster 2025"
+   "label": "Global Protection Cluster 2025",
+   "reference": "Global Protection Cluster. (2025). Protection Toolkit — Ch. 8: Cluster Transition."
   },
   {
    "source_id": "S096",
@@ -34387,7 +34471,8 @@ window.SITE_DATA = {
    "access": "public",
    "legacy_id": "Transition-A11",
    "source_group": "",
-   "label": "Mosello et al 2016"
+   "label": "Mosello et al 2016",
+   "reference": "Mosello et al. (2016). WASH service delivery in protracted crises: South Sudan. ODI."
   },
   {
    "source_id": "S097",
@@ -34401,7 +34486,8 @@ window.SITE_DATA = {
    "access": "public",
    "legacy_id": "Transition-A12",
    "source_group": "",
-   "label": "UN-Habitat & WSSCC 2016"
+   "label": "UN-Habitat & WSSCC 2016",
+   "reference": "UN-Habitat & WSSCC. (2016). Reviving Sanitation Campaign after 2015 Earthquake."
   },
   {
    "source_id": "S098",
@@ -34415,7 +34501,8 @@ window.SITE_DATA = {
    "access": "public",
    "legacy_id": "Transition-A13",
    "source_group": "",
-   "label": "UNICEF 2024"
+   "label": "UNICEF 2024",
+   "reference": "UNICEF. (2024). CO Guide on CLA Accountabilities."
   },
   {
    "source_id": "S099",
@@ -34429,7 +34516,8 @@ window.SITE_DATA = {
    "access": "public",
    "legacy_id": "Transition-A14",
    "source_group": "",
-   "label": "Global Shelter Cluster 2019"
+   "label": "Global Shelter Cluster 2019",
+   "reference": "Global Shelter Cluster. (2019). Shelter Projects: Nepal Housing Recovery."
   },
   {
    "source_id": "S100",
@@ -34443,7 +34531,8 @@ window.SITE_DATA = {
    "access": "public",
    "legacy_id": "Transition-A15",
    "source_group": "",
-   "label": "GWC 2022"
+   "label": "GWC 2022",
+   "reference": "GWC. (2022). Strategic Plan 2022–2025."
   },
   {
    "source_id": "S101",
@@ -34457,7 +34546,8 @@ window.SITE_DATA = {
    "access": "public",
    "legacy_id": "",
    "source_group": "abc-sdr",
-   "label": "Global WASH Cluster 2026"
+   "label": "Global WASH Cluster 2026",
+   "reference": "Global WASH Cluster. (2026). Secondary Data Review — Area-Based Coordination (V17)."
   },
   {
    "source_id": "S102",
@@ -34471,7 +34561,8 @@ window.SITE_DATA = {
    "access": "public",
    "legacy_id": "",
    "source_group": "transition-sdr",
-   "label": "Global WASH Cluster 2026"
+   "label": "Global WASH Cluster 2026",
+   "reference": "Global WASH Cluster. (2026). Secondary Data Review — Transition in Humanitarian Settings."
   },
   {
    "source_id": "S103",
@@ -34485,7 +34576,8 @@ window.SITE_DATA = {
    "access": "restricted",
    "legacy_id": "",
    "source_group": "",
-   "label": "Global WASH Cluster 2026"
+   "label": "Global WASH Cluster 2026",
+   "reference": "Global WASH Cluster. (2026). Country consultation — Colombia [Unpublished transcript]."
   },
   {
    "source_id": "S104",
@@ -34499,7 +34591,8 @@ window.SITE_DATA = {
    "access": "restricted",
    "legacy_id": "",
    "source_group": "",
-   "label": "Global WASH Cluster 2026"
+   "label": "Global WASH Cluster 2026",
+   "reference": "Global WASH Cluster. (2026). Country consultation — Sudan [Unpublished transcript]."
   },
   {
    "source_id": "S105",
@@ -34513,7 +34606,8 @@ window.SITE_DATA = {
    "access": "restricted",
    "legacy_id": "",
    "source_group": "",
-   "label": "Global WASH Cluster 2026"
+   "label": "Global WASH Cluster 2026",
+   "reference": "Global WASH Cluster. (2026). Country consultation — Nigeria [Unpublished transcript]."
   },
   {
    "source_id": "S106",
@@ -34527,7 +34621,8 @@ window.SITE_DATA = {
    "access": "restricted",
    "legacy_id": "",
    "source_group": "",
-   "label": "Global WASH Cluster 2026"
+   "label": "Global WASH Cluster 2026",
+   "reference": "Global WASH Cluster. (2026). Country consultation — Niger [Unpublished transcript]."
   },
   {
    "source_id": "S107",
@@ -34541,7 +34636,8 @@ window.SITE_DATA = {
    "access": "restricted",
    "legacy_id": "",
    "source_group": "",
-   "label": "Global WASH Cluster 2026"
+   "label": "Global WASH Cluster 2026",
+   "reference": "Global WASH Cluster. (2026). Country consultation — Lebanon [Unpublished transcript]."
   },
   {
    "source_id": "S108",
@@ -34555,7 +34651,8 @@ window.SITE_DATA = {
    "access": "restricted",
    "legacy_id": "",
    "source_group": "",
-   "label": "Global WASH Cluster 2026"
+   "label": "Global WASH Cluster 2026",
+   "reference": "Global WASH Cluster. (2026). Country consultation — Bangladesh (national and refugee response) [Unpublished transcript]."
   },
   {
    "source_id": "S109",
@@ -34569,7 +34666,8 @@ window.SITE_DATA = {
    "access": "restricted",
    "legacy_id": "",
    "source_group": "",
-   "label": "Global WASH Cluster 2026"
+   "label": "Global WASH Cluster 2026",
+   "reference": "Global WASH Cluster. (2026). Country consultation — Haiti [Unpublished transcript]."
   },
   {
    "source_id": "S110",
@@ -34583,7 +34681,8 @@ window.SITE_DATA = {
    "access": "restricted",
    "legacy_id": "",
    "source_group": "",
-   "label": "Global WASH Cluster 2026"
+   "label": "Global WASH Cluster 2026",
+   "reference": "Global WASH Cluster. (2026). Country consultation — Mozambique [Unpublished transcript]."
   },
   {
    "source_id": "S111",
@@ -34597,7 +34696,8 @@ window.SITE_DATA = {
    "access": "restricted",
    "legacy_id": "",
    "source_group": "",
-   "label": "Global WASH Cluster 2026"
+   "label": "Global WASH Cluster 2026",
+   "reference": "Global WASH Cluster. (2026). Country consultation — Ethiopia [Unpublished transcript]."
   },
   {
    "source_id": "S112",
@@ -34611,7 +34711,8 @@ window.SITE_DATA = {
    "access": "restricted",
    "legacy_id": "",
    "source_group": "",
-   "label": "Global WASH Cluster 2026"
+   "label": "Global WASH Cluster 2026",
+   "reference": "Global WASH Cluster. (2026). Country consultation — Burkina Faso [Unpublished transcript]."
   },
   {
    "source_id": "S113",
@@ -34625,7 +34726,8 @@ window.SITE_DATA = {
    "access": "restricted",
    "legacy_id": "",
    "source_group": "",
-   "label": "Global WASH Cluster 2026"
+   "label": "Global WASH Cluster 2026",
+   "reference": "Global WASH Cluster. (2026). Country consultation — Mali [Unpublished transcript]."
   },
   {
    "source_id": "S114",
@@ -34639,7 +34741,8 @@ window.SITE_DATA = {
    "access": "restricted",
    "legacy_id": "",
    "source_group": "",
-   "label": "Global WASH Cluster 2026"
+   "label": "Global WASH Cluster 2026",
+   "reference": "Global WASH Cluster. (2026). Country consultation — South Sudan [Unpublished transcript]."
   },
   {
    "source_id": "S115",
@@ -34653,7 +34756,8 @@ window.SITE_DATA = {
    "access": "restricted",
    "legacy_id": "",
    "source_group": "",
-   "label": "Global WASH Cluster 2026"
+   "label": "Global WASH Cluster 2026",
+   "reference": "Global WASH Cluster. (2026). Country consultation — Syria (session 1, information management and assessment) [Unpublished transcript]."
   },
   {
    "source_id": "S116",
@@ -34667,7 +34771,8 @@ window.SITE_DATA = {
    "access": "restricted",
    "legacy_id": "",
    "source_group": "",
-   "label": "Global WASH Cluster 2026"
+   "label": "Global WASH Cluster 2026",
+   "reference": "Global WASH Cluster. (2026). Country consultation — Chad (transition roadmap) [Unpublished transcript]."
   },
   {
    "source_id": "S118",
@@ -34681,7 +34786,8 @@ window.SITE_DATA = {
    "access": "public",
    "legacy_id": "",
    "source_group": "cameroon-health-transition-2026",
-   "label": "Global Health Cluster / WHO 2026"
+   "label": "Global Health Cluster / WHO 2026",
+   "reference": "Global Health Cluster / WHO. (2026). Local leadership at the centre of transition — reflections from Cameroon. https://healthcluster.who.int/newsroom/news/item/19-03-2026-local-leadership-at-the-centre-of-transition-reflections-from-cameroon"
   },
   {
    "source_id": "S119",
@@ -34695,7 +34801,8 @@ window.SITE_DATA = {
    "access": "restricted",
    "legacy_id": "",
    "source_group": "",
-   "label": "Global WASH Cluster 2026"
+   "label": "Global WASH Cluster 2026",
+   "reference": "Global WASH Cluster. (2026). Country consultation — Venezuela (post-earthquake response and 2027 planning) [Unpublished transcript]."
   },
   {
    "source_id": "S120",
@@ -34709,7 +34816,8 @@ window.SITE_DATA = {
    "access": "public",
    "legacy_id": "",
    "source_group": "",
-   "label": "Center for Global Development 2020"
+   "label": "Center for Global Development 2020",
+   "reference": "Center for Global Development. (2020). Inclusive Coordination: Building an Area-Based Humanitarian Coordination Model. CGD Policy Paper 184. https://www.cgdev.org/sites/default/files/inclusive-coordination-konyndyk-saez-worden.pdf"
   },
   {
    "source_id": "S121",
@@ -34723,7 +34831,8 @@ window.SITE_DATA = {
    "access": "public",
    "legacy_id": "",
    "source_group": "",
-   "label": "Refugees International 2025"
+   "label": "Refugees International 2025",
+   "reference": "Refugees International. (2025). Accelerating Localization: A Roadmap for the Sudan Humanitarian Fund. https://www.refugeesinternational.org/reports-briefs/accelerating-localization-a-roadmap-for-the-sudan-humanitarian-fund/"
   },
   {
    "source_id": "S122",
@@ -34737,7 +34846,8 @@ window.SITE_DATA = {
    "access": "public",
    "legacy_id": "",
    "source_group": "",
-   "label": "IECAH 2022"
+   "label": "IECAH 2022",
+   "reference": "IECAH. (2022). Realidad y perspectivas de los mecanismos de coordinación humanitaria en América Latina y el Caribe: recomendaciones para la Cooperación Española. https://iecah.org/wp-content/uploads/2022/06/InformeMecanismosLATAMCar.pdf"
   },
   {
    "source_id": "S123",
@@ -34751,7 +34861,8 @@ window.SITE_DATA = {
    "access": "restricted",
    "legacy_id": "",
    "source_group": "",
-   "label": "Global WASH Cluster 2026"
+   "label": "Global WASH Cluster 2026",
+   "reference": "Global WASH Cluster. (2026). Country consultation — Honduras (platform reactivation, terms of reference and contingency planning) [Unpublished transcript]."
   },
   {
    "source_id": "S124",
@@ -34765,7 +34876,8 @@ window.SITE_DATA = {
    "access": "public",
    "legacy_id": "",
    "source_group": "",
-   "label": "OCHA 2025"
+   "label": "OCHA 2025",
+   "reference": "OCHA. (2025). The Pulse of Humanitarian Coordination 2024: Overview of IASC Structures at the Country Level. https://reliefweb.int/node/4207612"
   }
  ]
 };

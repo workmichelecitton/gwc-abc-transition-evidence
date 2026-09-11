@@ -102,6 +102,7 @@ h2.grp:first-child{margin-top:6px}
 .gd h3 a:hover{text-decoration:underline}
 .gd-meta{margin:0 0 6px;font-size:11.5px;color:var(--ink-3);display:flex;
   flex-wrap:wrap;align-items:center;gap:5px}
+td.cite{font-size:12px;line-height:1.45;color:var(--ink-2);max-width:30em}
 .gd-type{background:var(--bg);border:1px solid var(--line);border-radius:3px;
   padding:1px 6px;font-size:10.5px;text-transform:uppercase;letter-spacing:.05em;color:var(--ink-2)}
 .gd-sum{margin:0 0 7px;font-size:12.5px;line-height:1.45;color:var(--ink-2)}
@@ -1299,9 +1300,11 @@ function viewSources(d){
       return '<tr><td>'+esc(s.source_id)+'</td>' +
         '<td>'+(s.url ? '<a href="'+esc(s.url)+'" target="_blank" rel="noopener">'+esc(s.title)+'</a>'
                       : esc(s.title) + ' <span class="note-inline">no link</span>')+'</td>' +
-        // The label the build computes, so a section drafted from this base
-        // cites sources the same way every time.
-        '<td>'+esc(s.label||s.year||"")+'</td><td>'+esc(label("source_type", s.type))+'</td>' +
+        // The APA reference the build computes, so anything drafted from this
+        // base cites a source the same way every time — and always with a year,
+        // because 2007 practice and 2025 practice are not interchangeable.
+        '<td class="cite">'+esc(s.reference||s.label||"")+'</td>' +
+        '<td>'+esc(label("source_type", s.type))+'</td>' +
         '<td>'+esc(label("stream", s.stream))+'</td><td>'+esc(s.access||"")+'</td>' +
         '<td>'+(c.length ? esc(c.join(", ")) : '<span style="color:#B33A3A">not cited</span>')+'</td></tr>';
     }).join("") + '</tbody></table>';

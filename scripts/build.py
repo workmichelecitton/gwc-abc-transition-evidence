@@ -160,11 +160,35 @@ def main():
             else:
                 no_url.append(sid)
 
-        # ORG dd/mm/yyyy, the SDR source-label convention. Computed rather than
-        # stored so it cannot drift from the organisation and year columns.
+        # Two citations, both computed from the columns so neither can drift.
+        #
+        # `label` is the short SDR form, ORG year, used wherever space is tight —
+        # source chips on a highlight card, for instance.
+        #
+        # `reference` is APA. A reference without a year is not a reference: a
+        # reader cannot tell whether they are looking at 2007 or 2025 practice,
+        # and in this base that difference decides whether a claim is current or
+        # structural. APA puts the year second, which is exactly where it needs
+        # to be. Undated sources render as (n.d.), which is APA's own convention
+        # and reads as the gap it is rather than as a silent omission.
         org = clean.get("organisation") or clean.get("title", "")[:24]
-        year = (clean.get("year") or "").strip()
+        raw_year = (clean.get("year") or "").strip()
+        year = raw_year[:4] if raw_year[:4].isdigit() else ""
         clean["label"] = f"{org} {year}".strip() if year else org
+
+        title = (clean.get("title") or "").strip().rstrip(".")
+        # A video is cited differently from a report, and the medium matters
+        # here: a recorded session is a different kind of claim from a study.
+        url = clean.get("url", "")
+        medium = ""
+        if "youtube.com" in url or "youtu.be" in url or "vimeo.com" in url:
+            medium = " [Video]"
+        elif clean.get("stream") == "transcript":
+            medium = " [Unpublished transcript]"
+        ref = f"{org}. ({year or 'n.d.'}). {title}{medium}."
+        if url.startswith("http"):
+            ref += f" {url}"
+        clean["reference"] = ref
         sources.append(clean)
 
     if no_url:

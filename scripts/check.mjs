@@ -125,6 +125,16 @@ async function exercise(label, url) {
          `${label}: ${stray.length} band 1 findings rendered outside the disclosure`);
     }
 
+    // Every source must cite with a year. A reference without one cannot tell a
+    // reader whether they are looking at 2007 practice or 2025 practice, and in
+    // this base that difference decides whether a claim is current or structural.
+    const noRef = site.sources.filter((s) => !s.reference);
+    ok(noRef.length === 0,
+       `${label}: ${noRef.length} sources have no computed reference`);
+    const undated = site.sources.filter((s) => /\(n\.d\.\)/.test(s.reference || ""));
+    ok(undated.length === 0,
+       `${label}: ${undated.length} sources cite as (n.d.) — ${undated.map((s) => s.source_id).join(", ")}`);
+
     // Default grouping is theme, then strength within it.
     ok(d.querySelector("#groupby").value === "themeband",
        `${label}: default grouping is '${d.querySelector("#groupby").value}', expected 'themeband'`);
