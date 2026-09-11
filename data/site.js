@@ -115,7 +115,7 @@ window.SITE_DATA = {
  "generated": "2026-09-11",
  "taxonomy_version": "0.9.0",
  "stats": {
-  "records": 748,
+  "records": 746,
   "findings": 176,
   "sources": 112,
   "countries": 30,
@@ -1608,12 +1608,12 @@ window.SITE_DATA = {
     }
    ],
    "n_streams": 3,
-   "n_checked": 4,
+   "n_checked": 5,
    "relations": [],
-   "period": "2023 – Aug 2026",
-   "period_from": "2023",
+   "period": "2026 – Aug 2026",
+   "period_from": "2026",
    "period_to": "Aug 2026",
-   "period_span": 3,
+   "period_span": 0,
    "streams": [
     "sdr",
     "transcript",
@@ -2962,9 +2962,9 @@ window.SITE_DATA = {
    "example": "",
    "type": "recommendation",
    "strength": 1,
-   "n_records": 7,
+   "n_records": 6,
    "n_sources": 1,
-   "n_documents": 7,
+   "n_documents": 6,
    "counted_sources": [
     {
      "group": "gwc-consult-2026",
@@ -3000,8 +3000,7 @@ window.SITE_DATA = {
     "E0092",
     "E0093",
     "E0094",
-    "E0095",
-    "E0096"
+    "E0095"
    ],
    "unmerged": false,
    "highlight": {
@@ -8734,9 +8733,9 @@ window.SITE_DATA = {
    "example": "Ukraine — the successor arrangement had no operational coordination mandate at subnational level to rest on.",
    "type": "barrier",
    "strength": 3,
-   "n_records": 5,
-   "n_sources": 4,
-   "n_documents": 5,
+   "n_records": 4,
+   "n_sources": 3,
+   "n_documents": 4,
    "counted_sources": [
     {
      "group": "S019",
@@ -8748,12 +8747,6 @@ window.SITE_DATA = {
      "group": "S032",
      "source_ids": [
       "S032"
-     ]
-    },
-    {
-     "group": "S065",
-     "source_ids": [
-      "S065"
      ]
     },
     {
@@ -8774,8 +8767,7 @@ window.SITE_DATA = {
     "sdr"
    ],
    "countries": [
-    "IDN",
-    "UKR"
+    "IDN"
    ],
    "tags": [
     "coordination-architecture",
@@ -8794,7 +8786,6 @@ window.SITE_DATA = {
     "E0111",
     "E0209",
     "E0211",
-    "E0292",
     "E0792"
    ],
    "unmerged": false,
@@ -9092,10 +9083,16 @@ window.SITE_DATA = {
    "example": "Burkina Faso — a ministry reform merged water into a larger ministry and dissolved the emergency technical secretariat that had been the cluster's counterpart.",
    "type": "context",
    "strength": 4,
-   "n_records": 3,
-   "n_sources": 3,
-   "n_documents": 3,
+   "n_records": 4,
+   "n_sources": 4,
+   "n_documents": 4,
    "counted_sources": [
+    {
+     "group": "S065",
+     "source_ids": [
+      "S065"
+     ]
+    },
     {
      "group": "S112",
      "source_ids": [
@@ -9116,7 +9113,7 @@ window.SITE_DATA = {
     }
    ],
    "n_streams": 3,
-   "n_checked": 2,
+   "n_checked": 3,
    "relations": [],
    "period": "2025 – Jun 2026",
    "period_from": "2025",
@@ -9130,10 +9127,12 @@ window.SITE_DATA = {
    "countries": [
     "BFA",
     "IRQ",
-    "MOZ"
+    "MOZ",
+    "UKR"
    ],
    "tags": [
     "coordination-architecture",
+    "funding",
     "government-engagement",
     "localisation",
     "staff-turnover",
@@ -9141,6 +9140,7 @@ window.SITE_DATA = {
    ],
    "actors": [
     "cluster",
+    "development",
     "gov-national",
     "ingo",
     "local-ngo",
@@ -9148,6 +9148,7 @@ window.SITE_DATA = {
    ],
    "record_ids": [
     "E0236",
+    "E0268",
     "E0284",
     "E0582"
    ],
@@ -9364,10 +9365,16 @@ window.SITE_DATA = {
    "example": "Colombia — an inventory of the cluster's information resources was compiled as part of transition planning, so products could be summarised and handed over rather than lost.",
    "type": "enabler",
    "strength": 4,
-   "n_records": 8,
-   "n_sources": 3,
-   "n_documents": 5,
+   "n_records": 9,
+   "n_sources": 4,
+   "n_documents": 6,
    "counted_sources": [
+    {
+     "group": "S065",
+     "source_ids": [
+      "S065"
+     ]
+    },
     {
      "group": "S103",
      "source_ids": [
@@ -9388,12 +9395,12 @@ window.SITE_DATA = {
     }
    ],
    "n_streams": 3,
-   "n_checked": 5,
+   "n_checked": 6,
    "relations": [],
-   "period": "2026 – Aug 2026",
-   "period_from": "2026",
+   "period": "2025 – Aug 2026",
+   "period_from": "2025",
    "period_to": "Aug 2026",
-   "period_span": 0,
+   "period_span": 1,
    "streams": [
     "sdr",
     "transcript",
@@ -9402,15 +9409,18 @@ window.SITE_DATA = {
    "countries": [
     "CMR",
     "COL",
-    "PSE"
+    "PSE",
+    "UKR"
    ],
    "tags": [
+    "coordination-architecture",
     "government-engagement",
     "information-management",
     "transition-handover"
    ],
    "actors": [
     "cluster",
+    "gov-local",
     "gov-national"
    ],
    "record_ids": [
@@ -9418,6 +9428,7 @@ window.SITE_DATA = {
     "E0099",
     "E0100",
     "E0247",
+    "E0292",
     "E0329",
     "E0330",
     "E0378",
@@ -9533,7 +9544,7 @@ window.SITE_DATA = {
     }
    ],
    "n_streams": 2,
-   "n_checked": 4,
+   "n_checked": 5,
    "relations": [],
    "period": "2023 – Aug 2026",
    "period_from": "2023",
@@ -9592,17 +9603,11 @@ window.SITE_DATA = {
    ],
    "example": "Iraq — a two-year seconded position was financed through development programme funds to accompany the successor structure. It happened because an individual pushed it through the country office, not because a route existed for it.",
    "type": "enabler",
-   "strength": 3,
-   "n_records": 4,
-   "n_sources": 2,
-   "n_documents": 2,
+   "strength": 1,
+   "n_records": 2,
+   "n_sources": 1,
+   "n_documents": 1,
    "counted_sources": [
-    {
-     "group": "S065",
-     "source_ids": [
-      "S065"
-     ]
-    },
     {
      "group": "gwc-consult-2026",
      "source_ids": [
@@ -9610,20 +9615,18 @@ window.SITE_DATA = {
      ]
     }
    ],
-   "n_streams": 2,
+   "n_streams": 1,
    "n_checked": 2,
    "relations": [],
-   "period": "2025 – 2026",
-   "period_from": "2025",
+   "period": "2026",
+   "period_from": "2026",
    "period_to": "2026",
-   "period_span": 1,
+   "period_span": 0,
    "streams": [
-    "sdr",
     "workshop"
    ],
    "countries": [
-    "IRQ",
-    "UKR"
+    "IRQ"
    ],
    "tags": [
     "funding",
@@ -9636,8 +9639,6 @@ window.SITE_DATA = {
     "un-agency"
    ],
    "record_ids": [
-    "E0252",
-    "E0268",
     "E0337",
     "E0641"
    ],
@@ -10844,10 +10845,10 @@ window.SITE_DATA = {
    ],
    "example": "Colombia — the proposed successor is a specialised technical roundtable inside an existing inter-institutional environmental health commission, which already convenes the relevant government bodies.",
    "type": "enabler",
-   "strength": 4,
-   "n_records": 6,
-   "n_sources": 5,
-   "n_documents": 6,
+   "strength": 5,
+   "n_records": 7,
+   "n_sources": 6,
+   "n_documents": 7,
    "counted_sources": [
     {
      "group": "S052",
@@ -10859,6 +10860,12 @@ window.SITE_DATA = {
      "group": "S060",
      "source_ids": [
       "S060"
+     ]
+    },
+    {
+     "group": "S065",
+     "source_ids": [
+      "S065"
      ]
     },
     {
@@ -10882,7 +10889,7 @@ window.SITE_DATA = {
     }
    ],
    "n_streams": 3,
-   "n_checked": 5,
+   "n_checked": 6,
    "relations": [],
    "period": "2020 – Aug 2026",
    "period_from": "2020",
@@ -10899,10 +10906,12 @@ window.SITE_DATA = {
     "LBY",
     "NGA",
     "SOM",
-    "SYR"
+    "SYR",
+    "UKR"
    ],
    "tags": [
     "coordination-architecture",
+    "funding",
     "government-engagement",
     "nexus",
     "performance",
@@ -10914,6 +10923,7 @@ window.SITE_DATA = {
     "gov-national"
    ],
    "record_ids": [
+    "E0252",
     "E0310",
     "E0311",
     "E0313",
@@ -11323,17 +11333,11 @@ window.SITE_DATA = {
    ],
    "example": "Lebanon: a partner site booking sheet and linked reporting database from a previous emergency worked from day one of the following one.",
    "type": "enabler",
-   "strength": 4,
-   "n_records": 3,
-   "n_sources": 3,
-   "n_documents": 3,
+   "strength": 2,
+   "n_records": 2,
+   "n_sources": 2,
+   "n_documents": 2,
    "counted_sources": [
-    {
-     "group": "S078",
-     "source_ids": [
-      "S078"
-     ]
-    },
     {
      "group": "S107",
      "source_ids": [
@@ -11347,15 +11351,14 @@ window.SITE_DATA = {
      ]
     }
    ],
-   "n_streams": 2,
+   "n_streams": 1,
    "n_checked": 2,
    "relations": [],
-   "period": "2023 – Jul 2026",
-   "period_from": "2023",
+   "period": "Jul 2026",
+   "period_from": "Jul 2026",
    "period_to": "Jul 2026",
-   "period_span": 3,
+   "period_span": 0,
    "streams": [
-    "sdr",
     "transcript"
    ],
    "countries": [
@@ -11366,18 +11369,15 @@ window.SITE_DATA = {
     "capacity",
     "government-engagement",
     "information-management",
-    "localisation",
     "sustainability"
    ],
    "actors": [
     "cluster",
     "gov-local",
     "gov-national",
-    "ingo",
-    "local-ngo"
+    "ingo"
    ],
    "record_ids": [
-    "E0347",
     "E0476",
     "E0534"
    ],
@@ -15738,32 +15738,6 @@ window.SITE_DATA = {
    "year": 2025
   },
   {
-   "id": "E0096",
-   "finding_id": "F114",
-   "theme": [
-    "Transition"
-   ],
-   "type": "recommendation",
-   "statement": "Map development actors as transition counterparts — Identify actors in the broader WASH sector — development programmes, national utilities, development banks and international financial institutions — with the technical skillset, funding horizon and field presence to absorb part of what the…",
-   "level": "national",
-   "countries": [],
-   "actors": [
-    "development",
-    "cluster"
-   ],
-   "tags": [
-    "nexus",
-    "transition-handover",
-    "partnerships"
-   ],
-   "stream": "sdr",
-   "source_id": "S063",
-   "date_collected": "2026-07-17",
-   "confidence": "medium",
-   "status": "draft",
-   "year": 2025
-  },
-  {
    "id": "E0097",
    "finding_id": "F370",
    "theme": [
@@ -18980,7 +18954,7 @@ window.SITE_DATA = {
     "Fundamentals"
    ],
    "type": "barrier",
-   "statement": "Reliance on short-term contracts and inadequate funding drives high turnover among information management staff, which erases the institutional memory clusters depend on.",
+   "statement": "Coordination platform posts were neither funded nor filled consistently, and the staff turnover that followed damaged both stability and institutional memory.",
    "level": "global",
    "countries": [],
    "actors": [
@@ -18996,8 +18970,8 @@ window.SITE_DATA = {
    "source_id": "S078",
    "date_collected": "2026-07-17",
    "confidence": "high",
-   "status": "draft",
-   "year": 2023
+   "status": "validated",
+   "year": 2026
   },
   {
    "id": "E0242",
@@ -19264,12 +19238,12 @@ window.SITE_DATA = {
   },
   {
    "id": "E0252",
-   "finding_id": "F324",
+   "finding_id": "F378",
    "theme": [
     "Transition"
    ],
    "type": "enabler",
-   "statement": "Transition planning secured sustained development financing for transition support structures, reducing the risk of a funding-driven closure.",
+   "statement": "The successor body was placed inside a structure that already existed — an education in emergencies thematic group sitting within the sector working group, co-led by the ministry, a UN agency, a bilateral embassy and a partnership coordination office.",
    "level": "national",
    "countries": [
     "UKR"
@@ -19287,7 +19261,7 @@ window.SITE_DATA = {
    "source_id": "S065",
    "date_collected": "2026-07-17",
    "confidence": "medium",
-   "status": "draft",
+   "status": "validated",
    "year": 2025
   },
   {
@@ -19691,12 +19665,12 @@ window.SITE_DATA = {
   },
   {
    "id": "E0268",
-   "finding_id": "F324",
+   "finding_id": "F310",
    "theme": [
     "Transition"
    ],
-   "type": "enabler",
-   "statement": "Planning sequencing was explicitly linked to financing continuity rather than treated as a separate exercise.",
+   "type": "context",
+   "statement": "The Reset arrived as three separate country-team initiatives at once — a task team reviewing whether clusters are fit for purpose, a new subnational operational coordination group, and an issue-based approach to the response.",
    "level": "national",
    "countries": [
     "UKR"
@@ -19713,7 +19687,7 @@ window.SITE_DATA = {
    "source_id": "S065",
    "date_collected": "2026-07-17",
    "confidence": "medium",
-   "status": "draft",
+   "status": "validated",
    "year": 2025
   },
   {
@@ -20322,12 +20296,12 @@ window.SITE_DATA = {
   },
   {
    "id": "E0292",
-   "finding_id": "F282",
+   "finding_id": "F320",
    "theme": [
     "Transition"
    ],
-   "type": "barrier",
-   "statement": "There was no operational coordination mandate at subnational level for the successor arrangement to rest on.",
+   "type": "practice",
+   "statement": "Subnational monitoring was kept rather than dropped at handover: partner activity tracking continues at sub-cluster level through the existing platform, with results folded into the ministry's own reporting.",
    "level": "subnational",
    "countries": [
     "UKR"
@@ -20344,7 +20318,7 @@ window.SITE_DATA = {
    "source_id": "S065",
    "date_collected": "2026-07-17",
    "confidence": "medium",
-   "status": "draft",
+   "status": "validated",
    "year": 2025
   },
   {
@@ -21783,31 +21757,6 @@ window.SITE_DATA = {
    "year": 2026
   },
   {
-   "id": "E0347",
-   "finding_id": "F408",
-   "theme": [
-    "Transition"
-   ],
-   "type": "enabler",
-   "statement": "Localised contingency planning, physical stockpiling and regular training enable faster and more effective emergency response.",
-   "level": "global",
-   "countries": [],
-   "actors": [
-    "local-ngo",
-    "gov-local"
-   ],
-   "tags": [
-    "capacity",
-    "localisation"
-   ],
-   "stream": "sdr",
-   "source_id": "S078",
-   "date_collected": "2026-07-17",
-   "confidence": "high",
-   "status": "draft",
-   "year": 2023
-  },
-  {
    "id": "E0348",
    "finding_id": "F387",
    "theme": [
@@ -21866,7 +21815,7 @@ window.SITE_DATA = {
     "Transition"
    ],
    "type": "enabler",
-   "statement": "Replacing emergency water trucking with solarised piped systems cut water supply costs from 11.38 to 0.93 US dollars per cubic metre — the kind of investment that makes service continuity financially viable after transition.",
+   "statement": "Replacing emergency water trucking with a solar-powered, utility-operated piped system cut the cost of water supply from $11.38 to $0.93 per cubic metre over a decade, and the government adopted the utility model for refugees and host communities together.",
    "level": "subnational",
    "countries": [
     "ETH"
@@ -21884,7 +21833,7 @@ window.SITE_DATA = {
    "source_id": "S063",
    "date_collected": "2026-07-17",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2025
   },
   {
@@ -34512,9 +34461,9 @@ window.SITE_DATA = {
   },
   {
    "source_id": "S063",
-   "title": "Sustainable Water Access in Gambella",
+   "title": "Providing sustainable water access in Gambella: Regional WASH Programme for Refugees (R-WASH) case study",
    "organisation": "UNICEF",
-   "year": "2025",
+   "year": "2025-04",
    "type": "report",
    "url": "https://www.unicef.org/esa/reports/providing-sustainable-water-access-gambella",
    "stream": "sdr",
@@ -34523,7 +34472,7 @@ window.SITE_DATA = {
    "legacy_id": "Transition-S12",
    "source_group": "",
    "label": "UNICEF 2025",
-   "reference": "UNICEF. (2025). Sustainable Water Access in Gambella. https://www.unicef.org/esa/reports/providing-sustainable-water-access-gambella"
+   "reference": "UNICEF. (2025). Providing sustainable water access in Gambella: Regional WASH Programme for Refugees (R-WASH) case study. https://www.unicef.org/esa/reports/providing-sustainable-water-access-gambella"
   },
   {
    "source_id": "S064",
@@ -34542,8 +34491,8 @@ window.SITE_DATA = {
   },
   {
    "source_id": "S065",
-   "title": "Ukraine Education Cluster Transition Plan 2025–2026. NOTE: Replaces \"Source 23, Ukraine\"",
-   "organisation": "Kalden & Rymarenko",
+   "title": "Ukraine Education Cluster Transition Plan 2025-2026",
+   "organisation": "Education Cluster Ukraine",
    "year": "2025",
    "type": "strategy",
    "url": "https://reliefweb.int/report/ukraine/education-cluster-transition-plan-2025-2026",
@@ -34552,8 +34501,8 @@ window.SITE_DATA = {
    "access": "public",
    "legacy_id": "Transition-S14",
    "source_group": "",
-   "label": "Kalden & Rymarenko 2025",
-   "reference": "Kalden & Rymarenko. (2025). Ukraine Education Cluster Transition Plan 2025–2026. NOTE: Replaces \"Source 23, Ukraine\". https://reliefweb.int/report/ukraine/education-cluster-transition-plan-2025-2026"
+   "label": "Education Cluster Ukraine 2025",
+   "reference": "Education Cluster Ukraine. (2025). Ukraine Education Cluster Transition Plan 2025-2026. https://reliefweb.int/report/ukraine/education-cluster-transition-plan-2025-2026"
   },
   {
    "source_id": "S066",
@@ -34737,9 +34686,9 @@ window.SITE_DATA = {
   },
   {
    "source_id": "S078",
-   "title": "Effectiveness of coordination in humanitarian WASH. GWC/Tufts",
-   "organisation": "Heylen et al",
-   "year": "2023",
+   "title": "Effectiveness of coordination in humanitarian water, sanitation, and hygiene (WASH) response: evidence from a mixed-methods evaluation of outcomes and outputs across five national coordination platforms",
+   "organisation": "Nguyen, D., Heylen, C., Cunningham, C., Salagnac, A., Ramos, M., & Lantagne, D.",
+   "year": "2026",
    "type": "study",
    "url": "https://link.springer.com/article/10.1186/s13031-026-00756-7",
    "stream": "sdr",
@@ -34747,8 +34696,8 @@ window.SITE_DATA = {
    "access": "public",
    "legacy_id": "Transition-S27",
    "source_group": "",
-   "label": "Heylen et al 2023",
-   "reference": "Heylen et al. (2023). Effectiveness of coordination in humanitarian WASH. GWC/Tufts. https://link.springer.com/article/10.1186/s13031-026-00756-7"
+   "label": "Nguyen, D., Heylen, C., Cunningham, C., Salagnac, A., Ramos, M., & Lantagne, D. 2026",
+   "reference": "Nguyen, D., Heylen, C., Cunningham, C., Salagnac, A., Ramos, M., & Lantagne, D.. (2026). Effectiveness of coordination in humanitarian water, sanitation, and hygiene (WASH) response: evidence from a mixed-methods evaluation of outcomes and outputs across five national coordination platforms. https://link.springer.com/article/10.1186/s13031-026-00756-7"
   },
   {
    "source_id": "S079",
