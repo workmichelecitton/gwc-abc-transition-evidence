@@ -28,7 +28,7 @@ Drop files into `/raw/` (gitignored, never published) named `S083 - short title.
 | `S022` | **1** | ? | Health Cluster | Session 2 Area Based Coordination |
 | `S038` | **1** | 2024 | Global Shelter Cluster | Messages from SC coordinators on ABC |
 
-> **`S101` and `S102` are settled — do not collect them.** They were the v1 Secondary Data Reviews, the synthesis layer rather than sources of evidence. Their 24 records were withdrawn on 20/08/2026 because extracting from a summary of the GWC's own consultation made that consultation count twice. Both stay in the registry marked as a deliberate decision.
+> **`S101` and `S102` were deleted from the registry on 11/09/2026.** They were the v1 Secondary Data Reviews, the synthesis layer rather than sources of evidence. Their 24 records were withdrawn on 20/08/2026 because extracting from a summary of the GWC's own consultation made that consultation count twice. This analysis replaces them, so on 11/09/2026 both registrations were deleted rather than kept as documented exclusions — a superseded synthesis is not a source that was considered and set aside.
 
 ---
 

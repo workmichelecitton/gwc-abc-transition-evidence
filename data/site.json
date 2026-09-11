@@ -117,7 +117,7 @@
  "stats": {
   "records": 741,
   "findings": 175,
-  "sources": 112,
+  "sources": 110,
   "countries": 30,
   "withheld_internal": 2
  },
@@ -34028,18 +34028,18 @@
   },
   {
    "source_id": "S048",
-   "title": "Localisation in Humanitarian Leadership — Venezuela",
+   "title": "Localisation in Humanitarian Leadership — Venezuela country profile",
    "organisation": "ICVA",
-   "year": "2024",
+   "year": "2024-09",
    "type": "research-evaluation",
-   "url": "https://www.icvanetwork.org/uploads/2024/11/Localisation-in-Humanitarian-Leadership-Report.pdf",
+   "url": "https://www.icvanetwork.org/uploads/2024/09/Localisation-in-Humanitarian-Leadership-Venezuela.pdf",
    "stream": "sdr",
    "date_added": "2026-07-17",
    "access": "public",
    "legacy_id": "ABC-A3",
    "source_group": "",
    "label": "ICVA 2024",
-   "reference": "ICVA. (2024). Localisation in Humanitarian Leadership — Venezuela. https://www.icvanetwork.org/uploads/2024/11/Localisation-in-Humanitarian-Leadership-Report.pdf"
+   "reference": "ICVA. (2024). Localisation in Humanitarian Leadership — Venezuela country profile. https://www.icvanetwork.org/uploads/2024/09/Localisation-in-Humanitarian-Leadership-Venezuela.pdf"
   },
   {
    "source_id": "S049",
@@ -34805,36 +34805,6 @@
    "source_group": "",
    "label": "GWC 2022",
    "reference": "GWC. (2022). Strategic Plan 2022–2025."
-  },
-  {
-   "source_id": "S101",
-   "title": "Secondary Data Review — Area-Based Coordination (V17)",
-   "organisation": "Global WASH Cluster",
-   "year": "2026",
-   "type": "research-evaluation",
-   "url": "",
-   "stream": "sdr",
-   "date_added": "2026-07-17",
-   "access": "restricted",
-   "legacy_id": "",
-   "source_group": "abc-sdr",
-   "label": "Global WASH Cluster 2026",
-   "reference": "Global WASH Cluster. (2026). Secondary Data Review — Area-Based Coordination (V17)."
-  },
-  {
-   "source_id": "S102",
-   "title": "Secondary Data Review — Transition in Humanitarian Settings",
-   "organisation": "Global WASH Cluster",
-   "year": "2026",
-   "type": "research-evaluation",
-   "url": "",
-   "stream": "sdr",
-   "date_added": "2026-07-17",
-   "access": "restricted",
-   "legacy_id": "",
-   "source_group": "transition-sdr",
-   "label": "Global WASH Cluster 2026",
-   "reference": "Global WASH Cluster. (2026). Secondary Data Review — Transition in Humanitarian Settings."
   },
   {
    "source_id": "S103",
