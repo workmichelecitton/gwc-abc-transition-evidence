@@ -115,8 +115,8 @@ window.SITE_DATA = {
  "generated": "2026-09-11",
  "taxonomy_version": "0.9.0",
  "stats": {
-  "records": 746,
-  "findings": 176,
+  "records": 744,
+  "findings": 175,
   "sources": 112,
   "countries": 30,
   "withheld_internal": 2
@@ -2962,9 +2962,9 @@ window.SITE_DATA = {
    "example": "",
    "type": "recommendation",
    "strength": 1,
-   "n_records": 6,
+   "n_records": 5,
    "n_sources": 1,
-   "n_documents": 6,
+   "n_documents": 5,
    "counted_sources": [
     {
      "group": "gwc-consult-2026",
@@ -2999,7 +2999,6 @@ window.SITE_DATA = {
     "E0091",
     "E0092",
     "E0093",
-    "E0094",
     "E0095"
    ],
    "unmerged": false,
@@ -9544,7 +9543,7 @@ window.SITE_DATA = {
     }
    ],
    "n_streams": 2,
-   "n_checked": 5,
+   "n_checked": 6,
    "relations": [],
    "period": "2023 – Aug 2026",
    "period_from": "2023",
@@ -9884,7 +9883,7 @@ window.SITE_DATA = {
     }
    ],
    "n_streams": 4,
-   "n_checked": 11,
+   "n_checked": 12,
    "relations": [],
    "period": "2023 – Aug 2026",
    "period_from": "2023",
@@ -10044,55 +10043,6 @@ window.SITE_DATA = {
     "headline": "A transition plan is also your best defence",
     "plain": "A costed plan with agreed readiness indicators does two jobs. Where conditions are met it enables an orderly handover. Where they are not, it lets you show concretely why not — which is the strongest argument against a closure driven by budget rather than readiness.",
     "so_what": "Write the plan early, even if deactivation is not on the table. Frame it as transition, not closure, and get the criteria agreed before the plan is drafted.",
-    "rank": null
-   }
-  },
-  {
-   "finding_id": "F350",
-   "statement": "Localisation commitments are not consistently translated into operational authority for local actors.",
-   "theme": [
-    "Transition"
-   ],
-   "example": "",
-   "type": "barrier",
-   "strength": 1,
-   "n_records": 1,
-   "n_sources": 1,
-   "n_documents": 1,
-   "counted_sources": [
-    {
-     "group": "S076",
-     "source_ids": [
-      "S076"
-     ]
-    }
-   ],
-   "n_streams": 1,
-   "n_checked": 0,
-   "relations": [],
-   "period": "2025",
-   "period_from": "2025",
-   "period_to": "2025",
-   "period_span": 0,
-   "streams": [
-    "sdr"
-   ],
-   "countries": [],
-   "tags": [
-    "localisation"
-   ],
-   "actors": [
-    "ingo",
-    "local-ngo"
-   ],
-   "record_ids": [
-    "E0281"
-   ],
-   "unmerged": false,
-   "highlight": {
-    "headline": "Localisation commitments have not become real authority",
-    "plain": "Local actors are consistently present in coordination but consistently without decision-making power, direct funding access, or influence over how transitions are designed. This shows up the same way across very different contexts.",
-    "so_what": "Make localisation measurable in transition criteria — a seat, a budget line, and a named decision it can actually take.",
     "rank": null
    }
   },
@@ -11278,7 +11228,7 @@ window.SITE_DATA = {
     }
    ],
    "n_streams": 3,
-   "n_checked": 3,
+   "n_checked": 4,
    "relations": [],
    "period": "2025 – Aug 2026",
    "period_from": "2025",
@@ -11416,7 +11366,7 @@ window.SITE_DATA = {
     }
    ],
    "n_streams": 1,
-   "n_checked": 0,
+   "n_checked": 1,
    "relations": [],
    "period": "2024 – 2025",
    "period_from": "2024",
@@ -15686,32 +15636,6 @@ window.SITE_DATA = {
    "year": 2026
   },
   {
-   "id": "E0094",
-   "finding_id": "F114",
-   "theme": [
-    "Transition"
-   ],
-   "type": "recommendation",
-   "statement": "Map development actors as transition counterparts — Identify actors in the broader WASH sector — development programmes, national utilities, development banks and international financial institutions — with the technical skillset, funding horizon and field presence to absorb part of what the…",
-   "level": "national",
-   "countries": [],
-   "actors": [
-    "development",
-    "cluster"
-   ],
-   "tags": [
-    "nexus",
-    "transition-handover",
-    "partnerships"
-   ],
-   "stream": "sdr",
-   "source_id": "S080",
-   "date_collected": "2026-07-17",
-   "confidence": "medium",
-   "status": "draft",
-   "year": 2024
-  },
-  {
    "id": "E0095",
    "finding_id": "F114",
    "theme": [
@@ -19539,7 +19463,7 @@ window.SITE_DATA = {
     "Transition"
    ],
    "type": "context",
-   "statement": "Large donor reductions, including the termination of a substantial majority of one major donor grant portfolio, pushed the sector into accelerated and involuntary transitions.",
+   "statement": "Around 85 per cent of one major donor's contracts and grants were terminated or slated for termination within two months, with other donors reducing allocations at the same time, so nothing was available to compensate.",
    "level": "global",
    "countries": [],
    "actors": [
@@ -19554,7 +19478,7 @@ window.SITE_DATA = {
    "source_id": "S079",
    "date_collected": "2026-07-17",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2025
   },
   {
@@ -20002,30 +19926,6 @@ window.SITE_DATA = {
    "confidence": "medium",
    "status": "draft",
    "year": 2020
-  },
-  {
-   "id": "E0281",
-   "finding_id": "F350",
-   "theme": [
-    "Transition"
-   ],
-   "type": "barrier",
-   "statement": "Localisation commitments are not consistently translated into operational authority for local actors.",
-   "level": "global",
-   "countries": [],
-   "actors": [
-    "local-ngo",
-    "ingo"
-   ],
-   "tags": [
-    "localisation"
-   ],
-   "stream": "sdr",
-   "source_id": "S076",
-   "date_collected": "2026-07-17",
-   "confidence": "high",
-   "status": "draft",
-   "year": 2025
   },
   {
    "id": "E0282",
@@ -21553,7 +21453,7 @@ window.SITE_DATA = {
     "Transition"
    ],
    "type": "enabler",
-   "statement": "Dedicated external surge teams managing complex handovers to government entities, and direct mentoring of national cluster co-facilitators, are documented enablers of sustainable handover.",
+   "statement": "A national cluster co-facilitator and four sub-clusters were mentored through capacity-building focused on cluster coordination, with the stated aim of leaving national ownership behind after the surge mission ended.",
    "level": "global",
    "countries": [],
    "actors": [
@@ -21569,7 +21469,7 @@ window.SITE_DATA = {
    "source_id": "S079",
    "date_collected": "2026-07-17",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2025
   },
   {
@@ -21897,7 +21797,7 @@ window.SITE_DATA = {
     "Transition"
    ],
    "type": "barrier",
-   "statement": "Humanitarian actors remain within short-term funding cycles while development actors hold the long-term funding, which is the structural mismatch behind most failed handovers.",
+   "statement": "Humanitarians work to short funding cycles while development actors often lack the capacity to operate in insecure environments over the long term — so the gap is not only about who holds the money but about who can work where.",
    "level": "global",
    "countries": [],
    "actors": [
@@ -21913,7 +21813,7 @@ window.SITE_DATA = {
    "source_id": "S080",
    "date_collected": "2026-07-17",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2024
   },
   {
@@ -21923,7 +21823,7 @@ window.SITE_DATA = {
     "Transition"
    ],
    "type": "barrier",
-   "statement": "Recovery financing can remain blocked for years where political deadlock stalls reform agendas.",
+   "statement": "Recovery depends on international aid that cannot be reached without a reform agenda and political resolution, so the financing stays out of reach for reasons that have nothing to do with the sector.",
    "level": "national",
    "countries": [
     "LBN"
@@ -21940,7 +21840,7 @@ window.SITE_DATA = {
    "source_id": "S075",
    "date_collected": "2026-07-17",
    "confidence": "medium",
-   "status": "draft",
+   "status": "validated",
    "year": 2025
   },
   {
@@ -34641,9 +34541,9 @@ window.SITE_DATA = {
   },
   {
    "source_id": "S075",
-   "title": "From Crisis to Recovery — Rapid Impact Assessment",
+   "title": "From Crisis to Recovery: Local Authorities Confronting Post-War Realities in Lebanon — Rapid Impact Assessment",
    "organisation": "UNDP Lebanon",
-   "year": "2025",
+   "year": "2025-01",
    "type": "study",
    "url": "https://www.undp.org/lebanon/publications/crisis-recovery-local-authorities-confronting-post-war-realities-lebanon-rapid-impact-assessment",
    "stream": "sdr",
@@ -34652,12 +34552,12 @@ window.SITE_DATA = {
    "legacy_id": "Transition-S24",
    "source_group": "",
    "label": "UNDP Lebanon 2025",
-   "reference": "UNDP Lebanon. (2025). From Crisis to Recovery — Rapid Impact Assessment. https://www.undp.org/lebanon/publications/crisis-recovery-local-authorities-confronting-post-war-realities-lebanon-rapid-impact-assessment"
+   "reference": "UNDP Lebanon. (2025). From Crisis to Recovery: Local Authorities Confronting Post-War Realities in Lebanon — Rapid Impact Assessment. https://www.undp.org/lebanon/publications/crisis-recovery-local-authorities-confronting-post-war-realities-lebanon-rapid-impact-assessment"
   },
   {
    "source_id": "S076",
-   "title": "Reflections: HDP Nexus Approaches",
-   "organisation": "IEO/UNDP",
+   "title": "UNDP and the HDP Nexus: Compendium of Country-Level Examples",
+   "organisation": "UNDP",
    "year": "2025",
    "type": "evaluation",
    "url": "https://www.undp.org/publications/undp-and-hdp-nexus-compendium-country-level-examples",
@@ -34666,8 +34566,8 @@ window.SITE_DATA = {
    "access": "public",
    "legacy_id": "Transition-S25",
    "source_group": "",
-   "label": "IEO/UNDP 2025",
-   "reference": "IEO/UNDP. (2025). Reflections: HDP Nexus Approaches. https://www.undp.org/publications/undp-and-hdp-nexus-compendium-country-level-examples"
+   "label": "UNDP 2025",
+   "reference": "UNDP. (2025). UNDP and the HDP Nexus: Compendium of Country-Level Examples. https://www.undp.org/publications/undp-and-hdp-nexus-compendium-country-level-examples"
   },
   {
    "source_id": "S077",
@@ -34702,8 +34602,8 @@ window.SITE_DATA = {
   {
    "source_id": "S079",
    "title": "Field Support Team Consortium Annual Report 2024",
-   "organisation": "ACF & GWC",
-   "year": "2025",
+   "organisation": "Action Against Hunger & Global WASH Cluster",
+   "year": "2025-05",
    "type": "report",
    "url": "https://reliefweb.int/report/world/field-support-team-consortium-annual-report-2024",
    "stream": "sdr",
@@ -34711,13 +34611,13 @@ window.SITE_DATA = {
    "access": "public",
    "legacy_id": "Transition-S28",
    "source_group": "",
-   "label": "ACF & GWC 2025",
-   "reference": "ACF & GWC. (2025). Field Support Team Consortium Annual Report 2024. https://reliefweb.int/report/world/field-support-team-consortium-annual-report-2024"
+   "label": "Action Against Hunger & Global WASH Cluster 2025",
+   "reference": "Action Against Hunger & Global WASH Cluster. (2025). Field Support Team Consortium Annual Report 2024. https://reliefweb.int/report/world/field-support-team-consortium-annual-report-2024"
   },
   {
    "source_id": "S080",
-   "title": "WASH Resilience, Conflict Sensitivity and Peacebuilding",
-   "organisation": "GWN",
+   "title": "WASH Resilience, Conflict Sensitivity and Peacebuilding: The Triple Nexus in Humanitarian Development Peace — Joint Operational Framework",
+   "organisation": "German WASH Network",
    "year": "2024",
    "type": "guidance",
    "url": "https://reliefweb.int/report/world/joint-operational-framework-wash-resilience-conflict-sensitivity-and-peacebuilding",
@@ -34726,8 +34626,8 @@ window.SITE_DATA = {
    "access": "public",
    "legacy_id": "Transition-S29",
    "source_group": "",
-   "label": "GWN 2024",
-   "reference": "GWN. (2024). WASH Resilience, Conflict Sensitivity and Peacebuilding. https://reliefweb.int/report/world/joint-operational-framework-wash-resilience-conflict-sensitivity-and-peacebuilding"
+   "label": "German WASH Network 2024",
+   "reference": "German WASH Network. (2024). WASH Resilience, Conflict Sensitivity and Peacebuilding: The Triple Nexus in Humanitarian Development Peace — Joint Operational Framework. https://reliefweb.int/report/world/joint-operational-framework-wash-resilience-conflict-sensitivity-and-peacebuilding"
   },
   {
    "source_id": "S081",
