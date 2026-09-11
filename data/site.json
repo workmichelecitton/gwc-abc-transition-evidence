@@ -115,7 +115,7 @@
  "generated": "2026-09-11",
  "taxonomy_version": "0.9.0",
  "stats": {
-  "records": 737,
+  "records": 738,
   "findings": 176,
   "sources": 112,
   "countries": 30,
@@ -6233,14 +6233,20 @@
    "example": "Somalia — the drought response revealed uneven sectoral delivery, with actors operating in the same areas without a shared planning framework.",
    "type": "barrier",
    "strength": 4,
-   "n_records": 4,
-   "n_sources": 4,
-   "n_documents": 4,
+   "n_records": 5,
+   "n_sources": 5,
+   "n_documents": 5,
    "counted_sources": [
     {
      "group": "S015",
      "source_ids": [
       "S015"
+     ]
+    },
+    {
+     "group": "S035",
+     "source_ids": [
+      "S035"
      ]
     },
     {
@@ -6263,7 +6269,7 @@
     }
    ],
    "n_streams": 3,
-   "n_checked": 3,
+   "n_checked": 4,
    "relations": [],
    "period": "2024 – Aug 2026",
    "period_from": "2024",
@@ -6275,15 +6281,19 @@
     "workshop"
    ],
    "countries": [
+    "UKR",
     "VEN"
    ],
    "tags": [
     "coordination-architecture",
+    "government-engagement",
     "information-management",
     "performance"
    ],
    "actors": [
     "cluster",
+    "community",
+    "gov-local",
     "ocha",
     "operational-cell",
     "un-agency"
@@ -6291,6 +6301,7 @@
    "record_ids": [
     "E0107",
     "E0116",
+    "E0142",
     "E0716",
     "E0750"
    ],
@@ -7622,11 +7633,17 @@
    ],
    "example": "",
    "type": "barrier",
-   "strength": 2,
-   "n_records": 2,
-   "n_sources": 2,
-   "n_documents": 2,
+   "strength": 4,
+   "n_records": 3,
+   "n_sources": 3,
+   "n_documents": 3,
    "counted_sources": [
+    {
+     "group": "S035",
+     "source_ids": [
+      "S035"
+     ]
+    },
     {
      "group": "S040",
      "source_ids": [
@@ -7640,33 +7657,38 @@
      ]
     }
    ],
-   "n_streams": 1,
-   "n_checked": 1,
+   "n_streams": 2,
+   "n_checked": 2,
    "relations": [],
    "period": "2024 – 2026",
    "period_from": "2024",
    "period_to": "2026",
    "period_span": 2,
    "streams": [
+    "sdr",
     "workshop"
    ],
    "countries": [
-    "SDN"
+    "SDN",
+    "UKR"
    ],
    "tags": [
     "coordination-architecture",
     "funding",
+    "government-engagement",
     "pooled-funds"
    ],
    "actors": [
     "donor",
     "ingo",
     "ocha",
-    "operational-cell"
+    "operational-cell",
+    "un-agency"
    ],
    "record_ids": [
     "E0158",
-    "E0162"
+    "E0162",
+    "E0793"
    ],
    "unmerged": false,
    "highlight": {
@@ -8655,9 +8677,9 @@
    "example": "Ukraine — the successor arrangement had no operational coordination mandate at subnational level to rest on.",
    "type": "barrier",
    "strength": 3,
-   "n_records": 6,
-   "n_sources": 5,
-   "n_documents": 6,
+   "n_records": 5,
+   "n_sources": 4,
+   "n_documents": 5,
    "counted_sources": [
     {
      "group": "S019",
@@ -8669,12 +8691,6 @@
      "group": "S032",
      "source_ids": [
       "S032"
-     ]
-    },
-    {
-     "group": "S035",
-     "source_ids": [
-      "S035"
      ]
     },
     {
@@ -8702,19 +8718,16 @@
    ],
    "countries": [
     "IDN",
-    "IRQ",
     "UKR"
    ],
    "tags": [
     "coordination-architecture",
     "government-engagement",
     "guidance",
-    "nexus",
     "transition-handover"
    ],
    "actors": [
     "cluster",
-    "development",
     "gov-local",
     "gov-national",
     "ingo",
@@ -8722,7 +8735,6 @@
    ],
    "record_ids": [
     "E0111",
-    "E0142",
     "E0209",
     "E0211",
     "E0292",
@@ -16731,29 +16743,30 @@
   },
   {
    "id": "E0142",
-   "finding_id": "F282",
+   "finding_id": "F203",
    "theme": [
     "ABC"
    ],
-   "type": "barrier",
-   "statement": "Subnational coordination gaps constrained nexus-based planning.",
+   "type": "practice",
+   "statement": "Community profiles and area-based plans were built with local authorities on top of coordination structures that already existed, deliberately, to avoid adding another layer.",
    "level": "subnational",
    "countries": [
-    "IRQ"
+    "UKR"
    ],
    "actors": [
-    "cluster",
-    "development"
+    "un-agency",
+    "gov-local",
+    "community"
    ],
    "tags": [
-    "nexus",
-    "coordination-architecture"
+    "coordination-architecture",
+    "government-engagement"
    ],
    "stream": "sdr",
    "source_id": "S035",
    "date_collected": "2026-07-17",
    "confidence": "medium",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -33278,6 +33291,35 @@
    "confidence": "high",
    "status": "validated",
    "year": 2018
+  },
+  {
+   "id": "E0793",
+   "finding_id": "F240",
+   "theme": [
+    "ABC"
+   ],
+   "type": "barrier",
+   "statement": "A pooled fund set aside money specifically to push agencies toward area-based working with development and government partners. It worked once and was never repeated, and the agency it was aimed at did not use the fund again.",
+   "level": "national",
+   "countries": [
+    "UKR"
+   ],
+   "actors": [
+    "donor",
+    "ocha",
+    "un-agency"
+   ],
+   "tags": [
+    "funding",
+    "coordination-architecture",
+    "government-engagement"
+   ],
+   "stream": "sdr",
+   "source_id": "S035",
+   "date_collected": "2026-09-11",
+   "confidence": "high",
+   "status": "validated",
+   "year": 2026
   }
  ],
  "sources": [
@@ -33643,18 +33685,18 @@
   },
   {
    "source_id": "S035",
-   "title": "Operationalizing the HDP Nexus",
+   "title": "UNDP Country Case Studies: Operationalizing the Humanitarian-Development-Peace Nexus in Ukraine",
    "organisation": "UNDP",
-   "year": "2026",
+   "year": "2026-02",
    "type": "study",
-   "url": "",
+   "url": "https://reliefweb.int/report/ukraine/undp-country-case-studies-operationalizing-humanitarian-development-peace-nexus-ukraine",
    "stream": "sdr",
    "date_added": "2026-07-17",
    "access": "public",
    "legacy_id": "ABC-S23",
    "source_group": "",
    "label": "UNDP 2026",
-   "reference": "UNDP. (2026). Operationalizing the HDP Nexus."
+   "reference": "UNDP. (2026). UNDP Country Case Studies: Operationalizing the Humanitarian-Development-Peace Nexus in Ukraine. https://reliefweb.int/report/ukraine/undp-country-case-studies-operationalizing-humanitarian-development-peace-nexus-ukraine"
   },
   {
    "source_id": "S036",
