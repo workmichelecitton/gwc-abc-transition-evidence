@@ -115,7 +115,7 @@
  "generated": "2026-09-11",
  "taxonomy_version": "0.9.0",
  "stats": {
-  "records": 740,
+  "records": 748,
   "findings": 176,
   "sources": 112,
   "countries": 30,
@@ -2779,11 +2779,17 @@
    ],
    "example": "",
    "type": "recommendation",
-   "strength": 1,
-   "n_records": 4,
-   "n_sources": 1,
-   "n_documents": 3,
+   "strength": 3,
+   "n_records": 5,
+   "n_sources": 2,
+   "n_documents": 4,
    "counted_sources": [
+    {
+     "group": "S081",
+     "source_ids": [
+      "S081"
+     ]
+    },
     {
      "group": "gwc-consult-2026",
      "source_ids": [
@@ -2791,32 +2797,37 @@
      ]
     }
    ],
-   "n_streams": 1,
-   "n_checked": 2,
+   "n_streams": 2,
+   "n_checked": 3,
    "relations": [],
-   "period": "2026",
-   "period_from": "2026",
+   "period": "2025 – 2026",
+   "period_from": "2025",
    "period_to": "2026",
-   "period_span": 0,
+   "period_span": 1,
    "streams": [
+    "sdr",
     "workshop"
    ],
    "countries": [],
    "tags": [
     "advocacy",
+    "coordination-architecture",
     "guidance",
     "performance",
     "transition-handover"
    ],
    "actors": [
     "cluster",
-    "ocha"
+    "ingo",
+    "ocha",
+    "un-agency"
    ],
    "record_ids": [
     "E0080",
     "E0084",
     "E0085",
-    "E0086"
+    "E0086",
+    "E0282"
    ],
    "unmerged": false,
    "highlight": {
@@ -3060,11 +3071,17 @@
    ],
    "example": "",
    "type": "recommendation",
-   "strength": 1,
-   "n_records": 9,
-   "n_sources": 1,
-   "n_documents": 2,
+   "strength": 3,
+   "n_records": 10,
+   "n_sources": 2,
+   "n_documents": 3,
    "counted_sources": [
+    {
+     "group": "S062",
+     "source_ids": [
+      "S062"
+     ]
+    },
     {
      "group": "gwc-consult-2026",
      "source_ids": [
@@ -3073,14 +3090,15 @@
      ]
     }
    ],
-   "n_streams": 1,
-   "n_checked": 2,
+   "n_streams": 2,
+   "n_checked": 3,
    "relations": [],
    "period": "2026",
    "period_from": "2026",
    "period_to": "2026",
    "period_span": 0,
    "streams": [
+    "sdr",
     "workshop"
    ],
    "countries": [],
@@ -3107,7 +3125,8 @@
     "E0343",
     "E0344",
     "E0349",
-    "E0632"
+    "E0632",
+    "E0799"
    ],
    "unmerged": false,
    "highlight": {
@@ -5968,10 +5987,16 @@
    "example": "Iraq: most area-based coordination groups abolished in 2024 in favour of Joint Coordination Forums chaired by governors, secretariat handed to a government body in 2025.",
    "type": "practice",
    "strength": 3,
-   "n_records": 3,
-   "n_sources": 3,
-   "n_documents": 3,
+   "n_records": 4,
+   "n_sources": 4,
+   "n_documents": 4,
    "counted_sources": [
+    {
+     "group": "S062",
+     "source_ids": [
+      "S062"
+     ]
+    },
     {
      "group": "S071",
      "source_ids": [
@@ -5992,24 +6017,27 @@
     }
    ],
    "n_streams": 1,
-   "n_checked": 3,
+   "n_checked": 4,
    "relations": [],
-   "period": "2024 – 2025",
+   "period": "2024 – 2026",
    "period_from": "2024",
-   "period_to": "2025",
-   "period_span": 1,
+   "period_to": "2026",
+   "period_span": 2,
    "streams": [
     "sdr"
    ],
    "countries": [
-    "IRQ"
+    "IRQ",
+    "LBN"
    ],
    "tags": [
     "coordination-architecture",
     "government-engagement",
+    "information-management",
     "transition-handover"
    ],
    "actors": [
+    "cluster",
     "gov-local",
     "gov-national",
     "local-ngo",
@@ -6019,7 +6047,8 @@
    "record_ids": [
     "E0323",
     "E0778",
-    "E0794"
+    "E0794",
+    "E0797"
    ],
    "unmerged": false,
    "highlight": {
@@ -8151,9 +8180,9 @@
    "example": "Indonesia — international organisations shifted to supporting existing local leadership instead of maintaining parallel systems.",
    "type": "enabler",
    "strength": 5,
-   "n_records": 9,
-   "n_sources": 7,
-   "n_documents": 8,
+   "n_records": 10,
+   "n_sources": 8,
+   "n_documents": 9,
    "counted_sources": [
     {
      "group": "S012",
@@ -8171,6 +8200,12 @@
      "group": "S041",
      "source_ids": [
       "S041"
+     ]
+    },
+    {
+     "group": "S062",
+     "source_ids": [
+      "S062"
      ]
     },
     {
@@ -8200,7 +8235,7 @@
     }
    ],
    "n_streams": 4,
-   "n_checked": 6,
+   "n_checked": 7,
    "relations": [],
    "period": "2025 – Aug 2026",
    "period_from": "2025",
@@ -8244,7 +8279,8 @@
     "E0498",
     "E0499",
     "E0520",
-    "E0684"
+    "E0684",
+    "E0796"
    ],
    "unmerged": false,
    "highlight": {
@@ -8329,7 +8365,7 @@
     }
    ],
    "n_streams": 4,
-   "n_checked": 9,
+   "n_checked": 10,
    "relations": [],
    "period": "Oct 2020 – Aug 2026",
    "period_from": "Oct 2020",
@@ -9786,9 +9822,9 @@
    "example": "Iraq — international humanitarian funding fell from around 1.8 billion to 265 million US dollars, which forced an accelerated transition.",
    "type": "context",
    "strength": 5,
-   "n_records": 14,
-   "n_sources": 8,
-   "n_documents": 10,
+   "n_records": 15,
+   "n_sources": 9,
+   "n_documents": 11,
    "counted_sources": [
     {
      "group": "S011",
@@ -9812,6 +9848,12 @@
      "group": "S079",
      "source_ids": [
       "S079"
+     ]
+    },
+    {
+     "group": "S081",
+     "source_ids": [
+      "S081"
      ]
     },
     {
@@ -9841,7 +9883,7 @@
     }
    ],
    "n_streams": 4,
-   "n_checked": 10,
+   "n_checked": 11,
    "relations": [],
    "period": "2023 – Aug 2026",
    "period_from": "2023",
@@ -9876,6 +9918,7 @@
    "actors": [
     "cluster",
     "donor",
+    "gov-national",
     "ingo",
     "local-ngo",
     "ocha",
@@ -9895,7 +9938,8 @@
     "E0571",
     "E0642",
     "E0679",
-    "E0782"
+    "E0782",
+    "E0800"
    ],
    "unmerged": false,
    "highlight": {
@@ -9914,10 +9958,16 @@
    "example": "Colombia — a costed transfer plan was prepared with a risk analysis and an inventory of information resources, to be validated by the humanitarian coordinator and the clusters.",
    "type": "practice",
    "strength": 4,
-   "n_records": 8,
-   "n_sources": 4,
-   "n_documents": 5,
+   "n_records": 9,
+   "n_sources": 5,
+   "n_documents": 6,
    "counted_sources": [
+    {
+     "group": "S081",
+     "source_ids": [
+      "S081"
+     ]
+    },
     {
      "group": "S103",
      "source_ids": [
@@ -9943,14 +9993,15 @@
      ]
     }
    ],
-   "n_streams": 3,
-   "n_checked": 8,
+   "n_streams": 4,
+   "n_checked": 9,
    "relations": [],
-   "period": "2026 – Aug 2026",
-   "period_from": "2026",
+   "period": "2025 – Aug 2026",
+   "period_from": "2025",
    "period_to": "Aug 2026",
-   "period_span": 0,
+   "period_span": 1,
    "streams": [
+    "sdr",
     "search",
     "transcript",
     "workshop"
@@ -9984,7 +10035,8 @@
     "E0379",
     "E0380",
     "E0550",
-    "E0685"
+    "E0685",
+    "E0802"
    ],
    "unmerged": false,
    "highlight": {
@@ -10003,9 +10055,9 @@
    "example": "",
    "type": "barrier",
    "strength": 1,
-   "n_records": 3,
+   "n_records": 1,
    "n_sources": 1,
-   "n_documents": 3,
+   "n_documents": 1,
    "counted_sources": [
     {
      "group": "S076",
@@ -10033,9 +10085,7 @@
     "local-ngo"
    ],
    "record_ids": [
-    "E0281",
-    "E0282",
-    "E0283"
+    "E0281"
    ],
    "unmerged": false,
    "highlight": {
@@ -10599,14 +10649,20 @@
    "example": "Ukraine — the transition endpoint was scoped as a national institution with durable funding and a formal civil protection mandate, rather than defaulting to a line ministry.",
    "type": "enabler",
    "strength": 4,
-   "n_records": 7,
-   "n_sources": 3,
-   "n_documents": 4,
+   "n_records": 8,
+   "n_sources": 4,
+   "n_documents": 5,
    "counted_sources": [
     {
      "group": "S069",
      "source_ids": [
       "S069"
+     ]
+    },
+    {
+     "group": "S081",
+     "source_ids": [
+      "S081"
      ]
     },
     {
@@ -10624,7 +10680,7 @@
     }
    ],
    "n_streams": 2,
-   "n_checked": 5,
+   "n_checked": 6,
    "relations": [],
    "period": "2013 – 2026",
    "period_from": "2013",
@@ -10639,6 +10695,7 @@
     "UKR"
    ],
    "tags": [
+    "coordination-architecture",
     "funding",
     "government-engagement",
     "localisation",
@@ -10651,6 +10708,7 @@
     "gov-national",
     "ingo",
     "local-ngo",
+    "ocha",
     "un-agency"
    ],
    "record_ids": [
@@ -10660,7 +10718,8 @@
     "E0634",
     "E0635",
     "E0636",
-    "E0775"
+    "E0775",
+    "E0801"
    ],
    "unmerged": false,
    "highlight": {
@@ -10878,11 +10937,17 @@
    ],
    "example": "Iraq — a bilingual national co-coordinator, institutionally anchored in the NGO co-lead, carried the process for a year after the international coordinator left.",
    "type": "enabler",
-   "strength": 4,
-   "n_records": 7,
-   "n_sources": 5,
-   "n_documents": 5,
+   "strength": 5,
+   "n_records": 8,
+   "n_sources": 6,
+   "n_documents": 6,
    "counted_sources": [
+    {
+     "group": "S062",
+     "source_ids": [
+      "S062"
+     ]
+    },
     {
      "group": "S104",
      "source_ids": [
@@ -10914,14 +10979,15 @@
      ]
     }
    ],
-   "n_streams": 2,
-   "n_checked": 7,
+   "n_streams": 3,
+   "n_checked": 8,
    "relations": [],
    "period": "2026 – Jul 2026",
    "period_from": "2026",
    "period_to": "Jul 2026",
    "period_span": 0,
    "streams": [
+    "sdr",
     "transcript",
     "workshop"
    ],
@@ -10930,11 +10996,13 @@
     "HTI",
     "IRQ",
     "MLI",
-    "SDN"
+    "SDN",
+    "UKR"
    ],
    "tags": [
     "capacity",
     "coordination-architecture",
+    "government-engagement",
     "localisation",
     "partnerships",
     "staff-turnover",
@@ -10942,6 +11010,8 @@
    ],
    "actors": [
     "cluster",
+    "gov-national",
+    "ingo",
     "local-ngo",
     "un-agency"
    ],
@@ -10952,7 +11022,8 @@
     "E0521",
     "E0566",
     "E0593",
-    "E0600"
+    "E0600",
+    "E0798"
    ],
    "unmerged": false,
    "highlight": {
@@ -11154,10 +11225,10 @@
    ],
    "example": "Cameroon — transition planning proposed a six-month post-handover mentoring phase with quarterly reviews, rather than ending support at the point of transfer.",
    "type": "enabler",
-   "strength": 4,
-   "n_records": 5,
-   "n_sources": 5,
-   "n_documents": 5,
+   "strength": 5,
+   "n_records": 6,
+   "n_sources": 6,
+   "n_documents": 6,
    "counted_sources": [
     {
      "group": "S066",
@@ -11169,6 +11240,12 @@
      "group": "S079",
      "source_ids": [
       "S079"
+     ]
+    },
+    {
+     "group": "S082",
+     "source_ids": [
+      "S082"
      ]
     },
     {
@@ -11191,7 +11268,7 @@
     }
    ],
    "n_streams": 3,
-   "n_checked": 2,
+   "n_checked": 3,
    "relations": [],
    "period": "2025 – Aug 2026",
    "period_from": "2025",
@@ -11209,6 +11286,7 @@
    "tags": [
     "capacity",
     "funding",
+    "information-management",
     "localisation",
     "transition-handover"
    ],
@@ -11216,11 +11294,13 @@
     "cluster",
     "donor",
     "gov-national",
+    "ingo",
     "local-ngo",
     "un-agency"
    ],
    "record_ids": [
     "E0267",
+    "E0283",
     "E0333",
     "E0336",
     "E0339",
@@ -11504,14 +11584,20 @@
    "example": "",
    "type": "recommendation",
    "strength": 4,
-   "n_records": 9,
-   "n_sources": 4,
-   "n_documents": 7,
+   "n_records": 10,
+   "n_sources": 5,
+   "n_documents": 8,
    "counted_sources": [
     {
      "group": "S055",
      "source_ids": [
       "S055"
+     ]
+    },
+    {
+     "group": "S082",
+     "source_ids": [
+      "S082"
      ]
     },
     {
@@ -11534,12 +11620,12 @@
     }
    ],
    "n_streams": 3,
-   "n_checked": 5,
+   "n_checked": 6,
    "relations": [],
-   "period": "2026 – Aug 2026",
-   "period_from": "2026",
+   "period": "2025 – Aug 2026",
+   "period_from": "2025",
    "period_to": "Aug 2026",
-   "period_span": 0,
+   "period_span": 1,
    "streams": [
     "sdr",
     "search",
@@ -11564,6 +11650,7 @@
     "gov-local",
     "gov-national",
     "ingo",
+    "local-ngo",
     "ocha",
     "un-agency"
    ],
@@ -11576,7 +11663,8 @@
     "E0542",
     "E0616",
     "E0627",
-    "E0682"
+    "E0682",
+    "E0803"
    ],
    "unmerged": false,
    "highlight": {
@@ -19870,7 +19958,7 @@
     "Transition"
    ],
    "type": "barrier",
-   "statement": "Coordination structures invite local actors to meetings without giving them real decision-making power.",
+   "statement": "Three quarters of contexts are discussing transition and fifteen per cent of local organisations report taking part in that planning — described from the floor as symbolic localisation, where local actors are invited to the table but not allowed to set the menu.",
    "level": "global",
    "countries": [],
    "actors": [
@@ -19879,13 +19967,14 @@
    ],
    "tags": [
     "localisation",
+    "transition-handover",
     "coordination-architecture"
    ],
    "stream": "sdr",
    "source_id": "S062",
    "date_collected": "2026-07-17",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2026
   },
   {
@@ -19966,50 +20055,55 @@
   },
   {
    "id": "E0282",
-   "finding_id": "F350",
+   "finding_id": "F111",
    "theme": [
     "Transition"
    ],
    "type": "barrier",
-   "statement": "Localisation commitments are not consistently translated into operational authority for local actors.",
+   "statement": "The round of decisions that placed eight operations into accelerated transition did not use an explicit set of criteria.",
    "level": "global",
    "countries": [],
    "actors": [
-    "local-ngo",
-    "ingo"
+    "ocha",
+    "ingo",
+    "un-agency"
    ],
    "tags": [
-    "localisation"
+    "transition-handover",
+    "coordination-architecture"
    ],
    "stream": "sdr",
    "source_id": "S081",
    "date_collected": "2026-07-17",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2025
   },
   {
    "id": "E0283",
-   "finding_id": "F350",
+   "finding_id": "F396",
    "theme": [
     "Transition"
    ],
-   "type": "barrier",
-   "statement": "Localisation commitments are not consistently translated into operational authority for local actors.",
+   "type": "enabler",
+   "statement": "Continuing support to a government lead — co-chairing, a secretariat, or information management — is identified as what sustained coordination after past transitions, and it requires funding that outlasts the handover.",
    "level": "global",
    "countries": [],
    "actors": [
-    "local-ngo",
-    "ingo"
+    "gov-national",
+    "ingo",
+    "un-agency"
    ],
    "tags": [
-    "localisation"
+    "transition-handover",
+    "capacity",
+    "information-management"
    ],
    "stream": "sdr",
    "source_id": "S082",
    "date_collected": "2026-07-17",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2025
   },
   {
@@ -33417,6 +33511,222 @@
    "confidence": "high",
    "status": "validated",
    "year": 2022
+  },
+  {
+   "id": "E0796",
+   "finding_id": "F259",
+   "theme": [
+    "Transition"
+   ],
+   "type": "enabler",
+   "statement": "A cluster introduced voting so national NGOs choose their own leadership inside the transitioning structure, moving from being represented to deciding who represents them.",
+   "level": "national",
+   "countries": [
+    "CMR"
+   ],
+   "actors": [
+    "local-ngo",
+    "cluster"
+   ],
+   "tags": [
+    "localisation",
+    "transition-handover"
+   ],
+   "stream": "sdr",
+   "source_id": "S062",
+   "date_collected": "2026-09-11",
+   "confidence": "high",
+   "status": "validated",
+   "year": 2026
+  },
+  {
+   "id": "E0797",
+   "finding_id": "F1957",
+   "theme": [
+    "Transition"
+   ],
+   "type": "practice",
+   "statement": "Multipurpose cash coordination was transferred directly into a line ministry, making the response a government responsibility, with standardised reporting, data-sharing agreements and shared beneficiary systems following.",
+   "level": "national",
+   "countries": [
+    "LBN"
+   ],
+   "actors": [
+    "gov-national",
+    "cluster",
+    "un-agency"
+   ],
+   "tags": [
+    "transition-handover",
+    "government-engagement",
+    "information-management"
+   ],
+   "stream": "sdr",
+   "source_id": "S062",
+   "date_collected": "2026-09-11",
+   "confidence": "high",
+   "status": "validated",
+   "year": 2026
+  },
+  {
+   "id": "E0798",
+   "finding_id": "F386",
+   "theme": [
+    "Transition"
+   ],
+   "type": "enabler",
+   "statement": "A successor working group was established inside the line ministry under a co-leadership model that put the ministry, two international agencies and a local NGO in the chair together.",
+   "level": "national",
+   "countries": [
+    "UKR"
+   ],
+   "actors": [
+    "gov-national",
+    "local-ngo",
+    "un-agency",
+    "ingo"
+   ],
+   "tags": [
+    "transition-handover",
+    "localisation",
+    "government-engagement"
+   ],
+   "stream": "sdr",
+   "source_id": "S062",
+   "date_collected": "2026-09-11",
+   "confidence": "high",
+   "status": "validated",
+   "year": 2026
+  },
+  {
+   "id": "E0799",
+   "finding_id": "F119",
+   "theme": [
+    "Transition"
+   ],
+   "type": "recommendation",
+   "statement": "Transition should start the day a cluster is activated, with who will eventually lead, what must be institutionalised, what capacities transfer and what will fund coordination afterwards treated as design questions rather than end-stage ones.",
+   "level": "global",
+   "countries": [],
+   "actors": [
+    "cluster",
+    "ocha",
+    "un-agency"
+   ],
+   "tags": [
+    "transition-handover",
+    "guidance"
+   ],
+   "stream": "sdr",
+   "source_id": "S062",
+   "date_collected": "2026-09-11",
+   "confidence": "high",
+   "status": "validated",
+   "year": 2026
+  },
+  {
+   "id": "E0800",
+   "finding_id": "F335",
+   "theme": [
+    "Transition"
+   ],
+   "type": "context",
+   "statement": "What an NGO believes makes deactivation more likely: few or no areas at the highest severity, a government either willing or wealthy enough to respond, and strong pushback in-country against the coordination office or the clusters. Being a neglected or protracted crisis is believed not to count either way.",
+   "level": "global",
+   "countries": [],
+   "actors": [
+    "ocha",
+    "ingo",
+    "gov-national"
+   ],
+   "tags": [
+    "transition-handover",
+    "coordination-architecture"
+   ],
+   "stream": "sdr",
+   "source_id": "S081",
+   "date_collected": "2026-09-11",
+   "confidence": "medium",
+   "status": "validated",
+   "year": 2025
+  },
+  {
+   "id": "E0801",
+   "finding_id": "F373",
+   "theme": [
+    "Transition"
+   ],
+   "type": "enabler",
+   "statement": "Coordination after deactivation does not have to be UN-led, and NGO forums have carried it — but rebuilding what existed is explicitly not the aim, so the starting question is what coordination the actors still delivering will actually need.",
+   "level": "global",
+   "countries": [],
+   "actors": [
+    "ingo",
+    "local-ngo",
+    "ocha"
+   ],
+   "tags": [
+    "transition-handover",
+    "coordination-architecture"
+   ],
+   "stream": "sdr",
+   "source_id": "S081",
+   "date_collected": "2026-09-11",
+   "confidence": "medium",
+   "status": "validated",
+   "year": 2025
+  },
+  {
+   "id": "E0802",
+   "finding_id": "F346",
+   "theme": [
+    "Transition"
+   ],
+   "type": "enabler",
+   "statement": "Countries that came with a proposal rather than waiting for a decision got better terms: clear timelines, a stated vision and a justification for staffing were more readily accepted.",
+   "level": "global",
+   "countries": [],
+   "actors": [
+    "ocha",
+    "cluster",
+    "ingo"
+   ],
+   "tags": [
+    "transition-handover",
+    "advocacy"
+   ],
+   "stream": "sdr",
+   "source_id": "S081",
+   "date_collected": "2026-09-11",
+   "confidence": "medium",
+   "status": "validated",
+   "year": 2025
+  },
+  {
+   "id": "E0803",
+   "finding_id": "F421",
+   "theme": [
+    "Transition"
+   ],
+   "type": "recommendation",
+   "statement": "Before designing anything new, ask whether structures that already exist — development, durable solutions or NGO coordination — can carry the functions, and whether they are inclusive of the actors who will still be responding.",
+   "level": "global",
+   "countries": [],
+   "actors": [
+    "ingo",
+    "local-ngo",
+    "un-agency"
+   ],
+   "tags": [
+    "transition-handover",
+    "coordination-architecture"
+   ],
+   "stream": "sdr",
+   "source_id": "S082",
+   "date_collected": "2026-09-11",
+   "confidence": "medium",
+   "status": "validated",
+   "year": 2025
   }
  ],
  "sources": [
@@ -34187,9 +34497,9 @@
   },
   {
    "source_id": "S062",
-   "title": "Sustaining Coordination Beyond Cluster Deactivation",
-   "organisation": "GCCG — Localisation Working Group",
-   "year": "2026",
+   "title": "Sustaining Coordination Beyond Cluster Deactivation: The Urgent Case for Locally Led Cluster Transitions and Deactivation",
+   "organisation": "GCCG Localisation Working Group",
+   "year": "2026-04",
    "type": "study",
    "url": "https://reliefweb.int/report/world/sustaining-coordination-beyond-cluster-deactivation-urgent-case-locally-led-cluster-transitions-and-deactivation",
    "stream": "sdr",
@@ -34197,8 +34507,8 @@
    "access": "public",
    "legacy_id": "Transition-S11",
    "source_group": "",
-   "label": "GCCG — Localisation Working Group 2026",
-   "reference": "GCCG — Localisation Working Group. (2026). Sustaining Coordination Beyond Cluster Deactivation. https://reliefweb.int/report/world/sustaining-coordination-beyond-cluster-deactivation-urgent-case-locally-led-cluster-transitions-and-deactivation"
+   "label": "GCCG Localisation Working Group 2026",
+   "reference": "GCCG Localisation Working Group. (2026). Sustaining Coordination Beyond Cluster Deactivation: The Urgent Case for Locally Led Cluster Transitions and Deactivation. https://reliefweb.int/report/world/sustaining-coordination-beyond-cluster-deactivation-urgent-case-locally-led-cluster-transitions-and-deactivation"
   },
   {
    "source_id": "S063",
@@ -34472,9 +34782,9 @@
   },
   {
    "source_id": "S081",
-   "title": "Accelerated Transitions: Key takeaways",
+   "title": "Accelerated Transitions: Key takeaways from NRC internal discussions",
    "organisation": "NRC",
-   "year": "2025",
+   "year": "2025-06",
    "type": "study",
    "url": "https://www.nrc.no/resources/position-papers/accelerated-transitions-key-takeaways-from-nrc-internal-discussions",
    "stream": "sdr",
@@ -34483,13 +34793,13 @@
    "legacy_id": "Transition-S30",
    "source_group": "",
    "label": "NRC 2025",
-   "reference": "NRC. (2025). Accelerated Transitions: Key takeaways. https://www.nrc.no/resources/position-papers/accelerated-transitions-key-takeaways-from-nrc-internal-discussions"
+   "reference": "NRC. (2025). Accelerated Transitions: Key takeaways from NRC internal discussions. https://www.nrc.no/resources/position-papers/accelerated-transitions-key-takeaways-from-nrc-internal-discussions"
   },
   {
    "source_id": "S082",
-   "title": "Post-transition planning Part 2",
+   "title": "Post-transition planning Part 2: Considerations for Responding to HCT Discussion Questions",
    "organisation": "NRC",
-   "year": "2025",
+   "year": "2025-06",
    "type": "study",
    "url": "https://www.nrc.no/resources/position-papers/post-transition-planning-part-2-considerations-for-responding-to-hct-discussion-questions",
    "stream": "sdr",
@@ -34498,7 +34808,7 @@
    "legacy_id": "Transition-S31",
    "source_group": "",
    "label": "NRC 2025",
-   "reference": "NRC. (2025). Post-transition planning Part 2. https://www.nrc.no/resources/position-papers/post-transition-planning-part-2-considerations-for-responding-to-hct-discussion-questions"
+   "reference": "NRC. (2025). Post-transition planning Part 2: Considerations for Responding to HCT Discussion Questions. https://www.nrc.no/resources/position-papers/post-transition-planning-part-2-considerations-for-responding-to-hct-discussion-questions"
   },
   {
    "source_id": "S083",
