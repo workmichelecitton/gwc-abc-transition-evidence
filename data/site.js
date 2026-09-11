@@ -115,7 +115,7 @@ window.SITE_DATA = {
  "generated": "2026-09-11",
  "taxonomy_version": "0.9.0",
  "stats": {
-  "records": 744,
+  "records": 741,
   "findings": 175,
   "sources": 112,
   "countries": 30,
@@ -3221,17 +3221,11 @@ window.SITE_DATA = {
    ],
    "example": "Ethiopia — a government-developed water point assessment system, capturing access at admin 3 level, is being built and will continue to be led by government.",
    "type": "enabler",
-   "strength": 4,
-   "n_records": 5,
-   "n_sources": 4,
-   "n_documents": 4,
+   "strength": 3,
+   "n_records": 4,
+   "n_sources": 3,
+   "n_documents": 3,
    "counted_sources": [
-    {
-     "group": "S060",
-     "source_ids": [
-      "S060"
-     ]
-    },
     {
      "group": "S104",
      "source_ids": [
@@ -3251,21 +3245,19 @@ window.SITE_DATA = {
      ]
     }
    ],
-   "n_streams": 2,
+   "n_streams": 1,
    "n_checked": 4,
    "relations": [],
-   "period": "2020 – Aug 2026",
-   "period_from": "2020",
+   "period": "Jun 2026 – Aug 2026",
+   "period_from": "Jun 2026",
    "period_to": "Aug 2026",
-   "period_span": 6,
+   "period_span": 0,
    "streams": [
-    "sdr",
     "transcript"
    ],
    "countries": [
     "ETH",
     "SDN",
-    "SOM",
     "SYR"
    ],
    "tags": [
@@ -3282,7 +3274,6 @@ window.SITE_DATA = {
     "ingo"
    ],
    "record_ids": [
-    "E0328",
     "E0411",
     "E0412",
     "E0570",
@@ -3532,16 +3523,10 @@ window.SITE_DATA = {
    "example": "Iraq — sustaining information flows proved difficult as coordination mechanisms restructured, and maintaining an accurate evidence base became harder as the transition itself changed shape.",
    "type": "barrier",
    "strength": 4,
-   "n_records": 4,
-   "n_sources": 4,
-   "n_documents": 4,
+   "n_records": 3,
+   "n_sources": 3,
+   "n_documents": 3,
    "counted_sources": [
-    {
-     "group": "S060",
-     "source_ids": [
-      "S060"
-     ]
-    },
     {
      "group": "S067",
      "source_ids": [
@@ -3564,10 +3549,10 @@ window.SITE_DATA = {
    "n_streams": 3,
    "n_checked": 2,
    "relations": [],
-   "period": "2020 – Aug 2026",
-   "period_from": "2020",
+   "period": "2022 – Aug 2026",
+   "period_from": "2022",
    "period_to": "Aug 2026",
-   "period_span": 6,
+   "period_span": 4,
    "streams": [
     "sdr",
     "search",
@@ -3575,8 +3560,7 @@ window.SITE_DATA = {
    ],
    "countries": [
     "CMR",
-    "IRQ",
-    "SOM"
+    "IRQ"
    ],
    "tags": [
     "funding",
@@ -3589,7 +3573,6 @@ window.SITE_DATA = {
     "un-agency"
    ],
    "record_ids": [
-    "E0238",
     "E0239",
     "E0644",
     "E0680"
@@ -6275,10 +6258,10 @@ window.SITE_DATA = {
    ],
    "example": "Somalia — the drought response revealed uneven sectoral delivery, with actors operating in the same areas without a shared planning framework.",
    "type": "barrier",
-   "strength": 4,
-   "n_records": 5,
-   "n_sources": 5,
-   "n_documents": 5,
+   "strength": 5,
+   "n_records": 6,
+   "n_sources": 6,
+   "n_documents": 6,
    "counted_sources": [
     {
      "group": "S015",
@@ -6299,6 +6282,12 @@ window.SITE_DATA = {
      ]
     },
     {
+     "group": "S060",
+     "source_ids": [
+      "S060"
+     ]
+    },
+    {
      "group": "S119",
      "source_ids": [
       "S119"
@@ -6312,18 +6301,19 @@ window.SITE_DATA = {
     }
    ],
    "n_streams": 3,
-   "n_checked": 4,
+   "n_checked": 5,
    "relations": [],
-   "period": "2024 – Aug 2026",
-   "period_from": "2024",
+   "period": "2020 – Aug 2026",
+   "period_from": "2020",
    "period_to": "Aug 2026",
-   "period_span": 2,
+   "period_span": 6,
    "streams": [
     "sdr",
     "transcript",
     "workshop"
    ],
    "countries": [
+    "SOM",
     "UKR",
     "VEN"
    ],
@@ -6337,6 +6327,7 @@ window.SITE_DATA = {
     "cluster",
     "community",
     "gov-local",
+    "gov-national",
     "ocha",
     "operational-cell",
     "un-agency"
@@ -6346,7 +6337,8 @@ window.SITE_DATA = {
     "E0116",
     "E0142",
     "E0716",
-    "E0750"
+    "E0750",
+    "E0804"
    ],
    "unmerged": false,
    "highlight": {
@@ -6520,10 +6512,10 @@ window.SITE_DATA = {
    ],
    "example": "South Sudan — the country is divided into zones led permanently by UN organisations, which the coordination team distinguished from area-based coordination as described in global guidance.",
    "type": "context",
-   "strength": 4,
-   "n_records": 6,
-   "n_sources": 5,
-   "n_documents": 5,
+   "strength": 5,
+   "n_records": 7,
+   "n_sources": 6,
+   "n_documents": 6,
    "counted_sources": [
     {
      "group": "S015",
@@ -6535,6 +6527,12 @@ window.SITE_DATA = {
      "group": "S054",
      "source_ids": [
       "S054"
+     ]
+    },
+    {
+     "group": "S060",
+     "source_ids": [
+      "S060"
      ]
     },
     {
@@ -6557,12 +6555,12 @@ window.SITE_DATA = {
     }
    ],
    "n_streams": 4,
-   "n_checked": 6,
+   "n_checked": 7,
    "relations": [],
-   "period": "2022 – Aug 2026",
-   "period_from": "2022",
+   "period": "2020 – Aug 2026",
+   "period_from": "2020",
    "period_to": "Aug 2026",
-   "period_span": 4,
+   "period_span": 6,
    "streams": [
     "sdr",
     "search",
@@ -6572,6 +6570,7 @@ window.SITE_DATA = {
    "countries": [
     "CMR",
     "IRQ",
+    "SOM",
     "SSD"
    ],
    "tags": [
@@ -6596,7 +6595,8 @@ window.SITE_DATA = {
     "E0617",
     "E0674",
     "E0683",
-    "E0795"
+    "E0795",
+    "E0805"
    ],
    "unmerged": false,
    "highlight": {
@@ -8076,10 +8076,10 @@ window.SITE_DATA = {
    ],
    "example": "Myanmar — paid area coordinator posts were created alongside the elected chairs and co-chairs, with the job descriptions drafted centrally.",
    "type": "barrier",
-   "strength": 5,
-   "n_records": 6,
-   "n_sources": 6,
-   "n_documents": 6,
+   "strength": 4,
+   "n_records": 5,
+   "n_sources": 5,
+   "n_documents": 5,
    "counted_sources": [
     {
      "group": "S012",
@@ -8091,12 +8091,6 @@ window.SITE_DATA = {
      "group": "S041",
      "source_ids": [
       "S041"
-     ]
-    },
-    {
-     "group": "S060",
-     "source_ids": [
-      "S060"
      ]
     },
     {
@@ -8121,10 +8115,10 @@ window.SITE_DATA = {
    "n_streams": 3,
    "n_checked": 4,
    "relations": [],
-   "period": "2020 – Jul 2026",
-   "period_from": "2020",
+   "period": "2025 – Jul 2026",
+   "period_from": "2025",
    "period_to": "Jul 2026",
-   "period_span": 6,
+   "period_span": 1,
    "streams": [
     "sdr",
     "transcript",
@@ -8133,8 +8127,7 @@ window.SITE_DATA = {
    "countries": [
     "IRQ",
     "MMR",
-    "NGA",
-    "SOM"
+    "NGA"
    ],
    "tags": [
     "aap",
@@ -8156,7 +8149,6 @@ window.SITE_DATA = {
     "E0043",
     "E0185",
     "E0279",
-    "E0280",
     "E0286",
     "E0288"
    ],
@@ -8804,9 +8796,9 @@ window.SITE_DATA = {
    "example": "Iraq — coordination functions were redistributed across several successor arrangements without the links between them being set out, and newly established area structures were later found to cover only part of the displaced population.",
    "type": "barrier",
    "strength": 4,
-   "n_records": 9,
-   "n_sources": 5,
-   "n_documents": 7,
+   "n_records": 8,
+   "n_sources": 4,
+   "n_documents": 6,
    "counted_sources": [
     {
      "group": "S020",
@@ -8824,12 +8816,6 @@ window.SITE_DATA = {
      "group": "S055",
      "source_ids": [
       "S055"
-     ]
-    },
-    {
-     "group": "S060",
-     "source_ids": [
-      "S060"
      ]
     },
     {
@@ -8852,8 +8838,7 @@ window.SITE_DATA = {
    ],
    "countries": [
     "CMR",
-    "IRQ",
-    "SOM"
+    "IRQ"
    ],
    "tags": [
     "coordination-architecture",
@@ -8861,7 +8846,6 @@ window.SITE_DATA = {
     "guidance",
     "information-management",
     "localisation",
-    "sustainability",
     "transition-handover"
    ],
    "actors": [
@@ -8878,7 +8862,6 @@ window.SITE_DATA = {
     "E0214",
     "E0227",
     "E0228",
-    "E0231",
     "E0237",
     "E0320",
     "E0633"
@@ -10124,17 +10107,11 @@ window.SITE_DATA = {
    ],
    "example": "Mali — a thematic group is being formed to develop a faecal sludge management strategy for displacement sites, and few of the partners approached so far have experience in that area.",
    "type": "barrier",
-   "strength": 3,
-   "n_records": 2,
-   "n_sources": 2,
-   "n_documents": 2,
+   "strength": 1,
+   "n_records": 1,
+   "n_sources": 1,
+   "n_documents": 1,
    "counted_sources": [
-    {
-     "group": "S060",
-     "source_ids": [
-      "S060"
-     ]
-    },
     {
      "group": "S113",
      "source_ids": [
@@ -10142,20 +10119,18 @@ window.SITE_DATA = {
      ]
     }
    ],
-   "n_streams": 2,
+   "n_streams": 1,
    "n_checked": 1,
    "relations": [],
-   "period": "2020 – Jul 2026",
-   "period_from": "2020",
+   "period": "Jul 2026",
+   "period_from": "Jul 2026",
    "period_to": "Jul 2026",
-   "period_span": 6,
+   "period_span": 0,
    "streams": [
-    "sdr",
     "transcript"
    ],
    "countries": [
-    "MLI",
-    "SOM"
+    "MLI"
    ],
    "tags": [
     "capacity",
@@ -10164,12 +10139,10 @@ window.SITE_DATA = {
    ],
    "actors": [
     "cluster",
-    "gov-local",
     "ingo",
     "local-ngo"
    ],
    "record_ids": [
-    "E0293",
     "E0606"
    ],
    "unmerged": false,
@@ -10839,7 +10812,7 @@ window.SITE_DATA = {
     }
    ],
    "n_streams": 3,
-   "n_checked": 6,
+   "n_checked": 7,
    "relations": [],
    "period": "2020 – Aug 2026",
    "period_from": "2020",
@@ -18608,33 +18581,6 @@ window.SITE_DATA = {
    "year": 2025
   },
   {
-   "id": "E0231",
-   "finding_id": "F283",
-   "theme": [
-    "Transition"
-   ],
-   "type": "barrier",
-   "statement": "Service delivery continuity suffers in protracted transitions where coordination arrangements change without a defined successor.",
-   "level": "national",
-   "countries": [
-    "SOM"
-   ],
-   "actors": [
-    "cluster",
-    "gov-national"
-   ],
-   "tags": [
-    "transition-handover",
-    "sustainability"
-   ],
-   "stream": "sdr",
-   "source_id": "S060",
-   "date_collected": "2026-07-17",
-   "confidence": "medium",
-   "status": "draft",
-   "year": 2020
-  },
-  {
    "id": "E0232",
    "finding_id": "F307",
    "theme": [
@@ -18792,32 +18738,6 @@ window.SITE_DATA = {
    "confidence": "medium",
    "status": "draft",
    "year": 2026
-  },
-  {
-   "id": "E0238",
-   "finding_id": "F1711",
-   "theme": [
-    "Transition"
-   ],
-   "type": "barrier",
-   "statement": "Maintaining an accurate evidence base proved difficult as transition dynamics evolved.",
-   "level": "national",
-   "countries": [
-    "SOM"
-   ],
-   "actors": [
-    "cluster"
-   ],
-   "tags": [
-    "information-management",
-    "transition-handover"
-   ],
-   "stream": "sdr",
-   "source_id": "S060",
-   "date_collected": "2026-07-17",
-   "confidence": "medium",
-   "status": "draft",
-   "year": 2020
   },
   {
    "id": "E0239",
@@ -19901,33 +19821,6 @@ window.SITE_DATA = {
    "year": 2025
   },
   {
-   "id": "E0280",
-   "finding_id": "F258",
-   "theme": [
-    "Transition"
-   ],
-   "type": "barrier",
-   "statement": "Community involvement in transition planning and implementation was limited.",
-   "level": "national",
-   "countries": [
-    "SOM"
-   ],
-   "actors": [
-    "community",
-    "cluster"
-   ],
-   "tags": [
-    "localisation",
-    "aap"
-   ],
-   "stream": "sdr",
-   "source_id": "S060",
-   "date_collected": "2026-07-17",
-   "confidence": "medium",
-   "status": "draft",
-   "year": 2020
-  },
-  {
    "id": "E0282",
    "finding_id": "F111",
    "theme": [
@@ -20220,33 +20113,6 @@ window.SITE_DATA = {
    "confidence": "medium",
    "status": "validated",
    "year": 2025
-  },
-  {
-   "id": "E0293",
-   "finding_id": "F360",
-   "theme": [
-    "Fundamentals"
-   ],
-   "type": "barrier",
-   "statement": "Weak local implementation capacity translated directly into uneven service delivery.",
-   "level": "subnational",
-   "countries": [
-    "SOM"
-   ],
-   "actors": [
-    "gov-local",
-    "local-ngo"
-   ],
-   "tags": [
-    "capacity",
-    "sustainability"
-   ],
-   "stream": "sdr",
-   "source_id": "S060",
-   "date_collected": "2026-07-17",
-   "confidence": "medium",
-   "status": "draft",
-   "year": 2020
   },
   {
    "id": "E0294",
@@ -20693,7 +20559,7 @@ window.SITE_DATA = {
     "Transition"
    ],
    "type": "enabler",
-   "statement": "The coordination mandate was embedded in government through a dedicated durable solutions secretariat.",
+   "statement": "A durable solutions secretariat was established inside the planning ministry, bringing fourteen government institutions together to give strategic guidance and oversight, so the coordination sits in government rather than beside it.",
    "level": "national",
    "countries": [
     "SOM"
@@ -20709,7 +20575,7 @@ window.SITE_DATA = {
    "source_id": "S060",
    "date_collected": "2026-07-17",
    "confidence": "medium",
-   "status": "draft",
+   "status": "validated",
    "year": 2020
   },
   {
@@ -21149,32 +21015,6 @@ window.SITE_DATA = {
    "confidence": "high",
    "status": "validated",
    "year": 2022
-  },
-  {
-   "id": "E0328",
-   "finding_id": "F1308",
-   "theme": [
-    "Transition"
-   ],
-   "type": "enabler",
-   "statement": "A centralised, government-owned aid information management system was established.",
-   "level": "national",
-   "countries": [
-    "SOM"
-   ],
-   "actors": [
-    "gov-national"
-   ],
-   "tags": [
-    "information-management",
-    "government-engagement"
-   ],
-   "stream": "sdr",
-   "source_id": "S060",
-   "date_collected": "2026-07-17",
-   "confidence": "medium",
-   "status": "draft",
-   "year": 2020
   },
   {
    "id": "E0329",
@@ -33576,6 +33416,60 @@ window.SITE_DATA = {
    "confidence": "medium",
    "status": "validated",
    "year": 2025
+  },
+  {
+   "id": "E0804",
+   "finding_id": "F203",
+   "theme": [
+    "Transition"
+   ],
+   "type": "practice",
+   "statement": "A national strategy states as a principle that interventions go through structures that already exist and include displaced people in them, rather than setting up parallel ones.",
+   "level": "national",
+   "countries": [
+    "SOM"
+   ],
+   "actors": [
+    "gov-national",
+    "gov-local"
+   ],
+   "tags": [
+    "coordination-architecture",
+    "government-engagement"
+   ],
+   "stream": "sdr",
+   "source_id": "S060",
+   "date_collected": "2026-09-11",
+   "confidence": "high",
+   "status": "validated",
+   "year": 2020
+  },
+  {
+   "id": "E0805",
+   "finding_id": "F210",
+   "theme": [
+    "ABC"
+   ],
+   "type": "context",
+   "statement": "Area-based working appears as one of eight principles in a national strategy, defined as targeting geographically and adapting to local conditions because each area needs its own approach.",
+   "level": "national",
+   "countries": [
+    "SOM"
+   ],
+   "actors": [
+    "gov-national",
+    "gov-local"
+   ],
+   "tags": [
+    "coordination-architecture",
+    "geographic-targeting"
+   ],
+   "stream": "sdr",
+   "source_id": "S060",
+   "date_collected": "2026-09-11",
+   "confidence": "high",
+   "status": "validated",
+   "year": 2020
   }
  ],
  "sources": [
@@ -33956,9 +33850,9 @@ window.SITE_DATA = {
   },
   {
    "source_id": "S036",
-   "title": "UNHCR Leadership and Coordination Role",
-   "organisation": "Collinson & Schenkenberg",
-   "year": "2019",
+   "title": "UNHCR's Leadership and Coordination Role in Refugee Response Settings: Desk Review (ES/2019/16)",
+   "organisation": "Collinson, S., & Schenkenberg, E.",
+   "year": "2019-12",
    "type": "evaluation",
    "url": "https://www.unhcr.org/sites/default/files/legacy-pdf/5e3da94e4.pdf",
    "stream": "sdr",
@@ -33966,8 +33860,8 @@ window.SITE_DATA = {
    "access": "public",
    "legacy_id": "ABC-S24",
    "source_group": "",
-   "label": "Collinson & Schenkenberg 2019",
-   "reference": "Collinson & Schenkenberg. (2019). UNHCR Leadership and Coordination Role. https://www.unhcr.org/sites/default/files/legacy-pdf/5e3da94e4.pdf"
+   "label": "Collinson, S., & Schenkenberg, E. 2019",
+   "reference": "Collinson, S., & Schenkenberg, E.. (2019). UNHCR's Leadership and Coordination Role in Refugee Response Settings: Desk Review (ES/2019/16). https://www.unhcr.org/sites/default/files/legacy-pdf/5e3da94e4.pdf"
   },
   {
    "source_id": "S037",
@@ -34316,9 +34210,9 @@ window.SITE_DATA = {
   },
   {
    "source_id": "S060",
-   "title": "National Durable Solutions Strategy 2020–2024",
-   "organisation": "Federal Government of Somalia",
-   "year": "2020",
+   "title": "The National Durable Solutions Strategy 2020-2024 (Pocket Version)",
+   "organisation": "Durable Solutions Unit, Ministry of Planning, Investment and Economic Development, Federal Government of Somalia",
+   "year": "2020-11",
    "type": "strategy",
    "url": "https://mop.gov.so/wp-content/uploads/PDF/DSU/The%20National%20Durable%20Solutions%20Strategy%202020%20-%202024.%20Pocket%20Version.pdf",
    "stream": "sdr",
@@ -34326,8 +34220,8 @@ window.SITE_DATA = {
    "access": "public",
    "legacy_id": "Transition-S9",
    "source_group": "",
-   "label": "Federal Government of Somalia 2020",
-   "reference": "Federal Government of Somalia. (2020). National Durable Solutions Strategy 2020–2024. https://mop.gov.so/wp-content/uploads/PDF/DSU/The%20National%20Durable%20Solutions%20Strategy%202020%20-%202024.%20Pocket%20Version.pdf"
+   "label": "Durable Solutions Unit, Ministry of Planning, Investment and Economic Development, Federal Government of Somalia 2020",
+   "reference": "Durable Solutions Unit, Ministry of Planning, Investment and Economic Development, Federal Government of Somalia. (2020). The National Durable Solutions Strategy 2020-2024 (Pocket Version). https://mop.gov.so/wp-content/uploads/PDF/DSU/The%20National%20Durable%20Solutions%20Strategy%202020%20-%202024.%20Pocket%20Version.pdf"
   },
   {
    "source_id": "S061",
