@@ -16546,9 +16546,7 @@ window.SITE_DATA = {
    "type": "barrier",
    "statement": "Inconsistencies between national strategies and subnational implementation frameworks limit coherence and inclusiveness.",
    "level": "subnational",
-   "countries": [
-    "PSE"
-   ],
+   "countries": [],
    "actors": [
     "gov-national",
     "cluster"
@@ -33704,14 +33702,14 @@ window.SITE_DATA = {
    "organisation": "Collinson & Schenkenberg",
    "year": "2019",
    "type": "evaluation",
-   "url": "",
+   "url": "https://www.unhcr.org/sites/default/files/legacy-pdf/5e3da94e4.pdf",
    "stream": "sdr",
    "date_added": "2026-07-17",
    "access": "public",
    "legacy_id": "ABC-S24",
    "source_group": "",
    "label": "Collinson & Schenkenberg 2019",
-   "reference": "Collinson & Schenkenberg. (2019). UNHCR Leadership and Coordination Role."
+   "reference": "Collinson & Schenkenberg. (2019). UNHCR Leadership and Coordination Role. https://www.unhcr.org/sites/default/files/legacy-pdf/5e3da94e4.pdf"
   },
   {
    "source_id": "S037",
