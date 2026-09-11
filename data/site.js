@@ -115,7 +115,7 @@ window.SITE_DATA = {
  "generated": "2026-09-11",
  "taxonomy_version": "0.9.0",
  "stats": {
-  "records": 736,
+  "records": 737,
   "findings": 176,
   "sources": 112,
   "countries": 30,
@@ -1994,15 +1994,21 @@ window.SITE_DATA = {
    ],
    "example": "Lebanon: area groups work in detail locally but there is no equivalent operational discussion centrally, so issues stay compartmentalised.",
    "type": "barrier",
-   "strength": 3,
-   "n_records": 4,
-   "n_sources": 3,
-   "n_documents": 3,
+   "strength": 4,
+   "n_records": 5,
+   "n_sources": 4,
+   "n_documents": 4,
    "counted_sources": [
     {
      "group": "S012",
      "source_ids": [
       "S012"
+     ]
+    },
+    {
+     "group": "S032",
+     "source_ids": [
+      "S032"
      ]
     },
     {
@@ -2018,14 +2024,15 @@ window.SITE_DATA = {
      ]
     }
    ],
-   "n_streams": 1,
-   "n_checked": 4,
+   "n_streams": 2,
+   "n_checked": 5,
    "relations": [],
-   "period": "Jul 2026",
-   "period_from": "Jul 2026",
+   "period": "2018 – Jul 2026",
+   "period_from": "2018",
    "period_to": "Jul 2026",
-   "period_span": 0,
+   "period_span": 8,
    "streams": [
+    "sdr",
     "transcript"
    ],
    "countries": [
@@ -2040,12 +2047,15 @@ window.SITE_DATA = {
    ],
    "actors": [
     "cluster",
+    "gov-local",
+    "ingo",
     "ocha",
     "operational-cell"
    ],
    "record_ids": [
     "E0047",
     "E0048",
+    "E0210",
     "E0473",
     "E0609"
    ],
@@ -8646,13 +8656,19 @@ window.SITE_DATA = {
    "type": "barrier",
    "strength": 3,
    "n_records": 6,
-   "n_sources": 4,
+   "n_sources": 5,
    "n_documents": 6,
    "counted_sources": [
     {
      "group": "S019",
      "source_ids": [
       "S019"
+     ]
+    },
+    {
+     "group": "S032",
+     "source_ids": [
+      "S032"
      ]
     },
     {
@@ -8675,7 +8691,7 @@ window.SITE_DATA = {
     }
    ],
    "n_streams": 1,
-   "n_checked": 0,
+   "n_checked": 1,
    "relations": [],
    "period": "2018 – 2026",
    "period_from": "2018",
@@ -8701,15 +8717,16 @@ window.SITE_DATA = {
     "development",
     "gov-local",
     "gov-national",
+    "ingo",
     "ocha"
    ],
    "record_ids": [
     "E0111",
     "E0142",
     "E0209",
-    "E0210",
     "E0211",
-    "E0292"
+    "E0292",
+    "E0792"
    ],
    "unmerged": false,
    "highlight": {
@@ -18273,17 +18290,18 @@ window.SITE_DATA = {
   },
   {
    "id": "E0210",
-   "finding_id": "F282",
+   "finding_id": "F040",
    "theme": [
     "ABC"
    ],
    "type": "barrier",
-   "statement": "Role clarity across national, subnational and sectoral tiers is often insufficient, which limits how well the tiers work together.",
+   "statement": "Area-based coordination is recognised as complementing sectoral coordination at smaller geographic scale, while the relationship itself — who participates, how the two work together, how responsibilities divide — is left undefined.",
    "level": "global",
    "countries": [],
    "actors": [
     "cluster",
-    "ocha"
+    "ingo",
+    "gov-local"
    ],
    "tags": [
     "coordination-architecture",
@@ -18293,7 +18311,7 @@ window.SITE_DATA = {
    "source_id": "S032",
    "date_collected": "2026-07-17",
    "confidence": "medium",
-   "status": "draft",
+   "status": "validated",
    "year": 2018
   },
   {
@@ -33234,6 +33252,32 @@ window.SITE_DATA = {
    "confidence": "high",
    "status": "validated",
    "year": 2025
+  },
+  {
+   "id": "E0792",
+   "finding_id": "F282",
+   "theme": [
+    "ABC"
+   ],
+   "type": "barrier",
+   "statement": "Government is not one counterpart. An area-based approach means engaging several levels of it at once, and which departments a programme already has relationships with materially changes what it can do.",
+   "level": "global",
+   "countries": [],
+   "actors": [
+    "gov-local",
+    "gov-national",
+    "ingo"
+   ],
+   "tags": [
+    "government-engagement",
+    "coordination-architecture"
+   ],
+   "stream": "sdr",
+   "source_id": "S032",
+   "date_collected": "2026-09-11",
+   "confidence": "high",
+   "status": "validated",
+   "year": 2018
   }
  ],
  "sources": [
@@ -33554,18 +33598,18 @@ window.SITE_DATA = {
   },
   {
    "source_id": "S032",
-   "title": "Urban Compendium",
-   "organisation": "Global Shelter Cluster",
-   "year": "2018",
-   "type": "guidance",
-   "url": "",
+   "title": "Settlement Approaches in Urban Areas: Compendium of Case Studies",
+   "organisation": "Global Shelter Cluster, Urban Settlements Working Group",
+   "year": "2018-07",
+   "type": "study",
+   "url": "https://www.sheltercluster.org/settlements-approaches-urban-areas-working-group/documents/urban-settlements-case-study-compendium",
    "stream": "sdr",
    "date_added": "2026-07-17",
    "access": "public",
    "legacy_id": "ABC-S20",
    "source_group": "",
-   "label": "Global Shelter Cluster 2018",
-   "reference": "Global Shelter Cluster. (2018). Urban Compendium."
+   "label": "Global Shelter Cluster, Urban Settlements Working Group 2018",
+   "reference": "Global Shelter Cluster, Urban Settlements Working Group. (2018). Settlement Approaches in Urban Areas: Compendium of Case Studies. https://www.sheltercluster.org/settlements-approaches-urban-areas-working-group/documents/urban-settlements-case-study-compendium"
   },
   {
    "source_id": "S033",
