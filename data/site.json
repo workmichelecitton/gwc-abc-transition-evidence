@@ -115,7 +115,7 @@
  "generated": "2026-09-11",
  "taxonomy_version": "0.9.0",
  "stats": {
-  "records": 738,
+  "records": 740,
   "findings": 176,
   "sources": 112,
   "countries": 30,
@@ -5967,11 +5967,17 @@
    ],
    "example": "Iraq: most area-based coordination groups abolished in 2024 in favour of Joint Coordination Forums chaired by governors, secretariat handed to a government body in 2025.",
    "type": "practice",
-   "strength": 1,
-   "n_records": 1,
-   "n_sources": 1,
-   "n_documents": 1,
+   "strength": 2,
+   "n_records": 2,
+   "n_sources": 2,
+   "n_documents": 2,
    "counted_sources": [
+    {
+     "group": "S071",
+     "source_ids": [
+      "S071"
+     ]
+    },
     {
      "group": "icva-coordination-in-transition",
      "source_ids": [
@@ -5980,12 +5986,12 @@
     }
    ],
    "n_streams": 1,
-   "n_checked": 1,
+   "n_checked": 2,
    "relations": [],
-   "period": "2025",
-   "period_from": "2025",
+   "period": "2024 – 2025",
+   "period_from": "2024",
    "period_to": "2025",
-   "period_span": 0,
+   "period_span": 1,
    "streams": [
     "sdr"
    ],
@@ -5999,11 +6005,14 @@
    ],
    "actors": [
     "gov-local",
+    "gov-national",
     "local-ngo",
+    "ocha",
     "un-agency"
    ],
    "record_ids": [
-    "E0778"
+    "E0778",
+    "E0794"
    ],
    "unmerged": false,
    "highlight": {
@@ -6478,14 +6487,20 @@
    "example": "South Sudan — the country is divided into zones led permanently by UN organisations, which the coordination team distinguished from area-based coordination as described in global guidance.",
    "type": "context",
    "strength": 4,
-   "n_records": 5,
-   "n_sources": 4,
-   "n_documents": 4,
+   "n_records": 6,
+   "n_sources": 5,
+   "n_documents": 5,
    "counted_sources": [
     {
      "group": "S015",
      "source_ids": [
       "S015"
+     ]
+    },
+    {
+     "group": "S054",
+     "source_ids": [
+      "S054"
      ]
     },
     {
@@ -6508,12 +6523,12 @@
     }
    ],
    "n_streams": 4,
-   "n_checked": 5,
+   "n_checked": 6,
    "relations": [],
-   "period": "2024 – Aug 2026",
-   "period_from": "2024",
+   "period": "2022 – Aug 2026",
+   "period_from": "2022",
    "period_to": "Aug 2026",
-   "period_span": 2,
+   "period_span": 4,
    "streams": [
     "sdr",
     "search",
@@ -6522,16 +6537,21 @@
    ],
    "countries": [
     "CMR",
+    "IRQ",
     "SSD"
    ],
    "tags": [
     "coordination-architecture",
+    "geographic-targeting",
     "guidance",
     "transition-handover"
    ],
    "actors": [
     "cluster",
+    "development",
+    "gov-local",
     "gov-national",
+    "ingo",
     "ocha",
     "operational-cell",
     "un-agency"
@@ -6541,7 +6561,8 @@
     "E0608",
     "E0617",
     "E0674",
-    "E0683"
+    "E0683",
+    "E0795"
    ],
    "unmerged": false,
    "highlight": {
@@ -8756,10 +8777,10 @@
    ],
    "example": "Iraq — coordination functions were redistributed across several successor arrangements without the links between them being set out, and newly established area structures were later found to cover only part of the displaced population.",
    "type": "barrier",
-   "strength": 5,
-   "n_records": 10,
-   "n_sources": 6,
-   "n_documents": 8,
+   "strength": 4,
+   "n_records": 9,
+   "n_sources": 5,
+   "n_documents": 7,
    "counted_sources": [
     {
      "group": "S020",
@@ -8771,12 +8792,6 @@
      "group": "S052",
      "source_ids": [
       "S052"
-     ]
-    },
-    {
-     "group": "S054",
-     "source_ids": [
-      "S054"
      ]
     },
     {
@@ -8835,7 +8850,6 @@
     "E0212",
     "E0213",
     "E0214",
-    "E0226",
     "E0227",
     "E0228",
     "E0231",
@@ -9608,10 +9622,16 @@
    "example": "Ethiopia — a six-month handover deadline was set internally and tied to the coordinator's contract ending. The humanitarian coordination office agreed six months was not enough; the timetable did not change.",
    "type": "barrier",
    "strength": 5,
-   "n_records": 20,
-   "n_sources": 11,
-   "n_documents": 14,
+   "n_records": 21,
+   "n_sources": 12,
+   "n_documents": 15,
    "counted_sources": [
+    {
+     "group": "S054",
+     "source_ids": [
+      "S054"
+     ]
+    },
     {
      "group": "S055",
      "source_ids": [
@@ -9681,7 +9701,7 @@
     }
    ],
    "n_streams": 4,
-   "n_checked": 13,
+   "n_checked": 14,
    "relations": [
     {
      "type": "qualifies",
@@ -9727,6 +9747,7 @@
     "un-agency"
    ],
    "record_ids": [
+    "E0226",
     "E0262",
     "E0265",
     "E0266",
@@ -10517,9 +10538,9 @@
    ],
    "example": "",
    "type": "barrier",
-   "strength": 1,
+   "strength": 2,
    "n_records": 2,
-   "n_sources": 1,
+   "n_sources": 2,
    "n_documents": 2,
    "counted_sources": [
     {
@@ -10527,10 +10548,16 @@
      "source_ids": [
       "S071"
      ]
+    },
+    {
+     "group": "S072",
+     "source_ids": [
+      "S072"
+     ]
     }
    ],
    "n_streams": 1,
-   "n_checked": 0,
+   "n_checked": 1,
    "relations": [],
    "period": "2023 – 2024",
    "period_from": "2023",
@@ -11050,13 +11077,19 @@
    "type": "recommendation",
    "strength": 4,
    "n_records": 5,
-   "n_sources": 3,
+   "n_sources": 4,
    "n_documents": 5,
    "counted_sources": [
     {
      "group": "S052",
      "source_ids": [
       "S052"
+     ]
+    },
+    {
+     "group": "S054",
+     "source_ids": [
+      "S054"
      ]
     },
     {
@@ -11073,7 +11106,7 @@
     }
    ],
    "n_streams": 3,
-   "n_checked": 3,
+   "n_checked": 4,
    "relations": [],
    "period": "2022 – Jun 2026",
    "period_from": "2022",
@@ -18455,12 +18488,12 @@
   },
   {
    "id": "E0226",
-   "finding_id": "F283",
+   "finding_id": "F333",
    "theme": [
     "Transition"
    ],
    "type": "barrier",
-   "statement": "Redistributing coordination functions across several successor arrangements creates a fragmentation risk unless roles and linkages between them are explicitly managed.",
+   "statement": "The deadline was set by decision, not by readiness: the country team resolved in March 2022 to hand over or simply exit most of the joint response by the end of that December, deactivating every cluster in the same window.",
    "level": "national",
    "countries": [
     "IRQ"
@@ -18477,7 +18510,7 @@
    "source_id": "S054",
    "date_collected": "2026-07-17",
    "confidence": "medium",
-   "status": "draft",
+   "status": "validated",
    "year": 2022
   },
   {
@@ -20555,8 +20588,8 @@
    "theme": [
     "Transition"
    ],
-   "type": "barrier",
-   "statement": "Government directives on camp closure forced premature returns, and state documentation and assistance frameworks excluded families with perceived affiliations.",
+   "type": "context",
+   "statement": "Government announced it would close the remaining displacement camps and withdraw its services by a fixed date, and coordination actors moved to a preparedness footing ahead of a decision they did not control.",
    "level": "national",
    "countries": [
     "IRQ"
@@ -20573,7 +20606,7 @@
    "source_id": "S071",
    "date_collected": "2026-07-17",
    "confidence": "medium",
-   "status": "draft",
+   "status": "validated",
    "year": 2024
   },
   {
@@ -21124,7 +21157,7 @@
     "Transition"
    ],
    "type": "enabler",
-   "statement": "Institutional memory was preserved by archiving cluster files and maintaining continuous online access to them.",
+   "statement": "Cluster files were archived with a named agency and the cluster website kept online, so the information products and technical guidance outlived the cluster.",
    "level": "national",
    "countries": [
     "IRQ"
@@ -21140,7 +21173,7 @@
    "source_id": "S054",
    "date_collected": "2026-07-17",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2022
   },
   {
@@ -33318,6 +33351,66 @@
    "confidence": "high",
    "status": "validated",
    "year": 2026
+  },
+  {
+   "id": "E0794",
+   "finding_id": "F1957",
+   "theme": [
+    "ABC",
+    "Transition"
+   ],
+   "type": "practice",
+   "statement": "The area-based groups set up in 2020 were phased out in 2023 and replaced by seven governorate-level joint forums, explicitly to increase government leadership.",
+   "level": "subnational",
+   "countries": [
+    "IRQ"
+   ],
+   "actors": [
+    "gov-national",
+    "gov-local",
+    "ocha",
+    "un-agency"
+   ],
+   "tags": [
+    "transition-handover",
+    "government-engagement",
+    "coordination-architecture"
+   ],
+   "stream": "sdr",
+   "source_id": "S071",
+   "date_collected": "2026-09-11",
+   "confidence": "high",
+   "status": "validated",
+   "year": 2024
+  },
+  {
+   "id": "E0795",
+   "finding_id": "F210",
+   "theme": [
+    "ABC"
+   ],
+   "type": "context",
+   "statement": "Eight area-based groups were established in return areas — places with high numbers of returned families and destroyed infrastructure — bringing humanitarian, development, stabilisation and peacebuilding actors together to work with local government on priority locations.",
+   "level": "subnational",
+   "countries": [
+    "IRQ"
+   ],
+   "actors": [
+    "gov-local",
+    "ingo",
+    "un-agency",
+    "development"
+   ],
+   "tags": [
+    "coordination-architecture",
+    "geographic-targeting"
+   ],
+   "stream": "sdr",
+   "source_id": "S054",
+   "date_collected": "2026-09-11",
+   "confidence": "high",
+   "status": "validated",
+   "year": 2022
   }
  ],
  "sources": [
@@ -33968,9 +34061,9 @@
   },
   {
    "source_id": "S054",
-   "title": "CCCM Cluster Iraq Transition Strategy 2022",
+   "title": "CCCM Cluster Iraq Transition Strategy Update: August 2022",
    "organisation": "CCCM Cluster Iraq",
-   "year": "2022",
+   "year": "2022-08",
    "type": "strategy",
    "url": "https://data.unhcr.org/en/documents/details/94779",
    "stream": "sdr",
@@ -33979,7 +34072,7 @@
    "legacy_id": "Transition-S3",
    "source_group": "",
    "label": "CCCM Cluster Iraq 2022",
-   "reference": "CCCM Cluster Iraq. (2022). CCCM Cluster Iraq Transition Strategy 2022. https://data.unhcr.org/en/documents/details/94779"
+   "reference": "CCCM Cluster Iraq. (2022). CCCM Cluster Iraq Transition Strategy Update: August 2022. https://data.unhcr.org/en/documents/details/94779"
   },
   {
    "source_id": "S055",
@@ -34223,9 +34316,9 @@
   },
   {
    "source_id": "S071",
-   "title": "Humanitarian Transition Overview 2024 Iraq",
+   "title": "Iraq Humanitarian Transition Overview 2024",
    "organisation": "OCHA",
-   "year": "2024",
+   "year": "2024-06",
    "type": "report",
    "url": "https://www.unocha.org/publications/report/iraq/iraq-humanitarian-transition-overview-2024-june-2024",
    "stream": "sdr",
@@ -34234,7 +34327,7 @@
    "legacy_id": "Transition-S20",
    "source_group": "",
    "label": "OCHA 2024",
-   "reference": "OCHA. (2024). Humanitarian Transition Overview 2024 Iraq. https://www.unocha.org/publications/report/iraq/iraq-humanitarian-transition-overview-2024-june-2024"
+   "reference": "OCHA. (2024). Iraq Humanitarian Transition Overview 2024. https://www.unocha.org/publications/report/iraq/iraq-humanitarian-transition-overview-2024-june-2024"
   },
   {
    "source_id": "S072",
