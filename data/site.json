@@ -6613,7 +6613,7 @@
     }
    ],
    "n_streams": 2,
-   "n_checked": 9,
+   "n_checked": 10,
    "relations": [],
    "period": "2022 – Aug 2026",
    "period_from": "2022",
@@ -8228,9 +8228,9 @@
    "example": "Ukraine — local actors participated in coordination structures but had limited influence over decisions and over resources.",
    "type": "barrier",
    "strength": 5,
-   "n_records": 10,
-   "n_sources": 9,
-   "n_documents": 9,
+   "n_records": 11,
+   "n_sources": 10,
+   "n_documents": 10,
    "counted_sources": [
     {
      "group": "S012",
@@ -8248,6 +8248,12 @@
      "group": "S016",
      "source_ids": [
       "S016"
+     ]
+    },
+    {
+     "group": "S029",
+     "source_ids": [
+      "S029"
      ]
     },
     {
@@ -8288,7 +8294,7 @@
     }
    ],
    "n_streams": 4,
-   "n_checked": 8,
+   "n_checked": 9,
    "relations": [],
    "period": "Oct 2020 – Aug 2026",
    "period_from": "Oct 2020",
@@ -8304,11 +8310,13 @@
     "CMR",
     "IRQ",
     "MMR",
+    "PSE",
     "UKR"
    ],
    "tags": [
     "aap",
     "coordination-architecture",
+    "information-management",
     "localisation",
     "partnerships",
     "performance",
@@ -8335,7 +8343,8 @@
     "E0673",
     "E0678",
     "E0751",
-    "E0776"
+    "E0776",
+    "E0791"
    ],
    "unmerged": false,
    "highlight": {
@@ -8353,11 +8362,17 @@
    ],
    "example": "",
    "type": "enabler",
-   "strength": 3,
-   "n_records": 3,
-   "n_sources": 2,
-   "n_documents": 3,
+   "strength": 4,
+   "n_records": 4,
+   "n_sources": 3,
+   "n_documents": 4,
    "counted_sources": [
+    {
+     "group": "S029",
+     "source_ids": [
+      "S029"
+     ]
+    },
     {
      "group": "S120",
      "source_ids": [
@@ -8371,8 +8386,8 @@
      ]
     }
    ],
-   "n_streams": 2,
-   "n_checked": 2,
+   "n_streams": 3,
+   "n_checked": 3,
    "relations": [],
    "period": "Oct 2020 – 2026",
    "period_from": "Oct 2020",
@@ -8389,7 +8404,9 @@
    ],
    "tags": [
     "aap",
+    "coordination-architecture",
     "inclusion",
+    "information-management",
     "localisation"
    ],
    "actors": [
@@ -8400,6 +8417,7 @@
    "record_ids": [
     "E0188",
     "E0189",
+    "E0190",
     "E0754"
    ],
    "unmerged": false,
@@ -8419,21 +8437,15 @@
    ],
    "example": "Palestine — better data sharing was associated directly with better coordination and more coherent prioritisation of needs.",
    "type": "enabler",
-   "strength": 4,
-   "n_records": 3,
-   "n_sources": 3,
-   "n_documents": 3,
+   "strength": 3,
+   "n_records": 2,
+   "n_sources": 2,
+   "n_documents": 2,
    "counted_sources": [
     {
      "group": "S014",
      "source_ids": [
       "S014"
-     ]
-    },
-    {
-     "group": "S029",
-     "source_ids": [
-      "S029"
      ]
     },
     {
@@ -8454,9 +8466,7 @@
     "sdr",
     "workshop"
    ],
-   "countries": [
-    "PSE"
-   ],
+   "countries": [],
    "tags": [
     "coordination-architecture",
     "hpc",
@@ -8467,7 +8477,6 @@
     "operational-cell"
    ],
    "record_ids": [
-    "E0190",
     "E0191",
     "E0648"
    ],
@@ -8552,26 +8561,25 @@
    "example": "",
    "type": "enabler",
    "strength": 1,
-   "n_records": 2,
+   "n_records": 1,
    "n_sources": 1,
-   "n_documents": 2,
+   "n_documents": 1,
    "counted_sources": [
     {
-     "group": "S029",
+     "group": "gwc-consult-2026",
      "source_ids": [
-      "S029"
+      "S045"
      ]
     }
    ],
    "n_streams": 1,
    "n_checked": 1,
    "relations": [],
-   "period": "2025 – 2026",
-   "period_from": "2025",
+   "period": "2026",
+   "period_from": "2026",
    "period_to": "2026",
-   "period_span": 1,
+   "period_span": 0,
    "streams": [
-    "sdr",
     "workshop"
    ],
    "countries": [
@@ -8586,7 +8594,6 @@
     "operational-cell"
    ],
    "record_ids": [
-    "E0199",
     "E0200"
    ],
    "unmerged": false,
@@ -16203,26 +16210,28 @@
    "id": "E0120",
    "finding_id": "F211",
    "theme": [
-    "ABC"
+    "Fundamentals"
    ],
    "type": "barrier",
-   "statement": "Fragmented data flows and parallel information systems prevent effective information sharing, producing duplication and inefficiency in response planning.",
+   "statement": "A requirement to clear beneficiary lists in advance, meant to prevent duplication, was read as interference — and the result was multiple databases and parallel data flows that made distribution less efficient, not more.",
    "level": "national",
    "countries": [
     "PSE"
    ],
    "actors": [
-    "cluster",
-    "ocha"
+    "local-ngo",
+    "donor",
+    "gov-national"
    ],
    "tags": [
-    "information-management"
+    "information-management",
+    "coordination-architecture"
    ],
    "stream": "sdr",
    "source_id": "S029",
    "date_collected": "2026-07-17",
    "confidence": "medium",
-   "status": "draft",
+   "status": "validated",
    "year": 2025
   },
   {
@@ -17971,28 +17980,30 @@
   },
   {
    "id": "E0190",
-   "finding_id": "F263",
+   "finding_id": "F261",
    "theme": [
     "ABC"
    ],
    "type": "enabler",
-   "statement": "Improved data sharing is associated with better coordination and more coherent prioritisation of needs.",
-   "level": "national",
+   "statement": "An area-based coordination system was set up specifically to strengthen the role of civil society, and holding its meetings in Arabic is what broadened who took part.",
+   "level": "subnational",
    "countries": [
     "PSE"
    ],
    "actors": [
-    "cluster",
-    "operational-cell"
+    "local-ngo",
+    "cluster"
    ],
    "tags": [
-    "information-management"
+    "localisation",
+    "information-management",
+    "coordination-architecture"
    ],
    "stream": "sdr",
    "source_id": "S029",
    "date_collected": "2026-07-17",
    "confidence": "medium",
-   "status": "draft",
+   "status": "validated",
    "year": 2025
   },
   {
@@ -18196,33 +18207,6 @@
    "confidence": "medium",
    "status": "validated",
    "year": 2020
-  },
-  {
-   "id": "E0199",
-   "finding_id": "F270",
-   "theme": [
-    "ABC"
-   ],
-   "type": "enabler",
-   "statement": "Area-based platforms enabled real-time tracking of delivery against population needs and preferences.",
-   "level": "subnational",
-   "countries": [
-    "PSE"
-   ],
-   "actors": [
-    "community",
-    "operational-cell"
-   ],
-   "tags": [
-    "aap",
-    "information-management"
-   ],
-   "stream": "sdr",
-   "source_id": "S029",
-   "date_collected": "2026-07-17",
-   "confidence": "high",
-   "status": "draft",
-   "year": 2025
   },
   {
    "id": "E0200",
@@ -33359,6 +33343,35 @@
    "confidence": "high",
    "status": "validated",
    "year": 2023
+  },
+  {
+   "id": "E0791",
+   "finding_id": "F260",
+   "theme": [
+    "Fundamentals"
+   ],
+   "type": "barrier",
+   "statement": "Data flowing from international agencies to local organisations was not there to make anyone accountable to them. Its purpose was information management for the response — so receiving the data did not come with any say over what it was used for.",
+   "level": "national",
+   "countries": [
+    "PSE"
+   ],
+   "actors": [
+    "local-ngo",
+    "un-agency",
+    "ingo"
+   ],
+   "tags": [
+    "information-management",
+    "aap",
+    "localisation"
+   ],
+   "stream": "sdr",
+   "source_id": "S029",
+   "date_collected": "2026-09-11",
+   "confidence": "high",
+   "status": "validated",
+   "year": 2025
   }
  ],
  "sources": [
@@ -33634,18 +33647,18 @@
   },
   {
    "source_id": "S029",
-   "title": "Data Flow in Humanitarian Aid",
-   "organisation": "Coalition for Accountability and Integrity",
-   "year": "2025",
+   "title": "Data Flow from International Humanitarian Aid Agencies to Civil Society Organizations in the Gaza Strip (Assessment of Accountability)",
+   "organisation": "Coalition for Accountability and Integrity (AMAN)",
+   "year": "2025-07",
    "type": "study",
-   "url": "",
+   "url": "https://www.aman-palestine.org/cached_uploads/download/2025/08/14/data-flow-from-international-humanitarian-1755168942.pdf",
    "stream": "sdr",
    "date_added": "2026-07-17",
    "access": "public",
    "legacy_id": "ABC-S17",
    "source_group": "",
-   "label": "Coalition for Accountability and Integrity 2025",
-   "reference": "Coalition for Accountability and Integrity. (2025). Data Flow in Humanitarian Aid."
+   "label": "Coalition for Accountability and Integrity (AMAN) 2025",
+   "reference": "Coalition for Accountability and Integrity (AMAN). (2025). Data Flow from International Humanitarian Aid Agencies to Civil Society Organizations in the Gaza Strip (Assessment of Accountability). https://www.aman-palestine.org/cached_uploads/download/2025/08/14/data-flow-from-international-humanitarian-1755168942.pdf"
   },
   {
    "source_id": "S030",
