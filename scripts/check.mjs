@@ -100,6 +100,37 @@ async function exercise(label, url) {
        `${label}: grouping duplicated cards — ${ids.length} rendered, ${new Set(ids).size} distinct`);
     ok($$("#view h2.grp").length > 0, `${label}: findings list rendered with no group headers`);
 
+    // Band 1 is collapsed into a disclosure at the end of the list. The cards
+    // must still be in the DOM — collapsed, not withheld — or browser search
+    // stops finding them and the count above the list stops being true.
+    const solo = d.querySelector("#view details.solobox");
+    const nSolo = site.findings.filter((f) => f.strength === 1).length;
+    ok(!!solo, `${label}: no single-source disclosure on the Findings tab`);
+    if (solo) {
+      ok(!solo.hasAttribute("open"),
+         `${label}: the single-source box is open by default — it exists to give the page its weight back`);
+      const inside = solo.querySelectorAll(".card[data-f]").length;
+      ok(inside === nSolo,
+         `${label}: single-source box holds ${inside} cards, ${nSolo} findings are band 1`);
+      const outside = $$("#view .card[data-f]").length - inside;
+      const notSolo = site.findings.length - nSolo;
+      ok(outside === notSolo,
+         `${label}: ${outside} cards above the box, expected ${notSolo}`);
+      // Nothing above band 1 may be buried in it, and no band 1 may escape it.
+      const stray = $$("#view .card[data-f]")
+        .filter((c) => !solo.contains(c))
+        .map((c) => site.findings.find((f) => f.finding_id === c.dataset.f))
+        .filter((f) => f && f.strength === 1);
+      ok(stray.length === 0,
+         `${label}: ${stray.length} band 1 findings rendered outside the disclosure`);
+    }
+
+    // Default grouping is theme, then strength within it.
+    ok(d.querySelector("#groupby").value === "themeband",
+       `${label}: default grouping is '${d.querySelector("#groupby").value}', expected 'themeband'`);
+    ok($$("#view .bandhead").length > 0,
+       `${label}: theme grouping rendered without strength subheadings`);
+
     // Switching the grouping must not change what is shown, only its order.
     const sel = d.querySelector("#groupby");
     for (const mode of ["theme", "type", ""]) {

@@ -129,6 +129,18 @@ h2.grp:first-child{margin-top:6px}
 .gd-meta .pill:not(.primary){opacity:.55}
 @media (max-width:1100px){ .hlgrid{grid-template-columns:1fr} }
 .grp-n{font-size:12px;color:#8A94A2;font-weight:400;letter-spacing:0}
+.bandhead{margin:14px 0 7px;font-size:11px;text-transform:uppercase;letter-spacing:.07em;
+  color:var(--ink-3);font-weight:600}
+.solobox{margin-top:26px;border-top:1px solid var(--line);padding-top:16px}
+.solobox>summary{cursor:pointer;font-size:13.5px;color:var(--ink-2);padding:10px 13px;
+  background:var(--card);border:1px solid var(--line);border-radius:8px;list-style:none}
+.solobox>summary::-webkit-details-marker{display:none}
+.solobox>summary:before{content:"\25B8 ";color:var(--ink-3)}
+.solobox[open]>summary:before{content:"\25BE "}
+.solobox>summary:hover{border-color:var(--ink-3)}
+.solobox>summary b{color:var(--ink)}
+.solobody{margin-top:16px}
+h3.grp.grp-sub{font-size:12px;margin-top:18px}
 .anote{background:var(--card);border:1px solid var(--line);border-left:3px solid var(--s4);
   border-radius:0 8px 8px 0;padding:12px 16px;margin-bottom:18px;font-size:13px;color:var(--ink-2)}
 .anbox{background:var(--card);border:1px solid var(--line);border-radius:8px;
@@ -297,6 +309,7 @@ text.ctyl.sel{fill:var(--transition);stroke:#FFF;stroke-width:2px}
           visible if any of its records fall inside it.</span></div>
       <div class="frow"><span class="flabel">Group by</span>
         <select id="groupby">
+          <option value="themeband">Theme, then strength</option>
           <option value="strength">Strength of evidence</option>
           <option value="theme">Theme</option>
           <option value="type">Type</option>
@@ -350,7 +363,7 @@ var MAPON = true;                   // map shown above the findings list
 // dropdown already scopes the list to one tag, which is the same job without
 // the duplication. Strength first is the default because it puts what the base
 // is most confident about at the top.
-var GROUPBY = "strength";
+var GROUPBY = "themeband";
 var YMIN = 0, YMAX = 0;
 var GROUPS = {
   strength: { order: [5,4,3,2,1],
@@ -673,25 +686,84 @@ function viewFindings(d){
     (byF[k] = byF[k] || []).push(r);
   });
 
-  var g = GROUPS[GROUPBY];
-  if (!g) return d.findings.map(card).join("");
+  // Band 1 is held back from every grouping and collected at the end behind a
+  // disclosure. It is 44% of the list and rests, by definition, on one voice —
+  // so it was putting 78 cards of weight between the reader and the end of the
+  // page. It is collapsed rather than dropped: this is where the newest
+  // evidence sits, because anything added last week has not been corroborated
+  // yet, and nobody can corroborate what they cannot see. The cards are in the
+  // page, not fetched on demand, so search and the tests still find them.
+  var solo = d.findings.filter(function(f){ return f.strength === 1; });
+  var main = d.findings.filter(function(f){ return f.strength !== 1; });
 
-  var buckets = {}, seen = [];
-  d.findings.forEach(function(f){
-    var k = g.of(f);
-    if (!buckets[k]) { buckets[k] = []; seen.push(k); }
-    buckets[k].push(f);
-  });
-  // Known values in their intended order first, then anything else alphabetically.
-  var keys = g.order.filter(function(k){ return buckets[k]; })
-    .concat(seen.filter(function(k){ return g.order.indexOf(k)<0; }).sort());
+  var body;
+  if (GROUPBY === "themeband") {
+    body = byThemeThenBand(main);
+  } else {
+    var g = GROUPS[GROUPBY];
+    if (!g) {
+      body = main.map(card).join("");
+    } else {
+      var buckets = {}, seen = [];
+      main.forEach(function(f){
+        var k = g.of(f);
+        if (!buckets[k]) { buckets[k] = []; seen.push(k); }
+        buckets[k].push(f);
+      });
+      // Known values in their intended order first, then anything else alphabetically.
+      var keys = g.order.filter(function(k){ return buckets[k]; })
+        .concat(seen.filter(function(k){ return g.order.indexOf(k)<0; }).sort());
+      body = keys.map(function(k){
+        var items = buckets[k];
+        return '<h2 class="grp">' + esc(g.label(k)) +
+               '<span class="grp-n">' + items.length + '</span></h2>' +
+               items.map(card).join("");
+      }).join("");
+    }
+  }
 
-  return keys.map(function(k){
-    var items = buckets[k];
-    return '<h2 class="grp">' + esc(g.label(k)) +
-           '<span class="grp-n">' + items.length + '</span></h2>' +
-           items.map(card).join("");
-  }).join("");
+  if (solo.length) {
+    body += '<details class="solobox"><summary><b>' + solo.length +
+      ' single-source finding' + (solo.length===1?'':'s') + '</b> — one source each, ' +
+      'not yet corroborated. Much of the newest evidence is here.</summary>' +
+      '<div class="solobody">' + byThemeThenBand(solo, true) + '</div></details>';
+  }
+  return body;
+
+  // Theme first because that is how people arrive — they want area-based
+  // coordination or transition, not band 4. Strength second, so the best
+  // supported sits at the top of whichever theme they opened.
+  //
+  // A finding carrying two themes goes under "Cross-cutting" rather than being
+  // listed under each. Listing it twice would duplicate cards, which is the one
+  // thing the grouping must never do.
+  function byThemeThenBand(list, flat){
+    var TH = [["ABC","Area-Based Coordination"], ["Transition","Transition"],
+              ["Fundamentals","Coordination fundamentals"], ["_x","Cross-cutting"]];
+    var by = {};
+    list.forEach(function(f){
+      var k = f.theme.length > 1 ? "_x" : (f.theme[0] || "_x");
+      (by[k] = by[k] || []).push(f);
+    });
+    return TH.map(function(t){
+      var items = by[t[0]];
+      if (!items) return '';
+      var head = flat
+        ? '<h3 class="grp grp-sub">' + esc(t[1]) + '<span class="grp-n">' + items.length + '</span></h3>'
+        : '<h2 class="grp">' + esc(t[1]) + '<span class="grp-n">' + items.length + '</span></h2>';
+      var bands = [5,4,3,2,1].map(function(b){
+        var inB = items.filter(function(f){ return f.strength === b; });
+        if (!inB.length) return '';
+        // No band subhead when the whole section is one band — inside the
+        // single-source box every card is band 1, and a heading saying so above
+        // each theme repeats what the box already said.
+        var sub = (flat && inB.length === items.length) ? ''
+          : '<p class="bandhead">' + esc(bandLabel(b)) + '</p>';
+        return sub + inB.map(card).join("");
+      }).join("");
+      return head + bands;
+    }).join("");
+  }
 
   function card(f){
     var recs = byF[f.finding_id] || [];
