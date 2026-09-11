@@ -902,15 +902,21 @@
    ],
    "example": "Somalia — resistance reflected the way the model was introduced rather than the model itself.",
    "type": "context",
-   "strength": 3,
-   "n_records": 3,
-   "n_sources": 2,
-   "n_documents": 2,
+   "strength": 4,
+   "n_records": 4,
+   "n_sources": 3,
+   "n_documents": 3,
    "counted_sources": [
     {
      "group": "S011",
      "source_ids": [
       "S011"
+     ]
+    },
+    {
+     "group": "S013",
+     "source_ids": [
+      "S013"
      ]
     },
     {
@@ -920,14 +926,15 @@
      ]
     }
    ],
-   "n_streams": 2,
-   "n_checked": 3,
+   "n_streams": 3,
+   "n_checked": 4,
    "relations": [],
    "period": "Oct 2020 – Aug 2026",
    "period_from": "Oct 2020",
    "period_to": "Aug 2026",
    "period_span": 6,
    "streams": [
+    "sdr",
     "search",
     "transcript"
    ],
@@ -944,12 +951,14 @@
     "community",
     "gov-national",
     "ingo",
-    "local-ngo"
+    "local-ngo",
+    "ocha"
    ],
    "record_ids": [
     "E0018",
     "E0038",
-    "E0755"
+    "E0755",
+    "E0785"
    ],
    "unmerged": false,
    "highlight": {
@@ -3565,16 +3574,10 @@
    "example": "Haiti — area-based coordination let agencies with established local presence lead joint access negotiations with armed groups and community members.",
    "type": "enabler",
    "strength": 4,
-   "n_records": 5,
-   "n_sources": 5,
-   "n_documents": 5,
+   "n_records": 4,
+   "n_sources": 4,
+   "n_documents": 4,
    "counted_sources": [
-    {
-     "group": "S013",
-     "source_ids": [
-      "S013"
-     ]
-    },
     {
      "group": "S028",
      "source_ids": [
@@ -3628,12 +3631,10 @@
    "actors": [
     "cluster",
     "community",
-    "gov-local",
     "ingo",
     "local-ngo"
    ],
    "record_ids": [
-    "E0175",
     "E0183",
     "E0646",
     "E0709",
@@ -6141,13 +6142,13 @@
    }
   },
   {
-   "finding_id": "F201",
-   "statement": "Dedicated structures had to be created — a drought strategic working group, community resource centres — which shows the existing coordination systems could not support integrated multi-sector assistance.",
+   "finding_id": "F1961",
+   "statement": "The response plan itself is being restructured around areas, with strategies organised by community priorities rather than by sector.",
    "theme": [
     "ABC"
    ],
    "example": "",
-   "type": "barrier",
+   "type": "practice",
    "strength": 1,
    "n_records": 1,
    "n_sources": 1,
@@ -6161,20 +6162,19 @@
     }
    ],
    "n_streams": 1,
-   "n_checked": 0,
+   "n_checked": 1,
    "relations": [],
-   "period": "",
-   "period_from": "",
-   "period_to": "",
+   "period": "2024",
+   "period_from": "2024",
+   "period_to": "2024",
    "period_span": 0,
    "streams": [
     "sdr"
    ],
-   "countries": [
-    "AFG"
-   ],
+   "countries": [],
    "tags": [
     "coordination-architecture",
+    "hpc",
     "multisector"
    ],
    "actors": [
@@ -6182,11 +6182,11 @@
     "ocha"
    ],
    "record_ids": [
-    "E0108"
+    "E0786"
    ],
    "unmerged": false,
    "highlight": {
-    "headline": "Having to build a new structure says the old one did not fit",
+    "headline": "The plan is organised by area, not by sector",
     "plain": "",
     "so_what": "",
     "rank": null
@@ -6369,7 +6369,7 @@
     }
    ],
    "n_streams": 3,
-   "n_checked": 11,
+   "n_checked": 12,
    "relations": [
     {
      "type": "qualifies",
@@ -7742,7 +7742,7 @@
     }
    ],
    "n_streams": 2,
-   "n_checked": 2,
+   "n_checked": 3,
    "relations": [],
    "period": "2024 – 2026",
    "period_from": "2024",
@@ -8571,7 +8571,7 @@
     }
    ],
    "n_streams": 1,
-   "n_checked": 0,
+   "n_checked": 1,
    "relations": [],
    "period": "2020",
    "period_from": "2020",
@@ -15867,33 +15867,6 @@
    "year": 2024
   },
   {
-   "id": "E0108",
-   "finding_id": "F201",
-   "theme": [
-    "ABC"
-   ],
-   "type": "barrier",
-   "statement": "The need to create dedicated structures such as a drought strategic working group and community resource centres shows that existing coordination systems could not support integrated multi-sectoral assistance.",
-   "level": "national",
-   "countries": [
-    "AFG"
-   ],
-   "actors": [
-    "cluster",
-    "ocha"
-   ],
-   "tags": [
-    "coordination-architecture",
-    "multisector"
-   ],
-   "stream": "sdr",
-   "source_id": "S013",
-   "date_collected": "2026-07-17",
-   "confidence": "medium",
-   "status": "draft",
-   "year": null
-  },
-  {
    "id": "E0109",
    "finding_id": "F203",
    "theme": [
@@ -17103,7 +17076,7 @@
     "ABC"
    ],
    "type": "barrier",
-   "statement": "The need to establish dedicated coordination platforms reflects the absence of embedded funding mechanisms to support integrated coordination approaches.",
+   "statement": "Funding rarely reaches local initiatives or supports local capacities, and eligibility criteria limit support for moving from lifesaving to solutions-oriented assistance.",
    "level": "national",
    "countries": [
     "AFG"
@@ -17120,8 +17093,8 @@
    "source_id": "S013",
    "date_collected": "2026-07-17",
    "confidence": "medium",
-   "status": "draft",
-   "year": null
+   "status": "validated",
+   "year": 2024
   },
   {
    "id": "E0157",
@@ -17580,33 +17553,6 @@
    "confidence": "high",
    "status": "validated",
    "year": 2025
-  },
-  {
-   "id": "E0175",
-   "finding_id": "F1712",
-   "theme": [
-    "ABC"
-   ],
-   "type": "enabler",
-   "statement": "A drought strategic working group and community resource centres supported multi-sector coordination and improved alignment of interventions at local level.",
-   "level": "subnational",
-   "countries": [
-    "AFG"
-   ],
-   "actors": [
-    "cluster",
-    "gov-local"
-   ],
-   "tags": [
-    "coordination-architecture",
-    "multisector"
-   ],
-   "stream": "sdr",
-   "source_id": "S013",
-   "date_collected": "2026-07-17",
-   "confidence": "medium",
-   "status": "draft",
-   "year": null
   },
   {
    "id": "E0176",
@@ -18195,7 +18141,7 @@
    "source_id": "S018",
    "date_collected": "2026-07-17",
    "confidence": "medium",
-   "status": "draft",
+   "status": "validated",
    "year": 2020
   },
   {
@@ -18274,7 +18220,7 @@
    "source_id": "S018",
    "date_collected": "2026-07-17",
    "confidence": "medium",
-   "status": "draft",
+   "status": "validated",
    "year": 2020
   },
   {
@@ -33199,6 +33145,57 @@
    "confidence": "high",
    "status": "validated",
    "year": 2025
+  },
+  {
+   "id": "E0785",
+   "finding_id": "F013",
+   "theme": [
+    "ABC"
+   ],
+   "type": "context",
+   "statement": "Area-based coordination was adopted as the answer to centralised decision-making that did not draw on local actors, with planning and programming decentralised to the area.",
+   "level": "global",
+   "countries": [],
+   "actors": [
+    "ocha",
+    "local-ngo"
+   ],
+   "tags": [
+    "coordination-architecture",
+    "localisation"
+   ],
+   "stream": "sdr",
+   "source_id": "S013",
+   "date_collected": "2026-09-11",
+   "confidence": "medium",
+   "status": "validated",
+   "year": 2024
+  },
+  {
+   "id": "E0786",
+   "finding_id": "F1961",
+   "theme": [
+    "ABC"
+   ],
+   "type": "practice",
+   "statement": "The response plan itself is being restructured around areas: strategies organised by community priorities rather than by sector.",
+   "level": "global",
+   "countries": [],
+   "actors": [
+    "ocha",
+    "cluster"
+   ],
+   "tags": [
+    "hpc",
+    "coordination-architecture",
+    "multisector"
+   ],
+   "stream": "sdr",
+   "source_id": "S013",
+   "date_collected": "2026-09-11",
+   "confidence": "medium",
+   "status": "validated",
+   "year": 2024
   }
  ],
  "sources": [
@@ -33232,17 +33229,17 @@
   },
   {
    "source_id": "S013",
-   "title": "Flagship Initiative Evolving Approach",
-   "organisation": "Flagship Initiative",
-   "year": "",
+   "title": "The Evolving Flagship Initiative Approach",
+   "organisation": "OCHA",
+   "year": "2024-07",
    "type": "report",
-   "url": "",
+   "url": "https://www.unocha.org/publications/report/world/evolving-flagship-initiative-approach",
    "stream": "sdr",
    "date_added": "2026-07-17",
    "access": "public",
    "legacy_id": "ABC-S1",
    "source_group": "",
-   "label": "Flagship Initiative"
+   "label": "OCHA 2024-07"
   },
   {
    "source_id": "S014",
@@ -33250,7 +33247,7 @@
    "organisation": "Food Security Cluster",
    "year": "2023",
    "type": "guidance",
-   "url": "",
+   "url": "https://handbook.fscluster.org/docs/1042-other-models-of-decentralised-coordination-area-based-coordination",
    "stream": "sdr",
    "date_added": "2026-07-17",
    "access": "public",
@@ -33278,7 +33275,7 @@
    "organisation": "Refugees International",
    "year": "2024",
    "type": "report",
-   "url": "",
+   "url": "https://www.refugeesinternational.org/reports-briefs/annual-ukraine-localization-survey-2024/",
    "stream": "sdr",
    "date_added": "2026-07-17",
    "access": "public",
@@ -33306,7 +33303,7 @@
    "organisation": "CCCM Cluster",
    "year": "2020",
    "type": "study",
-   "url": "",
+   "url": "https://reliefweb.int/report/world/cccm-paper-area-based-approaches-position-paper",
    "stream": "sdr",
    "date_added": "2026-07-17",
    "access": "public",
@@ -33334,7 +33331,7 @@
    "organisation": "UN Women",
    "year": "2026",
    "type": "study",
-   "url": "",
+   "url": "https://reliefweb.int/report/occupied-palestinian-territory/gender-matters-bulletin-no3-leading-times-crisis-role-womens-organizations-humanitarian-response-palestine-august-2025",
    "stream": "sdr",
    "date_added": "2026-07-17",
    "access": "public",
