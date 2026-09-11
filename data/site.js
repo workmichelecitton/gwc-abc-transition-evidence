@@ -115,7 +115,7 @@ window.SITE_DATA = {
  "generated": "2026-09-11",
  "taxonomy_version": "0.9.0",
  "stats": {
-  "records": 739,
+  "records": 740,
   "findings": 176,
   "sources": 112,
   "countries": 30,
@@ -3622,7 +3622,7 @@ window.SITE_DATA = {
     }
    ],
    "n_streams": 4,
-   "n_checked": 3,
+   "n_checked": 4,
    "relations": [],
    "period": "Oct 2020 – Aug 2026",
    "period_from": "Oct 2020",
@@ -3643,14 +3643,14 @@ window.SITE_DATA = {
     "coordination-architecture",
     "geographic-targeting",
     "localisation",
-    "multisector",
-    "partnerships"
+    "multisector"
    ],
    "actors": [
     "cluster",
     "community",
     "ingo",
-    "local-ngo"
+    "local-ngo",
+    "un-agency"
    ],
    "record_ids": [
     "E0183",
@@ -7051,9 +7051,9 @@ window.SITE_DATA = {
    ],
    "example": "Venezuela: established national organisations reported feeling displaced after the earthquake, not only for funding but for access to affected areas.",
    "type": "barrier",
-   "strength": 3,
+   "strength": 4,
    "n_records": 3,
-   "n_sources": 2,
+   "n_sources": 3,
    "n_documents": 3,
    "counted_sources": [
     {
@@ -7063,14 +7063,20 @@ window.SITE_DATA = {
      ]
     },
     {
+     "group": "S037",
+     "source_ids": [
+      "S037"
+     ]
+    },
+    {
      "group": "S119",
      "source_ids": [
       "S119"
      ]
     }
    ],
-   "n_streams": 2,
-   "n_checked": 1,
+   "n_streams": 3,
+   "n_checked": 2,
    "relations": [],
    "period": "2023 – Aug 2026",
    "period_from": "2023",
@@ -7519,15 +7525,21 @@ window.SITE_DATA = {
    ],
    "example": "Bangladesh — around one eighth of the pooled fund allocation reaching the sector went to international NGOs, and the remainder to UN agencies.",
    "type": "barrier",
-   "strength": 4,
-   "n_records": 5,
-   "n_sources": 5,
-   "n_documents": 5,
+   "strength": 5,
+   "n_records": 6,
+   "n_sources": 6,
+   "n_documents": 6,
    "counted_sources": [
     {
      "group": "S021",
      "source_ids": [
       "S021"
+     ]
+    },
+    {
+     "group": "S026",
+     "source_ids": [
+      "S026"
      ]
     },
     {
@@ -7556,12 +7568,12 @@ window.SITE_DATA = {
     }
    ],
    "n_streams": 4,
-   "n_checked": 4,
+   "n_checked": 5,
    "relations": [],
-   "period": "2025 – Jul 2026",
-   "period_from": "2025",
+   "period": "2023 – Jul 2026",
+   "period_from": "2023",
    "period_to": "Jul 2026",
-   "period_span": 1,
+   "period_span": 3,
    "streams": [
     "sdr",
     "search",
@@ -7589,7 +7601,8 @@ window.SITE_DATA = {
     "E0164",
     "E0285",
     "E0500",
-    "E0758"
+    "E0758",
+    "E0790"
    ],
    "unmerged": false,
    "highlight": {
@@ -16779,7 +16792,7 @@ window.SITE_DATA = {
     "ABC"
    ],
    "type": "barrier",
-   "statement": "Local actors have limited access to funding, to decision-making spaces and to long-term institutional support, which persistently undermines equitable partnership.",
+   "statement": "Direct funding to local and national actors stayed remarkably low years after the commitment to raise it, and local actors were widely treated as implementers rather than partners.",
    "level": "global",
    "countries": [],
    "actors": [
@@ -16795,7 +16808,7 @@ window.SITE_DATA = {
    "source_id": "S026",
    "date_collected": "2026-07-17",
    "confidence": "medium",
-   "status": "draft",
+   "status": "validated",
    "year": 2023
   },
   {
@@ -17776,24 +17789,27 @@ window.SITE_DATA = {
     "ABC"
    ],
    "type": "enabler",
-   "statement": "Area-based coordination enabled agencies with strong local presence to lead joint access negotiations with armed groups and community members, a function only locally anchored coordination can perform.",
+   "statement": "An access strategy built on area-based coordination put the agencies with the strongest presence in each area at the centre of joint negotiations with gang leaders and community members, and UN officials credit it with deliveries into areas that had been unreachable.",
    "level": "subnational",
    "countries": [
     "HTI"
    ],
    "actors": [
+    "ingo",
     "local-ngo",
+    "un-agency",
     "community"
    ],
    "tags": [
     "coordination-architecture",
-    "partnerships"
+    "localisation",
+    "geographic-targeting"
    ],
    "stream": "sdr",
    "source_id": "S028",
    "date_collected": "2026-07-17",
    "confidence": "medium",
-   "status": "draft",
+   "status": "validated",
    "year": 2023
   },
   {
@@ -33318,6 +33334,31 @@ window.SITE_DATA = {
    "confidence": "high",
    "status": "validated",
    "year": 2022
+  },
+  {
+   "id": "E0790",
+   "finding_id": "F234",
+   "theme": [
+    "Fundamentals"
+   ],
+   "type": "barrier",
+   "statement": "One major donor cannot fund local and national actors directly at all: its own regulation requires the recipient to be headquartered in a member state, with that headquarters as the effective decision-making centre. The centralisation is written into law, not just into practice.",
+   "level": "global",
+   "countries": [],
+   "actors": [
+    "donor",
+    "local-ngo"
+   ],
+   "tags": [
+    "funding",
+    "localisation"
+   ],
+   "stream": "sdr",
+   "source_id": "S026",
+   "date_collected": "2026-09-11",
+   "confidence": "high",
+   "status": "validated",
+   "year": 2023
   }
  ],
  "sources": [
@@ -33548,18 +33589,18 @@ window.SITE_DATA = {
   },
   {
    "source_id": "S026",
-   "title": "Promoting Equitable Partnerships with Local Responders",
+   "title": "Promoting equitable partnerships with local responders in humanitarian settings: DG ECHO guidance note",
    "organisation": "DG ECHO",
-   "year": "2023",
+   "year": "2023-03",
    "type": "guidance",
-   "url": "",
+   "url": "https://op.europa.eu/en/publication-detail/-/publication/6dd03554-c894-11ed-a05c-01aa75ed71a1/language-en",
    "stream": "sdr",
    "date_added": "2026-07-17",
    "access": "public",
    "legacy_id": "ABC-S14",
    "source_group": "",
    "label": "DG ECHO 2023",
-   "reference": "DG ECHO. (2023). Promoting Equitable Partnerships with Local Responders."
+   "reference": "DG ECHO. (2023). Promoting equitable partnerships with local responders in humanitarian settings: DG ECHO guidance note. https://op.europa.eu/en/publication-detail/-/publication/6dd03554-c894-11ed-a05c-01aa75ed71a1/language-en"
   },
   {
    "source_id": "S027",
@@ -33578,18 +33619,18 @@ window.SITE_DATA = {
   },
   {
    "source_id": "S028",
-   "title": "Humanitarian Access SCORE Report: Haiti",
-   "organisation": "Stoddard et al",
-   "year": "2023",
+   "title": "Humanitarian Access SCORE Report: Haiti — Survey on the Coverage, Operational Reach, and Effectiveness of Humanitarian Aid",
+   "organisation": "Stoddard, A., Harvey, P., Duque-Diez, M., Czwarno, M., & Breckenridge, M.",
+   "year": "2023-07",
    "type": "report",
-   "url": "",
+   "url": "https://humanitarianoutcomes.org/publications/score-report-Haiti-2023",
    "stream": "sdr",
    "date_added": "2026-07-17",
    "access": "public",
    "legacy_id": "ABC-S16",
    "source_group": "",
-   "label": "Stoddard et al 2023",
-   "reference": "Stoddard et al. (2023). Humanitarian Access SCORE Report: Haiti."
+   "label": "Stoddard, A., Harvey, P., Duque-Diez, M., Czwarno, M., & Breckenridge, M. 2023",
+   "reference": "Stoddard, A., Harvey, P., Duque-Diez, M., Czwarno, M., & Breckenridge, M.. (2023). Humanitarian Access SCORE Report: Haiti — Survey on the Coverage, Operational Reach, and Effectiveness of Humanitarian Aid. https://humanitarianoutcomes.org/publications/score-report-Haiti-2023"
   },
   {
    "source_id": "S029",
