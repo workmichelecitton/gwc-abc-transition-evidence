@@ -115,7 +115,7 @@
  "generated": "2026-09-11",
  "taxonomy_version": "0.9.0",
  "stats": {
-  "records": 736,
+  "records": 739,
   "findings": 176,
   "sources": 112,
   "countries": 30,
@@ -903,9 +903,9 @@
    "example": "Somalia — resistance reflected the way the model was introduced rather than the model itself.",
    "type": "context",
    "strength": 4,
-   "n_records": 5,
-   "n_sources": 4,
-   "n_documents": 4,
+   "n_records": 6,
+   "n_sources": 5,
+   "n_documents": 5,
    "counted_sources": [
     {
      "group": "S011",
@@ -926,6 +926,12 @@
      ]
     },
     {
+     "group": "S025",
+     "source_ids": [
+      "S025"
+     ]
+    },
+    {
      "group": "S120",
      "source_ids": [
       "S120"
@@ -933,7 +939,7 @@
     }
    ],
    "n_streams": 3,
-   "n_checked": 5,
+   "n_checked": 6,
    "relations": [],
    "period": "Oct 2020 – Aug 2026",
    "period_from": "Oct 2020",
@@ -945,10 +951,12 @@
     "transcript"
    ],
    "countries": [
-    "SOM"
+    "SOM",
+    "YEM"
    ],
    "tags": [
     "aap",
+    "advocacy",
     "coordination-architecture",
     "geographic-targeting",
     "localisation"
@@ -956,6 +964,7 @@
    "actors": [
     "cluster",
     "community",
+    "donor",
     "gov-national",
     "ingo",
     "local-ngo",
@@ -966,7 +975,8 @@
     "E0038",
     "E0109",
     "E0755",
-    "E0785"
+    "E0785",
+    "E0788"
    ],
    "unmerged": false,
    "highlight": {
@@ -5406,11 +5416,17 @@
    ],
    "example": "",
    "type": "context",
-   "strength": 1,
-   "n_records": 1,
-   "n_sources": 1,
-   "n_documents": 1,
+   "strength": 3,
+   "n_records": 2,
+   "n_sources": 2,
+   "n_documents": 2,
    "counted_sources": [
+    {
+     "group": "S025",
+     "source_ids": [
+      "S025"
+     ]
+    },
     {
      "group": "S120",
      "source_ids": [
@@ -5418,26 +5434,32 @@
      ]
     }
    ],
-   "n_streams": 1,
-   "n_checked": 1,
+   "n_streams": 2,
+   "n_checked": 2,
    "relations": [],
-   "period": "Oct 2020",
+   "period": "Oct 2020 – 2022",
    "period_from": "Oct 2020",
-   "period_to": "Oct 2020",
-   "period_span": 0,
+   "period_to": "2022",
+   "period_span": 2,
    "streams": [
+    "sdr",
     "search"
    ],
-   "countries": [],
+   "countries": [
+    "YEM"
+   ],
    "tags": [
     "coordination-architecture",
     "multisector"
    ],
    "actors": [
     "cluster",
-    "ocha"
+    "donor",
+    "ocha",
+    "un-agency"
    ],
    "record_ids": [
+    "E0110",
     "E0756"
    ],
    "unmerged": false,
@@ -6209,20 +6231,14 @@
    "example": "Somalia — the drought response revealed uneven sectoral delivery, with actors operating in the same areas without a shared planning framework.",
    "type": "barrier",
    "strength": 4,
-   "n_records": 5,
-   "n_sources": 5,
-   "n_documents": 5,
+   "n_records": 4,
+   "n_sources": 4,
+   "n_documents": 4,
    "counted_sources": [
     {
      "group": "S015",
      "source_ids": [
       "S015"
-     ]
-    },
-    {
-     "group": "S025",
-     "source_ids": [
-      "S025"
      ]
     },
     {
@@ -6247,18 +6263,17 @@
    "n_streams": 3,
    "n_checked": 3,
    "relations": [],
-   "period": "2022 – Aug 2026",
-   "period_from": "2022",
+   "period": "2024 – Aug 2026",
+   "period_from": "2024",
    "period_to": "Aug 2026",
-   "period_span": 4,
+   "period_span": 2,
    "streams": [
     "sdr",
     "transcript",
     "workshop"
    ],
    "countries": [
-    "VEN",
-    "YEM"
+    "VEN"
    ],
    "tags": [
     "coordination-architecture",
@@ -6273,7 +6288,6 @@
    ],
    "record_ids": [
     "E0107",
-    "E0110",
     "E0116",
     "E0716",
     "E0750"
@@ -6533,9 +6547,9 @@
    "example": "Mali — three separate channels collect needs data, including a government framework running twice a year on a cycle that does not align with planning.",
    "type": "barrier",
    "strength": 5,
-   "n_records": 10,
-   "n_sources": 9,
-   "n_documents": 9,
+   "n_records": 11,
+   "n_sources": 10,
+   "n_documents": 10,
    "counted_sources": [
     {
      "group": "S012",
@@ -6547,6 +6561,12 @@
      "group": "S014",
      "source_ids": [
       "S014"
+     ]
+    },
+    {
+     "group": "S025",
+     "source_ids": [
+      "S025"
      ]
     },
     {
@@ -6593,12 +6613,12 @@
     }
    ],
    "n_streams": 2,
-   "n_checked": 8,
+   "n_checked": 9,
    "relations": [],
-   "period": "2023 – Aug 2026",
-   "period_from": "2023",
+   "period": "2022 – Aug 2026",
+   "period_from": "2022",
    "period_to": "Aug 2026",
-   "period_span": 3,
+   "period_span": 4,
    "streams": [
     "sdr",
     "transcript"
@@ -6609,7 +6629,8 @@
     "MMR",
     "PSE",
     "SDN",
-    "SYR"
+    "SYR",
+    "YEM"
    ],
    "tags": [
     "advocacy",
@@ -6628,7 +6649,8 @@
     "gov-national",
     "ingo",
     "local-ngo",
-    "ocha"
+    "ocha",
+    "un-agency"
    ],
    "record_ids": [
     "E0062",
@@ -6640,7 +6662,8 @@
     "E0546",
     "E0578",
     "E0602",
-    "E0656"
+    "E0656",
+    "E0787"
    ],
    "unmerged": false,
    "highlight": {
@@ -8451,11 +8474,17 @@
    ],
    "example": "",
    "type": "enabler",
-   "strength": 1,
-   "n_records": 2,
-   "n_sources": 1,
-   "n_documents": 2,
+   "strength": 3,
+   "n_records": 3,
+   "n_sources": 2,
+   "n_documents": 3,
    "counted_sources": [
+    {
+     "group": "S025",
+     "source_ids": [
+      "S025"
+     ]
+    },
     {
      "group": "S038",
      "source_ids": [
@@ -8463,28 +8492,35 @@
      ]
     }
    ],
-   "n_streams": 1,
-   "n_checked": 0,
+   "n_streams": 2,
+   "n_checked": 1,
    "relations": [],
-   "period": "2024",
-   "period_from": "2024",
+   "period": "2022 – 2024",
+   "period_from": "2022",
    "period_to": "2024",
-   "period_span": 0,
+   "period_span": 2,
    "streams": [
+    "sdr",
     "workshop"
    ],
-   "countries": [],
+   "countries": [
+    "YEM"
+   ],
    "tags": [
+    "coordination-architecture",
     "multisector",
     "nexus"
    ],
    "actors": [
     "cluster",
+    "donor",
+    "ingo",
     "operational-cell"
    ],
    "record_ids": [
     "E0195",
-    "E0196"
+    "E0196",
+    "E0789"
    ],
    "unmerged": false,
    "highlight": {
@@ -15893,28 +15929,31 @@
   },
   {
    "id": "E0110",
-   "finding_id": "F203",
+   "finding_id": "F1943",
    "theme": [
-    "ABC"
+    "Fundamentals"
    ],
    "type": "barrier",
-   "statement": "Parallel coordination and implementation channels persist despite the formal presence of coordination structures.",
+   "statement": "Donor funding of the coordination architecture was only partly effective, because the coordinating office could not make inter-cluster coordination work and the lead agencies kept their own operating models.",
    "level": "national",
    "countries": [
     "YEM"
    ],
    "actors": [
-    "cluster",
-    "ocha"
+    "donor",
+    "ocha",
+    "un-agency",
+    "cluster"
    ],
    "tags": [
-    "coordination-architecture"
+    "coordination-architecture",
+    "multisector"
    ],
    "stream": "sdr",
    "source_id": "S025",
    "date_collected": "2026-07-17",
    "confidence": "medium",
-   "status": "draft",
+   "status": "validated",
    "year": 2022
   },
   {
@@ -33194,6 +33233,91 @@
    "confidence": "medium",
    "status": "validated",
    "year": 2024
+  },
+  {
+   "id": "E0787",
+   "finding_id": "F211",
+   "theme": [
+    "Fundamentals"
+   ],
+   "type": "barrier",
+   "statement": "Clusters are in open tension over whether their databases can talk to each other, and the donor's answer was to fund consortia outside the cluster leads rather than resolve it.",
+   "level": "national",
+   "countries": [
+    "YEM"
+   ],
+   "actors": [
+    "donor",
+    "un-agency",
+    "cluster",
+    "ingo"
+   ],
+   "tags": [
+    "information-management",
+    "coordination-architecture",
+    "funding"
+   ],
+   "stream": "sdr",
+   "source_id": "S025",
+   "date_collected": "2026-09-11",
+   "confidence": "high",
+   "status": "validated",
+   "year": 2022
+  },
+  {
+   "id": "E0788",
+   "finding_id": "F013",
+   "theme": [
+    "ABC"
+   ],
+   "type": "context",
+   "statement": "A donor's advocacy is recorded as one of the things that moved a cluster to adopt an area-based model, so the push toward area-based working does not only come from inside the coordination system.",
+   "level": "national",
+   "countries": [
+    "YEM"
+   ],
+   "actors": [
+    "donor",
+    "cluster"
+   ],
+   "tags": [
+    "coordination-architecture",
+    "advocacy"
+   ],
+   "stream": "sdr",
+   "source_id": "S025",
+   "date_collected": "2026-09-11",
+   "confidence": "high",
+   "status": "validated",
+   "year": 2022
+  },
+  {
+   "id": "E0789",
+   "finding_id": "F267",
+   "theme": [
+    "ABC"
+   ],
+   "type": "enabler",
+   "statement": "Rapid area-based multi-sector response for displaced people is named by an independent evaluation among the things that worked, alongside famine avoidance and cholera control.",
+   "level": "national",
+   "countries": [
+    "YEM"
+   ],
+   "actors": [
+    "donor",
+    "ingo",
+    "cluster"
+   ],
+   "tags": [
+    "multisector",
+    "coordination-architecture"
+   ],
+   "stream": "sdr",
+   "source_id": "S025",
+   "date_collected": "2026-09-11",
+   "confidence": "high",
+   "status": "validated",
+   "year": 2022
   }
  ],
  "sources": [
@@ -33409,18 +33533,18 @@
   },
   {
    "source_id": "S025",
-   "title": "Evaluation of EU humanitarian interventions",
+   "title": "Evaluation of the European Union's humanitarian interventions in Yemen and in humanitarian access, 2015-2020",
    "organisation": "ADE",
-   "year": "2022",
+   "year": "2022-01",
    "type": "evaluation",
-   "url": "",
+   "url": "https://op.europa.eu/en/publication-detail/-/publication/537cd096-8571-11ec-8c40-01aa75ed71a1/language-en",
    "stream": "sdr",
    "date_added": "2026-07-17",
    "access": "public",
    "legacy_id": "ABC-S13",
    "source_group": "",
    "label": "ADE 2022",
-   "reference": "ADE. (2022). Evaluation of EU humanitarian interventions."
+   "reference": "ADE. (2022). Evaluation of the European Union's humanitarian interventions in Yemen and in humanitarian access, 2015-2020. https://op.europa.eu/en/publication-detail/-/publication/537cd096-8571-11ec-8c40-01aa75ed71a1/language-en"
   },
   {
    "source_id": "S026",
