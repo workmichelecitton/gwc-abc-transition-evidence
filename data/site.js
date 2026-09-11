@@ -890,7 +890,7 @@ window.SITE_DATA = {
   },
   {
    "finding_id": "F013",
-   "statement": "Area-based coordination was introduced to counterbalance an architecture seen as UN-centred and remote from the district level. Where it met resistance, coordinators attributed that to how it was introduced rather than to the concept — community consultation and local needs prioritisation were not themselves contested.",
+   "statement": "Area-based coordination was brought in to offset an architecture seen as UN-centred and distant from district level. Where it met resistance, coordinators put that down to how it was introduced rather than to the idea. Community consultation and local prioritisation were not themselves disputed.",
    "theme": [
     "ABC"
    ],
@@ -955,7 +955,7 @@ window.SITE_DATA = {
   },
   {
    "finding_id": "F015",
-   "statement": "Where prioritisation moves to area-based or pooled-fund structures, the sector's role narrows to technical review of proposals — and where the coordinator post is vacant it is absent from the decisive meetings altogether.",
+   "statement": "Where prioritisation moves to area-based or pooled-fund structures, the sector's role narrows to technical review of proposals. Where the coordinator post is vacant, the sector is not in the decisive meetings at all.",
    "theme": [
     "ABC"
    ],
@@ -1202,7 +1202,7 @@ window.SITE_DATA = {
   },
   {
    "finding_id": "F022",
-   "statement": "Humanitarian coordination is being placed inside development structures ahead of transition — channelling sector information into a ministry's development platform, or holding a standing humanitarian item on a development agenda.",
+   "statement": "Humanitarian coordination is being placed inside development structures ahead of transition. Sector information is channelled into a ministry's development platform, or a standing humanitarian item is held on a development agenda.",
    "theme": [
     "Transition"
    ],
@@ -1817,7 +1817,7 @@ window.SITE_DATA = {
   },
   {
    "finding_id": "F031",
-   "statement": "Co-coordination roles are being opened up competitively rather than renewed by default, using published terms of reference and expressions of interest — though the processes are proving harder to complete than to launch.",
+   "statement": "Co-coordination roles are being opened competitively rather than renewed by default, with published terms of reference and expressions of interest. The processes are proving harder to finish than to start.",
    "theme": [
     "ABC",
     "Transition"
@@ -1939,7 +1939,7 @@ window.SITE_DATA = {
   },
   {
    "finding_id": "F040",
-   "statement": "The link between area structures and the cluster is undefined in both directions: no shared statement of who does what, no escalation route, and no forum where area-level issues aggregate into a national picture.",
+   "statement": "The link between area structures and the cluster is undefined in both directions. There is no shared statement of who does what, no route for escalating a problem, and no forum where area-level issues add up into a national picture.",
    "theme": [
     "ABC"
    ],
@@ -2387,7 +2387,7 @@ window.SITE_DATA = {
   },
   {
    "finding_id": "F102",
-   "statement": "Set a minimum terms of reference for area structures, function by function. Map the cluster core functions one at a time — which must stay with the cluster, which can move, and which are shared — then require a designated WASH focal point with defined technical requirements, written escalation pathways, and a stated owner for the analytical framework.",
+   "statement": "Set a minimum terms of reference for area structures, function by function. Take the cluster core functions one at a time and say which must stay with the cluster, which can move, and which are shared. Then require a named WASH focal point with defined technical requirements, written escalation routes, and a stated owner for the analysis framework.",
    "theme": [
     "ABC"
    ],
@@ -2994,7 +2994,7 @@ window.SITE_DATA = {
   },
   {
    "finding_id": "F1307",
-   "statement": "Government increasingly sets the terms of assessment. It leads the assessments for some sectors outright, allows others to run their own tools but requires the results to be endorsed, and can delay or withhold authorisation — so preparatory work is done in advance of approval to avoid losing the collection window entirely.",
+   "statement": "Government increasingly sets the terms of assessment. It leads the assessment outright for some sectors, lets others use their own tools but requires the results to be endorsed, and can delay or withhold authorisation. Preparatory work is done ahead of approval to avoid losing the collection window altogether.",
    "theme": [
     "Transition"
    ],
@@ -6622,7 +6622,7 @@ window.SITE_DATA = {
   },
   {
    "finding_id": "F224",
-   "statement": "Local actors have limited access to funding, to decision-making spaces and to long-term institutional support, and a sudden influx of international actors makes that worse by competing for access and partnership as well as money.",
+   "statement": "Local actors have limited access to funding, to the rooms where decisions are made, and to long-term institutional support. A sudden influx of international actors makes it worse, because they compete for access and partnership as well as for money.",
    "theme": [
     "Fundamentals"
    ],
@@ -6973,7 +6973,7 @@ window.SITE_DATA = {
   },
   {
    "finding_id": "F230",
-   "statement": "A coordination performance review should ask partners, organisations and ministries how the sector has functioned, rather than the coordination team assessing itself, so that the resulting evidence can support the case for what needs to change.",
+   "statement": "A coordination performance review should ask partners, organisations and ministries how the sector has worked, rather than the coordination team assessing itself. Evidence gathered that way can support the case for what needs to change.",
    "theme": [
     "ABC",
     "Transition"
@@ -7228,7 +7228,7 @@ window.SITE_DATA = {
   },
   {
    "finding_id": "F241",
-   "statement": "Capacity development runs on funding envelopes shorter and less predictable than the engagement it requires, so it is the depth of the support that gets cut rather than the activity.",
+   "statement": "Capacity development runs on funding shorter and less predictable than the engagement it needs. What gets cut is the depth of the support rather than the activity itself.",
    "theme": [
     "Fundamentals"
    ],
@@ -7887,7 +7887,7 @@ window.SITE_DATA = {
   },
   {
    "finding_id": "F261",
-   "statement": "Running coordination in the local language changed the quality of participation, letting local actors raise issues and set priorities in ways a national-language meeting did not.",
+   "statement": "Running coordination in the local language changed the quality of participation. Local actors raised issues and set priorities in ways a national-language meeting did not allow.",
    "theme": [
     "ABC"
    ],
@@ -8158,7 +8158,7 @@ window.SITE_DATA = {
   },
   {
    "finding_id": "F282",
-   "statement": "National, subnational and area structures frequently lack a shared statement of who leads what, with what mandate, and how something escalates between them. National frameworks do not translate into operational coordination on the ground, and the gaps only become visible once something needs deciding quickly.",
+   "statement": "National, subnational and area structures often have no shared statement of who leads what, with what mandate, and how something gets escalated between them. National frameworks do not translate into coordination on the ground, and the gaps only show up when something has to be decided quickly.",
    "theme": [
     "ABC",
     "Transition"
@@ -8458,7 +8458,7 @@ window.SITE_DATA = {
   },
   {
    "finding_id": "F307",
-   "statement": "Government rarely organises itself the way the sector does. Water may sit with one ministry, sanitation with another, hygiene with neither, so there is no single counterpart able to receive a WASH handover. Sectors with one line ministry move through deactivation markedly faster than those split across two.",
+   "statement": "Government rarely organises itself the way the sector does. Water may sit with one ministry, sanitation with another and hygiene with neither, so there is no single counterpart able to receive a WASH handover. Sectors with one line ministry move through deactivation markedly faster than those split across two.",
    "theme": [
     "Transition"
    ],
@@ -8603,7 +8603,7 @@ window.SITE_DATA = {
   },
   {
    "finding_id": "F316",
-   "statement": "An information management post was requested inside the line ministry so that government holds its own capacity, co-leads the function and helps define what the role covers ahead of the handover.",
+   "statement": "An information management post was requested inside the line ministry so that government holds its own capacity, co-leads the function, and helps define what the role covers before the handover.",
    "theme": [
     "Transition"
    ],
@@ -8665,7 +8665,7 @@ window.SITE_DATA = {
   },
   {
    "finding_id": "F318",
-   "statement": "Government counterparts expected to receive coordination have no information management function of their own, and rely on cluster information to know which partners are working where.",
+   "statement": "Government counterparts expected to receive coordination have no information management function of their own. They rely on cluster information to know which partners are working where.",
    "theme": [
     "Transition"
    ],
@@ -9022,7 +9022,7 @@ window.SITE_DATA = {
   },
   {
    "finding_id": "F324",
-   "statement": "Where development financing was secured for the successor structure, the transition stopped being hostage to the humanitarian funding cycle. The arrangements that worked were specific — sequencing explicitly linked to financing continuity, and multi-year seconded posts paid from development programme funds.",
+   "statement": "Where development financing was secured for the successor structure, the transition stopped depending on the humanitarian funding cycle. The arrangements that worked were specific: sequencing tied explicitly to continued financing, and multi-year seconded posts paid from development programme funds.",
    "theme": [
     "Transition"
    ],
@@ -9582,7 +9582,7 @@ window.SITE_DATA = {
   },
   {
    "finding_id": "F360",
-   "statement": "Partner technical capacity is thin in specific areas, so the question is not who coordinates the work but who is able to do it.",
+   "statement": "Partner technical capacity is thin in particular areas. The question there is not who coordinates the work but who is able to do it at all.",
    "theme": [
     "Fundamentals"
    ],
@@ -11149,7 +11149,7 @@ window.SITE_DATA = {
   },
   {
    "finding_id": "F506",
-   "statement": "Short implementation windows and strict life-saving priority tiers push funding toward supplies and away from the infrastructure the same areas are identified as needing, so the durable work is deferred response after response.",
+   "statement": "Short implementation windows and strict life-saving priority tiers push funding towards supplies and away from the infrastructure the same areas are identified as needing. The durable work is deferred response after response.",
    "theme": [
     "ABC",
     "Transition"
@@ -11222,7 +11222,7 @@ window.SITE_DATA = {
   },
   {
    "finding_id": "F508",
-   "statement": "Where the cluster brings the analysis, it gets a say. Being asked for a matrix of recommended municipalities with the supporting rationale, adding local NGOs to a review committee that had been entirely international, framing the ask around complementarity with nutrition and food security outcomes, and a shared scoring sheet with deliberate reviewer overlap have all moved allocation decisions.",
+   "statement": "Where the cluster brings the analysis, it gets a say. What moved allocation decisions was concrete: a matrix of recommended municipalities with the reasoning behind it, adding local NGOs to a review committee that had been entirely international, framing the ask around complementarity with nutrition and food security, and a shared scoring sheet with deliberate overlap between reviewers.",
    "theme": [
     "Fundamentals"
    ],
@@ -11329,7 +11329,7 @@ window.SITE_DATA = {
   },
   {
    "finding_id": "F513",
-   "statement": "Access and conflict set the limits on what coordination can reach. Armed group control confines communities and cuts access to water sources; a large disaster in a province with no prior cluster presence found no partners established there; and an outbreak runs concurrently with the coordination change rather than waiting for it.",
+   "statement": "Access and conflict set the limits on what coordination can reach. Armed group control confines communities and cuts them off from water sources. A large disaster in a province with no prior cluster presence found no partners established there. An outbreak runs at the same time as the coordination change rather than waiting for it.",
    "theme": [
     "ABC"
    ],
@@ -11406,7 +11406,7 @@ window.SITE_DATA = {
   },
   {
    "finding_id": "F600",
-   "statement": "Structured expert judgement alongside survey data produces a more usable analysis than either alone. Where data quality is uneven or the situation changes fast, state and district coordinators contribute judgement against the survey results; layering historical outbreak and disaster data, infrastructure damage and displaced-to-host ratios onto household findings gives an area-level picture the household survey cannot. Running needs figures, vulnerability analysis and planning as one exercise rather than three engages the same people once.",
+   "statement": "Structured expert judgement alongside survey data produces a more usable analysis than either on its own. Where data quality is uneven or the situation moves fast, state and district coordinators weigh the survey results against what they know. Adding historical outbreak and disaster data, infrastructure damage and displaced-to-host ratios gives an area-level picture the household survey cannot. Running needs figures, vulnerability analysis and planning as one exercise engages the same people once instead of three times.",
    "theme": [
     "Fundamentals"
    ],
@@ -11495,7 +11495,7 @@ window.SITE_DATA = {
   },
   {
    "finding_id": "F608",
-   "statement": "Beneficiary counting has no single basis in WASH, because the two kinds of intervention do not compare: rehabilitating a shared system serves a catchment, while distributing items reaches identifiable people. Without an agreed method the same activity can be counted several ways.",
+   "statement": "There is no single basis for counting people reached in WASH, because the two kinds of work do not compare. Rehabilitating a shared system serves a whole catchment; distributing items reaches identifiable people. Without an agreed method the same activity can be counted several different ways.",
    "theme": [
     "Fundamentals"
    ],
@@ -11572,7 +11572,7 @@ window.SITE_DATA = {
   },
   {
    "finding_id": "F609",
-   "statement": "A working sector reporting system can be bridged to a central platform rather than replaced. Where that option was known, teams kept the system they had invested in and migrated the data instead of abandoning it.",
+   "statement": "A working sector reporting system can be bridged to a central platform rather than replaced. Where teams knew that option existed, they kept the system they had invested in and migrated the data instead of abandoning it.",
    "theme": [
     "ABC",
     "Transition"
@@ -11644,7 +11644,7 @@ window.SITE_DATA = {
   },
   {
    "finding_id": "F613",
-   "statement": "There is often no usable baseline to measure need against. Censuses predate the crisis by close to a decade, no in-depth severity analysis has been produced nationally for years, and where the joint assessment was not run the response plan rested on secondary data alone — or on small exercises by regional directorates covering no one systematically.",
+   "statement": "There is often no usable baseline to measure need against. Censuses predate the crisis by close to a decade. No in-depth severity analysis has been produced nationally for years. Where the joint assessment was not run, the response plan rested on secondary data alone, or on small exercises by regional directorates covering nobody systematically.",
    "theme": [
     "Fundamentals"
    ],
@@ -11802,7 +11802,7 @@ window.SITE_DATA = {
   },
   {
    "finding_id": "F618",
-   "statement": "Allocation processes move faster than the analysis behind them. Localities have been selected within forty-eight hours on a model the cluster had not seen; strategy changed repeatedly inside a single round; several proposals arrive to be assessed in a day; and global guidance that existed was not passed on in country. Rapid entry and exit from communities follows, which carries its own risk of harm.",
+   "statement": "Allocation moves faster than the analysis behind it. Localities have been selected within forty-eight hours on a model the cluster had never seen. Strategy changed repeatedly inside a single round. Several proposals arrive to be assessed in a day, and global guidance that did exist was not passed on in country. Rapid entry and exit from communities follows, which carries its own risk of harm.",
    "theme": [
     "Fundamentals"
    ],
@@ -12032,7 +12032,7 @@ window.SITE_DATA = {
   },
   {
    "finding_id": "F700",
-   "statement": "Transitions in progress are being sequenced in recognisable ways: the line ministry takes the lead with an NGO co-coordinator alongside, international posts are nationalised, co-chairing is introduced at subnational then national level, and a roadmap is validated with the ministry before workshops begin.",
+   "statement": "Transitions in progress are being sequenced in recognisable ways. The line ministry takes the lead with an NGO co-coordinator alongside. International posts are nationalised. Co-chairing is introduced at subnational level first, then national. A roadmap is validated with the ministry before workshops begin.",
    "theme": [
     "Transition"
    ],
@@ -12124,7 +12124,7 @@ window.SITE_DATA = {
   },
   {
    "finding_id": "F708",
-   "statement": "An outbreak crossing a shared border is reported from both sides, but each country coordinates through its own platform and no forum convenes the neighbours together.",
+   "statement": "An outbreak crossing a shared border is reported from both sides, but each country coordinates through its own platform and no forum brings the neighbours together.",
    "theme": [
     "Fundamentals"
    ],
@@ -12193,7 +12193,7 @@ window.SITE_DATA = {
   },
   {
    "finding_id": "F802",
-   "statement": "Planned coordination work is repeatedly displaced by emergency and process demands. Commitments carried in the workplan for years remain unstarted, because each year something arrives that cannot be deferred.",
+   "statement": "Planned coordination work is repeatedly pushed aside by emergencies and process demands. Commitments carried in the workplan for years are never started, because each year something arrives that cannot be put off.",
    "theme": [
     "Fundamentals"
    ],
@@ -12661,7 +12661,7 @@ window.SITE_DATA = {
   },
   {
    "finding_id": "F910",
-   "statement": "The joint assessment rarely covers what the sector needs. Coverage stops short of nationwide and the excluded areas are often those most changed by the conflict; the number of sector questions is capped, so only a fraction of a standard measure fits; whether host communities are included stays unresolved; and clusters that contributed questions have then been left out of enumerator training. Two parallel population assessments may run at once covering different groups.",
+   "statement": "The joint assessment rarely covers what the sector needs. Coverage stops short of the whole country, and the areas left out are often those the conflict changed most. The number of sector questions is capped, so only part of a standard measure fits. Whether host communities are included goes unresolved. Clusters that wrote the questions have then been left out of enumerator training. Two population assessments may run at once covering different groups.",
    "theme": [
     "Fundamentals"
    ],
