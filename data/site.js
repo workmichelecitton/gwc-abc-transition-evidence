@@ -115,7 +115,7 @@ window.SITE_DATA = {
  "generated": "2026-09-11",
  "taxonomy_version": "0.9.0",
  "stats": {
-  "records": 740,
+  "records": 741,
   "findings": 176,
   "sources": 112,
   "countries": 30,
@@ -6465,14 +6465,20 @@ window.SITE_DATA = {
    "example": "South Sudan — the country is divided into zones led permanently by UN organisations, which the coordination team distinguished from area-based coordination as described in global guidance.",
    "type": "context",
    "strength": 4,
-   "n_records": 5,
-   "n_sources": 4,
-   "n_documents": 4,
+   "n_records": 6,
+   "n_sources": 5,
+   "n_documents": 5,
    "counted_sources": [
     {
      "group": "S015",
      "source_ids": [
       "S015"
+     ]
+    },
+    {
+     "group": "S030",
+     "source_ids": [
+      "S030"
      ]
     },
     {
@@ -6495,12 +6501,12 @@ window.SITE_DATA = {
     }
    ],
    "n_streams": 4,
-   "n_checked": 5,
+   "n_checked": 6,
    "relations": [],
-   "period": "2024 – Aug 2026",
-   "period_from": "2024",
+   "period": "2023 – Aug 2026",
+   "period_from": "2023",
    "period_to": "Aug 2026",
-   "period_span": 2,
+   "period_span": 3,
    "streams": [
     "sdr",
     "search",
@@ -6509,16 +6515,19 @@ window.SITE_DATA = {
    ],
    "countries": [
     "CMR",
+    "MMR",
     "SSD"
    ],
    "tags": [
     "coordination-architecture",
+    "geographic-targeting",
     "guidance",
     "transition-handover"
    ],
    "actors": [
     "cluster",
     "gov-national",
+    "ingo",
     "ocha",
     "operational-cell",
     "un-agency"
@@ -6528,7 +6537,8 @@ window.SITE_DATA = {
     "E0608",
     "E0617",
     "E0674",
-    "E0683"
+    "E0683",
+    "E0792"
    ],
    "unmerged": false,
    "highlight": {
@@ -8364,13 +8374,19 @@ window.SITE_DATA = {
    "type": "enabler",
    "strength": 4,
    "n_records": 4,
-   "n_sources": 3,
+   "n_sources": 4,
    "n_documents": 4,
    "counted_sources": [
     {
      "group": "S029",
      "source_ids": [
       "S029"
+     ]
+    },
+    {
+     "group": "S030",
+     "source_ids": [
+      "S030"
      ]
     },
     {
@@ -8387,7 +8403,7 @@ window.SITE_DATA = {
     }
    ],
    "n_streams": 3,
-   "n_checked": 3,
+   "n_checked": 4,
    "relations": [],
    "period": "Oct 2020 – 2026",
    "period_from": "Oct 2020",
@@ -10883,7 +10899,7 @@ window.SITE_DATA = {
     }
    ],
    "n_streams": 3,
-   "n_checked": 7,
+   "n_checked": 8,
    "relations": [],
    "period": "2023 – Jul 2026",
    "period_from": "2023",
@@ -17828,7 +17844,7 @@ window.SITE_DATA = {
     "Transition"
    ],
    "type": "enabler",
-   "statement": "Recruiting and training subnational cluster coordinators working in the national language proved highly constructive for local coordination quality.",
+   "statement": "Recruiting and training local subnational cluster coordinators so that coordination could run in Myanmar language was judged very constructive — and the same passage says it did not by itself deliver local ownership.",
    "level": "subnational",
    "countries": [
     "MMR"
@@ -17845,7 +17861,7 @@ window.SITE_DATA = {
    "source_id": "S030",
    "date_collected": "2026-07-17",
    "confidence": "medium",
-   "status": "draft",
+   "status": "validated",
    "year": 2023
   },
   {
@@ -17957,10 +17973,9 @@ window.SITE_DATA = {
     "ABC"
    ],
    "type": "enabler",
-   "statement": "Conducting coordination in the local language transformed the quality of participation, allowing local actors to raise issues and flag priorities in ways national-level platforms in other languages did not permit.",
+   "statement": "Language is named as a critical barrier to local organisations taking part, with interpretation in meetings and translation of key documents treated as what makes inclusion in coordination structures possible at all.",
    "level": "subnational",
    "countries": [
-    "PSE",
     "MMR"
    ],
    "actors": [
@@ -17975,7 +17990,7 @@ window.SITE_DATA = {
    "source_id": "S030",
    "date_collected": "2026-07-17",
    "confidence": "high",
-   "status": "draft",
+   "status": "validated",
    "year": 2023
   },
   {
@@ -33372,6 +33387,35 @@ window.SITE_DATA = {
    "confidence": "high",
    "status": "validated",
    "year": 2025
+  },
+  {
+   "id": "E0792",
+   "finding_id": "F210",
+   "theme": [
+    "ABC"
+   ],
+   "type": "context",
+   "statement": "One country runs several different area-based arrangements at once: general coordination meetings and an area humanitarian coordination team in one region, and in another a small secretariat staffed jointly by the NGO forum, the coordination office and a UN agency.",
+   "level": "subnational",
+   "countries": [
+    "MMR"
+   ],
+   "actors": [
+    "ocha",
+    "ingo",
+    "un-agency",
+    "cluster"
+   ],
+   "tags": [
+    "coordination-architecture",
+    "geographic-targeting"
+   ],
+   "stream": "sdr",
+   "source_id": "S030",
+   "date_collected": "2026-09-11",
+   "confidence": "high",
+   "status": "validated",
+   "year": 2023
   }
  ],
  "sources": [
@@ -33662,18 +33706,18 @@ window.SITE_DATA = {
   },
   {
    "source_id": "S030",
-   "title": "Humanitarian Response Plan Myanmar 2023",
+   "title": "Myanmar Humanitarian Response Plan 2023",
    "organisation": "OCHA",
-   "year": "2023",
+   "year": "2023-01",
    "type": "strategy",
-   "url": "",
+   "url": "https://www.unocha.org/publications/report/myanmar/myanmar-humanitarian-response-plan-2023-january-2023",
    "stream": "sdr",
    "date_added": "2026-07-17",
    "access": "public",
    "legacy_id": "ABC-S18",
    "source_group": "",
    "label": "OCHA 2023",
-   "reference": "OCHA. (2023). Humanitarian Response Plan Myanmar 2023."
+   "reference": "OCHA. (2023). Myanmar Humanitarian Response Plan 2023. https://www.unocha.org/publications/report/myanmar/myanmar-humanitarian-response-plan-2023-january-2023"
   },
   {
    "source_id": "S031",
