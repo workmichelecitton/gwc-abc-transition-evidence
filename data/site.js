@@ -112,7 +112,7 @@ window.SITE_DATA = {
   "footer_note": "Every finding traces to a source ID in the Sources tab. If something looks wrong, it probably is — say so and it will be corrected."
  },
  "schema": 3,
- "generated": "2026-09-10",
+ "generated": "2026-09-11",
  "taxonomy_version": "0.9.0",
  "stats": {
   "records": 736,
@@ -737,7 +737,7 @@ window.SITE_DATA = {
  "findings": [
   {
    "finding_id": "F001",
-   "statement": "Information and decisions route around the cluster. Where area structures report upward through a separate operational cell, the same needs information travels a longer path before reaching anyone who can act on it; where subnational coordinators are approached directly, the national team cannot see what has been asked or answered.",
+   "statement": "Information and decisions go around the cluster. Where area structures report upward through a separate operational cell, needs information takes a longer route before it reaches anyone who can act on it. Where subnational coordinators are approached directly, the national team cannot see what was asked or answered.",
    "theme": [
     "ABC"
    ],
@@ -1078,7 +1078,7 @@ window.SITE_DATA = {
   },
   {
    "finding_id": "F019",
-   "statement": "Coordinator and information management posts are reduced before programme staff when budgets fall. Because coordination is funded agency by agency rather than as a shared function, capacity varies between sectors in the same operation.",
+   "statement": "Coordinator and information posts are cut ahead of programme staff. About half of WASH coordination and information capacity worldwide has been affected. Subnational posts paid through partner agreements are quietly not renewed.",
    "theme": [
     "Fundamentals"
    ],
@@ -1314,7 +1314,7 @@ window.SITE_DATA = {
   },
   {
    "finding_id": "F024",
-   "statement": "Readiness to take on coordination varies sharply below national level, even where national arrangements are agreed. Some sub-national authorities convene and document coordination and others do not, so a single national handover date lands on very different starting points.",
+   "statement": "Readiness below national level varies sharply, even where national arrangements are agreed. Some subnational authorities convene and record coordination and others do not. A single national handover date then lands on very different starting points.",
    "theme": [
     "Transition"
    ],
@@ -1396,7 +1396,7 @@ window.SITE_DATA = {
   },
   {
    "finding_id": "F026",
-   "statement": "Structured peer exchange is asked for repeatedly, across very different contexts, and works where it is actually run. Coordinators in transition are answering the same questions in parallel without contact. No guidance product substitutes for it.",
+   "statement": "The same request comes up in very different places: put us in touch with countries facing what we face. Governments ask to visit places that have already been through a handover. Coordinators ask how others manage the relationship between clusters and area structures.",
    "theme": [
     "ABC",
     "Transition"
@@ -1528,7 +1528,7 @@ window.SITE_DATA = {
   },
   {
    "finding_id": "F027",
-   "statement": "Incoming coordinators frequently arrive without a handover and rebuild the picture from shared drives. Where a link to another structure runs through one person rather than an institutional arrangement, it ends when they leave.",
+   "statement": "New coordinators often arrive with no handover and rebuild the picture from shared drives. Where a link to another structure runs through one person rather than a written arrangement, it ends when that person leaves.",
    "theme": [
     "Fundamentals"
    ],
@@ -1612,7 +1612,7 @@ window.SITE_DATA = {
   },
   {
    "finding_id": "F028",
-   "statement": "Information management capacity is reduced earlier and further than other coordination capacity. What is lost is analytical: partner reporting keeps arriving while the products that make it usable fall behind.",
+   "statement": "When budgets shrink, information posts go before any others. They are downgraded, left empty, or handed to volunteers. By the time a handover is being planned, the systems and the memory needed to plan it have already gone.",
    "theme": [
     "Fundamentals"
    ],
@@ -2285,7 +2285,7 @@ window.SITE_DATA = {
   },
   {
    "finding_id": "F1015",
-   "statement": "Where localisation is being measured rather than asserted, the tools are concrete: a capacity assessment scoring the sector against localisation commitments with global support, partner capacity mapping focused on local NGOs and women-led organisations, national NGOs co-coordinating at subnational level, and national organisations leading the country assessment programme or chairing the outbreak technical group.",
+   "statement": "Where localisation is measured rather than asserted, the tools are concrete: a capacity assessment scoring the sector against localisation commitments, partner capacity mapping focused on local NGOs and women-led organisations, national NGOs co-coordinating at subnational level, and national organisations leading the country assessment programme or chairing the outbreak technical group.",
    "theme": [
     "ABC",
     "Transition"
@@ -2451,7 +2451,7 @@ window.SITE_DATA = {
   },
   {
    "finding_id": "F107",
-   "statement": "Keep a direct relationship with line ministries, independent of whether a transition is under way. What moved engagement was practical: joint agenda setting, inviting ministry representatives to chair coordination meetings, field missions to meet newly appointed officials after briefing them first, and switching counterpart where the formal ministry proved not to be operational in emergencies.",
+   "statement": "What moved government engagement was ordinary and unglamorous: setting agendas together, inviting ministry staff to chair coordination meetings, field visits to meet newly appointed officials after briefing them first, and switching counterpart where the formal ministry turned out not to operate in emergencies.",
    "theme": [
     "Transition"
    ],
@@ -3067,7 +3067,7 @@ window.SITE_DATA = {
   },
   {
    "finding_id": "F1308",
-   "statement": "Assessment systems owned by government rather than by the humanitarian sector survive the cluster. A government-developed water point assessment capturing access at small administrative level, a government-owned aid information system, and a ministry-owned facility assessment covering what is operating and what is missing are all being built as national infrastructure. Facility and asset mapping is among the most effective bridges to development actors, because it produces something they need anyway.",
+   "statement": "Assessment systems owned by government outlast the cluster. A government water point assessment, a government-owned aid information system and a ministry-owned facility assessment are all being built as national infrastructure. Facility and asset mapping is one of the strongest bridges to development actors, because it gives them something they need anyway.",
    "theme": [
     "Transition"
    ],
@@ -3150,7 +3150,7 @@ window.SITE_DATA = {
   },
   {
    "finding_id": "F1404",
-   "statement": "WASH loses allocation arguments it should win. It is not treated as a priority in national decision-making or in humanitarian resource allocation even where it registers as a need; it goes unprioritised in pooled fund rounds, obliging the cluster to lobby other sectors to embed WASH activities in their proposals; and where a single strategic outcome is set above sector level, the gaps that fall outside it stay unfunded.",
+   "statement": "WASH is not treated as a priority in national decision-making or in humanitarian funding, even where the need registers clearly. It goes unfunded in pooled fund rounds, leaving the cluster to ask other sectors to carry WASH activities in their proposals. Where a single strategic outcome is set above sector level, anything outside it stays unfunded.",
    "theme": [
     "Fundamentals"
    ],
@@ -3365,7 +3365,7 @@ window.SITE_DATA = {
   },
   {
    "finding_id": "F1711",
-   "statement": "Information continuity is the first thing to degrade and the most immediately felt: coordinators ranked it ahead of funding. As mechanisms restructure, information flows break and the evidence base becomes hard to maintain at exactly the point transition decisions depend on it.",
+   "statement": "Information continuity breaks first and is felt soonest. Coordinators ranked it ahead of funding. As structures change, information flows break and the evidence base becomes hard to maintain, at exactly the point transition decisions depend on it.",
    "theme": [
     "Transition"
    ],
@@ -3444,7 +3444,7 @@ window.SITE_DATA = {
   },
   {
    "finding_id": "F1712",
-   "statement": "Structures at community level connect coordination directly to delivery and improve alignment across sectors, and agencies with strong local presence have used them to lead joint access negotiations that a national platform could not.",
+   "statement": "Structures at community level link coordination directly to delivery and improve alignment across sectors. Agencies with a strong local presence have used them to lead joint access negotiations that a national platform could not.",
    "theme": [
     "ABC"
    ],
@@ -3681,7 +3681,7 @@ window.SITE_DATA = {
   },
   {
    "finding_id": "F1727",
-   "statement": "A cluster lead holding both funding or operational responsibility inside its own agency and the mandate to coordinate that agency's work carries a structural conflict of interest, which is separate from the workload question usually raised about double-hatting.",
+   "statement": "A cluster lead that holds funding or operational responsibility inside its own agency, and also the mandate to coordinate that agency's work, carries a built-in conflict of interest. That is a separate problem from the workload usually raised about double-hatting.",
    "theme": [
     "ABC",
     "Fundamentals"
@@ -5792,7 +5792,7 @@ window.SITE_DATA = {
   },
   {
    "finding_id": "F203",
-   "statement": "Parallel coordination and implementation channels persist alongside the formal structures, and adding an area-based layer in a context that already has an intersectoral tier has increased complexity rather than reduced it. Actors work in the same areas without harmonised planning frameworks.",
+   "statement": "An area-based layer was meant to reduce fragmentation. Where an intersectoral tier already existed, it added another set of meetings instead. The informal channels that prompted the reform carried on alongside all of it.",
    "theme": [
     "ABC"
    ],
@@ -5888,7 +5888,7 @@ window.SITE_DATA = {
   },
   {
    "finding_id": "F209",
-   "statement": "Area-based structures work alongside cluster coordination where the roles and linkages between them are explicit. What determines effectiveness is not whether the structure exists but how it is configured — clear mandates, a defined information architecture, and a stated division of labour. Where subnational cluster coordination was weak or absent, area-based programming still adhered to cluster technical guidance.",
+   "statement": "Area structures and clusters work alongside each other well where the roles and links between them are written down. Where they are not, the same two structures duplicate work and leave gaps. The evidence does not deliver a verdict on area-based coordination as a whole. It delivers one on how it is set up.",
    "theme": [
     "ABC"
    ],
@@ -6044,7 +6044,7 @@ window.SITE_DATA = {
   },
   {
    "finding_id": "F210",
-   "statement": "What is called area-based coordination differs enormously between contexts. In one it is a permanent division of the country into zones each led by a UN organisation covering two or three states; in another it is organised around transition, durable solutions and peace rather than around operational service coordination.",
+   "statement": "What people call area-based coordination differs enormously between countries. In one it is a permanent division of the country into zones, each led by a UN organisation covering two or three states. In another it is organised around transition, durable solutions and peace rather than around day-to-day service coordination.",
    "theme": [
     "ABC"
    ],
@@ -6126,7 +6126,7 @@ window.SITE_DATA = {
   },
   {
    "finding_id": "F211",
-   "statement": "Parallel information systems prevent joint analysis. Needs data arrives through several unaligned channels on different cycles, intersectoral projects have to be reported separately under each sector so an integrated project never appears as one, and platform migrations ask partners to re-enter work retroactively.",
+   "statement": "Needs data arrives through channels that do not line up, on cycles that do not match planning. Projects covering several sectors have to be reported separately under each one, so an integrated project never appears anywhere as a single thing. New platforms ask partners to re-enter months of work.",
    "theme": [
     "Fundamentals"
    ],
@@ -6252,7 +6252,7 @@ window.SITE_DATA = {
   },
   {
    "finding_id": "F214",
-   "statement": "Two reporting architectures run at once. A platform built in-country and shared across sectors sits alongside a new central module asking partners for the same thing, and separate government or outbreak-specific collections are added on top — so partners report several times and it becomes unclear which figure is authoritative.",
+   "statement": "Where a central platform runs alongside cluster reporting, partners enter the same activity in both. Reporting is the first thing partners drop when overloaded, so data quality falls in both systems rather than one.",
    "theme": [
     "ABC",
     "Transition"
@@ -6499,7 +6499,7 @@ window.SITE_DATA = {
   },
   {
    "finding_id": "F220",
-   "statement": "Decisions needing sector expertise — indicator selection, assessment methodology, response modality, technical standards — are increasingly taken in structures that do not hold that expertise, and quality assurance is correspondingly weak. Three cluster functions in particular have not been replicated by area structures: technical leadership, data analysis and sector-level advocacy. This matters more for WASH than for most sectors, because errors in water quality or cholera response cause harm quickly.",
+   "statement": "Decisions that need sector expertise are increasingly taken in structures that do not have it: choosing indicators, assessment methods, response modality, technical standards. Quality assurance is weak as a result. Three cluster functions in particular have not been replicated by area structures: technical leadership, data analysis and sector advocacy. This matters more for WASH than for most sectors, because mistakes in water quality or cholera response cause harm quickly.",
    "theme": [
     "ABC"
    ],
@@ -6674,7 +6674,7 @@ window.SITE_DATA = {
   },
   {
    "finding_id": "F225",
-   "statement": "Coordination below national level is sustained almost everywhere by people who already hold another full-time role. Functions keep being added to structures whose staffing has not grown.",
+   "statement": "Almost no country has dedicated staff for coordination below national level. The work is added to people who already hold full-time jobs. Where posts do exist, they are among the first cut. Meanwhile more tasks keep being handed to structures whose staffing has not grown.",
    "theme": [
     "Fundamentals"
    ],
@@ -6858,7 +6858,7 @@ window.SITE_DATA = {
   },
   {
    "finding_id": "F227",
-   "statement": "There is no agreed inter-agency definition of area-based coordination, so structures are stood up without a standard mandate and without agreed rules on who participates, who decides and how priorities are set. Arrangements have appeared that were in no published guidance, and countries cannot tell whether what they have counts as the same thing.",
+   "statement": "Area structures are often stood up with no agreed mandate and no rules on who takes part, who decides, or how priorities are set. Units have been activated across a country and then asked clusters what they were supposed to do. Where the rules are missing, influence follows whoever speaks most and whoever brings money. Bringing in local actors does not fix that on its own, because they bring their own hierarchies too.",
    "theme": [
     "ABC"
    ],
@@ -7072,7 +7072,7 @@ window.SITE_DATA = {
   },
   {
    "finding_id": "F234",
-   "statement": "Funding stays centralised, which is what keeps local actors out of coordination rather than any question of their capability. Material costs are a structural barrier to national and local NGO participation, most of an allocation reaching the sector still goes to UN agencies, and cost differentials make localisation an attractive framing for a shrinking response without the funding architecture changing to match.",
+   "statement": "Local actors are not kept out of coordination because anyone doubts they are capable. They are kept out because taking part costs money, and because most of what reaches the sector still goes to UN agencies. Lower costs then make localisation an attractive way to shrink a response, without the funding system changing to match.",
    "theme": [
     "Fundamentals"
    ],
@@ -7279,7 +7279,7 @@ window.SITE_DATA = {
   },
   {
    "finding_id": "F243",
-   "statement": "Nobody agreed who resources area-based structures. The terms of reference and the accompanying guidance differ on the point, so it falls between them; dedicated coordination platforms have had to be created precisely because no funding mechanism supports integrated working; and aligning financial flows with area-based targeting has proved consistently difficult.",
+   "statement": "Nobody agreed who pays for area-based structures. The terms of reference and the guidance differ on the point, so it falls between them. Dedicated platforms have had to be created because no funding mechanism supports integrated working, and matching money to area-based targeting has proved consistently hard.",
    "theme": [
     "ABC"
    ],
@@ -7405,7 +7405,7 @@ window.SITE_DATA = {
   },
   {
    "finding_id": "F251",
-   "statement": "Dedicated coordination capacity placed where delivery happens improves alignment, strengthens engagement with local authorities, and gives a sector enough standing to question parallel structures when they are proposed.",
+   "statement": "Putting dedicated coordination capacity where delivery happens improves alignment, strengthens work with local authorities, and gives a sector enough standing to question parallel structures when they are proposed.",
    "theme": [
     "ABC"
    ],
@@ -7528,7 +7528,7 @@ window.SITE_DATA = {
   },
   {
    "finding_id": "F258",
-   "statement": "Local actors chair and participate, but the terms are set elsewhere. Paid coordinator posts have been created alongside elected chairs with job descriptions drafted centrally; language barriers and untranslated materials keep local actors out of substantive discussion; and local organisations remain marginal in the design of transition, as distinct from its implementation.",
+   "statement": "Paid coordinator posts are created alongside elected chairs, with the job descriptions written centrally. Untranslated material and language barriers keep local actors out of the substantive discussion. Local organisations stay marginal in designing a transition, even where they carry it out. The position is local; the decisions shaping it are not.",
    "theme": [
     "ABC",
     "Transition"
@@ -7629,7 +7629,7 @@ window.SITE_DATA = {
   },
   {
    "finding_id": "F259",
-   "statement": "Local actors take formal leadership roles, but ownership of the response is a further step that is rarely reached. Appointing local NGOs as co-chairs measurably increases wider participation, and a national organisation sustaining interest in co-leadership over a year gives the sector a real candidate rather than a theoretical one. Getting beyond that to ownership requires international actors to strengthen local decision-making processes rather than run their own alongside — a study of twelve cases found it achieved in one.",
+   "statement": "Local actors take formal leadership roles often enough. Full ownership of the response is a further step, and it is rarely reached. Where it moved at all, international actors backed local decision-making rather than keeping a parallel process running next to it. Appointing local NGOs as co-chairs does measurably increase wider participation.",
    "theme": [
     "ABC",
     "Transition"
@@ -7749,7 +7749,7 @@ window.SITE_DATA = {
   },
   {
    "finding_id": "F260",
-   "statement": "Local actors are consistently present in area structures and consistently without power in them. Formal presence without decision-making authority adds reporting workload while leaving influence over priorities and resources unchanged.",
+   "statement": "Being in the room is not the same as deciding anything. Local actors are reliably present in area structures and reliably without authority in them. The structure adds a reporting duty while leaving decisions about priorities and money exactly where they were.",
    "theme": [
     "ABC"
    ],
@@ -7934,7 +7934,7 @@ window.SITE_DATA = {
   },
   {
    "finding_id": "F263",
-   "statement": "Shared data systems and harmonised assessment frameworks are what make joint analysis and coherent prioritisation possible — and coordinators ranked improved data sharing as the single strongest enabler of area-based coordination, with fragmentation of data and governance as the strongest barrier.",
+   "statement": "Shared data systems and common assessment frameworks are what make joint analysis and sensible prioritisation possible. Coordinators ranked better data sharing as the single strongest enabler of area-based coordination, and fragmented data and governance as the strongest barrier.",
    "theme": [
     "ABC",
     "Fundamentals"
@@ -8224,7 +8224,7 @@ window.SITE_DATA = {
   },
   {
    "finding_id": "F283",
-   "statement": "Shifting from an internationally led to a nationally anchored system leaves governance gaps: some functions are duplicated across several successor arrangements, others quietly disappear, and the gaps surface only once something needs deciding. Local forums lost in the process are slow and incomplete to rebuild.",
+   "statement": "When coordination moves from international to national hands, some tasks end up being done twice and others simply stop. This happens because nobody wrote down what was being done in the first place.",
    "theme": [
     "Transition"
    ],
@@ -8327,7 +8327,7 @@ window.SITE_DATA = {
   },
   {
    "finding_id": "F304",
-   "statement": "Coordination runs beside government systems rather than inside them, which stalls the move to national leadership. Government maintains its own monitoring platform and collects partner data separately while the cluster system is still running, producing duplicate reporting; data the cluster needs sits in national registries it cannot readily access; and the ministry has not taken on convening the meeting it is meant to lead.",
+   "statement": "Government keeps its own monitoring platform and collects partner data separately while the cluster system is still running, so partners report twice. Data the cluster needs sits in national registries it cannot easily reach. The ministry has not taken on convening the meeting it is meant to lead. Each of these stalls national leadership rather than moving towards it.",
    "theme": [
     "Transition"
    ],
@@ -8509,7 +8509,7 @@ window.SITE_DATA = {
   },
   {
    "finding_id": "F310",
-   "statement": "The architecture changes without anyone deciding to change it. Platforms are reduced from two levels to one while the response target grows, ministry reforms dissolve the counterpart body the cluster worked with, and the closure of an NGO coordination committee removes collective NGO coordination — none of it framed as a deactivation decision.",
+   "statement": "The architecture changes without anyone deciding to change it. Platforms drop from two levels to one while the target grows. Ministry reforms dissolve the counterpart body the cluster worked with. An NGO coordination committee closes and collective NGO coordination goes with it. None of it is framed as a deactivation decision.",
    "theme": [
     "Transition"
    ],
@@ -8712,7 +8712,7 @@ window.SITE_DATA = {
   },
   {
    "finding_id": "F319",
-   "statement": "Where the response plan is not the language of government, data often is. Information management support that adds value to government's own reporting gains traction where coordination advocacy does not.",
+   "statement": "Where the response plan is not the language of government, data often is. Information management support that adds value to government's own reporting gets traction where coordination advocacy does not.",
    "theme": [
     "Transition"
    ],
@@ -8781,7 +8781,7 @@ window.SITE_DATA = {
   },
   {
    "finding_id": "F320",
-   "statement": "Information assets can be sorted deliberately rather than handed over as a bundle: what should align with government systems from the start — master facility lists, asset inventories — separated from what is internal to humanitarian coordination, and built jointly so it remains useful to the receiving institution.",
+   "statement": "Information assets can be sorted deliberately instead of handed over as a bundle. Separate what should align with government systems from the start, such as master facility lists and asset inventories, from what is internal to humanitarian coordination. Build the first jointly, so it stays useful to the institution receiving it.",
    "theme": [
     "Transition"
    ],
@@ -8902,7 +8902,7 @@ window.SITE_DATA = {
   },
   {
    "finding_id": "F323",
-   "statement": "What survives after transition is decided by public finance, not by humanitarian funding. Currency collapse left utilities unable to fund basic operations even after internationally financed repairs; recovery financing stayed blocked for years behind political deadlock; and development and reconstruction finance is channelled through UN agencies because it cannot be given directly. Where the investment did change the economics — replacing emergency trucking with solarised piped systems — the cost per cubic metre fell by more than 90 per cent.",
+   "statement": "Currency collapse left utilities unable to pay for basic operations, even after repairs financed internationally. Recovery money stayed blocked for years behind political deadlock. Reconstruction finance goes through UN agencies because it cannot be given directly. Where investment changed the economics — replacing emergency trucking with solar-powered piped systems — cost per cubic metre fell by more than ninety per cent.",
    "theme": [
     "Transition"
    ],
@@ -9069,7 +9069,7 @@ window.SITE_DATA = {
   },
   {
    "finding_id": "F333",
-   "statement": "The deactivation timetable is set by something other than readiness — a contract end date, a support window, a budget cycle — and then everything else is compressed to fit it. Criteria get agreed after plans are drafted, or not at all.",
+   "statement": "Handover dates are set by when a contract or funding line ends, not by whether the receiving institution can take the work on. The two are unrelated, but only one of them appears in the decision.",
    "theme": [
     "Transition"
    ],
@@ -9226,7 +9226,7 @@ window.SITE_DATA = {
   },
   {
    "finding_id": "F335",
-   "statement": "Funding is the third and undeclared factor in deactivation decisions. The stated basis is needs and capacity, but the trigger is usually a shortfall — and because the decision is taken outside the country, coordinators rank it low among barriers while still living with its consequences.",
+   "statement": "Clusters are closing because funding runs out, not because national systems are ready to take over. This one fact drives many of the others: planning gets rushed, steps get skipped, and the structure comes apart all at once.",
    "theme": [
     "Transition"
    ],
@@ -9354,7 +9354,7 @@ window.SITE_DATA = {
   },
   {
    "finding_id": "F346",
-   "statement": "Preparation that worked started earlier and in the right order: reconstruct how the structure was formed and how earlier transitions went, run the stakeholder and willingness analysis before drafting the strategy, then produce a costed transfer plan with risk analysis and an inventory of what is being handed over — developed with the receiving institution rather than for it.",
+   "statement": "Preparation that worked started earlier and in a different order. First reconstruct how the structure was formed and how earlier transitions went. Then run the stakeholder and willingness analysis, before drafting the strategy. Then produce a costed transfer plan with risks and an inventory of what is being handed over, developed with the receiving institution rather than for it.",
    "theme": [
     "Transition"
    ],
@@ -9494,7 +9494,7 @@ window.SITE_DATA = {
   },
   {
    "finding_id": "F356",
-   "statement": "Successor reporting systems should be lean, digital and mobile-first rather than replicas of cluster tools. Simplifying the partner template while keeping the same system reduces what is asked of partners without losing the data, and maintaining the same figures in more than one format at once accommodates partners with different technical capacity.",
+   "statement": "Successor reporting systems should be light, digital and built for phones, not copies of cluster tools. Simplifying the partner template while keeping the same system asks less of partners without losing the data. Keeping the same figures in more than one format lets partners with different technical capacity take part.",
    "theme": [
     "Transition"
    ],
@@ -9628,7 +9628,7 @@ window.SITE_DATA = {
   },
   {
    "finding_id": "F361",
-   "statement": "The structures expected to receive coordination are rarely resourced to do it: commonly one trained focal point, no information management function, and no institutional home for humanitarian coordination.",
+   "statement": "Governments often nominate someone who already has a full-time job, with no information support behind them and no home for humanitarian work in their institution. The same happens where the successor is a national NGO or a public utility. One transition plan set a target that five months of emergency showed to be beyond them, and is being reopened.",
    "theme": [
     "Transition"
    ],
@@ -9740,7 +9740,7 @@ window.SITE_DATA = {
   },
   {
    "finding_id": "F362",
-   "statement": "Coordination capacity placed inside government does not automatically carry authority. Placement and integration are separate things, and the second is what has to be negotiated.",
+   "statement": "Coordination capacity placed inside government does not automatically carry authority. Placement and integration are two different things, and the second is the one that has to be negotiated.",
    "theme": [
     "Transition"
    ],
@@ -9814,7 +9814,7 @@ window.SITE_DATA = {
   },
   {
    "finding_id": "F364",
-   "statement": "Government leadership rests on individual counterparts. A reshuffle moves the trained official and the case for coordination has to be made again from the start. Capacity behaves as a flow that rotation drains, not a stock that training builds once.",
+   "statement": "Relationships with government are usually built with particular people. When a ministry reorganises or an election changes the team, the relationship goes with them. The case for coordination then has to be made again, often to officials who do not yet see the point.",
    "theme": [
     "Fundamentals"
    ],
@@ -10020,7 +10020,7 @@ window.SITE_DATA = {
   },
   {
    "finding_id": "F373",
-   "statement": "The endpoint cannot be assumed to be government. Depending on context it may be a national institution with durable funding, a national society, or a development platform — and where a national organisation simply replaces an international one doing the same work with the same funding, it is worth asking what was actually transitioned. A national NGO may not exist the following year, which makes it a less durable endpoint than an institution with independent funding.",
+   "statement": "The endpoint cannot be assumed to be government. Depending on the country it may be a national institution with its own funding, a national society, or a development platform. Where a national organisation simply replaces an international one doing the same work with the same money, it is worth asking what was actually transferred. A national NGO may not exist next year, which makes it a less durable endpoint than an institution with independent funding.",
    "theme": [
     "Transition"
    ],
@@ -10100,7 +10100,7 @@ window.SITE_DATA = {
   },
   {
    "finding_id": "F374",
-   "statement": "Willingness is a separate question from capacity, and it is rarely assessed. Government may be unwilling to take responsibility for particular population groups, may be a party to the conflict, or may bring political alignment into allocation decisions. A transition without a viable, neutral and willing counterpart does not transfer coordination — it dissolves it.",
+   "statement": "Capacity is always assessed. Willingness rarely is. A government may be unable to take a role, or unwilling to take responsibility for particular groups, or a party to the conflict, or inclined to let politics shape who gets what. Coordinators were clear that this is a separate question, and the one usually left unasked.",
    "theme": [
     "Transition"
    ],
@@ -10207,7 +10207,7 @@ window.SITE_DATA = {
   },
   {
    "finding_id": "F378",
-   "statement": "Successor arrangements that held had a written terms of reference, named participants including the line ministry and development financing actors, and a home inside a structure that already existed and would outlast the cluster — rather than a new body created for the purpose.",
+   "statement": "Successor arrangements that held had three things: a written terms of reference, named participants including the line ministry and development funders, and a home inside a structure that already existed and would outlast the cluster, rather than a new body created for the purpose.",
    "theme": [
     "Transition"
    ],
@@ -10300,7 +10300,7 @@ window.SITE_DATA = {
   },
   {
    "finding_id": "F386",
-   "statement": "A national co-coordinator anchored in an institution rather than in a post carries continuity through the departure of international staff — particularly when recruited with an overlap period and paired with a national information management position.",
+   "statement": "Where a national co-coordinator is in post and based in a local organisation, coordination survives the departure of international staff, and local partners have someone they can approach directly. It is the most reliable way of keeping things going that the evidence shows.",
    "theme": [
     "Transition"
    ],
@@ -10401,7 +10401,7 @@ window.SITE_DATA = {
   },
   {
    "finding_id": "F387",
-   "statement": "Embedding coordination capacity in government works where government asks for it and the investment is sustained long enough to outlast the people who set it up.",
+   "statement": "Staff placed inside a ministry work where the ministry wants them there. One government asked for a post directly. Another had two staff placed to cover a missing emergency function. Where the offer came from outside without being asked for, candidates were put forward and none were accepted.",
    "theme": [
     "Transition"
    ],
@@ -10506,7 +10506,7 @@ window.SITE_DATA = {
   },
   {
    "finding_id": "F395",
-   "statement": "Archive cluster products beyond the reach of a country-level closure. Tools, assessment instruments and technical decisions built over years are lost when a coordinator departs or a cluster deactivates, and reconstructing them later costs more than storing them now.",
+   "statement": "Archive cluster products somewhere a country-level closure cannot reach. Tools, assessment instruments and technical decisions built over years disappear when a coordinator leaves or a cluster closes, and rebuilding them later costs more than storing them now.",
    "theme": [
     "ABC",
     "Transition"
@@ -10579,7 +10579,7 @@ window.SITE_DATA = {
   },
   {
    "finding_id": "F396",
-   "statement": "Handover needs a funded accompaniment period rather than a cut-over date. Continued technical support is what keeps a new successor mechanism standing through its first year.",
+   "statement": "Handover needs a funded period of accompaniment, not a cut-over date. Continued technical support is what keeps a new successor mechanism standing through its first year.",
    "theme": [
     "Transition"
    ],
@@ -10667,7 +10667,7 @@ window.SITE_DATA = {
   },
   {
    "finding_id": "F408",
-   "statement": "Preparedness built before an emergency is reusable from day one of the next. Localised contingency planning, prepositioned stock and tools built during an earlier response were ready when the response itself was not.",
+   "statement": "Preparedness built before an emergency is ready on day one of the next. Localised contingency plans, prepositioned stock and tools built during an earlier response were ready when the response itself was not.",
    "theme": [
     "ABC",
     "Transition"
@@ -10842,7 +10842,7 @@ window.SITE_DATA = {
   },
   {
    "finding_id": "F419",
-   "statement": "Area-based coordination is a coordination configuration rather than a transition endpoint; transferring cluster functions to area structures without preserved technical custody reproduces the risks documented in both reviews.",
+   "statement": "Area-based coordination is a way of organising coordination, not an endpoint for transition. Handing cluster functions to area structures without keeping technical custody somewhere reproduces the risks both reviews documented.",
    "theme": [
     "ABC",
     "Transition"
@@ -10916,7 +10916,7 @@ window.SITE_DATA = {
   },
   {
    "finding_id": "F421",
-   "statement": "Design the successor architecture explicitly before deactivation: written mandates, named participants, formalised links to national and development frameworks, and a stated home for each function that must survive — technical standards custody, analysis and prioritisation, information management, partner mapping, risk analysis, and provider of last resort.",
+   "statement": "Design the successor architecture before deactivation, not during it: written mandates, named participants, formal links to national and development frameworks, and a stated home for each function that has to survive. Those functions are technical standards, analysis and prioritisation, information management, partner mapping, risk analysis, and provider of last resort.",
    "theme": [
     "Transition"
    ],
@@ -11007,7 +11007,7 @@ window.SITE_DATA = {
   },
   {
    "finding_id": "F426",
-   "statement": "Find out what the capacity gap actually is before designing the support, and anchor what you build in an institution rather than in whoever currently holds the post.",
+   "statement": "Find out what the capacity gap actually is before designing the support. Anchor what you build in an institution rather than in whoever currently holds the post.",
    "theme": [
     "Transition"
    ],
