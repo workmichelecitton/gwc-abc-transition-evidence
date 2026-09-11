@@ -67,7 +67,8 @@ input[type=search]{flex:1;min-width:200px}
 .card.barrier{border-left-color:var(--barrier)} .card.enabler{border-left-color:var(--enabler)}
 .card.recommendation{border-left-color:var(--recommendation)}
 .card.practice{border-left-color:var(--practice)} .card.context{border-left-color:var(--context)}
-.card h3{margin:0 0 9px;font-size:15px;font-weight:600;line-height:1.45}
+.card h3{margin:0 0 6px;font-size:15px;font-weight:600;line-height:1.4}
+.fd-sum{margin:0 0 9px;font-size:13.5px;line-height:1.55;color:var(--ink-2)}
 .meta{display:flex;gap:7px;flex-wrap:wrap;align-items:center;font-size:11.5px}
 .tag{background:var(--bg);border:1px solid var(--line);border-radius:4px;padding:2px 7px;color:var(--ink-2)}
 .pill{border-radius:4px;padding:2px 8px;color:#fff;font-weight:600;font-size:11px;
@@ -702,8 +703,16 @@ function viewFindings(d){
     // records, so the first thing seen was the least evidential thing on the
     // card. The example is still in findings.csv; it is simply not rendered.
     // Click a card and you get the records themselves.
+    // Title first, claim underneath — the same shape as a Highlights card.
+    // Without a title the list is 176 paragraphs and a reader has to read each
+    // one to find out whether it is the one they want. The title comes from
+    // highlights.csv, which is also what Highlights shows, so the two tabs
+    // cannot describe the same finding under different names.
+    var H = f.highlight || {};
     var head =
-      '<h3>'+esc(f.statement)+'</h3>' +
+      (H.headline
+        ? '<h3>' + esc(H.headline) + '</h3><p class="fd-sum">' + esc(f.statement) + '</p>'
+        : '<h3>' + esc(f.statement) + '</h3>') +
       '<div class="meta">' + themePills(f.theme) +
       '<span class="pill '+esc(f.type)+'">'+esc(label("type",f.type))+'</span>' +
       bandTag(f.strength) +

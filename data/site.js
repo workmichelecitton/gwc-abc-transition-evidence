@@ -945,7 +945,13 @@ window.SITE_DATA = {
     "E0038",
     "E0755"
    ],
-   "unmerged": false
+   "unmerged": false,
+   "highlight": {
+    "headline": "Resistance was about how it arrived, not the idea",
+    "plain": "",
+    "so_what": "",
+    "rank": null
+   }
   },
   {
    "finding_id": "F015",
@@ -3741,7 +3747,13 @@ window.SITE_DATA = {
     "E0768",
     "E0781"
    ],
-   "unmerged": false
+   "unmerged": false,
+   "highlight": {
+    "headline": "A lead agency coordinating its own work",
+    "plain": "",
+    "so_what": "",
+    "rank": null
+   }
   },
   {
    "finding_id": "F1728",
@@ -7930,7 +7942,13 @@ window.SITE_DATA = {
     "E0189",
     "E0754"
    ],
-   "unmerged": false
+   "unmerged": false,
+   "highlight": {
+    "headline": "Meeting in the local language changes who speaks",
+    "plain": "",
+    "so_what": "",
+    "rank": null
+   }
   },
   {
    "finding_id": "F263",
