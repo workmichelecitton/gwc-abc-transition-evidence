@@ -153,6 +153,66 @@ async function exercise(label, url) {
     }
   }
 
+  // ---- Analysis tab ------------------------------------------------------
+  // Two charts and a matrix, and the bands have to be named where they appear.
+  // A reader landing on Analysis first has no reason to know what "Band 4"
+  // means, and an unexplained axis is the fastest way to make a computed number
+  // look asserted. The circle and line scales are asserted too: they were
+  // deliberately enlarged, and a later refactor that quietly restores the old
+  // constants should fail here rather than be noticed by eye months later.
+  //
+  // Re-query the tabs. Every render rebuilds the nav, so the nodes captured at
+  // the top of this function are replaced and clicking one does nothing.
+  const anTab = $$("[data-tab]").find((t) => t.dataset.tab === "analysis");
+  if (anTab) {
+    anTab.dispatchEvent(new dom.window.Event("click", { bubbles: true }));
+    await new Promise((r) => setTimeout(r, 250));
+    ok($$("#view .ansvg").length === 2,
+       `${label}: Analysis drew ${$$("#view .ansvg").length} SVG charts, expected 2`);
+    ok($$("#view table.cover").length === 1,
+       `${label}: the coverage matrix is missing from Analysis`);
+
+    const circles = $$("#view .ansvg circle");
+    ok(circles.length > 0, `${label}: the tag network drew no nodes`);
+    if (circles.length) {
+      const rs = circles.map((c) => +c.getAttribute("r"));
+      ok(Math.min(...rs) >= 9,
+         `${label}: smallest network node is r=${Math.min(...rs).toFixed(1)} — too small to read`);
+      ok(Math.max(...rs) > 20,
+         `${label}: largest network node is r=${Math.max(...rs).toFixed(1)} — the size scale has been flattened`);
+      // Nodes may touch. A node whose centre sits inside another is a collision.
+      const pts = circles.map((c) => ({ x: +c.getAttribute("cx"), y: +c.getAttribute("cy"),
+                                        r: +c.getAttribute("r") }));
+      let buried = 0;
+      for (let i = 0; i < pts.length; i++) for (let j = i + 1; j < pts.length; j++) {
+        const a = pts[i], b = pts[j];
+        if (Math.hypot(a.x - b.x, a.y - b.y) < Math.max(a.r, b.r)) buried++;
+      }
+      ok(buried === 0, `${label}: ${buried} network nodes sit inside another node`);
+    }
+    const lines = $$("#view .ansvg line");
+    if (lines.length) {
+      const ws = lines.map((l) => +l.getAttribute("stroke-width"));
+      ok(Math.max(...ws) > 6,
+         `${label}: thickest network edge is ${Math.max(...ws).toFixed(2)}px — lift is no longer legible`);
+    }
+
+    // Every band present in the data must be named, not merely numbered.
+    const key = d.querySelector("#view .bandkey");
+    ok(!!key, `${label}: Analysis shows a band axis with no key explaining the bands`);
+    if (key) {
+      const text = key.textContent;
+      for (const b of [...new Set(site.findings.map((f) => f.strength))]) {
+        const def = (site.taxonomy.strength || []).find((s) => s.value === b) || {};
+        ok(text.includes(`Band ${b}`), `${label}: the band key does not mention band ${b}`);
+        ok(def.label && text.includes(def.label),
+           `${label}: band ${b} appears in the key without its name '${def.label}'`);
+      }
+      ok(/computed/i.test(text),
+         `${label}: the band key does not say the bands are computed rather than assigned`);
+    }
+  }
+
   // Guidance is normative and must stay out of the evidence. Assert the wall:
   // it has its own three columns, and nothing in guidance.csv is a source_id or
   // affects a strength count.

@@ -153,6 +153,14 @@ h3.grp.grp-sub{font-size:12px;margin-top:18px}
 .anhelp{font-size:13px;line-height:1.55;color:var(--ink-2);margin:0 0 14px;max-width:78ch}
 .ansvg{width:100%;height:auto;display:block;overflow:visible}
 .anlab{font-size:10.5px;fill:var(--ink-2)}
+.bandkey{margin-top:16px;padding-top:13px;border-top:1px solid var(--line);
+  font-size:12.5px;line-height:1.5;color:var(--ink-2);max-width:86ch}
+.bkhead{margin-bottom:8px;color:var(--ink-3)}
+.bkrow{display:flex;align-items:baseline;gap:8px;margin:4px 0}
+.bkrow b{color:var(--ink);white-space:nowrap;font-weight:600}
+.bkdot{flex:0 0 auto;width:11px;height:11px;border-radius:3px;position:relative;top:1px}
+.bk1{background:var(--s1)} .bk2{background:var(--s2)} .bk3{background:var(--s3)}
+.bk4{background:var(--s4)} .bk5{background:var(--s5)}
 table.cover{border-collapse:collapse;font-size:13px}
 table.cover th{font-weight:600;color:var(--ink-2);text-align:left;padding:5px 10px;
   border-bottom:1px solid var(--line);font-size:12px}
@@ -1397,20 +1405,20 @@ function anTags(d){
   var names = {};
   edges.forEach(function(e){ names[e.a]=1; names[e.b]=1; });
   var nodes = Object.keys(names).map(function(t){ return { id:t, n:occ[t] }; });
-  var pos = layout(nodes, edges, 760, 430);
+  var pos = layout(nodes, edges, 900, 520);
 
   var maxL = edges[0].lift, maxN = Math.max.apply(null, nodes.map(function(n){ return n.n; }));
-  var svg = ['<svg viewBox="0 0 760 430" class="ansvg" role="img" aria-label="Tag network weighted by lift">'];
+  var svg = ['<svg viewBox="0 0 900 520" class="ansvg" role="img" aria-label="Tag network weighted by lift">'];
   edges.forEach(function(e){
     var p1 = pos[e.a], p2 = pos[e.b];
-    var w = 0.6 + 3.4 * ((e.lift - 1) / Math.max(0.001, maxL - 1));
+    var w = 1.6 + 10 * ((e.lift - 1) / Math.max(0.001, maxL - 1));
     svg.push('<line x1="'+p1.x.toFixed(1)+'" y1="'+p1.y.toFixed(1)+'" x2="'+p2.x.toFixed(1)+
-      '" y2="'+p2.y.toFixed(1)+'" stroke="var(--s3)" stroke-opacity="0.55" stroke-width="'+
+      '" y2="'+p2.y.toFixed(1)+'" stroke="var(--s3)" stroke-opacity="0.45" stroke-linecap="round" stroke-width="'+
       w.toFixed(2)+'"><title>'+esc(label("tags",e.a)||e.a)+' + '+esc(label("tags",e.b)||e.b)+
       ' — '+e.n+' findings, lift '+e.lift.toFixed(2)+'</title></line>');
   });
   nodes.forEach(function(nd){
-    var p = pos[nd.id], r = 5 + 13 * Math.sqrt(nd.n / maxN);
+    var p = pos[nd.id], r = 10 + 26 * Math.sqrt(nd.n / maxN);
     svg.push('<circle cx="'+p.x.toFixed(1)+'" cy="'+p.y.toFixed(1)+'" r="'+r.toFixed(1)+
       '" fill="var(--s4)" fill-opacity="0.85"><title>'+esc(label("tags",nd.id)||nd.id)+
       ' — '+nd.n+' findings</title></circle>');
@@ -1436,7 +1444,7 @@ function layout(nodes, edges, W, H){
   function rnd(){ seed = (seed*1103515245 + 12345) & 0x7fffffff; return seed/0x7fffffff; }
   nodes.forEach(function(n, i){
     var a = (i/nodes.length) * Math.PI*2 + rnd()*0.3;
-    pos[n.id] = { x: W/2 + Math.cos(a)*180, y: H/2 + Math.sin(a)*140, vx:0, vy:0 };
+    pos[n.id] = { x: W/2 + Math.cos(a)*220, y: H/2 + Math.sin(a)*170, vx:0, vy:0 };
   });
   var adj = edges.map(function(e){ return [e.a, e.b]; });
   for (var it=0; it<420; it++){
@@ -1446,14 +1454,14 @@ function layout(nodes, edges, W, H){
         if (a.id === b.id) return;
         var pa = pos[a.id], pb = pos[b.id];
         var dx = pa.x-pb.x, dy = pa.y-pb.y, d2 = dx*dx+dy*dy || 0.01;
-        var f = 5200 / d2;
+        var f = 13000 / d2;
         pa.vx += dx*f*0.01; pa.vy += dy*f*0.01;
       });
     });
     adj.forEach(function(e){
       var pa = pos[e[0]], pb = pos[e[1]];
       var dx = pb.x-pa.x, dy = pb.y-pa.y, dist = Math.sqrt(dx*dx+dy*dy)||0.01;
-      var f = (dist-118) * 0.012;
+      var f = (dist-152) * 0.012;
       pa.vx += dx/dist*f; pa.vy += dy/dist*f;
       pb.vx -= dx/dist*f; pb.vy -= dy/dist*f;
     });
@@ -1461,8 +1469,8 @@ function layout(nodes, edges, W, H){
       var p = pos[n.id];
       p.vx += (W/2 - p.x)*0.004; p.vy += (H/2 - p.y)*0.004;
       p.x += p.vx*k; p.y += p.vy*k; p.vx *= 0.82; p.vy *= 0.82;
-      p.x = Math.max(58, Math.min(W-58, p.x));
-      p.y = Math.max(26, Math.min(H-26, p.y));
+      p.x = Math.max(80, Math.min(W-80, p.x));
+      p.y = Math.max(46, Math.min(H-46, p.y));
     });
   }
   return pos;
@@ -1500,7 +1508,8 @@ function anProvenance(d){
     { keys: THEME.filter(function(t){ return tTot[t]; }), tot: tTot, x: (W-CW)/2,
       lab: function(k){ return label("theme",k)||k; } },
     { keys: [5,4,3,2,1].filter(function(b){ return bTot[b]; }), tot: bTot, x: W-CW,
-      lab: function(k){ return "Band "+k; } }
+      lab: function(k){ return "Band "+k+" · "+bandLabel(k); },
+      tip: function(k){ return "Band "+k+" — "+bandLabel(k)+". "+bandDef(k); } }
   ];
   var box = {};
   cols.forEach(function(c, ci){
@@ -1538,15 +1547,16 @@ function anProvenance(d){
       var v = l2[t+"|"+bd]; if (!v) return;
       var a = box["1|"+t], b = box["2|"+bd];
       ribbon(a, b, a.h * v/a.v, {a:"1|"+t, b:"2|"+bd},
-        (label("theme",t)||t)+" → band "+bd+": "+v.toFixed(1)+" findings");
+        (label("theme",t)||t)+" → band "+bd+" ("+bandLabel(bd)+"): "+v.toFixed(1)+" findings");
     });
   });
   cols.forEach(function(c, ci){
     c.keys.forEach(function(k){
       var bx = box[ci+"|"+k];
+      var tip = c.tip ? c.tip(k) + " " + Math.round(bx.v) + " findings."
+                      : c.lab(k) + " — " + bx.v.toFixed(1) + " findings";
       svg.push('<rect x="'+bx.x+'" y="'+bx.y+'" width="'+CW+'" height="'+bx.h.toFixed(1)+
-        '" rx="3" fill="var(--s4)"><title>'+esc(c.lab(k))+' — '+bx.v.toFixed(1)+
-        ' findings</title></rect>');
+        '" rx="3" fill="var(--s4)"><title>'+esc(tip)+'</title></rect>');
       var tx = ci===2 ? bx.x-6 : bx.x+CW+6, anc = ci===2 ? "end" : "start";
       svg.push('<text x="'+tx+'" y="'+(bx.y+bx.h/2+3.5).toFixed(1)+'" text-anchor="'+anc+
         '" class="anlab">'+esc(c.lab(k))+' '+Math.round(bx.v)+'</text>');
@@ -1562,7 +1572,20 @@ function anProvenance(d){
     "columns total findings rather than records. <b>" + pct + "% of that flow is the GWC's own " +
     "consultation</b> — country calls and workshops. That is the number this page exists to " +
     "move: a finding corroborated only by the people who raised it is not corroborated.",
-    svg.join(""));
+    svg.join("") + bandKey());
+}
+
+// The band column is the only place on this page where the bands are named, and
+// a reader arriving on Analysis first has no reason to know what "Band 4" means.
+// Definitions come from taxonomy.json, so there is one wording to maintain.
+function bandKey(){
+  var rows = [5,4,3,2,1].map(function(b){
+    return '<div class="bkrow"><span class="bkdot bk'+b+'"></span>' +
+           '<b>Band '+b+' &middot; '+esc(bandLabel(b))+'</b> ' + esc(bandDef(b)) + '</div>';
+  }).join("");
+  return '<div class="bandkey"><div class="bkhead">What the bands mean. ' +
+         'Every band is computed from the records underneath it — nobody assigns one. ' +
+         'Sources sharing an origin count once.</div>' + rows + '</div>';
 }
 
 // --- 3. where the gaps are ------------------------------------------------
@@ -1605,8 +1628,9 @@ function anCoverage(d){
       var sh = Math.min(5, 1 + Math.floor(4.99 * e.n / mx));
       var mark = e.ck === 0 ? '<span class="cmark" title="no verified record">*</span>' : '';
       return '<td class="cmat" style="background:var(--s'+sh+');color:'+
-             (sh>=3?'#fff':'var(--ink)')+'" title="'+e.n+' findings, best band '+e.best+
-             ', '+e.ck+' with a verified record from this country">'+e.n+mark+'</td>';
+             (sh>=3?'#fff':'var(--ink)')+'" title="'+e.n+' findings. Strongest reaches band '+
+             e.best+' — '+esc(bandLabel(e.best))+': '+esc(bandDef(e.best))+' '+e.ck+
+             ' of the '+e.n+' have a verified record from this country.">'+e.n+mark+'</td>';
     }).join("");
     return '<tr><th>'+esc(countryName(c))+'</th>'+tds+'</tr>';
   }).join("");
