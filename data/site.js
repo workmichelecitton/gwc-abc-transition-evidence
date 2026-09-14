@@ -112,13 +112,13 @@ window.SITE_DATA = {
   "footer_note": "Every finding traces to a source ID in the Sources tab. If something looks wrong, it probably is — say so and it will be corrected."
  },
  "schema": 3,
- "generated": "2026-09-11",
+ "generated": "2026-09-14",
  "taxonomy_version": "0.9.0",
  "stats": {
-  "records": 741,
-  "findings": 175,
-  "sources": 110,
-  "countries": 30,
+  "records": 796,
+  "findings": 196,
+  "sources": 113,
+  "countries": 31,
   "withheld_internal": 2
  },
  "taxonomy": {
@@ -425,51 +425,52 @@ window.SITE_DATA = {
   "_countries_comment": "ISO3. Unlisted codes produce a build warning, not an error — add them here to name them properly in the interface.",
   "countries": {
    "AFG": "Afghanistan",
-   "BFA": "Burkina Faso",
+   "AFR": "Africa (regional)",
+   "AGO": "Angola",
+   "ASIA": "Asia (regional)",
    "BDI": "Burundi",
-   "CMR": "Cameroon",
+   "BFA": "Burkina Faso",
+   "BGD": "Bangladesh",
    "CAF": "Central African Republic",
-   "TCD": "Chad",
-   "COL": "Colombia",
+   "CMR": "Cameroon",
    "COD": "Democratic Republic of the Congo",
-   "SLV": "El Salvador",
+   "COL": "Colombia",
+   "ECU": "Ecuador",
    "ETH": "Ethiopia",
    "GTM": "Guatemala",
-   "HTI": "Haiti",
    "HND": "Honduras",
+   "HTI": "Haiti",
+   "IDN": "Indonesia",
    "IRQ": "Iraq",
    "JOR": "Jordan",
    "KEN": "Kenya",
+   "LAC": "Latin America & Caribbean (regional)",
    "LBN": "Lebanon",
    "LBY": "Libya",
+   "MDG": "Madagascar",
+   "MENA": "Middle East (regional)",
    "MLI": "Mali",
-   "MOZ": "Mozambique",
    "MMR": "Myanmar",
+   "MOZ": "Mozambique",
+   "MWI": "Malawi",
    "NER": "Niger",
    "NGA": "Nigeria",
-   "PSE": "occupied Palestinian territory",
+   "NPL": "Nepal",
    "PAK": "Pakistan",
+   "PER": "Peru",
    "PHL": "Philippines",
+   "PSE": "occupied Palestinian territory",
+   "SDN": "Sudan",
+   "SLV": "El Salvador",
    "SOM": "Somalia",
    "SSD": "South Sudan",
-   "SDN": "Sudan",
    "SYR": "Syrian Arab Republic",
+   "TCD": "Chad",
    "TUR": "Türkiye",
    "UKR": "Ukraine",
    "VEN": "Venezuela",
    "YEM": "Yemen",
-   "ZWE": "Zimbabwe",
-   "BGD": "Bangladesh",
-   "AGO": "Angola",
-   "MDG": "Madagascar",
-   "MWI": "Malawi",
-   "ECU": "Ecuador",
-   "PER": "Peru",
-   "AFR": "Africa (regional)",
-   "MENA": "Middle East (regional)",
-   "LAC": "Latin America & Caribbean (regional)",
-   "ASIA": "Asia (regional)",
-   "IDN": "Indonesia"
+   "ZWE": "Zimbabwe"
   },
   "source_type": [
    {
@@ -2386,9 +2387,9 @@ window.SITE_DATA = {
    "example": "Bangladesh — a localisation capacity assessment was carried out with global support, scoring where the sector stands against the localisation commitments.",
    "type": "practice",
    "strength": 4,
-   "n_records": 7,
-   "n_sources": 4,
-   "n_documents": 4,
+   "n_records": 8,
+   "n_sources": 5,
+   "n_documents": 5,
    "counted_sources": [
     {
      "group": "S105",
@@ -2413,16 +2414,23 @@ window.SITE_DATA = {
      "source_ids": [
       "S121"
      ]
+    },
+    {
+     "group": "icva-localisation-leadership-2024",
+     "source_ids": [
+      "S128"
+     ]
     }
    ],
-   "n_streams": 2,
-   "n_checked": 7,
+   "n_streams": 3,
+   "n_checked": 8,
    "relations": [],
-   "period": "Sep 2025 – Jul 2026",
-   "period_from": "Sep 2025",
+   "period": "2024 – Jul 2026",
+   "period_from": "2024",
    "period_to": "Jul 2026",
-   "period_span": 1,
+   "period_span": 2,
    "streams": [
+    "sdr",
     "search",
     "transcript"
    ],
@@ -2430,7 +2438,8 @@ window.SITE_DATA = {
     "BGD",
     "MOZ",
     "NGA",
-    "SDN"
+    "SDN",
+    "SSD"
    ],
    "tags": [
     "capacity",
@@ -2462,7 +2471,8 @@ window.SITE_DATA = {
     "E0510",
     "E0511",
     "E0543",
-    "E0759"
+    "E0759",
+    "E0834"
    ],
    "unmerged": false,
    "highlight": {
@@ -2713,10 +2723,10 @@ window.SITE_DATA = {
    ],
    "example": "Haiti — coordination operates as a government-led sector; the authority's position is that national-level co-leadership is not needed.",
    "type": "context",
-   "strength": 2,
-   "n_records": 3,
-   "n_sources": 2,
-   "n_documents": 2,
+   "strength": 4,
+   "n_records": 4,
+   "n_sources": 3,
+   "n_documents": 3,
    "counted_sources": [
     {
      "group": "S108",
@@ -2729,37 +2739,48 @@ window.SITE_DATA = {
      "source_ids": [
       "S109"
      ]
+    },
+    {
+     "group": "itad-unicef-wipc-2020",
+     "source_ids": [
+      "S094"
+     ]
     }
    ],
-   "n_streams": 1,
-   "n_checked": 3,
+   "n_streams": 2,
+   "n_checked": 4,
    "relations": [],
-   "period": "Jul 2026",
-   "period_from": "Jul 2026",
+   "period": "2020 – Jul 2026",
+   "period_from": "2020",
    "period_to": "Jul 2026",
-   "period_span": 0,
+   "period_span": 6,
    "streams": [
+    "sdr",
     "transcript"
    ],
    "countries": [
     "BGD",
+    "CMR",
     "HTI"
    ],
    "tags": [
     "coordination-architecture",
     "government-engagement",
-    "localisation"
+    "localisation",
+    "transition-handover"
    ],
    "actors": [
     "cluster",
     "gov-national",
     "local-ngo",
-    "ocha"
+    "ocha",
+    "un-agency"
    ],
    "record_ids": [
     "E0496",
     "E0517",
-    "E0518"
+    "E0518",
+    "E0856"
    ],
    "unmerged": false,
    "highlight": {
@@ -3067,10 +3088,10 @@ window.SITE_DATA = {
    ],
    "example": "",
    "type": "recommendation",
-   "strength": 3,
-   "n_records": 10,
-   "n_sources": 2,
-   "n_documents": 3,
+   "strength": 4,
+   "n_records": 11,
+   "n_sources": 3,
+   "n_documents": 4,
    "counted_sources": [
     {
      "group": "S062",
@@ -3084,29 +3105,41 @@ window.SITE_DATA = {
       "S083",
       "S084"
      ]
+    },
+    {
+     "group": "itad-unicef-wipc-2020",
+     "source_ids": [
+      "S094"
+     ]
     }
    ],
    "n_streams": 2,
-   "n_checked": 3,
+   "n_checked": 4,
    "relations": [],
-   "period": "2026",
-   "period_from": "2026",
+   "period": "2020 – 2026",
+   "period_from": "2020",
    "period_to": "2026",
-   "period_span": 0,
+   "period_span": 6,
    "streams": [
     "sdr",
     "workshop"
    ],
-   "countries": [],
+   "countries": [
+    "CMR"
+   ],
    "tags": [
     "capacity",
+    "government-engagement",
     "guidance",
     "information-management",
+    "nexus",
     "peer-learning",
     "transition-handover"
    ],
    "actors": [
     "cluster",
+    "development",
+    "gov-local",
     "gov-national",
     "local-ngo",
     "ocha",
@@ -3122,7 +3155,8 @@ window.SITE_DATA = {
     "E0344",
     "E0349",
     "E0632",
-    "E0799"
+    "E0799",
+    "E0859"
    ],
    "unmerged": false,
    "highlight": {
@@ -5695,11 +5729,17 @@ window.SITE_DATA = {
    ],
    "example": "Honduras: partners working along the roadside rather than moving into more distant communities, and competing for the accessible ground.",
    "type": "barrier",
-   "strength": 1,
-   "n_records": 1,
-   "n_sources": 1,
-   "n_documents": 1,
+   "strength": 3,
+   "n_records": 2,
+   "n_sources": 2,
+   "n_documents": 2,
    "counted_sources": [
+    {
+     "group": "S096",
+     "source_ids": [
+      "S096"
+     ]
+    },
     {
      "group": "S123",
      "source_ids": [
@@ -5707,29 +5747,34 @@ window.SITE_DATA = {
      ]
     }
    ],
-   "n_streams": 1,
-   "n_checked": 1,
+   "n_streams": 2,
+   "n_checked": 2,
    "relations": [],
-   "period": "Aug 2026",
-   "period_from": "Aug 2026",
+   "period": "2016 – Aug 2026",
+   "period_from": "2016",
    "period_to": "Aug 2026",
-   "period_span": 0,
+   "period_span": 10,
    "streams": [
+    "sdr",
     "transcript"
    ],
    "countries": [
-    "HND"
+    "HND",
+    "SSD"
    ],
    "tags": [
     "coordination-architecture",
-    "geographic-targeting"
+    "geographic-targeting",
+    "nexus"
    ],
    "actors": [
     "cluster",
+    "development",
     "ingo"
    ],
    "record_ids": [
-    "E0769"
+    "E0769",
+    "E0851"
    ],
    "unmerged": false,
    "highlight": {
@@ -6155,39 +6200,53 @@ window.SITE_DATA = {
    ],
    "example": "Twelve per cent of HCT seats, and national NGO participation in 56 per cent of inter-cluster groups.",
    "type": "enabler",
-   "strength": 1,
-   "n_records": 1,
-   "n_sources": 1,
-   "n_documents": 1,
+   "strength": 3,
+   "n_records": 2,
+   "n_sources": 2,
+   "n_documents": 2,
    "counted_sources": [
     {
      "group": "S124",
      "source_ids": [
       "S124"
      ]
+    },
+    {
+     "group": "icva-localisation-leadership-2024",
+     "source_ids": [
+      "S048"
+     ]
     }
    ],
-   "n_streams": 1,
-   "n_checked": 1,
+   "n_streams": 2,
+   "n_checked": 2,
    "relations": [],
-   "period": "2025",
-   "period_from": "2025",
+   "period": "2024 – 2025",
+   "period_from": "2024",
    "period_to": "2025",
-   "period_span": 0,
+   "period_span": 1,
    "streams": [
+    "sdr",
     "search"
    ],
-   "countries": [],
+   "countries": [
+    "VEN"
+   ],
    "tags": [
     "coordination-architecture",
-    "localisation"
+    "inclusion",
+    "localisation",
+    "pooled-funds"
    ],
    "actors": [
     "cluster",
-    "local-ngo"
+    "donor",
+    "local-ngo",
+    "ocha"
    ],
    "record_ids": [
-    "E0784"
+    "E0784",
+    "E0813"
    ],
    "unmerged": false,
    "highlight": {
@@ -7117,10 +7176,10 @@ window.SITE_DATA = {
    ],
    "example": "Venezuela: established national organisations reported feeling displaced after the earthquake, not only for funding but for access to affected areas.",
    "type": "barrier",
-   "strength": 4,
-   "n_records": 3,
-   "n_sources": 3,
-   "n_documents": 3,
+   "strength": 5,
+   "n_records": 6,
+   "n_sources": 6,
+   "n_documents": 6,
    "counted_sources": [
     {
      "group": "S026",
@@ -7135,25 +7194,44 @@ window.SITE_DATA = {
      ]
     },
     {
+     "group": "S047",
+     "source_ids": [
+      "S047"
+     ]
+    },
+    {
+     "group": "S096",
+     "source_ids": [
+      "S096"
+     ]
+    },
+    {
      "group": "S119",
      "source_ids": [
       "S119"
      ]
+    },
+    {
+     "group": "icva-localisation-leadership-2024",
+     "source_ids": [
+      "S048"
+     ]
     }
    ],
    "n_streams": 3,
-   "n_checked": 2,
+   "n_checked": 5,
    "relations": [],
-   "period": "2023 – Aug 2026",
-   "period_from": "2023",
+   "period": "2016 – Aug 2026",
+   "period_from": "2016",
    "period_to": "Aug 2026",
-   "period_span": 3,
+   "period_span": 10,
    "streams": [
     "sdr",
     "transcript",
     "workshop"
    ],
    "countries": [
+    "SSD",
     "VEN"
    ],
    "tags": [
@@ -7162,14 +7240,20 @@ window.SITE_DATA = {
     "partnerships"
    ],
    "actors": [
+    "cluster",
     "donor",
     "ingo",
-    "local-ngo"
+    "local-ngo",
+    "ocha",
+    "un-agency"
    ],
    "record_ids": [
     "E0143",
     "E0144",
-    "E0704"
+    "E0704",
+    "E0810",
+    "E0835",
+    "E0853"
    ],
    "unmerged": false,
    "highlight": {
@@ -7188,9 +7272,9 @@ window.SITE_DATA = {
    "example": "Mali — coordination is carried by a co-facilitator whose post is programme-funded, with about thirty per cent of time notionally available. He can attend meetings; he cannot draft the indicators, objectives and strategy against planning deadlines.",
    "type": "context",
    "strength": 5,
-   "n_records": 27,
-   "n_sources": 14,
-   "n_documents": 15,
+   "n_records": 31,
+   "n_sources": 17,
+   "n_documents": 19,
    "counted_sources": [
     {
      "group": "S011",
@@ -7202,6 +7286,12 @@ window.SITE_DATA = {
      "group": "S012",
      "source_ids": [
       "S012"
+     ]
+    },
+    {
+     "group": "S099",
+     "source_ids": [
+      "S099"
      ]
     },
     {
@@ -7275,28 +7365,45 @@ window.SITE_DATA = {
      "source_ids": [
       "S045"
      ]
+    },
+    {
+     "group": "icva-localisation-leadership-2024",
+     "source_ids": [
+      "S126",
+      "S127"
+     ]
+    },
+    {
+     "group": "itad-unicef-wipc-2020",
+     "source_ids": [
+      "S094"
+     ]
     }
    ],
-   "n_streams": 3,
-   "n_checked": 24,
+   "n_streams": 4,
+   "n_checked": 28,
    "relations": [],
-   "period": "Oct 2020 – Aug 2026",
-   "period_from": "Oct 2020",
+   "period": "2019 – Aug 2026",
+   "period_from": "2019",
    "period_to": "Aug 2026",
-   "period_span": 6,
+   "period_span": 7,
    "streams": [
+    "sdr",
     "search",
     "transcript",
     "workshop"
    ],
    "countries": [
     "BGD",
+    "CMR",
     "COL",
+    "ETH",
     "LBN",
     "MLI",
     "MMR",
     "MOZ",
     "NGA",
+    "NPL",
     "PSE",
     "SDN",
     "SOM",
@@ -7307,6 +7414,7 @@ window.SITE_DATA = {
     "capacity",
     "coordination-architecture",
     "funding",
+    "government-engagement",
     "hpc",
     "information-management",
     "localisation",
@@ -7353,7 +7461,11 @@ window.SITE_DATA = {
     "E0629",
     "E0668",
     "E0669",
-    "E0752"
+    "E0752",
+    "E0815",
+    "E0827",
+    "E0850",
+    "E0858"
    ],
    "unmerged": false,
    "highlight": {
@@ -7592,9 +7704,9 @@ window.SITE_DATA = {
    "example": "Bangladesh — around one eighth of the pooled fund allocation reaching the sector went to international NGOs, and the remainder to UN agencies.",
    "type": "barrier",
    "strength": 5,
-   "n_records": 6,
-   "n_sources": 6,
-   "n_documents": 6,
+   "n_records": 8,
+   "n_sources": 7,
+   "n_documents": 8,
    "counted_sources": [
     {
      "group": "S021",
@@ -7631,10 +7743,17 @@ window.SITE_DATA = {
      "source_ids": [
       "S085"
      ]
+    },
+    {
+     "group": "icva-localisation-leadership-2024",
+     "source_ids": [
+      "S048",
+      "S127"
+     ]
     }
    ],
    "n_streams": 4,
-   "n_checked": 5,
+   "n_checked": 7,
    "relations": [],
    "period": "2023 – Jul 2026",
    "period_from": "2023",
@@ -7648,10 +7767,14 @@ window.SITE_DATA = {
    ],
    "countries": [
     "BGD",
-    "SDN"
+    "SDN",
+    "SOM",
+    "VEN"
    ],
    "tags": [
+    "capacity",
     "funding",
+    "inclusion",
     "localisation",
     "pooled-funds"
    ],
@@ -7668,7 +7791,9 @@ window.SITE_DATA = {
     "E0285",
     "E0500",
     "E0758",
-    "E0790"
+    "E0790",
+    "E0811",
+    "E0818"
    ],
    "unmerged": false,
    "highlight": {
@@ -7823,9 +7948,9 @@ window.SITE_DATA = {
    "example": "",
    "type": "barrier",
    "strength": 4,
-   "n_records": 3,
-   "n_sources": 3,
-   "n_documents": 3,
+   "n_records": 4,
+   "n_sources": 4,
+   "n_documents": 4,
    "counted_sources": [
     {
      "group": "S013",
@@ -7844,10 +7969,16 @@ window.SITE_DATA = {
      "source_ids": [
       "S045"
      ]
+    },
+    {
+     "group": "icva-localisation-leadership-2024",
+     "source_ids": [
+      "S048"
+     ]
     }
    ],
    "n_streams": 2,
-   "n_checked": 3,
+   "n_checked": 4,
    "relations": [],
    "period": "2024 – 2026",
    "period_from": "2024",
@@ -7858,7 +7989,8 @@ window.SITE_DATA = {
     "workshop"
    ],
    "countries": [
-    "AFG"
+    "AFG",
+    "VEN"
    ],
    "tags": [
     "coordination-architecture",
@@ -7869,13 +8001,15 @@ window.SITE_DATA = {
    "actors": [
     "cluster",
     "donor",
+    "local-ngo",
     "ocha",
     "operational-cell"
    ],
    "record_ids": [
     "E0156",
     "E0165",
-    "E0197"
+    "E0197",
+    "E0808"
    ],
    "unmerged": false,
    "highlight": {
@@ -8022,40 +8156,54 @@ window.SITE_DATA = {
    ],
    "example": "",
    "type": "barrier",
-   "strength": 1,
-   "n_records": 2,
-   "n_sources": 1,
-   "n_documents": 2,
+   "strength": 3,
+   "n_records": 3,
+   "n_sources": 2,
+   "n_documents": 3,
    "counted_sources": [
     {
      "group": "gwc-consult-2025",
      "source_ids": [
       "S042"
      ]
+    },
+    {
+     "group": "icva-localisation-leadership-2024",
+     "source_ids": [
+      "S127"
+     ]
     }
    ],
-   "n_streams": 1,
-   "n_checked": 0,
+   "n_streams": 2,
+   "n_checked": 1,
    "relations": [],
    "period": "2024 – 2026",
    "period_from": "2024",
    "period_to": "2026",
    "period_span": 2,
    "streams": [
+    "sdr",
     "workshop"
    ],
-   "countries": [],
+   "countries": [
+    "SOM"
+   ],
    "tags": [
+    "capacity",
+    "coordination-architecture",
     "localisation",
     "performance"
    ],
    "actors": [
+    "cluster",
+    "ingo",
     "local-ngo",
     "operational-cell"
    ],
    "record_ids": [
     "E0180",
-    "E0181"
+    "E0181",
+    "E0816"
    ],
    "unmerged": false,
    "highlight": {
@@ -8106,7 +8254,7 @@ window.SITE_DATA = {
     {
      "group": "icva-coordination-in-transition",
      "source_ids": [
-      "S056"
+      "S033"
      ]
     }
    ],
@@ -8218,7 +8366,7 @@ window.SITE_DATA = {
     {
      "group": "icva-coordination-in-transition",
      "source_ids": [
-      "S056"
+      "S033"
      ]
     }
    ],
@@ -8287,9 +8435,9 @@ window.SITE_DATA = {
    "example": "Ukraine — local actors participated in coordination structures but had limited influence over decisions and over resources.",
    "type": "barrier",
    "strength": 5,
-   "n_records": 11,
-   "n_sources": 10,
-   "n_documents": 10,
+   "n_records": 13,
+   "n_sources": 11,
+   "n_documents": 12,
    "counted_sources": [
     {
      "group": "S012",
@@ -8350,10 +8498,17 @@ window.SITE_DATA = {
      "source_ids": [
       "S033"
      ]
+    },
+    {
+     "group": "icva-localisation-leadership-2024",
+     "source_ids": [
+      "S048",
+      "S127"
+     ]
     }
    ],
    "n_streams": 4,
-   "n_checked": 10,
+   "n_checked": 12,
    "relations": [],
    "period": "Oct 2020 – Aug 2026",
    "period_from": "Oct 2020",
@@ -8370,11 +8525,14 @@ window.SITE_DATA = {
     "IRQ",
     "MMR",
     "PSE",
-    "UKR"
+    "SOM",
+    "UKR",
+    "VEN"
    ],
    "tags": [
     "aap",
     "coordination-architecture",
+    "inclusion",
     "information-management",
     "localisation",
     "partnerships",
@@ -8403,7 +8561,9 @@ window.SITE_DATA = {
     "E0678",
     "E0751",
     "E0776",
-    "E0791"
+    "E0791",
+    "E0806",
+    "E0817"
    ],
    "unmerged": false,
    "highlight": {
@@ -8422,14 +8582,20 @@ window.SITE_DATA = {
    "example": "",
    "type": "enabler",
    "strength": 4,
-   "n_records": 3,
-   "n_sources": 3,
-   "n_documents": 3,
+   "n_records": 5,
+   "n_sources": 5,
+   "n_documents": 5,
    "counted_sources": [
     {
      "group": "S029",
      "source_ids": [
       "S029"
+     ]
+    },
+    {
+     "group": "S099",
+     "source_ids": [
+      "S099"
      ]
     },
     {
@@ -8443,22 +8609,30 @@ window.SITE_DATA = {
      "source_ids": [
       "S045"
      ]
+    },
+    {
+     "group": "icva-localisation-leadership-2024",
+     "source_ids": [
+      "S125"
+     ]
     }
    ],
    "n_streams": 3,
-   "n_checked": 3,
+   "n_checked": 5,
    "relations": [],
-   "period": "Oct 2020 – 2026",
-   "period_from": "Oct 2020",
+   "period": "2019 – 2026",
+   "period_from": "2019",
    "period_to": "2026",
-   "period_span": 6,
+   "period_span": 7,
    "streams": [
     "sdr",
     "search",
     "workshop"
    ],
    "countries": [
+    "COL",
     "MMR",
+    "NPL",
     "PSE"
    ],
    "tags": [
@@ -8471,12 +8645,16 @@ window.SITE_DATA = {
    "actors": [
     "cluster",
     "community",
-    "local-ngo"
+    "ingo",
+    "local-ngo",
+    "un-agency"
    ],
    "record_ids": [
     "E0188",
     "E0190",
-    "E0754"
+    "E0754",
+    "E0822",
+    "E0845"
    ],
    "unmerged": false,
    "highlight": {
@@ -8794,9 +8972,9 @@ window.SITE_DATA = {
    "example": "Iraq — coordination functions were redistributed across several successor arrangements without the links between them being set out, and newly established area structures were later found to cover only part of the displaced population.",
    "type": "barrier",
    "strength": 4,
-   "n_records": 8,
-   "n_sources": 4,
-   "n_documents": 6,
+   "n_records": 9,
+   "n_sources": 5,
+   "n_documents": 7,
    "counted_sources": [
     {
      "group": "S020",
@@ -8817,6 +8995,12 @@ window.SITE_DATA = {
      ]
     },
     {
+     "group": "S099",
+     "source_ids": [
+      "S099"
+     ]
+    },
+    {
      "group": "gwc-consult-2026",
      "source_ids": [
       "S083"
@@ -8824,7 +9008,7 @@ window.SITE_DATA = {
     }
    ],
    "n_streams": 2,
-   "n_checked": 2,
+   "n_checked": 3,
    "relations": [],
    "period": "2019 – 2026",
    "period_from": "2019",
@@ -8836,7 +9020,8 @@ window.SITE_DATA = {
    ],
    "countries": [
     "CMR",
-    "IRQ"
+    "IRQ",
+    "NPL"
    ],
    "tags": [
     "coordination-architecture",
@@ -8862,7 +9047,8 @@ window.SITE_DATA = {
     "E0228",
     "E0237",
     "E0320",
-    "E0633"
+    "E0633",
+    "E0843"
    ],
    "unmerged": false,
    "highlight": {
@@ -8924,7 +9110,7 @@ window.SITE_DATA = {
     {
      "group": "icva-coordination-in-transition",
      "source_ids": [
-      "S056"
+      "S033"
      ]
     }
    ],
@@ -9088,7 +9274,7 @@ window.SITE_DATA = {
     {
      "group": "icva-coordination-in-transition",
      "source_ids": [
-      "S056"
+      "S033"
      ]
     }
    ],
@@ -9345,14 +9531,20 @@ window.SITE_DATA = {
    "example": "Colombia — an inventory of the cluster's information resources was compiled as part of transition planning, so products could be summarised and handed over rather than lost.",
    "type": "enabler",
    "strength": 4,
-   "n_records": 9,
-   "n_sources": 4,
-   "n_documents": 6,
+   "n_records": 10,
+   "n_sources": 5,
+   "n_documents": 7,
    "counted_sources": [
     {
      "group": "S065",
      "source_ids": [
       "S065"
+     ]
+    },
+    {
+     "group": "S099",
+     "source_ids": [
+      "S099"
      ]
     },
     {
@@ -9375,12 +9567,12 @@ window.SITE_DATA = {
     }
    ],
    "n_streams": 3,
-   "n_checked": 6,
+   "n_checked": 7,
    "relations": [],
-   "period": "2025 – Aug 2026",
-   "period_from": "2025",
+   "period": "2019 – Aug 2026",
+   "period_from": "2019",
    "period_to": "Aug 2026",
-   "period_span": 1,
+   "period_span": 7,
    "streams": [
     "sdr",
     "transcript",
@@ -9389,6 +9581,7 @@ window.SITE_DATA = {
    "countries": [
     "CMR",
     "COL",
+    "NPL",
     "PSE",
     "UKR"
    ],
@@ -9396,12 +9589,14 @@ window.SITE_DATA = {
     "coordination-architecture",
     "government-engagement",
     "information-management",
+    "sustainability",
     "transition-handover"
    ],
    "actors": [
     "cluster",
     "gov-local",
-    "gov-national"
+    "gov-national",
+    "ingo"
    ],
    "record_ids": [
     "E0098",
@@ -9412,7 +9607,8 @@ window.SITE_DATA = {
     "E0329",
     "E0330",
     "E0378",
-    "E0645"
+    "E0645",
+    "E0846"
    ],
    "unmerged": false,
    "highlight": {
@@ -9641,7 +9837,7 @@ window.SITE_DATA = {
    "strength": 5,
    "n_records": 21,
    "n_sources": 12,
-   "n_documents": 15,
+   "n_documents": 14,
    "counted_sources": [
     {
      "group": "S054",
@@ -9712,8 +9908,7 @@ window.SITE_DATA = {
     {
      "group": "icva-coordination-in-transition",
      "source_ids": [
-      "S033",
-      "S056"
+      "S033"
      ]
     }
    ],
@@ -9803,9 +9998,9 @@ window.SITE_DATA = {
    "example": "Iraq — international humanitarian funding fell from around 1.8 billion to 265 million US dollars, which forced an accelerated transition.",
    "type": "context",
    "strength": 5,
-   "n_records": 15,
-   "n_sources": 9,
-   "n_documents": 11,
+   "n_records": 16,
+   "n_sources": 10,
+   "n_documents": 12,
    "counted_sources": [
     {
      "group": "S011",
@@ -9838,6 +10033,12 @@ window.SITE_DATA = {
      ]
     },
     {
+     "group": "S099",
+     "source_ids": [
+      "S099"
+     ]
+    },
+    {
      "group": "S111",
      "source_ids": [
       "S111"
@@ -9864,12 +10065,12 @@ window.SITE_DATA = {
     }
    ],
    "n_streams": 4,
-   "n_checked": 12,
+   "n_checked": 13,
    "relations": [],
-   "period": "2023 – Aug 2026",
-   "period_from": "2023",
+   "period": "2019 – Aug 2026",
+   "period_from": "2019",
    "period_to": "Aug 2026",
-   "period_span": 3,
+   "period_span": 7,
    "streams": [
     "sdr",
     "search",
@@ -9882,6 +10083,7 @@ window.SITE_DATA = {
     "ETH",
     "IRQ",
     "NGA",
+    "NPL",
     "SOM"
    ],
    "tags": [
@@ -9920,7 +10122,8 @@ window.SITE_DATA = {
     "E0642",
     "E0679",
     "E0782",
-    "E0800"
+    "E0800",
+    "E0840"
    ],
    "unmerged": false,
    "highlight": {
@@ -10204,7 +10407,7 @@ window.SITE_DATA = {
     {
      "group": "icva-coordination-in-transition",
      "source_ids": [
-      "S056"
+      "S033"
      ]
     }
    ],
@@ -10272,9 +10475,9 @@ window.SITE_DATA = {
    "example": "Ethiopia — the plan for the coordinator to sit inside the ministry did not proceed because no office space was made available, so the intended co-location never happened.",
    "type": "context",
    "strength": 4,
-   "n_records": 4,
-   "n_sources": 3,
-   "n_documents": 4,
+   "n_records": 5,
+   "n_sources": 4,
+   "n_documents": 5,
    "counted_sources": [
     {
      "group": "S107",
@@ -10294,21 +10497,29 @@ window.SITE_DATA = {
       "S084",
       "S085"
      ]
+    },
+    {
+     "group": "itad-unicef-wipc-2020",
+     "source_ids": [
+      "S094"
+     ]
     }
    ],
-   "n_streams": 2,
-   "n_checked": 3,
+   "n_streams": 3,
+   "n_checked": 4,
    "relations": [],
-   "period": "2026 – Jul 2026",
-   "period_from": "2026",
+   "period": "2020 – Jul 2026",
+   "period_from": "2020",
    "period_to": "Jul 2026",
-   "period_span": 0,
+   "period_span": 6,
    "streams": [
+    "sdr",
     "transcript",
     "workshop"
    ],
    "countries": [
     "BFA",
+    "CMR",
     "ETH",
     "KEN",
     "LBN"
@@ -10321,13 +10532,15 @@ window.SITE_DATA = {
    ],
    "actors": [
     "cluster",
-    "gov-national"
+    "gov-national",
+    "un-agency"
    ],
    "record_ids": [
     "E0296",
     "E0325",
     "E0483",
-    "E0555"
+    "E0555",
+    "E0860"
    ],
    "unmerged": false,
    "highlight": {
@@ -10571,9 +10784,9 @@ window.SITE_DATA = {
    "example": "Ukraine — the transition endpoint was scoped as a national institution with durable funding and a formal civil protection mandate, rather than defaulting to a line ministry.",
    "type": "enabler",
    "strength": 4,
-   "n_records": 8,
-   "n_sources": 4,
-   "n_documents": 5,
+   "n_records": 9,
+   "n_sources": 5,
+   "n_documents": 6,
    "counted_sources": [
     {
      "group": "S069",
@@ -10585,6 +10798,12 @@ window.SITE_DATA = {
      "group": "S081",
      "source_ids": [
       "S081"
+     ]
+    },
+    {
+     "group": "S099",
+     "source_ids": [
+      "S099"
      ]
     },
     {
@@ -10602,7 +10821,7 @@ window.SITE_DATA = {
     }
    ],
    "n_streams": 2,
-   "n_checked": 6,
+   "n_checked": 7,
    "relations": [],
    "period": "2013 – 2026",
    "period_from": "2013",
@@ -10614,6 +10833,7 @@ window.SITE_DATA = {
    ],
    "countries": [
     "IRQ",
+    "NPL",
     "UKR"
    ],
    "tags": [
@@ -10641,7 +10861,8 @@ window.SITE_DATA = {
     "E0635",
     "E0636",
     "E0775",
-    "E0801"
+    "E0801",
+    "E0848"
    ],
    "unmerged": false,
    "highlight": {
@@ -10660,14 +10881,20 @@ window.SITE_DATA = {
    "example": "Lebanon — government was not willing to take over the response for certain population groups. Coordinators were explicit that this was distinct from a capacity constraint.",
    "type": "barrier",
    "strength": 5,
-   "n_records": 10,
-   "n_sources": 6,
-   "n_documents": 8,
+   "n_records": 11,
+   "n_sources": 7,
+   "n_documents": 9,
    "counted_sources": [
     {
      "group": "S070",
      "source_ids": [
       "S070"
+     ]
+    },
+    {
+     "group": "S096",
+     "source_ids": [
+      "S096"
      ]
     },
     {
@@ -10704,12 +10931,12 @@ window.SITE_DATA = {
     }
    ],
    "n_streams": 3,
-   "n_checked": 7,
+   "n_checked": 8,
    "relations": [],
-   "period": "2025 – Aug 2026",
-   "period_from": "2025",
+   "period": "2016 – Aug 2026",
+   "period_from": "2016",
    "period_to": "Aug 2026",
-   "period_span": 1,
+   "period_span": 10,
    "streams": [
     "sdr",
     "transcript",
@@ -10722,6 +10949,7 @@ window.SITE_DATA = {
     "ETH",
     "LBN",
     "PSE",
+    "SSD",
     "SYR"
    ],
    "tags": [
@@ -10735,6 +10963,7 @@ window.SITE_DATA = {
     "community",
     "donor",
     "gov-national",
+    "ingo",
     "ocha",
     "un-agency"
    ],
@@ -10748,7 +10977,8 @@ window.SITE_DATA = {
     "E0383",
     "E0556",
     "E0581",
-    "E0744"
+    "E0744",
+    "E0855"
    ],
    "unmerged": false,
    "highlight": {
@@ -10767,9 +10997,9 @@ window.SITE_DATA = {
    "example": "Colombia — the proposed successor is a specialised technical roundtable inside an existing inter-institutional environmental health commission, which already convenes the relevant government bodies.",
    "type": "enabler",
    "strength": 5,
-   "n_records": 7,
-   "n_sources": 6,
-   "n_documents": 7,
+   "n_records": 8,
+   "n_sources": 7,
+   "n_documents": 8,
    "counted_sources": [
     {
      "group": "S052",
@@ -10787,6 +11017,12 @@ window.SITE_DATA = {
      "group": "S065",
      "source_ids": [
       "S065"
+     ]
+    },
+    {
+     "group": "S099",
+     "source_ids": [
+      "S099"
      ]
     },
     {
@@ -10810,12 +11046,12 @@ window.SITE_DATA = {
     }
    ],
    "n_streams": 3,
-   "n_checked": 7,
+   "n_checked": 8,
    "relations": [],
-   "period": "2020 – Aug 2026",
-   "period_from": "2020",
+   "period": "2019 – Aug 2026",
+   "period_from": "2019",
    "period_to": "Aug 2026",
-   "period_span": 6,
+   "period_span": 7,
    "streams": [
     "sdr",
     "transcript",
@@ -10826,6 +11062,7 @@ window.SITE_DATA = {
     "IRQ",
     "LBY",
     "NGA",
+    "NPL",
     "SOM",
     "SYR",
     "UKR"
@@ -10841,7 +11078,10 @@ window.SITE_DATA = {
    "actors": [
     "cluster",
     "development",
-    "gov-national"
+    "gov-national",
+    "ingo",
+    "local-ngo",
+    "un-agency"
    ],
    "record_ids": [
     "E0252",
@@ -10850,7 +11090,8 @@ window.SITE_DATA = {
     "E0313",
     "E0316",
     "E0382",
-    "E0445"
+    "E0445",
+    "E0842"
    ],
    "unmerged": false,
    "highlight": {
@@ -11157,9 +11398,9 @@ window.SITE_DATA = {
    "example": "Cameroon — transition planning proposed a six-month post-handover mentoring phase with quarterly reviews, rather than ending support at the point of transfer.",
    "type": "enabler",
    "strength": 5,
-   "n_records": 6,
-   "n_sources": 6,
-   "n_documents": 6,
+   "n_records": 7,
+   "n_sources": 7,
+   "n_documents": 7,
    "counted_sources": [
     {
      "group": "S066",
@@ -11180,6 +11421,12 @@ window.SITE_DATA = {
      ]
     },
     {
+     "group": "S099",
+     "source_ids": [
+      "S099"
+     ]
+    },
+    {
      "group": "cameroon-health-transition-2026",
      "source_ids": [
       "S118"
@@ -11194,17 +11441,17 @@ window.SITE_DATA = {
     {
      "group": "icva-coordination-in-transition",
      "source_ids": [
-      "S056"
+      "S033"
      ]
     }
    ],
    "n_streams": 3,
-   "n_checked": 4,
+   "n_checked": 5,
    "relations": [],
-   "period": "2025 – Aug 2026",
-   "period_from": "2025",
+   "period": "2019 – Aug 2026",
+   "period_from": "2019",
    "period_to": "Aug 2026",
-   "period_span": 1,
+   "period_span": 7,
    "streams": [
     "sdr",
     "search",
@@ -11212,13 +11459,15 @@ window.SITE_DATA = {
    ],
    "countries": [
     "CMR",
-    "ETH"
+    "ETH",
+    "NPL"
    ],
    "tags": [
     "capacity",
     "funding",
     "information-management",
     "localisation",
+    "staff-turnover",
     "transition-handover"
    ],
    "actors": [
@@ -11235,7 +11484,8 @@ window.SITE_DATA = {
     "E0333",
     "E0336",
     "E0339",
-    "E0681"
+    "E0681",
+    "E0844"
    ],
    "unmerged": false,
    "highlight": {
@@ -11318,10 +11568,10 @@ window.SITE_DATA = {
    ],
    "example": "",
    "type": "barrier",
-   "strength": 2,
-   "n_records": 2,
-   "n_sources": 2,
-   "n_documents": 2,
+   "strength": 3,
+   "n_records": 3,
+   "n_sources": 3,
+   "n_documents": 3,
    "counted_sources": [
     {
      "group": "S080",
@@ -11330,36 +11580,47 @@ window.SITE_DATA = {
      ]
     },
     {
+     "group": "S096",
+     "source_ids": [
+      "S096"
+     ]
+    },
+    {
      "group": "icva-coordination-in-transition",
      "source_ids": [
-      "S056"
+      "S033"
      ]
     }
    ],
    "n_streams": 1,
-   "n_checked": 1,
+   "n_checked": 2,
    "relations": [],
-   "period": "2024 – 2025",
-   "period_from": "2024",
+   "period": "2016 – 2025",
+   "period_from": "2016",
    "period_to": "2025",
-   "period_span": 1,
+   "period_span": 9,
    "streams": [
     "sdr"
    ],
-   "countries": [],
+   "countries": [
+    "SSD"
+   ],
    "tags": [
     "funding",
+    "geographic-targeting",
     "nexus",
     "transition-handover"
    ],
    "actors": [
     "development",
     "donor",
-    "gov-local"
+    "gov-local",
+    "ingo"
    ],
    "record_ids": [
     "E0250",
-    "E0354"
+    "E0354",
+    "E0852"
    ],
    "unmerged": false,
    "highlight": {
@@ -11504,10 +11765,10 @@ window.SITE_DATA = {
    ],
    "example": "",
    "type": "recommendation",
-   "strength": 4,
-   "n_records": 10,
-   "n_sources": 5,
-   "n_documents": 8,
+   "strength": 5,
+   "n_records": 11,
+   "n_sources": 6,
+   "n_documents": 9,
    "counted_sources": [
     {
      "group": "S055",
@@ -11519,6 +11780,12 @@ window.SITE_DATA = {
      "group": "S082",
      "source_ids": [
       "S082"
+     ]
+    },
+    {
+     "group": "S099",
+     "source_ids": [
+      "S099"
      ]
     },
     {
@@ -11541,12 +11808,12 @@ window.SITE_DATA = {
     }
    ],
    "n_streams": 3,
-   "n_checked": 6,
+   "n_checked": 7,
    "relations": [],
-   "period": "2025 – Aug 2026",
-   "period_from": "2025",
+   "period": "2019 – Aug 2026",
+   "period_from": "2019",
    "period_to": "Aug 2026",
-   "period_span": 1,
+   "period_span": 7,
    "streams": [
     "sdr",
     "search",
@@ -11556,6 +11823,7 @@ window.SITE_DATA = {
    "countries": [
     "CMR",
     "MOZ",
+    "NPL",
     "SSD"
    ],
    "tags": [
@@ -11585,7 +11853,8 @@ window.SITE_DATA = {
     "E0616",
     "E0627",
     "E0682",
-    "E0803"
+    "E0803",
+    "E0841"
    ],
    "unmerged": false,
    "highlight": {
@@ -11671,6 +11940,1012 @@ window.SITE_DATA = {
     "so_what": "Run the gap analysis first and let it define the package. An incoming organisation needs a structured induction, not an assumption that it can absorb the role.",
     "rank": null
    }
+  },
+  {
+   "finding_id": "F430",
+   "statement": "An area-based layer can carry functions a cluster does not hold. Where sub-national forums were given a negotiation mandate alongside coordination, they took a substantial role in humanitarian access negotiation — a function no cluster is set up to perform.",
+   "theme": [
+    "ABC"
+   ],
+   "example": "Venezuela — the HCT chose in 2023 to strengthen area-based coordination through OCHA-led Local Coordination Forums, which coordinate local response and, in some locations, negotiate access.",
+   "type": "practice",
+   "strength": 1,
+   "n_records": 1,
+   "n_sources": 1,
+   "n_documents": 1,
+   "counted_sources": [
+    {
+     "group": "icva-localisation-leadership-2024",
+     "source_ids": [
+      "S048"
+     ]
+    }
+   ],
+   "n_streams": 1,
+   "n_checked": 1,
+   "relations": [],
+   "period": "2024",
+   "period_from": "2024",
+   "period_to": "2024",
+   "period_span": 0,
+   "streams": [
+    "sdr"
+   ],
+   "countries": [
+    "VEN"
+   ],
+   "tags": [
+    "coordination-architecture"
+   ],
+   "actors": [
+    "ingo",
+    "local-ngo",
+    "ocha"
+   ],
+   "record_ids": [
+    "E0807"
+   ],
+   "unmerged": false
+  },
+  {
+   "finding_id": "F431",
+   "statement": "Nationalising international posts is not the same as local organisations leading. Filling coordinator positions with national staff improves contextual understanding and leaves the share of coordination led by local and national organisations unchanged. Counted together, the two look like one trend; they are not.",
+   "theme": [
+    "Fundamentals"
+   ],
+   "example": "Venezuela — most UN cluster coordinator posts are now held by nationals under a nationalisation policy, while representation of local and national organisations in cluster leadership remains low.",
+   "type": "barrier",
+   "strength": 1,
+   "n_records": 1,
+   "n_sources": 1,
+   "n_documents": 1,
+   "counted_sources": [
+    {
+     "group": "icva-localisation-leadership-2024",
+     "source_ids": [
+      "S048"
+     ]
+    }
+   ],
+   "n_streams": 1,
+   "n_checked": 1,
+   "relations": [],
+   "period": "2024",
+   "period_from": "2024",
+   "period_to": "2024",
+   "period_span": 0,
+   "streams": [
+    "sdr"
+   ],
+   "countries": [
+    "VEN"
+   ],
+   "tags": [
+    "capacity",
+    "localisation"
+   ],
+   "actors": [
+    "local-ngo",
+    "un-agency"
+   ],
+   "record_ids": [
+    "E0809"
+   ],
+   "unmerged": false
+  },
+  {
+   "finding_id": "F432",
+   "statement": "A scaling international architecture displaces the national capacity already responding. National organisations active before the system arrived describe being pushed into a supplier relationship, with cluster activation adding layers of grants and liaison rather than routes into decisions. OCHA's own personnel name the cluster system as reinforcing the boundary.",
+   "theme": [
+    "Fundamentals"
+   ],
+   "example": "Venezuela — a participant recalled working directly with institutional donors early in the crisis, until cluster activation and increased funding routed everything through UN and INGO partnerships.",
+   "type": "barrier",
+   "strength": 2,
+   "n_records": 2,
+   "n_sources": 2,
+   "n_documents": 2,
+   "counted_sources": [
+    {
+     "group": "S047",
+     "source_ids": [
+      "S047"
+     ]
+    },
+    {
+     "group": "icva-localisation-leadership-2024",
+     "source_ids": [
+      "S048"
+     ]
+    }
+   ],
+   "n_streams": 1,
+   "n_checked": 2,
+   "relations": [],
+   "period": "2024 – 2025",
+   "period_from": "2024",
+   "period_to": "2025",
+   "period_span": 1,
+   "streams": [
+    "sdr"
+   ],
+   "countries": [
+    "VEN"
+   ],
+   "tags": [
+    "coordination-architecture",
+    "localisation"
+   ],
+   "actors": [
+    "cluster",
+    "ingo",
+    "local-ngo",
+    "ocha",
+    "un-agency"
+   ],
+   "record_ids": [
+    "E0812",
+    "E0836"
+   ],
+   "unmerged": false
+  },
+  {
+   "finding_id": "F433",
+   "statement": "Area structures can be designed with local leadership built in rather than added later. One revised structure put most focal point roles with NGOs and local organisations leading a majority of areas. Whether the design holds is not yet known — it was new when observed.",
+   "theme": [
+    "ABC"
+   ],
+   "example": "Somalia — local and national NGOs hold eight focal point roles in the revised area-based structure, six of them as area leads.",
+   "type": "enabler",
+   "strength": 1,
+   "n_records": 1,
+   "n_sources": 1,
+   "n_documents": 1,
+   "counted_sources": [
+    {
+     "group": "icva-localisation-leadership-2024",
+     "source_ids": [
+      "S127"
+     ]
+    }
+   ],
+   "n_streams": 1,
+   "n_checked": 1,
+   "relations": [],
+   "period": "2024",
+   "period_from": "2024",
+   "period_to": "2024",
+   "period_span": 0,
+   "streams": [
+    "sdr"
+   ],
+   "countries": [
+    "SOM"
+   ],
+   "tags": [
+    "coordination-architecture",
+    "localisation"
+   ],
+   "actors": [
+    "ingo",
+    "local-ngo",
+    "operational-cell"
+   ],
+   "record_ids": [
+    "E0814"
+   ],
+   "unmerged": false
+  },
+  {
+   "finding_id": "F436",
+   "statement": "Where coordination meets, decides who attends. Meetings held on secured international premises filter participation by who can clear the entry procedures, and co-location rules shape the informal contact that coordination actually runs on. National staff are filtered out most.",
+   "theme": [
+    "Fundamentals"
+   ],
+   "example": "Somalia — NGOs based in the capital find access to the main UN premises time-consuming or difficult, particularly for Somali nationals.",
+   "type": "barrier",
+   "strength": 1,
+   "n_records": 1,
+   "n_sources": 1,
+   "n_documents": 1,
+   "counted_sources": [
+    {
+     "group": "icva-localisation-leadership-2024",
+     "source_ids": [
+      "S127"
+     ]
+    }
+   ],
+   "n_streams": 1,
+   "n_checked": 1,
+   "relations": [],
+   "period": "2024",
+   "period_from": "2024",
+   "period_to": "2024",
+   "period_span": 0,
+   "streams": [
+    "sdr"
+   ],
+   "countries": [
+    "SOM"
+   ],
+   "tags": [
+    "inclusion",
+    "localisation"
+   ],
+   "actors": [
+    "local-ngo",
+    "un-agency"
+   ],
+   "record_ids": [
+    "E0819"
+   ],
+   "unmerged": false
+  },
+  {
+   "finding_id": "F437",
+   "statement": "Two coordination systems in one country cost more than twice one. Parallel architectures multiply meetings and duplicate reporting, and the load falls on the actors least able to absorb it, reinforcing the perception that the response is internationally run.",
+   "theme": [
+    "ABC"
+   ],
+   "example": "Colombia — the IASC system and the refugee and migrant platform remain separate despite efforts to combine meetings.",
+   "type": "barrier",
+   "strength": 1,
+   "n_records": 1,
+   "n_sources": 1,
+   "n_documents": 1,
+   "counted_sources": [
+    {
+     "group": "icva-localisation-leadership-2024",
+     "source_ids": [
+      "S125"
+     ]
+    }
+   ],
+   "n_streams": 1,
+   "n_checked": 1,
+   "relations": [],
+   "period": "2024",
+   "period_from": "2024",
+   "period_to": "2024",
+   "period_span": 0,
+   "streams": [
+    "sdr"
+   ],
+   "countries": [
+    "COL"
+   ],
+   "tags": [
+    "coordination-architecture",
+    "inclusion"
+   ],
+   "actors": [
+    "local-ngo",
+    "ocha",
+    "un-agency"
+   ],
+   "record_ids": [
+    "E0820"
+   ],
+   "unmerged": false
+  },
+  {
+   "finding_id": "F438",
+   "statement": "Local organisations deliver the response and international agencies lead the structures that coordinate it. The imbalance is sharpest at area level, where proximity is the stated rationale for the structure existing.",
+   "theme": [
+    "ABC"
+   ],
+   "example": "Colombia — of sixteen area-based groups, fourteen are led by UN agencies and two by a local or national NGO.",
+   "type": "context",
+   "strength": 1,
+   "n_records": 1,
+   "n_sources": 1,
+   "n_documents": 1,
+   "counted_sources": [
+    {
+     "group": "icva-localisation-leadership-2024",
+     "source_ids": [
+      "S125"
+     ]
+    }
+   ],
+   "n_streams": 1,
+   "n_checked": 1,
+   "relations": [],
+   "period": "2024",
+   "period_from": "2024",
+   "period_to": "2024",
+   "period_span": 0,
+   "streams": [
+    "sdr"
+   ],
+   "countries": [
+    "COL"
+   ],
+   "tags": [
+    "coordination-architecture",
+    "localisation"
+   ],
+   "actors": [
+    "local-ngo",
+    "un-agency"
+   ],
+   "record_ids": [
+    "E0821"
+   ],
+   "unmerged": false
+  },
+  {
+   "finding_id": "F440",
+   "statement": "Mapping who delivers in an area finds organisations the humanitarian system has no relationship with. Many do not identify as humanitarian and work primarily in development, peace or human rights. There is no settled answer on what engagement with them is for or what form it should take.",
+   "theme": [
+    "ABC"
+   ],
+   "example": "Colombia — OCHA's Flagship Initiative outreach began with a mapping of local organisations delivering aid, which surfaced the question.",
+   "type": "context",
+   "strength": 1,
+   "n_records": 1,
+   "n_sources": 1,
+   "n_documents": 1,
+   "counted_sources": [
+    {
+     "group": "icva-localisation-leadership-2024",
+     "source_ids": [
+      "S125"
+     ]
+    }
+   ],
+   "n_streams": 1,
+   "n_checked": 1,
+   "relations": [],
+   "period": "2024",
+   "period_from": "2024",
+   "period_to": "2024",
+   "period_span": 0,
+   "streams": [
+    "sdr"
+   ],
+   "countries": [
+    "COL"
+   ],
+   "tags": [
+    "coordination-architecture",
+    "localisation",
+    "nexus"
+   ],
+   "actors": [
+    "development",
+    "local-ngo",
+    "ocha"
+   ],
+   "record_ids": [
+    "E0823"
+   ],
+   "unmerged": false
+  },
+  {
+   "finding_id": "F441",
+   "statement": "Participation followed money, not encouragement. What changed local presence in coordination was paying for it: membership fees covered, multi-year programme support, dedicated funding for a co-coordination post. Where the role was an add-on to programme work, it did not hold.",
+   "theme": [
+    "Fundamentals"
+   ],
+   "example": "Colombia — an INGO paid initial NGO Forum membership fees alongside multi-year programme and advocacy support. South Sudan — one co-coordination arrangement rests on a multi-year grant; the others are double-hatted add-ons.",
+   "type": "enabler",
+   "strength": 1,
+   "n_records": 2,
+   "n_sources": 1,
+   "n_documents": 2,
+   "counted_sources": [
+    {
+     "group": "icva-localisation-leadership-2024",
+     "source_ids": [
+      "S125",
+      "S128"
+     ]
+    }
+   ],
+   "n_streams": 1,
+   "n_checked": 2,
+   "relations": [],
+   "period": "2024",
+   "period_from": "2024",
+   "period_to": "2024",
+   "period_span": 0,
+   "streams": [
+    "sdr"
+   ],
+   "countries": [
+    "COL",
+    "SSD"
+   ],
+   "tags": [
+    "funding",
+    "localisation",
+    "partnerships",
+    "staff-turnover"
+   ],
+   "actors": [
+    "cluster",
+    "donor",
+    "ingo",
+    "local-ngo"
+   ],
+   "record_ids": [
+    "E0824",
+    "E0831"
+   ],
+   "unmerged": false
+  },
+  {
+   "finding_id": "F442",
+   "statement": "Partners attend when the meeting decides something. Forums read as operational and strategic hold attendance; those read as information-sharing or process lose it, and an agenda that does not recognisably concern the attendees empties the room regardless of who has a seat.",
+   "theme": [
+    "Fundamentals"
+   ],
+   "example": "Ethiopia — local NGO interviewees attended and raised issues, but said agendas often did not feel relevant to them.",
+   "type": "enabler",
+   "strength": 1,
+   "n_records": 2,
+   "n_sources": 1,
+   "n_documents": 2,
+   "counted_sources": [
+    {
+     "group": "icva-localisation-leadership-2024",
+     "source_ids": [
+      "S125",
+      "S126"
+     ]
+    }
+   ],
+   "n_streams": 1,
+   "n_checked": 2,
+   "relations": [],
+   "period": "2024",
+   "period_from": "2024",
+   "period_to": "2024",
+   "period_span": 0,
+   "streams": [
+    "sdr"
+   ],
+   "countries": [
+    "COL",
+    "ETH"
+   ],
+   "tags": [
+    "inclusion",
+    "performance"
+   ],
+   "actors": [
+    "cluster",
+    "ingo",
+    "local-ngo"
+   ],
+   "record_ids": [
+    "E0825",
+    "E0826"
+   ],
+   "unmerged": false
+  },
+  {
+   "finding_id": "F443",
+   "statement": "Government leadership can narrow the space for local organisations rather than widen it. Where a ministry already co-leads, adding a local NGO co-coordinator is resisted as one coordinator too many, and the existing power dynamics between international and local actors persist underneath the government seat.",
+   "theme": [
+    "Transition"
+   ],
+   "example": "Ethiopia — most clusters are co-led by government with the UN lead agency; participants argued NGO co-coordination would mean 'too many' coordinators.",
+   "type": "barrier",
+   "strength": 1,
+   "n_records": 1,
+   "n_sources": 1,
+   "n_documents": 1,
+   "counted_sources": [
+    {
+     "group": "icva-localisation-leadership-2024",
+     "source_ids": [
+      "S126"
+     ]
+    }
+   ],
+   "n_streams": 1,
+   "n_checked": 1,
+   "relations": [],
+   "period": "2024",
+   "period_from": "2024",
+   "period_to": "2024",
+   "period_span": 0,
+   "streams": [
+    "sdr"
+   ],
+   "countries": [
+    "ETH"
+   ],
+   "tags": [
+    "government-engagement",
+    "localisation",
+    "transition-handover"
+   ],
+   "actors": [
+    "gov-national",
+    "local-ngo",
+    "un-agency"
+   ],
+   "record_ids": [
+    "E0828"
+   ],
+   "unmerged": false
+  },
+  {
+   "finding_id": "F444",
+   "statement": "A seat is not a role until someone explains it. Representatives newly appointed to coordination bodies need structured onboarding into what the body does and what the seat obliges them to do; where coordinators invested in briefing new colleagues, participation shifted towards equal.",
+   "theme": [
+    "Fundamentals"
+   ],
+   "example": "South Sudan — UN coordinators gave extensive initial briefings to new local co-coordinators, with a gradual shift towards equal representation.",
+   "type": "recommendation",
+   "strength": 1,
+   "n_records": 2,
+   "n_sources": 1,
+   "n_documents": 2,
+   "counted_sources": [
+    {
+     "group": "icva-localisation-leadership-2024",
+     "source_ids": [
+      "S126",
+      "S128"
+     ]
+    }
+   ],
+   "n_streams": 1,
+   "n_checked": 2,
+   "relations": [],
+   "period": "2024",
+   "period_from": "2024",
+   "period_to": "2024",
+   "period_span": 0,
+   "streams": [
+    "sdr"
+   ],
+   "countries": [
+    "ETH",
+    "SSD"
+   ],
+   "tags": [
+    "capacity",
+    "inclusion",
+    "localisation"
+   ],
+   "actors": [
+    "cluster",
+    "local-ngo",
+    "un-agency"
+   ],
+   "record_ids": [
+    "E0829",
+    "E0830"
+   ],
+   "unmerged": false
+  },
+  {
+   "finding_id": "F445",
+   "statement": "Funding crowds out the rest of the agenda. Where access to funding is the dominant concern, representatives spend their influence on that one issue and the other decisions open to them pass unchallenged.",
+   "theme": [
+    "Fundamentals"
+   ],
+   "example": "South Sudan — funding was repeatedly the top concern raised by local NGO representatives in coordination forums.",
+   "type": "barrier",
+   "strength": 1,
+   "n_records": 1,
+   "n_sources": 1,
+   "n_documents": 1,
+   "counted_sources": [
+    {
+     "group": "icva-localisation-leadership-2024",
+     "source_ids": [
+      "S128"
+     ]
+    }
+   ],
+   "n_streams": 1,
+   "n_checked": 1,
+   "relations": [],
+   "period": "2024",
+   "period_from": "2024",
+   "period_to": "2024",
+   "period_span": 0,
+   "streams": [
+    "sdr"
+   ],
+   "countries": [
+    "SSD"
+   ],
+   "tags": [
+    "funding",
+    "inclusion"
+   ],
+   "actors": [
+    "donor",
+    "local-ngo"
+   ],
+   "record_ids": [
+    "E0832"
+   ],
+   "unmerged": false
+  },
+  {
+   "finding_id": "F446",
+   "statement": "Risk-based eligibility rules reversed localisation funding faster than any policy advanced it. A capacity risk reassessment cut direct pooled-fund allocations to local organisations by three quarters over four years, reclassifying many as ineligible or high risk, and objections from local advisory board members did not change the trend.",
+   "theme": [
+    "Fundamentals"
+   ],
+   "example": "South Sudan — direct allocations to local and national NGOs fell from 38 per cent in 2019 to 16 per cent in 2021 and 9 per cent in 2023.",
+   "type": "context",
+   "strength": 1,
+   "n_records": 1,
+   "n_sources": 1,
+   "n_documents": 1,
+   "counted_sources": [
+    {
+     "group": "icva-localisation-leadership-2024",
+     "source_ids": [
+      "S128"
+     ]
+    }
+   ],
+   "n_streams": 1,
+   "n_checked": 1,
+   "relations": [],
+   "period": "2024",
+   "period_from": "2024",
+   "period_to": "2024",
+   "period_span": 0,
+   "streams": [
+    "sdr"
+   ],
+   "countries": [
+    "SSD"
+   ],
+   "tags": [
+    "funding",
+    "localisation",
+    "pooled-funds"
+   ],
+   "actors": [
+    "donor",
+    "local-ngo",
+    "un-agency"
+   ],
+   "record_ids": [
+    "E0833"
+   ],
+   "unmerged": false
+  },
+  {
+   "finding_id": "F448",
+   "statement": "Community feedback loses to security, access and funding for decision time. Coordination forums rarely raise what affected people say to the level at which the other three are discussed, so accountability stays a technical workstream rather than an input to decisions.",
+   "theme": [
+    "Fundamentals"
+   ],
+   "example": "Global — OCHA regional office personnel, reporting on field coordination forums including ICCGs and HCTs.",
+   "type": "barrier",
+   "strength": 1,
+   "n_records": 1,
+   "n_sources": 1,
+   "n_documents": 1,
+   "counted_sources": [
+    {
+     "group": "S047",
+     "source_ids": [
+      "S047"
+     ]
+    }
+   ],
+   "n_streams": 1,
+   "n_checked": 1,
+   "relations": [],
+   "period": "2025",
+   "period_from": "2025",
+   "period_to": "2025",
+   "period_span": 0,
+   "streams": [
+    "sdr"
+   ],
+   "countries": [],
+   "tags": [
+    "aap",
+    "performance"
+   ],
+   "actors": [
+    "cluster",
+    "community",
+    "ocha"
+   ],
+   "record_ids": [
+    "E0837"
+   ],
+   "unmerged": false
+  },
+  {
+   "finding_id": "F449",
+   "statement": "The actors expected to inherit the caseload are not told what the system learned about it. Community feedback is shared little or not at all with development organisations and government bodies, whose programmes would have to address the needs extending past humanitarian assistance.",
+   "theme": [
+    "Transition"
+   ],
+   "example": "Global — finding of OCHA's 2025 evaluation of accountability to affected people.",
+   "type": "barrier",
+   "strength": 1,
+   "n_records": 1,
+   "n_sources": 1,
+   "n_documents": 1,
+   "counted_sources": [
+    {
+     "group": "S047",
+     "source_ids": [
+      "S047"
+     ]
+    }
+   ],
+   "n_streams": 1,
+   "n_checked": 1,
+   "relations": [],
+   "period": "2025",
+   "period_from": "2025",
+   "period_to": "2025",
+   "period_span": 0,
+   "streams": [
+    "sdr"
+   ],
+   "countries": [],
+   "tags": [
+    "aap",
+    "nexus",
+    "transition-handover"
+   ],
+   "actors": [
+    "development",
+    "gov-national",
+    "ocha"
+   ],
+   "record_ids": [
+    "E0838"
+   ],
+   "unmerged": false
+  },
+  {
+   "finding_id": "F450",
+   "statement": "Nothing stands ready to take coordination when a cluster closes. There is no global mechanism to replace the cluster system, so post-cluster coordination is assembled case by case, and whether it works turns on what the country happens to have.",
+   "theme": [
+    "Transition"
+   ],
+   "example": "Nepal — the Housing Recovery and Reconstruction Platform was built specifically because no standing successor existed.",
+   "type": "context",
+   "strength": 1,
+   "n_records": 1,
+   "n_sources": 1,
+   "n_documents": 1,
+   "counted_sources": [
+    {
+     "group": "S099",
+     "source_ids": [
+      "S099"
+     ]
+    }
+   ],
+   "n_streams": 1,
+   "n_checked": 1,
+   "relations": [],
+   "period": "2019",
+   "period_from": "2019",
+   "period_to": "2019",
+   "period_span": 0,
+   "streams": [
+    "sdr"
+   ],
+   "countries": [
+    "NPL"
+   ],
+   "tags": [
+    "coordination-architecture",
+    "transition-handover"
+   ],
+   "actors": [
+    "cluster",
+    "gov-national",
+    "ingo"
+   ],
+   "record_ids": [
+    "E0839"
+   ],
+   "unmerged": false
+  },
+  {
+   "finding_id": "F452",
+   "statement": "A successor platform's authority rests on being seen as impartial, and hosting arrangements work against that. The more the platform is identifiable with the agency running it, the less it can convene the rest. Visibility requirements and coordination legitimacy pull in opposite directions.",
+   "theme": [
+    "Transition"
+   ],
+   "example": "Nepal — the platform recorded that agency visibility may hamper the impartiality its effectiveness depends on.",
+   "type": "recommendation",
+   "strength": 1,
+   "n_records": 1,
+   "n_sources": 1,
+   "n_documents": 1,
+   "counted_sources": [
+    {
+     "group": "S099",
+     "source_ids": [
+      "S099"
+     ]
+    }
+   ],
+   "n_streams": 1,
+   "n_checked": 1,
+   "relations": [],
+   "period": "2019",
+   "period_from": "2019",
+   "period_to": "2019",
+   "period_span": 0,
+   "streams": [
+    "sdr"
+   ],
+   "countries": [
+    "NPL"
+   ],
+   "tags": [
+    "partnerships",
+    "performance",
+    "transition-handover"
+   ],
+   "actors": [
+    "donor",
+    "ingo",
+    "local-ngo"
+   ],
+   "record_ids": [
+    "E0847"
+   ],
+   "unmerged": false
+  },
+  {
+   "finding_id": "F453",
+   "statement": "Recovery coordination and residual humanitarian coordination run at the same time, not one after the other. A platform that lived through it concluded the idea of a transition from one phase to the next did not describe what happened: recovery coordination began within weeks, and humanitarian needs recurred two years later.",
+   "theme": [
+    "Transition"
+   ],
+   "example": "Nepal — recovery coordination started in May 2015; coordination for residual humanitarian needs was required again in 2017.",
+   "type": "context",
+   "strength": 1,
+   "n_records": 1,
+   "n_sources": 1,
+   "n_documents": 1,
+   "counted_sources": [
+    {
+     "group": "S099",
+     "source_ids": [
+      "S099"
+     ]
+    }
+   ],
+   "n_streams": 1,
+   "n_checked": 1,
+   "relations": [],
+   "period": "2019",
+   "period_from": "2019",
+   "period_to": "2019",
+   "period_span": 0,
+   "streams": [
+    "sdr"
+   ],
+   "countries": [
+    "NPL"
+   ],
+   "tags": [
+    "transition-handover"
+   ],
+   "actors": [
+    "cluster",
+    "gov-national",
+    "ingo"
+   ],
+   "record_ids": [
+    "E0849"
+   ],
+   "unmerged": false
+  },
+  {
+   "finding_id": "F455",
+   "statement": "The cluster secretariat is the body positioned to start the conversation it will eventually hand over. Negotiating common ways of working between humanitarian and development actors is within its convening reach, with transfer of leadership to government as the longer-term aim rather than the opening move.",
+   "theme": [
+    "Transition"
+   ],
+   "example": "South Sudan — proposed by ODI as the route to a set of agreed common principles for WASH delivery in protracted crisis.",
+   "type": "recommendation",
+   "strength": 1,
+   "n_records": 1,
+   "n_sources": 1,
+   "n_documents": 1,
+   "counted_sources": [
+    {
+     "group": "S096",
+     "source_ids": [
+      "S096"
+     ]
+    }
+   ],
+   "n_streams": 1,
+   "n_checked": 1,
+   "relations": [],
+   "period": "2016",
+   "period_from": "2016",
+   "period_to": "2016",
+   "period_span": 0,
+   "streams": [
+    "sdr"
+   ],
+   "countries": [
+    "SSD"
+   ],
+   "tags": [
+    "government-engagement",
+    "nexus",
+    "transition-handover"
+   ],
+   "actors": [
+    "cluster",
+    "development",
+    "gov-national"
+   ],
+   "record_ids": [
+    "E0854"
+   ],
+   "unmerged": false
+  },
+  {
+   "finding_id": "F456",
+   "statement": "Coordination outside the cluster system keeps the meetings and loses the standards. Where no cluster was activated, the core functions were implemented ad hoc and the requirements attached to them fell away — the clearest observation the base holds on what is actually given up when coordination sits outside the formal architecture.",
+   "theme": [
+    "Transition"
+   ],
+   "example": "Cameroon — no cluster was activated for either crisis over nearly six years; the evaluation found reduced coordination standards and requirements.",
+   "type": "barrier",
+   "strength": 1,
+   "n_records": 1,
+   "n_sources": 1,
+   "n_documents": 1,
+   "counted_sources": [
+    {
+     "group": "itad-unicef-wipc-2020",
+     "source_ids": [
+      "S094"
+     ]
+    }
+   ],
+   "n_streams": 1,
+   "n_checked": 1,
+   "relations": [],
+   "period": "2020",
+   "period_from": "2020",
+   "period_to": "2020",
+   "period_span": 0,
+   "streams": [
+    "sdr"
+   ],
+   "countries": [
+    "CMR"
+   ],
+   "tags": [
+    "government-engagement",
+    "performance",
+    "transition-handover"
+   ],
+   "actors": [
+    "cluster",
+    "gov-national",
+    "un-agency"
+   ],
+   "record_ids": [
+    "E0857"
+   ],
+   "unmerged": false
   },
   {
    "finding_id": "F505",
@@ -18546,7 +19821,7 @@ window.SITE_DATA = {
     "government-engagement"
    ],
    "stream": "sdr",
-   "source_id": "S056",
+   "source_id": "S033",
    "date_collected": "2026-07-17",
    "confidence": "medium",
    "status": "draft",
@@ -19045,7 +20320,7 @@ window.SITE_DATA = {
     "transition-handover"
    ],
    "stream": "sdr",
-   "source_id": "S056",
+   "source_id": "S033",
    "date_collected": "2026-07-17",
    "confidence": "high",
    "status": "draft",
@@ -19472,7 +20747,7 @@ window.SITE_DATA = {
     "localisation"
    ],
    "stream": "sdr",
-   "source_id": "S056",
+   "source_id": "S033",
    "date_collected": "2026-07-17",
    "confidence": "high",
    "status": "draft",
@@ -19812,7 +21087,7 @@ window.SITE_DATA = {
     "transition-handover"
    ],
    "stream": "sdr",
-   "source_id": "S056",
+   "source_id": "S033",
    "date_collected": "2026-07-17",
    "confidence": "medium",
    "status": "draft",
@@ -19892,7 +21167,7 @@ window.SITE_DATA = {
     "coordination-architecture"
    ],
    "stream": "sdr",
-   "source_id": "S056",
+   "source_id": "S033",
    "date_collected": "2026-07-17",
    "confidence": "medium",
    "status": "draft",
@@ -20079,7 +21354,7 @@ window.SITE_DATA = {
     "capacity"
    ],
    "stream": "sdr",
-   "source_id": "S056",
+   "source_id": "S033",
    "date_collected": "2026-07-17",
    "confidence": "medium",
    "status": "draft",
@@ -20763,7 +22038,7 @@ window.SITE_DATA = {
     "transition-handover"
    ],
    "stream": "sdr",
-   "source_id": "S056",
+   "source_id": "S033",
    "date_collected": "2026-07-17",
    "confidence": "medium",
    "status": "draft",
@@ -21143,7 +22418,7 @@ window.SITE_DATA = {
     "capacity"
    ],
    "stream": "sdr",
-   "source_id": "S056",
+   "source_id": "S033",
    "date_collected": "2026-07-17",
    "confidence": "high",
    "status": "draft",
@@ -33468,6 +34743,1537 @@ window.SITE_DATA = {
    "confidence": "high",
    "status": "validated",
    "year": 2020
+  },
+  {
+   "id": "E0806",
+   "finding_id": "F260",
+   "theme": [
+    "ABC"
+   ],
+   "type": "barrier",
+   "statement": "Local actors are included in coordination discussions but carry less weight in strategic decisions, a pattern participants named a decision-making ceiling.",
+   "level": "national",
+   "countries": [
+    "VEN"
+   ],
+   "actors": [
+    "local-ngo",
+    "ingo",
+    "un-agency"
+   ],
+   "tags": [
+    "inclusion",
+    "localisation"
+   ],
+   "stream": "sdr",
+   "source_id": "S048",
+   "date_collected": "2026-09-14",
+   "confidence": "high",
+   "status": "validated",
+   "year": 2024
+  },
+  {
+   "id": "E0807",
+   "finding_id": "F430",
+   "theme": [
+    "ABC"
+   ],
+   "type": "practice",
+   "statement": "An area-based layer can be given a negotiation mandate alongside its coordination role, with area forums carrying a substantial part of humanitarian access negotiation.",
+   "level": "subnational",
+   "countries": [
+    "VEN"
+   ],
+   "actors": [
+    "ocha",
+    "local-ngo",
+    "ingo"
+   ],
+   "tags": [
+    "coordination-architecture"
+   ],
+   "stream": "sdr",
+   "source_id": "S048",
+   "date_collected": "2026-09-14",
+   "confidence": "high",
+   "status": "validated",
+   "year": 2024
+  },
+  {
+   "id": "E0808",
+   "finding_id": "F243",
+   "theme": [
+    "ABC"
+   ],
+   "type": "recommendation",
+   "statement": "Co-chairing an area forum with a local organisation can split responsibilities along expertise and mandate, but only where resources are attached to the role.",
+   "level": "subnational",
+   "countries": [
+    "VEN"
+   ],
+   "actors": [
+    "local-ngo",
+    "ocha"
+   ],
+   "tags": [
+    "coordination-architecture",
+    "funding"
+   ],
+   "stream": "sdr",
+   "source_id": "S048",
+   "date_collected": "2026-09-14",
+   "confidence": "high",
+   "status": "validated",
+   "year": 2024
+  },
+  {
+   "id": "E0809",
+   "finding_id": "F431",
+   "theme": [
+    "Fundamentals"
+   ],
+   "type": "barrier",
+   "statement": "Filling international coordinator posts with national staff improves contextual understanding without changing how far local and national organisations lead coordination.",
+   "level": "national",
+   "countries": [
+    "VEN"
+   ],
+   "actors": [
+    "un-agency",
+    "local-ngo"
+   ],
+   "tags": [
+    "localisation",
+    "capacity"
+   ],
+   "stream": "sdr",
+   "source_id": "S048",
+   "date_collected": "2026-09-14",
+   "confidence": "high",
+   "status": "validated",
+   "year": 2024
+  },
+  {
+   "id": "E0810",
+   "finding_id": "F224",
+   "theme": [
+    "Fundamentals"
+   ],
+   "type": "barrier",
+   "statement": "National NGO networks carry a representation function in coordination without secure funding for the secretariat work it requires.",
+   "level": "national",
+   "countries": [
+    "VEN"
+   ],
+   "actors": [
+    "local-ngo",
+    "ingo"
+   ],
+   "tags": [
+    "localisation",
+    "funding"
+   ],
+   "stream": "sdr",
+   "source_id": "S048",
+   "date_collected": "2026-09-14",
+   "confidence": "high",
+   "status": "validated",
+   "year": 2024
+  },
+  {
+   "id": "E0811",
+   "finding_id": "F234",
+   "theme": [
+    "Fundamentals"
+   ],
+   "type": "barrier",
+   "statement": "The time cost of attending coordination falls hardest on the smallest organisations, and co-chairing is further out of reach again.",
+   "level": "national",
+   "countries": [
+    "VEN"
+   ],
+   "actors": [
+    "local-ngo"
+   ],
+   "tags": [
+    "inclusion",
+    "capacity"
+   ],
+   "stream": "sdr",
+   "source_id": "S048",
+   "date_collected": "2026-09-14",
+   "confidence": "high",
+   "status": "validated",
+   "year": 2024
+  },
+  {
+   "id": "E0812",
+   "finding_id": "F432",
+   "theme": [
+    "Fundamentals"
+   ],
+   "type": "barrier",
+   "statement": "Where an international response scaled up over an existing national civil society, participants describe the system as having replaced that capacity rather than built on it, with cluster activation adding layers of grants and liaison.",
+   "level": "national",
+   "countries": [
+    "VEN"
+   ],
+   "actors": [
+    "local-ngo",
+    "ingo",
+    "un-agency"
+   ],
+   "tags": [
+    "localisation",
+    "coordination-architecture"
+   ],
+   "stream": "sdr",
+   "source_id": "S048",
+   "date_collected": "2026-09-14",
+   "confidence": "high",
+   "status": "validated",
+   "year": 2024
+  },
+  {
+   "id": "E0813",
+   "finding_id": "F1960",
+   "theme": [
+    "Fundamentals"
+   ],
+   "type": "enabler",
+   "statement": "Reserving pooled-fund board seats for specified constituencies rather than for local organisations in general produced a voice participants judged closer to equal.",
+   "level": "national",
+   "countries": [
+    "VEN"
+   ],
+   "actors": [
+    "local-ngo",
+    "donor",
+    "ocha"
+   ],
+   "tags": [
+    "pooled-funds",
+    "inclusion",
+    "localisation"
+   ],
+   "stream": "sdr",
+   "source_id": "S048",
+   "date_collected": "2026-09-14",
+   "confidence": "high",
+   "status": "validated",
+   "year": 2024
+  },
+  {
+   "id": "E0814",
+   "finding_id": "F433",
+   "theme": [
+    "ABC"
+   ],
+   "type": "enabler",
+   "statement": "A revised area-based structure put most focal point roles with NGOs, and local and national organisations led a majority of the areas.",
+   "level": "subnational",
+   "countries": [
+    "SOM"
+   ],
+   "actors": [
+    "local-ngo",
+    "ingo",
+    "operational-cell"
+   ],
+   "tags": [
+    "localisation",
+    "coordination-architecture"
+   ],
+   "stream": "sdr",
+   "source_id": "S127",
+   "date_collected": "2026-09-14",
+   "confidence": "high",
+   "status": "validated",
+   "year": 2024
+  },
+  {
+   "id": "E0815",
+   "finding_id": "F225",
+   "theme": [
+    "ABC"
+   ],
+   "type": "barrier",
+   "statement": "Area-level coordination is done by programme staff double-hatting on short grants, so the role turns over with the funding rather than lasting as long as the area structure does.",
+   "level": "subnational",
+   "countries": [
+    "SOM"
+   ],
+   "actors": [
+    "local-ngo",
+    "ingo"
+   ],
+   "tags": [
+    "capacity",
+    "staff-turnover",
+    "funding"
+   ],
+   "stream": "sdr",
+   "source_id": "S127",
+   "date_collected": "2026-09-14",
+   "confidence": "high",
+   "status": "validated",
+   "year": 2024
+  },
+  {
+   "id": "E0816",
+   "finding_id": "F254",
+   "theme": [
+    "ABC"
+   ],
+   "type": "barrier",
+   "statement": "How well a sub-national coordination body works tracks whether anyone is funded to coordinate it, more than any feature of its design.",
+   "level": "subnational",
+   "countries": [
+    "SOM"
+   ],
+   "actors": [
+    "cluster",
+    "ingo",
+    "local-ngo"
+   ],
+   "tags": [
+    "capacity",
+    "coordination-architecture"
+   ],
+   "stream": "sdr",
+   "source_id": "S127",
+   "date_collected": "2026-09-14",
+   "confidence": "high",
+   "status": "validated",
+   "year": 2024
+  },
+  {
+   "id": "E0817",
+   "finding_id": "F260",
+   "theme": [
+    "ABC"
+   ],
+   "type": "barrier",
+   "statement": "Local organisations hold seats in coordination bodies while describing decision-making as reserved for international actors and agendas as set by UN agencies.",
+   "level": "national",
+   "countries": [
+    "SOM"
+   ],
+   "actors": [
+    "local-ngo",
+    "un-agency"
+   ],
+   "tags": [
+    "inclusion",
+    "localisation"
+   ],
+   "stream": "sdr",
+   "source_id": "S127",
+   "date_collected": "2026-09-14",
+   "confidence": "high",
+   "status": "validated",
+   "year": 2024
+  },
+  {
+   "id": "E0818",
+   "finding_id": "F234",
+   "theme": [
+    "Fundamentals"
+   ],
+   "type": "barrier",
+   "statement": "Organisations that depend on the same actors for funding are reluctant to challenge them in coordination meetings.",
+   "level": "national",
+   "countries": [
+    "SOM"
+   ],
+   "actors": [
+    "local-ngo",
+    "ingo",
+    "un-agency"
+   ],
+   "tags": [
+    "inclusion",
+    "funding",
+    "localisation"
+   ],
+   "stream": "sdr",
+   "source_id": "S127",
+   "date_collected": "2026-09-14",
+   "confidence": "high",
+   "status": "validated",
+   "year": 2024
+  },
+  {
+   "id": "E0819",
+   "finding_id": "F436",
+   "theme": [
+    "Fundamentals"
+   ],
+   "type": "barrier",
+   "statement": "Where coordination meets on secured international premises, physical access and movement rules decide who can take part and who builds the relationships that coordination runs on.",
+   "level": "national",
+   "countries": [
+    "SOM"
+   ],
+   "actors": [
+    "local-ngo",
+    "un-agency"
+   ],
+   "tags": [
+    "inclusion",
+    "localisation"
+   ],
+   "stream": "sdr",
+   "source_id": "S127",
+   "date_collected": "2026-09-14",
+   "confidence": "high",
+   "status": "validated",
+   "year": 2024
+  },
+  {
+   "id": "E0820",
+   "finding_id": "F437",
+   "theme": [
+    "ABC"
+   ],
+   "type": "barrier",
+   "statement": "Where two coordination systems run in parallel, the meeting load and duplicate reporting deter local participation and reinforce the perception that the response is internationally run.",
+   "level": "national",
+   "countries": [
+    "COL"
+   ],
+   "actors": [
+    "local-ngo",
+    "un-agency",
+    "ocha"
+   ],
+   "tags": [
+    "coordination-architecture",
+    "inclusion"
+   ],
+   "stream": "sdr",
+   "source_id": "S125",
+   "date_collected": "2026-09-14",
+   "confidence": "high",
+   "status": "validated",
+   "year": 2024
+  },
+  {
+   "id": "E0821",
+   "finding_id": "F438",
+   "theme": [
+    "ABC"
+   ],
+   "type": "context",
+   "statement": "Leadership of area structures stays overwhelmingly international even where local organisations deliver most of the response.",
+   "level": "subnational",
+   "countries": [
+    "COL"
+   ],
+   "actors": [
+    "un-agency",
+    "local-ngo"
+   ],
+   "tags": [
+    "localisation",
+    "coordination-architecture"
+   ],
+   "stream": "sdr",
+   "source_id": "S125",
+   "date_collected": "2026-09-14",
+   "confidence": "high",
+   "status": "validated",
+   "year": 2024
+  },
+  {
+   "id": "E0822",
+   "finding_id": "F261",
+   "theme": [
+    "ABC"
+   ],
+   "type": "barrier",
+   "statement": "Working language and jargon decide who is inside the conversation; participants described in-groups formed through terminology even where every representative is a national of the country.",
+   "level": "national",
+   "countries": [
+    "COL"
+   ],
+   "actors": [
+    "un-agency",
+    "ingo",
+    "local-ngo"
+   ],
+   "tags": [
+    "inclusion",
+    "localisation"
+   ],
+   "stream": "sdr",
+   "source_id": "S125",
+   "date_collected": "2026-09-14",
+   "confidence": "high",
+   "status": "validated",
+   "year": 2024
+  },
+  {
+   "id": "E0823",
+   "finding_id": "F440",
+   "theme": [
+    "ABC"
+   ],
+   "type": "context",
+   "statement": "Mapping who actually delivers in an area surfaces organisations that do not identify as humanitarian, and the system has no settled answer on how to engage them.",
+   "level": "national",
+   "countries": [
+    "COL"
+   ],
+   "actors": [
+    "ocha",
+    "local-ngo",
+    "development"
+   ],
+   "tags": [
+    "coordination-architecture",
+    "nexus",
+    "localisation"
+   ],
+   "stream": "sdr",
+   "source_id": "S125",
+   "date_collected": "2026-09-14",
+   "confidence": "high",
+   "status": "validated",
+   "year": 2024
+  },
+  {
+   "id": "E0824",
+   "finding_id": "F441",
+   "theme": [
+    "Fundamentals"
+   ],
+   "type": "enabler",
+   "statement": "What changed local participation was paying for it — membership fees, multi-year programme support, funded coordination posts — rather than encouraging it.",
+   "level": "national",
+   "countries": [
+    "COL"
+   ],
+   "actors": [
+    "ingo",
+    "local-ngo"
+   ],
+   "tags": [
+    "localisation",
+    "funding",
+    "partnerships"
+   ],
+   "stream": "sdr",
+   "source_id": "S125",
+   "date_collected": "2026-09-14",
+   "confidence": "high",
+   "status": "validated",
+   "year": 2024
+  },
+  {
+   "id": "E0825",
+   "finding_id": "F442",
+   "theme": [
+    "Fundamentals"
+   ],
+   "type": "enabler",
+   "statement": "Partners judge a coordination meeting by whether it is operational and strategic; process-focused meetings lose the attendance they need.",
+   "level": "national",
+   "countries": [
+    "COL"
+   ],
+   "actors": [
+    "local-ngo",
+    "ingo",
+    "cluster"
+   ],
+   "tags": [
+    "performance",
+    "inclusion"
+   ],
+   "stream": "sdr",
+   "source_id": "S125",
+   "date_collected": "2026-09-14",
+   "confidence": "high",
+   "status": "validated",
+   "year": 2024
+  },
+  {
+   "id": "E0826",
+   "finding_id": "F442",
+   "theme": [
+    "Fundamentals"
+   ],
+   "type": "enabler",
+   "statement": "Attendance follows whether a forum is a discussion space or an information-sharing one, and whether the agenda is recognisably about the attendees' work.",
+   "level": "national",
+   "countries": [
+    "ETH"
+   ],
+   "actors": [
+    "local-ngo",
+    "cluster"
+   ],
+   "tags": [
+    "inclusion",
+    "performance"
+   ],
+   "stream": "sdr",
+   "source_id": "S126",
+   "date_collected": "2026-09-14",
+   "confidence": "high",
+   "status": "validated",
+   "year": 2024
+  },
+  {
+   "id": "E0827",
+   "finding_id": "F225",
+   "theme": [
+    "Fundamentals"
+   ],
+   "type": "barrier",
+   "statement": "Adding NGO positions to sub-national coordination is limited by whether anything funds them.",
+   "level": "subnational",
+   "countries": [
+    "ETH"
+   ],
+   "actors": [
+    "local-ngo",
+    "ingo",
+    "cluster"
+   ],
+   "tags": [
+    "funding",
+    "capacity"
+   ],
+   "stream": "sdr",
+   "source_id": "S126",
+   "date_collected": "2026-09-14",
+   "confidence": "high",
+   "status": "validated",
+   "year": 2024
+  },
+  {
+   "id": "E0828",
+   "finding_id": "F443",
+   "theme": [
+    "Transition"
+   ],
+   "type": "barrier",
+   "statement": "Where government co-leads the cluster, adding a local NGO co-coordinator is resisted as one coordinator too many, so moving coordination towards government can narrow rather than widen the space for local actors.",
+   "level": "national",
+   "countries": [
+    "ETH"
+   ],
+   "actors": [
+    "gov-national",
+    "local-ngo",
+    "un-agency"
+   ],
+   "tags": [
+    "localisation",
+    "government-engagement",
+    "transition-handover"
+   ],
+   "stream": "sdr",
+   "source_id": "S126",
+   "date_collected": "2026-09-14",
+   "confidence": "high",
+   "status": "validated",
+   "year": 2024
+  },
+  {
+   "id": "E0829",
+   "finding_id": "F444",
+   "theme": [
+    "Fundamentals"
+   ],
+   "type": "recommendation",
+   "statement": "New coordination representatives need structured onboarding into what the body does and what the seat obliges them to do, or the seat is filled without being used.",
+   "level": "national",
+   "countries": [
+    "ETH"
+   ],
+   "actors": [
+    "local-ngo",
+    "cluster"
+   ],
+   "tags": [
+    "capacity",
+    "inclusion"
+   ],
+   "stream": "sdr",
+   "source_id": "S126",
+   "date_collected": "2026-09-14",
+   "confidence": "high",
+   "status": "validated",
+   "year": 2024
+  },
+  {
+   "id": "E0830",
+   "finding_id": "F444",
+   "theme": [
+    "Fundamentals"
+   ],
+   "type": "practice",
+   "statement": "Where local co-coordinators were newly introduced, the existing coordinators ran extensive initial briefings and shifted towards equal representation over time.",
+   "level": "national",
+   "countries": [
+    "SSD"
+   ],
+   "actors": [
+    "un-agency",
+    "local-ngo",
+    "cluster"
+   ],
+   "tags": [
+    "capacity",
+    "localisation"
+   ],
+   "stream": "sdr",
+   "source_id": "S128",
+   "date_collected": "2026-09-14",
+   "confidence": "high",
+   "status": "validated",
+   "year": 2024
+  },
+  {
+   "id": "E0831",
+   "finding_id": "F441",
+   "theme": [
+    "Fundamentals"
+   ],
+   "type": "enabler",
+   "statement": "Co-coordination arrangements held where the funding behind them was dedicated and multi-year; where the role was an add-on to programme work, it did not.",
+   "level": "national",
+   "countries": [
+    "SSD"
+   ],
+   "actors": [
+    "local-ngo",
+    "cluster",
+    "donor"
+   ],
+   "tags": [
+    "funding",
+    "localisation",
+    "staff-turnover"
+   ],
+   "stream": "sdr",
+   "source_id": "S128",
+   "date_collected": "2026-09-14",
+   "confidence": "high",
+   "status": "validated",
+   "year": 2024
+  },
+  {
+   "id": "E0832",
+   "finding_id": "F445",
+   "theme": [
+    "Fundamentals"
+   ],
+   "type": "barrier",
+   "statement": "Where funding is the dominant concern, it crowds the rest of the agenda, and representatives spend their influence on the one issue rather than the others open to them.",
+   "level": "national",
+   "countries": [
+    "SSD"
+   ],
+   "actors": [
+    "local-ngo",
+    "donor"
+   ],
+   "tags": [
+    "funding",
+    "inclusion"
+   ],
+   "stream": "sdr",
+   "source_id": "S128",
+   "date_collected": "2026-09-14",
+   "confidence": "high",
+   "status": "validated",
+   "year": 2024
+  },
+  {
+   "id": "E0833",
+   "finding_id": "F446",
+   "theme": [
+    "Fundamentals"
+   ],
+   "type": "context",
+   "statement": "A risk-based eligibility reassessment cut direct pooled-fund allocations to local organisations by three quarters over four years, and objections from local board members did not change the trend.",
+   "level": "national",
+   "countries": [
+    "SSD"
+   ],
+   "actors": [
+    "local-ngo",
+    "donor",
+    "un-agency"
+   ],
+   "tags": [
+    "pooled-funds",
+    "localisation",
+    "funding"
+   ],
+   "stream": "sdr",
+   "source_id": "S128",
+   "date_collected": "2026-09-14",
+   "confidence": "high",
+   "status": "validated",
+   "year": 2024
+  },
+  {
+   "id": "E0834",
+   "finding_id": "F1015",
+   "theme": [
+    "Transition"
+   ],
+   "type": "practice",
+   "statement": "A localisation strategy adopted without activities or targets sets direction without creating anything to measure, which the same study identified elsewhere as what makes progress visible.",
+   "level": "national",
+   "countries": [
+    "SSD"
+   ],
+   "actors": [
+    "gov-national",
+    "local-ngo",
+    "un-agency"
+   ],
+   "tags": [
+    "localisation",
+    "performance"
+   ],
+   "stream": "sdr",
+   "source_id": "S128",
+   "date_collected": "2026-09-14",
+   "confidence": "high",
+   "status": "validated",
+   "year": 2024
+  },
+  {
+   "id": "E0835",
+   "finding_id": "F224",
+   "theme": [
+    "Fundamentals"
+   ],
+   "type": "barrier",
+   "statement": "Country-level coordination partnerships rest on individual relationships and stay within the UN and cluster circle, with little involvement of local and national organisations.",
+   "level": "global",
+   "countries": [],
+   "actors": [
+    "ocha",
+    "local-ngo",
+    "un-agency",
+    "cluster"
+   ],
+   "tags": [
+    "localisation",
+    "partnerships"
+   ],
+   "stream": "sdr",
+   "source_id": "S047",
+   "date_collected": "2026-09-14",
+   "confidence": "high",
+   "status": "validated",
+   "year": 2025
+  },
+  {
+   "id": "E0836",
+   "finding_id": "F432",
+   "theme": [
+    "Fundamentals"
+   ],
+   "type": "barrier",
+   "statement": "Local and national actors find their participation bounded by internationally led coordination frameworks, and OCHA personnel identify the cluster system as reinforcing that boundary.",
+   "level": "global",
+   "countries": [],
+   "actors": [
+    "ocha",
+    "cluster",
+    "local-ngo"
+   ],
+   "tags": [
+    "localisation",
+    "coordination-architecture"
+   ],
+   "stream": "sdr",
+   "source_id": "S047",
+   "date_collected": "2026-09-14",
+   "confidence": "high",
+   "status": "validated",
+   "year": 2025
+  },
+  {
+   "id": "E0837",
+   "finding_id": "F448",
+   "theme": [
+    "Fundamentals"
+   ],
+   "type": "barrier",
+   "statement": "Coordination forums rank community feedback below security, access and funding, so what affected people say does not compete for decision time.",
+   "level": "global",
+   "countries": [],
+   "actors": [
+    "ocha",
+    "cluster",
+    "community"
+   ],
+   "tags": [
+    "aap",
+    "performance"
+   ],
+   "stream": "sdr",
+   "source_id": "S047",
+   "date_collected": "2026-09-14",
+   "confidence": "high",
+   "status": "validated",
+   "year": 2025
+  },
+  {
+   "id": "E0838",
+   "finding_id": "F449",
+   "theme": [
+    "Transition"
+   ],
+   "type": "barrier",
+   "statement": "Community feedback is not shared with the development organisations and government bodies that would have to address needs extending beyond humanitarian assistance.",
+   "level": "global",
+   "countries": [],
+   "actors": [
+    "ocha",
+    "development",
+    "gov-national"
+   ],
+   "tags": [
+    "aap",
+    "nexus",
+    "transition-handover"
+   ],
+   "stream": "sdr",
+   "source_id": "S047",
+   "date_collected": "2026-09-14",
+   "confidence": "high",
+   "status": "validated",
+   "year": 2025
+  },
+  {
+   "id": "E0839",
+   "finding_id": "F450",
+   "theme": [
+    "Transition"
+   ],
+   "type": "context",
+   "statement": "There is no standing mechanism to take over coordination when a cluster closes, so post-cluster coordination is assembled case by case.",
+   "level": "global",
+   "countries": [
+    "NPL"
+   ],
+   "actors": [
+    "cluster",
+    "gov-national",
+    "ingo"
+   ],
+   "tags": [
+    "transition-handover",
+    "coordination-architecture"
+   ],
+   "stream": "sdr",
+   "source_id": "S099",
+   "date_collected": "2026-09-14",
+   "confidence": "high",
+   "status": "validated",
+   "year": 2019
+  },
+  {
+   "id": "E0840",
+   "finding_id": "F335",
+   "theme": [
+    "Transition"
+   ],
+   "type": "context",
+   "statement": "Deactivation was driven by a general preference to close the system quickly and completed while an emergency response was still running and government recovery structures were still being built.",
+   "level": "national",
+   "countries": [
+    "NPL"
+   ],
+   "actors": [
+    "cluster",
+    "gov-national",
+    "un-agency"
+   ],
+   "tags": [
+    "transition-handover"
+   ],
+   "stream": "sdr",
+   "source_id": "S099",
+   "date_collected": "2026-09-14",
+   "confidence": "high",
+   "status": "validated",
+   "year": 2019
+  },
+  {
+   "id": "E0841",
+   "finding_id": "F421",
+   "theme": [
+    "Transition"
+   ],
+   "type": "enabler",
+   "statement": "The successor body was designed and launched inside the cluster before deactivation, with the global sector's strategic group linking emergency coordination to what followed.",
+   "level": "national",
+   "countries": [
+    "NPL"
+   ],
+   "actors": [
+    "cluster",
+    "un-agency",
+    "ingo"
+   ],
+   "tags": [
+    "transition-handover",
+    "coordination-architecture"
+   ],
+   "stream": "sdr",
+   "source_id": "S099",
+   "date_collected": "2026-09-14",
+   "confidence": "high",
+   "status": "validated",
+   "year": 2019
+  },
+  {
+   "id": "E0842",
+   "finding_id": "F378",
+   "theme": [
+    "Transition"
+   ],
+   "type": "enabler",
+   "statement": "Continuity was carried by the same agencies and the same district organisations moving across the handover, keeping structure and core functions unchanged through the change of name.",
+   "level": "national",
+   "countries": [
+    "NPL"
+   ],
+   "actors": [
+    "cluster",
+    "un-agency",
+    "ingo",
+    "local-ngo"
+   ],
+   "tags": [
+    "transition-handover"
+   ],
+   "stream": "sdr",
+   "source_id": "S099",
+   "date_collected": "2026-09-14",
+   "confidence": "high",
+   "status": "validated",
+   "year": 2019
+  },
+  {
+   "id": "E0843",
+   "finding_id": "F283",
+   "theme": [
+    "Transition"
+   ],
+   "type": "barrier",
+   "statement": "Despite deliberate investment in handover, knowledge and staff did not transfer intact and some activities were dropped while others were done again.",
+   "level": "national",
+   "countries": [
+    "NPL"
+   ],
+   "actors": [
+    "cluster",
+    "un-agency"
+   ],
+   "tags": [
+    "transition-handover",
+    "information-management"
+   ],
+   "stream": "sdr",
+   "source_id": "S099",
+   "date_collected": "2026-09-14",
+   "confidence": "high",
+   "status": "validated",
+   "year": 2019
+  },
+  {
+   "id": "E0844",
+   "finding_id": "F396",
+   "theme": [
+    "Transition"
+   ],
+   "type": "barrier",
+   "statement": "Continuity through the first two phases of the successor platform was undermined by uneven and sporadic funding; only when two years were secured could the platform plan and retain staff.",
+   "level": "national",
+   "countries": [
+    "NPL"
+   ],
+   "actors": [
+    "ingo",
+    "donor",
+    "un-agency"
+   ],
+   "tags": [
+    "funding",
+    "transition-handover",
+    "staff-turnover"
+   ],
+   "stream": "sdr",
+   "source_id": "S099",
+   "date_collected": "2026-09-14",
+   "confidence": "high",
+   "status": "validated",
+   "year": 2019
+  },
+  {
+   "id": "E0845",
+   "finding_id": "F261",
+   "theme": [
+    "Transition"
+   ],
+   "type": "barrier",
+   "statement": "Coordination run without translation excluded local actors, and the platform concluded translation is a core service rather than a courtesy.",
+   "level": "national",
+   "countries": [
+    "NPL"
+   ],
+   "actors": [
+    "local-ngo",
+    "ingo"
+   ],
+   "tags": [
+    "inclusion",
+    "localisation"
+   ],
+   "stream": "sdr",
+   "source_id": "S099",
+   "date_collected": "2026-09-14",
+   "confidence": "high",
+   "status": "validated",
+   "year": 2019
+  },
+  {
+   "id": "E0846",
+   "finding_id": "F320",
+   "theme": [
+    "Transition"
+   ],
+   "type": "barrier",
+   "statement": "Services with no receiving counterpart were simply not handed over; a substantial communications audience built by the platform had nowhere to go at exit.",
+   "level": "national",
+   "countries": [
+    "NPL"
+   ],
+   "actors": [
+    "ingo",
+    "gov-national"
+   ],
+   "tags": [
+    "transition-handover",
+    "information-management",
+    "sustainability"
+   ],
+   "stream": "sdr",
+   "source_id": "S099",
+   "date_collected": "2026-09-14",
+   "confidence": "high",
+   "status": "validated",
+   "year": 2019
+  },
+  {
+   "id": "E0847",
+   "finding_id": "F452",
+   "theme": [
+    "Transition"
+   ],
+   "type": "recommendation",
+   "statement": "A successor platform is more effective the more impartial it is, and the visibility requirements of the agency hosting it work against that.",
+   "level": "national",
+   "countries": [
+    "NPL"
+   ],
+   "actors": [
+    "ingo",
+    "local-ngo",
+    "donor"
+   ],
+   "tags": [
+    "transition-handover",
+    "performance",
+    "partnerships"
+   ],
+   "stream": "sdr",
+   "source_id": "S099",
+   "date_collected": "2026-09-14",
+   "confidence": "high",
+   "status": "validated",
+   "year": 2019
+  },
+  {
+   "id": "E0848",
+   "finding_id": "F373",
+   "theme": [
+    "Transition"
+   ],
+   "type": "enabler",
+   "statement": "The successor was not government: an international NGO led and co-funded the platform while national organisations led district coordination and national technical coordination.",
+   "level": "national",
+   "countries": [
+    "NPL"
+   ],
+   "actors": [
+    "ingo",
+    "local-ngo"
+   ],
+   "tags": [
+    "transition-handover",
+    "localisation"
+   ],
+   "stream": "sdr",
+   "source_id": "S099",
+   "date_collected": "2026-09-14",
+   "confidence": "high",
+   "status": "validated",
+   "year": 2019
+  },
+  {
+   "id": "E0849",
+   "finding_id": "F453",
+   "theme": [
+    "Transition"
+   ],
+   "type": "context",
+   "statement": "Recovery coordination and residual humanitarian coordination ran at the same time for years, which the platform concluded makes the idea of a transition from one to the other a poor description of what happened.",
+   "level": "national",
+   "countries": [
+    "NPL"
+   ],
+   "actors": [
+    "cluster",
+    "ingo",
+    "gov-national"
+   ],
+   "tags": [
+    "transition-handover"
+   ],
+   "stream": "sdr",
+   "source_id": "S099",
+   "date_collected": "2026-09-14",
+   "confidence": "high",
+   "status": "validated",
+   "year": 2019
+  },
+  {
+   "id": "E0850",
+   "finding_id": "F225",
+   "theme": [
+    "Transition"
+   ],
+   "type": "barrier",
+   "statement": "Coordination staff seconded from member organisations kept doing their own agency's work alongside the platform's, which raised questions about whose interests the role served.",
+   "level": "national",
+   "countries": [
+    "NPL"
+   ],
+   "actors": [
+    "ingo",
+    "local-ngo"
+   ],
+   "tags": [
+    "capacity",
+    "staff-turnover",
+    "transition-handover"
+   ],
+   "stream": "sdr",
+   "source_id": "S099",
+   "date_collected": "2026-09-14",
+   "confidence": "high",
+   "status": "validated",
+   "year": 2019
+  },
+  {
+   "id": "E0851",
+   "finding_id": "F1952",
+   "theme": [
+    "ABC"
+   ],
+   "type": "barrier",
+   "statement": "Humanitarian and development actors ended up working in separate parts of the country, and the cluster could not prevent several actors concentrating in one area while others went underserved.",
+   "level": "national",
+   "countries": [
+    "SSD"
+   ],
+   "actors": [
+    "cluster",
+    "ingo",
+    "development"
+   ],
+   "tags": [
+    "geographic-targeting",
+    "nexus"
+   ],
+   "stream": "sdr",
+   "source_id": "S096",
+   "date_collected": "2026-09-14",
+   "confidence": "high",
+   "status": "validated",
+   "year": 2016
+  },
+  {
+   "id": "E0852",
+   "finding_id": "F415",
+   "theme": [
+    "Transition"
+   ],
+   "type": "barrier",
+   "statement": "Where the available money is emergency money, it sets where organisations work, and long-term programming is dropped rather than adapted.",
+   "level": "national",
+   "countries": [
+    "SSD"
+   ],
+   "actors": [
+    "ingo",
+    "donor",
+    "development"
+   ],
+   "tags": [
+    "funding",
+    "nexus",
+    "geographic-targeting"
+   ],
+   "stream": "sdr",
+   "source_id": "S096",
+   "date_collected": "2026-09-14",
+   "confidence": "high",
+   "status": "validated",
+   "year": 2016
+  },
+  {
+   "id": "E0853",
+   "finding_id": "F224",
+   "theme": [
+    "Fundamentals"
+   ],
+   "type": "barrier",
+   "statement": "Competition for a shrinking pool pushes local organisations out of allocations altogether, leaving them as short-term subcontractors to better-resourced international agencies.",
+   "level": "national",
+   "countries": [
+    "SSD"
+   ],
+   "actors": [
+    "local-ngo",
+    "ingo"
+   ],
+   "tags": [
+    "funding",
+    "localisation",
+    "partnerships"
+   ],
+   "stream": "sdr",
+   "source_id": "S096",
+   "date_collected": "2026-09-14",
+   "confidence": "high",
+   "status": "validated",
+   "year": 2016
+  },
+  {
+   "id": "E0854",
+   "finding_id": "F455",
+   "theme": [
+    "Transition"
+   ],
+   "type": "recommendation",
+   "statement": "The cluster secretariat is positioned to start negotiating common ways of working between humanitarian and development WASH actors, with transfer of leadership to government as the longer-term aim.",
+   "level": "national",
+   "countries": [
+    "SSD"
+   ],
+   "actors": [
+    "cluster",
+    "gov-national",
+    "development"
+   ],
+   "tags": [
+    "transition-handover",
+    "nexus",
+    "government-engagement"
+   ],
+   "stream": "sdr",
+   "source_id": "S096",
+   "date_collected": "2026-09-14",
+   "confidence": "high",
+   "status": "validated",
+   "year": 2016
+  },
+  {
+   "id": "E0855",
+   "finding_id": "F374",
+   "theme": [
+    "Transition"
+   ],
+   "type": "barrier",
+   "statement": "Government water authorities read a heavy humanitarian presence as diverting resources away from them, which shapes how willing they are to engage.",
+   "level": "national",
+   "countries": [
+    "SSD"
+   ],
+   "actors": [
+    "gov-national",
+    "un-agency",
+    "ingo"
+   ],
+   "tags": [
+    "government-engagement",
+    "transition-handover"
+   ],
+   "stream": "sdr",
+   "source_id": "S096",
+   "date_collected": "2026-09-14",
+   "confidence": "high",
+   "status": "validated",
+   "year": 2016
+  },
+  {
+   "id": "E0856",
+   "finding_id": "F1103",
+   "theme": [
+    "ABC",
+    "Transition"
+   ],
+   "type": "context",
+   "statement": "No cluster was activated for either crisis; the line ministry led WASH sector coordination nationally and in the regions, with the UN agency co-leading to a degree that varied with each delegate's capacity.",
+   "level": "national",
+   "countries": [
+    "CMR"
+   ],
+   "actors": [
+    "gov-national",
+    "un-agency",
+    "cluster"
+   ],
+   "tags": [
+    "government-engagement",
+    "coordination-architecture",
+    "transition-handover"
+   ],
+   "stream": "sdr",
+   "source_id": "S094",
+   "date_collected": "2026-09-14",
+   "confidence": "high",
+   "status": "validated",
+   "year": 2020
+  },
+  {
+   "id": "E0857",
+   "finding_id": "F456",
+   "theme": [
+    "Transition"
+   ],
+   "type": "barrier",
+   "statement": "Without formal activation the core cluster functions were implemented ad hoc and the standards and requirements attached to them fell away.",
+   "level": "national",
+   "countries": [
+    "CMR"
+   ],
+   "actors": [
+    "gov-national",
+    "un-agency",
+    "cluster"
+   ],
+   "tags": [
+    "government-engagement",
+    "performance",
+    "transition-handover"
+   ],
+   "stream": "sdr",
+   "source_id": "S094",
+   "date_collected": "2026-09-14",
+   "confidence": "high",
+   "status": "validated",
+   "year": 2020
+  },
+  {
+   "id": "E0858",
+   "finding_id": "F225",
+   "theme": [
+    "Transition"
+   ],
+   "type": "barrier",
+   "statement": "Coordination was carried by programme staff double-hatting, which the evaluation found had overstretched them, most acutely in the region with the largest caseload.",
+   "level": "national",
+   "countries": [
+    "CMR"
+   ],
+   "actors": [
+    "un-agency",
+    "gov-national"
+   ],
+   "tags": [
+    "capacity",
+    "staff-turnover",
+    "government-engagement"
+   ],
+   "stream": "sdr",
+   "source_id": "S094",
+   "date_collected": "2026-09-14",
+   "confidence": "high",
+   "status": "validated",
+   "year": 2020
+  },
+  {
+   "id": "E0859",
+   "finding_id": "F119",
+   "theme": [
+    "Transition"
+   ],
+   "type": "barrier",
+   "statement": "As the crisis settled into protracted under-development the coordination structure lost relevance and the agency moved to development partnerships, leaving the ministry delegate maintaining a forum that a fresh influx would require again.",
+   "level": "subnational",
+   "countries": [
+    "CMR"
+   ],
+   "actors": [
+    "gov-local",
+    "un-agency",
+    "ocha",
+    "development"
+   ],
+   "tags": [
+    "transition-handover",
+    "government-engagement",
+    "nexus"
+   ],
+   "stream": "sdr",
+   "source_id": "S094",
+   "date_collected": "2026-09-14",
+   "confidence": "high",
+   "status": "validated",
+   "year": 2020
+  },
+  {
+   "id": "E0860",
+   "finding_id": "F362",
+   "theme": [
+    "Transition"
+   ],
+   "type": "barrier",
+   "statement": "A co-lead without decision-making authority stalls the meeting whenever the senior counterpart is absent.",
+   "level": "national",
+   "countries": [
+    "CMR"
+   ],
+   "actors": [
+    "un-agency",
+    "gov-national"
+   ],
+   "tags": [
+    "government-engagement",
+    "performance"
+   ],
+   "stream": "sdr",
+   "source_id": "S094",
+   "date_collected": "2026-09-14",
+   "confidence": "high",
+   "status": "validated",
+   "year": 2020
   }
  ],
  "sources": [
@@ -34037,7 +36843,7 @@ window.SITE_DATA = {
    "date_added": "2026-07-17",
    "access": "public",
    "legacy_id": "ABC-A3",
-   "source_group": "",
+   "source_group": "icva-localisation-leadership-2024",
    "label": "ICVA 2024",
    "reference": "ICVA. (2024). Localisation in Humanitarian Leadership — Venezuela country profile. https://www.icvanetwork.org/uploads/2024/09/Localisation-in-Humanitarian-Leadership-Venezuela.pdf"
   },
@@ -34103,18 +36909,18 @@ window.SITE_DATA = {
   },
   {
    "source_id": "S053",
-   "title": "6\\_Summary Guidance on Cluster Transition and Deactivation",
+   "title": "Summary Guidance on Cluster Transition and Deactivation",
    "organisation": "IASC",
    "year": "2024",
    "type": "guidance",
-   "url": "https://healthcluster.who.int/docs/librariesprovider16/meeting-reports/iasc-guidance-on-cluster-transition-and-deactivation.pdf",
+   "url": "https://www.unicefintercluster.net/sites/default/files/2025-05/6_Summary%20Guidance%20on%20Cluster%20Transition%20and%20Deactivation.pdf",
    "stream": "sdr",
    "date_added": "2026-07-17",
    "access": "public",
    "legacy_id": "Transition-S2",
-   "source_group": "iasc-transition-deactivation-guidance",
+   "source_group": "iasc-cluster-transition-deactivation",
    "label": "IASC 2024",
-   "reference": "IASC. (2024). 6\\_Summary Guidance on Cluster Transition and Deactivation. https://healthcluster.who.int/docs/librariesprovider16/meeting-reports/iasc-guidance-on-cluster-transition-and-deactivation.pdf"
+   "reference": "IASC. (2024). Summary Guidance on Cluster Transition and Deactivation. https://www.unicefintercluster.net/sites/default/files/2025-05/6_Summary%20Guidance%20on%20Cluster%20Transition%20and%20Deactivation.pdf"
   },
   {
    "source_id": "S054",
@@ -34147,21 +36953,6 @@ window.SITE_DATA = {
    "reference": "UNICEF. (2026). Humanitarian transition context — Joint EMOPS, CoE and Regional Office support mission to Cameroon."
   },
   {
-   "source_id": "S056",
-   "title": "Coordination in Transition. ICVA",
-   "organisation": "Holland, K",
-   "year": "2025",
-   "type": "research-evaluation",
-   "url": "https://www.icvanetwork.org/uploads/2025/10/Coordination-in-Transition-How-NGOs-are-Navigating-and-Adapting-beyond-the-IASC.pdf",
-   "stream": "sdr",
-   "date_added": "2026-07-17",
-   "access": "public",
-   "legacy_id": "Transition-S5",
-   "source_group": "icva-coordination-in-transition",
-   "label": "Holland, K 2025",
-   "reference": "Holland, K. (2025). Coordination in Transition. ICVA. https://www.icvanetwork.org/uploads/2025/10/Coordination-in-Transition-How-NGOs-are-Navigating-and-Adapting-beyond-the-IASC.pdf"
-  },
-  {
    "source_id": "S057",
    "title": "IASC Guidance on Cluster Transition and Deactivation",
    "organisation": "IASC",
@@ -34172,7 +36963,7 @@ window.SITE_DATA = {
    "date_added": "2026-07-17",
    "access": "public",
    "legacy_id": "Transition-S6",
-   "source_group": "iasc-transition-deactivation-guidance",
+   "source_group": "iasc-cluster-transition-deactivation",
    "label": "IASC 2024",
    "reference": "IASC. (2024). IASC Guidance on Cluster Transition and Deactivation. https://healthcluster.who.int/docs/librariesprovider16/meeting-reports/iasc-guidance-on-cluster-transition-and-deactivation.pdf"
   },
@@ -35120,6 +37911,66 @@ window.SITE_DATA = {
    "source_group": "",
    "label": "OCHA 2025",
    "reference": "OCHA. (2025). The Pulse of Humanitarian Coordination 2024: Overview of IASC Structures at the Country Level. https://reliefweb.int/node/4207612"
+  },
+  {
+   "source_id": "S125",
+   "title": "Localisation in Humanitarian Leadership — Colombia country profile",
+   "organisation": "ICVA",
+   "year": "2024-09",
+   "type": "research-evaluation",
+   "url": "https://www.icvanetwork.org/uploads/2024/09/Localisation-in-Humanitarian-Leadership-Colombia.pdf",
+   "stream": "sdr",
+   "date_added": "2026-09-14",
+   "access": "public",
+   "legacy_id": "",
+   "source_group": "icva-localisation-leadership-2024",
+   "label": "ICVA 2024",
+   "reference": "ICVA. (2024). Localisation in Humanitarian Leadership — Colombia country profile. https://www.icvanetwork.org/uploads/2024/09/Localisation-in-Humanitarian-Leadership-Colombia.pdf"
+  },
+  {
+   "source_id": "S126",
+   "title": "Localisation in Humanitarian Leadership — Ethiopia country profile",
+   "organisation": "ICVA",
+   "year": "2024-09",
+   "type": "research-evaluation",
+   "url": "https://www.icvanetwork.org/uploads/2024/09/Localisation-in-Humanitarian-Leadership-Ethiopia.pdf",
+   "stream": "sdr",
+   "date_added": "2026-09-14",
+   "access": "public",
+   "legacy_id": "",
+   "source_group": "icva-localisation-leadership-2024",
+   "label": "ICVA 2024",
+   "reference": "ICVA. (2024). Localisation in Humanitarian Leadership — Ethiopia country profile. https://www.icvanetwork.org/uploads/2024/09/Localisation-in-Humanitarian-Leadership-Ethiopia.pdf"
+  },
+  {
+   "source_id": "S127",
+   "title": "Localisation in Humanitarian Leadership — Somalia country profile",
+   "organisation": "ICVA",
+   "year": "2024-09",
+   "type": "research-evaluation",
+   "url": "https://www.icvanetwork.org/uploads/2024/09/Localisation-in-Humanitarian-Leadership-Somalia.pdf",
+   "stream": "sdr",
+   "date_added": "2026-09-14",
+   "access": "public",
+   "legacy_id": "",
+   "source_group": "icva-localisation-leadership-2024",
+   "label": "ICVA 2024",
+   "reference": "ICVA. (2024). Localisation in Humanitarian Leadership — Somalia country profile. https://www.icvanetwork.org/uploads/2024/09/Localisation-in-Humanitarian-Leadership-Somalia.pdf"
+  },
+  {
+   "source_id": "S128",
+   "title": "Localisation in Humanitarian Leadership — South Sudan country profile",
+   "organisation": "ICVA",
+   "year": "2024-09",
+   "type": "research-evaluation",
+   "url": "https://www.icvanetwork.org/uploads/2024/09/Localisation-in-Humanitarian-Leadership-South-Sudan.pdf",
+   "stream": "sdr",
+   "date_added": "2026-09-14",
+   "access": "public",
+   "legacy_id": "",
+   "source_group": "icva-localisation-leadership-2024",
+   "label": "ICVA 2024",
+   "reference": "ICVA. (2024). Localisation in Humanitarian Leadership — South Sudan country profile. https://www.icvanetwork.org/uploads/2024/09/Localisation-in-Humanitarian-Leadership-South-Sudan.pdf"
   }
  ]
 };
