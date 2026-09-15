@@ -33,11 +33,13 @@
      the sequential ramp below, which is why the GWC teal/coral binary is not
      used for enabler/barrier here: coral keeps the negative end, and enabler
      takes hygiene green rather than a teal a reader would read as a band.
-     The two themes that are not Transition share the dark blue family at two
-     clearly separated steps — both are configurations, neither is a type. */
+     Fundamentals and enabler share the hygiene family at two widely separated
+     steps: they are different dimensions, and the alternative was a second
+     dark blue that made Coordination and Area-Based indistinguishable on the
+     Guidance cards. */
   --abc:#024E6C;            --abc-fg:var(--on-dark);
   --transition:#FFB340;     --transition-fg:var(--on-light);
-  --fundamentals:#3E637F;   --fundamentals-fg:var(--on-dark);
+  --fundamentals:#046B3A;   --fundamentals-fg:var(--on-dark);
   --barrier:#E36159;        --barrier-fg:var(--on-light);
   --enabler:#66AE81;        --enabler-fg:var(--on-light);
   --recommendation:#9980CD; --recommendation-fg:var(--on-light);
@@ -84,6 +86,10 @@ main{padding:20px var(--gutter) 70px;max-width:var(--measure);margin:0 auto}
 .frow + .frow{margin-top:11px;padding-top:11px;border-top:1px dashed var(--line)}
 .flabel{font-size:11px;text-transform:uppercase;letter-spacing:.6px;color:var(--ink-3);
   min-width:74px;font-weight:600}
+/* second label in the same filter row. The gap is only meaningful while the row
+   is one line; wrapped, it read as an indent under Strength. */
+.flabel-2{margin-left:18px}
+@media (max-width:760px){ .flabel-2{margin-left:0} }
 input[type=search],select{font:inherit;font-size:13px;padding:6px 9px;border:1px solid var(--line);
   border-radius:5px;background:#fff;color:var(--ink)}
 input[type=search]{flex:1;min-width:200px}
@@ -144,7 +150,7 @@ h2.grp:first-child{margin-top:6px}
 .gd-meta{margin:0 0 6px;font-size:11.5px;color:var(--ink-3);display:flex;
   flex-wrap:wrap;align-items:center;gap:5px}
 td.cite{font-size:12px;line-height:1.45;color:var(--ink-2);max-width:30em;
-  overflow-wrap:anywhere}
+  overflow-wrap:break-word}
 .gd-type{background:var(--bg);border:1px solid var(--line);border-radius:3px;
   padding:1px 6px;font-size:10.5px;text-transform:uppercase;letter-spacing:.05em;color:var(--ink-2)}
 .gd-sum{margin:0 0 7px;font-size:12.5px;line-height:1.45;color:var(--ink-2)}
@@ -182,8 +188,10 @@ td.cite{font-size:12px;line-height:1.45;color:var(--ink-2);max-width:30em;
   .srct th:nth-child(5), .srct td:nth-child(5){display:none}
   /* A world map 300px wide is 119px tall and reads as nothing. The country
      list below it does the same job and carries counts, so on a phone that
-     list is the interface. */
-  .mapwrap .map, .mapwrap .maplegend{display:none}
+     list is the interface — and the Hide map control goes with the map, or it
+     offers to hide something the reader cannot see. */
+  .mapwrap .map, .mapwrap .maplegend, .mapwrap #mapToggle{display:none}
+  .ctylist{grid-template-columns:repeat(auto-fill,minmax(132px,1fr))}
 }
 @media (max-width:620px){
   :root{--gutter:16px}
@@ -389,7 +397,7 @@ text.ctyl.sel{fill:var(--on-light);stroke:#FFF;stroke-width:2px}
       <div class="frow"><span class="flabel">Type</span><span id="f-type"></span></div>
       <div class="frow"><span class="flabel">Source</span><span id="f-stream"></span></div>
       <div class="frow"><span class="flabel">Strength</span><span id="f-strength"></span>
-        <span class="flabel" style="margin-left:18px">Level</span><span id="f-level"></span></div>
+        <span class="flabel flabel-2">Level</span><span id="f-level"></span></div>
       <div class="frow"><span class="flabel">Evidence from</span>
         <select id="yearfrom"></select><span class="ysep">to</span><select id="yearto"></select>
         <span class="ynote">Narrows to evidence published in the period. A finding stays
@@ -537,7 +545,7 @@ fetch("data/site.json", {cache:"no-store"})
       'it writes both files.<br><br>' +
       'If you are seeing this on the published site, the last build failed. ' +
       'Check the Actions tab on GitHub.<br><br>' +
-      '<span style="color:#8797A5">' + esc(e.message) + '</span></div>';
+      '<span style="color:var(--ink-3)">' + esc(e.message) + '</span></div>';
   });
 
 // The data is fetched fresh every time (cache:"no-store") but this file is not
@@ -1517,6 +1525,9 @@ function anTags(d){
     var dy = cands[0];
     for (var i=0;i<cands.length;i++){
       var y = o.p.y + cands[i], ok = true;
+      // stay inside the viewBox: the scroll box clips, so a label pushed above
+      // the top edge loses its ascenders and reads as a different word
+      if (y - hh < 2 || y > 516) continue;
       for (var j=0;j<boxes.length;j++){
         var b = boxes[j];
         if (x0 < b.x2 && x0 + w > b.x1 && y - hh < b.y2 && y > b.y1) { ok = false; break; }
