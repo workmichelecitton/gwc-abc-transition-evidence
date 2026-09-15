@@ -11,23 +11,63 @@
 <title>ABC &amp; Transition Evidence Explorer — Global WASH Cluster</title>
 <style>
 :root{
-  --ink:#16212B; --ink-2:#5A6B7A; --ink-3:#8797A5;
-  --line:#DFE6EC; --bg:#F5F8FA; --card:#FFFFFF;
-  --accent:#1F5C8B;
-  /* categorical — nominal classes */
-  --abc:#1F5C8B; --transition:#C0662B; --fundamentals:#4A7C59;
-  --barrier:#B33A3A; --enabler:#2E7D5B; --recommendation:#6B4E9E;
-  --practice:#177B8A; --context:#7A8794;
-  /* sequential single hue — ordered values */
-  /* Five bands, one ramp. Darker means more independent corroboration, never
+  /* -------------------------------------------------------------------------
+     GWC Colour System — Style Guide Addendum v1.0, April 2026.
+     Every value here is a step of a GWC scale or a derived tint of one, and the
+     scale type follows the guidance rather than taste:
+       sequential (teal)  -> strength of evidence, the one ordered quantity here
+       categorical (8)    -> theme and type, unordered classes
+       binary (teal/coral)-> barrier / enabler, the one class pair with a direction
+     Text colour is set per class. The GWC categorical colours are chart fills;
+     white text on most of them sits under 4.5:1, so light fills carry near-black
+     and only the dark steps carry white.
+     ------------------------------------------------------------------------- */
+  /* neutral scale */
+  --ink:#333333; --ink-2:#565A61; --ink-3:#6E7178;
+  --line:#DCDEE1; --bg:#F4F6F7; --card:#FFFFFF;
+  --accent:#024E6C;                 /* dark blue 5 — links, active state */
+  --on-dark:#FFFFFF; --on-light:#15191C;
+  /* categorical — unordered classes */
+  /* Theme and type pills sit side by side with the strength band in one meta
+     row, so no two of the three may share a hue family. Teal is reserved for
+     the sequential ramp below, which is why the GWC teal/coral binary is not
+     used for enabler/barrier here: coral keeps the negative end, and enabler
+     takes hygiene green rather than a teal a reader would read as a band.
+     The two themes that are not Transition share the dark blue family at two
+     clearly separated steps — both are configurations, neither is a type. */
+  --abc:#024E6C;            --abc-fg:var(--on-dark);
+  --transition:#FFB340;     --transition-fg:var(--on-light);
+  --fundamentals:#3E637F;   --fundamentals-fg:var(--on-dark);
+  --barrier:#E36159;        --barrier-fg:var(--on-light);
+  --enabler:#66AE81;        --enabler-fg:var(--on-light);
+  --recommendation:#9980CD; --recommendation-fg:var(--on-light);
+  --practice:#66BDE1;       --practice-fg:var(--on-light);
+  --context:#6E7178;        --context-fg:var(--on-dark);
+  /* sequential single hue — ordered values, GWC primary teal.
+     Five bands, one ramp. Darker means more independent corroboration, never
      "more true" — a band-1 finding is often the most interesting thing here. */
-  --s1:#DCE7EF; --s2:#B0CBDE; --s3:#7BA8C8; --s4:#3F7BA6; --s5:#1B4F79;
+  --s1:#AFCFD1; --s2:#8FBFC1; --s3:#6FB0B2; --s4:#3FA3A3; --s5:#009999;
+  /* map selection. Yellow is the GWC non-thematic highlight, which is exactly
+     what a selection is — kept as its own token so it does not read as the
+     Transition theme colour that happens to share the value. */
+  --sel:#FFB340;
+  /* callout families — yellow, red, hygiene, sanitation */
+  --warn-bg:#FFF6E7;  --warn-line:#FFD99F;  --warn-ink:#7A5410;
+  --alert-bg:#FDECEA; --alert-line:#F7B5AF; --alert-ink:#A63A32;
+  --ok-bg:#E6F2EB;    --ok-line:#99C9AB;    --ok-ink:#046B3A;
+  --rel-bg:#EFEAF8;   --rel-line:#BBAADE;   --rel-ink:#532F87;
   --an-pad:18px;
+  --gutter:26px;                    /* side gutter, narrowed on small screens */
+  --measure:1240px;                 /* one content column, header to footer */
 }
 *{box-sizing:border-box}
 body{margin:0;font:15px/1.55 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
   color:var(--ink);background:var(--bg);-webkit-font-smoothing:antialiased}
-header{background:var(--card);border-bottom:1px solid var(--line);padding:22px 26px 0}
+/* One content column from header to footer. main is centred; header and footer
+   keep a full-bleed background but pad their content to the same measure, so
+   nothing sits in a left-hand strip with 300px of empty page beside it. */
+header{background:var(--card);border-bottom:1px solid var(--line);
+  padding:22px 0 0;padding-inline:max(var(--gutter),calc((100% - var(--measure))/2 + var(--gutter)))}
 h1{margin:0;font-size:21px;letter-spacing:-.2px}
 .sub{color:var(--ink-2);font-size:13px;margin-top:5px}
 .stats{display:flex;gap:26px;margin:16px 0 0;flex-wrap:wrap}
@@ -38,7 +78,7 @@ nav button{background:none;border:0;border-bottom:2px solid transparent;padding:
   font:inherit;font-size:14px;color:var(--ink-2);cursor:pointer}
 nav button:hover{color:var(--ink)}
 nav button[aria-selected=true]{color:var(--accent);border-bottom-color:var(--accent);font-weight:600}
-main{padding:20px 26px 70px;max-width:1240px}
+main{padding:20px var(--gutter) 70px;max-width:var(--measure);margin:0 auto}
 .filters{background:var(--card);border:1px solid var(--line);border-radius:8px;padding:14px 16px;margin-bottom:18px}
 .frow{display:flex;gap:10px;flex-wrap:wrap;align-items:center}
 .frow + .frow{margin-top:11px;padding-top:11px;border-top:1px dashed var(--line)}
@@ -50,14 +90,14 @@ input[type=search]{flex:1;min-width:200px}
 .chip{font-size:12.5px;padding:4px 11px;border:1px solid var(--line);border-radius:20px;
   background:#fff;cursor:pointer;color:var(--ink-2);user-select:none}
 .chip:hover{border-color:var(--ink-3)}
-.chip.on{background:var(--accent);border-color:var(--accent);color:#fff;font-weight:500}
-.chip.on[data-k=theme][data-v=Transition]{background:var(--transition);border-color:var(--transition)}
-.chip.on[data-k=theme][data-v=Fundamentals]{background:var(--fundamentals);border-color:var(--fundamentals)}
-.chip.on[data-k=type][data-v=barrier]{background:var(--barrier);border-color:var(--barrier)}
-.chip.on[data-k=type][data-v=enabler]{background:var(--enabler);border-color:var(--enabler)}
-.chip.on[data-k=type][data-v=recommendation]{background:var(--recommendation);border-color:var(--recommendation)}
-.chip.on[data-k=type][data-v=practice]{background:var(--practice);border-color:var(--practice)}
-.chip.on[data-k=type][data-v=context]{background:var(--context);border-color:var(--context)}
+.chip.on{background:var(--accent);border-color:var(--accent);color:var(--on-dark);font-weight:500}
+.chip.on[data-k=theme][data-v=Transition]{background:var(--transition);border-color:var(--transition);color:var(--transition-fg)}
+.chip.on[data-k=theme][data-v=Fundamentals]{background:var(--fundamentals);border-color:var(--fundamentals);color:var(--fundamentals-fg)}
+.chip.on[data-k=type][data-v=barrier]{background:var(--barrier);border-color:var(--barrier);color:var(--barrier-fg)}
+.chip.on[data-k=type][data-v=enabler]{background:var(--enabler);border-color:var(--enabler);color:var(--enabler-fg)}
+.chip.on[data-k=type][data-v=recommendation]{background:var(--recommendation);border-color:var(--recommendation);color:var(--recommendation-fg)}
+.chip.on[data-k=type][data-v=practice]{background:var(--practice);border-color:var(--practice);color:var(--practice-fg)}
+.chip.on[data-k=type][data-v=context]{background:var(--context);border-color:var(--context);color:var(--context-fg)}
 .reset{margin-left:auto;background:none;border:0;color:var(--accent);font:inherit;font-size:13px;
   cursor:pointer;text-decoration:underline}
 .count{color:var(--ink-2);font-size:13px;margin:0 0 12px}
@@ -71,12 +111,13 @@ input[type=search]{flex:1;min-width:200px}
 .fd-sum{margin:0 0 9px;font-size:13.5px;line-height:1.55;color:var(--ink-2)}
 .meta{display:flex;gap:7px;flex-wrap:wrap;align-items:center;font-size:11.5px}
 .tag{background:var(--bg);border:1px solid var(--line);border-radius:4px;padding:2px 7px;color:var(--ink-2)}
-.pill{border-radius:4px;padding:2px 8px;color:#fff;font-weight:600;font-size:11px;
+.pill{border-radius:4px;padding:2px 8px;color:var(--on-dark);font-weight:600;font-size:11px;
   text-transform:uppercase;letter-spacing:.4px}
-.pill.ABC{background:var(--abc)} .pill.Transition{background:var(--transition)}
-.pill.Fundamentals{background:var(--fundamentals)}
-h2.grp{font-size:13px;text-transform:uppercase;letter-spacing:.07em;color:#5A6675;
-  margin:26px 0 10px;padding-bottom:6px;border-bottom:1px solid #DDE2E8;
+.pill.ABC{background:var(--abc);color:var(--abc-fg)}
+.pill.Transition{background:var(--transition);color:var(--transition-fg)}
+.pill.Fundamentals{background:var(--fundamentals);color:var(--fundamentals-fg)}
+h2.grp{font-size:13px;text-transform:uppercase;letter-spacing:.07em;color:var(--ink-2);
+  margin:26px 0 10px;padding-bottom:6px;border-bottom:1px solid var(--line);
   display:flex;align-items:baseline;gap:9px}
 h2.grp:first-child{margin-top:6px}
 .hlgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;align-items:start}
@@ -102,7 +143,8 @@ h2.grp:first-child{margin-top:6px}
 .gd h3 a:hover{text-decoration:underline}
 .gd-meta{margin:0 0 6px;font-size:11.5px;color:var(--ink-3);display:flex;
   flex-wrap:wrap;align-items:center;gap:5px}
-td.cite{font-size:12px;line-height:1.45;color:var(--ink-2);max-width:30em}
+td.cite{font-size:12px;line-height:1.45;color:var(--ink-2);max-width:30em;
+  overflow-wrap:anywhere}
 .gd-type{background:var(--bg);border:1px solid var(--line);border-radius:3px;
   padding:1px 6px;font-size:10.5px;text-transform:uppercase;letter-spacing:.05em;color:var(--ink-2)}
 .gd-sum{margin:0 0 7px;font-size:12.5px;line-height:1.45;color:var(--ink-2)}
@@ -128,8 +170,29 @@ td.cite{font-size:12px;line-height:1.45;color:var(--ink-2);max-width:30em}
    it is filed under one. */
 .pill.primary{font-weight:700}
 .gd-meta .pill:not(.primary){opacity:.55}
-@media (max-width:1100px){ .hlgrid{grid-template-columns:1fr} }
-.grp-n{font-size:12px;color:#8A94A2;font-weight:400;letter-spacing:0}
+/* Highlights: three themed columns, two, then stacked. Going straight from
+   three to one wasted half the width of every laptop between. */
+@media (max-width:1240px){ .hlgrid{grid-template-columns:repeat(2,1fr)} }
+@media (max-width:860px){  .hlgrid{grid-template-columns:1fr} }
+@media (max-width:900px){
+  /* the reference is recoverable from the linked title */
+  .srct th:nth-child(3), .srct td:nth-child(3){display:none}
+}
+@media (max-width:640px){
+  .srct th:nth-child(5), .srct td:nth-child(5){display:none}
+  /* A world map 300px wide is 119px tall and reads as nothing. The country
+     list below it does the same job and carries counts, so on a phone that
+     list is the interface. */
+  .mapwrap .map, .mapwrap .maplegend{display:none}
+}
+@media (max-width:620px){
+  :root{--gutter:16px}
+  .prose{padding:20px 18px}
+  .stats{gap:18px}
+  h1{font-size:19px}
+  .anbox{--an-pad:14px}
+}
+.grp-n{font-size:12px;color:var(--ink-3);font-weight:400;letter-spacing:0}
 .bandhead{margin:14px 0 7px;font-size:11px;text-transform:uppercase;letter-spacing:.07em;
   color:var(--ink-3);font-weight:600}
 .solobox{margin-top:26px;border-top:1px solid var(--line);padding-top:16px}
@@ -152,7 +215,15 @@ h3.grp.grp-sub{font-size:12px;margin-top:18px}
 .anbox h2.grp{margin:0 0 8px}
 .anhelp{font-size:13px;line-height:1.55;color:var(--ink-2);margin:0 0 14px;max-width:78ch}
 .ansvg{width:100%;height:auto;display:block;overflow:visible}
-.anlab{font-size:10.5px;fill:var(--ink-2)}
+/* Anything that cannot honestly compress — a six-column table, a hand-drawn
+   diagram with 10px labels — scrolls inside its own box instead of widening
+   the page. Below its minimum the diagram would shrink its type to nothing. */
+.tscroll{max-width:100%;overflow-x:auto;-webkit-overflow-scrolling:touch}
+.tscroll>table{margin:0}
+.tscroll>.ansvg{min-width:600px}
+.tscroll>table.cover{min-width:440px}
+.anlab{font-size:10.5px;fill:var(--ink-2);
+  paint-order:stroke;stroke:#FFFFFFE6;stroke-width:3px;stroke-linejoin:round}
 .bandkey{margin-top:16px;padding-top:13px;border-top:1px solid var(--line);
   font-size:12.5px;line-height:1.5;color:var(--ink-2);max-width:86ch}
 .bkhead{margin-bottom:8px;color:var(--ink-3)}
@@ -172,28 +243,30 @@ td.cmat0{color:var(--ink-3);background:var(--bg)}
 .cmark{opacity:.75;font-weight:700;margin-left:2px}
 /* One illustrative case, marked as such. The statement above it is the claim;
    this is one instance of it, and the records below are the full range. */
-.eg{margin:6px 0 0;padding:7px 11px;border-left:3px solid var(--fundamentals);background:#F4F6F9;
-    font-size:13px;line-height:1.5;color:#3A4551;border-radius:0 4px 4px 0}
-.pill.barrier{background:var(--barrier)} .pill.enabler{background:var(--enabler)}
-.pill.recommendation{background:var(--recommendation)} .pill.practice{background:var(--practice)}
-.pill.context{background:var(--context)}
+.eg{margin:6px 0 0;padding:7px 11px;border-left:3px solid var(--fundamentals);background:var(--bg);
+    font-size:13px;line-height:1.5;color:var(--ink-2);border-radius:0 4px 4px 0}
+.pill.barrier{background:var(--barrier);color:var(--barrier-fg)}
+.pill.enabler{background:var(--enabler);color:var(--enabler-fg)}
+.pill.recommendation{background:var(--recommendation);color:var(--recommendation-fg)}
+.pill.practice{background:var(--practice);color:var(--practice-fg)}
+.pill.context{background:var(--context);color:var(--context-fg)}
 .str{border-radius:4px;padding:2px 8px;font-weight:600;font-size:11px;text-transform:uppercase;letter-spacing:.4px}
-.str.b1{background:var(--s1);color:#2A4A61} .str.b2{background:var(--s2);color:#22415A}
-.str.b3{background:var(--s3);color:#fff}     .str.b4{background:var(--s4);color:#fff}
-.str.b5{background:var(--s5);color:#fff}
+.str{color:var(--on-light)}
+.str.b1{background:var(--s1)} .str.b2{background:var(--s2)} .str.b3{background:var(--s3)}
+.str.b4{background:var(--s4)} .str.b5{background:var(--s5)}
 .str-n{opacity:.65;font-weight:700;margin-right:5px}
-.relbox{background:#F3F0FA;border:1px solid #D8CFEA;border-radius:7px;padding:11px 13px;margin-bottom:10px}
-.relbox>b{font-size:11px;text-transform:uppercase;letter-spacing:.06em;color:#5B4A86}
+.relbox{background:var(--rel-bg);border:1px solid var(--rel-line);border-radius:7px;padding:11px 13px;margin-bottom:10px}
+.relbox>b{font-size:11px;text-transform:uppercase;letter-spacing:.06em;color:var(--rel-ink)}
 .relrow{margin:7px 0 0;font-size:13px;line-height:1.5}
-.relkind{font-weight:600;color:#5B4A86}
-.tag.rel{background:#F3F0FA;border-color:#D8CFEA;color:#5B4A86}
-.tag.chk-all{background:#EAF5EC;border-color:#B9DCC1;color:#2C6B3B}
+.relkind{font-weight:600;color:var(--rel-ink)}
+.tag.rel{background:var(--rel-bg);border-color:var(--rel-line);color:var(--rel-ink)}
+.tag.chk-all{background:var(--ok-bg);border-color:var(--ok-line);color:var(--ok-ink)}
 .tag.chk-part{background:var(--bg);border-color:var(--line);color:var(--ink-3)}
-.tag.chk-none{background:#FDECEC;border-color:#E5B4B4;color:#8A3A3A;font-weight:600}
+.tag.chk-none{background:var(--alert-bg);border-color:var(--alert-line);color:var(--alert-ink);font-weight:600}
 .ysep{color:var(--ink-3);font-size:12.5px;margin:0 4px}
 .ynote{font-size:11.5px;color:var(--ink-3);margin-left:12px;font-style:italic}
 .tag.per{font-variant-numeric:tabular-nums}
-.tag.per-wide{background:#FFF6E5;border-color:#E8CE9A;color:#6B4E12;font-weight:600}
+.tag.per-wide{background:var(--warn-bg);border-color:var(--warn-line);color:var(--warn-ink);font-weight:600}
 .detail{margin-top:13px;padding-top:13px;border-top:1px solid var(--line)}
 .ev{padding:10px 0;border-bottom:1px dashed var(--line)}
 .ev:last-child{border-bottom:0}
@@ -201,8 +274,8 @@ td.cmat0{color:var(--ink-3);background:var(--bg)}
 blockquote{margin:6px 0;padding:7px 12px;border-left:2px solid var(--line);
   color:var(--ink-2);font-style:italic;background:var(--bg);border-radius:0 4px 4px 0}
 .evmeta{font-size:11.5px;color:var(--ink-3)}
-.evdup{margin:4px 0 7px;padding:6px 9px;background:#FFF6E5;border-left:3px solid #E8CE9A;
-  border-radius:4px;font-size:11.5px;line-height:1.45;color:#6B4E12}
+.evdup{margin:4px 0 7px;padding:6px 9px;background:var(--warn-bg);border-left:3px solid var(--warn-line);
+  border-radius:4px;font-size:11.5px;line-height:1.45;color:var(--warn-ink)}
 table{width:100%;border-collapse:collapse;background:var(--card);border:1px solid var(--line);
   border-radius:7px;overflow:hidden;font-size:13.5px}
 th{text-align:left;padding:9px 12px;background:var(--bg);font-size:11px;text-transform:uppercase;
@@ -218,13 +291,15 @@ tr:last-child td{border-bottom:0}
 .mtable td.n:hover{outline:2px solid var(--accent);outline-offset:-2px}
 .empty{color:var(--ink-2);padding:34px;text-align:center;background:var(--card);
   border:1px dashed var(--line);border-radius:7px}
-.warn{background:#FFF6E5;border:1px solid #E8CE9A;color:#6B4E12;padding:13px 16px;
+.warn{background:var(--warn-bg);border:1px solid var(--warn-line);color:var(--warn-ink);padding:13px 16px;
   border-radius:7px;margin-bottom:16px;font-size:13.5px}
 .warn code{background:#fff;padding:1px 5px;border-radius:3px;font-size:12.5px}
-.warn.stale{background:#FDECEC;border-color:#E5B4B4;color:#7A2E2E}
-.warn kbd{background:#fff;border:1px solid #D9C0C0;border-bottom-width:2px;border-radius:4px;
+.warn.stale{background:var(--alert-bg);border-color:var(--alert-line);color:var(--alert-ink)}
+.warn kbd{background:#fff;border:1px solid var(--alert-line);border-bottom-width:2px;border-radius:4px;
   padding:1px 5px;font:inherit;font-size:12px}
-footer{padding:22px 26px;color:var(--ink-3);font-size:12px;border-top:1px solid var(--line);background:var(--card)}
+footer{padding:22px 0;color:var(--ink-3);font-size:12px;border-top:1px solid var(--line);
+  background:var(--card);
+  padding-inline:max(var(--gutter),calc((100% - var(--measure))/2 + var(--gutter)))}
 .hidden{display:none}
 /* About */
 .prose{background:var(--card);border:1px solid var(--line);border-radius:8px;
@@ -253,19 +328,19 @@ footer{padding:22px 26px;color:var(--ink-3);font-size:12px;border-top:1px solid 
 .linkbtn{margin-left:auto;background:none;border:0;color:var(--accent);font:inherit;
   font-size:12.5px;cursor:pointer;text-decoration:underline}
 .map{width:100%;height:auto;max-height:380px;display:block}
-.land{fill:#E9EEF2;stroke:#DCE4EA;stroke-width:.4}
+.land{fill:#EBECEE;stroke:#DDDFE2;stroke-width:.4}
 .cty{stroke:#fff;stroke-width:.5;cursor:pointer;transition:fill .12s}
 .cty:hover{stroke:var(--ink);stroke-width:1}
-.cty.sel{stroke:var(--transition);stroke-width:1.6;fill:var(--transition) !important}
+.cty.sel{stroke:var(--sel);stroke-width:1.6;fill:var(--sel) !important}
 .maplegend{display:flex;align-items:center;gap:6px;font-size:11.5px;color:var(--ink-3);
   margin-top:4px;flex-wrap:wrap}
 .lg{width:26px;height:9px;border-radius:2px;display:inline-block}
-.lg.lo{background:rgba(31,92,139,.22)} .lg.hi{background:rgba(31,92,139,.92);margin-left:10px}
+.lg.lo{background:rgba(0,153,153,.20)} .lg.hi{background:rgba(0,153,153,.95);margin-left:10px}
 .lgnote{margin-left:12px;font-style:italic}
-text.ctyl{font-size:6.5px;font-weight:600;fill:#12325180;text-anchor:middle;
+text.ctyl{font-size:6.5px;font-weight:600;fill:#33333380;text-anchor:middle;
   paint-order:stroke;stroke:#FFFFFFC0;stroke-width:1.6px;pointer-events:none;
   letter-spacing:.02em}
-text.ctyl.sel{fill:var(--transition);stroke:#FFF;stroke-width:2px}
+text.ctyl.sel{fill:var(--on-light);stroke:#FFF;stroke-width:2px}
 .ctylist{margin-top:14px;border-top:1px solid var(--line);padding-top:10px;
   display:grid;grid-template-columns:repeat(auto-fill,minmax(168px,1fr));gap:4px}
 .ctylist .maphead{grid-column:1/-1;margin:0 0 4px}
@@ -273,9 +348,9 @@ text.ctyl.sel{fill:var(--transition);stroke:#FFF;stroke-width:2px}
   background:none;border:1px solid transparent;border-radius:5px;cursor:pointer;
   padding:4px 8px;font:inherit;font-size:13px;color:var(--ink-2);text-align:left}
 .ctybtn:hover{background:var(--bg);border-color:var(--line)}
-.ctybtn.on{background:var(--transition);border-color:var(--transition);color:#fff;font-weight:600}
+.ctybtn.on{background:var(--sel);border-color:var(--sel);color:var(--on-light);font-weight:600}
 .ctyn{font-size:11.5px;color:var(--ink-3);font-variant-numeric:tabular-nums}
-.ctybtn.on .ctyn{color:#FFFFFFCC}
+.ctybtn.on .ctyn{color:#15191CB3}
 .note-inline{font-size:11.5px;color:var(--ink-3);font-style:italic}
 /* Highlights */
 .hl{background:var(--card);border:1px solid var(--line);border-left:4px solid var(--s5);
@@ -814,7 +889,7 @@ function viewFindings(d){
       periodTag(f) + checkedTag(f) +
       (f.relations && f.relations.length
         ? '<span class="tag rel">' + f.relations.length + ' related</span>' : '') +
-      (f.unmerged ? '<span class="tag" style="color:#B33A3A">not yet merged</span>' : '') +
+      (f.unmerged ? '<span class="tag" style="color:var(--alert-ink)">not yet merged</span>' : '') +
       f.countries.map(function(c){ return '<span class="tag">'+esc(countryName(c))+'</span>'; }).join("") +
       f.tags.map(function(t){ return '<span class="tag">'+esc(label("tags",t))+'</span>'; }).join("") +
       '</div>';
@@ -903,12 +978,12 @@ function viewAbout(){
   });
 
   h += '<h3>What "strength" means</h3><p>' + esc(a.strength_intro) + '</p>' +
-       '<table class="strengthtable"><thead><tr><th>Band</th><th>When it applies</th>' +
+       '<div class="tscroll"><table class="strengthtable"><thead><tr><th>Band</th><th>When it applies</th>' +
        '<th>How to read it</th></tr></thead><tbody>' +
        (a.strength||[]).map(function(x){
          return '<tr><td>' + bandTag(x.level) + '</td>' +
                 '<td>'+esc(x.rule)+'</td><td>'+esc(x.meaning)+'</td></tr>';
-       }).join("") + '</tbody></table>' +
+       }).join("") + '</tbody></table></div>' +
        '<p class="note">' + esc(a.strength_note) + '</p>';
 
   h += '<h3>Read this with care</h3><ul class="caveats">' +
@@ -1228,7 +1303,8 @@ function viewMap(){
   var shapes = Object.keys(m).filter(function(c){ return G.countries[c]; }).map(function(c){
     var sel = F.countries.indexOf(c)>=0;
     var a = max ? m[c].n/max : 0;
-    var fill = 'rgba(31,92,139,'+(0.22+a*0.70).toFixed(2)+')';
+    // GWC teal sequential, as opacity over the neutral land fill.
+    var fill = 'rgba(0,153,153,'+(0.20+a*0.75).toFixed(2)+')';
     return '<path class="cty'+(sel?' sel':'')+'" data-c="'+esc(c)+'" d="'+G.countries[c]+'" ' +
            'fill="'+fill+'"><title>'+esc(countryName(c))+' — '+m[c].n+
            ' finding'+(m[c].n===1?'':'s')+', '+m[c].recs+' record'+(m[c].recs===1?'':'s')+
@@ -1338,7 +1414,8 @@ function viewSources(d){
   }).join("");
 
   function srcTable(list){
-    return '<table><thead><tr><th>ID</th><th>Title</th><th>Cite as</th>' +
+    return '<div class="tscroll"><table class="srct">' +
+    '<thead><tr><th>ID</th><th>Title</th><th>Cite as</th>' +
     '<th>Stream</th><th>Access</th><th>Cited in</th></tr></thead><tbody>' +
     list.map(function(s){
       var c = uniq(cited[s.source_id]||[]);
@@ -1350,8 +1427,8 @@ function viewSources(d){
         // because 2007 practice and 2025 practice are not interchangeable.
         '<td class="cite">'+esc(s.reference||s.label||"")+'</td>' +
         '<td>'+esc(label("stream", s.stream))+'</td><td>'+esc(s.access||"")+'</td>' +
-        '<td>'+(c.length ? esc(c.join(", ")) : '<span style="color:#B33A3A">not cited</span>')+'</td></tr>';
-    }).join("") + '</tbody></table>';
+        '<td>'+(c.length ? esc(c.join(", ")) : '<span style="color:var(--alert-ink)">not cited</span>')+'</td></tr>';
+    }).join("") + '</tbody></table></div>';
   }
 }
 
@@ -1417,13 +1494,39 @@ function anTags(d){
       w.toFixed(2)+'"><title>'+esc(label("tags",e.a)||e.a)+' + '+esc(label("tags",e.b)||e.b)+
       ' — '+e.n+' findings, lift '+e.lift.toFixed(2)+'</title></line>');
   });
-  nodes.forEach(function(nd){
+  // Circles first, then labels, so no line or circle is drawn over a label.
+  var drawn = nodes.map(function(nd){
     var p = pos[nd.id], r = 10 + 26 * Math.sqrt(nd.n / maxN);
     svg.push('<circle cx="'+p.x.toFixed(1)+'" cy="'+p.y.toFixed(1)+'" r="'+r.toFixed(1)+
       '" fill="var(--s4)" fill-opacity="0.85"><title>'+esc(label("tags",nd.id)||nd.id)+
       ' — '+nd.n+' findings</title></circle>');
-    svg.push('<text x="'+p.x.toFixed(1)+'" y="'+(p.y+r+11).toFixed(1)+
-      '" text-anchor="middle" class="anlab">'+esc(label("tags",nd.id)||nd.id)+'</text>');
+    return { p:p, r:r, t:(label("tags",nd.id)||nd.id), n:nd.n };
+  });
+  // Every label used to be pinned 11px under its circle, which put eight of
+  // them on top of each other across the middle of the picture. Each label now
+  // takes the first free slot — below, above, then further out — and the node
+  // with the most findings gets first claim on the space.
+  var boxes = [];
+  drawn.sort(function(a,b){ return b.n - a.n; }).forEach(function(o){
+    var w = o.t.length * 5.1, hh = 11;
+    // near an edge the label anchors inward so it stays inside the viewBox
+    var anchor = "middle", tx = o.p.x, x0 = o.p.x - w/2;
+    if (o.p.x - w/2 < 4)        { anchor = "start"; tx = Math.max(2, o.p.x - o.r); x0 = tx; }
+    else if (o.p.x + w/2 > 896) { anchor = "end";   tx = Math.min(898, o.p.x + o.r); x0 = tx - w; }
+    var cands = [o.r+11, -(o.r+5), o.r+23, -(o.r+17), o.r+35, -(o.r+29)];
+    var dy = cands[0];
+    for (var i=0;i<cands.length;i++){
+      var y = o.p.y + cands[i], ok = true;
+      for (var j=0;j<boxes.length;j++){
+        var b = boxes[j];
+        if (x0 < b.x2 && x0 + w > b.x1 && y - hh < b.y2 && y > b.y1) { ok = false; break; }
+      }
+      if (ok) { dy = cands[i]; break; }
+    }
+    var fy = o.p.y + dy;
+    boxes.push({ x1:x0, x2:x0+w, y1:fy-hh, y2:fy+3 });
+    svg.push('<text x="'+tx.toFixed(1)+'" y="'+fy.toFixed(1)+
+      '" text-anchor="'+anchor+'" class="anlab">'+esc(o.t)+'</text>');
   });
   svg.push('</svg>');
 
@@ -1627,8 +1730,8 @@ function anCoverage(d){
       if (!e) return '<td class="cmat cmat0" title="nobody asked">·</td>';
       var sh = Math.min(5, 1 + Math.floor(4.99 * e.n / mx));
       var mark = e.ck === 0 ? '<span class="cmark" title="no verified record">*</span>' : '';
-      return '<td class="cmat" style="background:var(--s'+sh+');color:'+
-             (sh>=3?'#fff':'var(--ink)')+'" title="'+e.n+' findings. Strongest reaches band '+
+      return '<td class="cmat" style="background:var(--s'+sh+');color:var(--on-light)'+
+             '" title="'+e.n+' findings. Strongest reaches band '+
              e.best+' — '+esc(bandLabel(e.best))+': '+esc(bandDef(e.best))+' '+e.ck+
              ' of the '+e.n+' have a verified record from this country.">'+e.n+mark+'</td>';
     }).join("");
@@ -1659,8 +1762,12 @@ function anCoverage(d){
 }
 
 function anBox(title, note, body){
+  // The body is a hand-drawn SVG or a matrix, neither of which compresses below
+  // a readable minimum, so it gets its own scroll box rather than widening the
+  // page and pushing every other view sideways with it.
   return '<section class="anbox"><h2 class="grp">'+esc(title)+'</h2>' +
-         '<p class="anhelp">'+note+'</p>' + body + '</section>';
+         '<p class="anhelp">'+note+'</p>' +
+         '<div class="tscroll">' + body + '</div></section>';
 }
 function uniq(a){
   var s = {}, o = [];
