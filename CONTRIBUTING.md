@@ -1,6 +1,8 @@
 # How to update this site
 
-Written for someone who has never seen this project — including an AI assistant picking it up cold. If you are the latter, read `prompts/00-shared-rules.md` next.
+Written for someone who has never seen this project — including an AI assistant picking it up cold. If you are the latter, read `prompts/00-shared-rules.md` next, then `prompts/11-open-items.md`.
+
+`11-open-items.md` holds the things the build cannot tell you: claims attributed to sources that may not contain them, and one rule applied two different ways. Everything else about the state of this base is self-reporting — run `python scripts/build.py` and it will name what is wrong.
 
 ---
 

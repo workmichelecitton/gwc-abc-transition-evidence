@@ -123,9 +123,10 @@ backfill, and grouped the Findings list.
 | Three unverified records — Sudan `E0429`, Colombia `E0376`, Mozambique `E0537` | No supporting passage exists in the transcript. Marked `draft`/`low`. Either you remember it happening, or they should be deleted. |
 | `F261` and `F270` | Reach band 2 on the 2026 consultation plus a check-in from the same country. Probably one person counted twice; the build warns on every run. |
 | Syria session 2 | Attaches to `S115`. Coordination architecture is the gap in session 1. |
-| 9 sources never read | Registered but carrying no evidence record: S046–S049, S091–S094, S096. Down from 23. Seven have no URL, which is why they stalled. Listed in `prompts/08-unmined-sources.md`. The build warns every run. |
-| Source URLs | 14 of 106 sources have one. Any source added from 2026-08-10 must have one — the build rejects it otherwise. The rest are listed in `prompts/07-source-urls.md`, ordered by how much evidence rests on them. Paste into the `url` column and the Sources tab links it. |
-| `status` is `draft` on every record | By the schema's own definition that means nobody has checked them, which is no longer true — most have been through a tone pass, quote verification and consolidation. Either promote them honestly or change the vocabulary. |
+| Four items that live nowhere else | Two records asserting a claim absent from their sources, 31 unquoted cross-source duplicates, an inconsistently applied relation rule, and one linked-but-unread source. Established in conversation, so the build cannot find them. **`prompts/11-open-items.md`** — read it before an evidence round. |
+| 12 sources never read | Registered, linked, carrying no evidence record. Down from 23. The build names them on every run, and each carries either a `NOT YET READ` note or a `DELIBERATELY NOT EXTRACTED` decision in `sources.csv`, so this needs no separate list. Eight more are settled exclusions. |
+| Source URLs | 78 of 113 sources have one; 26 of the remainder are restricted by nature (GWC workshops, country consultations, internal transcripts) and 9 are genuinely missing. Any source added from 2026-08-10 must have one — the build rejects it otherwise. The 9 are in `prompts/07-source-urls.md`, ordered by how much evidence rests on them. |
+| `status` is `draft` on 125 of 798 records | Was every record; the rest are now `validated`. By the schema's own definition `draft` means nobody has checked it. For the 125 that is still true. Work through them or change the vocabulary — but do not promote them in bulk. |
 | Quarterly search | `prompts/03`, due three months after the last source date. |
 
 | # | Decision | Trigger |
