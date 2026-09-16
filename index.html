@@ -170,11 +170,13 @@ td.cite{font-size:12px;line-height:1.45;color:var(--ink-2);max-width:30em;
 .gfb.on .gfb-n{color:#fff;opacity:.75}
 .gfb-n{color:var(--ink-3);font-size:11px;margin-left:2px}
 .gfb.clr{margin-left:auto;border-style:dashed}
-/* The primary focus is the first topic listed. Showing it solid and the rest
-   faded keeps the multi-label honest: a document can be about three things, but
-   it is filed under one. */
-.pill.primary{font-weight:700}
-.gd-meta .pill:not(.primary){opacity:.55}
+/* The primary topic used to be rendered as a solid pill with the rest faded to
+   .55, which is what the two rules here did. viewGuidance stopped emitting the
+   primary pill — the section heading names it instead — so nothing ever carried
+   .primary and :not(.primary) matched every pill: measured, all six topic pills
+   on a Guidance card rendered at .55 opacity with no solid one to compare them
+   to. Removed 16/09/2026 rather than reinstated, because the heading already
+   does the job the solid pill was there for. */
 /* Highlights: three themed columns, two, then stacked. Going straight from
    three to one wasted half the width of every laptop between. */
 @media (max-width:1240px){ .hlgrid{grid-template-columns:repeat(2,1fr)} }
@@ -242,10 +244,6 @@ circle.tagnode.on{fill:var(--sel);fill-opacity:1;stroke:var(--on-light);stroke-w
 .bkdot{flex:0 0 auto;width:11px;height:11px;border-radius:3px;position:relative;top:1px}
 .bk1{background:var(--s1)} .bk2{background:var(--s2)} .bk3{background:var(--s3)}
 .bk4{background:var(--s4)} .bk5{background:var(--s5)}
-/* One illustrative case, marked as such. The statement above it is the claim;
-   this is one instance of it, and the records below are the full range. */
-.eg{margin:6px 0 0;padding:7px 11px;border-left:3px solid var(--fundamentals);background:var(--bg);
-    font-size:13px;line-height:1.5;color:var(--ink-2);border-radius:0 4px 4px 0}
 .pill.barrier{background:var(--barrier);color:var(--barrier-fg)}
 .pill.enabler{background:var(--enabler);color:var(--enabler-fg)}
 .pill.recommendation{background:var(--recommendation);color:var(--recommendation-fg)}
@@ -272,8 +270,6 @@ circle.tagnode.on{fill:var(--sel);fill-opacity:1;stroke:var(--on-light);stroke-w
 .ev{padding:10px 0;border-bottom:1px dashed var(--line)}
 .ev:last-child{border-bottom:0}
 .ev p{margin:0 0 5px}
-blockquote{margin:6px 0;padding:7px 12px;border-left:2px solid var(--line);
-  color:var(--ink-2);font-style:italic;background:var(--bg);border-radius:0 4px 4px 0}
 .evmeta{font-size:11.5px;color:var(--ink-3)}
 .evdup{margin:4px 0 7px;padding:6px 9px;background:var(--warn-bg);border-left:3px solid var(--warn-line);
   border-radius:4px;font-size:11.5px;line-height:1.45;color:var(--warn-ink)}
@@ -283,11 +279,6 @@ th{text-align:left;padding:9px 12px;background:var(--bg);font-size:11px;text-tra
   letter-spacing:.6px;color:var(--ink-3);border-bottom:1px solid var(--line)}
 td{padding:9px 12px;border-bottom:1px solid var(--line);vertical-align:top}
 tr:last-child td{border-bottom:0}
-.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(215px,1fr));gap:10px}
-.tile{background:var(--card);border:1px solid var(--line);border-radius:7px;padding:12px 14px;cursor:pointer}
-.tile:hover{border-color:var(--accent)}
-.tile b{display:block;font-size:15px;margin-bottom:3px}
-.tile span{font-size:12px;color:var(--ink-2)}
 .empty{color:var(--ink-2);padding:34px;text-align:center;background:var(--card);
   border:1px dashed var(--line);border-radius:7px}
 .warn{background:var(--warn-bg);border:1px solid var(--warn-line);color:var(--warn-ink);padding:13px 16px;
@@ -710,7 +701,11 @@ function matchRecord(r, skipCountry){
   if (r.year != null && ((F.yfrom && r.year < F.yfrom) || (F.yto && r.year > F.yto))) return false;
   if (F.q){
     var src = sourceOf(r.source_id);
-    var hay = (r.statement+" "+(r.quote||"")+" "+r.id+" "+r.source_id+" "+
+    // No quote here on purpose. build.py carries DROP = ("notes", "quote"), so
+    // site.json holds no quote for any of the 796 records and searching one
+    // could never match. It was in this list, which made the search look as
+    // though it covered the verbatim text a reader can see in evidence.csv.
+    var hay = (r.statement+" "+r.id+" "+r.source_id+" "+
                (src?src.title:"")+" "+r.tags.join(" ")+" "+
                r.countries.map(countryName).join(" ")).toLowerCase();
     if (hay.indexOf(F.q)<0) return false;
@@ -949,6 +944,10 @@ function relationBlock(f){
   }).join("") + '</div>';
 }
 
+// One metadata line per record: id, stream, source, date, status, countries.
+// Passed by reference as rs.map(evLine), which is worth knowing — a dead-code
+// sweep looking for "evLine(" finds only the declaration and reports it unused.
+// It was removed on that basis on 16/09/2026 and restored the same minute.
 function evLine(r){
   var s = sourceOf(r.source_id);
   return '<div class="evmeta">' + esc(r.id) + ' · ' + esc(label("stream", r.stream)) +

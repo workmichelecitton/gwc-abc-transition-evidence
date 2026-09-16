@@ -5,7 +5,7 @@ state of this base is self-reporting: `python scripts/build.py` names unread
 sources, missing quotes and bad rows, `sources.csv` notes say what has been read
 and what has only been linked, and the commit messages carry the reasoning.
 
-These four do not surface anywhere. They were established in conversation and
+These five do not surface anywhere. They were established in conversation and
 would otherwise be lost when that conversation ends.
 
 Written 15/09/2026, at 796 records · 196 findings · 113 sources.
@@ -128,18 +128,55 @@ attribution. Same treatment as item 1.
 
 ---
 
+## 5. S061 and S118 — grouped on an assumption nobody has checked
+
+Both are the Cameroon health cluster transition, and both carry
+`source_group: cameroon-health-transition-2026`, so they count as one source
+towards any finding's band.
+
+That grouping was applied on the assumption they are the same body of work. If
+they are genuinely separate documents — a mission note and a later synthesis, say
+— the group is suppressing a real second source and every band computed from them
+is one short. If they are the same work registered twice, the group is correct and
+should stay.
+
+Whoever has both documents to hand can settle it in a minute. Until then it is an
+assumption carrying weight in a computed number, which is the one place this base
+does not tolerate assumptions.
+
+Migrated here from `prompts/07` on 16/09/2026, where it sat under "also worth
+checking while you are in there". The two items beside it are closed: S089 was
+deleted, and no source is missing a year.
+
+---
+
 ## Not on this list, deliberately
 
 **Unread sources.** `build.py` already prints them on every run, and each one
 carries either a `NOT YET READ` note or a `DELIBERATELY NOT EXTRACTED` decision
 in `sources.csv`. That is self-maintaining and does not need a second copy here.
-Currently 12 open, 8 decided.
+No count is given on purpose: this file carried "12 open, 8 decided" for a week
+after the build had moved to ten, which is exactly how a worklist becomes a
+liability. Run the build.
+
+**Sources with no URL.** Same reason. `build.py` names them; `prompts/07` says
+how to close one and no longer keeps a list.
+
+**Records with no quote.** `build.py` counts them. The four that are deliberate
+carry `DELIBERATELY NO QUOTE` in their `notes` column — the decision is recorded
+against the record rather than in prose here, so it is found by whoever is
+looking at the record.
 
 **Gaps in country or theme coverage.** The A3 skill rebuilds the gap table at
-Step A, and the map on the Findings tab carries the live count of country-by-theme
-combinations nobody has been asked about. A written snapshot would go stale within
-one round. (The Analysis tab that used to compute this was removed on 15/09/2026;
-its coverage matrix went with it, its gap sentence moved onto the map.)
+Step A. Nothing on the site computes it any more: the Analysis tab and its
+coverage matrix went on 15/09/2026, and the gap sentence that briefly replaced it
+on the map went on 16/09/2026. A written snapshot here would go stale within one
+round, so the A3 pass is the place to ask the question.
+
+One consequence is worth stating plainly, because the site no longer states it:
+**a country shaded pale on the map may be pale because nobody has been asked, not
+because little is happening there.** Absence of evidence is not evidence of
+absence, and the map cannot tell the two apart.
 
 ---
 

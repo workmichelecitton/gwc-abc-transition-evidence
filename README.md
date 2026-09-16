@@ -132,7 +132,7 @@ backfill, and grouped the Findings list.
 | # | Decision | Trigger |
 |---|---|---|
 | 3 | ~~Finish the consolidation.~~ **Done.** All seven packages complete: `capacity`, `transition-handover`, `coordination-architecture`, `information-management` + `hpc`, `funding` + `pooled-funds`, `localisation`, `government-engagement`. Base went 483 → 208 findings, singletons 82% → 44%, high-strength 41 → 80. The granularity warning no longer fires. Re-run `prompts/04` whenever it starts warning again. | — |
-| 4 | ~~Finish the quote backfill.~~ **Done.** 331 of 335 transcript records carry a verifiable quote. The four blanks are deliberate and flagged — see `prompts/06`. Nine records were corrected or withheld as a result. | — |
+| 4 | ~~Finish the quote backfill.~~ **Done.** 331 of 335 transcript records carry a verifiable quote. The four blanks are deliberate and each carries `DELIBERATELY NO QUOTE` in its `notes` column — E0429, E0376, E0537, E0548. Do not write quotes for them. Nine records were corrected or withheld as a result. | — |
 
 ## Confidentiality: what is published and what is not
 

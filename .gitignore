@@ -34,3 +34,9 @@ tools/reliefweb-mcp/appname.txt
 node_modules/
 package.json
 package-lock.json
+
+# Files retired on 16/09/2026 and moved here rather than deleted (this session
+# could not delete). git already sees them as removed from their old paths, so
+# committing the deletions cleans the repository; the folder is a local holding
+# pen and can be deleted in Explorer at any time.
+/_to_delete/

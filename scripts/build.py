@@ -192,8 +192,14 @@ def main():
         sources.append(clean)
 
     if no_url:
+        # The IDs are printed here rather than kept in a file. prompts/07 used to
+        # carry the list and drifted: it named sixteen sources when nine were
+        # left, so the build pointed a reader at a worklist that overstated the
+        # backlog. The build knows the answer on every run; the prompt now only
+        # says how to close one.
         warn(f"{len(no_url)} sources registered before {URL_RULE_FROM} carry no URL, so nobody "
-             f"can check what they say. Listed in prompts/07-source-urls.md, worst first.")
+             f"can check what they say: {', '.join(sorted(no_url))}. "
+             f"How to close one: prompts/07-source-urls.md.")
 
     # Two sources with the same title are almost always one document registered
     # twice, which quietly inflates every strength count that touches both. It
