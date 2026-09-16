@@ -135,9 +135,11 @@ carries either a `NOT YET READ` note or a `DELIBERATELY NOT EXTRACTED` decision
 in `sources.csv`. That is self-maintaining and does not need a second copy here.
 Currently 12 open, 8 decided.
 
-**Gaps in country or theme coverage.** The Analysis tab computes these live and
-the A3 skill rebuilds the gap table at Step A. A written snapshot would go stale
-within one round.
+**Gaps in country or theme coverage.** The A3 skill rebuilds the gap table at
+Step A, and the map on the Findings tab carries the live count of country-by-theme
+combinations nobody has been asked about. A written snapshot would go stale within
+one round. (The Analysis tab that used to compute this was removed on 15/09/2026;
+its coverage matrix went with it, its gap sentence moved onto the map.)
 
 ---
 

@@ -68,7 +68,7 @@ async function exercise(label, url) {
   ok(errs.length === 0, `${label}: script errors — ${errs.join(" | ")}`);
 
   const tabs = $$("[data-tab]");
-  const TABS = ["About", "Guidance", "Highlights", "Findings", "Analysis", "Sources"];
+  const TABS = ["About", "Guidance", "Highlights", "Findings", "Sources"];
   ok(tabs.length === TABS.length,
      `${label}: expected ${TABS.length} tabs (${TABS.join(", ")}), found ${tabs.length}`);
   const labels = tabs.map((t) => t.textContent.trim());
@@ -153,24 +153,58 @@ async function exercise(label, url) {
     }
   }
 
-  // ---- Analysis tab ------------------------------------------------------
-  // Two charts and a matrix, and the bands have to be named where they appear.
-  // A reader landing on Analysis first has no reason to know what "Band 4"
-  // means, and an unexplained axis is the fastest way to make a computed number
-  // look asserted. The circle and line scales are asserted too: they were
-  // deliberately enlarged, and a later refactor that quietly restores the old
-  // constants should fail here rather than be noticed by eye months later.
+  // ---- the two computed views, on the tabs they describe -----------------
+  // Analysis was removed 15/09/2026 and its two charts moved: the tag network
+  // to Findings under the map, the provenance flow to the top of Sources. The
+  // assertions did not move with them by accident — each one guards something
+  // that was got wrong once. The circle and line scales were deliberately
+  // enlarged, and a later refactor that quietly restores the old constants
+  // should fail here rather than be noticed by eye months later. The bands have
+  // to be named where they appear: an unexplained axis is the fastest way to
+  // make a computed number look asserted.
   //
-  // Re-query the tabs. Every render rebuilds the nav, so the nodes captured at
-  // the top of this function are replaced and clicking one does nothing.
-  const anTab = $$("[data-tab]").find((t) => t.dataset.tab === "analysis");
-  if (anTab) {
-    anTab.dispatchEvent(new dom.window.Event("click", { bubbles: true }));
+  // Re-query the tabs before each click. Every render rebuilds the nav, so
+  // nodes captured earlier are replaced and clicking one does nothing.
+  const clickTab = async (name) => {
+    const t = $$("[data-tab]").find((x) => x.dataset.tab === name);
+    if (!t) return false;
+    t.dispatchEvent(new dom.window.Event("click", { bubbles: true }));
     await new Promise((r) => setTimeout(r, 250));
-    ok($$("#view .ansvg").length === 2,
-       `${label}: Analysis drew ${$$("#view .ansvg").length} SVG charts, expected 2`);
-    ok($$("#view table.cover").length === 1,
-       `${label}: the coverage matrix is missing from Analysis`);
+    return true;
+  };
+  const clickId = async (id) => {
+    const b = d.getElementById(id);
+    if (!b) return false;
+    b.dispatchEvent(new dom.window.Event("click", { bubbles: true }));
+    await new Promise((r) => setTimeout(r, 250));
+    return true;
+  };
+
+  // The matrix is gone. Asserted so that bringing it back is a decision rather
+  // than a revert nobody notices.
+  ok($$("table.cover").length === 0,
+     `${label}: the coverage matrix is back — it was removed on purpose, see viewMap`);
+
+  if (await clickTab("findings")) {
+    // The gap sentence is what outlived the matrix. Without it a pale country
+    // reads as "nothing is happening there" rather than "nobody was asked".
+    const gap = d.querySelector("#view .gapnote");
+    ok(!!gap, `${label}: the map has lost the country-coverage gap note`);
+    if (gap) ok(/nobody has been asked/i.test(gap.textContent),
+       `${label}: the gap note no longer says the empty cells are unasked`);
+
+    // Starts closed, with the point in words. A reader who never opens it
+    // should still leave knowing which topics travel together.
+    const sum = d.querySelector("#view .anbox .ansum");
+    ok(!!sum && /strongest together/i.test(sum.textContent),
+       `${label}: the tag network is collapsed with no summary of what it shows`);
+    ok($$("#view .anbox .ansvg").length === 0,
+       `${label}: the tag network is open by default — it pushes the findings list off the page`);
+
+    ok(await clickId("tagsToggle"), `${label}: the tag network has no show/hide control`);
+    const svgs = $$("#view .ansvg");
+    ok(svgs.length === 1,
+       `${label}: Findings drew ${svgs.length} SVG charts after opening the network, expected 1`);
 
     const circles = $$("#view .ansvg circle");
     ok(circles.length > 0, `${label}: the tag network drew no nodes`);
@@ -189,6 +223,14 @@ async function exercise(label, url) {
         if (Math.hypot(a.x - b.x, a.y - b.y) < Math.max(a.r, b.r)) buried++;
       }
       ok(buried === 0, `${label}: ${buried} network nodes sit inside another node`);
+      // Every node filters. A picture in a filter bar that does not filter is
+      // the thing this move was meant to fix.
+      ok(circles.every((c) => c.getAttribute("data-tag")),
+         `${label}: ${circles.filter((c) => !c.getAttribute("data-tag")).length} network nodes carry no topic to filter by`);
+      const tags = new Set((site.taxonomy.tags || []).map((t) => t.value));
+      const stray = circles.map((c) => c.getAttribute("data-tag")).filter((t) => !tags.has(t));
+      ok(stray.length === 0,
+         `${label}: network nodes filter by values not in the taxonomy: ${stray.join(", ")}`);
     }
     const lines = $$("#view .ansvg line");
     if (lines.length) {
@@ -196,10 +238,25 @@ async function exercise(label, url) {
       ok(Math.max(...ws) > 6,
          `${label}: thickest network edge is ${Math.max(...ws).toFixed(2)}px — lift is no longer legible`);
     }
+  }
+
+  if (await clickTab("sources")) {
+    // Open by default: the share-of-flow number is why anyone opens this tab.
+    ok($$("#view .ansvg").length === 1,
+       `${label}: Sources drew ${$$("#view .ansvg").length} SVG charts, expected the provenance flow`);
+    const sum = d.querySelector("#view .anbox .ansum");
+    ok(!!sum && /own consultation/i.test(sum.textContent),
+       `${label}: the provenance summary no longer names the GWC's own share of the flow`);
+    ok(/\d+%/.test(sum ? sum.textContent : ""),
+       `${label}: the provenance summary gives no percentage`);
+    // The flow sits above the registry it summarises, not below it.
+    const box = d.querySelector("#view .anbox"), first = d.querySelector("#view .srcsec");
+    if (box && first) ok(box.compareDocumentPosition(first) & 4,
+       `${label}: the provenance flow is below the source list it summarises`);
 
     // Every band present in the data must be named, not merely numbered.
     const key = d.querySelector("#view .bandkey");
-    ok(!!key, `${label}: Analysis shows a band axis with no key explaining the bands`);
+    ok(!!key, `${label}: the provenance flow shows a band axis with no key explaining the bands`);
     if (key) {
       const text = key.textContent;
       for (const b of [...new Set(site.findings.map((f) => f.strength))]) {
@@ -212,6 +269,7 @@ async function exercise(label, url) {
          `${label}: the band key does not say the bands are computed rather than assigned`);
     }
   }
+
 
   // Guidance is normative and must stay out of the evidence. Assert the wall:
   // it has its own three columns, and nothing in guidance.csv is a source_id or

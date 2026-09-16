@@ -220,8 +220,20 @@ h3.grp.grp-sub{font-size:12px;margin-top:18px}
   border-radius:0 8px 8px 0;padding:12px 16px;margin-bottom:18px;font-size:13px;color:var(--ink-2)}
 .anbox{background:var(--card);border:1px solid var(--line);border-radius:8px;
   padding:var(--an-pad);margin-bottom:18px}
-.anbox h2.grp{margin:0 0 8px}
-.anhelp{font-size:13px;line-height:1.55;color:var(--ink-2);margin:0 0 14px;max-width:78ch}
+.anbox h2.grp{margin:0;border:0;padding:0;flex:1}
+.anhead{display:flex;align-items:baseline;gap:12px;padding-bottom:6px;
+  border-bottom:1px solid var(--line);margin-bottom:9px}
+/* The finding in words, above the fold, whether or not the picture is open. */
+.ansum{font-size:13.5px;line-height:1.55;color:var(--ink);margin:0;max-width:86ch}
+.anhelp{font-size:13px;line-height:1.55;color:var(--ink-2);margin:11px 0 14px;max-width:78ch}
+circle.tagnode{cursor:pointer}
+circle.tagnode:hover{fill:var(--s5)}
+circle.tagnode.on{fill:var(--sel);fill-opacity:1;stroke:var(--on-light);stroke-width:1.5}
+/* What survived the coverage matrix. Sits on the map, because it is the caveat
+   a pale country most invites a reader to get wrong. */
+.gapnote{font-size:12.5px;line-height:1.5;color:var(--warn-ink);background:var(--warn-bg);
+  border:1px solid var(--warn-line);border-radius:6px;padding:9px 12px;margin:0 0 11px;
+  max-width:86ch}
 .ansvg{width:100%;height:auto;display:block;overflow:visible}
 /* Anything that cannot honestly compress — a six-column table, a hand-drawn
    diagram with 10px labels — scrolls inside its own box instead of widening
@@ -229,7 +241,6 @@ h3.grp.grp-sub{font-size:12px;margin-top:18px}
 .tscroll{max-width:100%;overflow-x:auto;-webkit-overflow-scrolling:touch}
 .tscroll>table{margin:0}
 .tscroll>.ansvg{min-width:600px}
-.tscroll>table.cover{min-width:440px}
 .anlab{font-size:10.5px;fill:var(--ink-2);
   paint-order:stroke;stroke:#FFFFFFE6;stroke-width:3px;stroke-linejoin:round}
 .bandkey{margin-top:16px;padding-top:13px;border-top:1px solid var(--line);
@@ -240,15 +251,6 @@ h3.grp.grp-sub{font-size:12px;margin-top:18px}
 .bkdot{flex:0 0 auto;width:11px;height:11px;border-radius:3px;position:relative;top:1px}
 .bk1{background:var(--s1)} .bk2{background:var(--s2)} .bk3{background:var(--s3)}
 .bk4{background:var(--s4)} .bk5{background:var(--s5)}
-table.cover{border-collapse:collapse;font-size:13px}
-table.cover th{font-weight:600;color:var(--ink-2);text-align:left;padding:5px 10px;
-  border-bottom:1px solid var(--line);font-size:12px}
-table.cover thead th{text-align:center}
-table.cover tbody th{white-space:nowrap;font-weight:400;color:var(--ink)}
-td.cmat{text-align:center;padding:5px 12px;border:1px solid var(--card);
-  min-width:66px;font-variant-numeric:tabular-nums}
-td.cmat0{color:var(--ink-3);background:var(--bg)}
-.cmark{opacity:.75;font-weight:700;margin-left:2px}
 /* One illustrative case, marked as such. The statement above it is the claim;
    this is one instance of it, and the records below are the full range. */
 .eg{margin:6px 0 0;padding:7px 11px;border-left:3px solid var(--fundamentals);background:var(--bg);
@@ -295,8 +297,6 @@ tr:last-child td{border-bottom:0}
 .tile:hover{border-color:var(--accent)}
 .tile b{display:block;font-size:15px;margin-bottom:3px}
 .tile span{font-size:12px;color:var(--ink-2)}
-.mtable td.n{text-align:center;font-weight:600;font-variant-numeric:tabular-nums;cursor:pointer}
-.mtable td.n:hover{outline:2px solid var(--accent);outline-offset:-2px}
 .empty{color:var(--ink-2);padding:34px;text-align:center;background:var(--card);
   border:1px dashed var(--line);border-radius:7px}
 .warn{background:var(--warn-bg);border:1px solid var(--warn-line);color:var(--warn-ink);padding:13px 16px;
@@ -444,8 +444,16 @@ var OPEN = {};                      // which finding cards are expanded
 // while the base was being built; with all sources in and the consolidation
 // done, it told a reader nothing the Findings filters do not. viewMatrix() went
 // with it — recover from git if a coverage view is ever wanted again.
+// Analysis was removed 15/09/2026. It held three views, and the objection to it
+// was that it was a workbench bolted onto a public site: it announced in its own
+// first line that it was "meant for us, not for an audience". Each of its views
+// belonged next to the thing it described, so two moved and one went:
+//   what travels with what -> Findings, under the map. Both are ways to narrow.
+//   where the evidence comes from -> Sources, above the registry it summarises.
+//   where the gaps are -> removed. The map already shades countries by volume;
+//     only its gap sentence was worth keeping, and it now sits on the map.
 var TABS = [["about","About"],["guidance","Guidance"],["highlights","Highlights"],
-            ["findings","Findings"],["analysis","Analysis"],["sources","Sources"]];
+            ["findings","Findings"],["sources","Sources"]];
 // Views the evidence filter bar does not apply to. Highlights joined them:
 // it shows band 5 and only band 5, which is a fixed claim about what the base
 // is most confident of. Letting a filter cut into it produced a page that said
@@ -453,6 +461,12 @@ var TABS = [["about","About"],["guidance","Guidance"],["highlights","Highlights"
 // to tell whether that was the evidence or a leftover chip from another tab.
 var NOFILTER = { about:1, guidance:1, highlights:1 };
 var MAPON = true;                   // map shown above the findings list
+// The tag network is 660px of picture and the findings list is the point of the
+// Findings tab, so it starts closed with its three strongest pairs named in the
+// header — which is the payload anyway. The provenance flow starts open: the
+// Sources list is long and grouped, and the share-of-flow number is why anyone
+// opens that tab.
+var TAGSON = false, PROVON = true;
 // Grouping the findings list. Deliberately NOT by tag: findings carry 3.3 tags
 // on average, so a tag grouping would list most cards three times over. The tag
 // dropdown already scopes the list to one tag, which is the same job without
@@ -755,9 +769,8 @@ function render(){
   if (TAB==="about")      v.innerHTML = b + viewAbout();
   if (TAB==="guidance")   v.innerHTML = b + viewGuidance();
   if (TAB==="highlights") v.innerHTML = b + viewHighlights(D);
-  if (TAB==="findings")   v.innerHTML = b + viewMap() + viewFindings(d);
-  if (TAB==="analysis")   v.innerHTML = b + viewAnalysis(d);
-  if (TAB==="sources")    v.innerHTML = b + viewSources(d);
+  if (TAB==="findings")   v.innerHTML = b + viewMap(d) + viewTags(d) + viewFindings(d);
+  if (TAB==="sources")    v.innerHTML = b + viewProvenance(d) + viewSources(d);
   wire();
 }
 function activeFilters(){
@@ -1301,7 +1314,7 @@ function pathWidth(d){
   return (_pw[d] = (hi > lo ? hi - lo : 0));
 }
 
-function viewMap(){
+function viewMap(d){
   var G = window.GEO_DATA;
   if (!G) return '';
   var m = countryCounts();
@@ -1353,7 +1366,7 @@ function viewMap(){
   var noGeo = Object.keys(m).filter(function(c){ return !G.countries[c]; });
 
   var withEvidence = Object.keys(m).length;
-  return '<div class="mapwrap"><div class="maphead">' +
+  return '<div class="mapwrap">' + coverageGap(d) + '<div class="maphead">' +
       '<span>' + withEvidence + ' countries with evidence · click to filter, click again to remove</span>' +
       '<button class="linkbtn" id="mapToggle">' + (MAPON?'Hide map':'Show map') + '</button></div>' +
     (MAPON ?
@@ -1441,31 +1454,22 @@ function viewSources(d){
 }
 
 // ---------------------------------------------------------------------------
-// Analysis — an internal working view, not a showcase
-//
-// Three questions, one visual each. The point is to find what to fix next, so
-// where the base is weak the view says so rather than smoothing it over.
+// The two computed views. Both read the FILTERED set, so narrowing the filters
+// re-computes them — which is the reason they sit on the tabs they describe
+// rather than on a tab of their own.
 //
 // No libraries. The site has to render from file:// with no network — check.mjs
 // tests that — so everything here is hand-drawn SVG. It is more code than a
 // charting library would be and it is the reason this still works in five years.
 // ---------------------------------------------------------------------------
 
-function viewAnalysis(d){
-  if (!d.findings.length) return empty("Nothing matches these filters.");
-  return '<div class="anote">These three views answer different questions and are meant for us, ' +
-         'not for an audience. They are computed from whatever passes the filters above, so ' +
-         'narrowing the filters re-computes them.</div>' +
-         anTags(d) + anProvenance(d) + anCoverage(d);
-}
-
-// --- 1. what travels with what --------------------------------------------
+// --- what travels with what — Findings tab, under the map ------------------
 // Edges are lift, not co-occurrence. Raw counts just rank tags by frequency:
 // coordination-architecture is on half the findings, so it connects to
 // everything and the picture says nothing. Lift asks whether two tags appear
 // together more than their individual frequencies would predict, which is the
 // only version of this that can surprise anyone.
-function anTags(d){
+function viewTags(d){
   var N = d.findings.length, occ = {}, pair = {};
   d.findings.forEach(function(f){
     var ts = uniq(f.tags).sort();
@@ -1482,8 +1486,7 @@ function anTags(d){
     var lift = (n/N) / ((occ[p[0]]/N) * (occ[p[1]]/N));
     edges.push({ a:p[0], b:p[1], n:n, lift:lift });
   });
-  if (!edges.length) return anBox("What travels with what",
-    "Not enough co-occurring tags in this selection to compute lift.", "");
+  if (!edges.length) return "";
   edges.sort(function(x,y){ return y.lift - x.lift; });
   edges = edges.slice(0, 26);
 
@@ -1505,9 +1508,14 @@ function anTags(d){
   // Circles first, then labels, so no line or circle is drawn over a label.
   var drawn = nodes.map(function(nd){
     var p = pos[nd.id], r = 10 + 26 * Math.sqrt(nd.n / maxN);
-    svg.push('<circle cx="'+p.x.toFixed(1)+'" cy="'+p.y.toFixed(1)+'" r="'+r.toFixed(1)+
-      '" fill="var(--s4)" fill-opacity="0.85"><title>'+esc(label("tags",nd.id)||nd.id)+
-      ' — '+nd.n+' findings</title></circle>');
+    // Clickable, because on the Findings tab everything in this position is a
+    // filter. The topic dropdown already scopes the list to one topic; this is
+    // the same action with the co-occurrence visible while you choose.
+    svg.push('<circle class="tagnode'+(F.tag===nd.id?' on':'')+
+      '" data-tag="'+esc(nd.id)+'" cx="'+p.x.toFixed(1)+'" cy="'+p.y.toFixed(1)+
+      '" r="'+r.toFixed(1)+'" fill="var(--s4)" fill-opacity="0.85"><title>'+
+      esc(label("tags",nd.id)||nd.id)+' — '+nd.n+' findings\nclick to filter by this topic'+
+      '</title></circle>');
     return { p:p, r:r, t:(label("tags",nd.id)||nd.id), n:nd.n };
   });
   // Every label used to be pinned 11px under its circle, which put eight of
@@ -1544,10 +1552,12 @@ function anTags(d){
   var top = edges.slice(0,3).map(function(e){
     return (label("tags",e.a)||e.a)+" + "+(label("tags",e.b)||e.b)+
            " (&times;"+e.lift.toFixed(1)+", "+e.n+" findings)"; }).join(" &middot; ");
-  return anBox("What travels with what",
+  return anBox("What travels with what", "tagsToggle", TAGSON,
+    nodes.length + " topics, strongest together: " + top + ".",
     "Lines are lift, not counts — how much more often two tags appear together than their " +
     "separate frequencies predict. Raw co-occurrence would only rank tags by how common they " +
-    "are. Circle size is how many findings carry the tag. Strongest: " + top + ".",
+    "are. Circle size is how many findings carry the tag. Click a circle to filter the list " +
+    "below by that topic.",
     svg.join(""));
 }
 
@@ -1593,7 +1603,8 @@ function layout(nodes, edges, W, H){
 // --- 2. where the evidence comes from -------------------------------------
 // The question this exists to answer is uncomfortable and that is the point:
 // how much of what the base claims rests on the GWC asking itself.
-function anProvenance(d){
+// --- where the evidence comes from — Sources tab, above the registry ------
+function viewProvenance(d){
   var STREAM = ["transcript","workshop","sdr","search"];
   var THEME = ["ABC","Transition","Fundamentals"];
   var byF = {}; d.records.forEach(function(r){ (byF[r.finding_id]=byF[r.finding_id]||[]).push(r); });
@@ -1680,12 +1691,13 @@ function anProvenance(d){
 
   var own = (sTot.transcript||0) + (sTot.workshop||0);
   var pct = Math.round(100 * own / Math.max(1, own + (sTot.sdr||0) + (sTot.search||0)));
-  return anBox("Where the evidence comes from",
+  return anBox("Where the evidence comes from", "provToggle", PROVON,
+    "<b>" + pct + "% of the flow is the GWC's own consultation</b> — country calls and " +
+    "workshops. A finding corroborated only by the people who raised it is not corroborated, " +
+    "and that share is the number this base exists to move.",
     "Findings flow left to right: which streams support them, which theme they sit in, what " +
     "band they reach. A finding supported by two streams is split between them, so the " +
-    "columns total findings rather than records. <b>" + pct + "% of that flow is the GWC's own " +
-    "consultation</b> — country calls and workshops. That is the number this page exists to " +
-    "move: a finding corroborated only by the people who raised it is not corroborated.",
+    "columns total findings rather than records.",
     svg.join("") + bandKey());
 }
 
@@ -1702,83 +1714,63 @@ function bandKey(){
          'Sources sharing an origin count once.</div>' + rows + '</div>';
 }
 
-// --- 3. where the gaps are ------------------------------------------------
-// A coverage matrix was removed in August because it duplicated the findings
-// filters. This one is not that: it is shaded by the best band reached, so the
-// pale cells are places where we have evidence we cannot lean on, which the
-// filters do not show at a glance.
-function anCoverage(d){
+// --- the country gap sentence, all that outlived the coverage matrix ------
+// The matrix crossed countries with themes and shaded by volume. The map above
+// the findings list already shades countries by volume, and a reader who wants
+// one theme has a theme chip, so the table was answering a question the tab it
+// sat on could already answer three clicks faster. What it said that nothing
+// else said was how much of the grid had never been asked at all — and that
+// silence is not the same as an absence of findings, which is exactly the thing
+// a reader is tempted to conclude from a pale map. So the sentence moved onto
+// the map and the table went.
+function coverageGap(d){
   var THEME = ["ABC","Transition","Fundamentals"];
-  // Shaded by volume, not by band. Band shading was tried first and cannot work
-  // here: band 5 requires two or more countries by definition, so a strong
-  // finding lights up every country it touches and the column shows nothing but
-  // "this finding is cross-country". Volume at least answers where we have been
-  // asking. Checked separately that no country is tagged on a finding without
-  // records of its own, so nothing here is borrowed strength.
-  var cell = {}, cTot = {}, unver = {};
+  var seen = {}, cTot = {}, ck = {};
   var byF = {}; d.records.forEach(function(r){ (byF[r.finding_id]=byF[r.finding_id]||[]).push(r); });
   d.findings.forEach(function(f){
     f.countries.forEach(function(c){
-      cTot[c] = (cTot[c]||0)+1;
+      cTot[c] = 1;
       f.theme.forEach(function(t){
-        var k = c+"|"+t, e = cell[k] = cell[k] || { n:0, best:0, ck:0 };
-        e.n++; if (f.strength > e.best) e.best = f.strength;
+        seen[c+"|"+t] = 1;
         var mine = (byF[f.finding_id]||[]).filter(function(r){
           return (r.countries||[]).indexOf(c) >= 0; });
-        if (mine.some(function(r){ return r.status === "validated"; })) e.ck++;
+        if (mine.some(function(r){ return r.status === "validated"; })) ck[c+"|"+t] = 1;
       });
     });
   });
-  var countries = Object.keys(cTot).sort(function(a,b){
-    return cTot[b]-cTot[a] || countryName(a).localeCompare(countryName(b)); });
-  if (!countries.length) return anBox("Where the gaps are",
-    "No country-tagged findings in this selection.", "");
-
-  var mx = Math.max.apply(null, Object.keys(cell).map(function(k){ return cell[k].n; }));
-  var rows = countries.map(function(c){
-    var tds = THEME.map(function(t){
-      var e = cell[c+"|"+t];
-      if (!e) return '<td class="cmat cmat0" title="nobody asked">·</td>';
-      var sh = Math.min(5, 1 + Math.floor(4.99 * e.n / mx));
-      var mark = e.ck === 0 ? '<span class="cmark" title="no verified record">*</span>' : '';
-      return '<td class="cmat" style="background:var(--s'+sh+');color:var(--on-light)'+
-             '" title="'+e.n+' findings. Strongest reaches band '+
-             e.best+' — '+esc(bandLabel(e.best))+': '+esc(bandDef(e.best))+' '+e.ck+
-             ' of the '+e.n+' have a verified record from this country.">'+e.n+mark+'</td>';
-    }).join("");
-    return '<tr><th>'+esc(countryName(c))+'</th>'+tds+'</tr>';
-  }).join("");
-
-  var blanks = 0, starred = [];
+  var countries = Object.keys(cTot);
+  if (!countries.length) return "";
+  var cells = countries.length * THEME.length, blanks = 0, unver = [];
   countries.forEach(function(c){
     THEME.forEach(function(t){
-      var e = cell[c+"|"+t];
-      if (!e) blanks++;
-      else if (!e.ck && starred.indexOf(c) < 0) starred.push(c);
+      if (!seen[c+"|"+t]) blanks++;
+      else if (!ck[c+"|"+t] && unver.indexOf(c) < 0) unver.push(c);
     });
   });
-  var note = "<b>" + blanks + " of " + (countries.length*THEME.length) +
-    " cells are empty</b> — nobody has been asked, which is not the same as nothing happening." +
-    (starred.length ? " Cells marked * hold findings with no verified record from that country: " +
-      esc(starred.slice(0,6).map(countryName).join(", ")) +
-      (starred.length>6 ? " and " + (starred.length-6) + " more" : "") + "." : "");
-
-  return anBox("Where the gaps are",
-    "Countries by theme, shaded by how many findings. Band shading was tried and abandoned — " +
-    "band 5 requires two or more countries, so it lights up every country a strong finding " +
-    "touches and discriminates between none of them. " + note,
-    '<table class="cover"><thead><tr><th></th>' +
-    THEME.map(function(t){ return '<th>'+esc(label("theme",t)||t)+'</th>'; }).join("") +
-    '</tr></thead><tbody>' + rows + '</tbody></table>');
+  return '<div class="gapnote"><b>' + blanks + ' of ' + cells +
+    ' country-by-theme combinations have no finding at all</b> — nobody has been asked, ' +
+    'which is not the same as nothing happening.' +
+    (unver.length ? ' ' + unver.length + (unver.length===1 ? ' country carries' : ' countries carry') +
+      ' findings with no verified record of their own: ' + esc(unver.slice(0,6).map(countryName).join(", ")) +
+      (unver.length>6 ? ' and ' + (unver.length-6) + ' more' : '') + '.' : '') +
+    '</div>';
 }
 
-function anBox(title, note, body){
-  // The body is a hand-drawn SVG or a matrix, neither of which compresses below
-  // a readable minimum, so it gets its own scroll box rather than widening the
-  // page and pushing every other view sideways with it.
-  return '<section class="anbox"><h2 class="grp">'+esc(title)+'</h2>' +
-         '<p class="anhelp">'+note+'</p>' +
-         '<div class="tscroll">' + body + '</div></section>';
+// One box, one idiom, shared with the map: a heading, the finding in words, and
+// a show/hide for the picture. The summary is written so that a reader who never
+// opens the diagram still leaves with the point — the picture is the evidence
+// for the sentence, not a substitute for it.
+//
+// The body is a hand-drawn SVG that does not compress below a readable minimum,
+// so it gets its own scroll box rather than widening the page and pushing every
+// other view sideways with it.
+function anBox(title, toggleId, open, summary, help, body){
+  return '<section class="anbox"><div class="anhead">' +
+         '<h2 class="grp">'+esc(title)+'</h2>' +
+         '<button class="linkbtn" id="'+toggleId+'">'+(open?'Hide':'Show')+'</button></div>' +
+         '<p class="ansum">'+summary+'</p>' +
+         (open ? '<p class="anhelp">'+help+'</p><div class="tscroll">' + body + '</div>' : '') +
+         '</section>';
 }
 function uniq(a){
   var s = {}, o = [];
@@ -1801,15 +1793,20 @@ function wire(){
   });
   var mt = el("mapToggle");
   if (mt) mt.onclick = function(){ MAPON = !MAPON; render(); };
-  document.querySelectorAll("td.n[data-tag]").forEach(function(td){
-    td.onclick = function(){
-      F.tag = td.dataset.tag; el("tag").value = F.tag;
-      F.type = [td.dataset.type];
-      document.querySelectorAll('.chip[data-k=type]').forEach(function(ch){
-        ch.classList.toggle("on", ch.dataset.v===td.dataset.type); });
-      TAB = "findings";
-      [].forEach.call(el("nav").children, function(c){
-        c.setAttribute("aria-selected", c.dataset.tab==="findings"); });
+  var tt = el("tagsToggle");
+  if (tt) tt.onclick = function(){ TAGSON = !TAGSON; render(); };
+  var pt = el("provToggle");
+  if (pt) pt.onclick = function(){ PROVON = !PROVON; render(); };
+  // Clicking a topic in the network sets the same filter as the topic dropdown,
+  // and clicking the one already selected clears it — the map's behaviour, so
+  // there is one rule for both pictures. This replaces the click handler the
+  // removed coverage matrix owned.
+  document.querySelectorAll("circle.tagnode").forEach(function(n){
+    n.onclick = function(e){
+      e.stopPropagation();
+      var t = n.getAttribute("data-tag");
+      F.tag = (F.tag === t) ? "" : t;
+      el("tag").value = F.tag;
       render();
     };
   });
