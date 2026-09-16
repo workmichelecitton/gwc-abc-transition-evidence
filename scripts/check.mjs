@@ -186,25 +186,31 @@ async function exercise(label, url) {
      `${label}: the coverage matrix is back — it was removed on purpose, see viewMap`);
 
   if (await clickTab("findings")) {
-    // The gap sentence is what outlived the matrix. Without it a pale country
-    // reads as "nothing is happening there" rather than "nobody was asked".
-    const gap = d.querySelector("#view .gapnote");
-    ok(!!gap, `${label}: the map has lost the country-coverage gap note`);
-    if (gap) ok(/nobody has been asked/i.test(gap.textContent),
-       `${label}: the gap note no longer says the empty cells are unasked`);
-
-    // Starts closed, with the point in words. A reader who never opens it
-    // should still leave knowing which topics travel together.
+    // Open by default, and the summary still has to carry the point in words —
+    // a reader who collapses it should keep the finding.
     const sum = d.querySelector("#view .anbox .ansum");
     ok(!!sum && /strongest together/i.test(sum.textContent),
-       `${label}: the tag network is collapsed with no summary of what it shows`);
-    ok($$("#view .anbox .ansvg").length === 0,
-       `${label}: the tag network is open by default — it pushes the findings list off the page`);
-
-    ok(await clickId("tagsToggle"), `${label}: the tag network has no show/hide control`);
-    const svgs = $$("#view .ansvg");
+       `${label}: the topic co-occurrence box has no summary of what it shows`);
+    const svgs = $$("#view .anbox .ansvg");
     ok(svgs.length === 1,
-       `${label}: Findings drew ${svgs.length} SVG charts after opening the network, expected 1`);
+       `${label}: Findings drew ${svgs.length} SVG charts, expected the co-occurrence network`);
+
+    // It must fit above the findings list rather than burying it. What decides
+    // that is the ASPECT, not the unit height: the SVG is width-100%, so on a
+    // 1150px card it renders at 1150 x H/W. 900x520 rendered 664px tall and
+    // pushed the first finding off a laptop screen; 1200x420 renders 402px.
+    // Asserting the raw height instead would pass a taller box that was merely
+    // narrower, which is the mistake this comment exists to stop.
+    const vb = (svgs[0] ? svgs[0].getAttribute("viewBox") || "" : "").split(/\s+/);
+    const aspect = vb[3] && vb[2] ? +vb[3] / +vb[2] : 1;
+    ok(aspect <= 0.4,
+       `${label}: the co-occurrence network renders at ${Math.round(aspect * 1150)}px on a 1150px card — it buries the findings list`);
+
+    // The control still works in both directions.
+    ok(await clickId("tagsToggle"), `${label}: the co-occurrence network has no show/hide control`);
+    ok($$("#view .anbox .ansvg").length === 0,
+       `${label}: Hide left the co-occurrence network on the page`);
+    await clickId("tagsToggle");
 
     const circles = $$("#view .ansvg circle");
     ok(circles.length > 0, `${label}: the tag network drew no nodes`);
@@ -217,12 +223,18 @@ async function exercise(label, url) {
       // Nodes may touch. A node whose centre sits inside another is a collision.
       const pts = circles.map((c) => ({ x: +c.getAttribute("cx"), y: +c.getAttribute("cy"),
                                         r: +c.getAttribute("r") }));
-      let buried = 0;
+      let buried = 0, crowded = 0;
       for (let i = 0; i < pts.length; i++) for (let j = i + 1; j < pts.length; j++) {
-        const a = pts[i], b = pts[j];
-        if (Math.hypot(a.x - b.x, a.y - b.y) < Math.max(a.r, b.r)) buried++;
+        const a = pts[i], b = pts[j], gap = Math.hypot(a.x - b.x, a.y - b.y);
+        if (gap < Math.max(a.r, b.r)) buried++;
+        // No overlap at all: layout() ends with a separation pass that clears
+        // every pair by 4 units, so any overlap here means that pass was
+        // removed or the radii stopped being passed into it. The old
+        // centre-inside test permitted two circles drawn as one blob.
+        if (gap < 0.97 * (a.r + b.r)) crowded++;
       }
       ok(buried === 0, `${label}: ${buried} network nodes sit inside another node`);
+      ok(crowded === 0, `${label}: ${crowded} pairs of network nodes overlap into one blob — the layout needs more area`);
       // Every node filters. A picture in a filter bar that does not filter is
       // the thing this move was meant to fix.
       ok(circles.every((c) => c.getAttribute("data-tag")),
@@ -247,6 +259,11 @@ async function exercise(label, url) {
     const sum = d.querySelector("#view .anbox .ansum");
     ok(!!sum && /own consultation/i.test(sum.textContent),
        `${label}: the provenance summary no longer names the GWC's own share of the flow`);
+    // The method notes went on 16/09/2026; the summaries carry the findings and
+    // the SVG tooltips carry the numbers. A reinstated explainer paragraph is a
+    // decision, not a drive-by.
+    ok($$("#view .anhelp").length === 0,
+       `${label}: an explainer paragraph is back in a computed box — these were removed on purpose`);
     ok(/\d+%/.test(sum ? sum.textContent : ""),
        `${label}: the provenance summary gives no percentage`);
     // The flow sits above the registry it summarises, not below it.

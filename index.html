@@ -129,7 +129,6 @@ h2.grp:first-child{margin-top:6px}
 .hlgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;align-items:start}
 .hlcol{min-width:0}
 .hlcol .hl{padding:14px 16px;margin-bottom:9px}
-.hlcol .hl>*{max-width:none}
 .hlcol .hl h3{font-size:15px;line-height:1.3}
 .hlcol .hl-plain{font-size:13.5px;line-height:1.5}
 .hlcol .hl-so{font-size:12.5px;padding:7px 10px}
@@ -191,11 +190,9 @@ td.cite{font-size:12px;line-height:1.45;color:var(--ink-2);max-width:30em;
      list is the interface — and the Hide map control goes with the map, or it
      offers to hide something the reader cannot see. */
   .mapwrap .map, .mapwrap .maplegend, .mapwrap #mapToggle{display:none}
-  .ctylist{grid-template-columns:repeat(auto-fill,minmax(132px,1fr))}
 }
 @media (max-width:620px){
   :root{--gutter:16px}
-  .prose{padding:20px 18px}
   .stats{gap:18px}
   h1{font-size:19px}
   .anbox{--an-pad:14px}
@@ -215,7 +212,7 @@ td.cite{font-size:12px;line-height:1.45;color:var(--ink-2);max-width:30em;
 h3.grp.grp-sub{font-size:12px;margin-top:18px}
 .srcsec{margin:0 0 26px}
 .srcsec h2.grp{margin:0 0 2px}
-.srcnote{margin:0 0 10px;font-size:12px;color:var(--ink-3);font-style:italic;max-width:86ch}
+.srcnote{margin:0 0 10px;font-size:12px;color:var(--ink-3);font-style:italic}
 .anote{background:var(--card);border:1px solid var(--line);border-left:3px solid var(--s4);
   border-radius:0 8px 8px 0;padding:12px 16px;margin-bottom:18px;font-size:13px;color:var(--ink-2)}
 .anbox{background:var(--card);border:1px solid var(--line);border-radius:8px;
@@ -224,27 +221,21 @@ h3.grp.grp-sub{font-size:12px;margin-top:18px}
 .anhead{display:flex;align-items:baseline;gap:12px;padding-bottom:6px;
   border-bottom:1px solid var(--line);margin-bottom:9px}
 /* The finding in words, above the fold, whether or not the picture is open. */
-.ansum{font-size:13.5px;line-height:1.55;color:var(--ink);margin:0;max-width:86ch}
-.anhelp{font-size:13px;line-height:1.55;color:var(--ink-2);margin:11px 0 14px;max-width:78ch}
+.ansum{font-size:13.5px;line-height:1.55;color:var(--ink);margin:0 0 4px}
 circle.tagnode{cursor:pointer}
 circle.tagnode:hover{fill:var(--s5)}
 circle.tagnode.on{fill:var(--sel);fill-opacity:1;stroke:var(--on-light);stroke-width:1.5}
-/* What survived the coverage matrix. Sits on the map, because it is the caveat
-   a pale country most invites a reader to get wrong. */
-.gapnote{font-size:12.5px;line-height:1.5;color:var(--warn-ink);background:var(--warn-bg);
-  border:1px solid var(--warn-line);border-radius:6px;padding:9px 12px;margin:0 0 11px;
-  max-width:86ch}
 .ansvg{width:100%;height:auto;display:block;overflow:visible}
 /* Anything that cannot honestly compress — a six-column table, a hand-drawn
    diagram with 10px labels — scrolls inside its own box instead of widening
    the page. Below its minimum the diagram would shrink its type to nothing. */
 .tscroll{max-width:100%;overflow-x:auto;-webkit-overflow-scrolling:touch}
 .tscroll>table{margin:0}
-.tscroll>.ansvg{min-width:600px}
+.tscroll>.ansvg{min-width:900px}
 .anlab{font-size:10.5px;fill:var(--ink-2);
   paint-order:stroke;stroke:#FFFFFFE6;stroke-width:3px;stroke-linejoin:round}
 .bandkey{margin-top:16px;padding-top:13px;border-top:1px solid var(--line);
-  font-size:12.5px;line-height:1.5;color:var(--ink-2);max-width:86ch}
+  font-size:12.5px;line-height:1.5;color:var(--ink-2)}
 .bkhead{margin-bottom:8px;color:var(--ink-3)}
 .bkrow{display:flex;align-items:baseline;gap:8px;margin:4px 0}
 .bkrow b{color:var(--ink);white-space:nowrap;font-weight:600}
@@ -312,9 +303,9 @@ footer{padding:22px 0;color:var(--ink-3);font-size:12px;border-top:1px solid var
 /* About */
 .prose{background:var(--card);border:1px solid var(--line);border-radius:8px;
   padding:26px 32px}
-/* Prose is full width to match the filter bar and the finding cards, but a
-   1200px measure is unreadable, so the text inside is held to a sane column. */
-.prose>*{max-width:82ch}
+/* Prose runs the full width of the card, matching the filter bar and the
+   finding cards. A measure cap was tried and removed: it left a third of the
+   card empty at laptop width, which reads as a fault rather than as a choice. */
 .aboutstats{display:flex;gap:26px;flex-wrap:wrap;margin:14px 0 4px;padding:14px 0;
   border-top:1px solid var(--line);border-bottom:1px solid var(--line);max-width:none}
 .aboutstats .stat b{font-size:24px}
@@ -363,12 +354,23 @@ text.ctyl.sel{fill:var(--on-light);stroke:#FFF;stroke-width:2px}
 /* Highlights */
 .hl{background:var(--card);border:1px solid var(--line);border-left:4px solid var(--s5);
   border-radius:8px;padding:20px 24px;margin-bottom:12px}
-.hl>*{max-width:82ch}
 .hl h3{margin:0 0 8px;font-size:18px;line-height:1.35;letter-spacing:-.2px}
 .hl-plain{margin:0 0 10px;font-size:15.5px;line-height:1.6}
 .hl-so{margin:0 0 12px;padding:9px 13px;background:var(--bg);border-radius:5px;
   font-size:14px;color:var(--ink)}
 .hl-so b{color:var(--accent)}
+
+/* Narrow-screen overrides that have to sit here, at the end. Both target rules
+   are declared further down this stylesheet than the media blocks above, and at
+   equal specificity the later declaration wins — so these two were written,
+   were correct, and did nothing for three days. Anything added to the blocks
+   above should be checked against where its base rule lives. */
+@media (max-width:640px){
+  .ctylist{grid-template-columns:repeat(auto-fill,minmax(132px,1fr))}
+}
+@media (max-width:620px){
+  .prose{padding:20px 18px}
+}
 </style>
 </head>
 <body>
@@ -461,12 +463,16 @@ var TABS = [["about","About"],["guidance","Guidance"],["highlights","Highlights"
 // to tell whether that was the evidence or a leftover chip from another tab.
 var NOFILTER = { about:1, guidance:1, highlights:1 };
 var MAPON = true;                   // map shown above the findings list
-// The tag network is 660px of picture and the findings list is the point of the
-// Findings tab, so it starts closed with its three strongest pairs named in the
-// header — which is the payload anyway. The provenance flow starts open: the
-// Sources list is long and grouped, and the share-of-flow number is why anyone
-// opens that tab.
-var TAGSON = false, PROVON = true;
+// Both computed views start open (16/09/2026). The co-occurrence network was
+// laid out at 900x520 when it had a tab to itself; on the Findings tab that put
+// 664px of picture between the filter bar and the first finding. It is now
+// 1200x420 — wider rather than shorter, which is the part worth remembering.
+// Shortening to 900x380 was tried first and made nodes overlap: the layout needs
+// AREA, and cutting the height took 27% of it away. Widening gives 504k square
+// units against the original 468k, so nodes spread at least as well as they did
+// before, while the box renders 402px tall instead of 664px because the aspect
+// is wider. No layout constant was retuned to make anything fit.
+var TAGSON = true, PROVON = true;
 // Grouping the findings list. Deliberately NOT by tag: findings carry 3.3 tags
 // on average, so a tag grouping would list most cards three times over. The tag
 // dropdown already scopes the list to one tag, which is the same job without
@@ -769,7 +775,7 @@ function render(){
   if (TAB==="about")      v.innerHTML = b + viewAbout();
   if (TAB==="guidance")   v.innerHTML = b + viewGuidance();
   if (TAB==="highlights") v.innerHTML = b + viewHighlights(D);
-  if (TAB==="findings")   v.innerHTML = b + viewMap(d) + viewTags(d) + viewFindings(d);
+  if (TAB==="findings")   v.innerHTML = b + viewMap() + viewTags(d) + viewFindings(d);
   if (TAB==="sources")    v.innerHTML = b + viewProvenance(d) + viewSources(d);
   wire();
 }
@@ -1314,7 +1320,7 @@ function pathWidth(d){
   return (_pw[d] = (hi > lo ? hi - lo : 0));
 }
 
-function viewMap(d){
+function viewMap(){
   var G = window.GEO_DATA;
   if (!G) return '';
   var m = countryCounts();
@@ -1339,34 +1345,46 @@ function viewMap(d){
   // still reachable by hover and by the list underneath, which is the reliable
   // route anyway for anyone who does not already know the map.
   // Two passes. First drop anything whose shape is too narrow to hold three
-  // characters. Then drop whatever would collide with a label already placed,
-  // working from the most evidence to the least, so where West Africa is too
-  // crowded for all of them the country with more findings keeps its label.
+  // characters. Then place the rest from the most evidence to the least,
+  // shifting a label off its centroid rather than dropping it outright.
+  //
+  // Dropping was the original rule and it silently lost Mali: MLI's centroid is
+  // 10.8 units from Burkina Faso's, inside the clash box, and BFA had three more
+  // findings so it placed first. A country with twelve findings, drawn and
+  // shaded on the map, had no label and no way to tell that was deliberate.
+  // Offsets are only tried on shapes wide enough to hold a displaced label —
+  // 28 units, about twice the label — so a small country still takes its
+  // centroid or nothing rather than printing its name over a neighbour.
   var placed = [];
+  var CAND = [[0,0],[0,-7.5],[0,7.5],[-11,-5],[11,-5],[-11,5],[11,5]];
   var labels = Object.keys(m)
     .filter(function(c){
       return G.countries[c] && G.centroids[c] && pathWidth(G.countries[c]) >= 15;
     })
     .sort(function(a,b){ return m[b].n - m[a].n; })
-    .filter(function(c){
-      var p = G.centroids[c];
-      var clash = placed.some(function(q){
-        return Math.abs(q[0]-p[0]) < 13 && Math.abs(q[1]-p[1]) < 7;
-      });
-      if (!clash) placed.push(p);
-      return !clash;
-    })
     .map(function(c){
       var p = G.centroids[c];
-      return '<text class="ctyl'+(F.countries.indexOf(c)>=0?' sel':'')+
-             '" x="'+p[0]+'" y="'+p[1]+'" data-c="'+esc(c)+'">'+esc(c)+'</text>';
+      var wide = pathWidth(G.countries[c]) >= 28;
+      for (var i = 0; i < (wide ? CAND.length : 1); i++){
+        var q = [p[0] + CAND[i][0], p[1] + CAND[i][1]];
+        var clash = placed.some(function(r){
+          return Math.abs(r[0]-q[0]) < 13 && Math.abs(r[1]-q[1]) < 7;
+        });
+        if (!clash) { placed.push(q); return { c:c, p:q }; }
+      }
+      return null;
+    })
+    .filter(function(x){ return x; })
+    .map(function(o){
+      return '<text class="ctyl'+(F.countries.indexOf(o.c)>=0?' sel':'')+
+             '" x="'+o.p[0]+'" y="'+o.p[1]+'" data-c="'+esc(o.c)+'">'+esc(o.c)+'</text>';
     }).join("");
 
   // countries with no geometry (regional codes) get chips instead
   var noGeo = Object.keys(m).filter(function(c){ return !G.countries[c]; });
 
   var withEvidence = Object.keys(m).length;
-  return '<div class="mapwrap">' + coverageGap(d) + '<div class="maphead">' +
+  return '<div class="mapwrap"><div class="maphead">' +
       '<span>' + withEvidence + ' countries with evidence · click to filter, click again to remove</span>' +
       '<button class="linkbtn" id="mapToggle">' + (MAPON?'Hide map':'Show map') + '</button></div>' +
     (MAPON ?
@@ -1493,10 +1511,15 @@ function viewTags(d){
   var names = {};
   edges.forEach(function(e){ names[e.a]=1; names[e.b]=1; });
   var nodes = Object.keys(names).map(function(t){ return { id:t, n:occ[t] }; });
-  var pos = layout(nodes, edges, 900, 520);
+  var maxN = Math.max.apply(null, nodes.map(function(n){ return n.n; }));
+  // Radius is decided before the layout runs, because the layout needs it: a
+  // spring solver knows where centres go and nothing about how big the circles
+  // are, which is how two nodes end up drawn as one blob.
+  nodes.forEach(function(n){ n.r = 10 + 26 * Math.sqrt(n.n / maxN); });
+  var pos = layout(nodes, edges, 1200, 420);
 
-  var maxL = edges[0].lift, maxN = Math.max.apply(null, nodes.map(function(n){ return n.n; }));
-  var svg = ['<svg viewBox="0 0 900 520" class="ansvg" role="img" aria-label="Tag network weighted by lift">'];
+  var maxL = edges[0].lift;
+  var svg = ['<svg viewBox="0 0 1200 420" class="ansvg" role="img" aria-label="Topic co-occurrence network, edges weighted by lift">'];
   edges.forEach(function(e){
     var p1 = pos[e.a], p2 = pos[e.b];
     var w = 1.6 + 10 * ((e.lift - 1) / Math.max(0.001, maxL - 1));
@@ -1507,7 +1530,7 @@ function viewTags(d){
   });
   // Circles first, then labels, so no line or circle is drawn over a label.
   var drawn = nodes.map(function(nd){
-    var p = pos[nd.id], r = 10 + 26 * Math.sqrt(nd.n / maxN);
+    var p = pos[nd.id], r = nd.r;
     // Clickable, because on the Findings tab everything in this position is a
     // filter. The topic dropdown already scopes the list to one topic; this is
     // the same action with the co-occurrence visible while you choose.
@@ -1527,15 +1550,22 @@ function viewTags(d){
     var w = o.t.length * 5.1, hh = 11;
     // near an edge the label anchors inward so it stays inside the viewBox
     var anchor = "middle", tx = o.p.x, x0 = o.p.x - w/2;
-    if (o.p.x - w/2 < 4)        { anchor = "start"; tx = Math.max(2, o.p.x - o.r); x0 = tx; }
-    else if (o.p.x + w/2 > 896) { anchor = "end";   tx = Math.min(898, o.p.x + o.r); x0 = tx - w; }
-    var cands = [o.r+11, -(o.r+5), o.r+23, -(o.r+17), o.r+35, -(o.r+29)];
+    if (o.p.x - w/2 < 4)         { anchor = "start"; tx = Math.max(2, o.p.x - o.r); x0 = tx; }
+    else if (o.p.x + w/2 > 1196) { anchor = "end";   tx = Math.min(1198, o.p.x + o.r); x0 = tx - w; }
+    // Six slots was not enough. Twenty labels averaging 110 units in a 1200-unit
+    // canvas cannot all sit on one line under their circles — about eleven fit —
+    // so the rest have to stack, and a slot list that only reached 35 units out
+    // ran out and fell back to the default, printing two labels on top of each
+    // other. Ten slots, alternating below and above and reaching 59 units, uses
+    // the vertical room the canvas actually has.
+    var cands = [o.r+11, -(o.r+5), o.r+23, -(o.r+17), o.r+35, -(o.r+29),
+                 o.r+47, -(o.r+41), o.r+59, -(o.r+53)];
     var dy = cands[0];
     for (var i=0;i<cands.length;i++){
       var y = o.p.y + cands[i], ok = true;
       // stay inside the viewBox: the scroll box clips, so a label pushed above
       // the top edge loses its ascenders and reads as a different word
-      if (y - hh < 2 || y > 516) continue;
+      if (y - hh < 2 || y > 416) continue;
       for (var j=0;j<boxes.length;j++){
         var b = boxes[j];
         if (x0 < b.x2 && x0 + w > b.x1 && y - hh < b.y2 && y > b.y1) { ok = false; break; }
@@ -1552,12 +1582,9 @@ function viewTags(d){
   var top = edges.slice(0,3).map(function(e){
     return (label("tags",e.a)||e.a)+" + "+(label("tags",e.b)||e.b)+
            " (&times;"+e.lift.toFixed(1)+", "+e.n+" findings)"; }).join(" &middot; ");
-  return anBox("What travels with what", "tagsToggle", TAGSON,
-    nodes.length + " topics, strongest together: " + top + ".",
-    "Lines are lift, not counts — how much more often two tags appear together than their " +
-    "separate frequencies predict. Raw co-occurrence would only rank tags by how common they " +
-    "are. Circle size is how many findings carry the tag. Click a circle to filter the list " +
-    "below by that topic.",
+  return anBox("Topic co-occurrence", "tagsToggle", TAGSON,
+    nodes.length + " topics. Strongest together: " + top +
+    ". Click a circle to filter the list below by that topic.",
     svg.join(""));
 }
 
@@ -1596,6 +1623,37 @@ function layout(nodes, edges, W, H){
       p.x = Math.max(80, Math.min(W-80, p.x));
       p.y = Math.max(46, Math.min(H-46, p.y));
     });
+  }
+
+  // Separation pass. The spring solver balances attraction against repulsion
+  // and can settle happily with two large circles drawn on top of each other —
+  // it is placing points, not discs. This pushes any overlapping pair apart
+  // along the line between them until every pair clears, which is cheap at this
+  // size, deterministic, and independent of the canvas aspect. Without it the
+  // picture reads as 18 topics rather than 20, and which two were swallowed
+  // depends on the aspect the box happens to be drawn at.
+  var PAD = 4;
+  for (var pass=0; pass<180; pass++){
+    var moved = false;
+    for (var i=0; i<nodes.length; i++) for (var j=i+1; j<nodes.length; j++){
+      var pa = pos[nodes[i].id], pb = pos[nodes[j].id];
+      var need = (nodes[i].r || 10) + (nodes[j].r || 10) + PAD;
+      var dx = pb.x-pa.x, dy = pb.y-pa.y, dist = Math.sqrt(dx*dx+dy*dy);
+      if (dist >= need) continue;
+      if (dist < 0.01) { dx = 1; dy = 0; dist = 1; }           // exactly coincident
+      var push = (need - dist) / 2, ux = dx/dist, uy = dy/dist;
+      pa.x -= ux*push; pa.y -= uy*push;
+      pb.x += ux*push; pb.y += uy*push;
+      moved = true;
+    }
+    // Re-clamp inside the canvas after each pass, or a pair near an edge walks
+    // out of the viewBox instead of separating.
+    nodes.forEach(function(n){
+      var p = pos[n.id];
+      p.x = Math.max(n.r + 6, Math.min(W - n.r - 6, p.x));
+      p.y = Math.max(n.r + 6, Math.min(H - n.r - 6, p.y));
+    });
+    if (!moved) break;
   }
   return pos;
 }
@@ -1695,9 +1753,6 @@ function viewProvenance(d){
     "<b>" + pct + "% of the flow is the GWC's own consultation</b> — country calls and " +
     "workshops. A finding corroborated only by the people who raised it is not corroborated, " +
     "and that share is the number this base exists to move.",
-    "Findings flow left to right: which streams support them, which theme they sit in, what " +
-    "band they reach. A finding supported by two streams is split between them, so the " +
-    "columns total findings rather than records.",
     svg.join("") + bandKey());
 }
 
@@ -1714,48 +1769,10 @@ function bandKey(){
          'Sources sharing an origin count once.</div>' + rows + '</div>';
 }
 
-// --- the country gap sentence, all that outlived the coverage matrix ------
-// The matrix crossed countries with themes and shaded by volume. The map above
-// the findings list already shades countries by volume, and a reader who wants
-// one theme has a theme chip, so the table was answering a question the tab it
-// sat on could already answer three clicks faster. What it said that nothing
-// else said was how much of the grid had never been asked at all — and that
-// silence is not the same as an absence of findings, which is exactly the thing
-// a reader is tempted to conclude from a pale map. So the sentence moved onto
-// the map and the table went.
-function coverageGap(d){
-  var THEME = ["ABC","Transition","Fundamentals"];
-  var seen = {}, cTot = {}, ck = {};
-  var byF = {}; d.records.forEach(function(r){ (byF[r.finding_id]=byF[r.finding_id]||[]).push(r); });
-  d.findings.forEach(function(f){
-    f.countries.forEach(function(c){
-      cTot[c] = 1;
-      f.theme.forEach(function(t){
-        seen[c+"|"+t] = 1;
-        var mine = (byF[f.finding_id]||[]).filter(function(r){
-          return (r.countries||[]).indexOf(c) >= 0; });
-        if (mine.some(function(r){ return r.status === "validated"; })) ck[c+"|"+t] = 1;
-      });
-    });
-  });
-  var countries = Object.keys(cTot);
-  if (!countries.length) return "";
-  var cells = countries.length * THEME.length, blanks = 0, unver = [];
-  countries.forEach(function(c){
-    THEME.forEach(function(t){
-      if (!seen[c+"|"+t]) blanks++;
-      else if (!ck[c+"|"+t] && unver.indexOf(c) < 0) unver.push(c);
-    });
-  });
-  return '<div class="gapnote"><b>' + blanks + ' of ' + cells +
-    ' country-by-theme combinations have no finding at all</b> — nobody has been asked, ' +
-    'which is not the same as nothing happening.' +
-    (unver.length ? ' ' + unver.length + (unver.length===1 ? ' country carries' : ' countries carry') +
-      ' findings with no verified record of their own: ' + esc(unver.slice(0,6).map(countryName).join(", ")) +
-      (unver.length>6 ? ' and ' + (unver.length-6) + ' more' : '') + '.' : '') +
-    '</div>';
-}
-
+// The coverage matrix was removed on 15/09/2026 and the gap sentence that
+// outlived it was removed on 16/09/2026. Nothing computes country-by-theme
+// coverage on the site any more: the A3 skill rebuilds that table at Step A,
+// and build.py reports unread sources on every run.
 // One box, one idiom, shared with the map: a heading, the finding in words, and
 // a show/hide for the picture. The summary is written so that a reader who never
 // opens the diagram still leaves with the point — the picture is the evidence
@@ -1764,12 +1781,12 @@ function coverageGap(d){
 // The body is a hand-drawn SVG that does not compress below a readable minimum,
 // so it gets its own scroll box rather than widening the page and pushing every
 // other view sideways with it.
-function anBox(title, toggleId, open, summary, help, body){
+function anBox(title, toggleId, open, summary, body){
   return '<section class="anbox"><div class="anhead">' +
          '<h2 class="grp">'+esc(title)+'</h2>' +
          '<button class="linkbtn" id="'+toggleId+'">'+(open?'Hide':'Show')+'</button></div>' +
          '<p class="ansum">'+summary+'</p>' +
-         (open ? '<p class="anhelp">'+help+'</p><div class="tscroll">' + body + '</div>' : '') +
+         (open ? '<div class="tscroll">' + body + '</div>' : '') +
          '</section>';
 }
 function uniq(a){
